@@ -203,7 +203,7 @@ Pre-configured teams of related plugins designed to work together. Install entir
 
 Full-stack web development team for building modern web applications
 
-**Team Members (9 plugins):**
+**Team Members (10 plugins):**
 - Frontend Developer
 - Backend Architect
 - Api Developer
@@ -213,8 +213,9 @@ Full-stack web development team for building modern web applications
 - Ux Researcher
 - Ux Writer
 - Accessibility Specialist
+- Web Performance Auditor
 
-**Global installation** (install all 9 plugins):
+**Global installation** (install all 10 plugins):
 ```bash
 /plugin install frontend-developer@puerto
 /plugin install backend-architect@puerto
@@ -225,6 +226,7 @@ Full-stack web development team for building modern web applications
 /plugin install ux-researcher@puerto
 /plugin install ux-writer@puerto
 /plugin install accessibility-specialist@puerto
+/plugin install web-performance-auditor@puerto
 ```
 
 ---
@@ -1986,11 +1988,20 @@ Browse our complete collection of specialized agents:
 
 ---
 
-**[Volunteer Time Tracker](plugins/volunteer-time-tracker)** - Comprehensive volunteer service logging and impact measurement system with hours tracking, organi...  
+**[Volunteer Time Tracker](plugins/volunteer-time-tracker)** - Comprehensive volunteer service logging and impact measurement system with hours tracking, organi...
 
 **Global installation:**
 ```bash
 /plugin install volunteer-time-tracker@puerto
+```
+
+---
+
+**[Web Performance Auditor](plugins/web-performance-auditor)** - Web performance auditing and optimization using Lighthouse with comprehensive analysis and actionable recommendations
+
+**Global installation:**
+```bash
+/plugin install web-performance-auditor@puerto
 ```
 
 ---
