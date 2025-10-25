@@ -132,6 +132,44 @@ After installing, restart Claude Code to activate the subagent and skill.
 
 ---
 
+### Cloudflare
+
+Deploy static sites and applications to Cloudflare Pages with automated deployment, log monitoring, and project management.
+
+#### Agents
+
+- **pages-deployer** (Sonnet) - Automated Cloudflare Pages deployment with build optimization, environment management, and rollback support
+- **log-monitor** (Haiku, Fast) - Real-time deployment log monitoring and error detection
+- **project-manager** (Haiku) - Cloudflare Pages project configuration and settings management
+
+#### Skills
+
+- **wrangler-deployment** - Complete Wrangler CLI patterns for deployment, configuration, and troubleshooting
+- **cloudflare-pages-config** - Pages configuration best practices, build settings, and environment variables
+
+**Global installation:**
+```bash
+/plugin install cloudflare@puerto
+```
+
+**Prerequisites:**
+- Node.js >= v16.13.0
+- Cloudflare account with Pages enabled
+- Wrangler CLI (installed automatically via npm)
+
+**Features:**
+- Automated static site deployment
+- Build optimization and caching
+- Environment variable management
+- Deployment log monitoring
+- Rollback support
+- GitHub Actions integration templates
+- Cost-optimized (Haiku for monitoring and management)
+
+After installing, configure your Cloudflare API token using the provided `.env.example` template.
+
+---
+
 ### Figma
 
 Generate code from Figma designs, extract components, variables, and maintain design-code consistency.
@@ -814,7 +852,7 @@ Browse our complete collection of specialized agents:
 
 ---
 
-**[Clinical Research Coordinator](plugins/clinical-research-coordinator)** - Clinical trial coordination specialist for study design, patient recruitment, and regulatory comp...  
+**[Clinical Research Coordinator](plugins/clinical-research-coordinator)** - Clinical trial coordination specialist for study design, patient recruitment, and regulatory comp...
 
 **Global installation:**
 ```bash
@@ -823,7 +861,16 @@ Browse our complete collection of specialized agents:
 
 ---
 
-**[Cloud Architect](plugins/cloud-architect)** - Cloud infrastructure design specialist for AWS/Azure/GCP with cost optimization and migration pla...  
+**[Cloudflare](plugins/cloudflare)** - Cloudflare Pages deployment and log monitoring using Wrangler CLI
+
+**Global installation:**
+```bash
+/plugin install cloudflare@puerto
+```
+
+---
+
+**[Cloud Architect](plugins/cloud-architect)** - Cloud infrastructure design specialist for AWS/Azure/GCP with cost optimization and migration pla...
 
 **Global installation:**
 ```bash

@@ -29,6 +29,12 @@
       "version": "1.0.0"
     },
     {
+      "name": "cloudflare",
+      "source": "./plugins/cloudflare",
+      "description": "Cloudflare Pages deployment and log monitoring using Wrangler CLI",
+      "version": "1.0.0"
+    },
+    {
       "name": "academic-researcher",
       "source": "./plugins/academic-researcher",
       "description": "Academic research support specialist for literature review, methodology design, and citation management",
