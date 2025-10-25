@@ -921,6 +921,12 @@
       "source": "./plugins/volunteer-time-tracker",
       "description": "Comprehensive volunteer service logging and impact measurement system with hours tracking, organization management, tax documentation, and skills-based matching",
       "version": "1.0.0"
+    },
+    {
+      "name": "web-performance-auditor",
+      "source": "./plugins/web-performance-auditor",
+      "description": "Web performance auditing and optimization using Lighthouse with comprehensive analysis and actionable recommendations",
+      "version": "1.0.0"
     }
   ]
 }
