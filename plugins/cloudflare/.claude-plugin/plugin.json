@@ -1,0 +1,28 @@
+{
+  "name": "cloudflare",
+  "version": "1.0.0",
+  "description": "Cloudflare Pages deployment and log monitoring using Wrangler CLI",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/pages-deployer.md",
+    "./agents/log-monitor.md",
+    "./agents/project-manager.md"
+  ],
+  "skills": [
+    "./skills/wrangler-deployment.md",
+    "./skills/cloudflare-pages-config.md"
+  ],
+  "keywords": [
+    "cloudflare",
+    "pages",
+    "deployment",
+    "wrangler",
+    "static-sites",
+    "jamstack",
+    "hosting",
+    "cdn"
+  ],
+  "license": "MIT"
+}
