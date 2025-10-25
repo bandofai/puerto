@@ -1,0 +1,214 @@
+# GitHub Actions Workflow for Cloudflare Pages Deployment
+# Save this file as: .github/workflows/deploy.yml
+
+name: Deploy to Cloudflare Pages
+
+# Trigger deployment on push to main branch or pull requests
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+
+# Environment variables available to all jobs
+env:
+  NODE_VERSION: '18'
+  PROJECT_NAME: 'my-pages-project'  # Change to your project name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    # Required permissions for deployment
+    permissions:
+      contents: read
+      deployments: write
+
+    steps:
+      # Step 1: Checkout repository code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Setup Node.js environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'  # Cache npm dependencies for faster builds
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm ci  # Use npm ci for faster, more reliable installs
+
+      # Step 4: Run tests (optional but recommended)
+      - name: Run tests
+        run: npm test
+        continue-on-error: true  # Don't fail deployment if tests fail
+
+      # Step 5: Build project
+      - name: Build project
+        run: npm run build
+        env:
+          # Build-time environment variables (public)
+          VITE_API_URL: ${{ secrets.VITE_API_URL }}
+          NODE_ENV: production
+
+      # Step 6: Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy ./dist --project-name=${{ env.PROJECT_NAME }} --branch=${{ github.ref_name }} --commit-hash=${{ github.sha }}
+
+      # Step 7: Comment deployment URL on PR (for pull requests only)
+      - name: Comment PR with deployment URL
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '🚀 Deployed to Cloudflare Pages!\n\nPreview: `https://${{ github.sha }}.${{ env.PROJECT_NAME }}.pages.dev`'
+            })
+
+# ==============================================================================
+# SETUP INSTRUCTIONS
+# ==============================================================================
+
+# 1. Get Cloudflare API Token:
+#    - Go to: https://dash.cloudflare.com/profile/api-tokens
+#    - Create token with "Cloudflare Pages:Edit" permission
+#    - Copy the token
+
+# 2. Get Cloudflare Account ID:
+#    - Go to: https://dash.cloudflare.com/
+#    - Select your account
+#    - Copy Account ID from the right sidebar
+
+# 3. Add secrets to GitHub repository:
+#    - Go to: Repository → Settings → Secrets and variables → Actions
+#    - Add new repository secrets:
+#      * CLOUDFLARE_API_TOKEN: Your API token from step 1
+#      * CLOUDFLARE_ACCOUNT_ID: Your account ID from step 2
+#      * VITE_API_URL: Your API URL (if using build-time env vars)
+
+# 4. Customize this file:
+#    - Change PROJECT_NAME to your actual project name
+#    - Adjust build directory if not using ./dist
+#    - Add/remove build-time environment variables as needed
+#    - Customize test commands if you have them
+
+# 5. Commit and push:
+#    git add .github/workflows/deploy.yml
+#    git commit -m "Add Cloudflare Pages deployment workflow"
+#    git push
+
+# ==============================================================================
+# ADVANCED CONFIGURATION
+# ==============================================================================
+
+# Multiple environments (production + staging):
+
+# on:
+#   push:
+#     branches:
+#       - main        # Production
+#       - staging     # Staging
+#   pull_request:
+#     branches:
+#       - main
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       # ... (same as above)
+#
+#       - name: Deploy to Cloudflare Pages
+#         uses: cloudflare/wrangler-action@v3
+#         with:
+#           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+#           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+#           command: |
+#             if [ "${{ github.ref }}" == "refs/heads/main" ]; then
+#               wrangler pages deploy ./dist --project-name=my-site --branch=main
+#             elif [ "${{ github.ref }}" == "refs/heads/staging" ]; then
+#               wrangler pages deploy ./dist --project-name=my-site --branch=staging
+#             else
+#               wrangler pages deploy ./dist --project-name=my-site --branch=${{ github.ref_name }}
+#             fi
+
+# ==============================================================================
+# DEPLOYMENT NOTIFICATIONS
+# ==============================================================================
+
+# Slack notification on deployment:
+
+#       - name: Notify Slack
+#         if: always()
+#         uses: 8398a7/action-slack@v3
+#         with:
+#           status: ${{ job.status }}
+#           text: 'Deployment to Cloudflare Pages'
+#           webhook_url: ${{ secrets.SLACK_WEBHOOK }}
+
+# Discord notification:
+
+#       - name: Notify Discord
+#         if: always()
+#         uses: sarisia/actions-status-discord@v1
+#         with:
+#           webhook: ${{ secrets.DISCORD_WEBHOOK }}
+#           status: ${{ job.status }}
+
+# ==============================================================================
+# CACHING STRATEGIES
+# ==============================================================================
+
+# Cache node_modules for faster installs:
+
+#       - name: Cache node_modules
+#         uses: actions/cache@v3
+#         with:
+#           path: node_modules
+#           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+#           restore-keys: |
+#             ${{ runner.os }}-node-
+
+# Cache build artifacts:
+
+#       - name: Cache build
+#         uses: actions/cache@v3
+#         with:
+#           path: dist
+#           key: ${{ runner.os }}-build-${{ github.sha }}
+
+# ==============================================================================
+# CONDITIONAL DEPLOYMENTS
+# ==============================================================================
+
+# Only deploy on specific conditions:
+
+#       - name: Deploy to Cloudflare Pages
+#         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+#         uses: cloudflare/wrangler-action@v3
+#         # ...
+
+# Deploy only if tests pass:
+
+#       - name: Run tests
+#         id: tests
+#         run: npm test
+#
+#       - name: Deploy to Cloudflare Pages
+#         if: steps.tests.outcome == 'success'
+#         uses: cloudflare/wrangler-action@v3
+#         # ...
+
+# ==============================================================================
