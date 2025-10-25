@@ -1,0 +1,10 @@
+{
+  "name": "insurance-policy-manager",
+  "version": "1.0.0",
+  "description": "Insurance policy tracking and coverage analysis specialist with multi-policy inventory, gap identification, claims history, and renewal management",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": ["insurance", "policy", "coverage", "claims", "beneficiary", "premium", "renewal", "risk-management"],
+  "license": "MIT"
+}

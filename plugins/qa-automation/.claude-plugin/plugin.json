@@ -1,0 +1,17 @@
+{
+  "name": "qa-automation",
+  "version": "1.0.0",
+  "description": "QA and test automation specialist with test generation, automation, coverage analysis, and bug reporting",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/test-generator.md",
+    "./agents/test-runner.md",
+    "./agents/bug-reporter.md"
+  ],
+  "skills": [
+    "./skills/test-generation.md",
+    "./skills/test-automation.md"
+  ]
+}

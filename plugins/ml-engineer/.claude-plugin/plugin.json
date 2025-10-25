@@ -1,0 +1,49 @@
+{
+  "name": "ml-engineer",
+  "version": "1.0.0",
+  "description": "Machine learning development specialist for model training, feature engineering, evaluation, and deployment",
+  "author": {
+    "name": "Puerto"
+  },
+  "agents": [
+    "./agents/Model Trainer.md",
+    "./agents/Feature Engineer.md",
+    "./agents/Model Evaluator.md",
+    "./agents/Model Deployer.md"
+  ],
+  "skills": [
+    "./skills/ML Development.md",
+    "./skills/Feature Engineering.md",
+    "./skills/Model Deployment.md"
+  ],
+  "capabilities": [
+    "Model training with scikit-learn, PyTorch, TensorFlow",
+    "Hyperparameter tuning (GridSearch, RandomSearch, Bayesian)",
+    "Cross-validation and model evaluation",
+    "Feature engineering and selection",
+    "Data preprocessing and transformation",
+    "Model deployment and serving",
+    "Model versioning and monitoring",
+    "Performance metrics and visualization"
+  ],
+  "requirements": {
+    "python": ">=3.8",
+    "packages": [
+      "scikit-learn",
+      "pandas",
+      "numpy",
+      "matplotlib",
+      "seaborn",
+      "joblib"
+    ],
+    "optional_packages": [
+      "torch",
+      "tensorflow",
+      "xgboost",
+      "lightgbm",
+      "fastapi",
+      "flask",
+      "mlflow"
+    ]
+  }
+}

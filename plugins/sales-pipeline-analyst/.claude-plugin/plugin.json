@@ -1,0 +1,33 @@
+{
+  "name": "sales-pipeline-analyst",
+  "version": "1.0.0",
+  "description": "Sales pipeline analysis specialist for monitoring pipeline health, forecasting, risk identification, win/loss analysis, and performance tracking",
+  "author": {
+    "name": "Puerto Marketplace"
+  },
+  "agents": [
+    "./agents/sales-pipeline-analyst.md"
+  ],
+  "skills": [
+    "./skills/pipeline-analysis.md"
+  ],
+  "integrations": [
+    "sales-lead-qualifier",
+    "sales-proposal-writer",
+    "sales-engineer"
+  ],
+  "requirements": {
+    "model": "sonnet",
+    "tools": [
+      "Read",
+      "Write",
+      "Edit",
+      "Bash",
+      "Grep",
+      "Glob"
+    ],
+    "optional_tools": [
+      "WebSearch"
+    ]
+  }
+}

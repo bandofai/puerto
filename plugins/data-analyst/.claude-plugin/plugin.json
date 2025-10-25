@@ -1,0 +1,19 @@
+{
+  "name": "data-analyst",
+  "version": "1.0.0",
+  "description": "Business intelligence and reporting specialist",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/dashboard-designer.md",
+    "./agents/data-explorer.md",
+    "./agents/kpi-tracker.md",
+    "./agents/report-generator.md"
+  ],
+  "skills": [
+    "./skills/reporting.md",
+    "./skills/data-analysis.md"
+  ],
+  "license": "MIT"
+}

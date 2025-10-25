@@ -1,0 +1,98 @@
+groups:
+- name: application_alerts
+  interval: 30s
+  rules:
+  # High error rate
+  - alert: HighErrorRate
+    expr: |
+      sum(rate(http_requests_total{status=~"5.."}[5m])) by (service)
+      /
+      sum(rate(http_requests_total[5m])) by (service)
+      > 0.05
+    for: 5m
+    labels:
+      severity: critical
+      team: backend
+    annotations:
+      summary: "High error rate on {{ $labels.service }}"
+      description: "{{ $labels.service }} error rate is {{ $value | humanizePercentage }} (threshold: 5%)"
+      runbook: "https://wiki.example.com/runbooks/high-error-rate"
+
+  # High latency
+  - alert: HighLatency
+    expr: |
+      histogram_quantile(0.95,
+        sum(rate(http_request_duration_seconds_bucket[5m])) by (le, service)
+      ) > 0.5
+    for: 10m
+    labels:
+      severity: warning
+      team: backend
+    annotations:
+      summary: "High latency on {{ $labels.service }}"
+      description: "{{ $labels.service }} p95 latency is {{ $value }}s (threshold: 0.5s)"
+
+  # Service down
+  - alert: ServiceDown
+    expr: up == 0
+    for: 2m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Service {{ $labels.job }} is down"
+      description: "{{ $labels.instance }} has been down for more than 2 minutes"
+
+- name: infrastructure_alerts
+  interval: 60s
+  rules:
+  # High CPU usage
+  - alert: HighCPUUsage
+    expr: |
+      100 - (avg by (instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+    for: 15m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High CPU usage on {{ $labels.instance }}"
+      description: "CPU usage is {{ $value | humanize }}% (threshold: 80%)"
+
+  # High memory usage
+  - alert: HighMemoryUsage
+    expr: |
+      (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 85
+    for: 10m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High memory usage on {{ $labels.instance }}"
+      description: "Memory usage is {{ $value | humanize }}% (threshold: 85%)"
+
+  # Disk space low
+  - alert: DiskSpaceLow
+    expr: |
+      (node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) * 100 < 15
+    for: 10m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Low disk space on {{ $labels.instance }}"
+      description: "Disk space is {{ $value | humanize }}% (threshold: 15%)"
+
+- name: slo_alerts
+  interval: 30s
+  rules:
+  # SLO burn rate (error budget)
+  - alert: SLOBurnRateHigh
+    expr: |
+      (
+        1 - (
+          sum(rate(http_requests_total{status!~"5.."}[1h]))
+          /
+          sum(rate(http_requests_total[1h]))
+        )
+      ) > (0.001 * 14.4)
+    labels:
+      severity: critical
+    annotations:
+      summary: "High SLO burn rate detected"
+      description: "Error budget is being consumed 14.4x faster than acceptable"

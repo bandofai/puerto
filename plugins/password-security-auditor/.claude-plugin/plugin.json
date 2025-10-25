@@ -1,0 +1,17 @@
+{
+  "name": "password-security-auditor",
+  "version": "1.0.0",
+  "description": "Security audit and breach monitoring specialist with password strength analysis, HIBP integration, 2FA tracking, and compliance verification",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "security",
+    "password-audit",
+    "breach-monitoring",
+    "2fa",
+    "hibp",
+    "compliance"
+  ],
+  "license": "MIT"
+}

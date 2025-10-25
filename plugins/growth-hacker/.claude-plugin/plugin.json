@@ -1,0 +1,17 @@
+{
+  "name": "growth-hacker",
+  "version": "1.0.0",
+  "description": "Growth strategy and experimentation specialist for viral loops, acquisition channels, retention optimization, and referral programs",
+  "agents": [
+    "./agents/experiment-designer.md",
+    "./agents/viral-architect.md",
+    "./agents/acquisition-optimizer.md",
+    "./agents/retention-specialist.md"
+  ],
+  "skills": [
+    "./skills/growth-strategy.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "financial-analyst",
+  "version": "1.0.0",
+  "description": "Financial modeling and analysis specialist",
+  "agents": [
+    "./agents/model-builder.md",
+    "./agents/valuation-analyst.md",
+    "./agents/scenario-analyzer.md"
+  ],
+  "skills": [
+    "./skills/financial-modeling.md",
+    "./skills/valuation.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "schedule_version": "1.0",
+  "created_date": "2025-01-15T10:00:00Z",
+  "last_updated": "2025-01-15T10:00:00Z",
+  "reviews": {
+    "annual": {
+      "review_type": "annual",
+      "frequency": "yearly",
+      "next_due": "2026-01-15",
+      "last_completed": "2025-01-15",
+      "tasks": [
+        {
+          "task_id": "annual_001",
+          "task_name": "Archive previous year documents",
+          "description": "Move all documents from Active/{YEAR-1} to Archive/{YEAR-1} with proper structure",
+          "estimated_time": "30_minutes",
+          "priority": "HIGH",
+          "completed": false
+        },
+        {
+          "task_id": "annual_002",
+          "task_name": "Purge expired retention documents",
+          "description": "Remove documents beyond retention period (tax: 7yr, statements: 1yr, etc)",
+          "estimated_time": "30_minutes",
+          "priority": "HIGH",
+          "completed": false
+        },
+        {
+          "task_id": "annual_003",
+          "task_name": "Review and update warranties",
+          "description": "Check all active warranties, remove expired, update warranty database",
+          "estimated_time": "20_minutes",
+          "priority": "MEDIUM",
+          "completed": false
+        },
+        {
+          "task_id": "annual_004",
+          "task_name": "Verify backup completeness",
+          "description": "Test local and cloud backups, verify integrity, test restore capability",
+          "estimated_time": "20_minutes",
+          "priority": "HIGH",
+          "completed": false
+        },
+        {
+          "task_id": "annual_005",
+          "task_name": "Update important document flags",
+          "description": "Review critical documents, update emergency kit, verify accessibility",
+          "estimated_time": "15_minutes",
+          "priority": "MEDIUM",
+          "completed": false
+        },
+        {
+          "task_id": "annual_006",
+          "task_name": "Review retention compliance",
+          "description": "Verify compliance with retention policies for all document categories",
+          "estimated_time": "15_minutes",
+          "priority": "MEDIUM",
+          "completed": false
+        },
+        {
+          "task_id": "annual_007",
+          "task_name": "Update document index",
+          "description": "Rebuild searchable index, verify accuracy, remove purged documents",
+          "estimated_time": "10_minutes",
+          "priority": "MEDIUM",
+          "completed": false
+        }
+      ],
+      "estimated_duration": "140_minutes",
+      "priority": "HIGH",
+      "reminder_days_before": 14,
+      "completion_notes": null,
+      "completion_date": null
+    },
+    "quarterly": {
+      "review_type": "quarterly",
+      "frequency": "quarterly",
+      "next_due": "2025-04-15",
+      "last_completed": "2025-01-15",
+      "tasks": [
+        {
+          "task_id": "quarterly_001",
+          "task_name": "Review warranties expiring in 90 days",
+          "description": "Check all warranties expiring in next quarter, prepare for claims if needed",
+          "estimated_time": "15_minutes",
+          "priority": "MEDIUM",
+          "completed": false
+        },
+        {
+          "task_id": "quarterly_002",
+          "task_name": "Check insurance renewal dates",
+          "description": "Review all insurance policies for upcoming renewals, compare rates",
+          "estimated_time": "15_minutes",
+          "priority": "MEDIUM",
+          "completed": false
+        },
+        {
+          "task_id": "quarterly_003",
+          "task_name": "Verify backup integrity",
+          "description": "Test restore of sample files from both local and cloud backups",
+          "estimated_time": "10_minutes",
+          "priority": "HIGH",
+          "completed": false
+        },
+        {
+          "task_id": "quarterly_004",
+          "task_name": "Review categorization accuracy",
+          "description": "Spot check 10 random documents to verify correct categorization",
+          "estimated_time": "10_minutes",
+          "priority": "LOW",
+          "completed": false
+        }
+      ],
+      "estimated_duration": "50_minutes",
+      "priority": "MEDIUM",
+      "reminder_days_before": 7,
+      "completion_notes": null,
+      "completion_date": null
+    },
+    "monthly": {
+      "review_type": "monthly",
+      "frequency": "monthly",
+      "next_due": "2025-02-15",
+      "last_completed": "2025-01-15",
+      "tasks": [
+        {
+          "task_id": "monthly_001",
+          "task_name": "Process new documents",
+          "description": "Categorize and file all uncategorized documents from past month",
+          "estimated_time": "15_minutes",
+          "priority": "MEDIUM",
+          "completed": false
+        },
+        {
+          "task_id": "monthly_002",
+          "task_name": "Review upcoming expirations (30 days)",
+          "description": "Check warranties and contracts expiring in next 30 days",
+          "estimated_time": "10_minutes",
+          "priority": "MEDIUM",
+          "completed": false
+        },
+        {
+          "task_id": "monthly_003",
+          "task_name": "Verify monthly backup",
+          "description": "Confirm backup completed successfully, check logs for errors",
+          "estimated_time": "5_minutes",
+          "priority": "HIGH",
+          "completed": false
+        },
+        {
+          "task_id": "monthly_004",
+          "task_name": "Update warranty database",
+          "description": "Add new warranties, update statuses, note any claims",
+          "estimated_time": "10_minutes",
+          "priority": "MEDIUM",
+          "completed": false
+        }
+      ],
+      "estimated_duration": "40_minutes",
+      "priority": "MEDIUM",
+      "reminder_days_before": 3,
+      "completion_notes": null,
+      "completion_date": null
+    },
+    "weekly": {
+      "review_type": "weekly",
+      "frequency": "weekly",
+      "next_due": "2025-01-22",
+      "last_completed": "2025-01-15",
+      "tasks": [
+        {
+          "task_id": "weekly_001",
+          "task_name": "Process new receipts",
+          "description": "Scan, categorize, and file all new receipts from past week",
+          "estimated_time": "10_minutes",
+          "priority": "LOW",
+          "completed": false
+        },
+        {
+          "task_id": "weekly_002",
+          "task_name": "Check warranty alerts",
+          "description": "Review any warranty expiration alerts for action needed",
+          "estimated_time": "3_minutes",
+          "priority": "LOW",
+          "completed": false
+        },
+        {
+          "task_id": "weekly_003",
+          "task_name": "Verify weekly backup",
+          "description": "Confirm weekly backup executed successfully",
+          "estimated_time": "2_minutes",
+          "priority": "MEDIUM",
+          "completed": false
+        }
+      ],
+      "estimated_duration": "15_minutes",
+      "priority": "LOW",
+      "reminder_days_before": 1,
+      "completion_notes": null,
+      "completion_date": null
+    }
+  },
+  "custom_reviews": [
+    {
+      "review_id": "custom_001",
+      "review_name": "Tax Preparation 2024",
+      "description": "Gather and organize all tax-related documents for 2024 tax year",
+      "due_date": "2025-04-10",
+      "created_date": "2025-01-15",
+      "tasks": [
+        {
+          "task_id": "tax_001",
+          "task_name": "Gather W-2 and 1099 forms",
+          "description": "Collect all income documents for 2024",
+          "completed": false
+        },
+        {
+          "task_id": "tax_002",
+          "task_name": "Compile deductible receipts",
+          "description": "Search for all receipts tagged 'tax_deductible' from 2024",
+          "completed": false
+        },
+        {
+          "task_id": "tax_003",
+          "task_name": "Organize by category",
+          "description": "Group receipts by deduction category (home office, business expenses, etc)",
+          "completed": false
+        },
+        {
+          "task_id": "tax_004",
+          "task_name": "Calculate totals",
+          "description": "Sum amounts for each deduction category",
+          "completed": false
+        },
+        {
+          "task_id": "tax_005",
+          "task_name": "Prepare summary document",
+          "description": "Create summary with totals and supporting document references",
+          "completed": false
+        }
+      ],
+      "priority": "HIGH",
+      "reminder_days_before": 30,
+      "status": "pending",
+      "completion_notes": null,
+      "completion_date": null
+    },
+    {
+      "review_id": "custom_002",
+      "review_name": "Home Insurance Renewal Review",
+      "description": "Review home insurance policy before renewal, compare rates",
+      "due_date": "2025-03-01",
+      "created_date": "2025-01-15",
+      "tasks": [
+        {
+          "task_id": "insurance_001",
+          "task_name": "Review current policy coverage",
+          "description": "Verify coverage amounts are still adequate for home value",
+          "completed": false
+        },
+        {
+          "task_id": "insurance_002",
+          "task_name": "Get 3 comparison quotes",
+          "description": "Request quotes from 3 different insurance providers",
+          "completed": false
+        },
+        {
+          "task_id": "insurance_003",
+          "task_name": "Compare coverage and rates",
+          "description": "Create comparison matrix of coverage vs cost",
+          "completed": false
+        },
+        {
+          "task_id": "insurance_004",
+          "task_name": "Make renewal decision",
+          "description": "Decide whether to renew current policy or switch providers",
+          "completed": false
+        }
+      ],
+      "priority": "HIGH",
+      "reminder_days_before": 30,
+      "status": "pending",
+      "completion_notes": null,
+      "completion_date": null
+    }
+  ],
+  "reminders": [
+    {
+      "reminder_id": "rem_annual_001",
+      "review_type": "annual",
+      "review_name": "Annual Document Review",
+      "due_date": "2026-01-15",
+      "alert_date": "2026-01-01",
+      "alert_days_before": 14,
+      "priority": "HIGH",
+      "sent": false,
+      "sent_date": null,
+      "message": "Annual document review is due in 14 days. Schedule 2 hours for comprehensive organization tasks."
+    },
+    {
+      "reminder_id": "rem_quarterly_001",
+      "review_type": "quarterly",
+      "review_name": "Quarterly Review Q2 2025",
+      "due_date": "2025-04-15",
+      "alert_date": "2025-04-08",
+      "alert_days_before": 7,
+      "priority": "MEDIUM",
+      "sent": false,
+      "sent_date": null,
+      "message": "Quarterly review is due in 7 days. Check warranties, insurance, and backups."
+    },
+    {
+      "reminder_id": "rem_monthly_001",
+      "review_type": "monthly",
+      "review_name": "Monthly Review February 2025",
+      "due_date": "2025-02-15",
+      "alert_date": "2025-02-12",
+      "alert_days_before": 3,
+      "priority": "MEDIUM",
+      "sent": false,
+      "sent_date": null,
+      "message": "Monthly review is due in 3 days. Process new documents and check expiring items."
+    },
+    {
+      "reminder_id": "rem_weekly_001",
+      "review_type": "weekly",
+      "review_name": "Weekly Review",
+      "due_date": "2025-01-22",
+      "alert_date": "2025-01-21",
+      "alert_days_before": 1,
+      "priority": "LOW",
+      "sent": false,
+      "sent_date": null,
+      "message": "Weekly review is due tomorrow. File receipts and check warranty alerts."
+    },
+    {
+      "reminder_id": "rem_custom_001",
+      "review_type": "custom",
+      "review_name": "Tax Preparation 2024",
+      "due_date": "2025-04-10",
+      "alert_date": "2025-03-11",
+      "alert_days_before": 30,
+      "priority": "HIGH",
+      "sent": false,
+      "sent_date": null,
+      "message": "Tax preparation deadline in 30 days. Begin gathering documents and organizing receipts."
+    }
+  ],
+  "statistics": {
+    "total_annual_reviews": 1,
+    "total_quarterly_reviews": 4,
+    "total_monthly_reviews": 12,
+    "total_weekly_reviews": 52,
+    "total_custom_reviews": 2,
+    "reviews_completed_this_year": 4,
+    "average_completion_time": "45_minutes",
+    "on_time_completion_rate": "100%"
+  },
+  "settings": {
+    "enable_reminders": true,
+    "reminder_method": "system_notification",
+    "auto_schedule_next": true,
+    "weekly_review_day": "Tuesday",
+    "monthly_review_day": 15,
+    "quarterly_review_months": [1, 4, 7, 10],
+    "annual_review_date": "01-15",
+    "timezone": "America/New_York"
+  }
+}

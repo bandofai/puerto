@@ -1,0 +1,84 @@
+{
+  "id": "case-uuid-example",
+  "case_number": "ABC-2025-001",
+  "status": "open",
+  "company": {
+    "name": "Example Company Inc.",
+    "contact_info": {
+      "phone": "1-800-555-1234",
+      "email": "support@example.com",
+      "address": "123 Corporate Blvd, Suite 500, City, ST 12345"
+    },
+    "website": "https://www.example.com"
+  },
+  "issue": {
+    "category": "defective_product",
+    "product": "Example Product Model XYZ-123",
+    "description": "Product stopped working after 2 months of normal use. No power, no response to troubleshooting attempts.",
+    "purchase_date": "2025-01-15",
+    "purchase_price": 799.99,
+    "receipt_number": "REC-20250115-12345"
+  },
+  "timeline": [
+    {
+      "date": "2025-03-15T10:00:00Z",
+      "type": "issue_occurred",
+      "description": "Product stopped working completely, no power"
+    },
+    {
+      "date": "2025-03-16T14:30:00Z",
+      "type": "phone_call",
+      "description": "Called customer service, spoke with CSR John Smith",
+      "contact": "John Smith (CSR)",
+      "ticket_number": "TKT-12345"
+    },
+    {
+      "date": "2025-03-17T09:00:00Z",
+      "type": "email",
+      "description": "Sent follow-up email requesting status update on ticket #TKT-12345"
+    },
+    {
+      "date": "2025-03-20T16:00:00Z",
+      "type": "phone_call",
+      "description": "Follow-up call, CSR stated replacement would be sent within 7-10 business days",
+      "contact": "Jane Doe (CSR)",
+      "ticket_number": "TKT-12345"
+    },
+    {
+      "date": "2025-03-30T10:00:00Z",
+      "type": "status_change",
+      "description": "Status changed: open → escalated - No replacement received after 10 business days"
+    }
+  ],
+  "escalation_path": {
+    "current_level": "supervisor",
+    "levels_attempted": [
+      "csr"
+    ],
+    "next_steps": [
+      "manager",
+      "corporate",
+      "bbb",
+      "legal"
+    ]
+  },
+  "resolution": {
+    "desired_outcome": "Full refund of $799.99 or replacement product",
+    "deadline": "2025-04-15T00:00:00Z",
+    "actual_outcome": null,
+    "resolved_date": null,
+    "amount_recovered": null
+  },
+  "legal": {
+    "small_claims_eligible": true,
+    "claim_amount": 799.99,
+    "statute_of_limitations": "2029-01-15T00:00:00Z",
+    "consumer_protection_violations": [
+      "warranty_breach",
+      "failure_to_deliver_promised_service"
+    ]
+  },
+  "notes": "Customer service has been unhelpful. CSR made promises but failed to deliver. May need to escalate to corporate level if supervisor doesn't resolve within 7 days.\n\nDocumentation:\n- Receipt saved in documents/case-uuid-example/receipts/\n- Photos of defective product in documents/case-uuid-example/photos/\n- Email correspondence in communications/case-uuid-example/\n\nNext steps:\n- Send supervisor escalation letter (certified mail)\n- Wait 7 days for response\n- If no response, escalate to corporate\n- Consider BBB complaint if corporate doesn't resolve",
+  "created": "2025-03-16T15:00:00Z",
+  "last_updated": "2025-03-30T10:00:00Z"
+}

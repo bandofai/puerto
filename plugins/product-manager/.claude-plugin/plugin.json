@@ -1,0 +1,17 @@
+{
+  "name": "product-manager",
+  "version": "1.0.0",
+  "description": "Product strategy specialist",
+  "agents": [
+    "./agents/roadmap-planner.md",
+    "./agents/feature-prioritizer.md",
+    "./agents/story-writer.md"
+  ],
+  "skills": [
+    "./skills/roadmap-planning.md",
+    "./skills/user-stories.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

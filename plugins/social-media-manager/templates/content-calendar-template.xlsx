@@ -1,0 +1,247 @@
+# SOCIAL MEDIA CONTENT CALENDAR TEMPLATE
+# This is a text representation of an Excel template structure
+# When using the xlsx skill, this structure should be converted to a proper Excel file
+
+## Sheet 1: Monthly Overview
+
+MONTH: January 2025
+CONTENT THEMES: [Theme 1, Theme 2, Theme 3]
+POSTING FREQUENCY TARGET: [X posts per week]
+
+WEEK-BY-WEEK BREAKDOWN:
+┌─────────────┬──────────────────────────────────────────────────────────────┐
+│ Week        │ Focus Theme                                                  │
+├─────────────┼──────────────────────────────────────────────────────────────┤
+│ Week 1      │ [Theme/Topic for first week]                                │
+│ Jan 1-7     │ Goals: [Specific goals for this week]                       │
+│             │ Total Posts: [Number]                                        │
+├─────────────┼──────────────────────────────────────────────────────────────┤
+│ Week 2      │ [Theme/Topic for second week]                               │
+│ Jan 8-14    │ Goals: [Specific goals for this week]                       │
+│             │ Total Posts: [Number]                                        │
+├─────────────┼──────────────────────────────────────────────────────────────┤
+│ Week 3      │ [Theme/Topic for third week]                                │
+│ Jan 15-21   │ Goals: [Specific goals for this week]                       │
+│             │ Total Posts: [Number]                                        │
+├─────────────┼──────────────────────────────────────────────────────────────┤
+│ Week 4      │ [Theme/Topic for fourth week]                               │
+│ Jan 22-28   │ Goals: [Specific goals for this week]                       │
+│             │ Total Posts: [Number]                                        │
+├─────────────┼──────────────────────────────────────────────────────────────┤
+│ Week 5      │ [Theme/Topic for fifth week if applicable]                  │
+│ Jan 29-31   │ Goals: [Specific goals for this week]                       │
+│             │ Total Posts: [Number]                                        │
+└─────────────┴──────────────────────────────────────────────────────────────┘
+
+KEY DATES & EVENTS:
+• [Date]: [Holiday/Event] - Special content planned
+• [Date]: [Campaign Launch] - Coordinated posts across platforms
+• [Date]: [Product Release] - Announcement content
+• [Date]: [Industry Event] - Live coverage/participation
+
+PLATFORM DISTRIBUTION (Posts per Week):
+• Twitter/X: [Number] posts/week
+• LinkedIn: [Number] posts/week
+• Instagram: [Number] posts/week + [Number] stories/day
+• Facebook: [Number] posts/week
+• TikTok: [Number] videos/week
+
+---
+
+## Sheet 2: Daily Schedule
+
+WEEK OF: January 1-7, 2025
+TARGET TIMEZONE: [Primary audience timezone, e.g., EST]
+
+┌──────────┬──────────┬──────────┬─────────────────┬────────────────────┬──────────────┬──────────────┬────────────┐
+│ Day/Time │ Platform │ Post Type│ Content Summary │ Hashtags/Tags      │ Visual Asset │ Status       │ Assignee   │
+├──────────┼──────────┼──────────┼─────────────────┼────────────────────┼──────────────┼──────────────┼────────────┤
+│ MONDAY                                                                                                            │
+├──────────┼──────────┼──────────┼─────────────────┼────────────────────┼──────────────┼──────────────┼────────────┤
+│ 9:00 AM  │ Twitter  │ Tip      │ Industry insight│ #MondayMotivation  │ quote-1.jpg  │ ☐ Draft      │ [Name]     │
+│          │          │          │ about [topic]   │ #IndustryTip       │              │ ☐ Approved   │            │
+│          │          │          │                 │ #YourBrand         │              │ ☐ Scheduled  │            │
+│          │          │          │                 │                    │              │ ☐ Published  │            │
+├──────────┼──────────┼──────────┼─────────────────┼────────────────────┼──────────────┼──────────────┼────────────┤
+│ 12:00 PM │ LinkedIn │ Article  │ Thought leader- │ #Leadership        │ article.pdf  │ ☐ Draft      │ [Name]     │
+│          │          │          │ ship on [topic] │ #Business          │              │ ☐ Approved   │            │
+│          │          │          │                 │ #YourIndustry      │              │ ☐ Scheduled  │            │
+│          │          │          │                 │                    │              │ ☐ Published  │            │
+├──────────┼──────────┼──────────┼─────────────────┼────────────────────┼──────────────┼──────────────┼────────────┤
+│ 7:00 PM  │ Instagram│ Reel     │ Behind-the-     │ #BTS #TeamCulture  │ reel-1.mp4   │ ☐ Draft      │ [Name]     │
+│          │          │          │ scenes of team  │ + 27 more hashtags │              │ ☐ Approved   │            │
+│          │          │          │                 │                    │              │ ☐ Scheduled  │            │
+│          │          │          │                 │                    │              │ ☐ Published  │            │
+├──────────┼──────────┼──────────┼─────────────────┼────────────────────┼──────────────┼──────────────┼────────────┤
+│ TUESDAY                                                                                                           │
+├──────────┼──────────┼──────────┼─────────────────┼────────────────────┼──────────────┼──────────────┼────────────┤
+│ 9:00 AM  │ Twitter  │ Poll     │ Industry poll   │ #TechTuesday       │ N/A          │ ☐ Draft      │ [Name]     │
+│          │          │          │ question        │ #YourBrand         │              │ ☐ Approved   │            │
+│          │          │          │                 │                    │              │ ☐ Scheduled  │            │
+│          │          │          │                 │                    │              │ ☐ Published  │            │
+├──────────┼──────────┼──────────┼─────────────────┼────────────────────┼──────────────┼──────────────┼────────────┤
+│ 11:00 AM │ Instagram│ Carousel │ Tutorial: How to│ #Tutorial #HowTo   │ carousel-    │ ☐ Draft      │ [Name]     │
+│          │          │          │ [do something]  │ + 28 more hashtags │ slides 1-10  │ ☐ Approved   │            │
+│          │          │          │                 │                    │              │ ☐ Scheduled  │            │
+│          │          │          │                 │                    │              │ ☐ Published  │            │
+├──────────┼──────────┼──────────┼─────────────────┼────────────────────┼──────────────┼──────────────┼────────────┤
+│ 2:00 PM  │ Facebook │ Video    │ Product demo    │ #ProductDemo       │ demo.mp4     │ ☐ Draft      │ [Name]     │
+│          │          │          │ video           │ #YourProduct       │              │ ☐ Approved   │            │
+│          │          │          │                 │                    │              │ ☐ Scheduled  │            │
+│          │          │          │                 │                    │              │ ☐ Published  │            │
+├──────────┼──────────┼──────────┼─────────────────┼────────────────────┼──────────────┼──────────────┼────────────┤
+│ 8:00 PM  │ TikTok   │ Video    │ Quick tip on    │ #fyp #TrendingTag  │ tiktok-1.mp4 │ ☐ Draft      │ [Name]     │
+│          │          │          │ [topic]         │ #NicheTip          │              │ ☐ Approved   │            │
+│          │          │          │                 │                    │              │ ☐ Scheduled  │            │
+│          │          │          │                 │                    │              │ ☐ Published  │            │
+├──────────┼──────────┼──────────┼─────────────────┼────────────────────┼──────────────┼──────────────┼────────────┤
+│ [Continue for Wednesday through Sunday...]                                                                       │
+└──────────┴──────────┴──────────┴─────────────────┴────────────────────┴──────────────┴──────────────┴────────────┘
+
+---
+
+## Sheet 3: Content Theme Tracker
+
+CONTENT PILLARS & DISTRIBUTION:
+
+┌─────────────────────┬──────────┬────────────────┬────────────────────────────────┐
+│ Content Type        │ % Target │ Actual % YTD   │ Example Topics                 │
+├─────────────────────┼──────────┼────────────────┼────────────────────────────────┤
+│ Educational         │   30%    │   [Calculate]  │ • How-to guides                │
+│                     │          │                │ • Tips and tricks              │
+│                     │          │                │ • Industry insights            │
+├─────────────────────┼──────────┼────────────────┼────────────────────────────────┤
+│ Inspirational       │   20%    │   [Calculate]  │ • Success stories              │
+│                     │          │                │ • Motivational quotes          │
+│                     │          │                │ • Case studies                 │
+├─────────────────────┼──────────┼────────────────┼────────────────────────────────┤
+│ Behind-the-Scenes   │   15%    │   [Calculate]  │ • Team introductions           │
+│                     │          │                │ • Office culture               │
+│                     │          │                │ • Process reveals              │
+├─────────────────────┼──────────┼────────────────┼────────────────────────────────┤
+│ User-Generated      │   15%    │   [Calculate]  │ • Customer testimonials        │
+│                     │          │                │ • User spotlight               │
+│                     │          │                │ • Community features           │
+├─────────────────────┼──────────┼────────────────┼────────────────────────────────┤
+│ Promotional         │   20%    │   [Calculate]  │ • Product features             │
+│                     │          │                │ • Special offers               │
+│                     │          │                │ • Announcements                │
+└─────────────────────┴──────────┴────────────────┴────────────────────────────────┘
+
+GOAL: Maintain 80% value content, 20% promotional
+
+---
+
+## Sheet 4: Performance Tracking
+
+WEEKLY PERFORMANCE METRICS:
+
+┌──────────┬──────────┬────────┬────────────┬──────────────┬─────────────┬───────────┐
+│ Week     │ Platform │ Posts  │ Total Reach│ Engagements  │ Eng. Rate % │ Followers │
+├──────────┼──────────┼────────┼────────────┼──────────────┼─────────────┼───────────┤
+│ Week 1   │ Twitter  │   5    │   [Number] │   [Number]   │   [Calc]    │  +[Num]   │
+│          │ LinkedIn │   3    │   [Number] │   [Number]   │   [Calc]    │  +[Num]   │
+│          │ Instagram│   7    │   [Number] │   [Number]   │   [Calc]    │  +[Num]   │
+│          │ Facebook │   3    │   [Number] │   [Number]   │   [Calc]    │  +[Num]   │
+│          │ TikTok   │   4    │   [Number] │   [Number]   │   [Calc]    │  +[Num]   │
+├──────────┼──────────┼────────┼────────────┼──────────────┼─────────────┼───────────┤
+│ Week 2   │ [Same structure as Week 1]                                              │
+├──────────┼──────────┼────────┼────────────┼──────────────┼─────────────┼───────────┤
+│ [Continue for remaining weeks...]                                                  │
+└──────────┴──────────┴────────┴────────────┴──────────────┴─────────────┴───────────┘
+
+TOP PERFORMING POSTS:
+1. [Platform] - [Date] - [Post summary] - [Engagement rate %]
+2. [Platform] - [Date] - [Post summary] - [Engagement rate %]
+3. [Platform] - [Date] - [Post summary] - [Engagement rate %]
+
+---
+
+## Sheet 5: Visual Asset Tracker
+
+VISUAL ASSETS NEEDED:
+
+┌──────────┬─────────────────┬──────────────┬───────────────────┬──────────────┬────────────┐
+│ Due Date │ Asset Type      │ Dimensions   │ Purpose           │ Status       │ Designer   │
+├──────────┼─────────────────┼──────────────┼───────────────────┼──────────────┼────────────┤
+│ Jan 5    │ Quote graphic   │ 1080x1080px  │ Instagram post    │ ☐ Requested  │ [Name]     │
+│          │                 │              │                   │ ☐ In Design  │            │
+│          │                 │              │                   │ ☐ Approved   │            │
+│          │                 │              │                   │ ☐ Ready      │            │
+├──────────┼─────────────────┼──────────────┼───────────────────┼──────────────┼────────────┤
+│ Jan 6    │ Video reel      │ 1080x1920px  │ Instagram reel    │ ☐ Requested  │ [Name]     │
+│          │                 │              │ TikTok            │ ☐ In Prod.   │            │
+│          │                 │              │                   │ ☐ Approved   │            │
+│          │                 │              │                   │ ☐ Ready      │            │
+├──────────┼─────────────────┼──────────────┼───────────────────┼──────────────┼────────────┤
+│ Jan 7    │ Carousel slides │ 1080x1080px  │ Instagram/        │ ☐ Requested  │ [Name]     │
+│          │ (10 slides)     │ each         │ LinkedIn carousel │ ☐ In Design  │            │
+│          │                 │              │                   │ ☐ Approved   │            │
+│          │                 │              │                   │ ☐ Ready      │            │
+└──────────┴─────────────────┴──────────────┴───────────────────┴──────────────┴────────────┘
+
+---
+
+## Sheet 6: Notes & Ideas
+
+CONTENT IDEAS BACKLOG:
+
+┌───────────────────────────────────┬──────────────┬──────────────┬─────────────┐
+│ Idea                              │ Platform     │ Priority     │ Planned For │
+├───────────────────────────────────┼──────────────┼──────────────┼─────────────┤
+│ [Idea description]                │ [Platform]   │ High/Med/Low │ [Week/Date] │
+│ [Idea description]                │ [Platform]   │ High/Med/Low │ [Week/Date] │
+│ [Idea description]                │ [Platform]   │ High/Med/Low │ [Week/Date] │
+└───────────────────────────────────┴──────────────┴──────────────┴─────────────┘
+
+LEARNINGS & OPTIMIZATIONS:
+
+┌──────────┬─────────────────────────────────────────────────────────────────┐
+│ Date     │ Learning / Optimization Note                                    │
+├──────────┼─────────────────────────────────────────────────────────────────┤
+│ [Date]   │ [What worked, what didn't, what to change]                      │
+│ [Date]   │ [What worked, what didn't, what to change]                      │
+└──────────┴─────────────────────────────────────────────────────────────────┘
+
+---
+
+## USAGE INSTRUCTIONS:
+
+1. MONTHLY PLANNING:
+   - Fill out Monthly Overview sheet with themes and goals
+   - Mark key dates and events
+   - Set posting frequency targets by platform
+
+2. WEEKLY SCHEDULING:
+   - Use Daily Schedule sheet to plan each post
+   - Include content summary, hashtags, visual assets
+   - Assign team members to each task
+   - Track status through draft → approved → scheduled → published
+
+3. CONTENT BALANCE:
+   - Monitor Content Theme Tracker to maintain 80/20 value-to-promotional ratio
+   - Adjust upcoming content to balance content types
+
+4. PERFORMANCE REVIEW:
+   - Update Performance Tracking weekly
+   - Identify top performers
+   - Adjust strategy based on what's working
+
+5. ASSET MANAGEMENT:
+   - Track visual assets needed in Visual Asset Tracker
+   - Set clear deadlines for designers
+   - Monitor production status
+
+6. CONTINUOUS IMPROVEMENT:
+   - Log ideas in Notes & Ideas sheet
+   - Document learnings and optimizations
+   - Iterate monthly based on performance data
+
+COLOR CODING (when using Excel):
+- Green: Published/Complete
+- Yellow: In Progress/Scheduled
+- Red: Overdue/Needs Attention
+- Blue: Approved
+- White: Draft/Not Started
+
+This template should be created as an Excel file (.xlsx) with proper formatting, formulas for calculations, and color coding for visual clarity.

@@ -1,0 +1,18 @@
+{
+  "name": "complaint-warranty-manager",
+  "version": "1.0.0",
+  "description": "Customer service interaction and warranty claim tracking specialist for managing complaints, escalations, and warranty claims",
+  "author": {
+    "name": "Puerto"
+  },
+  "license": "MIT",
+  "agents": [
+    "./agents/complaint-case-manager.md",
+    "./agents/escalation-specialist.md",
+    "./agents/warranty-claim-tracker.md"
+  ],
+  "skills": [
+    "./skills/complaint-resolution.md"
+  ],
+  "requirements": []
+}

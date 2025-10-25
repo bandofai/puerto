@@ -1,0 +1,17 @@
+{
+  "name": "site-reliability-engineer",
+  "version": "1.0.0",
+  "description": "System reliability and uptime specialist for monitoring setup, incident response, performance optimization, capacity planning, and post-mortem analysis",
+  "agents": [
+    "./agents/monitoring-architect.md",
+    "./agents/incident-responder.md",
+    "./agents/performance-optimizer.md",
+    "./agents/capacity-planner.md"
+  ],
+  "skills": [
+    "./skills/sre-practices.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

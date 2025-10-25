@@ -1,0 +1,15 @@
+{
+  "name": "orchestrator",
+  "version": "1.0.0",
+  "description": "Master coordinator for complex multi-agent workflows. Intelligently decomposes tasks, creates execution plans, and coordinates subagents for optimal parallel execution.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/orchestrator-planner.md"
+  ],
+  "skills": [
+    "./skills/orchestration.md"
+  ],
+  "license": "MIT"
+}

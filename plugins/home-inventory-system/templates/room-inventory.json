@@ -1,0 +1,203 @@
+{
+  "room_id": "ROOM-001",
+  "room_name": "Living Room",
+  "floor": "1st floor",
+  "square_footage": 320,
+  "created_date": "2025-01-15",
+  "last_updated": "2025-01-15",
+  "summary": {
+    "total_items": 15,
+    "total_value": 8500.00,
+    "total_replacement_cost": 12000.00,
+    "high_value_items": 3,
+    "categories_present": [
+      "electronics",
+      "furniture",
+      "decor",
+      "lighting"
+    ]
+  },
+  "photos": {
+    "room_overview": [
+      "photos/rooms/living-room-north-wall.jpg",
+      "photos/rooms/living-room-south-wall.jpg",
+      "photos/rooms/living-room-east-wall.jpg",
+      "photos/rooms/living-room-west-wall.jpg"
+    ],
+    "panorama": "photos/rooms/living-room-360.jpg",
+    "photo_date": "2025-01-15"
+  },
+  "items": [
+    {
+      "item_id": "ITEM-001",
+      "name": "Samsung 65\" Smart TV",
+      "category": "electronics",
+      "current_value": 800.00,
+      "replacement_cost": 1499.99,
+      "location_in_room": "Wall mounted above fireplace",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-002",
+      "name": "Bose Soundbar",
+      "category": "electronics",
+      "current_value": 350.00,
+      "replacement_cost": 499.99,
+      "location_in_room": "Below TV on fireplace mantel",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-003",
+      "name": "Sectional Sofa",
+      "category": "furniture",
+      "current_value": 2400.00,
+      "replacement_cost": 3500.00,
+      "location_in_room": "Center of room, facing fireplace",
+      "high_value": true
+    },
+    {
+      "item_id": "ITEM-004",
+      "name": "Coffee Table",
+      "category": "furniture",
+      "current_value": 350.00,
+      "replacement_cost": 600.00,
+      "location_in_room": "In front of sofa",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-005",
+      "name": "Area Rug (8x10)",
+      "category": "decor",
+      "current_value": 450.00,
+      "replacement_cost": 800.00,
+      "location_in_room": "Under coffee table and sofa",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-006",
+      "name": "Floor Lamp Set (2)",
+      "category": "lighting",
+      "current_value": 180.00,
+      "replacement_cost": 280.00,
+      "location_in_room": "Both sides of sofa",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-007",
+      "name": "Bookshelf",
+      "category": "furniture",
+      "current_value": 250.00,
+      "replacement_cost": 400.00,
+      "location_in_room": "East wall",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-008",
+      "name": "Accent Chair",
+      "category": "furniture",
+      "current_value": 400.00,
+      "replacement_cost": 700.00,
+      "location_in_room": "Corner near bookshelf",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-009",
+      "name": "Side Table",
+      "category": "furniture",
+      "current_value": 120.00,
+      "replacement_cost": 200.00,
+      "location_in_room": "Next to accent chair",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-010",
+      "name": "Wall Art - Large Canvas",
+      "category": "decor",
+      "current_value": 500.00,
+      "replacement_cost": 500.00,
+      "location_in_room": "South wall above sofa",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-011",
+      "name": "Gaming Console (PlayStation 5)",
+      "category": "electronics",
+      "current_value": 450.00,
+      "replacement_cost": 499.99,
+      "location_in_room": "TV stand cabinet",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-012",
+      "name": "Throw Pillows (Set of 6)",
+      "category": "decor",
+      "current_value": 120.00,
+      "replacement_cost": 180.00,
+      "location_in_room": "On sofa and accent chair",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-013",
+      "name": "Decorative Vases (Set of 3)",
+      "category": "decor",
+      "current_value": 90.00,
+      "replacement_cost": 150.00,
+      "location_in_room": "Bookshelf and coffee table",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-014",
+      "name": "Window Curtains (Set)",
+      "category": "decor",
+      "current_value": 200.00,
+      "replacement_cost": 300.00,
+      "location_in_room": "Two windows on west wall",
+      "high_value": false
+    },
+    {
+      "item_id": "ITEM-015",
+      "name": "Amazon Echo Studio",
+      "category": "electronics",
+      "current_value": 150.00,
+      "replacement_cost": 199.99,
+      "location_in_room": "Bookshelf, middle shelf",
+      "high_value": false
+    }
+  ],
+  "categories": {
+    "electronics": {
+      "count": 4,
+      "total_value": 1750.00,
+      "total_replacement_cost": 2699.96
+    },
+    "furniture": {
+      "count": 5,
+      "total_value": 3520.00,
+      "total_replacement_cost": 5400.00
+    },
+    "decor": {
+      "count": 5,
+      "total_value": 1360.00,
+      "total_replacement_cost": 1930.00
+    },
+    "lighting": {
+      "count": 1,
+      "total_value": 180.00,
+      "total_replacement_cost": 280.00
+    }
+  },
+  "features": {
+    "flooring": "Hardwood",
+    "walls": "Painted drywall",
+    "ceiling": "Standard 9ft",
+    "windows": 2,
+    "doors": 2,
+    "fireplace": true,
+    "built_ins": false,
+    "crown_molding": true
+  },
+  "insurance_notes": "High-value sectional sofa may require separate documentation. All electronics combined exceed $2,000, verify coverage limits.",
+  "maintenance_notes": "Hardwood floors refinished 2023. Fireplace inspected annually.",
+  "last_photos_updated": "2025-01-15",
+  "next_review_date": "2026-01-15"
+}

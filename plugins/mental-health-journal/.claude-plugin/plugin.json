@@ -1,0 +1,33 @@
+{
+  "name": "mental-health-journal",
+  "version": "1.0.0",
+  "description": "Privacy-first mental health tracking and journaling. Daily mood check-ins, therapy journal, pattern analysis, coping strategies, and crisis support. All data local and encrypted.",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "mental-health",
+    "mood-tracking",
+    "journaling",
+    "therapy",
+    "wellness",
+    "coping-strategies",
+    "mindfulness",
+    "privacy",
+    "self-care",
+    "emotional-health"
+  ],
+  "license": "MIT",
+  "privacy": {
+    "data_collection": "none",
+    "storage": "local-only",
+    "third_party_services": "none",
+    "encryption": "optional-gpg"
+  },
+  "health_disclaimer": "This plugin is not a substitute for professional mental health care. If you are in crisis, please contact a crisis hotline or emergency services immediately.",
+  "crisis_resources": {
+    "us": "988",
+    "uk": "116 123",
+    "international": "https://www.befrienders.org"
+  }
+}

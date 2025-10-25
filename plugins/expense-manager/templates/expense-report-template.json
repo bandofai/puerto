@@ -1,0 +1,53 @@
+{
+  "report_id": "EXP-YYYY-NNN",
+  "employee": {
+    "name": "",
+    "id": "",
+    "email": "",
+    "department": "",
+    "manager": ""
+  },
+  "period": {
+    "start_date": "YYYY-MM-DD",
+    "end_date": "YYYY-MM-DD"
+  },
+  "summary": {
+    "total_amount": 0.00,
+    "currency": "USD",
+    "expense_count": 0,
+    "categories": {
+      "Meals & Entertainment": 0.00,
+      "Transportation": 0.00,
+      "Lodging": 0.00,
+      "Supplies": 0.00,
+      "Professional Development": 0.00,
+      "Other": 0.00
+    }
+  },
+  "expenses": [
+    {
+      "expense_id": "EXP-001",
+      "date": "YYYY-MM-DD",
+      "vendor": "",
+      "category": "",
+      "amount": 0.00,
+      "currency": "USD",
+      "payment_method": "",
+      "business_purpose": "",
+      "receipt_path": "",
+      "policy_compliant": true,
+      "notes": ""
+    }
+  ],
+  "policy_checks": {
+    "all_compliant": true,
+    "violations": []
+  },
+  "approval_status": {
+    "status": "draft",
+    "submitted_at": null,
+    "approvers": []
+  },
+  "created_at": "",
+  "updated_at": ""
+}

@@ -1,0 +1,20 @@
+{
+  "name": "expense-manager",
+  "version": "1.0.0",
+  "description": "Comprehensive expense management automation with OCR, policy validation, and approval workflow coordination",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/receipt-analyzer.md",
+    "./agents/expense-processor.md",
+    "./agents/policy-validator.md",
+    "./agents/approval-router.md"
+  ],
+  "skills": [
+    "./skills/expense-processing.md",
+    "./skills/policy-compliance.md",
+    "./skills/approval-workflow.md"
+  ],
+  "license": "MIT"
+}

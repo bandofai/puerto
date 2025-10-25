@@ -1,0 +1,15 @@
+{
+  "date": "YYYY-MM-DD",
+  "timestamp": "ISO-8601 timestamp",
+  "mood": {
+    "overall": 7,
+    "energy": 6,
+    "anxiety": 4,
+    "sleep": 8
+  },
+  "emotions": ["content", "hopeful"],
+  "notes": "Had a productive day. Felt good about completing my project.",
+  "triggers": ["work deadline"],
+  "gratitude": ["sunny weather", "friend's support"],
+  "concerns": []
+}

@@ -1,0 +1,22 @@
+{
+  "name": "sleep-pattern-analyzer",
+  "version": "1.0.0",
+  "description": "Sleep quality analysis and optimization specialist - sleep tracking, pattern recognition, quality insights, and optimization recommendations",
+  "type": "personal",
+  "agents": [
+    "./agents/sleep-logger.md",
+    "./agents/pattern-analyzer.md",
+    "./agents/quality-scorer.md",
+    "./agents/recommendation-engine.md",
+    "./agents/wearable-integrator.md"
+  ],
+  "skills": [
+    "./skills/sleep-tracking.md",
+    "./skills/pattern-analysis.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "repository": "https://github.com/bandofai/puerto",
+  "license": "MIT"
+}

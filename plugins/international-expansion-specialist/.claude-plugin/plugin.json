@@ -1,0 +1,20 @@
+{
+  "name": "international-expansion-specialist",
+  "version": "1.0.0",
+  "description": "Market entry planning specialist for international expansion strategy, regulatory research, and localization planning",
+  "type": "plugin",
+  "agents": [
+    "./agents/market-assessor.md",
+    "./agents/entry-strategist.md",
+    "./agents/regulatory-researcher.md",
+    "./agents/localization-planner.md"
+  ],
+  "skills": [
+    "./skills/market-entry.md",
+    "./skills/localization.md",
+    "./skills/regulatory-compliance.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

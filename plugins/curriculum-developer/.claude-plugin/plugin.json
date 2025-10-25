@@ -1,0 +1,78 @@
+{
+  "name": "curriculum-developer",
+  "version": "1.0.0",
+  "description": "Professional educational curriculum design with instructional frameworks, Bloom's taxonomy, and evidence-based pedagogical practices",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/learning-designer.md",
+    "./agents/course-developer.md",
+    "./agents/assessment-creator.md",
+    "./agents/resource-curator.md"
+  ],
+  "skills": [
+    "./skills/instructional-design.md",
+    "./skills/course-development.md",
+    "./skills/assessment-design.md"
+  ],
+  "workflow": {
+    "recommended_sequence": [
+      "learning-designer",
+      "course-developer",
+      "assessment-creator",
+      "resource-curator"
+    ],
+    "patterns": [
+      {
+        "name": "new-course",
+        "description": "Create new course from scratch",
+        "steps": [
+          "Define learning objectives (@learning-designer)",
+          "Develop course content (@course-developer)",
+          "Create assessments (@assessment-creator)",
+          "Curate resources (@resource-curator)"
+        ]
+      },
+      {
+        "name": "backwards-design",
+        "description": "Design course using Backwards Design approach",
+        "steps": [
+          "Define desired outcomes (@learning-designer)",
+          "Design assessments BEFORE instruction (@assessment-creator)",
+          "Plan learning experiences (@course-developer)",
+          "Find supporting resources (@resource-curator)"
+        ]
+      },
+      {
+        "name": "improve-existing",
+        "description": "Improve existing course",
+        "steps": [
+          "Review objectives for alignment (@learning-designer)",
+          "Add active learning (@course-developer)",
+          "Improve assessments (@assessment-creator)",
+          "Update resources (@resource-curator)"
+        ]
+      }
+    ]
+  },
+  "compatibility": {
+    "min_claude_version": "3.5",
+    "supported_platforms": [
+      "all"
+    ]
+  },
+  "educational_frameworks": [
+    "Bloom's Taxonomy (Revised 2001)",
+    "ADDIE Model",
+    "SAM (Successive Approximation Model)",
+    "Backwards Design (Understanding by Design)",
+    "Universal Design for Learning (UDL)",
+    "Cognitive Load Theory",
+    "Constructive Alignment",
+    "Andragogy (Adult Learning Theory)",
+    "Gagne's Nine Events of Instruction"
+  ],
+  "license": "Puerto Plugin Ecosystem",
+  "documentation": "README.md"
+}

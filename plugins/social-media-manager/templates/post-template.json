@@ -1,0 +1,246 @@
+{
+  "version": "1.0",
+  "template_name": "Multi-Platform Post Template",
+  "description": "Template structure for creating posts across multiple social media platforms",
+
+  "post": {
+    "campaign": {
+      "name": "Campaign Name (e.g., Product Launch Q1)",
+      "start_date": "2025-01-20",
+      "end_date": "2025-01-31",
+      "goals": [
+        "Awareness",
+        "Engagement",
+        "Conversion"
+      ]
+    },
+
+    "core_message": {
+      "main_idea": "The key message you want to communicate",
+      "value_proposition": "What value does this provide to the audience?",
+      "target_audience": "Who is this for? (e.g., B2B SaaS founders, Fitness enthusiasts)",
+      "tone": "Professional | Conversational | Educational | Inspirational | Humorous"
+    },
+
+    "platforms": {
+      "twitter": {
+        "enabled": true,
+        "text": "🚀 Tweet text here (280 characters max)\n\nKeep it concise and engaging.\n\nEnd with a question or CTA.\n\n#Hashtag1 #Hashtag2",
+        "media": [
+          {
+            "type": "image | video | gif",
+            "file": "path/to/media.jpg",
+            "alt_text": "Descriptive alt text for accessibility"
+          }
+        ],
+        "hashtags": [
+          "#Hashtag1",
+          "#Hashtag2",
+          "#Hashtag3"
+        ],
+        "thread": {
+          "is_thread": false,
+          "tweets": [
+            "1/ Thread hook tweet",
+            "2/ Second point",
+            "3/ Conclusion"
+          ]
+        },
+        "scheduled_time": "2025-01-20T09:00:00Z",
+        "tags": [
+          "@Username (if tagging relevant accounts)"
+        ]
+      },
+
+      "linkedin": {
+        "enabled": true,
+        "text": "Compelling hook - first 2 lines are critical\n\nLonger form content works here. Share insights, stories, or data.\n\nUse line breaks generously for readability.\n\nKey takeaways:\n→ Point 1\n→ Point 2\n→ Point 3\n\nWhat's your experience with this? Comment below!\n\n#Hashtag1 #Hashtag2 #Hashtag3 #Hashtag4 #Hashtag5",
+        "media": [
+          {
+            "type": "image | video | document | carousel",
+            "file": "path/to/media.pdf",
+            "description": "Media description"
+          }
+        ],
+        "hashtags": [
+          "#Hashtag1",
+          "#Hashtag2",
+          "#Hashtag3",
+          "#Hashtag4",
+          "#Hashtag5"
+        ],
+        "scheduled_time": "2025-01-20T12:00:00Z",
+        "tags": [
+          "@CompanyName",
+          "@PersonName"
+        ]
+      },
+
+      "instagram": {
+        "enabled": true,
+        "feed_post": {
+          "caption": "Hook that grabs attention 👀\n\nShare value, tell a story, or educate.\n\nUse emojis and line breaks for readability.\n\n✨ Key point 1\n💡 Key point 2\n🎯 Key point 3\n\nCTA: Save this for later!\n\n.\n.\n.\n#Hashtag1 #Hashtag2 #Hashtag3 #Hashtag4 #Hashtag5 #Hashtag6 #Hashtag7 #Hashtag8 #Hashtag9 #Hashtag10 #Hashtag11 #Hashtag12 #Hashtag13 #Hashtag14 #Hashtag15 #Hashtag16 #Hashtag17 #Hashtag18 #Hashtag19 #Hashtag20 #Hashtag21 #Hashtag22 #Hashtag23 #Hashtag24 #Hashtag25 #Hashtag26 #Hashtag27 #Hashtag28 #Hashtag29 #Hashtag30",
+          "media": [
+            {
+              "type": "image | carousel | reel",
+              "file": "path/to/media.jpg",
+              "alt_text": "Descriptive alt text",
+              "aspect_ratio": "1:1 | 4:5 | 9:16"
+            }
+          ],
+          "location": "Optional location tag"
+        },
+        "story": {
+          "enabled": false,
+          "slides": [
+            {
+              "type": "image | video",
+              "file": "path/to/story1.jpg",
+              "stickers": [
+                {
+                  "type": "poll | question | quiz | countdown | slider",
+                  "text": "Sticker text"
+                }
+              ]
+            }
+          ]
+        },
+        "hashtags": [
+          "#Hashtag1",
+          "#Hashtag2",
+          "#Hashtag3"
+        ],
+        "scheduled_time": "2025-01-20T19:00:00Z",
+        "tags": [
+          "@Username"
+        ]
+      },
+
+      "facebook": {
+        "enabled": true,
+        "text": "Attention-grabbing first line.\n\nShort and sweet works best on Facebook (40-80 words ideal).\n\nAsk a question to drive comments!\n\n#Hashtag1 #Hashtag2",
+        "media": [
+          {
+            "type": "image | video | link",
+            "file": "path/to/media.mp4",
+            "description": "Video description"
+          }
+        ],
+        "hashtags": [
+          "#Hashtag1",
+          "#Hashtag2"
+        ],
+        "scheduled_time": "2025-01-20T14:00:00Z",
+        "link": {
+          "url": "https://example.com/article",
+          "headline": "Compelling headline (100 chars)",
+          "description": "Link description (200 chars)"
+        }
+      },
+
+      "tiktok": {
+        "enabled": true,
+        "caption": "POV: You discovered this game-changing tip 🤯\n\nFirst 3 words matter most!\n\n#fyp #foryou #TrendingHashtag #NicheHashtag1 #NicheHashtag2",
+        "video": {
+          "file": "path/to/video.mp4",
+          "duration": "7-15 seconds (ideal for completion rate)",
+          "cover_image": "path/to/cover.jpg",
+          "captions": true,
+          "effects": [
+            "trending_effect_1",
+            "transition_effect_2"
+          ],
+          "sound": {
+            "type": "original | trending",
+            "name": "Trending sound name (if using trending audio)"
+          }
+        },
+        "hashtags": [
+          "#fyp",
+          "#foryou",
+          "#TrendingHashtag",
+          "#NicheHashtag1",
+          "#NicheHashtag2"
+        ],
+        "scheduled_time": "2025-01-20T20:00:00Z"
+      }
+    },
+
+    "visual_assets": {
+      "images": [
+        {
+          "purpose": "Twitter post image",
+          "dimensions": "1200x675px (16:9)",
+          "file": "path/to/twitter-image.jpg",
+          "brand_guidelines": "Include logo, use brand colors"
+        },
+        {
+          "purpose": "Instagram feed image",
+          "dimensions": "1080x1080px (1:1) or 1080x1350px (4:5)",
+          "file": "path/to/instagram-image.jpg",
+          "brand_guidelines": "High quality, on-brand style"
+        },
+        {
+          "purpose": "LinkedIn post image",
+          "dimensions": "1200x627px",
+          "file": "path/to/linkedin-image.jpg",
+          "brand_guidelines": "Professional, clean design"
+        }
+      ],
+      "videos": [
+        {
+          "purpose": "Instagram Reel",
+          "dimensions": "1080x1920px (9:16)",
+          "duration": "15-90 seconds",
+          "file": "path/to/reel.mp4",
+          "requirements": "Captions, trending audio, hook in first 3 seconds"
+        },
+        {
+          "purpose": "TikTok video",
+          "dimensions": "1080x1920px (9:16)",
+          "duration": "7-15 seconds (ideal)",
+          "file": "path/to/tiktok.mp4",
+          "requirements": "Trending sound, text overlays, high retention"
+        }
+      ]
+    },
+
+    "performance_tracking": {
+      "goals": {
+        "reach": "Target reach number",
+        "engagement_rate": "Target engagement rate %",
+        "conversions": "Target conversions (clicks, sign-ups, etc.)"
+      },
+      "utm_parameters": {
+        "utm_source": "social",
+        "utm_medium": "platform_name",
+        "utm_campaign": "campaign_name",
+        "utm_content": "post_description"
+      },
+      "notes": "Any special considerations or A/B test variations"
+    },
+
+    "approval_workflow": {
+      "status": "draft | in_review | approved | scheduled | published",
+      "created_by": "Creator name",
+      "reviewed_by": "Reviewer name",
+      "approved_by": "Approver name",
+      "created_date": "2025-01-15",
+      "approved_date": "2025-01-18",
+      "published_date": "2025-01-20"
+    }
+  },
+
+  "usage_notes": [
+    "Customize each platform's content - don't just copy/paste the same text",
+    "Respect character limits: Twitter (280), LinkedIn (3000 but shorter is better), Instagram (2200)",
+    "Use platform-appropriate tone: LinkedIn (professional), Instagram (casual), TikTok (authentic)",
+    "Include platform-specific features: Twitter threads, LinkedIn carousels, Instagram Reels",
+    "Always include clear CTAs: ask questions, prompt saves/shares, drive clicks",
+    "Track performance with UTM parameters for links",
+    "Add alt text to all images for accessibility",
+    "Use hashtags strategically: Twitter (1-3), LinkedIn (3-5), Instagram (up to 30), TikTok (3-5)",
+    "Schedule posts at optimal times based on platform analytics",
+    "Review and update template based on performance data"
+  ]
+}

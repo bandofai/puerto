@@ -1,0 +1,155 @@
+{
+  "vipSenders": [
+    {
+      "id": "vip-001",
+      "name": "Sarah Johnson",
+      "email": "sarah.johnson@company.com",
+      "tier": 1,
+      "relationship": "Direct Manager",
+      "responseTimeExpectation": "< 2 hours",
+      "notificationSettings": {
+        "desktop": true,
+        "mobile": true,
+        "sound": "vip-tone",
+        "badge": true
+      },
+      "context": {
+        "meetingSchedule": "Monday 1:1s at 10am",
+        "preferredContactMethod": "email for non-urgent, Slack for urgent",
+        "timezone": "EST",
+        "workingHours": "8am-6pm EST",
+        "communicationStyle": "Prefers brief updates with links to detailed docs"
+      },
+      "notes": "Appreciates proactive communication. Doesn't like surprises. Flag blockers immediately."
+    },
+    {
+      "id": "vip-002",
+      "name": "Acme Corp - John Smith",
+      "email": "john.smith@acmecorp.com",
+      "tier": 1,
+      "relationship": "Top Client - Project Lead",
+      "responseTimeExpectation": "< 4 hours",
+      "notificationSettings": {
+        "desktop": true,
+        "mobile": true,
+        "sound": "default",
+        "badge": true
+      },
+      "context": {
+        "meetingSchedule": "Weekly check-ins Thursday 2pm",
+        "preferredContactMethod": "email",
+        "timezone": "PST",
+        "workingHours": "9am-5pm PST",
+        "communicationStyle": "Detail-oriented, likes data and specifics"
+      },
+      "notes": "Largest client account. Critical to company revenue. Very responsive but expects same."
+    },
+    {
+      "id": "vip-003",
+      "name": "Michael Chen",
+      "email": "mchen@company.com",
+      "tier": 2,
+      "relationship": "Team Lead - Engineering",
+      "responseTimeExpectation": "< 8 hours (same day)",
+      "notificationSettings": {
+        "desktop": true,
+        "mobile": false,
+        "sound": "default",
+        "badge": false
+      },
+      "context": {
+        "meetingSchedule": "Daily standups 9:30am, ad-hoc as needed",
+        "preferredContactMethod": "Slack for quick questions, email for decisions",
+        "timezone": "EST",
+        "workingHours": "9am-6pm EST",
+        "communicationStyle": "Direct and concise, no fluff"
+      },
+      "notes": "Technical lead for main project. Needs quick responses on blockers."
+    },
+    {
+      "id": "vip-004",
+      "name": "Jennifer Williams",
+      "email": "jwilliams@partnerfirm.com",
+      "tier": 2,
+      "relationship": "Key Partner - Business Development",
+      "responseTimeExpectation": "< 24 hours",
+      "notificationSettings": {
+        "desktop": true,
+        "mobile": false,
+        "sound": "default",
+        "badge": false
+      },
+      "context": {
+        "meetingSchedule": "Monthly partnership review, first Friday",
+        "preferredContactMethod": "email",
+        "timezone": "CST",
+        "workingHours": "8am-5pm CST",
+        "communicationStyle": "Friendly and relationship-focused"
+      },
+      "notes": "Important for business growth. Sends referrals. Maintain warm relationship."
+    },
+    {
+      "id": "vip-005",
+      "name": "CEO Office",
+      "email": "ceo@company.com",
+      "tier": 1,
+      "relationship": "Executive Leadership",
+      "responseTimeExpectation": "< 1 hour",
+      "notificationSettings": {
+        "desktop": true,
+        "mobile": true,
+        "sound": "urgent-tone",
+        "badge": true
+      },
+      "context": {
+        "meetingSchedule": "As requested",
+        "preferredContactMethod": "email",
+        "timezone": "EST",
+        "workingHours": "7am-8pm EST (often)",
+        "communicationStyle": "Extremely brief, wants bottom-line first"
+      },
+      "notes": "Rarely emails directly but when does, it's important. Drop everything."
+    }
+  ],
+  "summary": {
+    "totalVIPs": 5,
+    "byTier": {
+      "tier1": 3,
+      "tier2": 2,
+      "tier3": 0
+    },
+    "byRelationship": {
+      "management": 2,
+      "clients": 1,
+      "teamMembers": 1,
+      "partners": 1
+    },
+    "averageResponseTime": "3.2 hours",
+    "slaCompliance": "98%"
+  },
+  "settings": {
+    "tier1MaxCount": 5,
+    "tier2MaxCount": 15,
+    "tier3MaxCount": 50,
+    "autoPromoteThreshold": 10,
+    "autoDemoteInactiveDays": 90,
+    "reviewFrequency": "monthly",
+    "nextReview": "2025-11-22"
+  },
+  "escalationRules": {
+    "tier1": {
+      "afterHours": "Send SMS if marked urgent",
+      "weekend": "Check email twice daily",
+      "vacation": "Designate backup responder"
+    },
+    "tier2": {
+      "afterHours": "Can wait until next business day",
+      "weekend": "Can wait until Monday",
+      "vacation": "Auto-responder with backup contact"
+    }
+  },
+  "metadata": {
+    "lastUpdated": "2025-10-22",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "clinical-research-coordinator",
+  "version": "1.0.0",
+  "description": "Clinical trial coordination specialist for study design, patient recruitment, and regulatory compliance",
+  "agents": [
+    "./agents/protocol-designer.md",
+    "./agents/enrollment-manager.md",
+    "./agents/adverse-event-reporter.md",
+    "./agents/compliance-checker.md"
+  ],
+  "skills": [
+    "./skills/clinical-trial-management.md",
+    "./skills/adverse-event-reporting.md",
+    "./skills/regulatory-compliance.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

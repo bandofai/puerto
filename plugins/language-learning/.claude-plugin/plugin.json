@@ -1,0 +1,20 @@
+{
+  "name": "language-learning",
+  "version": "1.0.0",
+  "description": "Your personal AI-powered language learning companion with vocabulary management, spaced repetition, grammar reference, immersion tracking, and milestone progression for comprehensive language mastery.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/grammar-tutor.md",
+    "./agents/milestone-tracker.md",
+    "./agents/conversation-coordinator.md",
+    "./agents/immersion-tracker.md",
+    "./agents/vocabulary-manager.md",
+    "./agents/practice-scheduler.md"
+  ],
+  "skills": [
+    "./skills/language-learning.md"
+  ],
+  "license": "MIT"
+}

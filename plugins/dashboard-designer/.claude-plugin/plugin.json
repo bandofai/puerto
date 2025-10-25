@@ -1,0 +1,17 @@
+{
+  "name": "dashboard-designer",
+  "version": "1.0.0",
+  "description": "Dashboard and reporting design specialist for data visualization, KPI selection and tracking, visualization best practices, report automation, and stakeholder customization",
+  "agents": [
+    "./agents/kpi-selector.md",
+    "./agents/visualization-designer.md",
+    "./agents/dashboard-builder.md",
+    "./agents/report-automator.md"
+  ],
+  "skills": [
+    "./skills/dashboard-design.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

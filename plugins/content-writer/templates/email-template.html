@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>{{email_subject}}</title>
+
+    <!--[if mso]>
+    <style>
+        * { font-family: Arial, sans-serif !important; }
+    </style>
+    <![endif]-->
+
+    <style>
+        /* Reset styles */
+        body, table, td, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        /* Base styles */
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100% !important;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f4f4f4;
+        }
+
+        /* Container */
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        /* Header */
+        .header {
+            padding: 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .logo {
+            max-width: 180px;
+            height: auto;
+        }
+
+        /* Content */
+        .content {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            margin: 0 0 20px 0;
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 1.3;
+            color: #222222;
+        }
+
+        h2 {
+            margin: 30px 0 15px 0;
+            font-size: 22px;
+            font-weight: bold;
+            color: #222222;
+        }
+
+        p {
+            margin: 0 0 15px 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .greeting {
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 0 0 15px 20px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        /* Button */
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: #0066cc;
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0052a3;
+        }
+
+        .button-secondary {
+            background-color: #f0f0f0;
+            color: #333333 !important;
+        }
+
+        .button-secondary:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Highlighted box */
+        .highlight-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #0066cc;
+            padding: 15px 20px;
+            margin: 20px 0;
+        }
+
+        /* Image */
+        .content-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        /* Divider */
+        .divider {
+            border: 0;
+            height: 1px;
+            background-color: #e0e0e0;
+            margin: 30px 0;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 30px 20px;
+            text-align: center;
+            background-color: #f8f9fa;
+            color: #666666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .footer p {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+
+        .social-links {
+            margin: 15px 0;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+
+        /* Mobile responsive */
+        @media only screen and (max-width: 600px) {
+            .email-container {
+                width: 100% !important;
+            }
+
+            .content {
+                padding: 20px 15px !important;
+            }
+
+            h1 {
+                font-size: 24px !important;
+            }
+
+            h2 {
+                font-size: 20px !important;
+            }
+
+            .button {
+                display: block !important;
+                width: 100% !important;
+                padding: 12px 20px !important;
+                box-sizing: border-box;
+            }
+
+            .button-container {
+                margin: 20px 0 !important;
+            }
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            .email-container {
+                background-color: #1a1a1a !important;
+            }
+
+            body {
+                background-color: #0d0d0d !important;
+            }
+
+            h1, h2, p, li {
+                color: #e0e0e0 !important;
+            }
+
+            .footer {
+                background-color: #2a2a2a !important;
+                color: #b0b0b0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preview text (hidden but visible in inbox preview) -->
+    <div style="display: none; max-height: 0px; overflow: hidden;">
+        {{preview_text}}
+    </div>
+
+    <!-- Main container -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+            <td style="padding: 20px 0;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="email-container">
+
+                    <!-- Header -->
+                    <tr>
+                        <td class="header">
+                            <img src="{{logo_url}}" alt="{{company_name}}" class="logo" width="180">
+                        </td>
+                    </tr>
+
+                    <!-- Main content -->
+                    <tr>
+                        <td class="content">
+
+                            <!-- Headline -->
+                            <h1>{{headline}}</h1>
+
+                            <!-- Greeting -->
+                            <p class="greeting">Hi {{first_name}},</p>
+
+                            <!-- Opening paragraph -->
+                            <p>{{opening_paragraph}}</p>
+
+                            <!-- Main content paragraphs -->
+                            <p>{{content_paragraph_1}}</p>
+
+                            <!-- Optional: Highlighted box for important info -->
+                            <!-- <div class="highlight-box">
+                                <p style="margin: 0;"><strong>{{highlight_title}}</strong></p>
+                                <p style="margin: 5px 0 0 0;">{{highlight_content}}</p>
+                            </div> -->
+
+                            <!-- Optional: Bullet points -->
+                            <!-- <p>{{list_intro}}:</p>
+                            <ul>
+                                <li>{{list_item_1}}</li>
+                                <li>{{list_item_2}}</li>
+                                <li>{{list_item_3}}</li>
+                            </ul> -->
+
+                            <p>{{content_paragraph_2}}</p>
+
+                            <!-- Optional: Image -->
+                            <!-- <img src="{{image_url}}" alt="{{image_alt_text}}" class="content-image"> -->
+
+                            <!-- Primary CTA button -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <tr>
+                                    <td class="button-container">
+                                        <a href="{{cta_url}}" class="button">{{cta_text}}</a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Additional context after CTA -->
+                            <p>{{post_cta_paragraph}}</p>
+
+                            <!-- Optional: Secondary CTA or text link -->
+                            <!-- <p style="text-align: center;">
+                                <a href="{{secondary_url}}" style="color: #0066cc; text-decoration: underline;">{{secondary_cta_text}}</a>
+                            </p> -->
+
+                            <hr class="divider">
+
+                            <!-- Closing -->
+                            <p>{{closing_paragraph}}</p>
+
+                            <!-- Signature -->
+                            <p>
+                                {{signature_line_1}}<br>
+                                {{signature_name}}<br>
+                                {{signature_title}}
+                            </p>
+
+                            <!-- P.S. (optional but highly effective) -->
+                            <!-- <p><strong>P.S.</strong> {{ps_content}}</p> -->
+
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td class="footer">
+
+                            <!-- Company info -->
+                            <p><strong>{{company_name}}</strong></p>
+                            <p>{{company_address_line_1}}<br>
+                               {{company_address_line_2}}</p>
+
+                            <!-- Social links -->
+                            <!-- <div class="social-links">
+                                <a href="{{facebook_url}}">Facebook</a> |
+                                <a href="{{twitter_url}}">Twitter</a> |
+                                <a href="{{linkedin_url}}">LinkedIn</a> |
+                                <a href="{{instagram_url}}">Instagram</a>
+                            </div> -->
+
+                            <!-- Preference links -->
+                            <p>
+                                <a href="{{unsubscribe_url}}">Unsubscribe</a> |
+                                <a href="{{preferences_url}}">Update Preferences</a> |
+                                <a href="{{view_online_url}}">View in Browser</a>
+                            </p>
+
+                            <!-- Legal/compliance text -->
+                            <p style="font-size: 12px; color: #999999; margin-top: 15px;">
+                                You're receiving this email because you subscribed to {{company_name}} updates.
+                                We respect your privacy and will never share your information.
+                            </p>
+
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Tracking pixel -->
+    <!-- <img src="{{tracking_pixel_url}}" width="1" height="1" alt="" style="display:none"> -->
+
+</body>
+</html>
+
+<!--
+
+PLAIN TEXT VERSION
+(Include this in a separate file: email-template-plain.txt)
+
+{{email_subject}}
+
+Hi {{first_name}},
+
+{{opening_paragraph}}
+
+{{content_paragraph_1}}
+
+{{content_paragraph_2}}
+
+{{cta_text}}
+→ {{cta_url}}
+
+{{post_cta_paragraph}}
+
+{{closing_paragraph}}
+
+{{signature_line_1}}
+{{signature_name}}
+{{signature_title}}
+
+P.S. {{ps_content}}
+
+---
+
+{{company_name}}
+{{company_address_line_1}}
+{{company_address_line_2}}
+
+Unsubscribe: {{unsubscribe_url}}
+Update Preferences: {{preferences_url}}
+View in Browser: {{view_online_url}}
+
+You're receiving this email because you subscribed to {{company_name}} updates.
+
+-->
+
+<!--
+
+TEMPLATE USAGE GUIDE
+
+PERSONALIZATION TOKENS:
+- {{first_name}} - Recipient's first name
+- {{last_name}} - Recipient's last name
+- {{email}} - Recipient's email address
+- {{company}} - Recipient's company name
+- {{custom_field}} - Any custom field from your ESP
+
+CONTENT PLACEHOLDERS TO REPLACE:
+- {{email_subject}} - Subject line
+- {{preview_text}} - Preview text (40-100 characters)
+- {{logo_url}} - URL to your logo image
+- {{company_name}} - Your company name
+- {{headline}} - Main email headline
+- {{opening_paragraph}} - First paragraph after greeting
+- {{content_paragraph_1}} - Main content
+- {{content_paragraph_2}} - Additional content
+- {{cta_url}} - Primary call-to-action link
+- {{cta_text}} - CTA button text
+- {{post_cta_paragraph}} - Content after CTA
+- {{closing_paragraph}} - Final paragraph before signature
+- {{signature_line_1}} - Signature opening line
+- {{signature_name}} - Signer's name
+- {{signature_title}} - Signer's title/role
+- {{company_address_line_1}} - Company address
+- {{company_address_line_2}} - City, state, zip
+- {{unsubscribe_url}} - Unsubscribe link
+- {{preferences_url}} - Preference center link
+- {{view_online_url}} - Web version link
+
+OPTIONAL ELEMENTS (commented out - uncomment to use):
+- Highlighted box for special offers or important info
+- Bullet point lists
+- Content images
+- Secondary CTA
+- P.S. section (highly recommended for engagement)
+- Social media links
+- Tracking pixel
+
+CUSTOMIZATION TIPS:
+
+1. COLOR SCHEME:
+   - Primary button: #0066cc (change to your brand color)
+   - Secondary button: #f0f0f0
+   - Links: #0066cc
+   - Background: #f4f4f4
+   - Content background: #ffffff
+
+2. BUTTON STYLES:
+   - .button = Primary CTA (use once per email)
+   - .button-secondary = Less prominent CTA
+   - Adjust padding, border-radius, colors as needed
+
+3. MOBILE OPTIMIZATION:
+   - Already responsive (tested on iOS and Android)
+   - Buttons go full-width on mobile
+   - Font sizes scale appropriately
+   - Touch targets are 44px minimum
+
+4. DARK MODE:
+   - Styles included for dark mode support
+   - Test in Apple Mail and Outlook with dark mode
+
+5. EMAIL CLIENT COMPATIBILITY:
+   - Tested in: Gmail, Outlook, Apple Mail, Yahoo, mobile clients
+   - MSO conditionals included for Outlook
+   - Inline CSS for maximum compatibility
+
+TESTING CHECKLIST:
+- [ ] Preview text shows correctly in inbox
+- [ ] All personalization tokens work
+- [ ] Links are correct and tracked
+- [ ] Unsubscribe link works (required by law)
+- [ ] Images load (or have appropriate alt text)
+- [ ] Mobile responsive (test on actual device)
+- [ ] Dark mode appearance (if targeting iOS users)
+- [ ] Spam score is acceptable (<5 on Mail-Tester)
+- [ ] Plain text version is included
+- [ ] Subject line is compelling (A/B test variants)
+
+ACCESSIBILITY:
+- Alt text for all images
+- Semantic HTML structure
+- Sufficient color contrast (4.5:1 minimum)
+- Text content (not just images)
+- Links are descriptive
+
+DELIVERABILITY BEST PRACTICES:
+- Text-to-image ratio: 60:40 (more text)
+- Include plain text version
+- Authenticate domain (SPF, DKIM, DMARC)
+- Use real "From" name and address
+- Avoid spam trigger words in subject
+- Include physical address (required by CAN-SPAM)
+- Easy unsubscribe process
+
+-->

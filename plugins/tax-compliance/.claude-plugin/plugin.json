@@ -1,0 +1,28 @@
+{
+  "name": "tax-compliance",
+  "version": "1.0.0",
+  "description": "Professional tax obligation tracking, filing preparation, and regulatory compliance for Claude Code",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "tax",
+    "compliance",
+    "filing",
+    "regulation",
+    "obligations",
+    "deadlines",
+    "audit",
+    "irs",
+    "accounting"
+  ],
+  "license": "MIT",
+  "configuration": {
+    "data_directory": ".claude/tax-compliance",
+    "alert_thresholds": {
+      "advance": 30,
+      "urgent": 7,
+      "critical": 1
+    }
+  }
+}

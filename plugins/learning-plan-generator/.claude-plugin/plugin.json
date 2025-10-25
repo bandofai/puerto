@@ -1,0 +1,22 @@
+{
+  "name": "learning-plan-generator",
+  "version": "1.0.0",
+  "description": "Production-ready personalized learning curriculum with spaced repetition scheduling, knowledge assessment, and skill tree visualization",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/learning-architect.md",
+    "./agents/schedule-optimizer.md",
+    "./agents/progress-tracker.md",
+    "./agents/knowledge-tester.md",
+    "./agents/resource-curator.md"
+  ],
+  "skills": [
+    "./skills/knowledge-assessment.md",
+    "./skills/spaced-repetition.md",
+    "./skills/resource-curation.md",
+    "./skills/curriculum-design.md"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "insurance-underwriter",
+  "version": "1.0.0",
+  "description": "A comprehensive insurance underwriting system providing professional risk assessment, policy pricing, claims analysis, and renewal evaluation capabilities.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/claims-analyzer.md",
+    "./agents/policy-pricer.md",
+    "./agents/renewal-evaluator.md",
+    "./agents/risk-assessor.md",
+    "./agents/underwriting-orchestrator.md"
+  ],
+  "skills": [
+    "./skills/claims-analysis.md",
+    "./skills/policy-pricing.md",
+    "./skills/risk-assessment.md"
+  ],
+  "license": "MIT"
+}

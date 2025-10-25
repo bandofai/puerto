@@ -1,0 +1,61 @@
+{
+  "taxYear": 2025,
+  "filingStatus": "single",
+  "documents": {
+    "income": [
+      {
+        "name": "W-2 Wage and Tax Statement",
+        "source": "Employer",
+        "deadline": "2026-01-31",
+        "received": false,
+        "critical": true
+      },
+      {
+        "name": "1099-INT Interest Income",
+        "source": "Banks",
+        "deadline": "2026-02-15",
+        "received": false,
+        "critical": false
+      },
+      {
+        "name": "1099-DIV Dividend Income",
+        "source": "Brokerage",
+        "deadline": "2026-02-15",
+        "received": false,
+        "critical": false
+      },
+      {
+        "name": "1099-B Stock Sales",
+        "source": "Brokerage",
+        "deadline": "2026-02-15",
+        "received": false,
+        "critical": true
+      }
+    ],
+    "deductions": [
+      {
+        "name": "Mortgage Interest 1098",
+        "source": "Lender",
+        "deadline": "2026-01-31",
+        "received": false,
+        "critical": false
+      },
+      {
+        "name": "Property Tax Statement",
+        "source": "County",
+        "deadline": "2026-03-31",
+        "received": false,
+        "critical": false
+      },
+      {
+        "name": "Charitable Donation Receipts",
+        "source": "Various",
+        "deadline": "2026-04-15",
+        "received": false,
+        "critical": false
+      }
+    ]
+  },
+  "filingDeadline": "2026-04-15",
+  "extensionDeadline": "2026-10-15"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "chore-scheduler",
+  "version": "1.0.0",
+  "description": "Household chore coordination and task distribution manager with fair rotation, completion tracking, and accountability",
+  "author": {
+    "name": "Puerto"
+  },
+  "agents": [
+    "./agents/rotation-planner.md",
+    "./agents/task-tracker.md",
+    "./agents/fairness-analyzer.md"
+  ],
+  "skills": [
+    "./skills/household-management.md"
+  ],
+  "data_directories": [
+    "data/rotations",
+    "data/tasks",
+    "data/history"
+  ],
+  "category": "personal-agent"
+}

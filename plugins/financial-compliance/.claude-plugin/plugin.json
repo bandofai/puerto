@@ -1,0 +1,18 @@
+{
+  "name": "financial-compliance",
+  "version": "1.0.0",
+  "description": "Financial services compliance specialist handling SEC, FINRA, AML/KYC compliance and regulatory reporting.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/trading-monitor.md",
+    "./agents/aml-kyc-specialist.md",
+    "./agents/audit-coordinator.md",
+    "./agents/filing-preparer.md"
+  ],
+  "skills": [
+    "./skills/financial-regulations.md"
+  ],
+  "license": "MIT"
+}

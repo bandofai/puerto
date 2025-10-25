@@ -1,0 +1,20 @@
+{
+  "name": "budget-analyst",
+  "version": "1.0.0",
+  "description": "Budget monitoring and planning specialist for variance analysis, spend tracking, forecasting, and optimization",
+  "author": {
+    "name": "Puerto Marketplace"
+  },
+  "category": "finance",
+  "agents": [
+    "./agents/budget-analyst.md"
+  ],
+  "skills": [
+    "./skills/budget-analysis.md"
+  ],
+  "requirements": {
+    "model": "sonnet",
+    "min_tokens": 10000
+  },
+  "license": "MIT"
+}

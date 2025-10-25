@@ -1,0 +1,17 @@
+{
+  "name": "product-analyst",
+  "version": "1.0.0",
+  "description": "Product analytics specialist",
+  "agents": [
+    "./agents/metrics-tracker.md",
+    "./agents/funnel-analyzer.md",
+    "./agents/experiment-analyzer.md"
+  ],
+  "skills": [
+    "./skills/product-metrics.md",
+    "./skills/experimentation.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

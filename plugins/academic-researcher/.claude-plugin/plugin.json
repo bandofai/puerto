@@ -1,0 +1,19 @@
+{
+  "name": "academic-researcher",
+  "version": "1.0.0",
+  "description": "Academic research support specialist for literature review, methodology design, and citation management",
+  "agents": [
+    "./agents/literature-searcher.md",
+    "./agents/methodology-designer.md",
+    "./agents/citation-manager.md",
+    "./agents/literature-reviewer.md"
+  ],
+  "skills": [
+    "./skills/literature-review.md",
+    "./skills/research-methodology.md",
+    "./skills/citation-management.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

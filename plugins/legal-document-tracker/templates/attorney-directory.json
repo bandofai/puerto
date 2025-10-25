@@ -1,0 +1,278 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Attorney and Legal Contact Directory",
+  "description": "Comprehensive database of attorneys, law firms, and legal contacts",
+  "attorneys": [
+    {
+      "id": "atty-001",
+      "name": "Jane Doe",
+      "title": "Partner",
+      "firm": "Doe & Associates LLP",
+      "specialty": ["employment-law", "contract-law", "business-law"],
+      "barNumber": "CA-123456",
+      "jurisdiction": ["California", "New York"],
+      "contact": {
+        "phone": "+1-555-0100",
+        "fax": "+1-555-0101",
+        "email": "jdoe@doeassociates.com",
+        "website": "https://www.doeassociates.com"
+      },
+      "office": {
+        "address": "123 Legal Plaza, Suite 500",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90001",
+        "country": "USA"
+      },
+      "assistant": {
+        "name": "Sarah Johnson",
+        "phone": "+1-555-0102",
+        "email": "sjohnson@doeassociates.com"
+      },
+      "practiceAreas": [
+        "Employment contracts and disputes",
+        "Non-compete agreements",
+        "Wrongful termination",
+        "Business formation and contracts",
+        "Contract negotiation and review"
+      ],
+      "credentials": {
+        "lawSchool": "Harvard Law School",
+        "graduationYear": 2005,
+        "admissionYear": 2006,
+        "certifications": ["CELA - Certified Employment Law Attorney"]
+      },
+      "experience": {
+        "yearsOfPractice": 19,
+        "notableCases": [
+          "Smith v. Acme Corp - $2.5M wrongful termination settlement",
+          "Johnson Employment Agreement - Fortune 500 executive contract"
+        ],
+        "clientTypes": ["Individuals", "Small businesses", "Executives"]
+      },
+      "fees": {
+        "hourlyRate": 450,
+        "consultationFee": 200,
+        "retainer": 5000,
+        "billingIncrement": 0.1,
+        "currency": "USD"
+      },
+      "availability": {
+        "responseTime": "24 hours",
+        "languages": ["English", "Spanish"],
+        "acceptingNewClients": true
+      },
+      "relationship": {
+        "since": "2020-03-15",
+        "casesHandled": 5,
+        "currentlyRetained": true,
+        "rating": 5,
+        "notes": "Excellent employment law attorney. Very responsive and thorough."
+      },
+      "relatedContracts": ["contract-001"],
+      "relatedCases": ["Case #2024-CV-12345"]
+    },
+    {
+      "id": "atty-002",
+      "name": "John Smith",
+      "title": "Senior Attorney",
+      "firm": "Personal Injury Law Group",
+      "specialty": ["personal-injury", "medical-malpractice", "auto-accidents"],
+      "barNumber": "CA-789012",
+      "jurisdiction": ["California"],
+      "contact": {
+        "phone": "+1-555-0200",
+        "fax": "+1-555-0201",
+        "email": "jsmith@pilawgroup.com",
+        "website": "https://www.pilawgroup.com"
+      },
+      "office": {
+        "address": "456 Injury Avenue, Floor 10",
+        "city": "San Diego",
+        "state": "CA",
+        "zip": "92101",
+        "country": "USA"
+      },
+      "assistant": {
+        "name": "Maria Garcia",
+        "phone": "+1-555-0202",
+        "email": "mgarcia@pilawgroup.com"
+      },
+      "practiceAreas": [
+        "Auto accident injuries",
+        "Slip and fall cases",
+        "Medical malpractice",
+        "Product liability",
+        "Wrongful death"
+      ],
+      "credentials": {
+        "lawSchool": "UCLA School of Law",
+        "graduationYear": 2008,
+        "admissionYear": 2009,
+        "certifications": ["CAALA - Consumer Attorneys Association of Los Angeles"]
+      },
+      "experience": {
+        "yearsOfPractice": 16,
+        "notableCases": [
+          "Martinez v. Trucking Co - $8.5M verdict",
+          "Lee Medical Malpractice - $3.2M settlement"
+        ],
+        "clientTypes": ["Individuals", "Families"]
+      },
+      "fees": {
+        "contingencyPercent": 33.33,
+        "consultationFee": 0,
+        "notes": "Contingency fee basis - no fee unless we win",
+        "currency": "USD"
+      },
+      "availability": {
+        "responseTime": "Same day",
+        "languages": ["English", "Spanish", "Mandarin"],
+        "acceptingNewClients": true
+      },
+      "relationship": {
+        "since": "2024-01-10",
+        "casesHandled": 1,
+        "currentlyRetained": true,
+        "rating": 5,
+        "notes": "Highly recommended by friend. Specializes in auto accidents. Very compassionate."
+      },
+      "relatedContracts": [],
+      "relatedCases": ["Auto accident case - pending filing"]
+    },
+    {
+      "id": "atty-003",
+      "name": "Emily Chen",
+      "title": "Of Counsel",
+      "firm": "Tech Law Partners",
+      "specialty": ["intellectual-property", "technology-law", "startup-law"],
+      "barNumber": "CA-345678",
+      "jurisdiction": ["California", "Federal Courts"],
+      "contact": {
+        "phone": "+1-555-0300",
+        "fax": "+1-555-0301",
+        "email": "echen@techlawpartners.com",
+        "website": "https://www.techlawpartners.com"
+      },
+      "office": {
+        "address": "789 Innovation Drive, Suite 300",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94105",
+        "country": "USA"
+      },
+      "assistant": {
+        "name": "David Lee",
+        "phone": "+1-555-0302",
+        "email": "dlee@techlawpartners.com"
+      },
+      "practiceAreas": [
+        "Patent prosecution",
+        "Trademark registration and disputes",
+        "Copyright law",
+        "Open source licensing",
+        "Startup legal formation and funding"
+      ],
+      "credentials": {
+        "lawSchool": "Stanford Law School",
+        "graduationYear": 2010,
+        "admissionYear": 2011,
+        "certifications": ["Patent Bar - USPTO Registered Patent Attorney"],
+        "technicalBackground": "BS in Computer Science, MIT"
+      },
+      "experience": {
+        "yearsOfPractice": 14,
+        "notableCases": [
+          "TechStartup v. MegaCorp - Patent infringement defense",
+          "AppCo Trademark Portfolio - 50+ trademark registrations"
+        ],
+        "clientTypes": ["Startups", "Tech companies", "Individual inventors"]
+      },
+      "fees": {
+        "hourlyRate": 550,
+        "consultationFee": 0,
+        "flatFeeServices": {
+          "trademarkApplication": 1500,
+          "provisionalPatent": 3000,
+          "llcFormation": 2500
+        },
+        "billingIncrement": 0.1,
+        "currency": "USD"
+      },
+      "availability": {
+        "responseTime": "48 hours",
+        "languages": ["English", "Mandarin"],
+        "acceptingNewClients": true
+      },
+      "relationship": {
+        "since": null,
+        "casesHandled": 0,
+        "currentlyRetained": false,
+        "rating": null,
+        "notes": "Referral from business colleague. Specializes in tech startups and IP. Consultation scheduled for Feb 2025."
+      },
+      "relatedContracts": [],
+      "relatedCases": []
+    }
+  ],
+  "lawFirms": [
+    {
+      "id": "firm-001",
+      "name": "Doe & Associates LLP",
+      "type": "Partnership",
+      "size": "Medium (25-50 attorneys)",
+      "founded": 1995,
+      "contact": {
+        "mainPhone": "+1-555-0100",
+        "mainFax": "+1-555-0101",
+        "email": "info@doeassociates.com",
+        "website": "https://www.doeassociates.com"
+      },
+      "headquarters": {
+        "address": "123 Legal Plaza, Suite 500",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90001",
+        "country": "USA"
+      },
+      "offices": ["Los Angeles", "San Francisco", "New York"],
+      "practiceAreas": [
+        "Employment Law",
+        "Business Law",
+        "Contract Law",
+        "Litigation",
+        "Corporate Transactions"
+      ],
+      "attorneys": ["atty-001"],
+      "notes": "Well-established firm with excellent reputation in employment law"
+    }
+  ],
+  "_metadata": {
+    "version": "1.0",
+    "lastUpdated": "2025-01-22",
+    "totalAttorneys": 3,
+    "currentlyRetained": 2,
+    "totalFirms": 1
+  },
+  "_instructions": {
+    "usage": "Maintain comprehensive records of all attorneys and legal contacts for quick reference.",
+    "location": "Can be stored in versions.json under 'attorneys' key or as separate file",
+    "privacyNote": "This file contains sensitive contact information. Store securely and limit access.",
+    "specialtyValues": [
+      "employment-law",
+      "personal-injury",
+      "intellectual-property",
+      "family-law",
+      "criminal-defense",
+      "real-estate",
+      "tax-law",
+      "business-law",
+      "contract-law",
+      "litigation",
+      "estate-planning",
+      "immigration",
+      "bankruptcy",
+      "other"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "content-creation-pipeline",
+  "version": "1.0.0",
+  "description": "Complete content planning and publishing workflow specialist with idea capture, calendar planning, draft tracking, multi-platform posting, and performance analytics",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": ["content", "publishing", "workflow", "calendar", "analytics", "social-media", "blog", "newsletter"],
+  "license": "MIT"
+}

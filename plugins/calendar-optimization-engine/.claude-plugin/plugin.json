@@ -1,0 +1,23 @@
+{
+  "name": "calendar-optimization-engine",
+  "version": "1.0.0",
+  "description": "Intelligent calendar management with conflict detection, meeting efficiency analysis, and time-blocking optimization",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/calendar-analytics.md",
+    "./agents/meeting-efficiency-analyzer.md",
+    "./agents/calendar-connector.md",
+    "./agents/time-block-optimizer.md",
+    "./agents/conflict-detector.md"
+  ],
+  "skills": [
+    "./skills/calendar-integration.md",
+    "./skills/time-blocking.md",
+    "./skills/meeting-efficiency.md",
+    "./skills/calendar-analytics.md",
+    "./skills/conflict-detection.md"
+  ],
+  "license": "MIT"
+}

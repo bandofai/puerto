@@ -1,0 +1,204 @@
+{
+  "matrix_id": "comparison-matrix-YYYYMMDD-HHMMSS",
+  "research_id": "research-YYYYMMDD-HHMMSS",
+  "created_date": "ISO-8601 timestamp",
+  "matrix_type": "feature-comparison",
+
+  "alternatives": [
+    {
+      "id": "alt1",
+      "name": "Alternative 1 Name",
+      "position": 1,
+      "overall_score": "4.2/5.0",
+      "rank": 1
+    },
+    {
+      "id": "alt2",
+      "name": "Alternative 2 Name",
+      "position": 2,
+      "overall_score": "3.9/5.0",
+      "rank": 2
+    },
+    {
+      "id": "alt3",
+      "name": "Alternative 3 Name",
+      "position": 3,
+      "overall_score": "3.5/5.0",
+      "rank": 3
+    }
+  ],
+
+  "comparison_categories": [
+    {
+      "category_name": "Core Features",
+      "weight": 0.30,
+      "features": [
+        {
+          "feature_name": "Feature 1 name",
+          "importance": "critical|high|medium|low",
+          "alternatives": {
+            "alt1": {
+              "status": "full|partial|none|unknown",
+              "status_symbol": "✅|🟡|❌|❓",
+              "details": "Detailed description of implementation",
+              "limitations": "Any limitations or caveats",
+              "since_version": "Version when added",
+              "source": "Citation to where this was verified"
+            },
+            "alt2": {
+              "status": "full",
+              "status_symbol": "✅",
+              "details": "Implementation details",
+              "limitations": "None noted",
+              "since_version": "1.0",
+              "source": "https://..."
+            },
+            "alt3": {
+              "status": "none",
+              "status_symbol": "❌",
+              "details": "Not available",
+              "limitations": "Feature does not exist",
+              "roadmap_note": "Planned for Q3 2025",
+              "source": "https://..."
+            }
+          },
+          "winner": "alt1, alt2",
+          "analysis": "Alt1 and Alt2 both offer this feature fully. Alt3 lacks it but has on roadmap."
+        },
+        {
+          "feature_name": "Feature 2 name",
+          "importance": "high",
+          "alternatives": {
+            "alt1": {},
+            "alt2": {},
+            "alt3": {}
+          },
+          "winner": "alt1",
+          "analysis": "Comparison insight"
+        }
+      ]
+    },
+    {
+      "category_name": "Usability & UX",
+      "weight": 0.20,
+      "features": []
+    },
+    {
+      "category_name": "Performance",
+      "weight": 0.15,
+      "features": []
+    },
+    {
+      "category_name": "Pricing & Value",
+      "weight": 0.20,
+      "features": [
+        {
+          "feature_name": "Starting price",
+          "importance": "high",
+          "alternatives": {
+            "alt1": {
+              "status": "full",
+              "details": "$99/month for Pro tier",
+              "notes": "Annual billing gives 20% discount",
+              "source": "https://..."
+            },
+            "alt2": {
+              "status": "full",
+              "details": "$149/month for Standard tier",
+              "notes": "No annual discount",
+              "source": "https://..."
+            },
+            "alt3": {
+              "status": "full",
+              "details": "$79/month for Business tier",
+              "notes": "Free tier available with limits",
+              "source": "https://..."
+            }
+          },
+          "winner": "alt3",
+          "analysis": "Alt3 has lowest starting price and offers free tier. Alt1 competitive with annual discount."
+        }
+      ]
+    },
+    {
+      "category_name": "Support & Documentation",
+      "weight": 0.10,
+      "features": []
+    },
+    {
+      "category_name": "Security & Compliance",
+      "weight": 0.05,
+      "features": []
+    }
+  ],
+
+  "summary": {
+    "feature_parity": {
+      "description": "Features where all alternatives are equivalent",
+      "features": [
+        "Feature X - all offer full support",
+        "Feature Y - all meet requirement"
+      ]
+    },
+    "unique_capabilities": {
+      "alt1": [
+        "Unique feature A",
+        "Exclusive integration B"
+      ],
+      "alt2": [
+        "Unique feature C"
+      ],
+      "alt3": [
+        "Unique feature D",
+        "Exclusive capability E"
+      ]
+    },
+    "notable_gaps": {
+      "across_all": [
+        "Feature that none of the alternatives offer",
+        "Capability missing from entire category"
+      ],
+      "by_alternative": {
+        "alt1": [
+          "Missing feature X",
+          "Lacks capability Y"
+        ],
+        "alt2": [
+          "Missing feature Z"
+        ],
+        "alt3": [
+          "Missing features A, B, C"
+        ]
+      }
+    },
+    "clear_winners": {
+      "category": "Category where one alternative dominates",
+      "winner": "alt1",
+      "reason": "Superior in X, Y, Z features"
+    }
+  },
+
+  "visualization_notes": {
+    "symbol_legend": {
+      "✅": "Fully supported / Excellent",
+      "🟡": "Partially supported / Good / Limited",
+      "❌": "Not supported / Poor / Missing",
+      "➖": "Not applicable",
+      "❓": "Unknown / Insufficient data"
+    },
+    "color_coding": {
+      "green": "Advantage / Strength",
+      "yellow": "Neutral / Partial",
+      "red": "Disadvantage / Weakness",
+      "gray": "Not applicable"
+    }
+  },
+
+  "metadata": {
+    "total_features_compared": 0,
+    "categories": 0,
+    "data_sources": 0,
+    "last_updated": "ISO-8601 timestamp",
+    "completeness": "percentage of cells with data"
+  }
+}

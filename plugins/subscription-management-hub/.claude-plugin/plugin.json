@@ -1,0 +1,10 @@
+{
+  "name": "subscription-management-hub",
+  "version": "1.0.0",
+  "description": "Comprehensive subscription tracking and cost optimization system with renewal alerts, usage analysis, and cancellation management",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": ["subscription", "cost-optimization", "renewal", "tracking", "budget", "finance", "monitoring"],
+  "license": "MIT"
+}

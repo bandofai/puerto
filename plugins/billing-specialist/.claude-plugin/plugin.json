@@ -1,0 +1,21 @@
+{
+  "name": "billing-specialist",
+  "version": "1.0.0",
+  "description": "Comprehensive billing and invoicing automation with SOX compliance, ASC 606 revenue recognition, and accounts receivable management.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/invoice-generator.md",
+    "./agents/dispute-resolver.md",
+    "./agents/payment-tracker.md",
+    "./agents/dunning-manager.md",
+    "./agents/revenue-recognizer.md"
+  ],
+  "skills": [
+    "./skills/invoice-generation.md",
+    "./skills/payment-tracking.md",
+    "./skills/dunning-management.md"
+  ],
+  "license": "MIT"
+}

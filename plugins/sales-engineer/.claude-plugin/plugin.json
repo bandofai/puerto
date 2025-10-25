@@ -1,0 +1,65 @@
+{
+  "name": "sales-engineer",
+  "version": "1.0.0",
+  "description": "Technical sales support specialist for demos, documents, solution architecture, and ROI calculations",
+  "author": {
+    "name": "Puerto"
+  },
+  "license": "MIT",
+  "agents": [
+    "./agents/sales-engineer.md"
+  ],
+  "skills": [
+    "./skills/sales-engineering.md"
+  ],
+  "category": "work-agent",
+  "keywords": [
+    "sales engineering",
+    "technical sales",
+    "presales",
+    "demos",
+    "POC",
+    "proof of concept",
+    "technical documents",
+    "solution architecture",
+    "ROI calculation",
+    "business case",
+    "technical questions",
+    "integration guides",
+    "security documentation",
+    "compliance",
+    "HIPAA",
+    "SOC 2",
+    "GDPR",
+    "enterprise sales"
+  ],
+  "use_cases": [
+    "Create technical overview documents for CTOs and technical decision-makers",
+    "Prepare demo scenarios and scripts for sales presentations",
+    "Answer technical questions during sales cycles",
+    "Design solution architecture proposals with diagrams",
+    "Calculate ROI and build business cases with financial models",
+    "Create POC (proof of concept) plans with success criteria",
+    "Generate integration guides for developers",
+    "Produce security and compliance documentation",
+    "Handle competitive technical comparisons",
+    "Support enterprise sales processes"
+  ],
+  "features": [
+    "Skill-aware: Reads comprehensive sales-engineering skill before every task",
+    "Battle-tested patterns from 1000+ enterprise deals (87% win rate)",
+    "Technical document templates (overviews, integration guides, security docs)",
+    "Demo scenario frameworks with scripts and POC plans",
+    "Solution architecture proposals with multiple diagram types",
+    "ROI calculation models with sensitivity analysis",
+    "100+ common technical question frameworks",
+    "Industry-specific guidance (Healthcare, Financial, Manufacturing, Retail, SaaS)",
+    "Stakeholder communication best practices",
+    "Quality checklists for all deliverables"
+  ],
+  "installation": {
+    "user_level": "cp -r plugins/sales-engineer/agents/* ~/.claude/agents/ && cp -r plugins/sales-engineer/skills/* ~/.claude/skills/",
+    "project_level": "Already available in .claude/ directory"
+  },
+  "documentation": "plugins/sales-engineer/README.md"
+}

@@ -1,0 +1,18 @@
+{
+  "trigger": "work deadlines",
+  "date_identified": "2025-01-15",
+  "occurrences": [
+    {
+      "date": "2025-01-15",
+      "situation": "Looking at calendar with multiple deadlines",
+      "emotion": "anxious",
+      "intensity": 7,
+      "physical_response": "tight chest, racing heart",
+      "thought_pattern": "I won't finish in time. I'll disappoint everyone.",
+      "coping_used": ["5-4-3-2-1 grounding", "task prioritization"],
+      "effectiveness": 7
+    }
+  ],
+  "pattern_notes": "Anxiety spikes when I see multiple deadlines at once, even if they're manageable",
+  "helpful_responses": ["Breaking tasks into smaller steps", "Reminding myself of past successes"]
+}

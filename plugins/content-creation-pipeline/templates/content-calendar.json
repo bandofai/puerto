@@ -1,0 +1,192 @@
+{
+  "calendar": [
+    {
+      "id": "post-2025-01-25-001",
+      "idea_id": "idea-example-003",
+      "title": "10 VS Code Extensions That Actually Save Time",
+      "type": "blog",
+      "publish_date": "2025-01-25T09:00:00Z",
+      "status": "scheduled",
+      "platforms": [
+        {
+          "name": "blog",
+          "url": "https://blog.example.com/vscode-extensions",
+          "publish_time": "2025-01-25T09:00:00Z",
+          "status": "pending",
+          "checklist_id": "blog-checklist",
+          "checklist_completed": false
+        },
+        {
+          "name": "twitter",
+          "publish_time": "2025-01-25T10:00:00Z",
+          "status": "pending",
+          "format": "thread",
+          "checklist_id": "twitter-thread-checklist",
+          "checklist_completed": false,
+          "notes": "Create thread with top 5 extensions, link to blog for full list"
+        },
+        {
+          "name": "dev.to",
+          "publish_time": "2025-01-25T14:00:00Z",
+          "status": "pending",
+          "checklist_id": "devto-checklist",
+          "checklist_completed": false,
+          "notes": "Cross-post with canonical URL to main blog"
+        }
+      ],
+      "milestones": {
+        "outline_due": "2025-01-20T17:00:00Z",
+        "draft_due": "2025-01-22T17:00:00Z",
+        "review_due": "2025-01-24T12:00:00Z",
+        "final_due": "2025-01-24T20:00:00Z"
+      },
+      "assets": {
+        "cover_image": {
+          "required": true,
+          "status": "pending",
+          "specs": "1200x630px, VS Code theme"
+        },
+        "extension_screenshots": {
+          "required": true,
+          "status": "pending",
+          "count": 10
+        },
+        "gif_demos": {
+          "required": false,
+          "status": "pending",
+          "count": 3
+        }
+      },
+      "seo": {
+        "target_keyword": "vs code extensions",
+        "meta_title": "10 VS Code Extensions That Actually Save Time in 2025",
+        "meta_description": "Curated list of the best VS Code extensions for developers. Each saves real time with specific use cases and productivity gains."
+      },
+      "tags": ["vscode", "tools", "productivity", "development"],
+      "category": "tools",
+      "notes": "Focus on lesser-known extensions. Calculate time saved. Include installation instructions.",
+      "promotion_plan": {
+        "twitter": "Thread + announcement tweet",
+        "linkedin": "Professional post targeting developers",
+        "reddit": "r/vscode (follow self-promotion rules)",
+        "newsletter": "Feature in next weekly send",
+        "slack_communities": "Share in dev communities (3-4)"
+      }
+    },
+    {
+      "id": "post-2025-02-01-001",
+      "idea_id": "idea-example-001",
+      "title": "Understanding JavaScript Closures for Beginners",
+      "type": "blog",
+      "publish_date": "2025-02-01T09:00:00Z",
+      "status": "scheduled",
+      "platforms": [
+        {
+          "name": "blog",
+          "url": null,
+          "publish_time": "2025-02-01T09:00:00Z",
+          "status": "pending",
+          "checklist_id": "blog-checklist"
+        },
+        {
+          "name": "twitter",
+          "publish_time": "2025-02-01T10:00:00Z",
+          "status": "pending",
+          "format": "thread",
+          "checklist_id": "twitter-thread-checklist",
+          "notes": "Simplify to 7 tweets with clear examples"
+        },
+        {
+          "name": "linkedin",
+          "publish_time": "2025-02-01T11:00:00Z",
+          "status": "pending",
+          "checklist_id": "linkedin-checklist",
+          "notes": "Frame as career skill for junior developers"
+        }
+      ],
+      "milestones": {
+        "outline_due": "2025-01-26T17:00:00Z",
+        "draft_due": "2025-01-29T17:00:00Z",
+        "review_due": "2025-01-31T12:00:00Z",
+        "final_due": "2025-01-31T20:00:00Z"
+      },
+      "assets": {
+        "cover_image": {
+          "required": true,
+          "status": "pending"
+        },
+        "code_examples": {
+          "required": true,
+          "status": "pending",
+          "count": 5
+        },
+        "diagrams": {
+          "required": true,
+          "status": "pending",
+          "notes": "Scope chain visualization"
+        }
+      },
+      "seo": {
+        "target_keyword": "javascript closures",
+        "meta_title": "JavaScript Closures Explained for Beginners (With Examples)",
+        "meta_description": "Learn JavaScript closures with beginner-friendly examples. Understand scope, practical use cases, and why closures matter in modern JavaScript."
+      },
+      "tags": ["javascript", "tutorial", "beginner", "closures"],
+      "category": "tutorial",
+      "notes": "Make it the definitive beginner resource. Interactive examples. Reference but don't copy MDN.",
+      "promotion_plan": {
+        "twitter": "Thread with code examples",
+        "linkedin": "Post targeting bootcamp grads",
+        "reddit": "r/learnjavascript",
+        "newsletter": "Main feature with beginner angle",
+        "dev.to": "Cross-post after 1 week"
+      }
+    }
+  ],
+  "settings": {
+    "default_blog_time": "09:00",
+    "default_social_offset_hours": 1,
+    "timezone": "America/New_York",
+    "default_review_days_before": 1,
+    "default_draft_days_before": 3,
+    "default_outline_days_before": 5
+  },
+  "statistics": {
+    "total_scheduled": 2,
+    "this_week": 1,
+    "this_month": 2,
+    "by_status": {
+      "scheduled": 2,
+      "in_progress": 0,
+      "ready": 0,
+      "published": 0
+    },
+    "by_platform": {
+      "blog": 2,
+      "twitter": 2,
+      "linkedin": 1,
+      "dev.to": 1
+    }
+  },
+  "upcoming_milestones": [
+    {
+      "date": "2025-01-20T17:00:00Z",
+      "type": "outline_due",
+      "post_id": "post-2025-01-25-001",
+      "title": "10 VS Code Extensions - Outline Due"
+    },
+    {
+      "date": "2025-01-22T17:00:00Z",
+      "type": "draft_due",
+      "post_id": "post-2025-01-25-001",
+      "title": "10 VS Code Extensions - Draft Due"
+    },
+    {
+      "date": "2025-01-24T12:00:00Z",
+      "type": "review_due",
+      "post_id": "post-2025-01-25-001",
+      "title": "10 VS Code Extensions - Review Due"
+    }
+  ],
+  "last_updated": "2025-01-17T16:45:00Z"
+}

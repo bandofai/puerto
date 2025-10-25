@@ -1,0 +1,19 @@
+{
+  "name": "network-administrator",
+  "version": "1.0.0",
+  "description": "Network management and monitoring specialist for configuration, security, and troubleshooting",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/network-config-manager.md",
+    "./agents/network-monitor.md",
+    "./agents/security-policy-enforcer.md",
+    "./agents/network-troubleshooter.md"
+  ],
+  "skills": [
+    "./skills/network-configuration.md",
+    "./skills/network-monitoring.md",
+    "./skills/network-security.md"
+  ]
+}

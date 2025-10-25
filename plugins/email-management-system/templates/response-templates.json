@@ -1,0 +1,99 @@
+{
+  "templates": [
+    {
+      "id": "ack-quick",
+      "category": "acknowledgment",
+      "name": "Quick Acknowledgment",
+      "tone": "professional",
+      "useCase": "Confirming receipt, will respond later",
+      "subject": "Re: [ORIGINAL_SUBJECT]",
+      "body": "Hi [NAME],\n\nThanks for reaching out. I've received your message and will [ACTION] by [TIMEFRAME].\n\nBest,\n[YOUR_NAME]",
+      "placeholders": ["NAME", "ACTION", "TIMEFRAME"],
+      "usageCount": 45
+    },
+    {
+      "id": "meeting-accept",
+      "category": "meeting",
+      "name": "Meeting Request - Accept",
+      "tone": "professional",
+      "useCase": "Accepting meeting invitation",
+      "subject": "Re: [MEETING_TOPIC]",
+      "body": "Hi [NAME],\n\n[DAY], [DATE] at [TIME] works great for me. I'll [add to calendar/join at the link provided].\n\nLooking forward to discussing [TOPIC].\n\nBest,\n[YOUR_NAME]",
+      "placeholders": ["NAME", "DAY", "DATE", "TIME", "TOPIC"],
+      "usageCount": 32
+    },
+    {
+      "id": "meeting-decline",
+      "category": "meeting",
+      "name": "Meeting Request - Polite Decline",
+      "tone": "professional",
+      "useCase": "Declining meeting with alternative",
+      "subject": "Re: [MEETING_TOPIC]",
+      "body": "Hi [NAME],\n\nThanks for the invitation. Unfortunately, I have a conflict at that time.\n\nWould [ALTERNATIVE_TIME] work for you? Alternatively, could we [ASYNC_OPTION]?\n\nBest,\n[YOUR_NAME]",
+      "placeholders": ["NAME", "ALTERNATIVE_TIME", "ASYNC_OPTION"],
+      "usageCount": 18
+    },
+    {
+      "id": "info-response",
+      "category": "information",
+      "name": "Information Request Response",
+      "tone": "professional",
+      "useCase": "Providing requested information",
+      "subject": "Re: [TOPIC]",
+      "body": "Hi [NAME],\n\nHere's the information you requested:\n\n[BULLET_POINTS]\n\nLet me know if you need any additional details.\n\nBest,\n[YOUR_NAME]",
+      "placeholders": ["NAME", "BULLET_POINTS"],
+      "usageCount": 56
+    },
+    {
+      "id": "project-update",
+      "category": "update",
+      "name": "Project Status Update",
+      "tone": "professional",
+      "useCase": "Regular project progress update",
+      "subject": "[PROJECT_NAME] - Update",
+      "body": "Hi [NAME/TEAM],\n\nQuick update on [PROJECT]:\n\n✅ Completed:\n[COMPLETED_ITEMS]\n\n🔄 In Progress:\n[IN_PROGRESS_ITEMS]\n\n⏭️ Next Steps:\n[NEXT_STEPS]\n\nLet me know if you have any questions.\n\nBest,\n[YOUR_NAME]",
+      "placeholders": ["NAME", "PROJECT", "COMPLETED_ITEMS", "IN_PROGRESS_ITEMS", "NEXT_STEPS"],
+      "usageCount": 28
+    },
+    {
+      "id": "polite-decline",
+      "category": "decline",
+      "name": "Polite Decline",
+      "tone": "professional-friendly",
+      "useCase": "Declining request or commitment",
+      "subject": "Re: [REQUEST]",
+      "body": "Hi [NAME],\n\nI appreciate you thinking of me for [REQUEST]. Unfortunately, I'm not able to [COMMIT] at this time due to [BRIEF_REASON].\n\n[OPTIONAL: ALTERNATIVE_SUGGESTION]\n\nBest,\n[YOUR_NAME]",
+      "placeholders": ["NAME", "REQUEST", "COMMIT", "BRIEF_REASON", "ALTERNATIVE_SUGGESTION"],
+      "usageCount": 15
+    },
+    {
+      "id": "follow-up",
+      "category": "follow-up",
+      "name": "Follow-Up Template",
+      "tone": "professional",
+      "useCase": "Following up on previous email",
+      "subject": "Following up: [ORIGINAL_TOPIC]",
+      "body": "Hi [NAME],\n\nI wanted to follow up on my [email/request] from [DATE] regarding [TOPIC].\n\n[BRIEF_REMINDER]\n\nDo you have any updates or questions I can help with?\n\nBest,\n[YOUR_NAME]",
+      "placeholders": ["NAME", "DATE", "TOPIC", "BRIEF_REMINDER"],
+      "usageCount": 22
+    },
+    {
+      "id": "out-of-office",
+      "category": "autoresponder",
+      "name": "Out of Office",
+      "tone": "professional",
+      "useCase": "Automatic out of office reply",
+      "subject": "Out of Office: [YOUR_NAME]",
+      "body": "Hi,\n\nI'm currently out of the office from [START_DATE] to [END_DATE] with limited access to email.\n\nFor urgent matters, please contact [BACKUP_PERSON] at [BACKUP_EMAIL].\n\nI'll respond to your message when I return.\n\nBest,\n[YOUR_NAME]",
+      "placeholders": ["START_DATE", "END_DATE", "BACKUP_PERSON", "BACKUP_EMAIL"],
+      "usageCount": 4
+    }
+  ],
+  "statistics": {
+    "totalTemplates": 8,
+    "totalUsages": 220,
+    "averageUsagePerTemplate": 27.5,
+    "timeSavedEstimate": "18.3 hours",
+    "lastUpdated": "2025-10-22"
+  }
+}

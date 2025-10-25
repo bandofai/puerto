@@ -1,0 +1,17 @@
+{
+  "name": "affiliate-manager",
+  "version": "1.0.0",
+  "description": "Affiliate program specialist for program design, affiliate recruitment, commission management, performance tracking, and fraud detection",
+  "agents": [
+    "./agents/program-designer.md",
+    "./agents/affiliate-recruiter.md",
+    "./agents/commission-tracker.md",
+    "./agents/fraud-detector.md"
+  ],
+  "skills": [
+    "./skills/affiliate-marketing.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

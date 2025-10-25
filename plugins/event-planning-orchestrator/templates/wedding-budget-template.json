@@ -1,0 +1,74 @@
+[
+  {
+    "category": "venue",
+    "budgeted": 12500,
+    "actual": 0,
+    "paid": 0,
+    "remaining": 12500,
+    "vendors": [],
+    "line_items": []
+  },
+  {
+    "category": "catering",
+    "budgeted": 15000,
+    "actual": 0,
+    "paid": 0,
+    "remaining": 15000,
+    "vendors": [],
+    "line_items": []
+  },
+  {
+    "category": "photography",
+    "budgeted": 5000,
+    "actual": 0,
+    "paid": 0,
+    "remaining": 5000,
+    "vendors": [],
+    "line_items": []
+  },
+  {
+    "category": "music",
+    "budgeted": 4000,
+    "actual": 0,
+    "paid": 0,
+    "remaining": 4000,
+    "vendors": [],
+    "line_items": []
+  },
+  {
+    "category": "florist",
+    "budgeted": 4000,
+    "actual": 0,
+    "paid": 0,
+    "remaining": 4000,
+    "vendors": [],
+    "line_items": []
+  },
+  {
+    "category": "attire",
+    "budgeted": 4000,
+    "actual": 0,
+    "paid": 0,
+    "remaining": 4000,
+    "vendors": [],
+    "line_items": []
+  },
+  {
+    "category": "invitations",
+    "budgeted": 1500,
+    "actual": 0,
+    "paid": 0,
+    "remaining": 1500,
+    "vendors": [],
+    "line_items": []
+  },
+  {
+    "category": "miscellaneous",
+    "budgeted": 4000,
+    "actual": 0,
+    "paid": 0,
+    "remaining": 4000,
+    "vendors": [],
+    "line_items": []
+  }
+]

@@ -1,0 +1,260 @@
+{
+  "version": "1.0",
+  "created": "2025-01-16T10:00:00Z",
+  "last_updated": "2025-03-16T12:00:00Z",
+  "warranties": {
+    "warranty-uuid-example-1": {
+      "id": "warranty-uuid-example-1",
+      "product": {
+        "name": "Samsung 55\" 4K Smart TV",
+        "model": "UN55AU8000FXZA",
+        "serial_number": "SN1234567890ABC",
+        "category": "electronics",
+        "purchase_date": "2025-01-15",
+        "purchase_price": 799.99,
+        "retailer": "Best Buy"
+      },
+      "warranty": {
+        "type": "manufacturer",
+        "start_date": "2025-01-15",
+        "end_date": "2026-01-15",
+        "duration_months": 12,
+        "coverage": "Parts and labor for manufacturing defects. Does not cover physical damage, water damage, or cosmetic issues.",
+        "exclusions": [
+          "Physical damage",
+          "Water damage",
+          "Cosmetic issues (scratches, dents)",
+          "Damage from power surges",
+          "Unauthorized repairs",
+          "Commercial use"
+        ],
+        "transferable": false,
+        "extended": false
+      },
+      "manufacturer": {
+        "name": "Samsung",
+        "warranty_phone": "1-800-726-7864",
+        "warranty_email": "support@samsung.com",
+        "warranty_website": "https://www.samsung.com/us/support/warranty/"
+      },
+      "registration": {
+        "registered": true,
+        "registration_date": "2025-01-16",
+        "registration_number": "REG-SAM-20250116-ABC123",
+        "registration_required": true
+      },
+      "claims": [],
+      "documents": {
+        "receipt": "documents/warranty-uuid-example-1/receipts/bestbuy-2025-01-15.pdf",
+        "warranty_card": "documents/warranty-uuid-example-1/warranty/samsung-warranty-card.pdf",
+        "registration": "documents/warranty-uuid-example-1/registration/samsung-registration-confirmation.pdf"
+      },
+      "alerts": {
+        "expiration_alert_days": 30,
+        "alert_enabled": true
+      },
+      "status": "active",
+      "created": "2025-01-16T10:00:00Z",
+      "last_updated": "2025-01-16T10:00:00Z"
+    },
+    "warranty-uuid-example-2": {
+      "id": "warranty-uuid-example-2",
+      "product": {
+        "name": "LG French Door Refrigerator",
+        "model": "LRFVS3006S",
+        "serial_number": "LG123456XYZ",
+        "category": "appliance",
+        "purchase_date": "2024-06-20",
+        "purchase_price": 2399.99,
+        "retailer": "Home Depot"
+      },
+      "warranty": {
+        "type": "extended",
+        "start_date": "2024-06-20",
+        "end_date": "2029-06-20",
+        "duration_months": 60,
+        "coverage": "1-year manufacturer warranty (parts and labor) + 4-year extended warranty (parts and labor). Covers compressor, sealed system, and all major components.",
+        "exclusions": [
+          "Food loss",
+          "Damage from improper installation",
+          "Water filter replacements",
+          "Light bulbs",
+          "Door seals (after year 1)",
+          "Cosmetic damage"
+        ],
+        "transferable": true,
+        "extended": true
+      },
+      "manufacturer": {
+        "name": "LG Electronics",
+        "warranty_phone": "1-800-243-0000",
+        "warranty_email": "lgeus.service@lge.com",
+        "warranty_website": "https://www.lg.com/us/support/warranty-information"
+      },
+      "registration": {
+        "registered": true,
+        "registration_date": "2024-06-21",
+        "registration_number": "LG-REG-2024-987654",
+        "registration_required": false
+      },
+      "claims": [
+        {
+          "claim_id": "CLM-001",
+          "date_filed": "2025-03-10T00:00:00Z",
+          "issue": "Ice maker not producing ice, water dispenser working normally",
+          "status": "resolved",
+          "claim_number": "LG-CLAIM-20250310-12345",
+          "contact_name": "LG Service Center",
+          "expected_resolution": "2025-03-25T00:00:00Z",
+          "resolution_timeline": "Technician visit scheduled within 2 weeks",
+          "notes": "Called LG warranty support, technician scheduled for 2025-03-22",
+          "updates": [
+            {
+              "date": "2025-03-10T14:00:00Z",
+              "status": "pending",
+              "note": "Claim filed, awaiting technician assignment"
+            },
+            {
+              "date": "2025-03-12T10:00:00Z",
+              "status": "in_progress",
+              "note": "Technician assigned, visit scheduled for 2025-03-22"
+            },
+            {
+              "date": "2025-03-22T15:00:00Z",
+              "status": "resolved",
+              "note": "Technician replaced ice maker assembly. Issue resolved. No charge under warranty."
+            }
+          ]
+        }
+      ],
+      "documents": {
+        "receipt": "documents/warranty-uuid-example-2/receipts/homedepot-2024-06-20.pdf",
+        "warranty_card": "documents/warranty-uuid-example-2/warranty/lg-manufacturer-warranty.pdf",
+        "registration": "documents/warranty-uuid-example-2/registration/lg-registration-email.pdf"
+      },
+      "alerts": {
+        "expiration_alert_days": 60,
+        "alert_enabled": true
+      },
+      "status": "active",
+      "created": "2024-06-21T11:00:00Z",
+      "last_updated": "2025-03-22T16:00:00Z"
+    },
+    "warranty-uuid-example-3": {
+      "id": "warranty-uuid-example-3",
+      "product": {
+        "name": "Dell XPS 15 Laptop",
+        "model": "XPS 15 9520",
+        "serial_number": "DELL-SN-ABC123XYZ",
+        "category": "electronics",
+        "purchase_date": "2023-09-15",
+        "purchase_price": 1899.99,
+        "retailer": "Dell.com"
+      },
+      "warranty": {
+        "type": "manufacturer",
+        "start_date": "2023-09-15",
+        "end_date": "2024-09-15",
+        "duration_months": 12,
+        "coverage": "1-year limited hardware warranty. Covers defects in materials and workmanship. Includes parts and labor.",
+        "exclusions": [
+          "Software issues",
+          "Physical damage (drops, spills)",
+          "Battery (covered only for first 90 days)",
+          "Cosmetic damage",
+          "Theft or loss",
+          "Damage from unauthorized repairs"
+        ],
+        "transferable": false,
+        "extended": false
+      },
+      "manufacturer": {
+        "name": "Dell Technologies",
+        "warranty_phone": "1-800-624-9896",
+        "warranty_email": "tech_support@dell.com",
+        "warranty_website": "https://www.dell.com/support/home/en-us"
+      },
+      "registration": {
+        "registered": true,
+        "registration_date": "2023-09-15",
+        "registration_number": "Automatic upon purchase",
+        "registration_required": false
+      },
+      "claims": [],
+      "documents": {
+        "receipt": "documents/warranty-uuid-example-3/receipts/dell-invoice-2023-09-15.pdf",
+        "warranty_card": "documents/warranty-uuid-example-3/warranty/dell-warranty-terms.pdf",
+        "registration": ""
+      },
+      "alerts": {
+        "expiration_alert_days": 30,
+        "alert_enabled": true
+      },
+      "status": "expired",
+      "created": "2023-09-16T09:00:00Z",
+      "last_updated": "2024-09-16T00:00:00Z"
+    },
+    "warranty-uuid-example-4": {
+      "id": "warranty-uuid-example-4",
+      "product": {
+        "name": "Dyson V15 Detect Vacuum",
+        "model": "V15 Detect",
+        "serial_number": "DYS-V15-789456",
+        "category": "appliance",
+        "purchase_date": "2024-12-10",
+        "purchase_price": 649.99,
+        "retailer": "Amazon"
+      },
+      "warranty": {
+        "type": "manufacturer",
+        "start_date": "2024-12-10",
+        "end_date": "2026-12-10",
+        "duration_months": 24,
+        "coverage": "2-year parts and labor warranty. Covers defects in materials and workmanship.",
+        "exclusions": [
+          "Normal wear and tear",
+          "Filters (consumable items)",
+          "Damage from misuse",
+          "Damage from dropping",
+          "Blockages from foreign objects",
+          "Battery (limited coverage after 1 year)"
+        ],
+        "transferable": false,
+        "extended": false
+      },
+      "manufacturer": {
+        "name": "Dyson",
+        "warranty_phone": "1-866-693-9766",
+        "warranty_email": "help@dyson.com",
+        "warranty_website": "https://www.dyson.com/support/warranty"
+      },
+      "registration": {
+        "registered": false,
+        "registration_date": "",
+        "registration_number": "",
+        "registration_required": true
+      },
+      "claims": [],
+      "documents": {
+        "receipt": "documents/warranty-uuid-example-4/receipts/amazon-order-2024-12-10.pdf",
+        "warranty_card": "",
+        "registration": ""
+      },
+      "alerts": {
+        "expiration_alert_days": 30,
+        "alert_enabled": true
+      },
+      "status": "active",
+      "created": "2024-12-11T14:00:00Z",
+      "last_updated": "2024-12-11T14:00:00Z"
+    }
+  },
+  "metadata": {
+    "total_warranties": 4,
+    "active_warranties": 3,
+    "expired_warranties": 1,
+    "total_claims": 1,
+    "successful_claims": 1
+  },
+  "notes": "This is an example warranty database showing different product types, warranty statuses, and claim tracking. Use this as a template for organizing your warranties.\n\nTips:\n- Always register products when registration is required (it's often needed to activate full warranty)\n- Set expiration alerts to 30-60 days before warranty ends (gives you time to test product and file claims if needed)\n- Keep all receipts and documentation organized in the documents folder\n- Update warranty status and claims regularly\n- Take photos of serial numbers when you first purchase products\n- Save warranty terms PDFs - companies sometimes change terms on their websites\n\nCommon Warranty Durations by Category:\n- Electronics (TVs, laptops, phones): 1 year manufacturer\n- Major appliances (refrigerators, washers): 1 year parts & labor, longer for sealed systems\n- Small appliances (vacuums, coffee makers): 1-2 years\n- Vehicles: 3-5 years / 36,000-60,000 miles\n- Home systems (HVAC, water heaters): 5-10 years for parts, 1 year for labor\n\nWhen to Consider Extended Warranties:\n- High-value items ($1000+)\n- Items prone to failure (appliances with complex electronics)\n- Items you use daily and can't be without\n- Items expensive to repair out-of-warranty\n\nWhen to Skip Extended Warranties:\n- Low-value items (under $200)\n- Items with long manufacturer warranties already\n- Items unlikely to fail (simple mechanical items)\n- Items that may become obsolete before warranty expires"
+}

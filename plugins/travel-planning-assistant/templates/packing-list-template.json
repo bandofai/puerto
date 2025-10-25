@@ -1,0 +1,375 @@
+{
+  "trip": "Paris Adventure",
+  "dates": {
+    "start": "2024-06-15",
+    "end": "2024-06-22",
+    "duration_days": 7
+  },
+  "climate": "temperate",
+  "temperature_range": "15-22°C (59-72°F)",
+  "weather_conditions": ["partly cloudy", "occasional rain", "mild"],
+  "categories": {
+    "clothing": [
+      {
+        "item": "T-shirts/tops",
+        "quantity": 5,
+        "packed": false,
+        "notes": "Mix of short and long sleeve"
+      },
+      {
+        "item": "Pants/jeans",
+        "quantity": 2,
+        "packed": false,
+        "notes": "Comfortable for walking"
+      },
+      {
+        "item": "Shorts",
+        "quantity": 1,
+        "packed": false,
+        "notes": "If weather is warm"
+      },
+      {
+        "item": "Light jacket/cardigan",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Essential for evenings and rain"
+      },
+      {
+        "item": "Rain jacket",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Lightweight, waterproof"
+      },
+      {
+        "item": "Underwear",
+        "quantity": 7,
+        "packed": false
+      },
+      {
+        "item": "Socks",
+        "quantity": 7,
+        "packed": false,
+        "notes": "Comfortable for walking"
+      },
+      {
+        "item": "Sleepwear",
+        "quantity": 1,
+        "packed": false
+      },
+      {
+        "item": "Nice outfit for dinner",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Smart casual for nice restaurants"
+      }
+    ],
+    "footwear": [
+      {
+        "item": "Comfortable walking shoes",
+        "quantity": 1,
+        "packed": false,
+        "notes": "MUST be broken in! Will walk 10+ miles/day"
+      },
+      {
+        "item": "Nice shoes for evening",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Comfortable dressy shoes"
+      }
+    ],
+    "toiletries": [
+      {
+        "item": "Toothbrush & toothpaste",
+        "quantity": 1,
+        "packed": false
+      },
+      {
+        "item": "Shampoo & conditioner",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Travel size or hotel provides"
+      },
+      {
+        "item": "Body wash/soap",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Travel size"
+      },
+      {
+        "item": "Deodorant",
+        "quantity": 1,
+        "packed": false
+      },
+      {
+        "item": "Sunscreen SPF 30+",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Even for mild weather"
+      },
+      {
+        "item": "Moisturizer",
+        "quantity": 1,
+        "packed": false
+      },
+      {
+        "item": "Lip balm",
+        "quantity": 1,
+        "packed": false
+      },
+      {
+        "item": "Razor",
+        "quantity": 1,
+        "packed": false
+      },
+      {
+        "item": "Hair brush/comb",
+        "quantity": 1,
+        "packed": false
+      },
+      {
+        "item": "Makeup/skincare",
+        "quantity": 1,
+        "packed": false,
+        "notes": "As needed"
+      }
+    ],
+    "electronics": [
+      {
+        "item": "Phone",
+        "quantity": 1,
+        "packed": false
+      },
+      {
+        "item": "Phone charger",
+        "quantity": 1,
+        "packed": false
+      },
+      {
+        "item": "Power bank",
+        "quantity": 1,
+        "packed": false,
+        "notes": "10,000+ mAh capacity"
+      },
+      {
+        "item": "Universal adapter",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Type C/E for France"
+      },
+      {
+        "item": "Camera",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Optional if phone camera sufficient"
+      },
+      {
+        "item": "E-reader/tablet",
+        "quantity": 1,
+        "packed": false,
+        "notes": "For flights and downtime"
+      },
+      {
+        "item": "Headphones",
+        "quantity": 1,
+        "packed": false
+      }
+    ],
+    "documents": [
+      {
+        "item": "Passport",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Check expiry date! Must be valid >6 months"
+      },
+      {
+        "item": "Passport photocopy",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Keep separate from original"
+      },
+      {
+        "item": "Flight confirmations",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Printed and digital"
+      },
+      {
+        "item": "Hotel reservations",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Printed copies"
+      },
+      {
+        "item": "Travel insurance card",
+        "quantity": 1,
+        "packed": false,
+        "notes": "With emergency numbers"
+      },
+      {
+        "item": "Credit cards",
+        "quantity": 2,
+        "packed": false,
+        "notes": "Bank notified of travel dates"
+      },
+      {
+        "item": "Emergency cash",
+        "quantity": 1,
+        "packed": false,
+        "notes": "€100-200 in euros"
+      },
+      {
+        "item": "Driver's license",
+        "quantity": 1,
+        "packed": false,
+        "notes": "ID backup"
+      }
+    ],
+    "health": [
+      {
+        "item": "Prescription medications",
+        "quantity": 1,
+        "packed": false,
+        "notes": "In original packaging with prescription"
+      },
+      {
+        "item": "Pain reliever",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Ibuprofen/acetaminophen"
+      },
+      {
+        "item": "Allergy medication",
+        "quantity": 1,
+        "packed": false,
+        "notes": "If needed"
+      },
+      {
+        "item": "Band-aids",
+        "quantity": 1,
+        "packed": false,
+        "notes": "For blisters from walking"
+      },
+      {
+        "item": "Hand sanitizer",
+        "quantity": 1,
+        "packed": false
+      },
+      {
+        "item": "Face masks",
+        "quantity": 2,
+        "packed": false,
+        "notes": "Optional backup"
+      },
+      {
+        "item": "Vitamins",
+        "quantity": 1,
+        "packed": false,
+        "notes": "If you take regularly"
+      }
+    ],
+    "travel_comfort": [
+      {
+        "item": "Reusable water bottle",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Refill to save money"
+      },
+      {
+        "item": "Day backpack",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Anti-theft features recommended"
+      },
+      {
+        "item": "Travel pillow",
+        "quantity": 1,
+        "packed": false,
+        "notes": "For flight"
+      },
+      {
+        "item": "Eye mask",
+        "quantity": 1,
+        "packed": false,
+        "notes": "For flight"
+      },
+      {
+        "item": "Earplugs",
+        "quantity": 1,
+        "packed": false,
+        "notes": "For flight and hotel"
+      },
+      {
+        "item": "Snacks",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Granola bars for travel day"
+      },
+      {
+        "item": "Pen",
+        "quantity": 1,
+        "packed": false,
+        "notes": "For customs forms"
+      },
+      {
+        "item": "Notebook",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Optional for journaling"
+      },
+      {
+        "item": "Compact umbrella",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Essential for Paris weather"
+      }
+    ],
+    "optional": [
+      {
+        "item": "Guidebook",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Or use phone app"
+      },
+      {
+        "item": "Phrasebook",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Basic French helpful"
+      },
+      {
+        "item": "Reusable shopping bag",
+        "quantity": 1,
+        "packed": false,
+        "notes": "For groceries and souvenirs"
+      },
+      {
+        "item": "Laundry detergent sheets",
+        "quantity": 1,
+        "packed": false,
+        "notes": "For washing clothes in sink"
+      },
+      {
+        "item": "Packable tote",
+        "quantity": 1,
+        "packed": false,
+        "notes": "Extra bag for souvenirs on return"
+      }
+    ]
+  },
+  "packing_tips": [
+    "Roll clothes to save space and prevent wrinkles",
+    "Wear heaviest items (jacket, walking shoes) on flight",
+    "Pack one outfit change in carry-on in case checked bag delayed",
+    "Keep valuables (documents, electronics) in carry-on",
+    "Use packing cubes for organization",
+    "Leave some space for souvenirs",
+    "Check airline baggage weight limits"
+  ],
+  "luggage": {
+    "checked_bag_weight_limit": "23 kg (50 lbs)",
+    "carry_on_dimensions": "55 x 40 x 23 cm",
+    "personal_item": "Backpack or purse"
+  },
+  "weather_specific_notes": "June in Paris: mild temperatures but rain possible. Layers are key. Light jacket essential for evenings and air-conditioned museums.",
+  "activity_specific_notes": "Lots of walking on cobblestone streets - comfortable, broken-in shoes are CRITICAL. Nice outfit for one fancy dinner reservation."
+}

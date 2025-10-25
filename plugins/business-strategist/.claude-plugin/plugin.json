@@ -1,0 +1,17 @@
+{
+  "name": "business-strategist",
+  "version": "1.0.0",
+  "description": "Corporate strategy development specialist for strategic planning, growth strategies, market entry analysis, M&A assessment, and business model innovation",
+  "agents": [
+    "./agents/strategic-planner.md",
+    "./agents/growth-strategist.md",
+    "./agents/market-entry-analyst.md",
+    "./agents/ma-analyst.md"
+  ],
+  "skills": [
+    "./skills/strategic-planning.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

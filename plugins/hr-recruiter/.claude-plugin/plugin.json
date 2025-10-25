@@ -1,0 +1,123 @@
+{
+  "name": "hr-recruiter",
+  "version": "1.0.0",
+  "description": "Professional recruitment assistant for candidate screening, job postings, interview coordination, and hiring pipeline management",
+  "author": {
+    "name": "Puerto Community"
+  },
+  "license": "MIT",
+  "created": "2025-01-19",
+  "updated": "2025-01-19",
+  "category": "work-agent",
+  "components": {
+    "agents": [
+      {
+        "name": "hr-recruiter",
+        "file": "agents/hr-recruiter.md",
+        "description": "Main recruitment agent for CV screening, job postings, interviews, and pipeline tracking",
+        "tools": [
+          "Read",
+          "Write",
+          "Edit",
+          "Bash",
+          "Glob",
+          "Grep"
+        ],
+        "model": "sonnet"
+      }
+    ],
+    "skills": [
+      {
+        "name": "recruitment",
+        "file": "skills/recruitment/SKILL.md",
+        "description": "HR recruitment best practices, templates, and guidelines"
+      }
+    ]
+  },
+  "features": [
+    "Evidence-based resume screening with 0-10 scoring rubric",
+    "Professional job description templates (Engineering, Marketing, Sales)",
+    "Interview coordination and scheduling workflows",
+    "20+ candidate communication email templates",
+    "JSON-based recruitment pipeline tracking",
+    "Diversity and inclusion guidelines",
+    "Legal compliance guidance (GDPR, EEOC, ADA)"
+  ],
+  "requirements": {
+    "claude_code_version": ">=1.0.0",
+    "tools": [
+      "Read",
+      "Write",
+      "Edit",
+      "Bash",
+      "Glob",
+      "Grep"
+    ],
+    "optional_tools": []
+  },
+  "installation": {
+    "user_level": {
+      "agent": "~/.claude/agents/hr-recruiter.md",
+      "skill": "~/.claude/skills/recruitment/SKILL.md"
+    },
+    "project_level": {
+      "agent": ".claude/agents/hr-recruiter.md",
+      "skill": ".claude/skills/recruitment/SKILL.md"
+    }
+  },
+  "usage_examples": [
+    {
+      "title": "Screen a resume",
+      "command": "Please screen this resume for the Senior Engineer position",
+      "output": ".claude/recruitment/screenings/[candidate-name]-[date].md"
+    },
+    {
+      "title": "Create job description",
+      "command": "Create a job description for a Marketing Manager position",
+      "output": ".claude/recruitment/job-descriptions/[role]-[date].md"
+    },
+    {
+      "title": "Schedule interview",
+      "command": "Schedule an interview with Jane Doe for the engineering role",
+      "output": ".claude/recruitment/communications/[candidate-name]-interview-invite.md"
+    },
+    {
+      "title": "Update pipeline",
+      "command": "Update John's status to 'interviewing' in the pipeline",
+      "output": ".claude/recruitment/pipeline.json"
+    }
+  ],
+  "integrations": {
+    "claude_code_plugins": [
+      "orchestrator (workflow coordination)",
+      "document-generator (offer letters)"
+    ],
+    "external_tools": [
+      "Email systems (Gmail, Outlook)",
+      "Calendar (Google Calendar, Outlook)",
+      "ATS systems (Greenhouse, Lever)",
+      "Job boards (LinkedIn, Indeed)"
+    ]
+  },
+  "data_outputs": {
+    "screening_reports": ".claude/recruitment/screenings/",
+    "job_descriptions": ".claude/recruitment/job-descriptions/",
+    "communications": ".claude/recruitment/communications/",
+    "pipeline": ".claude/recruitment/pipeline.json"
+  },
+  "customization": {
+    "templates": "Edit skills/recruitment/SKILL.md to customize email templates and job description templates",
+    "scoring_rubric": "Modify screening rubric in SKILL.md to match company priorities",
+    "company_branding": "Update company name, benefits, and diversity statements in templates"
+  },
+  "compliance": {
+    "data_privacy": "Handles candidate data locally with GDPR/CCPA guidelines",
+    "legal_guidance": "Includes EEOC, ADA compliance guidelines",
+    "disclaimer": "Provides guidance only; consult legal counsel for specific compliance requirements"
+  },
+  "links": {
+    "documentation": "README.md",
+    "repository": "https://github.com/yourusername/puerto",
+    "issues": "https://github.com/yourusername/puerto/issues"
+  }
+}

@@ -1,0 +1,442 @@
+# IP PORTFOLIO TRACKER
+
+**NOTE**: This is a markdown template. Convert to Excel (.xlsx) format using spreadsheet software. Create multiple sheets as indicated below.
+
+---
+
+## SHEET 1: PORTFOLIO SUMMARY
+
+### Portfolio Overview (Dashboard)
+
+| Metric | Count | Notes |
+|--------|-------|-------|
+| **Total Active Patents** | | Granted + maintained |
+| **Pending Patent Applications** | | Filed, under examination |
+| **Total Active Trademarks** | | Registered + maintained |
+| **Pending Trademark Applications** | | Filed, under examination |
+| **Active Copyrights** | | Registered |
+| **Trade Secrets** | | Identified and protected |
+| **Total Assets** | | Sum of all IP |
+| | | |
+| **Upcoming Deadlines (30 days)** | | Critical actions needed |
+| **Upcoming Deadlines (90 days)** | | High priority |
+| **Maintenance Fees Due (this year)** | $ | Estimated cost |
+| **Total IP Budget (annual)** | $ | Planned spending |
+
+### Assets by Type (Chart Data)
+
+| Asset Type | Count | Percentage |
+|------------|-------|------------|
+| Patents (Granted) | | % |
+| Patents (Pending) | | % |
+| Trademarks (Registered) | | % |
+| Trademarks (Pending) | | % |
+| Copyrights | | % |
+| Trade Secrets | | % |
+
+### Assets by Jurisdiction
+
+| Jurisdiction | Patents | Trademarks | Total |
+|--------------|---------|------------|-------|
+| United States | | | |
+| European Union | | | |
+| China | | | |
+| Japan | | | |
+| Other | | | |
+| **Total** | | | |
+
+### Assets by Technology Area / Product Line
+
+| Category | Patents | Trademarks | Strategic Value |
+|----------|---------|------------|-----------------|
+| [Product Line 1] | | | Core / Strategic / Defensive |
+| [Product Line 2] | | | |
+| [Technology Area 1] | | | |
+| [Business Unit 1] | | | |
+
+---
+
+## SHEET 2: PATENT PORTFOLIO
+
+### Column Headers
+
+| Asset ID | Type | Title | Jurisdiction | App Number | Filing Date | Grant Date | Patent Number | Status | Next Deadline | Deadline Type | Days Until | Est. Cost | Owner | Inventors | Tech Area | Business Value | Notes |
+|----------|------|-------|--------------|------------|-------------|------------|---------------|--------|---------------|---------------|------------|-----------|-------|-----------|-----------|----------------|-------|
+
+### Column Definitions
+
+- **Asset ID**: Unique internal identifier (P-001, P-002, etc.)
+- **Type**: Utility / Design / Plant / Provisional
+- **Title**: Title of invention
+- **Jurisdiction**: US / EP / CN / JP / WO / etc.
+- **App Number**: Application number (e.g., US 17/123,456)
+- **Filing Date**: Original filing date (YYYY-MM-DD)
+- **Grant Date**: Date granted (if issued)
+- **Patent Number**: Grant number (e.g., US 11,123,456)
+- **Status**: Pending / Granted / Expired / Abandoned / Maintenance Due
+- **Next Deadline**: Date of next critical action
+- **Deadline Type**: 3.5yr Fee / 7.5yr Fee / 11.5yr Fee / Office Action / Other
+- **Days Until**: Calculated: =Next Deadline - TODAY()
+- **Est. Cost**: Estimated cost of next action ($)
+- **Owner**: Current owner/assignee
+- **Inventors**: Inventor name(s)
+- **Tech Area**: Technology classification or product line
+- **Business Value**: Core / Strategic / Defensive / Legacy
+- **Notes**: Additional information, links to files
+
+### Example Rows
+
+| Asset ID | Type | Title | Jurisdiction | App Number | Filing Date | Grant Date | Patent Number | Status | Next Deadline | Deadline Type | Days Until | Est. Cost | Owner | Inventors | Tech Area | Business Value | Notes |
+|----------|------|-------|--------------|------------|-------------|------------|---------------|--------|---------------|---------------|------------|-----------|-------|-----------|-----------|----------------|-------|
+| P-001 | Utility | Machine Learning Image Recognition System | US | 17/123,456 | 2020-03-15 | 2022-08-22 | US 11,123,456 | Granted | 2026-02-22 | 3.5yr Fee | 145 | $800 | Acme Corp | Smith, J.; Doe, A. | AI/ML | Core | Family: EP pending |
+| P-002 | Utility | Wireless Sensor Network Protocol | US | 17/234,567 | 2021-06-10 | | | Pending | 2025-03-15 | Office Action Response | 78 | $3,000 | Acme Corp | Johnson, B. | IoT | Strategic | Examiner interview scheduled |
+| P-003 | Design | Smart Speaker Industrial Design | US | 29/789,012 | 2021-09-20 | 2023-01-15 | US D987,654 | Granted | 2038-01-15 | Expires | 4,745 | $0 | Acme Corp | Lee, C. | Consumer Electronics | Core | No maintenance fees (design) |
+
+### Conditional Formatting Suggestions
+
+- **Days Until Deadline**:
+  - Red: < 30 days (Critical)
+  - Orange: 30-60 days (High Priority)
+  - Yellow: 61-90 days (Standard)
+  - Green: > 90 days
+
+- **Status**:
+  - Red: Maintenance Due, Office Action Due
+  - Yellow: Pending
+  - Green: Granted, Active
+  - Gray: Expired, Abandoned
+
+---
+
+## SHEET 3: TRADEMARK PORTFOLIO
+
+### Column Headers
+
+| Asset ID | Mark | Type | Owner | Jurisdiction | App/Reg Number | Filing Date | Registration Date | Status | Renewal Date | Days Until Renewal | Class(es) | Goods/Services | Use Date | Est. Cost | Business Value | Specimens | Notes |
+|----------|------|------|-------|--------------|----------------|-------------|-------------------|--------|--------------|-------------------|-----------|----------------|----------|-----------|----------------|-----------|-------|
+
+### Column Definitions
+
+- **Asset ID**: Unique internal identifier (TM-001, TM-002, etc.)
+- **Mark**: Text or description of mark
+- **Type**: Word / Logo / Combined / Sound / Color / Other
+- **Owner**: Current owner
+- **Jurisdiction**: US / EU / Multi-country (Madrid) / etc.
+- **App/Reg Number**: Application or registration number
+- **Filing Date**: Original filing date
+- **Registration Date**: Date registered (if issued)
+- **Status**: Pending / Registered / Renewal Due / Abandoned
+- **Renewal Date**: Next renewal deadline
+- **Days Until Renewal**: Calculated: =Renewal Date - TODAY()
+- **Class(es)**: Nice Classification class number(s)
+- **Goods/Services**: Brief description
+- **Use Date**: Date of first use in commerce
+- **Est. Cost**: Next renewal cost
+- **Business Value**: Core / Strategic / Defensive
+- **Specimens**: Link to specimen files
+- **Notes**: Additional information
+
+### Example Rows
+
+| Asset ID | Mark | Type | Owner | Jurisdiction | App/Reg Number | Filing Date | Registration Date | Status | Renewal Date | Days Until Renewal | Class(es) | Goods/Services | Use Date | Est. Cost | Business Value | Specimens | Notes |
+|----------|------|------|-------|--------------|----------------|-------------|-------------------|--------|--------------|-------------------|-----------|----------------|----------|-----------|----------------|-----------|-------|
+| TM-001 | ACME SOLUTIONS | Word | Acme Corp | US | 6,123,456 | 2015-03-10 | 2016-05-15 | Registered | 2026-05-15 | 512 | 9, 42 | Software; SaaS services | 2015-01-05 | $850 | Core | /specimens/tm001/ | §8 filed 2021 |
+| TM-002 | [ACME Logo] | Logo | Acme Corp | US | 6,234,567 | 2016-08-22 | 2017-11-30 | Registered | 2027-11-30 | 1,065 | 9, 35, 42 | Software; Retail; Tech services | 2016-06-10 | $1,275 | Core | /specimens/tm002/ | Special form mark |
+| TM-003 | ACME SMARTSENSOR | Word | Acme Corp | US | 88/345,678 | 2022-04-15 | | Pending | | | 9 | IoT sensors | | $350 | Strategic | /specimens/tm003/ | ITU, awaiting NOA |
+
+### Conditional Formatting Suggestions
+
+- **Days Until Renewal**:
+  - Red: < 180 days (within year 9-10 window)
+  - Yellow: 180-365 days (approaching window)
+  - Green: > 365 days
+
+- **Status**:
+  - Red: Renewal Due
+  - Yellow: Pending
+  - Green: Registered
+  - Gray: Abandoned
+
+---
+
+## SHEET 4: COPYRIGHT PORTFOLIO
+
+### Column Headers
+
+| Asset ID | Work Title | Type | Creation Date | Registration Number | Registration Date | Author(s) | Owner | Status | Protection Term | Published? | Notes |
+|----------|------------|------|---------------|---------------------|-------------------|-----------|-------|--------|-----------------|------------|-------|
+
+### Column Definitions
+
+- **Asset ID**: Unique identifier (CR-001, CR-002, etc.)
+- **Work Title**: Title of copyrighted work
+- **Type**: Software / Literary / Visual Art / Music / Video / Other
+- **Creation Date**: Date work was created and fixed
+- **Registration Number**: Copyright registration number (if registered)
+- **Registration Date**: Date registered with Copyright Office
+- **Author(s)**: Original author(s)
+- **Owner**: Current owner (may differ from author if work-for-hire or assigned)
+- **Status**: Registered / Unregistered / Pending
+- **Protection Term**: Expiration date (Author life + 70 years, or 95/120 for work-for-hire)
+- **Published?**: Yes / No
+- **Notes**: Additional information, licensing, use
+
+### Example Rows
+
+| Asset ID | Work Title | Type | Creation Date | Registration Number | Registration Date | Author(s) | Owner | Status | Protection Term | Published? | Notes |
+|----------|------------|------|---------------|---------------------|-------------------|-----------|-------|--------|-----------------|------------|-------|
+| CR-001 | ACME Software Suite v1.0 | Software | 2020-05-10 | TXu 2-123-456 | 2020-07-15 | Smith, J.; Team | Acme Corp | Registered | 2115 (95 yrs from pub) | Yes | Work-for-hire |
+| CR-002 | ACME User Manual | Literary | 2020-06-01 | TX 8-234-567 | 2020-08-20 | Doe, A. | Acme Corp | Registered | 2115 | Yes | Work-for-hire |
+| CR-003 | Marketing Video "Product Launch" | Video | 2021-03-15 | PA 2-345-678 | 2021-04-10 | External Agency | Acme Corp (assigned) | Registered | 2116 | Yes | Assignment on file |
+
+---
+
+## SHEET 5: TRADE SECRETS
+
+### Column Headers
+
+| Asset ID | Description | Category | Classification | Identified Date | Protection Measures | Access Level | Last Review | Renewal Date | Business Value | Notes |
+|----------|-------------|----------|----------------|-----------------|---------------------|--------------|-------------|--------------|----------------|-------|
+
+### Column Definitions
+
+- **Asset ID**: Unique identifier (TS-001, TS-002, etc.)
+- **Description**: Brief description of trade secret (general, not the secret itself)
+- **Category**: Technical / Business / Process / Formula / Other
+- **Classification**: Confidential / Highly Confidential / Critical
+- **Identified Date**: Date identified as trade secret
+- **Protection Measures**: NDAs, access controls, encryption, physical security
+- **Access Level**: Who has access (job roles, not names)
+- **Last Review**: Date of last protection review
+- **Renewal Date**: Next scheduled review (quarterly/annual)
+- **Business Value**: Core / Strategic / Competitive Advantage
+- **Notes**: Additional information (without revealing secret)
+
+### Example Rows
+
+| Asset ID | Description | Category | Classification | Identified Date | Protection Measures | Access Level | Last Review | Renewal Date | Business Value | Notes |
+|----------|-------------|----------|----------------|-----------------|---------------------|--------------|-------------|--------------|----------------|-------|
+| TS-001 | ML Training Algorithm Parameters | Technical | Highly Confidential | 2019-01-15 | NDAs, access logs, encryption, need-to-know | AI Team Leads only | 2024-10-01 | 2025-01-01 | Core | Patent vs. TS decision: TS chosen |
+| TS-002 | Customer Pricing Models | Business | Confidential | 2018-06-10 | NDAs, CRM access controls | Sales Management | 2024-09-15 | 2024-12-15 | Strategic | Updated quarterly |
+| TS-003 | Manufacturing Process - Step 5 | Process | Critical | 2017-03-20 | Physical security, limited access, surveillance | Production Supervisors | 2024-11-01 | 2025-02-01 | Core | Provides 2-3 yr competitive advantage |
+
+---
+
+## SHEET 6: DEADLINES CALENDAR
+
+### Upcoming Deadlines (Next 120 Days)
+
+| Asset ID | Asset Type | Title/Mark | Deadline Date | Days Until | Action Required | Est. Cost | Priority | Assigned To | Status |
+|----------|------------|------------|---------------|------------|-----------------|-----------|----------|-------------|--------|
+
+### Example Rows
+
+| Asset ID | Asset Type | Title/Mark | Deadline Date | Days Until | Action Required | Est. Cost | Priority | Assigned To | Status |
+|----------|------------|------------|---------------|------------|-----------------|-----------|----------|-------------|--------|
+| P-001 | Patent | ML Image Recognition | 2026-02-22 | 145 | 3.5yr Maintenance Fee | $800 | High | IP Manager | Scheduled |
+| P-002 | Patent | Wireless Sensor | 2025-03-15 | 78 | Office Action Response | $3,000 | Critical | Outside Counsel | In Progress |
+| TM-004 | Trademark | SMART DEVICE | 2025-02-10 | 45 | ITU - Statement of Use | $100 | Critical | IP Manager | Specimen prepared |
+
+### Conditional Formatting
+
+- **Priority**:
+  - Red: Critical (< 30 days)
+  - Orange: High (30-60 days)
+  - Yellow: Medium (61-90 days)
+  - Green: Standard (> 90 days)
+
+### Sort By
+
+- Primary: Days Until (ascending - soonest first)
+- Secondary: Priority (Critical → High → Medium → Standard)
+
+---
+
+## SHEET 7: COSTS AND BUDGET
+
+### Annual IP Budget
+
+| Category | Budget | Actual | Variance | % of Budget |
+|----------|--------|--------|----------|-------------|
+| **Prosecution** | | | | |
+| - New Patent Filings | | | | |
+| - New Trademark Filings | | | | |
+| - Foreign Filings | | | | |
+| **Maintenance** | | | | |
+| - Patent Maintenance Fees | | | | |
+| - Trademark Renewals | | | | |
+| - Annuities (Foreign) | | | | |
+| **Attorney Fees** | | | | |
+| - Prosecution | | | | |
+| - Office Action Responses | | | | |
+| - Portfolio Management | | | | |
+| **Enforcement** | | | | |
+| - Cease & Desist | | | | |
+| - Litigation/Defense | | | | |
+| - Settlements | | | | |
+| **Other** | | | | |
+| - Search & Analysis | | | | |
+| - Software/Tools | | | | |
+| - Training | | | | |
+| **Total** | | | | |
+
+### Costs by Asset
+
+| Asset ID | Type | Title/Mark | Filing Cost | Prosecution Cost | Maintenance (To Date) | Total Cost | Status |
+|----------|------|------------|-------------|------------------|-----------------------|------------|--------|
+| P-001 | Patent | ML Image Recognition | $2,500 | $12,000 | $800 | $15,300 | Granted |
+| P-002 | Patent | Wireless Sensor | $2,500 | $8,500 | $0 | $11,000 | Pending |
+| TM-001 | Trademark | ACME SOLUTIONS | $350 | $1,200 | $850 | $2,400 | Registered |
+
+### Projected Costs (Next 12 Months)
+
+| Month | Maintenance Fees | Renewals | Attorney Fees | Other | Total |
+|-------|------------------|----------|---------------|-------|-------|
+| Jan | $1,600 | $0 | $3,000 | $500 | $5,100 |
+| Feb | $0 | $425 | $2,000 | $0 | $2,425 |
+| [Continue for 12 months] | | | | | |
+| **Total** | | | | | |
+
+---
+
+## SHEET 8: PATENT FAMILIES
+
+### Patent Family Tracking
+
+| Family ID | Priority Application | Priority Date | Family Members | Jurisdictions | Status Summary | Total Cost | Business Value |
+|-----------|---------------------|---------------|----------------|---------------|----------------|------------|----------------|
+| FAM-001 | US 17/123,456 | 2020-03-15 | US, EP, CN, JP | US (granted), EP (pending), CN (pending), JP (granted) | 2 granted, 2 pending | $85,000 | Core |
+
+### Family Member Details
+
+| Family ID | Jurisdiction | Application Number | Status | Filing Date | Grant Date | Patent Number | Local Agent | Notes |
+|-----------|--------------|-------------------|--------|-------------|------------|---------------|-------------|-------|
+| FAM-001 | US | 17/123,456 | Granted | 2020-03-15 | 2022-08-22 | US 11,123,456 | Internal | Parent application |
+| FAM-001 | EP | EP21 123 456.7 | Pending | 2021-03-10 | | | ABC Law | Validation in DE, FR, UK planned |
+| FAM-001 | CN | CN 202180 1234567 | Pending | 2021-03-10 | | | XYZ Associates | Translation filed |
+| FAM-001 | JP | JP 2022-567890 | Granted | 2021-03-10 | 2024-05-15 | JP 7123456 | DEF Patent | Granted |
+
+---
+
+## SHEET 9: LICENSING AND AGREEMENTS
+
+### Licensing Tracker
+
+| Agreement ID | Type | Party Name | IP Assets Covered | Effective Date | Expiration Date | Terms | Revenue/Cost | Status | Notes |
+|--------------|------|------------|-------------------|----------------|-----------------|-------|--------------|--------|-------|
+| LIC-001 | Exclusive License Out | TechCo Inc. | P-005, P-007 | 2022-01-01 | 2027-01-01 | 5% royalty | $250,000 (2024) | Active | Quarterly reports due |
+| LIC-002 | Non-Exclusive License In | Patents R Us | PR-123456 | 2021-06-01 | 2026-06-01 | $50k annual | ($50,000) | Active | FTO license |
+| LIC-003 | Cross-License | CompetitorCo | P-001, P-003 ↔ their P-456, P-789 | 2023-03-15 | Perpetual | No fees | $0 | Active | Mutual patent covenant |
+
+### Agreement Types
+
+- **License Out**: Company licenses its IP to others (revenue)
+- **License In**: Company licenses others' IP (cost)
+- **Cross-License**: Mutual licensing (usually no fees)
+- **Settlement**: Agreement from litigation/dispute
+
+---
+
+## SHEET 10: PROSECUTION HISTORY
+
+### Office Actions and Responses
+
+| Asset ID | Date | Event Type | Description | Action Required | Deadline | Status | Cost | Notes |
+|----------|------|------------|-------------|-----------------|----------|--------|------|-------|
+| P-002 | 2024-09-15 | Office Action | §103 rejection over Smith reference | Response | 2025-03-15 | In Progress | $3,000 | Interview scheduled with examiner |
+| TM-003 | 2024-10-01 | Office Action | §2(d) likelihood of confusion | Response | 2025-04-01 | Preparing | $1,500 | Researching consent agreement |
+
+### Examiner Interviews
+
+| Asset ID | Date | Examiner Name | Topics Discussed | Outcome | Next Steps |
+|----------|------|---------------|------------------|---------|------------|
+| P-002 | 2024-11-10 | Jane Smith | Claim amendments to overcome §103 | Agreement on claim scope | File amendment by Dec 1 |
+
+---
+
+## FORMULAS AND AUTOMATION
+
+### Useful Excel Formulas
+
+**Days Until Deadline**:
+```
+=Deadline_Date - TODAY()
+```
+
+**Conditional Formatting** (Priority based on days until):
+- Critical: `=$K2<30` (where K2 is Days Until column)
+- High: `=AND($K2>=30, $K2<60)`
+- Medium: `=AND($K2>=60, $K2<90)`
+- Standard: `=$K2>=90`
+
+**Count Assets by Status**:
+```
+=COUNTIF(Status_Range, "Granted")
+```
+
+**Sum Costs by Type**:
+```
+=SUMIF(Type_Range, "Patent", Cost_Range)
+```
+
+**Upcoming Deadlines (next 90 days)**:
+```
+=COUNTIFS(Deadline_Range, ">="&TODAY(), Deadline_Range, "<="&TODAY()+90)
+```
+
+---
+
+## INSTRUCTIONS FOR USE
+
+### Initial Setup
+
+1. **Create Excel workbook** with sheets listed above
+2. **Enter column headers** exactly as shown
+3. **Set up formulas** for calculated fields (Days Until, etc.)
+4. **Apply conditional formatting** for visual alerts
+5. **Create data validation** for dropdown lists (Status, Type, etc.)
+6. **Protect sheets** (allow editing only in data entry cells)
+
+### Regular Maintenance
+
+- **Weekly**: Update deadlines, check alerts
+- **Monthly**: Update costs, add new assets, update status
+- **Quarterly**: Review trade secret protections, update valuations
+- **Annually**: Complete portfolio assessment, budget planning
+
+### Best Practices
+
+- **Consistent formatting**: Use YYYY-MM-DD for dates
+- **Unique IDs**: Never reuse asset IDs
+- **Document everything**: Use Notes column liberally
+- **Regular backups**: Save versions with date stamps
+- **Access control**: Limit editing access, maintain audit trail
+- **Integration**: Link to document management system for file storage
+
+---
+
+## DASHBOARDS AND REPORTS
+
+### Create Pivot Tables For:
+
+- Assets by Type and Status
+- Costs by Year and Category
+- Deadlines by Month
+- Assets by Technology Area
+- Licensing Revenue by Year
+
+### Create Charts For:
+
+- Portfolio composition (pie chart)
+- Deadline timeline (Gantt chart)
+- Budget vs. Actual (bar chart)
+- Asset growth over time (line chart)
+
+---
+
+**This template provides a comprehensive IP portfolio management system. Customize to your organization's needs. Consider IP management software for larger portfolios (100+ assets).**
+
+**Version**: 1.0
+**Last Updated**: January 2025
+**Format**: Microsoft Excel (.xlsx) with multiple sheets
+**Recommended**: Link to document management system for file storage

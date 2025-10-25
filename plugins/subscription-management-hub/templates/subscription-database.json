@@ -1,0 +1,207 @@
+{
+  "version": "1.0",
+  "created": "2025-10-23T10:00:00Z",
+  "last_updated": "2025-10-23T10:00:00Z",
+  "subscriptions": {
+    "example-uuid-1": {
+      "id": "example-uuid-1",
+      "name": "Netflix Premium",
+      "provider": "Netflix Inc.",
+      "category": "streaming-video",
+      "cost": 15.99,
+      "billing_cycle": "monthly",
+      "monthly_cost_equivalent": 15.99,
+      "annual_cost_equivalent": 191.88,
+      "currency": "USD",
+      "status": "active",
+      "renewal_date": "2025-11-23",
+      "trial_end_date": null,
+      "cancellation_deadline": null,
+      "auto_renew": true,
+      "payment_method": "Visa *1234",
+      "date_started": "2024-01-15T10:00:00Z",
+      "date_cancelled": null,
+      "last_used": "2025-10-22",
+      "usage_frequency": "daily",
+      "website": "https://netflix.com",
+      "login_email": "user@example.com",
+      "notes": "Family plan shared with 3 people",
+      "alternatives": ["Hulu", "Disney+", "HBO Max"],
+      "tags": ["entertainment", "family", "essential"],
+      "metadata": {
+        "plan_name": "Premium",
+        "features": ["4K", "Multi-device", "Downloads"],
+        "user_count": 4,
+        "price_history": [
+          {
+            "date": "2024-01-01",
+            "cost": 13.99
+          },
+          {
+            "date": "2025-01-01",
+            "cost": 15.99
+          }
+        ]
+      }
+    },
+    "example-uuid-2": {
+      "id": "example-uuid-2",
+      "name": "Spotify Premium",
+      "provider": "Spotify",
+      "category": "streaming-music",
+      "cost": 10.99,
+      "billing_cycle": "monthly",
+      "monthly_cost_equivalent": 10.99,
+      "annual_cost_equivalent": 131.88,
+      "currency": "USD",
+      "status": "active",
+      "renewal_date": "2025-11-15",
+      "trial_end_date": null,
+      "cancellation_deadline": null,
+      "auto_renew": true,
+      "payment_method": "Mastercard *5678",
+      "date_started": "2023-06-01T10:00:00Z",
+      "date_cancelled": null,
+      "last_used": "2025-10-23",
+      "usage_frequency": "daily",
+      "website": "https://spotify.com",
+      "login_email": "user@example.com",
+      "notes": "Individual plan",
+      "alternatives": ["Apple Music", "YouTube Music", "Amazon Music"],
+      "tags": ["music", "daily-use", "essential"],
+      "metadata": {
+        "plan_name": "Premium Individual",
+        "features": ["Ad-free", "Offline", "High Quality"],
+        "user_count": 1
+      }
+    },
+    "example-uuid-3": {
+      "id": "example-uuid-3",
+      "name": "Adobe Creative Cloud",
+      "provider": "Adobe Inc.",
+      "category": "software-saas",
+      "cost": 54.99,
+      "billing_cycle": "monthly",
+      "monthly_cost_equivalent": 54.99,
+      "annual_cost_equivalent": 659.88,
+      "currency": "USD",
+      "status": "trial",
+      "renewal_date": null,
+      "trial_end_date": "2025-11-05",
+      "cancellation_deadline": "2025-11-04",
+      "auto_renew": true,
+      "payment_method": "Visa *1234",
+      "date_started": "2025-10-06T10:00:00Z",
+      "date_cancelled": null,
+      "last_used": "2025-10-20",
+      "usage_frequency": "weekly",
+      "website": "https://adobe.com",
+      "login_email": "user@example.com",
+      "notes": "7-day trial period, evaluating for design work",
+      "alternatives": ["Affinity Suite", "Canva Pro", "Figma"],
+      "tags": ["design", "trial", "expensive"],
+      "metadata": {
+        "plan_name": "All Apps",
+        "features": ["Photoshop", "Illustrator", "InDesign", "Premiere Pro"],
+        "user_count": 1
+      }
+    },
+    "example-uuid-4": {
+      "id": "example-uuid-4",
+      "name": "The New York Times Digital",
+      "provider": "The New York Times",
+      "category": "news-media",
+      "cost": 17.00,
+      "billing_cycle": "monthly",
+      "monthly_cost_equivalent": 17.00,
+      "annual_cost_equivalent": 204.00,
+      "currency": "USD",
+      "status": "active",
+      "renewal_date": "2025-11-10",
+      "trial_end_date": null,
+      "cancellation_deadline": null,
+      "auto_renew": true,
+      "payment_method": "Amex *9012",
+      "date_started": "2024-03-01T10:00:00Z",
+      "date_cancelled": null,
+      "last_used": "2025-10-15",
+      "usage_frequency": "weekly",
+      "website": "https://nytimes.com",
+      "login_email": "user@example.com",
+      "notes": "Digital subscription with cooking and games access",
+      "alternatives": ["Washington Post", "Wall Street Journal"],
+      "tags": ["news", "reading"],
+      "metadata": {
+        "plan_name": "All Access Digital",
+        "features": ["News", "Cooking", "Games", "Audio"],
+        "user_count": 1
+      }
+    },
+    "example-uuid-5": {
+      "id": "example-uuid-5",
+      "name": "Unused Fitness App",
+      "provider": "FitnessCo",
+      "category": "fitness",
+      "cost": 9.99,
+      "billing_cycle": "monthly",
+      "monthly_cost_equivalent": 9.99,
+      "annual_cost_equivalent": 119.88,
+      "currency": "USD",
+      "status": "active",
+      "renewal_date": "2025-11-01",
+      "trial_end_date": null,
+      "cancellation_deadline": null,
+      "auto_renew": true,
+      "payment_method": "Visa *1234",
+      "date_started": "2025-01-01T10:00:00Z",
+      "date_cancelled": null,
+      "last_used": "2025-02-15",
+      "usage_frequency": "never",
+      "website": "https://fitnessapp.com",
+      "login_email": "user@example.com",
+      "notes": "New Year's resolution subscription - haven't used in months",
+      "alternatives": ["YouTube Fitness", "Free alternatives"],
+      "tags": ["fitness", "underutilized", "cancel-candidate"],
+      "metadata": {
+        "plan_name": "Premium",
+        "features": ["Workouts", "Meal Plans", "Tracking"],
+        "user_count": 1
+      }
+    }
+  },
+  "metadata": {
+    "total_subscriptions": 5,
+    "active_subscriptions": 4,
+    "cancelled_subscriptions": 0,
+    "trial_subscriptions": 1,
+    "total_monthly_cost": 108.96,
+    "total_annual_cost": 1307.52,
+    "by_category": {
+      "streaming-video": {
+        "count": 1,
+        "monthly_cost": 15.99,
+        "annual_cost": 191.88
+      },
+      "streaming-music": {
+        "count": 1,
+        "monthly_cost": 10.99,
+        "annual_cost": 131.88
+      },
+      "software-saas": {
+        "count": 1,
+        "monthly_cost": 54.99,
+        "annual_cost": 659.88
+      },
+      "news-media": {
+        "count": 1,
+        "monthly_cost": 17.00,
+        "annual_cost": 204.00
+      },
+      "fitness": {
+        "count": 1,
+        "monthly_cost": 9.99,
+        "annual_cost": 119.88
+      }
+    }
+  }
+}

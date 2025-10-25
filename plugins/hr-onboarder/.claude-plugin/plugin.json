@@ -1,0 +1,41 @@
+{
+  "name": "hr-onboarder",
+  "version": "1.0.0",
+  "description": "Professional HR onboarding automation for creating comprehensive new hire experiences",
+  "author": {
+    "name": "Puerto"
+  },
+  "license": "MIT",
+  "type": "work-agent",
+  "category": "human-resources",
+  "agents": [
+    "./agents/hr-onboarder.md"
+  ],
+  "skills": [
+    "./skills/onboarding.md"
+  ],
+  "requirements": {
+    "claudeCode": ">=1.0.0"
+  },
+  "features": [
+    "Comprehensive onboarding checklists (pre-arrival through 90 days)",
+    "Role-specific onboarding plans (Engineering, Sales, Marketing, CS)",
+    "Welcome materials and communication templates",
+    "IT provisioning checklists with security standards",
+    "Training schedules and learning plans",
+    "30/60/90-day check-in templates",
+    "Remote onboarding adaptations",
+    "Professional email templates for all onboarding stages"
+  ],
+  "keywords": [
+    "onboarding",
+    "new hire",
+    "employee experience",
+    "hr automation",
+    "welcome",
+    "training",
+    "checklist",
+    "IT provisioning",
+    "30-60-90 day plan"
+  ]
+}

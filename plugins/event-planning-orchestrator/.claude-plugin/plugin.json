@@ -1,0 +1,20 @@
+{
+  "name": "event-planning-orchestrator",
+  "version": "1.0.0",
+  "description": "Comprehensive event planning and coordination system for large events (weddings, parties, conferences) with guest management, vendor coordination, budget tracking, and timeline planning",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "event-planning",
+    "wedding-planning",
+    "party-planning",
+    "guest-management",
+    "vendor-coordination",
+    "budget-tracking",
+    "timeline-planning",
+    "seating-chart",
+    "rsvp-tracking"
+  ],
+  "license": "MIT"
+}

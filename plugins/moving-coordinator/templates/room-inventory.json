@@ -1,0 +1,528 @@
+{
+  "version": "1.0",
+  "description": "Room-by-room inventory template for moving",
+  "created": "2025-10-23T00:00:00Z",
+  "last_updated": null,
+  "moving_date": null,
+  "rooms": {
+    "living_room": {
+      "id": "living_room",
+      "name": "Living Room",
+      "packing_priority": "medium",
+      "estimated_boxes": 8,
+      "actual_boxes": 0,
+      "items": [
+        {
+          "name": "Sofa",
+          "quantity": 1,
+          "category": "furniture",
+          "fragile": false,
+          "valuable": true,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "estimated_value": 1500,
+          "notes": "3-seater, requires furniture pads"
+        },
+        {
+          "name": "Coffee table",
+          "quantity": 1,
+          "category": "furniture",
+          "fragile": false,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Glass top - wrap carefully"
+        },
+        {
+          "name": "Television",
+          "quantity": 1,
+          "category": "electronics",
+          "fragile": true,
+          "valuable": true,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "estimated_value": 800,
+          "notes": "55 inch, original box in garage"
+        },
+        {
+          "name": "Bookshelf",
+          "quantity": 2,
+          "category": "furniture",
+          "fragile": false,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Disassemble if possible"
+        },
+        {
+          "name": "Books",
+          "quantity": 100,
+          "category": "books",
+          "fragile": false,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Pack in small boxes to avoid overweight"
+        }
+      ],
+      "total_items": 5,
+      "items_packed": 0,
+      "items_remaining": 5,
+      "boxes": [],
+      "packing_complete": false
+    },
+    "kitchen": {
+      "id": "kitchen",
+      "name": "Kitchen",
+      "packing_priority": "low",
+      "estimated_boxes": 15,
+      "actual_boxes": 0,
+      "items": [
+        {
+          "name": "Dishes (plates, bowls)",
+          "quantity": 24,
+          "category": "kitchen",
+          "fragile": true,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Wrap individually, pack vertically"
+        },
+        {
+          "name": "Glassware",
+          "quantity": 16,
+          "category": "kitchen",
+          "fragile": true,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Use cell dividers or lots of padding"
+        },
+        {
+          "name": "Pots and pans",
+          "quantity": 10,
+          "category": "kitchen",
+          "fragile": false,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Nest smaller items inside larger ones"
+        },
+        {
+          "name": "Small appliances",
+          "quantity": 5,
+          "category": "kitchen",
+          "fragile": false,
+          "valuable": true,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "estimated_value": 500,
+          "notes": "Microwave, toaster, blender, coffee maker, mixer"
+        },
+        {
+          "name": "Utensils and cutlery",
+          "quantity": 1,
+          "category": "kitchen",
+          "fragile": false,
+          "valuable": false,
+          "essential": true,
+          "packed": false,
+          "box_number": null,
+          "notes": "Keep one set aside for essentials box"
+        }
+      ],
+      "total_items": 5,
+      "items_packed": 0,
+      "items_remaining": 5,
+      "boxes": [],
+      "packing_complete": false,
+      "special_notes": "Pack last - keep essentials until final day"
+    },
+    "master_bedroom": {
+      "id": "master_bedroom",
+      "name": "Master Bedroom",
+      "packing_priority": "medium",
+      "estimated_boxes": 12,
+      "actual_boxes": 0,
+      "items": [
+        {
+          "name": "Bed frame (Queen)",
+          "quantity": 1,
+          "category": "furniture",
+          "fragile": false,
+          "valuable": true,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "estimated_value": 800,
+          "notes": "Disassemble, keep hardware together"
+        },
+        {
+          "name": "Mattress",
+          "quantity": 1,
+          "category": "furniture",
+          "fragile": false,
+          "valuable": true,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "estimated_value": 1200,
+          "notes": "Use mattress bag, transport flat"
+        },
+        {
+          "name": "Dresser",
+          "quantity": 2,
+          "category": "furniture",
+          "fragile": false,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Empty drawers, secure with tape or shrink wrap"
+        },
+        {
+          "name": "Clothing",
+          "quantity": 100,
+          "category": "clothes",
+          "fragile": false,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Use wardrobe boxes for hanging items, regular boxes for folded"
+        },
+        {
+          "name": "Bedding",
+          "quantity": 5,
+          "category": "linens",
+          "fragile": false,
+          "valuable": false,
+          "essential": true,
+          "packed": false,
+          "box_number": null,
+          "notes": "Keep one set for essentials, rest can be packed early"
+        }
+      ],
+      "total_items": 5,
+      "items_packed": 0,
+      "items_remaining": 5,
+      "boxes": [],
+      "packing_complete": false
+    },
+    "bathroom": {
+      "id": "bathroom",
+      "name": "Bathroom",
+      "packing_priority": "low",
+      "estimated_boxes": 5,
+      "actual_boxes": 0,
+      "items": [
+        {
+          "name": "Toiletries",
+          "quantity": 20,
+          "category": "bathroom",
+          "fragile": false,
+          "valuable": false,
+          "essential": true,
+          "packed": false,
+          "box_number": null,
+          "notes": "Pack most, keep essentials until last day"
+        },
+        {
+          "name": "Towels",
+          "quantity": 12,
+          "category": "linens",
+          "fragile": false,
+          "valuable": false,
+          "essential": true,
+          "packed": false,
+          "box_number": null,
+          "notes": "Keep 2 towels per person for essentials"
+        },
+        {
+          "name": "Medications",
+          "quantity": 1,
+          "category": "medical",
+          "fragile": false,
+          "valuable": true,
+          "essential": true,
+          "packed": false,
+          "box_number": null,
+          "notes": "TRANSPORT PERSONALLY - do not let movers handle"
+        },
+        {
+          "name": "Cleaning supplies",
+          "quantity": 10,
+          "category": "cleaning",
+          "fragile": false,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Check if hazardous - may need special handling"
+        }
+      ],
+      "total_items": 4,
+      "items_packed": 0,
+      "items_remaining": 4,
+      "boxes": [],
+      "packing_complete": false,
+      "special_notes": "Pack last - need for final cleaning"
+    },
+    "garage": {
+      "id": "garage",
+      "name": "Garage",
+      "packing_priority": "high",
+      "estimated_boxes": 10,
+      "actual_boxes": 0,
+      "items": [
+        {
+          "name": "Tools",
+          "quantity": 50,
+          "category": "tools",
+          "fragile": false,
+          "valuable": true,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "estimated_value": 1000,
+          "notes": "Keep basic toolkit accessible for furniture assembly"
+        },
+        {
+          "name": "Sports equipment",
+          "quantity": 15,
+          "category": "sports",
+          "fragile": false,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Bikes, balls, camping gear"
+        },
+        {
+          "name": "Holiday decorations",
+          "quantity": 5,
+          "category": "seasonal",
+          "fragile": true,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Already boxed, just label and tape"
+        },
+        {
+          "name": "Garden supplies",
+          "quantity": 20,
+          "category": "garden",
+          "fragile": false,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Check for hazardous materials (fertilizer, pesticides)"
+        }
+      ],
+      "total_items": 4,
+      "items_packed": 0,
+      "items_remaining": 4,
+      "boxes": [],
+      "packing_complete": false,
+      "special_notes": "Can pack early - not needed daily"
+    },
+    "office": {
+      "id": "office",
+      "name": "Office/Study",
+      "packing_priority": "medium",
+      "estimated_boxes": 8,
+      "actual_boxes": 0,
+      "items": [
+        {
+          "name": "Desk",
+          "quantity": 1,
+          "category": "furniture",
+          "fragile": false,
+          "valuable": true,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "estimated_value": 600,
+          "notes": "Disassemble if possible"
+        },
+        {
+          "name": "Office chair",
+          "quantity": 1,
+          "category": "furniture",
+          "fragile": false,
+          "valuable": true,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "estimated_value": 400
+        },
+        {
+          "name": "Computer and monitor",
+          "quantity": 1,
+          "category": "electronics",
+          "fragile": true,
+          "valuable": true,
+          "essential": true,
+          "packed": false,
+          "box_number": null,
+          "estimated_value": 2000,
+          "notes": "Original boxes if available, backup all data before move"
+        },
+        {
+          "name": "Office supplies",
+          "quantity": 50,
+          "category": "office",
+          "fragile": false,
+          "valuable": false,
+          "essential": false,
+          "packed": false,
+          "box_number": null,
+          "notes": "Pens, paper, files, etc."
+        },
+        {
+          "name": "Important documents",
+          "quantity": 1,
+          "category": "documents",
+          "fragile": false,
+          "valuable": true,
+          "essential": true,
+          "packed": false,
+          "box_number": null,
+          "notes": "TRANSPORT PERSONALLY - do not let movers handle"
+        }
+      ],
+      "total_items": 5,
+      "items_packed": 0,
+      "items_remaining": 5,
+      "boxes": [],
+      "packing_complete": false
+    }
+  },
+  "boxes": {},
+  "categories": {
+    "fragile": {
+      "description": "Items requiring special handling and padding",
+      "items": [],
+      "total_count": 0
+    },
+    "essential": {
+      "description": "Items needed immediately upon arrival",
+      "items": [],
+      "total_count": 0
+    },
+    "valuable": {
+      "description": "High-value items requiring extra insurance or care",
+      "items": [],
+      "total_count": 0
+    },
+    "donate": {
+      "description": "Items to donate before move",
+      "items": [],
+      "total_count": 0
+    },
+    "sell": {
+      "description": "Items to sell before move",
+      "items": [],
+      "total_count": 0
+    },
+    "discard": {
+      "description": "Items to throw away",
+      "items": [],
+      "total_count": 0
+    }
+  },
+  "stats": {
+    "total_items": 0,
+    "items_packed": 0,
+    "items_remaining": 0,
+    "total_rooms": 6,
+    "rooms_complete": 0,
+    "boxes_packed": 0,
+    "estimated_boxes": 58,
+    "total_estimated_value": 0
+  },
+  "packing_supplies": {
+    "small_boxes": {
+      "name": "Small boxes (1.5 cu ft)",
+      "recommended": 20,
+      "acquired": 0,
+      "used": 0,
+      "best_for": "Books, canned goods, heavy items"
+    },
+    "medium_boxes": {
+      "name": "Medium boxes (3.0 cu ft)",
+      "recommended": 30,
+      "acquired": 0,
+      "used": 0,
+      "best_for": "Kitchen items, clothes, toys"
+    },
+    "large_boxes": {
+      "name": "Large boxes (4.5 cu ft)",
+      "recommended": 15,
+      "acquired": 0,
+      "used": 0,
+      "best_for": "Linens, pillows, lampshades, light bulky items"
+    },
+    "wardrobe_boxes": {
+      "name": "Wardrobe boxes with bar",
+      "recommended": 3,
+      "acquired": 0,
+      "used": 0,
+      "best_for": "Hanging clothes"
+    },
+    "packing_tape": {
+      "name": "Packing tape rolls",
+      "recommended": 10,
+      "acquired": 0,
+      "used": 0
+    },
+    "bubble_wrap": {
+      "name": "Bubble wrap (rolls)",
+      "recommended": 5,
+      "acquired": 0,
+      "used": 0,
+      "best_for": "Fragile items, electronics"
+    },
+    "packing_paper": {
+      "name": "Packing paper (pounds)",
+      "recommended": 25,
+      "acquired": 0,
+      "used": 0,
+      "best_for": "Dishes, glassware, wrapping"
+    },
+    "markers": {
+      "name": "Permanent markers",
+      "recommended": 5,
+      "acquired": 0,
+      "used": 0,
+      "best_for": "Box labeling"
+    },
+    "furniture_pads": {
+      "name": "Furniture pads/blankets",
+      "recommended": 12,
+      "acquired": 0,
+      "used": 0,
+      "best_for": "Furniture protection"
+    }
+  },
+  "notes": "This is a template. Customize rooms and items based on your actual belongings.",
+  "usage_instructions": [
+    "Add or modify rooms to match your home layout",
+    "Update item quantities and details for accuracy",
+    "Mark items as fragile, valuable, or essential appropriately",
+    "Create boxes and assign items as you pack",
+    "Use the inventory-tracker agent to manage packing progress",
+    "Generate box labels and unpacking guides from the agent"
+  ]
+}

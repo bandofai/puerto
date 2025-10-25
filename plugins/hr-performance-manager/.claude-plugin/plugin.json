@@ -1,0 +1,38 @@
+{
+  "name": "hr-performance-manager",
+  "version": "1.0.0",
+  "description": "Professional performance management system with comprehensive tools for reviews, goal setting, career development, 1-on-1s, and PIPs",
+  "author": {
+    "name": "Puerto Marketplace"
+  },
+  "license": "MIT",
+  "type": "work-agent",
+  "category": "hr-management",
+  "agents": [
+    "./agents/hr-performance-manager.md"
+  ],
+  "skills": [
+    "./skills/performance-management.md"
+  ],
+  "requirements": {
+    "claude_code_version": ">=1.0.0"
+  },
+  "installation": {
+    "user_level": "~/.claude/plugins/hr-performance-manager/",
+    "project_level": ".claude/plugins/hr-performance-manager/"
+  },
+  "documentation": "README.md",
+  "repository": "https://github.com/bandofai/puerto",
+  "keywords": [
+    "performance management",
+    "employee reviews",
+    "goal setting",
+    "career development",
+    "human resources",
+    "talent management",
+    "employee development",
+    "performance improvement",
+    "1-on-1 meetings",
+    "feedback"
+  ]
+}

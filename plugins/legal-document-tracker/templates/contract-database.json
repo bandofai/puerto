@@ -1,0 +1,146 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Contract Database",
+  "description": "Master database for tracking all contracts and agreements",
+  "contracts": [
+    {
+      "id": "contract-001",
+      "type": "employment",
+      "title": "Employment Agreement - Example Corp",
+      "party": "Example Corporation",
+      "startDate": "2024-01-15",
+      "endDate": "2025-01-15",
+      "autoRenew": false,
+      "noticeRequired": 30,
+      "status": "active",
+      "location": "~/Documents/Contracts/employment-example-corp.pdf",
+      "keyTerms": [
+        "Base salary: $85,000/year",
+        "Health insurance: Immediate coverage",
+        "Vacation: 15 days/year",
+        "Non-compete: 12 months, 50-mile radius"
+      ],
+      "financialTerms": {
+        "salary": 85000,
+        "bonus": "Performance-based, up to 10%",
+        "stockOptions": "5,000 shares over 4 years"
+      },
+      "renewalHistory": [
+        {
+          "date": "2023-01-15",
+          "action": "renewed",
+          "newEndDate": "2024-01-15",
+          "changes": "Salary increased from $80k to $85k"
+        }
+      ],
+      "relatedDocuments": ["doc-001", "doc-002"],
+      "attorney": "atty-001",
+      "notes": "Review before expiration for potential renewal or renegotiation"
+    },
+    {
+      "id": "contract-002",
+      "type": "rental",
+      "title": "Apartment Lease - 123 Main Street",
+      "party": "ABC Property Management",
+      "startDate": "2024-06-01",
+      "endDate": "2025-06-01",
+      "autoRenew": false,
+      "noticeRequired": 60,
+      "status": "active",
+      "location": "~/Documents/Contracts/lease-2024.pdf",
+      "keyTerms": [
+        "Rent: $1,800/month",
+        "Security deposit: $1,800",
+        "Utilities: Tenant pays electric, gas, water",
+        "Pets: Not allowed"
+      ],
+      "financialTerms": {
+        "monthlyRent": 1800,
+        "securityDeposit": 1800,
+        "lateFee": 50,
+        "increaseNotice": 90
+      },
+      "renewalHistory": [],
+      "relatedDocuments": [],
+      "attorney": null,
+      "notes": "60 days notice required. Consider negotiating rent reduction for renewal."
+    },
+    {
+      "id": "contract-003",
+      "type": "service",
+      "title": "Internet Service Agreement - FastNet",
+      "party": "FastNet Communications",
+      "startDate": "2024-03-01",
+      "endDate": "2025-03-01",
+      "autoRenew": true,
+      "noticeRequired": 30,
+      "status": "active",
+      "location": "~/Documents/Contracts/fastnet-agreement.pdf",
+      "keyTerms": [
+        "Service: 500 Mbps internet",
+        "Cost: $60/month",
+        "Auto-renewal: Yes, requires 30 days notice to cancel",
+        "Early termination fee: $200"
+      ],
+      "financialTerms": {
+        "monthlyFee": 60,
+        "installationFee": 0,
+        "earlyTerminationFee": 200
+      },
+      "renewalHistory": [],
+      "relatedDocuments": [],
+      "attorney": null,
+      "notes": "Auto-renews! Set alert 30 days before if considering cancellation."
+    },
+    {
+      "id": "contract-004",
+      "type": "insurance",
+      "title": "Auto Insurance Policy - SafeDrive Insurance",
+      "party": "SafeDrive Insurance Company",
+      "startDate": "2024-09-15",
+      "endDate": "2025-09-15",
+      "autoRenew": true,
+      "noticeRequired": 30,
+      "status": "active",
+      "location": "~/Documents/Insurance/auto-policy-2024.pdf",
+      "keyTerms": [
+        "Coverage: Liability, Comprehensive, Collision",
+        "Premium: $150/month",
+        "Deductible: $500",
+        "Auto-renewal: Yes"
+      ],
+      "financialTerms": {
+        "monthlyPremium": 150,
+        "deductible": 500,
+        "annualPremium": 1800
+      },
+      "renewalHistory": [
+        {
+          "date": "2023-09-15",
+          "action": "renewed",
+          "newEndDate": "2024-09-15",
+          "changes": "Premium increased by $10/month"
+        }
+      ],
+      "relatedDocuments": [],
+      "attorney": null,
+      "notes": "Shop around 60 days before renewal to compare rates"
+    }
+  ],
+  "_metadata": {
+    "version": "1.0",
+    "lastUpdated": "2025-01-22",
+    "totalContracts": 4,
+    "activeContracts": 4,
+    "expiringIn30Days": 0,
+    "expiringIn90Days": 0
+  },
+  "_instructions": {
+    "usage": "This is the master contract database. Update when adding, modifying, or renewing contracts.",
+    "location": "Save to ~/.legal-docs/contracts.json or .legal-docs/contracts.json",
+    "backup": "Back up regularly. Losing this file means losing track of important deadlines!",
+    "statusValues": ["active", "expiring-soon", "expired", "renewed", "terminated"],
+    "typeValues": ["employment", "rental", "service", "insurance", "business", "other"],
+    "autoRenewNote": "For auto-renew contracts, set alerts based on notice period, not end date!"
+  }
+}

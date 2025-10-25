@@ -1,0 +1,32 @@
+{
+  "name": "sales-proposal-writer",
+  "version": "1.0.0",
+  "description": "Professional sales proposal creation and RFP response specialist with comprehensive templates, pricing calculations, and client customization",
+  "author": "bandofai",
+  "tags": ["sales", "proposals", "rfp", "business-development", "work-agent"],
+  "agents": [
+    {
+      "name": "sales-proposal-writer",
+      "description": "Creates professional sales proposals and RFP responses with customization, pricing, case studies, and terms assembly",
+      "model": "sonnet",
+      "path": "agents/sales-proposal-writer.md"
+    }
+  ],
+  "skills": [
+    {
+      "name": "proposal-writing",
+      "description": "Comprehensive proposal writing patterns, templates, pricing strategies, and best practices from 500+ successful proposals",
+      "path": "skills/proposal-writing/SKILL.md"
+    }
+  ],
+  "templates": [
+    "templates/proposal-template.md",
+    "templates/rfp-response-template.md",
+    "templates/pricing-table-template.md",
+    "templates/case-study-template.md"
+  ],
+  "integrations": {
+    "sales-lead-qualifier": "Reads qualification data for client context and customization",
+    "sales-engineer": "References technical documentation and ROI analyses"
+  }
+}

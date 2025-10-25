@@ -1,0 +1,17 @@
+{
+  "name": "legal-document-tracker",
+  "version": "1.0.0",
+  "description": "> Contract expiration, legal deadline monitoring, and document version control specialist",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/document-versioner.md",
+    "./agents/contract-monitor.md",
+    "./agents/deadline-tracker.md"
+  ],
+  "skills": [
+    "./skills/legal-document-management.md"
+  ],
+  "license": "MIT"
+}

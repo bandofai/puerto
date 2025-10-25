@@ -1,0 +1,20 @@
+{
+  "name": "language-learning-assistant",
+  "version": "1.0.0",
+  "description": "Vocabulary tracking and language immersion specialist",
+  "agents": [
+    "./agents/vocabulary-manager.md",
+    "./agents/practice-scheduler.md",
+    "./agents/immersion-logger.md",
+    "./agents/progress-analyzer.md"
+  ],
+  "skills": [
+    "./skills/vocabulary-learning.md",
+    "./skills/language-practice.md",
+    "./skills/immersion-tracking.md"
+  ],
+  "author": {
+    "name": "Puerto"
+  },
+  "license": "MIT"
+}

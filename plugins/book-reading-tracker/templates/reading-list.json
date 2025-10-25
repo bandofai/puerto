@@ -1,0 +1,41 @@
+{
+  "readingLists": {
+    "toRead": [],
+    "reading": [],
+    "completed": []
+  },
+  "books": [
+    {
+      "id": "book-001",
+      "title": "The Pragmatic Programmer",
+      "author": "David Thomas, Andrew Hunt",
+      "isbn": "978-0135957059",
+      "pages": 352,
+      "publicationYear": 2019,
+      "edition": "20th Anniversary Edition",
+      "publisher": "Addison-Wesley",
+      "genre": ["Programming", "Software Engineering", "Non-Fiction"],
+      "language": "English",
+      "format": "Paperback",
+      "status": "completed",
+      "dateAdded": "2025-01-01",
+      "dateStarted": "2025-01-15",
+      "dateCompleted": "2025-02-10",
+      "currentPage": 352,
+      "rating": 5,
+      "tags": ["software-engineering", "best-practices", "career"],
+      "goodreadsId": "4099",
+      "coverUrl": "",
+      "notes": "Essential reading for software developers"
+    }
+  ],
+  "readingGoals": {
+    "2025": {
+      "goalBooks": 50,
+      "goalPages": 15000,
+      "booksRead": 0,
+      "pagesRead": 0,
+      "startDate": "2025-01-01"
+    }
+  }
+}

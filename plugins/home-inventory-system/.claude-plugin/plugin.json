@@ -1,0 +1,17 @@
+{
+  "name": "home-inventory-system",
+  "version": "1.0.0",
+  "description": "Asset cataloging and insurance documentation specialist for household items",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/asset-cataloger.md",
+    "./agents/insurance-reporter.md",
+    "./agents/value-estimator.md"
+  ],
+  "skills": [
+    "./skills/asset-management.md"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "risk-analyst",
+  "version": "1.0.0",
+  "description": "Risk assessment and mitigation specialist",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/risk-identifier.md",
+    "./agents/risk-assessor.md",
+    "./agents/mitigation-strategist.md"
+  ],
+  "skills": [
+    "./skills/risk-assessment.md",
+    "./skills/risk-mitigation.md"
+  ]
+}

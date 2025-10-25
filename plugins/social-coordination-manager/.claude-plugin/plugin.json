@@ -1,0 +1,21 @@
+{
+  "name": "social-coordination-manager",
+  "version": "1.0.0",
+  "description": "Relationship maintenance and social event coordination specialist. Birthday tracking, gift ideas, event planning, and relationship maintenance reminders.",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "social",
+    "relationships",
+    "events",
+    "birthdays",
+    "gifts",
+    "coordination",
+    "planning",
+    "reminders",
+    "contact-management",
+    "social-calendar"
+  ],
+  "license": "MIT"
+}

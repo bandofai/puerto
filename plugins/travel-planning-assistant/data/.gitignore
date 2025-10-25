@@ -1,0 +1,21 @@
+# Travel Planning Assistant - Data Directory
+
+# This directory is for user trip data
+# Ignore all user-generated trip files
+*
+
+# But keep this .gitignore file
+!.gitignore
+
+# Users can store trip data here, but it won't be committed to git
+# This ensures privacy of personal travel plans
+
+# Example structure (not committed):
+# trips/
+#   paris-2024-06-15/
+#     itinerary.json
+#     packing-list.json
+#     budget.json
+#     confirmations/
+#   tokyo-2024-09-01/
+#     ...

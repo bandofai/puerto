@@ -1,0 +1,38 @@
+{
+  "petId": "pet-001",
+  "vaccinations": [
+    {
+      "type": "Rabies",
+      "date": "2024-03-15",
+      "nextDue": "2027-03-15",
+      "vet": "Dr. Smith",
+      "certificateNumber": "RAB-2024-001"
+    },
+    {
+      "type": "DHPP",
+      "date": "2024-03-15",
+      "nextDue": "2027-03-15",
+      "vet": "Dr. Smith"
+    }
+  ],
+  "vetVisits": [
+    {
+      "date": "2024-03-15",
+      "type": "wellness",
+      "vet": "Dr. Smith",
+      "weight": 70,
+      "services": ["Annual exam", "Vaccinations"],
+      "cost": 150,
+      "notes": "All clear, healthy"
+    }
+  ],
+  "medications": [
+    {
+      "name": "Heartgard Plus",
+      "type": "preventive",
+      "dosage": "1 chewable",
+      "frequency": "monthly",
+      "active": true
+    }
+  ]
+}

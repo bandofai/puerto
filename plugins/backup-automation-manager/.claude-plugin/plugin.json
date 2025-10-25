@@ -1,0 +1,17 @@
+{
+  "name": "backup-automation-manager",
+  "version": "1.0.0",
+  "description": "Automated backup scheduling, verification, storage monitoring, and disaster recovery planning with multi-cloud support",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "backup",
+    "disaster-recovery",
+    "automation",
+    "cloud-storage",
+    "verification",
+    "monitoring"
+  ],
+  "license": "MIT"
+}

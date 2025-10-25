@@ -1,0 +1,17 @@
+{
+  "name": "business-analyst",
+  "version": "1.0.0",
+  "description": "Business process and requirements analysis specialist",
+  "agents": [
+    "./agents/requirements-gatherer.md",
+    "./agents/process-mapper.md",
+    "./agents/gap-analyzer.md"
+  ],
+  "skills": [
+    "./skills/requirements-analysis.md",
+    "./skills/process-mapping.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

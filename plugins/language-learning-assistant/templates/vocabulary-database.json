@@ -1,0 +1,29 @@
+{
+  "vocabulary": [
+    {
+      "id": "vocab-001",
+      "word": "gato",
+      "language": "Spanish",
+      "translation": "cat",
+      "partOfSpeech": "noun",
+      "gender": "masculine",
+      "pronunciation": "ˈɡa.to",
+      "cefrLevel": "A1",
+      "exampleSentence": "El gato está durmiendo",
+      "exampleTranslation": "The cat is sleeping",
+      "tags": ["animals", "pets"],
+      "dateAdded": "2025-01-15",
+      "dateLastReviewed": "2025-02-15",
+      "dateNextReview": "2025-02-20",
+      "repetitions": 3,
+      "easeFactor": 2.5,
+      "interval": 5
+    }
+  ],
+  "statistics": {
+    "totalWords": 1,
+    "learningWords": 1,
+    "masteredWords": 0,
+    "wordsReviewedToday": 0
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "contacts": [
+    {
+      "id": "example-uuid-1234",
+      "name": "Jane Doe",
+      "nickname": "Jane",
+      "relationship": "friend",
+      "tier": "close",
+      "birthday": "1990-03-15",
+      "anniversary": null,
+      "interests": [
+        "photography",
+        "hiking",
+        "coffee"
+      ],
+      "preferences": {
+        "giftStyle": "experiential",
+        "celebrationStyle": "intimate",
+        "dietaryRestrictions": [
+          "vegetarian"
+        ],
+        "allergies": []
+      },
+      "giftHistory": [
+        {
+          "date": "2024-03-15",
+          "occasion": "Birthday",
+          "gift": "Photography workshop gift certificate",
+          "cost": 75.00,
+          "reaction": "Absolutely loved it!"
+        }
+      ],
+      "lastContact": "2025-10-15",
+      "contactFrequency": "monthly",
+      "notes": "Best friend from college. Recently started freelance photography business. Has a golden retriever named Max.",
+      "socialMedia": {
+        "instagram": "@janedoephoto",
+        "facebook": "jane.doe"
+      }
+    }
+  ],
+  "metadata": {
+    "lastUpdated": "2025-10-22",
+    "version": "1.0",
+    "totalContacts": 1
+  }
+}

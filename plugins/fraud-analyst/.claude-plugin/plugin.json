@@ -1,0 +1,21 @@
+{
+  "name": "fraud-analyst",
+  "version": "1.0.0",
+  "description": "A comprehensive fraud detection and prevention specialist for financial transactions, providing real-time monitoring, pattern detection, risk assessment, investigation workflow management, and AML/SAR compliance reporting.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/pattern-analyzer.md",
+    "./agents/risk-scorer.md",
+    "./agents/transaction-monitor.md",
+    "./agents/compliance-reporter.md",
+    "./agents/investigation-coordinator.md"
+  ],
+  "skills": [
+    "./skills/fraud-detection.md",
+    "./skills/compliance-reporting.md",
+    "./skills/investigation-workflow.md"
+  ],
+  "license": "MIT"
+}

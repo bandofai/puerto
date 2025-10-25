@@ -1,0 +1,18 @@
+{
+  "name": "seo-specialist",
+  "version": "1.0.0",
+  "description": "SEO optimization expert for keyword research, technical SEO, and content optimization",
+  "agents": [
+    "./agents/keyword-researcher.md",
+    "./agents/technical-seo-auditor.md",
+    "./agents/content-optimizer.md"
+  ],
+  "skills": [
+    "./skills/keyword-research.md",
+    "./skills/technical-seo.md",
+    "./skills/content-optimization.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

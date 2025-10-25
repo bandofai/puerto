@@ -1,0 +1,323 @@
+# PROJECT STATUS REPORT TEMPLATE
+# This is a Markdown template that can be converted to Word (.docx)
+# For Word format: Use Pandoc or copy into Word and format
+
+================================================================================
+PROJECT STATUS REPORT
+================================================================================
+
+Project Name:     [PROJECT NAME]
+Report Type:      [Weekly / Monthly / Executive Summary]
+Report Date:      [DATE]
+Reporting Period: [START DATE] - [END DATE]
+Project Manager:  [NAME]
+Sponsor:          [NAME]
+
+================================================================================
+EXECUTIVE SUMMARY
+================================================================================
+
+Overall Project Status:  🟢 ON TRACK  /  🟡 AT RISK  /  🔴 OFF TRACK
+
+[Brief 2-3 sentence summary of project health and key points this period]
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│ STATUS DASHBOARD                                                           │
+├────────────────┬──────────┬─────────────────────────────────────────────────┤
+│ Area           │ Status   │ Comment                                         │
+├────────────────┼──────────┼─────────────────────────────────────────────────┤
+│ Schedule       │ 🟢 Green │ On track for [DATE] delivery                    │
+│ Budget         │ 🟡 Yellow│ 5% over budget (within contingency)             │
+│ Scope          │ 🟢 Green │ No scope changes                                │
+│ Quality        │ 🟢 Green │ All quality metrics met                         │
+│ Team/Resources │ 🟢 Green │ Team at full capacity                           │
+│ Risks          │ 🟡 Yellow│ 2 high-priority risks (mitigating)              │
+└────────────────┴──────────┴─────────────────────────────────────────────────┘
+
+================================================================================
+KEY METRICS
+================================================================================
+
+Project Completion:    [XX]%  (vs [YY]% planned)  [↑ ↓ →]
+Tasks Completed:       [XX] of [YY] total tasks
+Current Phase:         [PHASE NAME] ([X]% complete)
+
+Schedule Performance:
+  - SPI (Schedule Performance Index):  [0.00]  (1.0 = on schedule)
+  - Schedule Variance:                 [±X] days [ahead/behind]
+
+Cost Performance:
+  - Budget:       $[XXX,XXX]
+  - Spent:        $[XXX,XXX] ([XX]%)
+  - Remaining:    $[XXX,XXX]
+  - Forecast:     $[XXX,XXX] ([±X]% variance)
+  - CPI (Cost Performance Index):      [0.00]  (1.0 = on budget)
+
+Quality Metrics:
+  - Test Coverage:                     [XX]%  (target: >80%)
+  - Defect Density:                    [X.X] defects/KLOC (target: <2)
+  - Build Success Rate:                [XX]%  (target: >90%)
+
+================================================================================
+ACCOMPLISHMENTS THIS PERIOD
+================================================================================
+
+✅ [Major accomplishment 1]
+   - [Specific details or impact]
+
+✅ [Major accomplishment 2]
+   - [Specific details or impact]
+
+✅ [Major accomplishment 3]
+   - [Specific details or impact]
+
+✅ Milestones Achieved:
+   - [M1: Milestone Name] - [Date] ✅ Completed on schedule
+   - [M2: Milestone Name] - [Date] ✅ Completed 2 days early
+
+✅ Tasks Completed: [XX] tasks
+   - [Task Category 1]: [X] tasks
+   - [Task Category 2]: [X] tasks
+   [See Appendix A for complete task list]
+
+================================================================================
+WORK IN PROGRESS
+================================================================================
+
+🔄 Current Sprint/Phase: [NAME] ([XX]% complete)
+   - Target completion: [DATE]
+   - [X] of [Y] tasks completed
+
+🔄 Key Activities:
+   - [Activity 1] - [Owner] - [XX]% complete
+   - [Activity 2] - [Owner] - [XX]% complete
+   - [Activity 3] - [Owner] - [XX]% complete
+
+================================================================================
+ISSUES & BLOCKERS
+================================================================================
+
+🚫 CRITICAL BLOCKERS:
+   None  /  [Number] active blocker(s)
+
+   [If blockers exist:]
+   Issue #[XX]: [Brief description]
+   - Impact:  [High/Medium/Low] - [Specific impact]
+   - Owner:   [Name]
+   - Due:     [Date]
+   - Status:  [Current status and actions taken]
+
+⚠️  ISSUES THIS PERIOD:
+   Total Issues: [XX]
+   - New:        [X]
+   - Resolved:   [X]
+   - Open:       [X]
+
+   Notable Issues:
+   1. Issue #[XX]: [Description]
+      - Severity: [High/Medium/Low]
+      - Status:   [Open/In Progress/Resolved]
+      - Action:   [What we're doing about it]
+
+================================================================================
+RISKS & MITIGATION
+================================================================================
+
+Risk Summary:
+- Critical Risks (Score >16):  [X]
+- High Risks (Score 10-16):    [X]
+- Medium Risks (Score 5-9):    [X]
+- Low Risks (Score 1-4):       [X]
+
+TOP 5 RISKS:
+
+1. Risk #[XX]: [Risk Description]
+   - Category:    [Technical/Schedule/Cost/Resource/External]
+   - Score:       [XX] (Probability: [X], Impact: [X])
+   - Status:      [Active/Mitigating/Monitoring/Closed]
+   - Mitigation:  [Summary of mitigation actions]
+   - Owner:       [Name]
+   - Next Review: [Date]
+
+2. Risk #[XX]: [Risk Description]
+   - [Same structure as above]
+
+3. Risk #[XX]: [Risk Description]
+   - [Same structure as above]
+
+[Continue for top 5 risks]
+
+[See full risk register for complete list]
+
+================================================================================
+UPCOMING MILESTONES & DELIVERABLES
+================================================================================
+
+Next 30 Days:
+
+📅 [DATE] - [M#: Milestone Name]
+   - Status: [On Track / At Risk / Delayed]
+   - Deliverable: [What will be delivered]
+   - Dependencies: [What must be complete first]
+
+📅 [DATE] - [M#: Milestone Name]
+   - [Same structure as above]
+
+📅 [DATE] - [M#: Milestone Name]
+   - [Same structure as above]
+
+Next 60-90 Days:
+- [High-level view of major milestones 2-3 months out]
+
+================================================================================
+RESOURCE UTILIZATION
+================================================================================
+
+┌──────────────────┬──────────┬────────┬──────────────┬─────────────────────┐
+│ Role/Team        │ Allocated│ Actual │ Utilization  │ Notes               │
+├──────────────────┼──────────┼────────┼──────────────┼─────────────────────┤
+│ Project Manager  │    50%   │   55%  │    110%      │ High due to issues  │
+│ Dev Team         │   100%   │   95%  │     95%      │ Normal              │
+│ QA Team          │   100%   │   80%  │     80%      │ Testing starts Wk 6 │
+│ Designer         │    50%   │   50%  │    100%      │ Rolling off in Feb  │
+└──────────────────┴──────────┴────────┴──────────────┴─────────────────────┘
+
+Resource Needs:
+- [Description of any resource gaps or needs]
+- [Action plan to address]
+
+================================================================================
+BUDGET TRACKING
+================================================================================
+
+┌─────────────────────┬────────────┬────────────┬────────────┬──────────────┐
+│ Category            │ Budget     │ Spent      │ Remaining  │ Forecast     │
+├─────────────────────┼────────────┼────────────┼────────────┼──────────────┤
+│ Labor               │ $XXX,XXX   │ $XXX,XXX   │ $XXX,XXX   │ $XXX,XXX     │
+│ Software/Tools      │ $XX,XXX    │ $XX,XXX    │ $XX,XXX    │ $XX,XXX      │
+│ Hardware/Equipment  │ $XX,XXX    │ $XX,XXX    │ $XX,XXX    │ $XX,XXX      │
+│ Other               │ $XX,XXX    │ $XX,XXX    │ $XX,XXX    │ $XX,XXX      │
+├─────────────────────┼────────────┼────────────┼────────────┼──────────────┤
+│ Subtotal            │ $XXX,XXX   │ $XXX,XXX   │ $XXX,XXX   │ $XXX,XXX     │
+│ Contingency (10%)   │ $XX,XXX    │ $X,XXX     │ $XX,XXX    │ $XX,XXX      │
+├─────────────────────┼────────────┼────────────┼────────────┼──────────────┤
+│ TOTAL               │ $XXX,XXX   │ $XXX,XXX   │ $XXX,XXX   │ $XXX,XXX     │
+└─────────────────────┴────────────┴────────────┴────────────┴──────────────┘
+
+Budget Status:
+- Burn Rate:        $[XX,XXX] per [week/month] (planned: $[XX,XXX])
+- Variance:         [±$XX,XXX] ([±X]%)
+- Forecast:         [On budget / $XX,XXX over / $XX,XXX under]
+- Runway:           [XX] [weeks/months] remaining at current burn rate
+
+================================================================================
+DECISIONS REQUIRED
+================================================================================
+
+🔴 URGENT (Next 7 days):
+
+1. Decision: [Description of decision needed]
+   - Impact:     [What happens if not decided]
+   - Options:    a) [Option A] b) [Option B] c) [Option C]
+   - Recommend:  [Recommended option and why]
+   - Owner:      [Who must decide]
+   - Due:        [Date decision needed]
+
+🟡 NEAR-TERM (Next 30 days):
+
+2. Decision: [Description]
+   - [Same structure as above]
+
+================================================================================
+NEXT PERIOD PLAN
+================================================================================
+
+Focus Areas:
+1. [Priority 1]
+2. [Priority 2]
+3. [Priority 3]
+
+Planned Activities:
+- [Activity 1] - [Owner] - [Target completion]
+- [Activity 2] - [Owner] - [Target completion]
+- [Activity 3] - [Owner] - [Target completion]
+
+Expected Completions:
+- [X] tasks (vs [Y] this period)
+- Target: [ZZ]% project completion by end of next period
+
+Scheduled Events:
+- [Date]: [Event/Meeting]
+- [Date]: [Event/Meeting]
+- [Date]: [Event/Meeting]
+
+================================================================================
+ACTION ITEMS
+================================================================================
+
+┌────┬─────────────────────────────────────────────┬────────┬──────┬──────────┐
+│ #  │ Action Item                                 │ Owner  │ Due  │ Status   │
+├────┼─────────────────────────────────────────────┼────────┼──────┼──────────┤
+│ 1  │ [Action description]                        │ [Name] │[Date]│ Open     │
+│ 2  │ [Action description]                        │ [Name] │[Date]│In Prog   │
+│ 3  │ [Action description]                        │ [Name] │[Date]│Complete  │
+└────┴─────────────────────────────────────────────┴────────┴──────┴──────────┘
+
+================================================================================
+ADDITIONAL NOTES
+================================================================================
+
+[Any additional context, observations, or information relevant to stakeholders]
+
+Team Morale: [High / Medium / Low] - [Brief comment]
+
+Stakeholder Engagement: [Description of stakeholder involvement this period]
+
+Lessons Learned: [Key insights from this period]
+
+================================================================================
+APPENDICES
+================================================================================
+
+Appendix A: Complete Task List
+[Detailed list of all tasks completed this period]
+
+Appendix B: Detailed Risk Register
+[Full risk register with all risks]
+
+Appendix C: Budget Breakdown
+[Detailed budget by category and line item]
+
+Appendix D: Project Timeline/Gantt Chart
+[Visual timeline showing progress]
+
+================================================================================
+REPORT METADATA
+================================================================================
+
+Report Generated By:    [Name]
+Report Generation Date: [Date]
+Distribution List:      [List of recipients]
+Next Report Date:       [Date]
+
+For questions or additional information, contact:
+[Project Manager Name]
+[Email]
+[Phone]
+
+================================================================================
+
+INSTRUCTIONS FOR USE:
+1. Replace all [PLACEHOLDER] text with actual project data
+2. Delete sections not applicable to your report type
+3. Update metrics from your project tracking tools
+4. Keep formatting consistent across all reports
+5. Use color coding: 🔴 Red (critical) 🟡 Yellow (caution) 🟢 Green (good)
+6. Tailor detail level to audience:
+   - Executive: Keep to 1-2 pages, high-level only
+   - Management: 3-4 pages, include trends
+   - Team: Full detail, all sections
+7. Include visuals where possible (charts, graphs)
+8. Be honest about status - transparency builds trust
+9. Focus on actionable information and decisions needed
+10. Proofread before sending - typos damage credibility

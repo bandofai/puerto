@@ -1,0 +1,22 @@
+{
+  "name": "habit-formation-coach",
+  "version": "1.0.0",
+  "description": "Science-based habit formation using tiny habits, behavior analysis, and compassionate coaching",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/behavior-analyst.md",
+    "./agents/habit-optimizer.md",
+    "./agents/habit-designer.md",
+    "./agents/accountability-tracker.md",
+    "./agents/recovery-coach.md"
+  ],
+  "skills": [
+    "./skills/accountability-systems.md",
+    "./skills/relapse-recovery.md",
+    "./skills/behavior-analysis.md",
+    "./skills/habit-formation.md"
+  ],
+  "license": "MIT"
+}

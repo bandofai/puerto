@@ -1,0 +1,19 @@
+{
+  "name": "database-architect",
+  "version": "1.0.0",
+  "description": "Database design, optimization, and migration specialist",
+  "agents": [
+    "./agents/schema-designer.md",
+    "./agents/query-optimizer.md",
+    "./agents/migration-manager.md",
+    "./agents/backup-strategist.md"
+  ],
+  "skills": [
+    "./skills/schema-design.md",
+    "./skills/query-optimization.md",
+    "./skills/migration-management.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

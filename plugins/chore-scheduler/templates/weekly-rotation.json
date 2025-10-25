@@ -1,0 +1,118 @@
+{
+  "rotation_id": "rotation-2025-01-21",
+  "type": "weekly",
+  "start_date": "2025-01-21",
+  "members": [
+    "Alice",
+    "Bob",
+    "Charlie"
+  ],
+  "chores": [
+    {
+      "id": "kitchen-cleanup-daily",
+      "name": "Kitchen Cleanup",
+      "description": "Wipe counters, load dishwasher, sweep floor",
+      "frequency": "daily",
+      "estimated_minutes": 15,
+      "difficulty": 2,
+      "category": "kitchen",
+      "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    },
+    {
+      "id": "vacuum-living-areas",
+      "name": "Vacuum Living Areas",
+      "description": "Vacuum living room, hallway, bedrooms",
+      "frequency": "weekly",
+      "estimated_minutes": 30,
+      "difficulty": 2,
+      "category": "cleaning",
+      "days": ["Saturday"]
+    },
+    {
+      "id": "bathroom-cleaning",
+      "name": "Bathroom Cleaning",
+      "description": "Clean toilet, sink, shower, mop floor",
+      "frequency": "weekly",
+      "estimated_minutes": 25,
+      "difficulty": 3,
+      "category": "bathroom",
+      "days": ["Sunday"]
+    },
+    {
+      "id": "trash-duty",
+      "name": "Take Out Trash",
+      "description": "Collect trash from all rooms, take to curb",
+      "frequency": "weekly",
+      "estimated_minutes": 10,
+      "difficulty": 1,
+      "category": "outdoor",
+      "days": ["Tuesday"]
+    },
+    {
+      "id": "laundry",
+      "name": "Laundry",
+      "description": "Wash, dry, fold, put away clothes",
+      "frequency": "weekly",
+      "estimated_minutes": 60,
+      "difficulty": 2,
+      "category": "laundry",
+      "days": ["Saturday"]
+    }
+  ],
+  "rotation_pattern": [
+    {
+      "week": 1,
+      "assignments": {
+        "Alice": ["kitchen-cleanup-daily", "bathroom-cleaning"],
+        "Bob": ["vacuum-living-areas", "trash-duty"],
+        "Charlie": ["laundry"]
+      }
+    },
+    {
+      "week": 2,
+      "assignments": {
+        "Alice": ["vacuum-living-areas", "trash-duty"],
+        "Bob": ["laundry"],
+        "Charlie": ["kitchen-cleanup-daily", "bathroom-cleaning"]
+      }
+    },
+    {
+      "week": 3,
+      "assignments": {
+        "Alice": ["laundry"],
+        "Bob": ["kitchen-cleanup-daily", "bathroom-cleaning"],
+        "Charlie": ["vacuum-living-areas", "trash-duty"]
+      }
+    },
+    {
+      "week": 4,
+      "assignments": {
+        "Alice": ["kitchen-cleanup-daily", "bathroom-cleaning"],
+        "Bob": ["vacuum-living-areas", "trash-duty"],
+        "Charlie": ["laundry"]
+      }
+    }
+  ],
+  "workload_balance": {
+    "Alice": {
+      "tasks": 2,
+      "minutes_per_week": 145,
+      "difficulty_avg": 2.5,
+      "categories": ["kitchen", "bathroom"]
+    },
+    "Bob": {
+      "tasks": 2,
+      "minutes_per_week": 40,
+      "difficulty_avg": 1.5,
+      "categories": ["cleaning", "outdoor"]
+    },
+    "Charlie": {
+      "tasks": 1,
+      "minutes_per_week": 60,
+      "difficulty_avg": 2.0,
+      "categories": ["laundry"]
+    }
+  },
+  "notes": "Initial rotation. Week 1 kitchen-cleanup assigned to Alice rotates after Week 3. Adjust workload balance in next review.",
+  "next_review_date": "2025-02-18"
+}

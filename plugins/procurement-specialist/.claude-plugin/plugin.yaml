@@ -1,0 +1,59 @@
+name: procurement-specialist
+version: 1.0.0
+description: Vendor management and purchasing specialist for procurement workflows
+author: Puerto Plugin System
+
+agents:
+  - name: vendor-evaluator
+    path: agents/vendor-evaluator.md
+    description: Vendor scoring and comparison matrices for vendor evaluation
+
+  - name: rfp-manager
+    path: agents/rfp-manager.md
+    description: Creates and manages RFPs with skill-aware best practices
+
+  - name: po-processor
+    path: agents/po-processor.md
+    description: Purchase order processing and approval workflow management
+
+  - name: contract-assistant
+    path: agents/contract-assistant.md
+    description: Contract review and negotiation support with legal patterns
+
+skills:
+  - name: procurement
+    path: skills/procurement/SKILL.md
+    description: Vendor selection criteria, sourcing strategies, and category management
+
+  - name: rfp-process
+    path: skills/rfp-process/SKILL.md
+    description: RFP structure, evaluation criteria, and bid analysis
+
+  - name: contract-management
+    path: skills/contract-management/SKILL.md
+    description: Contract terms, negotiation tactics, and risk clauses
+
+templates:
+  - name: rfp-template
+    path: templates/rfp-template.docx
+    description: Complete RFP structure template
+
+  - name: vendor-scorecard-template
+    path: templates/vendor-scorecard-template.xlsx
+    description: Vendor evaluation matrix template
+
+  - name: purchase-order-template
+    path: templates/purchase-order-template.xlsx
+    description: Purchase order format template
+
+tags:
+  - procurement
+  - vendor-management
+  - purchasing
+  - rfp
+  - contracts
+  - supply-chain
+
+categories:
+  - business-operations
+  - purchasing

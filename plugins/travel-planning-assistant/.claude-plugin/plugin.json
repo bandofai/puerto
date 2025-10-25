@@ -1,0 +1,23 @@
+{
+  "name": "travel-planning-assistant",
+  "version": "1.0.0",
+  "description": "Comprehensive travel planning companion with trip itinerary creation, weather-based packing lists, travel document checklists, budget tracking, and post-trip expense reconciliation.",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "travel",
+    "trip-planning",
+    "itinerary",
+    "packing-list",
+    "travel-documents",
+    "budget",
+    "expenses",
+    "vacation",
+    "adventure",
+    "organization",
+    "travel-assistant",
+    "weather-planning"
+  ],
+  "license": "MIT"
+}

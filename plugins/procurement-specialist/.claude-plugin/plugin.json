@@ -1,0 +1,20 @@
+{
+  "name": "procurement-specialist",
+  "version": "1.0.0",
+  "description": "Vendor management and purchasing specialist for procurement workflows",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/vendor-evaluator.md",
+    "./agents/rfp-manager.md",
+    "./agents/po-processor.md",
+    "./agents/contract-assistant.md"
+  ],
+  "skills": [
+    "./skills/procurement.md",
+    "./skills/rfp-process.md",
+    "./skills/contract-management.md"
+  ],
+  "license": "MIT"
+}

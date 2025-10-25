@@ -1,0 +1,19 @@
+{
+  "id": "20250115-143022",
+  "date": "2025-01-15",
+  "timestamp": "2025-01-15T14:30:22Z",
+  "type": "cbt-structured",
+  "title": "Reflecting on morning anxiety",
+  "content": "This morning I felt overwhelmed by my to-do list...",
+  "prompts_used": ["What was the situation?", "What thoughts came up?"],
+  "emotions": ["anxious", "worried"],
+  "triggers": ["work deadlines", "perfectionism"],
+  "insights": "I realized I was catastrophizing about the deadline",
+  "situation": "Looking at my calendar and seeing 5 meetings",
+  "thoughts": "I'll never get everything done. I'm going to fail.",
+  "feelings": "Anxious, tight chest, overwhelmed",
+  "behaviors": "Avoided starting work, scrolled social media",
+  "alternative_thoughts": "I can prioritize. I've handled busy weeks before. I can ask for help if needed.",
+  "therapy_related": false,
+  "private": true
+}

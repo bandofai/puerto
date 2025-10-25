@@ -1,0 +1,32 @@
+{
+  "petId": "pet-001",
+  "dailyRoutine": {
+    "feeding": [
+      {"time": "07:00", "amount": "1 cup", "type": "morning"},
+      {"time": "18:00", "amount": "1 cup", "type": "evening"}
+    ],
+    "exercise": [
+      {"time": "07:30", "type": "walk", "duration": 30},
+      {"time": "18:30", "type": "walk", "duration": 30}
+    ],
+    "medications": [
+      {"time": "07:00", "medication": "Heartgard", "day": 1}
+    ]
+  },
+  "weeklyTasks": {
+    "grooming": [
+      {"day": "Sunday", "task": "Brush", "duration": 15},
+      {"day": "Wednesday", "task": "Nail trim", "duration": 10}
+    ]
+  },
+  "monthlyTasks": {
+    "preventives": [
+      {"day": 1, "task": "Heartworm medication"},
+      {"day": 1, "task": "Flea/tick treatment"}
+    ],
+    "grooming": [
+      {"week": 2, "task": "Bath"},
+      {"week": 4, "task": "Professional grooming"}
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "entries": [
+    {
+      "id": "2025-01-22-001",
+      "date": "2025-01-22",
+      "category": "transport",
+      "activity": "car_gasoline",
+      "amount": 25,
+      "unit": "miles",
+      "carbon_kg": 5.25,
+      "notes": "Commute to work",
+      "metadata": {
+        "location": "US",
+        "vehicle_type": "sedan"
+      }
+    },
+    {
+      "id": "2025-01-22-002",
+      "date": "2025-01-22",
+      "category": "energy",
+      "activity": "electricity",
+      "amount": 30,
+      "unit": "kWh",
+      "carbon_kg": 12.6,
+      "notes": "Daily home electricity usage",
+      "metadata": {
+        "grid_type": "us_average"
+      }
+    },
+    {
+      "id": "2025-01-22-003",
+      "date": "2025-01-22",
+      "category": "food",
+      "activity": "chicken",
+      "amount": 0.17,
+      "unit": "kg",
+      "carbon_kg": 1.17,
+      "notes": "Grilled chicken dinner",
+      "metadata": {
+        "meal_type": "dinner"
+      }
+    },
+    {
+      "id": "2025-01-22-004",
+      "date": "2025-01-22",
+      "category": "goods",
+      "activity": "online_shopping",
+      "amount": 1,
+      "unit": "package",
+      "carbon_kg": 1.0,
+      "notes": "Amazon delivery",
+      "metadata": {
+        "shipping_type": "standard"
+      }
+    }
+  ],
+  "summary": {
+    "total_entries": 4,
+    "last_updated": "2025-01-22 18:30:00",
+    "total_carbon_kg": 20.02
+  }
+}

@@ -1,0 +1,280 @@
+# PATENT APPLICATION TEMPLATE
+
+**NOTE**: This is a markdown template. Convert to .docx format using your word processor. Follow USPTO formatting requirements (37 CFR 1.52): Times New Roman 12pt, 1.5 or double spacing, 1" margins (left 1" minimum).
+
+---
+
+## UTILITY PATENT APPLICATION
+
+**FOR**
+
+[TITLE OF INVENTION - Descriptive, specific, max 500 characters]
+
+---
+
+### APPLICATION DATA
+
+**Inventors**: [Name(s), Address, Citizenship]
+**Assignee**: [Company name, if applicable]
+**Correspondence Address**: [Attorney or agent address]
+
+**Related Applications**: [If claiming priority from provisional, foreign application, or continuation]
+- Priority Claim to U.S. Provisional Application No. [Number], filed [Date]
+- Foreign Priority Claim to [Country] Application No. [Number], filed [Date]
+
+**Federally Sponsored Research**: [If applicable]
+- This invention was made with government support under Contract No. [Number] awarded by [Agency]. The government has certain rights in the invention.
+
+---
+
+### CROSS-REFERENCE TO RELATED APPLICATIONS
+
+[0001] This application claims priority to U.S. Provisional Application No. [Number], filed [Date], titled "[Title]", which is incorporated herein by reference in its entirety.
+
+---
+
+### BACKGROUND OF THE INVENTION
+
+#### Field of the Invention
+
+[0002] The present invention relates generally to [broad field], and more particularly to [specific area of technology].
+
+#### Description of Related Art
+
+[0003] [Describe the technical field and existing solutions. Identify problems with prior art that your invention solves. Be careful not to admit prior art unnecessarily - describe what is generally known in the field.]
+
+[0004] [Continue describing background, problems with existing approaches, need for improvement]
+
+[0005] [Conclude with statement of need: "Accordingly, there is a need for..."]
+
+---
+
+### BRIEF SUMMARY OF THE INVENTION
+
+[0006] The present invention addresses the limitations of prior art systems by providing [brief description of invention and how it solves the problem].
+
+[0007] In one aspect, the invention provides a [device/method/system/composition] comprising [list key elements at high level].
+
+[0008] In another aspect, the invention provides [alternative embodiment or different claim category].
+
+[0009] Advantages of the invention include: [List key advantages]
+- [Advantage 1]
+- [Advantage 2]
+- [Advantage 3]
+
+[0010] Additional objects, advantages, and novel features will be apparent from the following detailed description when read in conjunction with the appended drawings and claims.
+
+---
+
+### BRIEF DESCRIPTION OF THE DRAWINGS
+
+[0011] The accompanying drawings illustrate presently preferred embodiments of the invention and serve to explain the principles of the invention.
+
+[0012] **FIG. 1** is a [block diagram/schematic/flowchart/etc.] illustrating [description].
+
+[0013] **FIG. 2** is a [type of drawing] showing [description].
+
+[0014] **FIG. 3** is a [type of drawing] depicting [description].
+
+[Continue for all figures...]
+
+**Note**: Drawings should be on separate pages, black ink on white paper, following USPTO drawing standards (37 CFR 1.84). Include reference numerals for all elements discussed in the specification.
+
+---
+
+### DETAILED DESCRIPTION OF THE INVENTION
+
+[0020] The following detailed description references the accompanying drawings. The same reference numerals in different drawings identify the same or similar elements. The following description does not limit the invention. Instead, the scope of the invention is defined by the appended claims.
+
+[0021] Reference throughout the specification to "one embodiment", "an embodiment", "example embodiment", or similar language means that a particular feature, structure, or characteristic described is included in at least one embodiment of the present invention. Thus, appearances of the phrases "in one embodiment", "in an embodiment", and similar language throughout the specification may, but do not necessarily, all refer to the same embodiment.
+
+#### Overview
+
+[0022] [Provide high-level overview of the invention, introducing key concepts and main components before diving into details]
+
+#### First Embodiment
+
+[0023] Referring now to FIG. 1, [detailed description of first embodiment]. Element 102 comprises [detailed description]. Element 104 is coupled to element 102 and configured to [function]. [Continue describing structure and operation in detail]
+
+[0024] [Continue detailed description, referencing drawing figures and elements by number]
+
+[0025] In operation, [describe how the invention works, step-by-step if a method, or functional description if apparatus]
+
+[0026] In preferred embodiments, [describe best mode - most preferred implementation, specific components, values, materials, etc.]
+
+#### Alternative Embodiments
+
+[0027] In an alternative embodiment illustrated in FIG. 2, [describe variation or alternative implementation]
+
+[0028] [Continue with additional embodiments, showing breadth of invention]
+
+#### Materials and Components
+
+[0029] [Specify materials, components, dimensions, values, operating parameters, etc. Provide specific examples:]
+- Element 102 may comprise [specific materials or components, e.g., "aluminum alloy 6061-T6", "Arduino Uno microcontroller", etc.]
+- Dimensions may range from [X] to [Y], preferably [Z]
+- Operating temperature: [range] °C
+
+#### Methods of Use
+
+[0030] [If applicable, describe methods of making or using the invention]
+
+#### Examples
+
+[0031] **Example 1**: [Detailed working example with specific parameters and results]
+- Configuration: [Specific components used]
+- Procedure: [Step-by-step]
+- Results: [Measured outcomes, performance data]
+
+[0032] **Example 2**: [Additional example showing different variation]
+
+#### Additional Considerations
+
+[0033] [Describe additional features, optional components, modifications, alternatives]
+
+[0034] While the invention has been described in connection with presently preferred embodiments, it will be understood by those skilled in the art that it is not intended to limit the invention to those embodiments. Accordingly, it is contemplated that various alternative embodiments and modifications may be made to the disclosed embodiments without departing from the spirit and scope of the invention defined in the appended claims.
+
+---
+
+### CLAIMS
+
+**What is claimed is:**
+
+**1.** A [device/apparatus/system/method/composition] comprising:
+
+   a first element [configured to / adapted to / for] [function];
+
+   a second element [relationship: coupled to, connected to, in communication with] the first element and [configured to / adapted to / for] [function];
+
+   a third element [relationship] the second element; and
+
+   wherein [optional relationship or result].
+
+**2.** The [device/method/system] of claim 1, wherein the first element comprises [specific feature or material].
+
+**3.** The [device/method/system] of claim 1, wherein the second element includes [specific component or characteristic].
+
+**4.** The [device/method/system] of claim 1, further comprising:
+
+   a fourth element [configured to] [function].
+
+**5.** The [device/method/system] of claim 1, wherein [functional limitation or relationship].
+
+**6.** The [device/method/system] of any one of claims 1-5, wherein [limitation applicable to multiple claims].
+
+[Continue with dependent claims 7-20, providing alternative embodiments, combinations, and specific implementations]
+
+**11.** A method [for / of] [purpose], the method comprising:
+
+   [step 1 in gerund form: receiving, processing, generating, etc.];
+
+   [step 2];
+
+   [step 3]; and
+
+   [step 4].
+
+**12.** The method of claim 11, wherein [step 1] comprises [specific implementation].
+
+[Continue with dependent method claims]
+
+**21.** A system comprising:
+
+   [system-level elements and subsystems];
+
+**22.** The system of claim 21, wherein [limitation].
+
+[Continue with dependent system claims]
+
+**Total Claims**: [Typical: 20 total, 1-3 independent]
+
+---
+
+### ABSTRACT
+
+[One paragraph, max 150 words. Summarize what the invention is, what problem it solves, and how it works (generally). For search purposes, not for claim interpretation.]
+
+The present invention provides a [device/method/system] for [purpose]. The invention comprises [key elements listed briefly]. The invention solves [problem] by [high-level solution]. Advantages include [1-2 key benefits]. Applications include [fields of use].
+
+**Character count**: [Should be under 150 words]
+
+---
+
+### SEQUENCE LISTING (if applicable)
+
+[For biotechnology patents with sequences - use separate file]
+
+---
+
+### INVENTOR DECLARATIONS
+
+[Filed separately using USPTO forms - EFS-Web or Patent Center]
+
+---
+
+### ASSIGNMENT (if applicable)
+
+[If assigning rights to company/university, file assignment separately and record with USPTO]
+
+---
+
+### INFORMATION DISCLOSURE STATEMENT (IDS)
+
+[List of prior art references known to inventors/applicant. Filed separately on PTO/SB/08 form]
+
+**U.S. Patents**:
+- U.S. Patent No. [Number], [Inventor], issued [Date]
+
+**U.S. Published Applications**:
+- U.S. Publication No. [Number], [Inventor], published [Date]
+
+**Foreign Patents**:
+- [Country] Patent No. [Number], [Inventor], issued [Date]
+
+**Non-Patent Literature**:
+- [Author], "[Title]", [Journal/Conference], [Volume], [Pages], [Date]
+
+---
+
+### NOTES FOR PREPARING YOUR APPLICATION
+
+**Before Filing**:
+1. Conduct prior art search (patentability search)
+2. Prepare detailed invention disclosure
+3. Create drawings following USPTO standards
+4. Determine entity status (micro/small/large) for fee calculation
+5. Verify inventor contributions (conception, not just reduction to practice)
+
+**Formatting Checklist**:
+- [ ] Specification follows USPTO format (37 CFR 1.52)
+- [ ] Line numbering in left margin (1, 2, 3...)
+- [ ] Paragraph numbering [0001], [0002], etc.
+- [ ] Claims start new page
+- [ ] Abstract on separate page, max 150 words
+- [ ] Drawings on separate pages, black ink, proper margins
+
+**Enablement Requirements** (§112(a)):
+- [ ] Detailed enough for person skilled in the art to make and use
+- [ ] At least one working example described
+- [ ] Specific components, values, materials specified (where applicable)
+- [ ] Multiple embodiments shown (breadth of invention)
+
+**Claims Requirements** (§112(b)):
+- [ ] At least one independent claim (broad, standalone)
+- [ ] Multiple dependent claims (narrow, add features)
+- [ ] Clear antecedent basis (every "the" has prior "a")
+- [ ] Consistent terminology throughout claims
+- [ ] Alternative claim types (apparatus, method, system, medium)
+
+**Professional Review**:
+- ALWAYS have a licensed patent attorney review before filing
+- Attorney can advise on claim strategy, prior art, patentability
+- Attorney ensures compliance with all legal and formal requirements
+
+---
+
+**This template is for guidance only and does not constitute legal advice. Consult a licensed patent attorney for professional assistance with patent applications.**
+
+**Version**: 1.0
+**Last Updated**: January 2025
+**Standard**: USPTO utility patent application requirements

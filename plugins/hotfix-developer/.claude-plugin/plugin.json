@@ -1,0 +1,19 @@
+{
+  "name": "hotfix-developer",
+  "version": "1.0.0",
+  "description": "Version: 1.0.0",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/deployment-coordinator.md",
+    "./agents/incident-analyzer.md",
+    "./agents/patch-developer.md",
+    "./agents/bug-diagnostician.md",
+    "./agents/hotfix-tester.md"
+  ],
+  "skills": [
+    "./skills/bug-diagnosis.md"
+  ],
+  "license": "MIT"
+}

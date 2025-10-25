@@ -1,0 +1,15 @@
+{
+  "name": "sem-specialist",
+  "version": "1.0.0",
+  "description": "Search engine marketing (PPC) specialist for Google Ads and paid search campaign management.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/campaign-manager.md"
+  ],
+  "skills": [
+    "./skills/campaign-management.md"
+  ],
+  "license": "MIT"
+}

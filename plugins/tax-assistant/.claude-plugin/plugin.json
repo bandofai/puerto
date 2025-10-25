@@ -1,0 +1,11 @@
+{
+  "name": "tax-assistant",
+  "version": "1.0.0",
+  "description": "Tax preparation and document organization specialist for tax season",
+  "agents": [
+    "./agents/agents/tax-preparer.md.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

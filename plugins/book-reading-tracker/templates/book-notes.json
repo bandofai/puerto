@@ -1,0 +1,38 @@
+{
+  "notes": [
+    {
+      "id": "note-001",
+      "bookId": "book-001",
+      "bookTitle": "The Pragmatic Programmer",
+      "author": "David Thomas, Andrew Hunt",
+      "type": "highlight",
+      "content": "Care About Your Craft - Why spend your life developing software unless you care about doing it well?",
+      "pageNumber": 2,
+      "chapter": "Preface",
+      "location": "",
+      "tags": ["theme:craftsmanship", "advice:mindset"],
+      "themes": ["Craftsmanship", "Professional Development"],
+      "dateCreated": "2025-01-20T10:30:00Z",
+      "dateModified": "2025-01-20T10:30:00Z",
+      "context": "Opening advice that sets the tone for the entire book",
+      "relatedNotes": []
+    },
+    {
+      "id": "note-002",
+      "bookId": "book-001",
+      "bookTitle": "The Pragmatic Programmer",
+      "author": "David Thomas, Andrew Hunt",
+      "type": "note",
+      "content": "The broken window theory applies perfectly to code quality. Small issues left unfixed lead to larger decay.",
+      "pageNumber": 5,
+      "chapter": "Chapter 1",
+      "location": "",
+      "tags": ["concept:broken-windows", "advice:maintenance"],
+      "themes": ["Code Quality", "Technical Debt"],
+      "dateCreated": "2025-01-22T14:15:00Z",
+      "dateModified": "2025-01-22T14:15:00Z",
+      "context": "Personal reflection on the broken window theory",
+      "relatedNotes": []
+    }
+  ]
+}

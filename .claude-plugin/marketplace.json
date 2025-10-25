@@ -1,0 +1,926 @@
+{
+  "name": "puerto",
+  "owner": {
+    "name": "Band of AI"
+  },
+  "plugins": [
+    {
+      "name": "essentials",
+      "source": "./plugins/essentials",
+      "description": "Essential MCP servers and requirements management commands for enhanced Claude Code development workflow",
+      "version": "1.0.0"
+    },
+    {
+      "name": "chrome-devtools",
+      "source": "./plugins/chrome-devtools",
+      "description": "Control and inspect Chrome browsers with full DevTools automation, debugging, and performance analysis",
+      "version": "1.0.0"
+    },
+    {
+      "name": "figma",
+      "source": "./plugins/figma",
+      "description": "Generate code from Figma designs, extract components, and maintain design-code consistency",
+      "version": "1.0.0"
+    },
+    {
+      "name": "subagent-creator",
+      "source": "./plugins/subagent-creator",
+      "description": "Expert subagent architect with comprehensive skill library for creating production-ready, skill-aware Claude Code subagents",
+      "version": "1.0.0"
+    },
+    {
+      "name": "academic-researcher",
+      "source": "./plugins/academic-researcher",
+      "description": "Academic research support specialist for literature review, methodology design, and citation management",
+      "version": "1.0.0"
+    },
+    {
+      "name": "accessibility-specialist",
+      "source": "./plugins/accessibility-specialist",
+      "description": "Digital accessibility specialist for WCAG compliance, accessibility audits, remediation recommendations, screen reader testing, and accessibility documentation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "accounts-payable-agent",
+      "source": "./plugins/accounts-payable-agent",
+      "description": "Professional accounts payable automation for invoice processing, approval routing, payment scheduling, vendor management, and reconciliation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "accounts-receivable-agent",
+      "source": "./plugins/accounts-receivable-agent",
+      "description": "Professional accounts receivable management with invoice generation, payment tracking, collections, and aging analysis",
+      "version": "1.0.0"
+    },
+    {
+      "name": "affiliate-manager",
+      "source": "./plugins/affiliate-manager",
+      "description": "Affiliate program specialist for program design, affiliate recruitment, commission management, performance tracking, and fraud detection",
+      "version": "1.0.0"
+    },
+    {
+      "name": "api-developer",
+      "source": "./plugins/api-developer",
+      "description": "API design and development specialist for REST/GraphQL APIs",
+      "version": "1.0.0"
+    },
+    {
+      "name": "app-store-optimizer",
+      "source": "./plugins/app-store-optimizer",
+      "description": "ASO (App Store Optimization) specialist for keyword research, app title/description optimization, screenshot and preview optimization, review management, and competitor analysis",
+      "version": "1.0.0"
+    },
+    {
+      "name": "backend-architect",
+      "source": "./plugins/backend-architect",
+      "description": "Comprehensive backend architecture design with ADRs, API specifications, and database schemas",
+      "version": "1.0.0"
+    },
+    {
+      "name": "backup-automation-manager",
+      "source": "./plugins/backup-automation-manager",
+      "description": "Automated backup scheduling, verification, storage monitoring, and disaster recovery planning with multi-cloud support",
+      "version": "1.0.0"
+    },
+    {
+      "name": "bill-optimization-analyzer",
+      "source": "./plugins/bill-optimization-analyzer",
+      "description": "Utility and service bill optimization with plan analysis, provider comparison, savings calculation, and negotiation assistance for reducing recurring costs.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "bill-reminder",
+      "source": "./plugins/bill-reminder",
+      "description": "Bill management assistant with proactive payment reminders",
+      "version": "1.0.0"
+    },
+    {
+      "name": "billing-specialist",
+      "source": "./plugins/billing-specialist",
+      "description": "Comprehensive billing and invoicing automation with SOX compliance, ASC 606 revenue recognition, and accounts receivable management.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "book-reading-tracker",
+      "source": "./plugins/book-reading-tracker",
+      "description": "Reading progress and book note management specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "book-tracker",
+      "source": "./plugins/book-tracker",
+      "description": "A comprehensive reading management system for Claude Code that helps you track books, monitor progress, capture insights, and analyze your reading habits.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "brand-strategist",
+      "source": "./plugins/brand-strategist",
+      "description": "Brand strategy and positioning specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "budget-analyst",
+      "source": "./plugins/budget-analyst",
+      "description": "Budget monitoring and planning specialist for variance analysis, spend tracking, forecasting, and optimization",
+      "version": "1.0.0"
+    },
+    {
+      "name": "budget-tracker",
+      "source": "./plugins/budget-tracker",
+      "description": "Version: 1.0.0",
+      "version": "1.0.0"
+    },
+    {
+      "name": "business-analyst",
+      "source": "./plugins/business-analyst",
+      "description": "Business process and requirements analysis specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "business-strategist",
+      "source": "./plugins/business-strategist",
+      "description": "Corporate strategy development specialist for strategic planning, growth strategies, market entry analysis, M&A assessment, and business model innovation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "calendar-optimization-engine",
+      "source": "./plugins/calendar-optimization-engine",
+      "description": "Intelligent calendar management with conflict detection, meeting efficiency analysis, and time-blocking optimization",
+      "version": "1.0.0"
+    },
+    {
+      "name": "carbon-footprint-tracker",
+      "source": "./plugins/carbon-footprint-tracker",
+      "description": "Personal emissions tracking and reduction specialist with carbon calculation, reduction recommendations, and progress tracking",
+      "version": "1.0.0"
+    },
+    {
+      "name": "career-development-planner",
+      "source": "./plugins/career-development-planner",
+      "description": "Professional career development specialist providing skill gap analysis, networking management, job search organization, and career growth planning",
+      "version": "1.0.0"
+    },
+    {
+      "name": "chore-scheduler",
+      "source": "./plugins/chore-scheduler",
+      "description": "Household chore coordination and task distribution manager with fair rotation, completion tracking, and accountability",
+      "version": "1.0.0"
+    },
+    {
+      "name": "clinical-research-coordinator",
+      "source": "./plugins/clinical-research-coordinator",
+      "description": "Clinical trial coordination specialist for study design, patient recruitment, and regulatory compliance",
+      "version": "1.0.0"
+    },
+    {
+      "name": "cloud-architect",
+      "source": "./plugins/cloud-architect",
+      "description": "Cloud infrastructure design specialist for AWS/Azure/GCP with cost optimization and migration planning",
+      "version": "1.0.0"
+    },
+    {
+      "name": "competitive-intelligence-analyst",
+      "source": "./plugins/competitive-intelligence-analyst",
+      "description": "Competitor monitoring and analysis specialist for tracking market intelligence, feature comparisons, pricing analysis, and competitive positioning",
+      "version": "1.0.0"
+    },
+    {
+      "name": "complaint-warranty-manager",
+      "source": "./plugins/complaint-warranty-manager",
+      "description": "Customer service interaction and warranty claim tracking specialist for managing complaints, escalations, and warranty claims",
+      "version": "1.0.0"
+    },
+    {
+      "name": "compliance-officer",
+      "source": "./plugins/compliance-officer",
+      "description": "Regulatory compliance monitoring specialist for GDPR, SOC2, HIPAA, audit preparation, and policy documentation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "content-creation-pipeline",
+      "source": "./plugins/content-creation-pipeline",
+      "description": "Complete content planning and publishing workflow specialist with idea capture, calendar planning, draft tracking, multi-platform posting, and performance analytics",
+      "version": "1.0.0"
+    },
+    {
+      "name": "content-writer",
+      "source": "./plugins/content-writer",
+      "description": "Professional content creation for blogs, SEO, marketing copy, and email campaigns",
+      "version": "1.0.0"
+    },
+    {
+      "name": "conversion-optimizer",
+      "source": "./plugins/conversion-optimizer",
+      "description": "CRO (Conversion Rate Optimization) specialist for funnel analysis, A/B testing, user journey mapping, landing page optimization, and CTA optimization",
+      "version": "1.0.0"
+    },
+    {
+      "name": "copywriter",
+      "source": "./plugins/copywriter",
+      "description": "Advertising and marketing copy specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "cost-optimizer",
+      "source": "./plugins/cost-optimizer",
+      "description": "Version: 1.0.0",
+      "version": "1.0.0"
+    },
+    {
+      "name": "crisis-communications",
+      "source": "./plugins/crisis-communications",
+      "description": "Crisis communication management specialist for crisis response planning, press releases, stakeholder messaging, social media monitoring, and response coordination",
+      "version": "1.0.0"
+    },
+    {
+      "name": "cross-cultural-consultant",
+      "source": "./plugins/cross-cultural-consultant",
+      "description": "Cross-cultural communication specialist for cultural assessment, communication guidelines, and team collaboration",
+      "version": "1.0.0"
+    },
+    {
+      "name": "curriculum-developer",
+      "source": "./plugins/curriculum-developer",
+      "description": "Professional educational curriculum design with instructional frameworks, Bloom's taxonomy, and evidence-based pedagogical practices",
+      "version": "1.0.0"
+    },
+    {
+      "name": "customer-success",
+      "source": "./plugins/customer-success",
+      "description": "Customer relationship and retention specialist focused on onboarding, adoption tracking, health monitoring, and renewal strategy",
+      "version": "1.0.0"
+    },
+    {
+      "name": "customer-support",
+      "source": "./plugins/customer-support",
+      "description": "First-line customer support with query classification, issue resolution, and escalation management",
+      "version": "1.0.0"
+    },
+    {
+      "name": "dashboard-designer",
+      "source": "./plugins/dashboard-designer",
+      "description": "Dashboard and reporting design specialist for data visualization, KPI selection and tracking, visualization best practices, report automation, and stakeholder customization",
+      "version": "1.0.0"
+    },
+    {
+      "name": "data-analyst",
+      "source": "./plugins/data-analyst",
+      "description": "Business intelligence and reporting specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "data-engineer",
+      "source": "./plugins/data-engineer",
+      "description": "Data pipeline and ETL specialist with data warehouse design capabilities",
+      "version": "1.0.0"
+    },
+    {
+      "name": "data-scientist",
+      "source": "./plugins/data-scientist",
+      "description": "Advanced analytics and statistical modeling specialist for rigorous data science workflows",
+      "version": "1.0.0"
+    },
+    {
+      "name": "database-architect",
+      "source": "./plugins/database-architect",
+      "description": "Database design, optimization, and migration specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "devops-engineer",
+      "source": "./plugins/devops-engineer",
+      "description": "DevOps and infrastructure automation specialist with CI/CD, IaC, deployment, and monitoring capabilities",
+      "version": "1.0.0"
+    },
+    {
+      "name": "digital-legacy-planner",
+      "source": "./plugins/digital-legacy-planner",
+      "description": "Digital estate planning and access instruction specialist for managing digital accounts, assets, and executor access guides",
+      "version": "1.0.0"
+    },
+    {
+      "name": "digital-transformation",
+      "source": "./plugins/digital-transformation",
+      "description": "Digital transformation planning specialist for maturity assessment, technology roadmaps, change management, ROI analysis, and implementation strategy",
+      "version": "1.0.0"
+    },
+    {
+      "name": "document-organizer",
+      "source": "./plugins/document-organizer",
+      "description": "Document archiving and organization specialist with auto-categorization, OCR, warranty tracking, and intelligent search",
+      "version": "1.0.0"
+    },
+    {
+      "name": "ecommerce-specialist",
+      "source": "./plugins/ecommerce-specialist",
+      "description": "E-commerce operations specialist for online store management",
+      "version": "1.0.0"
+    },
+    {
+      "name": "email-management-system",
+      "source": "./plugins/email-management-system",
+      "description": "Intelligent email triage, categorization, and management system with auto-categorization, response templates, follow-up reminders, and newsletter management.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "email-marketer",
+      "source": "./plugins/email-marketer",
+      "description": "Email marketing specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "emergency-response-coordinator",
+      "source": "./plugins/emergency-response-coordinator",
+      "description": "Emergency situation coordination specialist for crisis escalation, protocol activation, and stakeholder communication",
+      "version": "1.0.0"
+    },
+    {
+      "name": "energy-usage-monitor",
+      "source": "./plugins/energy-usage-monitor",
+      "description": "Smart energy usage analysis and monitoring with pattern detection, cost projections, efficiency recommendations, and appliance-specific insights.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "event-planning-orchestrator",
+      "source": "./plugins/event-planning-orchestrator",
+      "description": "Comprehensive event planning and coordination system for large events (weddings, parties, conferences) with guest management, vendor coordination, budget tracking, and timeline planning",
+      "version": "1.0.0"
+    },
+    {
+      "name": "executive-report-writer",
+      "source": "./plugins/executive-report-writer",
+      "description": "Executive reporting specialist for board reports, executive summaries, high-level metrics, strategic insights, and executive visualizations",
+      "version": "1.0.0"
+    },
+    {
+      "name": "expense-manager",
+      "source": "./plugins/expense-manager",
+      "description": "Comprehensive expense management automation with OCR, policy validation, and approval workflow coordination",
+      "version": "1.0.0"
+    },
+    {
+      "name": "financial-analyst",
+      "source": "./plugins/financial-analyst",
+      "description": "Financial modeling and analysis specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "financial-compliance",
+      "source": "./plugins/financial-compliance",
+      "description": "Financial services compliance specialist handling SEC, FINRA, AML/KYC compliance and regulatory reporting.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "fitness-tracking-logger",
+      "source": "./plugins/fitness-tracking-logger",
+      "description": "Comprehensive workout logging and fitness progress tracking system for Puerto.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "fraud-analyst",
+      "source": "./plugins/fraud-analyst",
+      "description": "A comprehensive fraud detection and prevention specialist for financial transactions, providing real-time monitoring, pattern detection, risk assessment, investigation workflow management, and AML/SAR compliance reporting.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "frontend-developer",
+      "source": "./plugins/frontend-developer",
+      "description": "Frontend development specialist with React/Vue/Svelte component creation, responsive styling, accessibility validation, and state management",
+      "version": "1.0.0"
+    },
+    {
+      "name": "goal-tracker",
+      "source": "./plugins/goal-tracker",
+      "description": "Financial goal setting and progress tracking specialist with SMART framework",
+      "version": "1.0.0"
+    },
+    {
+      "name": "growth-hacker",
+      "source": "./plugins/growth-hacker",
+      "description": "Growth strategy and experimentation specialist for viral loops, acquisition channels, retention optimization, and referral programs",
+      "version": "1.0.0"
+    },
+    {
+      "name": "habit-formation-coach",
+      "source": "./plugins/habit-formation-coach",
+      "description": "Science-based habit formation using tiny habits, behavior analysis, and compassionate coaching",
+      "version": "1.0.0"
+    },
+    {
+      "name": "habit-tracker",
+      "source": "./plugins/habit-tracker",
+      "description": "Version: 1.0.0",
+      "version": "1.0.0"
+    },
+    {
+      "name": "healthcare-compliance",
+      "source": "./plugins/healthcare-compliance",
+      "description": "Healthcare regulatory compliance specialist ensuring HIPAA, FDA, and clinical trial regulations compliance.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "home-inventory-system",
+      "source": "./plugins/home-inventory-system",
+      "description": "Asset cataloging and insurance documentation specialist for household items",
+      "version": "1.0.0"
+    },
+    {
+      "name": "home-maintenance-tracker",
+      "source": "./plugins/home-maintenance-tracker",
+      "description": "Comprehensive home maintenance scheduling, warranty tracking, and service history management system",
+      "version": "1.0.0"
+    },
+    {
+      "name": "hotfix-developer",
+      "source": "./plugins/hotfix-developer",
+      "description": "Version: 1.0.0",
+      "version": "1.0.0"
+    },
+    {
+      "name": "hr-onboarder",
+      "source": "./plugins/hr-onboarder",
+      "description": "Professional HR onboarding automation for creating comprehensive new hire experiences",
+      "version": "1.0.0"
+    },
+    {
+      "name": "hr-performance-manager",
+      "source": "./plugins/hr-performance-manager",
+      "description": "Professional performance management system with comprehensive tools for reviews, goal setting, career development, 1-on-1s, and PIPs",
+      "version": "1.0.0"
+    },
+    {
+      "name": "hr-policies-expert",
+      "source": "./plugins/hr-policies-expert",
+      "description": "Expert guidance on HR policies, employment law, benefits, and compliance",
+      "version": "1.0.0"
+    },
+    {
+      "name": "hr-recruiter",
+      "source": "./plugins/hr-recruiter",
+      "description": "Professional recruitment assistant for candidate screening, job postings, interview coordination, and hiring pipeline management",
+      "version": "1.0.0"
+    },
+    {
+      "name": "incident-response",
+      "source": "./plugins/incident-response",
+      "description": "Security incident response specialist for breach detection, response coordination, forensic analysis, recovery planning, and post-mortem documentation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "innovation-consultant",
+      "source": "./plugins/innovation-consultant",
+      "description": "Innovation strategy and ideation specialist for generating ideas, analyzing trends, validating concepts, and designing pilot programs",
+      "version": "1.0.0"
+    },
+    {
+      "name": "insurance-policy-manager",
+      "source": "./plugins/insurance-policy-manager",
+      "description": "Insurance policy tracking and coverage analysis specialist with multi-policy inventory, gap identification, claims history, and renewal management",
+      "version": "1.0.0"
+    },
+    {
+      "name": "insurance-underwriter",
+      "source": "./plugins/insurance-underwriter",
+      "description": "A comprehensive insurance underwriting system providing professional risk assessment, policy pricing, claims analysis, and renewal evaluation capabilities.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "international-expansion-specialist",
+      "source": "./plugins/international-expansion-specialist",
+      "description": "Market entry planning specialist for international expansion strategy, regulatory research, and localization planning",
+      "version": "1.0.0"
+    },
+    {
+      "name": "ip-specialist",
+      "source": "./plugins/ip-specialist",
+      "description": "Intellectual property management specialist for patent tracking, prior art search, filing documentation, infringement monitoring, and licensing agreements",
+      "version": "1.0.0"
+    },
+    {
+      "name": "it-support-specialist",
+      "source": "./plugins/it-support-specialist",
+      "description": "Internal IT support specialist for troubleshooting, access management, and system diagnostics",
+      "version": "1.0.0"
+    },
+    {
+      "name": "knowledge-base-manager",
+      "source": "./plugins/knowledge-base-manager",
+      "description": "Knowledge base maintenance specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "language-learning",
+      "source": "./plugins/language-learning",
+      "description": "Your personal AI-powered language learning companion with vocabulary management, spaced repetition, grammar reference, immersion tracking, and milestone progression for comprehensive language mastery.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "language-learning-assistant",
+      "source": "./plugins/language-learning-assistant",
+      "description": "Vocabulary tracking and language immersion specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "learning-plan-generator",
+      "source": "./plugins/learning-plan-generator",
+      "description": "Production-ready personalized learning curriculum with spaced repetition scheduling, knowledge assessment, and skill tree visualization",
+      "version": "1.0.0"
+    },
+    {
+      "name": "legal-document-tracker",
+      "source": "./plugins/legal-document-tracker",
+      "description": "> Contract expiration, legal deadline monitoring, and document version control specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "legal-reviewer",
+      "source": "./plugins/legal-reviewer",
+      "description": "Contract review and analysis specialist for risk identification, clause analysis, and amendment suggestions",
+      "version": "1.0.0"
+    },
+    {
+      "name": "local-seo-specialist",
+      "source": "./plugins/local-seo-specialist",
+      "description": "Local SEO optimization specialist for Google My Business, local listings, and review management.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "localization-specialist",
+      "source": "./plugins/localization-specialist",
+      "description": "Localization strategy and implementation specialist for market-specific content adaptation, cultural guidelines, and compliance.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "market-researcher",
+      "source": "./plugins/market-researcher",
+      "description": "Market research and competitive analysis specialist with market sizing, competitive intelligence, industry trends, and customer segmentation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "meal-planning-nutrition",
+      "source": "./plugins/meal-planning-nutrition",
+      "description": "Meal planning and nutrition analysis specialist - weekly meal planning, nutrition tracking, recipe organization, and grocery automation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "medical-appointment-tracker",
+      "source": "./plugins/medical-appointment-tracker",
+      "description": "Medical appointment and prescription management specialist - secure health record organization, appointment scheduling, and medication tracking",
+      "version": "1.0.0"
+    },
+    {
+      "name": "medical-writer",
+      "source": "./plugins/medical-writer",
+      "description": "Medical and scientific writing specialist for clinical trial protocols, medical manuscripts, patient information, regulatory submissions, and scientific abstracts",
+      "version": "1.0.0"
+    },
+    {
+      "name": "mental-health-journal",
+      "source": "./plugins/mental-health-journal",
+      "description": "Privacy-first mental health tracking and journaling. Daily mood check-ins, therapy journal, pattern analysis, coping strategies, and crisis support. All data local and encrypted.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "ml-engineer",
+      "source": "./plugins/ml-engineer",
+      "description": "Machine learning development specialist for model training, feature engineering, evaluation, and deployment",
+      "version": "1.0.0"
+    },
+    {
+      "name": "mobile-developer",
+      "source": "./plugins/mobile-developer",
+      "description": "Mobile app development specialist for iOS/Android applications, mobile UI/UX, platform-specific optimization, performance tuning, and app store preparation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "mortgage-specialist",
+      "source": "./plugins/mortgage-specialist",
+      "description": "Professional mortgage processing, credit analysis, and compliance validation for Claude Code",
+      "version": "1.0.0"
+    },
+    {
+      "name": "moving-coordinator",
+      "source": "./plugins/moving-coordinator",
+      "description": "Moving logistics and timeline coordination specialist for stress-free relocations",
+      "version": "1.0.0"
+    },
+    {
+      "name": "network-administrator",
+      "source": "./plugins/network-administrator",
+      "description": "Network management and monitoring specialist for configuration, security, and troubleshooting",
+      "version": "1.0.0"
+    },
+    {
+      "name": "office-administrator",
+      "source": "./plugins/office-administrator",
+      "description": "General administrative support specialist for meeting scheduling, travel arrangements, expense processing, document organization, and calendar management",
+      "version": "1.0.0"
+    },
+    {
+      "name": "orchestrator",
+      "source": "./plugins/orchestrator",
+      "description": "Master coordinator for complex multi-agent workflows. Intelligently decomposes tasks, creates execution plans, and coordinates subagents for optimal parallel execution.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "parenting-task-manager",
+      "source": "./plugins/parenting-task-manager",
+      "description": "Child activity and developmental milestone tracking specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "partnership-manager",
+      "source": "./plugins/partnership-manager",
+      "description": "Strategic partnership specialist for partner identification, partnership proposals, deal structuring, contract negotiation, and relationship management",
+      "version": "1.0.0"
+    },
+    {
+      "name": "password-security-auditor",
+      "source": "./plugins/password-security-auditor",
+      "description": "Security audit and breach monitoring specialist with password strength analysis, HIBP integration, 2FA tracking, and compliance verification",
+      "version": "1.0.0"
+    },
+    {
+      "name": "patent-analyst",
+      "source": "./plugins/patent-analyst",
+      "description": "Patent research and analysis specialist for patent searches, prior art identification, freedom to operate analysis, and infringement risk assessment",
+      "version": "1.0.0"
+    },
+    {
+      "name": "payment-integration-specialist",
+      "source": "./plugins/payment-integration-specialist",
+      "description": "Payment integration specialist for payment gateway integration, PCI compliance, fraud prevention, recurring billing, and payment reconciliation",
+      "version": "1.0.0"
+    },
+    {
+      "name": "pet-care-manager",
+      "source": "./plugins/pet-care-manager",
+      "description": "Pet health and care routine management specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "podcast-producer",
+      "source": "./plugins/podcast-producer",
+      "description": "Podcast production coordination specialist for episode planning, show notes, and distribution.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "portfolio-tracker",
+      "source": "./plugins/portfolio-tracker",
+      "description": "Investment portfolio monitoring and analysis specialist with real-time pricing",
+      "version": "1.0.0"
+    },
+    {
+      "name": "process-optimizer",
+      "source": "./plugins/process-optimizer",
+      "description": "Version: 1.0.0",
+      "version": "1.0.0"
+    },
+    {
+      "name": "procurement-specialist",
+      "source": "./plugins/procurement-specialist",
+      "description": "Vendor management and purchasing specialist for procurement workflows",
+      "version": "1.0.0"
+    },
+    {
+      "name": "product-analyst",
+      "source": "./plugins/product-analyst",
+      "description": "Product analytics specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "product-manager",
+      "source": "./plugins/product-manager",
+      "description": "Product strategy specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "project-management-system",
+      "source": "./plugins/project-management-system",
+      "description": "Professional project management capabilities including multi-project dashboards, task coordination, timeline visualization, and project archiving.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "project-manager",
+      "source": "./plugins/project-manager",
+      "description": "Project coordination and tracking specialist with comprehensive planning, timeline management, risk tracking, and status reporting capabilities",
+      "version": "1.0.0"
+    },
+    {
+      "name": "qa-automation",
+      "source": "./plugins/qa-automation",
+      "description": "QA and test automation specialist with test generation, automation, coverage analysis, and bug reporting",
+      "version": "1.0.0"
+    },
+    {
+      "name": "qa-manager",
+      "source": "./plugins/qa-manager",
+      "description": "Quality management system specialist for QA process design, quality standards, audits, corrective action tracking, and continuous improvement",
+      "version": "1.0.0"
+    },
+    {
+      "name": "quant-analyst",
+      "source": "./plugins/quant-analyst",
+      "description": "Quantitative analysis and trading specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "real-estate-analyst",
+      "source": "./plugins/real-estate-analyst",
+      "description": "Real estate analysis and valuation specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "receipt-processor",
+      "source": "./plugins/receipt-processor",
+      "description": "Receipt processing and expense categorization specialist with OCR",
+      "version": "1.0.0"
+    },
+    {
+      "name": "release-manager",
+      "source": "./plugins/release-manager",
+      "description": "Release coordination and deployment specialist for release planning, deployment coordination, rollback procedures, release notes, and stakeholder communication",
+      "version": "1.0.0"
+    },
+    {
+      "name": "research-brief-generator",
+      "source": "./plugins/research-brief-generator",
+      "description": "Professional research brief generation with multi-source data gathering, comparative analysis, and decision frameworks. Automates product/service comparison, pros/cons analysis, and recommendation reports with proper source citation.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "risk-analyst",
+      "source": "./plugins/risk-analyst",
+      "description": "Risk assessment and mitigation specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "sales-engineer",
+      "source": "./plugins/sales-engineer",
+      "description": "Technical sales support specialist for demos, documents, solution architecture, and ROI calculations",
+      "version": "1.0.0"
+    },
+    {
+      "name": "sales-lead-qualifier",
+      "source": "./plugins/sales-lead-qualifier",
+      "description": "Professional sales lead qualification system with BANT/MEDDIC frameworks, data enrichment, scoring, prioritization, and automated routing",
+      "version": "1.0.0"
+    },
+    {
+      "name": "sales-pipeline-analyst",
+      "source": "./plugins/sales-pipeline-analyst",
+      "description": "Sales pipeline analysis specialist for monitoring pipeline health, forecasting, risk identification, win/loss analysis, and performance tracking",
+      "version": "1.0.0"
+    },
+    {
+      "name": "sales-proposal-writer",
+      "source": "./plugins/sales-proposal-writer",
+      "description": "Sales proposal creation specialist - generates and customizes sales proposals and RFP responses",
+      "version": "1.0.0"
+    },
+    {
+      "name": "sem-specialist",
+      "source": "./plugins/sem-specialist",
+      "description": "Search engine marketing (PPC) specialist for Google Ads and paid search campaign management.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "seo-specialist",
+      "source": "./plugins/seo-specialist",
+      "description": "SEO optimization expert for keyword research, technical SEO, and content optimization",
+      "version": "1.0.0"
+    },
+    {
+      "name": "shopping-list-optimizer",
+      "source": "./plugins/shopping-list-optimizer",
+      "description": "Smart grocery list and pantry management specialist with intelligent shopping list generation, store route optimization, and price comparison",
+      "version": "1.0.0"
+    },
+    {
+      "name": "side-hustle-manager",
+      "source": "./plugins/side-hustle-manager",
+      "description": "Side business income and growth tracking specialist with revenue analysis, expense tracking, and growth metrics",
+      "version": "1.0.0"
+    },
+    {
+      "name": "site-reliability-engineer",
+      "source": "./plugins/site-reliability-engineer",
+      "description": "System reliability and uptime specialist for monitoring setup, incident response, performance optimization, capacity planning, and post-mortem analysis",
+      "version": "1.0.0"
+    },
+    {
+      "name": "sleep-pattern-analyzer",
+      "source": "./plugins/sleep-pattern-analyzer",
+      "description": "Sleep quality analysis and optimization specialist - sleep tracking, pattern recognition, quality insights, and optimization recommendations",
+      "version": "1.0.0"
+    },
+    {
+      "name": "smart-goal-assistant",
+      "source": "./plugins/smart-goal-assistant",
+      "description": "A comprehensive goal-setting and tracking system that helps individuals and teams set, plan, track, and achieve SMART goals through structured validation, milestone planning, progress tracking, regular reviews, and strategic pivoting.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "smart-home-integration-hub",
+      "source": "./plugins/smart-home-integration-hub",
+      "description": "Comprehensive smart home device coordination, automation, energy monitoring, and multi-platform integration",
+      "version": "1.0.0"
+    },
+    {
+      "name": "social-coordination-manager",
+      "source": "./plugins/social-coordination-manager",
+      "description": "Relationship maintenance and social event coordination specialist. Birthday tracking, gift ideas, event planning, and relationship maintenance reminders.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "social-media-manager",
+      "source": "./plugins/social-media-manager",
+      "description": "Social media strategy and execution specialist with content calendar planning, multi-platform post creation, hashtag strategy, and analytics tracking",
+      "version": "1.0.0"
+    },
+    {
+      "name": "subscription-management-hub",
+      "source": "./plugins/subscription-management-hub",
+      "description": "Comprehensive subscription tracking and cost optimization system with renewal alerts, usage analysis, and cancellation management",
+      "version": "1.0.0"
+    },
+    {
+      "name": "supply-chain-analyst",
+      "source": "./plugins/supply-chain-analyst",
+      "description": "Supply chain optimization specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "tax-assistant",
+      "source": "./plugins/tax-assistant",
+      "description": "Tax preparation and document organization specialist for tax season",
+      "version": "1.0.0"
+    },
+    {
+      "name": "tax-compliance",
+      "source": "./plugins/tax-compliance",
+      "description": "Professional tax obligation tracking, filing preparation, and regulatory compliance for Claude Code",
+      "version": "1.0.0"
+    },
+    {
+      "name": "tax-compliance-specialist",
+      "source": "./plugins/tax-compliance-specialist",
+      "description": "Tax compliance support specialist - tracks tax obligations, filing preparation, and regulation updates",
+      "version": "1.0.0"
+    },
+    {
+      "name": "technical-support",
+      "source": "./plugins/technical-support",
+      "description": "Technical troubleshooting specialist for diagnostics, log analysis, bug reproduction, and workarounds",
+      "version": "1.0.0"
+    },
+    {
+      "name": "technical-writer",
+      "source": "./plugins/technical-writer",
+      "description": "Technical documentation specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "training-developer",
+      "source": "./plugins/training-developer",
+      "description": "Training content creation specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "translator",
+      "source": "./plugins/translator",
+      "description": "Multi-language translation specialist for content translation, localization adaptation, cultural sensitivity, and terminology consistency.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "travel-planning-assistant",
+      "source": "./plugins/travel-planning-assistant",
+      "description": "Comprehensive travel planning companion with trip itinerary creation, weather-based packing lists, travel document checklists, budget tracking, and post-trip expense reconciliation.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "ux-researcher",
+      "source": "./plugins/ux-researcher",
+      "description": "User research specialist",
+      "version": "1.0.0"
+    },
+    {
+      "name": "ux-writer",
+      "source": "./plugins/ux-writer",
+      "description": "UX/UI copy and microcopy specialist for interface text, error messages, onboarding flows, and accessibility",
+      "version": "1.0.0"
+    },
+    {
+      "name": "video-producer",
+      "source": "./plugins/video-producer",
+      "description": "Video content planning and scripting specialist for multi-platform video production.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "volunteer-time-tracker",
+      "source": "./plugins/volunteer-time-tracker",
+      "description": "Comprehensive volunteer service logging and impact measurement system with hours tracking, organization management, tax documentation, and skills-based matching",
+      "version": "1.0.0"
+    }
+  ]
+}

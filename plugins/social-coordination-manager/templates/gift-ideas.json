@@ -1,0 +1,140 @@
+{
+  "recipient": {
+    "id": "contact-uuid",
+    "name": "Recipient Name",
+    "occasion": "Birthday/Anniversary/Holiday/Thank You",
+    "date": "YYYY-MM-DD",
+    "budget": {
+      "min": 25,
+      "max": 75
+    },
+    "interests": ["interest1", "interest2", "interest3"],
+    "giftStyle": "experiential"
+  },
+  "giftIdeas": [
+    {
+      "id": 1,
+      "name": "Photography Workshop Gift Certificate",
+      "category": "experiential",
+      "priceRange": {
+        "min": 60,
+        "max": 80
+      },
+      "rationale": "Perfect for their growing interest in photography. Local workshop offers weekend classes for beginners to intermediate level.",
+      "whereToB buy": [
+        "Local Photography Studio - photostudio.com",
+        "Groupon - often has discounted workshops"
+      ],
+      "timeline": "Order 2 weeks before - digital certificate or physical card",
+      "personalization": "Can add personal note about specific class type they mentioned wanting to learn",
+      "backupPlan": "Online photography course subscription (Skillshare, MasterClass) if local options full",
+      "selected": true,
+      "purchaseDate": null,
+      "actualCost": null,
+      "notes": ""
+    },
+    {
+      "id": 2,
+      "name": "Premium Coffee Subscription (3 months)",
+      "category": "practical",
+      "priceRange": {
+        "min": 45,
+        "max": 60
+      },
+      "rationale": "They're a coffee enthusiast and love trying new roasts. Delivers unique beans monthly.",
+      "whereToBuy": [
+        "Blue Bottle Coffee Subscription",
+        "Trade Coffee",
+        "Atlas Coffee Club (international varieties)"
+      ],
+      "timeline": "Order 1-2 weeks before to ensure first shipment arrives on time",
+      "personalization": "Choose subscription that focuses on their preferred roast level (light/medium/dark)",
+      "backupPlan": "High-quality coffee maker accessory (pour-over set, grinder)",
+      "selected": false,
+      "purchaseDate": null,
+      "actualCost": null,
+      "notes": ""
+    },
+    {
+      "id": 3,
+      "name": "Custom Photo Book of Hiking Adventures",
+      "category": "personal",
+      "priceRange": {
+        "min": 30,
+        "max": 50
+      },
+      "rationale": "Compile photos from hikes you've done together or their favorite trails. Sentimental and unique.",
+      "whereToBuy": [
+        "Shutterfly",
+        "Artifact Uprising (premium quality)",
+        "Mixbook (many templates)"
+      ],
+      "timeline": "Start 3-4 weeks before - needs time to design and ship",
+      "personalization": "Add captions with dates, trail names, funny memories from each hike",
+      "backupPlan": "Framed photo from a memorable hike",
+      "selected": false,
+      "purchaseDate": null,
+      "actualCost": null,
+      "notes": ""
+    },
+    {
+      "id": 4,
+      "name": "Hiking Trail Guide Book + Maps",
+      "category": "hobby",
+      "priceRange": {
+        "min": 25,
+        "max": 40
+      },
+      "rationale": "Comprehensive guide to local trails they haven't explored yet. Practical for planning future adventures.",
+      "whereToBuy": [
+        "Local outdoor gear shop",
+        "REI",
+        "Amazon (check reviews)"
+      ],
+      "timeline": "1 week before - widely available",
+      "personalization": "Include a handwritten note suggesting which trails to try first or offering to join them",
+      "backupPlan": "National Parks annual pass",
+      "selected": false,
+      "purchaseDate": null,
+      "actualCost": null,
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "name": "Portable Espresso Maker for Camping",
+      "category": "hobby",
+      "priceRange": {
+        "min": 40,
+        "max": 70
+      },
+      "rationale": "Combines their love of coffee and hiking. Allows quality coffee on the trail.",
+      "whereToBuy": [
+        "REI - Wacaco Nanopresso",
+        "Amazon - multiple options",
+        "Local outdoor store"
+      ],
+      "timeline": "Order 1-2 weeks before",
+      "personalization": "Include sample packet of their favorite coffee to try with it",
+      "backupPlan": "Insulated travel mug for hot coffee on trails",
+      "selected": false,
+      "purchaseDate": null,
+      "actualCost": null,
+      "notes": ""
+    }
+  ],
+  "finalSelection": {
+    "giftId": 1,
+    "purchaseDate": null,
+    "vendor": "",
+    "orderNumber": "",
+    "actualCost": 0,
+    "expectedDelivery": "",
+    "wrappingPlan": "",
+    "cardMessage": ""
+  },
+  "metadata": {
+    "createdDate": "2025-10-22",
+    "lastUpdated": "2025-10-22",
+    "decisionDeadline": "2025-11-01"
+  }
+}

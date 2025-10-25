@@ -1,0 +1,20 @@
+{
+  "name": "competitive-intelligence-analyst",
+  "version": "1.0.0",
+  "description": "Competitor monitoring and analysis specialist for tracking market intelligence, feature comparisons, pricing analysis, and competitive positioning",
+  "type": "plugin",
+  "agents": [
+    "./agents/competitor-monitor.md",
+    "./agents/feature-comparator.md",
+    "./agents/pricing-analyzer.md",
+    "./agents/threat-assessor.md"
+  ],
+  "skills": [
+    "./skills/competitive-intelligence.md",
+    "./skills/feature-comparison.md",
+    "./skills/pricing-analysis.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

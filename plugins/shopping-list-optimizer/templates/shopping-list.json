@@ -1,0 +1,304 @@
+{
+  "list_id": "shopping-YYYYMMDD",
+  "created_date": "YYYY-MM-DD",
+  "meal_plan": "Week of MMM DD-DD",
+  "total_items": 0,
+  "categories": [
+    {
+      "category": "Produce",
+      "items": [
+        {
+          "item": "bananas",
+          "quantity": "6",
+          "unit": "count",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": ""
+        },
+        {
+          "item": "spinach",
+          "quantity": "1",
+          "unit": "bunch",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "organic preferred"
+        },
+        {
+          "item": "tomatoes",
+          "quantity": "4",
+          "unit": "count",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": ""
+        },
+        {
+          "item": "onions",
+          "quantity": "2",
+          "unit": "count",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "yellow onions"
+        }
+      ]
+    },
+    {
+      "category": "Bakery",
+      "items": [
+        {
+          "item": "whole wheat bread",
+          "quantity": "1",
+          "unit": "loaf",
+          "priority": "normal",
+          "source": "recurring",
+          "notes": ""
+        },
+        {
+          "item": "bagels",
+          "quantity": "6",
+          "unit": "count",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "plain or everything"
+        }
+      ]
+    },
+    {
+      "category": "Meat & Seafood",
+      "items": [
+        {
+          "item": "chicken breast",
+          "quantity": "2",
+          "unit": "lbs",
+          "priority": "high",
+          "source": "recipe",
+          "notes": "boneless, skinless"
+        },
+        {
+          "item": "salmon",
+          "quantity": "1",
+          "unit": "lb",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "fresh, not frozen"
+        }
+      ]
+    },
+    {
+      "category": "Deli",
+      "items": [
+        {
+          "item": "turkey slices",
+          "quantity": "0.5",
+          "unit": "lb",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "low sodium"
+        }
+      ]
+    },
+    {
+      "category": "Dairy",
+      "items": [
+        {
+          "item": "milk",
+          "quantity": "1",
+          "unit": "gallon",
+          "priority": "high",
+          "source": "recurring",
+          "notes": "whole milk"
+        },
+        {
+          "item": "yogurt",
+          "quantity": "1",
+          "unit": "6-pack",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "Greek yogurt, plain"
+        },
+        {
+          "item": "cheese",
+          "quantity": "1",
+          "unit": "block",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "cheddar, 8 oz"
+        },
+        {
+          "item": "butter",
+          "quantity": "1",
+          "unit": "lb",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "unsalted"
+        }
+      ]
+    },
+    {
+      "category": "Frozen",
+      "items": [
+        {
+          "item": "frozen vegetables",
+          "quantity": "2",
+          "unit": "bags",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "mixed vegetables, 16 oz each"
+        },
+        {
+          "item": "ice cream",
+          "quantity": "2",
+          "unit": "pints",
+          "priority": "normal",
+          "source": "pantry",
+          "notes": "vanilla"
+        }
+      ]
+    },
+    {
+      "category": "Pantry",
+      "items": [
+        {
+          "item": "pasta",
+          "quantity": "2",
+          "unit": "boxes",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "penne or rigatoni, 16 oz each"
+        },
+        {
+          "item": "marinara sauce",
+          "quantity": "2",
+          "unit": "jars",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "24 oz jars"
+        },
+        {
+          "item": "olive oil",
+          "quantity": "1",
+          "unit": "bottle",
+          "priority": "normal",
+          "source": "pantry",
+          "notes": "extra virgin, 16 oz"
+        },
+        {
+          "item": "rice",
+          "quantity": "1",
+          "unit": "bag",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "white or brown, 2 lbs"
+        },
+        {
+          "item": "canned tomatoes",
+          "quantity": "3",
+          "unit": "cans",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "diced, 14.5 oz cans"
+        },
+        {
+          "item": "black beans",
+          "quantity": "2",
+          "unit": "cans",
+          "priority": "normal",
+          "source": "recipe",
+          "notes": "15 oz cans"
+        }
+      ]
+    },
+    {
+      "category": "Snacks",
+      "items": [
+        {
+          "item": "tortilla chips",
+          "quantity": "1",
+          "unit": "bag",
+          "priority": "normal",
+          "source": "pantry",
+          "notes": "family size"
+        },
+        {
+          "item": "crackers",
+          "quantity": "1",
+          "unit": "box",
+          "priority": "normal",
+          "source": "pantry",
+          "notes": "whole grain"
+        }
+      ]
+    },
+    {
+      "category": "Beverages",
+      "items": [
+        {
+          "item": "orange juice",
+          "quantity": "1",
+          "unit": "gallon",
+          "priority": "normal",
+          "source": "recurring",
+          "notes": "pulp-free"
+        },
+        {
+          "item": "sparkling water",
+          "quantity": "1",
+          "unit": "case",
+          "priority": "normal",
+          "source": "pantry",
+          "notes": "12-pack cans, lime flavor"
+        }
+      ]
+    },
+    {
+      "category": "Household",
+      "items": [
+        {
+          "item": "paper towels",
+          "quantity": "1",
+          "unit": "pack",
+          "priority": "normal",
+          "source": "recurring",
+          "notes": "6-roll pack"
+        },
+        {
+          "item": "dish soap",
+          "quantity": "1",
+          "unit": "bottle",
+          "priority": "normal",
+          "source": "pantry",
+          "notes": "unscented"
+        }
+      ]
+    },
+    {
+      "category": "Personal Care",
+      "items": [
+        {
+          "item": "toothpaste",
+          "quantity": "1",
+          "unit": "tube",
+          "priority": "normal",
+          "source": "recurring",
+          "notes": "fluoride"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Check for sales on chicken and ground beef",
+    "Organic produce preferred when available",
+    "Bring reusable bags"
+  ],
+  "dietary_preferences": {
+    "organic": true,
+    "gluten_free": false,
+    "vegetarian": false,
+    "dairy_free": false,
+    "nut_allergies": false
+  },
+  "budget": {
+    "estimated_total": 150.0,
+    "maximum_budget": 175.0,
+    "currency": "USD"
+  }
+}

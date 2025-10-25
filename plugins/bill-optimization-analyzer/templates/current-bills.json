@@ -1,0 +1,147 @@
+{
+  "bills": [
+    {
+      "id": "bill-001",
+      "category": "internet",
+      "provider": "Comcast Xfinity",
+      "plan": "Performance Pro 300Mbps",
+      "baseCost": 79.99,
+      "taxes": 6.40,
+      "fees": 14.00,
+      "totalMonthly": 100.39,
+      "contractStatus": "promotional",
+      "contractStart": "2024-06-01",
+      "promotionalEnd": "2025-06-01",
+      "postPromoRate": 109.99,
+      "contractEnd": "2026-06-01",
+      "earlyTermFee": 150,
+      "autoRenew": true,
+      "usage": {
+        "avgMonthlyData": "450GB",
+        "planLimit": "unlimited",
+        "utilization": "adequate"
+      },
+      "equipment": "Rented modem - $14/mo",
+      "lastReviewDate": "2024-06-01",
+      "nextReviewDate": "2025-04-01",
+      "notes": "Promotional rate expires June 1. Call retention in April."
+    },
+    {
+      "id": "bill-002",
+      "category": "mobile",
+      "provider": "Verizon",
+      "plan": "Unlimited Plus (2 lines)",
+      "baseCost": 140.00,
+      "taxes": 12.60,
+      "fees": 7.40,
+      "totalMonthly": 160.00,
+      "contractStatus": "month-to-month",
+      "usage": {
+        "line1Data": "12GB/mo avg",
+        "line2Data": "8GB/mo avg",
+        "totalData": "20GB/mo avg",
+        "planLimit": "unlimited",
+        "utilization": "underutilized"
+      },
+      "lastReviewDate": "2024-06-01",
+      "nextReviewDate": "2025-01-01",
+      "notes": "Using only 20GB, unlimited probably overkill. Consider MVNO."
+    },
+    {
+      "id": "bill-003",
+      "category": "auto-insurance",
+      "provider": "State Farm",
+      "plan": "Full Coverage - 2 vehicles",
+      "monthlyPremium": 245.00,
+      "annualPremium": 2940.00,
+      "policyStart": "2025-01-01",
+      "policyEnd": "2026-01-01",
+      "vehicles": 2,
+      "drivers": 2,
+      "coverage": {
+        "liability": "250/500/100",
+        "comprehensive": "$500 deductible",
+        "collision": "$500 deductible",
+        "uninsuredMotorist": "250/500"
+      },
+      "discounts": [
+        "Multi-vehicle: 10%",
+        "Good driver: 15%",
+        "Paperless: 3%"
+      ],
+      "lastReviewDate": "2025-01-01",
+      "nextReviewDate": "2025-11-01",
+      "notes": "Renewal in January. Shop quotes in November."
+    },
+    {
+      "id": "bill-004",
+      "category": "subscriptions",
+      "provider": "Netflix",
+      "plan": "Premium (4K)",
+      "monthlyCost": 22.99,
+      "annualCost": 275.88,
+      "usage": "3-4 times per week",
+      "sharedWith": "Family (4 people)",
+      "lastReviewDate": "2025-01-01",
+      "nextReviewDate": "2025-10-01",
+      "notes": "Heavily used, worth keeping"
+    },
+    {
+      "id": "bill-005",
+      "category": "subscriptions",
+      "provider": "Spotify",
+      "plan": "Premium",
+      "monthlyCost": 10.99,
+      "annualCost": 131.88,
+      "usage": "Daily",
+      "lastReviewDate": "2025-01-01",
+      "nextReviewDate": "2025-10-01",
+      "notes": "Daily use, essential"
+    },
+    {
+      "id": "bill-006",
+      "category": "subscriptions",
+      "provider": "Adobe Creative Cloud",
+      "plan": "Photography Plan",
+      "monthlyCost": 9.99,
+      "annualCost": 119.88,
+      "usage": "2-3 times per month",
+      "lastReviewDate": "2025-01-01",
+      "nextReviewDate": "2025-10-01",
+      "notes": "Occasional use. Consider canceling or using free alternatives."
+    }
+  ],
+  "summary": {
+    "totalMonthly": 549.36,
+    "totalAnnual": 6592.32,
+    "byCategory": {
+      "internet": 100.39,
+      "mobile": 160.00,
+      "autoInsurance": 245.00,
+      "subscriptions": 43.97
+    },
+    "upcomingExpirations": [
+      {
+        "service": "Internet",
+        "date": "2025-06-01",
+        "type": "promotional rate expires"
+      },
+      {
+        "service": "Auto Insurance",
+        "date": "2026-01-01",
+        "type": "policy renewal"
+      }
+    ],
+    "optimizationPotential": {
+      "internet": "$30/mo (negotiate or switch)",
+      "mobile": "$80/mo (switch to MVNO)",
+      "autoInsurance": "$60/mo (shop quotes)",
+      "subscriptions": "$10/mo (cancel unused)",
+      "totalSavingsPotential": "$180/mo ($2,160/year)"
+    }
+  },
+  "metadata": {
+    "lastUpdated": "2025-10-22",
+    "nextFullAudit": "2026-01-01"
+  }
+}

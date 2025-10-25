@@ -1,0 +1,425 @@
+{
+  "config_version": "1.0.0",
+  "last_updated": "2025-10-21T10:00:00Z",
+  "platforms": {
+    "google_home": {
+      "enabled": true,
+      "authentication": {
+        "type": "oauth2",
+        "client_id": "YOUR_GOOGLE_CLIENT_ID",
+        "client_secret": "YOUR_GOOGLE_CLIENT_SECRET",
+        "project_id": "your-project-id",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://oauth2.googleapis.com/token"
+      },
+      "sync_endpoint": "https://homegraph.googleapis.com/v1/devices:sync",
+      "report_state_endpoint": "https://homegraph.googleapis.com/v1/devices:reportStateAndNotification",
+      "device_mapping": {
+        "living-room-lights": {
+          "google_device_id": "living-room-lights-gh",
+          "type": "action.devices.types.LIGHT",
+          "traits": [
+            "action.devices.traits.OnOff",
+            "action.devices.traits.Brightness",
+            "action.devices.traits.ColorSetting"
+          ],
+          "sync_enabled": true
+        },
+        "thermostat-main": {
+          "google_device_id": "thermostat-main-gh",
+          "type": "action.devices.types.THERMOSTAT",
+          "traits": [
+            "action.devices.traits.TemperatureSetting"
+          ],
+          "sync_enabled": true
+        },
+        "front-door-lock": {
+          "google_device_id": "front-door-lock-gh",
+          "type": "action.devices.types.LOCK",
+          "traits": [
+            "action.devices.traits.LockUnlock"
+          ],
+          "sync_enabled": true
+        }
+      },
+      "routines": [
+        {
+          "name": "Good Morning",
+          "trigger_phrase": "Good morning",
+          "actions": [
+            {
+              "device": "living-room-lights",
+              "action": "turn_on",
+              "params": {"brightness": 70}
+            },
+            {
+              "device": "thermostat-main",
+              "action": "set_temperature",
+              "params": {"temperature": 72}
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "language": "en-US",
+        "report_state": true,
+        "sync_interval_seconds": 300
+      }
+    },
+    "alexa": {
+      "enabled": true,
+      "authentication": {
+        "type": "oauth2",
+        "client_id": "YOUR_ALEXA_CLIENT_ID",
+        "client_secret": "YOUR_ALEXA_CLIENT_SECRET",
+        "redirect_uri": "https://your-endpoint.com/auth/alexa",
+        "authorization_uri": "https://www.amazon.com/ap/oa",
+        "token_uri": "https://api.amazon.com/auth/o2/token"
+      },
+      "skill_id": "amzn1.ask.skill.YOUR_SKILL_ID",
+      "endpoint": {
+        "type": "AWS_LAMBDA",
+        "uri": "arn:aws:lambda:us-east-1:123456789:function:SmartHomeHandler"
+      },
+      "device_mapping": {
+        "living-room-lights": {
+          "alexa_device_id": "living-room-lights-alexa",
+          "display_category": "LIGHT",
+          "capabilities": [
+            {
+              "interface": "Alexa.PowerController",
+              "version": "3"
+            },
+            {
+              "interface": "Alexa.BrightnessController",
+              "version": "3"
+            },
+            {
+              "interface": "Alexa.ColorController",
+              "version": "3"
+            }
+          ],
+          "sync_enabled": true
+        },
+        "thermostat-main": {
+          "alexa_device_id": "thermostat-main-alexa",
+          "display_category": "THERMOSTAT",
+          "capabilities": [
+            {
+              "interface": "Alexa.ThermostatController",
+              "version": "3"
+            },
+            {
+              "interface": "Alexa.TemperatureSensor",
+              "version": "3"
+            }
+          ],
+          "sync_enabled": true
+        }
+      },
+      "routines": [
+        {
+          "name": "Movie Time",
+          "trigger_utterance": "Alexa, movie time",
+          "actions": [
+            {
+              "device": "living-room-lights",
+              "action": "set_brightness",
+              "params": {"brightness": 20}
+            },
+            {
+              "device": "tv",
+              "action": "turn_on"
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "proactive_state_reports": true,
+        "discovery_interval_seconds": 600
+      }
+    },
+    "homekit": {
+      "enabled": true,
+      "bridge": {
+        "name": "Smart Home Bridge",
+        "username": "AA:BB:CC:DD:EE:FF",
+        "pin": "123-45-678",
+        "port": 51826,
+        "manufacturer": "Smart Home Hub",
+        "model": "Hub v1.0",
+        "serial_number": "SH-001",
+        "firmware_revision": "1.0.0"
+      },
+      "device_mapping": {
+        "living-room-lights": {
+          "homekit_accessory_id": 1,
+          "service_type": "Lightbulb",
+          "characteristics": [
+            {
+              "type": "On",
+              "format": "bool",
+              "perms": ["pr", "pw", "ev"]
+            },
+            {
+              "type": "Brightness",
+              "format": "int",
+              "perms": ["pr", "pw", "ev"],
+              "minValue": 0,
+              "maxValue": 100
+            },
+            {
+              "type": "Hue",
+              "format": "float",
+              "perms": ["pr", "pw", "ev"],
+              "minValue": 0,
+              "maxValue": 360
+            },
+            {
+              "type": "Saturation",
+              "format": "float",
+              "perms": ["pr", "pw", "ev"],
+              "minValue": 0,
+              "maxValue": 100
+            }
+          ],
+          "sync_enabled": true
+        },
+        "thermostat-main": {
+          "homekit_accessory_id": 2,
+          "service_type": "Thermostat",
+          "characteristics": [
+            {
+              "type": "CurrentHeatingCoolingState",
+              "format": "uint8",
+              "perms": ["pr", "ev"]
+            },
+            {
+              "type": "TargetHeatingCoolingState",
+              "format": "uint8",
+              "perms": ["pr", "pw", "ev"]
+            },
+            {
+              "type": "CurrentTemperature",
+              "format": "float",
+              "perms": ["pr", "ev"]
+            },
+            {
+              "type": "TargetTemperature",
+              "format": "float",
+              "perms": ["pr", "pw", "ev"],
+              "minValue": 50,
+              "maxValue": 90
+            }
+          ],
+          "sync_enabled": true
+        },
+        "front-door-lock": {
+          "homekit_accessory_id": 3,
+          "service_type": "LockMechanism",
+          "characteristics": [
+            {
+              "type": "LockCurrentState",
+              "format": "uint8",
+              "perms": ["pr", "ev"]
+            },
+            {
+              "type": "LockTargetState",
+              "format": "uint8",
+              "perms": ["pr", "pw", "ev"]
+            }
+          ],
+          "sync_enabled": true
+        }
+      },
+      "scenes": [
+        {
+          "name": "Good Night",
+          "accessories": [
+            {
+              "id": 1,
+              "characteristics": {"On": false}
+            },
+            {
+              "id": 2,
+              "characteristics": {"TargetTemperature": 68}
+            },
+            {
+              "id": 3,
+              "characteristics": {"LockTargetState": 1}
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "category": "BRIDGE",
+        "mdns_broadcast": true,
+        "persist_state": true
+      }
+    },
+    "ifttt": {
+      "enabled": true,
+      "authentication": {
+        "webhook_key": "YOUR_IFTTT_WEBHOOK_KEY",
+        "webhook_url": "https://maker.ifttt.com/trigger/{event}/with/key/{key}"
+      },
+      "applets": [
+        {
+          "name": "Away Mode Trigger",
+          "trigger": {
+            "service": "location",
+            "trigger_type": "exit_area",
+            "parameters": {
+              "area": "home"
+            }
+          },
+          "action": {
+            "service": "webhooks",
+            "action_type": "make_web_request",
+            "parameters": {
+              "url": "https://your-hub.com/api/automation/away-mode",
+              "method": "POST",
+              "content_type": "application/json",
+              "body": "{\"trigger\":\"location_exit\"}"
+            }
+          }
+        },
+        {
+          "name": "Weather-Based Blinds",
+          "trigger": {
+            "service": "weather",
+            "trigger_type": "temperature_rises_above",
+            "parameters": {
+              "temperature": 85,
+              "unit": "fahrenheit"
+            }
+          },
+          "action": {
+            "service": "webhooks",
+            "action_type": "make_web_request",
+            "parameters": {
+              "url": "https://your-hub.com/api/cover/bedroom-blinds/close",
+              "method": "POST"
+            }
+          }
+        },
+        {
+          "name": "High Energy Alert",
+          "trigger": {
+            "service": "webhooks",
+            "trigger_type": "receive_web_request",
+            "parameters": {
+              "event_name": "high_energy_alert"
+            }
+          },
+          "action": {
+            "service": "notifications",
+            "action_type": "send_notification",
+            "parameters": {
+              "message": "High energy usage detected: {{Value1}} kWh"
+            }
+          }
+        }
+      ],
+      "webhooks": [
+        {
+          "event_name": "lights_on",
+          "url": "https://maker.ifttt.com/trigger/lights_on/with/key/YOUR_KEY",
+          "method": "POST",
+          "description": "Trigger to turn on lights via IFTTT"
+        },
+        {
+          "event_name": "away_mode",
+          "url": "https://maker.ifttt.com/trigger/away_mode/with/key/YOUR_KEY",
+          "method": "POST",
+          "description": "Trigger away mode automation"
+        },
+        {
+          "event_name": "high_energy_alert",
+          "url": "https://maker.ifttt.com/trigger/high_energy_alert/with/key/YOUR_KEY",
+          "method": "POST",
+          "description": "Send energy alert notification"
+        }
+      ],
+      "settings": {
+        "retry_failed_requests": true,
+        "max_retries": 3,
+        "timeout_seconds": 30
+      }
+    }
+  },
+  "cross_platform_sync": {
+    "enabled": true,
+    "sync_interval_seconds": 300,
+    "sync_on_state_change": true,
+    "conflict_resolution": "last_write_wins",
+    "platforms_to_sync": [
+      "google_home",
+      "alexa",
+      "homekit"
+    ],
+    "exclude_devices": [],
+    "sync_log": {
+      "enabled": true,
+      "retention_days": 30,
+      "path": ".claude/smart-home/sync-logs/"
+    }
+  },
+  "compatibility_matrix": {
+    "lights": {
+      "google_home": ["on_off", "brightness", "color", "color_temp"],
+      "alexa": ["on_off", "brightness", "color", "color_temp"],
+      "homekit": ["on_off", "brightness", "color"],
+      "ifttt": ["on_off", "brightness"]
+    },
+    "thermostats": {
+      "google_home": ["temperature", "mode", "fan", "humidity"],
+      "alexa": ["temperature", "mode", "humidity"],
+      "homekit": ["temperature", "mode"],
+      "ifttt": ["temperature"]
+    },
+    "locks": {
+      "google_home": ["lock", "unlock"],
+      "alexa": ["lock"],
+      "homekit": ["lock", "unlock"],
+      "ifttt": ["lock", "unlock"]
+    },
+    "covers": {
+      "google_home": ["open", "close", "position"],
+      "alexa": ["open", "close"],
+      "homekit": ["open", "close", "position"],
+      "ifttt": ["open", "close"]
+    },
+    "sensors": {
+      "google_home": ["temperature", "humidity", "motion"],
+      "alexa": ["temperature", "motion"],
+      "homekit": ["temperature", "humidity", "motion", "light"],
+      "ifttt": ["motion"]
+    }
+  },
+  "voice_commands": {
+    "google_assistant": [
+      "Hey Google, turn on [device name]",
+      "Hey Google, set [device] to [value]",
+      "Hey Google, activate [routine name]",
+      "Hey Google, what's the temperature in [room]?"
+    ],
+    "alexa": [
+      "Alexa, turn on [device name]",
+      "Alexa, set [device] to [value]",
+      "Alexa, run [routine name]",
+      "Alexa, what's the status of [device]?"
+    ],
+    "siri": [
+      "Hey Siri, turn on [device name]",
+      "Hey Siri, set [room] to [temperature]",
+      "Hey Siri, activate [scene name]",
+      "Hey Siri, is the [device] on?"
+    ]
+  },
+  "metadata": {
+    "created_by": "integration-helper",
+    "version": "1.0.0",
+    "notes": "Template configuration for multi-platform smart home integration. Replace placeholder values with actual credentials and device IDs."
+  }
+}

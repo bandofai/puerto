@@ -1,0 +1,90 @@
+{
+  "period": {
+    "start": "2025-10-01",
+    "end": "2025-10-22",
+    "days": 22
+  },
+  "summary": {
+    "totalKWh": 924,
+    "totalCost": 116.50,
+    "avgDailyKWh": 42.0,
+    "avgMonthlyCost": 158.18,
+    "effectiveRate": 0.126
+  },
+  "patterns": {
+    "baseline": {
+      "averageKW": 0.72,
+      "description": "Overnight minimum - refrigerator, phantom loads",
+      "percentOfTotal": 17
+    },
+    "peaks": {
+      "morning": {
+        "hours": "6am-9am",
+        "averageKW": 2.2,
+        "primaryCauses": ["water heater", "breakfast cooking", "getting ready"]
+      },
+      "evening": {
+        "hours": "5pm-10pm",
+        "averageKW": 2.8,
+        "primaryCauses": ["cooking", "AC/heat", "lighting", "entertainment"]
+      }
+    },
+    "byTimeOfDay": {
+      "overnight": {"hours": "10pm-6am", "avgKW": 0.75, "percent": 17},
+      "morning": {"hours": "6am-9am", "avgKW": 2.2, "percent": 19},
+      "daytime": {"hours": "9am-5pm", "avgKW": 1.2, "percent": 28},
+      "evening": {"hours": "5pm-10pm", "avgKW": 2.6, "percent": 36}
+    },
+    "byDayOfWeek": {
+      "weekday": {"avgKWh": 40.5, "pattern": "Lower daytime use (away at work)"},
+      "weekend": {"avgKWh": 45.0, "pattern": "Higher all-day use (home activities)"}
+    }
+  },
+  "anomalies": [
+    {
+      "date": "2025-10-15",
+      "hour": 14,
+      "kWh": 5.2,
+      "flag": "spike",
+      "investigation": "200% above typical for this hour - AC malfunction or extreme weather?"
+    }
+  ],
+  "appliances": {
+    "HVAC": {
+      "estimatedKWh": 416,
+      "percentOfTotal": 45,
+      "annualProjection": 5000,
+      "notes": "Central AC running during peak hours"
+    },
+    "waterHeater": {
+      "estimatedKWh": 185,
+      "percentOfTotal": 20,
+      "annualProjection": 2220,
+      "notes": "Morning peaks indicate tank water heater"
+    },
+    "lighting": {
+      "estimatedKWh": 111,
+      "percentOfTotal": 12,
+      "annualProjection": 1332,
+      "notes": "Evening usage, likely mix of LED and older bulbs"
+    },
+    "appliances": {
+      "estimatedKWh": 139,
+      "percentOfTotal": 15,
+      "annualProjection": 1668,
+      "notes": "Refrigerator, dishwasher, washer/dryer, oven"
+    },
+    "electronics": {
+      "estimatedKWh": 73,
+      "percentOfTotal": 8,
+      "annualProjection": 876,
+      "notes": "TV, computers, phantom loads"
+    }
+  },
+  "seasonal": {
+    "currentSeason": "fall",
+    "comparisonToSummer": -15,
+    "comparisonToWinter": -10,
+    "notes": "Moderate season, AC use declining"
+  }
+}

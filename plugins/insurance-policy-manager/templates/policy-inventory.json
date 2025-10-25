@@ -1,0 +1,469 @@
+{
+  "last_updated": "2025-10-23",
+  "version": "1.0",
+  "owner": {
+    "name": "",
+    "date_of_birth": "",
+    "ssn_last4": "",
+    "email": "",
+    "phone": "",
+    "address": ""
+  },
+  "policies": [
+    {
+      "policy_id": "EXAMPLE-HEALTH-001",
+      "policy_type": "health",
+      "status": "active",
+      "insurance_company": "Blue Cross Blue Shield",
+      "policy_number": "BCBS-1234567",
+      "group_number": "",
+      "effective_date": "2025-01-01",
+      "expiration_date": "2025-12-31",
+      "renewal_date": "2026-01-01",
+      "premium": {
+        "amount": 450.00,
+        "frequency": "monthly",
+        "payment_method": "payroll_deduction",
+        "auto_pay": true,
+        "last_payment_date": "2025-10-01"
+      },
+      "coverage": {
+        "type": "PPO",
+        "deductible": 1500,
+        "out_of_pocket_max": 6000,
+        "copay_primary": 25,
+        "copay_specialist": 50,
+        "coinsurance": 20,
+        "prescription_coverage": true,
+        "dental_included": false,
+        "vision_included": false
+      },
+      "covered_individuals": [
+        {
+          "name": "Primary Insured",
+          "relationship": "self",
+          "dob": ""
+        }
+      ],
+      "provider_network": {
+        "network_name": "Blue Cross Network",
+        "primary_care_physician": "",
+        "pcp_phone": ""
+      },
+      "agent": {
+        "name": "",
+        "company": "Benefits Administrator",
+        "phone": "",
+        "email": ""
+      },
+      "claims_contact": {
+        "phone": "1-800-BCBS-HELP",
+        "website": "www.bcbs.com/claims",
+        "mailing_address": ""
+      },
+      "documents": [],
+      "notes": "Employer-provided health insurance",
+      "added_date": "2025-01-01T00:00:00Z",
+      "last_updated": "2025-10-23T00:00:00Z"
+    },
+    {
+      "policy_id": "EXAMPLE-AUTO-001",
+      "policy_type": "auto",
+      "status": "active",
+      "insurance_company": "State Farm",
+      "policy_number": "SF-AUTO-123456",
+      "effective_date": "2025-04-15",
+      "expiration_date": "2026-04-15",
+      "renewal_date": "2026-04-15",
+      "premium": {
+        "amount": 125.00,
+        "frequency": "monthly",
+        "payment_method": "auto_pay",
+        "auto_pay": true,
+        "last_payment_date": "2025-10-01"
+      },
+      "coverage": {
+        "liability_limit": "100/300/100",
+        "bodily_injury_per_person": 100000,
+        "bodily_injury_per_accident": 300000,
+        "property_damage": 100000,
+        "collision": true,
+        "collision_deductible": 500,
+        "comprehensive": true,
+        "comprehensive_deductible": 500,
+        "uninsured_motorist": true,
+        "underinsured_motorist": true,
+        "medical_payments": 5000,
+        "rental_reimbursement": true,
+        "roadside_assistance": true,
+        "gap_insurance": false
+      },
+      "vehicles": [
+        {
+          "year": 2022,
+          "make": "Toyota",
+          "model": "Camry",
+          "vin": "1234567890ABCDEFG",
+          "license_plate": "",
+          "primary_driver": "",
+          "annual_mileage": 12000,
+          "use": "commute"
+        }
+      ],
+      "drivers": [
+        {
+          "name": "",
+          "license_number": "",
+          "date_of_birth": "",
+          "license_state": ""
+        }
+      ],
+      "agent": {
+        "name": "",
+        "company": "State Farm",
+        "phone": "",
+        "email": "",
+        "office_address": ""
+      },
+      "claims_contact": {
+        "phone": "1-800-STATE-FARM",
+        "website": "www.statefarm.com/claims",
+        "mailing_address": ""
+      },
+      "documents": [],
+      "notes": "",
+      "added_date": "2025-04-15T00:00:00Z",
+      "last_updated": "2025-10-23T00:00:00Z"
+    },
+    {
+      "policy_id": "EXAMPLE-HOME-001",
+      "policy_type": "home",
+      "status": "active",
+      "insurance_company": "Allstate",
+      "policy_number": "ALLST-HOME-78910",
+      "effective_date": "2024-12-01",
+      "expiration_date": "2025-12-01",
+      "renewal_date": "2025-12-01",
+      "premium": {
+        "amount": 1200.00,
+        "frequency": "annual",
+        "payment_method": "bank_transfer",
+        "auto_pay": false,
+        "last_payment_date": "2024-12-01"
+      },
+      "coverage": {
+        "dwelling": 500000,
+        "other_structures": 50000,
+        "personal_property": 250000,
+        "loss_of_use": 100000,
+        "personal_liability": 500000,
+        "medical_payments": 5000,
+        "deductible": 2500,
+        "replacement_cost_basis": true,
+        "flood_included": false,
+        "earthquake_included": false,
+        "sewer_backup_included": true,
+        "water_backup_included": true,
+        "jewelry_limit": 5000,
+        "electronics_limit": 10000,
+        "scheduled_items": []
+      },
+      "property": {
+        "address": "",
+        "property_type": "single_family",
+        "year_built": 2005,
+        "square_footage": 2500,
+        "construction_type": "frame",
+        "roof_age": 5,
+        "roof_material": "architectural_shingle",
+        "heating_type": "forced_air",
+        "electrical_updated": true,
+        "plumbing_updated": true,
+        "security_system": true,
+        "fire_alarm": true,
+        "sprinkler_system": false,
+        "pool": false,
+        "trampoline": false
+      },
+      "mortgage": {
+        "mortgagee": "",
+        "loan_number": "",
+        "mortgagee_clause": ""
+      },
+      "agent": {
+        "name": "",
+        "company": "Allstate",
+        "phone": "",
+        "email": "",
+        "office_address": ""
+      },
+      "claims_contact": {
+        "phone": "1-800-ALLSTATE",
+        "website": "www.allstate.com/claims",
+        "mailing_address": ""
+      },
+      "documents": [],
+      "notes": "Annual renewal reminder 30 days before expiration",
+      "added_date": "2024-12-01T00:00:00Z",
+      "last_updated": "2025-10-23T00:00:00Z"
+    },
+    {
+      "policy_id": "EXAMPLE-LIFE-001",
+      "policy_type": "life",
+      "status": "active",
+      "insurance_company": "Northwestern Mutual",
+      "policy_number": "NM-LIFE-456789",
+      "effective_date": "2020-06-15",
+      "expiration_date": "2050-06-15",
+      "renewal_date": null,
+      "premium": {
+        "amount": 85.00,
+        "frequency": "monthly",
+        "payment_method": "auto_pay",
+        "auto_pay": true,
+        "last_payment_date": "2025-10-01"
+      },
+      "coverage": {
+        "type": "term",
+        "limit": 1000000,
+        "term_length": 30,
+        "conversion_option": true,
+        "riders": [
+          {
+            "type": "accidental_death",
+            "benefit": 100000
+          },
+          {
+            "type": "waiver_of_premium",
+            "benefit": "premium_waived_if_disabled"
+          }
+        ],
+        "cash_value": 0,
+        "loan_available": false
+      },
+      "insured": {
+        "name": "",
+        "date_of_birth": "",
+        "ssn_last4": "",
+        "health_class": "preferred",
+        "smoker": false,
+        "occupation": ""
+      },
+      "beneficiaries": {
+        "primary": [
+          {
+            "name": "",
+            "relationship": "spouse",
+            "percentage": 100,
+            "ssn_last4": "",
+            "date_of_birth": "",
+            "address": ""
+          }
+        ],
+        "contingent": [
+          {
+            "name": "",
+            "relationship": "child",
+            "percentage": 50,
+            "ssn_last4": "",
+            "date_of_birth": ""
+          },
+          {
+            "name": "",
+            "relationship": "child",
+            "percentage": 50,
+            "ssn_last4": "",
+            "date_of_birth": ""
+          }
+        ],
+        "last_reviewed": "2025-01-01",
+        "review_frequency": "annual"
+      },
+      "agent": {
+        "name": "",
+        "company": "Northwestern Mutual",
+        "phone": "",
+        "email": "",
+        "office_address": ""
+      },
+      "claims_contact": {
+        "phone": "1-866-950-4644",
+        "website": "www.northwesternmutual.com/claims",
+        "mailing_address": ""
+      },
+      "documents": [],
+      "notes": "CRITICAL: Review beneficiaries annually and after major life events",
+      "added_date": "2020-06-15T00:00:00Z",
+      "last_updated": "2025-10-23T00:00:00Z"
+    },
+    {
+      "policy_id": "EXAMPLE-DISABILITY-001",
+      "policy_type": "disability",
+      "status": "active",
+      "insurance_company": "Guardian Life",
+      "policy_number": "GRD-DI-123456",
+      "effective_date": "2023-03-01",
+      "expiration_date": null,
+      "renewal_date": "2026-03-01",
+      "premium": {
+        "amount": 180.00,
+        "frequency": "monthly",
+        "payment_method": "auto_pay",
+        "auto_pay": true,
+        "last_payment_date": "2025-10-01"
+      },
+      "coverage": {
+        "type": "long_term",
+        "monthly_benefit": 5000,
+        "benefit_period": "to_age_65",
+        "elimination_period": 90,
+        "definition": "own_occupation",
+        "partial_disability": true,
+        "residual_benefit": true,
+        "cola_rider": true,
+        "future_increase_option": true,
+        "non_cancelable": true,
+        "guaranteed_renewable": true
+      },
+      "insured": {
+        "name": "",
+        "date_of_birth": "",
+        "occupation": "",
+        "annual_income": 0,
+        "income_verification_date": ""
+      },
+      "agent": {
+        "name": "",
+        "company": "Guardian Life",
+        "phone": "",
+        "email": ""
+      },
+      "claims_contact": {
+        "phone": "1-800-GUARDIAN",
+        "website": "www.guardianlife.com/claims",
+        "mailing_address": ""
+      },
+      "documents": [],
+      "notes": "Own occupation definition provides best protection for professionals",
+      "added_date": "2023-03-01T00:00:00Z",
+      "last_updated": "2025-10-23T00:00:00Z"
+    },
+    {
+      "policy_id": "EXAMPLE-UMBRELLA-001",
+      "policy_type": "umbrella",
+      "status": "active",
+      "insurance_company": "Travelers",
+      "policy_number": "TRV-UMB-789012",
+      "effective_date": "2024-08-01",
+      "expiration_date": "2025-08-01",
+      "renewal_date": "2025-08-01",
+      "premium": {
+        "amount": 350.00,
+        "frequency": "annual",
+        "payment_method": "auto_pay",
+        "auto_pay": true,
+        "last_payment_date": "2024-08-01"
+      },
+      "coverage": {
+        "limit": 2000000,
+        "underlying_auto_required": "250/500/100",
+        "underlying_home_required": 500000,
+        "worldwide_coverage": true,
+        "defense_costs_included": true,
+        "rental_property_covered": false,
+        "watercraft_covered": false
+      },
+      "underlying_policies": [
+        {
+          "type": "auto",
+          "policy_id": "EXAMPLE-AUTO-001",
+          "company": "State Farm"
+        },
+        {
+          "type": "home",
+          "policy_id": "EXAMPLE-HOME-001",
+          "company": "Allstate"
+        }
+      ],
+      "agent": {
+        "name": "",
+        "company": "Travelers",
+        "phone": "",
+        "email": ""
+      },
+      "claims_contact": {
+        "phone": "1-800-TRAVELERS",
+        "website": "www.travelers.com/claims",
+        "mailing_address": ""
+      },
+      "documents": [],
+      "notes": "Excellent value for asset protection - $2M coverage for $350/year",
+      "added_date": "2024-08-01T00:00:00Z",
+      "last_updated": "2025-10-23T00:00:00Z"
+    }
+  ],
+  "statistics": {
+    "total_policies": 6,
+    "active_policies": 6,
+    "expired_policies": 0,
+    "total_annual_premium": 8940.00,
+    "policies_by_type": {
+      "health": 1,
+      "auto": 1,
+      "home": 1,
+      "life": 1,
+      "disability": 1,
+      "umbrella": 1
+    },
+    "renewals_next_60_days": [],
+    "policies_needing_review": []
+  },
+  "important_contacts": {
+    "insurance_broker": {
+      "name": "",
+      "company": "",
+      "phone": "",
+      "email": ""
+    },
+    "financial_advisor": {
+      "name": "",
+      "company": "",
+      "phone": "",
+      "email": ""
+    },
+    "estate_attorney": {
+      "name": "",
+      "company": "",
+      "phone": "",
+      "email": ""
+    }
+  },
+  "document_storage": {
+    "physical_location": "Home safe / Safe deposit box",
+    "digital_backup": "Encrypted cloud storage",
+    "access_instructions": "Location information stored in estate documents",
+    "emergency_contacts_have_access": false
+  },
+  "review_schedule": {
+    "last_comprehensive_review": "2025-01-15",
+    "next_scheduled_review": "2026-01-15",
+    "review_frequency": "annual",
+    "life_events_requiring_review": [
+      "Marriage/Divorce",
+      "Birth/Adoption",
+      "Home purchase/sale",
+      "Job change",
+      "Significant income change",
+      "Retirement",
+      "Major health diagnosis"
+    ]
+  },
+  "notes": [
+    "Keep this document updated and secure",
+    "Review beneficiaries annually - CRITICAL",
+    "Update after any major life event",
+    "Share access information with trusted family member or executor",
+    "Store physical policy documents in fireproof safe or safe deposit box",
+    "Keep digital copies in encrypted cloud storage"
+  ]
+}

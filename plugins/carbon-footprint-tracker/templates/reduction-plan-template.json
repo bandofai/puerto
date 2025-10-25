@@ -1,0 +1,129 @@
+{
+  "plan_date": "2025-01-22",
+  "baseline_annual_kg": 12000,
+  "current_annual_kg": 12000,
+  "goal_annual_kg": 6000,
+  "target_date": "2026-01-22",
+  "recommendations": [
+    {
+      "id": 1,
+      "name": "Switch to renewable energy plan",
+      "category": "energy",
+      "impact_kg_per_year": 4400,
+      "impact_percent": 36.7,
+      "difficulty": "easy",
+      "cost": "same_or_low",
+      "timeframe_days": 1,
+      "status": "recommended",
+      "specific_actions": [
+        "Call your utility provider",
+        "Ask about 100% renewable energy plans",
+        "Compare pricing (often same cost)",
+        "Switch plan (takes 5 minutes)"
+      ],
+      "how_to_track": "Check utility bill for renewable energy indicator",
+      "personalization": "Based on your data, you use 877 kWh/month electricity. Switching to renewable saves ~4,400 kg CO2/year."
+    },
+    {
+      "id": 2,
+      "name": "Meatless 3 days per week",
+      "category": "food",
+      "impact_kg_per_year": 400,
+      "impact_percent": 3.3,
+      "difficulty": "easy",
+      "cost": "saves_money",
+      "timeframe_days": 7,
+      "status": "recommended",
+      "specific_actions": [
+        "Choose 3 days for meatless meals (e.g., Mon/Wed/Fri)",
+        "Find 5-10 plant-based recipes you enjoy",
+        "Meal prep on Sundays",
+        "Track in emissions-logger"
+      ],
+      "how_to_track": "Log plant-based meals, compare monthly food emissions",
+      "personalization": "You currently eat beef 2x/week. Replacing with plant-based saves 400 kg CO2/year."
+    },
+    {
+      "id": 3,
+      "name": "Remote work 2 days per week",
+      "category": "transport",
+      "impact_kg_per_year": 1050,
+      "impact_percent": 8.8,
+      "difficulty": "moderate",
+      "cost": "saves_money",
+      "timeframe_days": 30,
+      "status": "recommended",
+      "specific_actions": [
+        "Discuss with manager",
+        "Propose Mon/Fri remote schedule",
+        "Set up productive home office",
+        "Track commute miles saved"
+      ],
+      "how_to_track": "Log commute days vs. remote days in emissions-logger",
+      "personalization": "Your 25-mile commute 5x/week = 2,625 kg/year. Working remote 2x/week saves 1,050 kg."
+    },
+    {
+      "id": 4,
+      "name": "Electric vehicle (when car needs replacement)",
+      "category": "transport",
+      "impact_kg_per_year": 3250,
+      "impact_percent": 27.1,
+      "difficulty": "hard",
+      "cost": "high_upfront",
+      "timeframe_days": 730,
+      "status": "future",
+      "specific_actions": [
+        "Research EV models and incentives",
+        "Calculate total cost of ownership",
+        "Test drive EVs you're interested in",
+        "When current car needs replacement, choose EV"
+      ],
+      "how_to_track": "Annual transport emissions comparison",
+      "personalization": "Your 25,000 miles/year in gas car = 5,250 kg. Switching to EV saves 3,250 kg/year."
+    }
+  ],
+  "roadmap": {
+    "month_1_2": {
+      "focus": ["Switch to renewable energy", "Start meatless 3 days/week"],
+      "expected_reduction_kg": 4800,
+      "actions": "Implement quick wins"
+    },
+    "month_3_6": {
+      "focus": ["Negotiate remote work arrangement"],
+      "expected_reduction_kg": 1050,
+      "milestone": "Establish hybrid work routine"
+    },
+    "year_1_goal": {
+      "target_annual_kg": 6000,
+      "reduction_from_baseline": 6000,
+      "reduction_percent": 50
+    },
+    "path_to_net_zero": {
+      "year_1_target": 6000,
+      "year_3_target": 4000,
+      "year_5_target": 2300,
+      "year_10_target": 500,
+      "offset_needed": 500
+    }
+  },
+  "offset_recommendations": [
+    {
+      "project_name": "Renewable Energy Development (Gold Standard)",
+      "project_type": "wind_farm",
+      "cost_per_ton": 15,
+      "certification": "Gold Standard",
+      "annual_cost_for_user": 90,
+      "kg_to_offset": 6000,
+      "url": "https://www.goldstandard.org/"
+    },
+    {
+      "project_name": "Reforestation (VCS)",
+      "project_type": "tree_planting",
+      "cost_per_ton": 10,
+      "certification": "VCS",
+      "annual_cost_for_user": 60,
+      "kg_to_offset": 6000,
+      "url": "https://verra.org/"
+    }
+  ]
+}

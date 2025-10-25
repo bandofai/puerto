@@ -1,0 +1,17 @@
+{
+  "name": "email-marketer",
+  "version": "1.0.0",
+  "description": "Email marketing specialist",
+  "agents": [
+    "./agents/campaign-creator.md",
+    "./agents/segmentation-specialist.md",
+    "./agents/automation-builder.md"
+  ],
+  "skills": [
+    "./skills/email-copywriting.md",
+    "./skills/segmentation.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

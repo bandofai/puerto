@@ -1,0 +1,10 @@
+{
+  "name": "subagent-creator",
+  "version": "1.0.0",
+  "description": "Expert subagent architect with comprehensive skill library for creating production-ready, skill-aware Claude Code subagents",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": ["subagent", "agent", "skill", "architecture", "workflow", "automation", "document-creation"],
+  "license": "MIT"
+}

@@ -1,0 +1,82 @@
+{
+  "triageSession": {
+    "date": "2025-10-22",
+    "startCount": 200,
+    "endCount": 5,
+    "processed": 195,
+    "duration": "45 minutes"
+  },
+  "categorized": {
+    "actionRequired": [
+      {
+        "from": "client@company.com",
+        "subject": "Project deadline question",
+        "priority": "high",
+        "estimatedTime": "15 minutes",
+        "action": "Respond with timeline clarification",
+        "dueDate": "2025-10-23"
+      }
+    ],
+    "fyi": [
+      {
+        "from": "team@company.com",
+        "subject": "Weekly team update",
+        "action": "Read and archive",
+        "notes": "No response needed"
+      }
+    ],
+    "urgent": [
+      {
+        "from": "boss@company.com",
+        "subject": "Meeting today at 3pm",
+        "priority": "critical",
+        "action": "Confirm attendance immediately",
+        "dueDate": "2025-10-22"
+      }
+    ],
+    "newsletters": [
+      {
+        "from": "newsletter@tech.com",
+        "subject": "Weekly tech roundup",
+        "action": "Move to digest folder"
+      }
+    ],
+    "archive": [
+      {
+        "from": "notifications@service.com",
+        "subject": "Your report is ready",
+        "action": "Downloaded, archive"
+      }
+    ],
+    "delete": [
+      {
+        "from": "spam@promotional.com",
+        "subject": "URGENT: Act now!",
+        "action": "Delete and mark as spam"
+      }
+    ],
+    "unsubscribe": [
+      {
+        "from": "marketing@unwanted.com",
+        "subject": "Daily deals you don't want",
+        "action": "Unsubscribe",
+        "reason": "Never opened, not relevant"
+      }
+    ]
+  },
+  "summary": {
+    "action": 25,
+    "fyi": 40,
+    "urgent": 5,
+    "newsletters": 30,
+    "archived": 70,
+    "deleted": 15,
+    "unsubscribed": 10
+  },
+  "nextSteps": [
+    "Process 5 urgent items immediately",
+    "Schedule 25 action items in calendar",
+    "Batch process newsletters on Friday",
+    "Follow up with 3 pending responses"
+  ]
+}

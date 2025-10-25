@@ -1,0 +1,135 @@
+{
+  "auditPeriod": {
+    "startDate": "2025-10-01",
+    "endDate": "2025-10-22",
+    "durationDays": 21
+  },
+  "newsletters": [
+    {
+      "id": "nl-001",
+      "name": "Tech Industry Weekly",
+      "sender": "newsletter@techindustry.com",
+      "frequency": "weekly",
+      "totalReceived": 3,
+      "opened": 3,
+      "openRate": 100,
+      "avgTimeSpent": "10 minutes",
+      "valueRating": 5,
+      "category": "professional-development",
+      "decision": "keep",
+      "reason": "Excellent insights, always relevant, worth the time",
+      "action": "Keep in inbox, continue reading"
+    },
+    {
+      "id": "nl-002",
+      "name": "Daily Design Inspiration",
+      "sender": "hello@designdaily.com",
+      "frequency": "daily",
+      "totalReceived": 21,
+      "opened": 5,
+      "openRate": 24,
+      "avgTimeSpent": "2 minutes",
+      "valueRating": 3,
+      "category": "inspiration",
+      "decision": "digest",
+      "reason": "Sometimes useful but daily is too much. Better in batch.",
+      "action": "Move to digest folder, review weekly"
+    },
+    {
+      "id": "nl-003",
+      "name": "Product Launch Announcements",
+      "sender": "news@productcompany.com",
+      "frequency": "multiple-per-week",
+      "totalReceived": 8,
+      "opened": 0,
+      "openRate": 0,
+      "avgTimeSpent": "0 minutes",
+      "valueRating": 1,
+      "category": "promotional",
+      "decision": "unsubscribe",
+      "reason": "Never opened. Not relevant to current work. Just clutters inbox.",
+      "action": "Unsubscribe immediately",
+      "unsubscribedDate": "2025-10-22"
+    },
+    {
+      "id": "nl-004",
+      "name": "Morning Brew",
+      "sender": "crew@morningbrew.com",
+      "frequency": "daily",
+      "totalReceived": 21,
+      "opened": 18,
+      "openRate": 86,
+      "avgTimeSpent": "5 minutes",
+      "valueRating": 4,
+      "category": "news",
+      "decision": "keep",
+      "reason": "Quick, concise business news. Good morning reading.",
+      "action": "Keep in inbox, read at breakfast"
+    },
+    {
+      "id": "nl-005",
+      "name": "E-commerce Tips Monthly",
+      "sender": "tips@ecommerce.com",
+      "frequency": "monthly",
+      "totalReceived": 1,
+      "opened": 1,
+      "openRate": 100,
+      "avgTimeSpent": "15 minutes",
+      "valueRating": 4,
+      "category": "professional-development",
+      "decision": "keep",
+      "reason": "Monthly is perfect frequency. In-depth, actionable content.",
+      "action": "Keep in inbox, block time to read"
+    },
+    {
+      "id": "nl-006",
+      "name": "Sales Promotions Galore",
+      "sender": "deals@retailer.com",
+      "frequency": "multiple-daily",
+      "totalReceived": 42,
+      "opened": 2,
+      "openRate": 5,
+      "avgTimeSpent": "1 minute",
+      "valueRating": 1,
+      "category": "promotional",
+      "decision": "unsubscribe",
+      "reason": "Way too frequent. Mostly irrelevant. Causes inbox stress.",
+      "action": "Unsubscribe immediately",
+      "unsubscribedDate": "2025-10-22"
+    }
+  ],
+  "summary": {
+    "totalNewsletters": 6,
+    "totalEmailsReceived": 96,
+    "totalOpened": 29,
+    "overallOpenRate": 30.2,
+    "decisions": {
+      "keep": 3,
+      "digest": 1,
+      "unsubscribe": 2
+    },
+    "byFrequency": {
+      "daily": 2,
+      "weekly": 1,
+      "monthly": 1,
+      "multiple-per-week": 1,
+      "multiple-daily": 1
+    },
+    "timeSpentWeekly": "45 minutes",
+    "targetTimeReduction": "60%",
+    "projectedTimeSaved": "27 minutes per week"
+  },
+  "recommendations": [
+    "Unsubscribe from 2 newsletters immediately (already done)",
+    "Move 'Daily Design Inspiration' to digest folder for weekly batch processing",
+    "Keep 3 high-value newsletters in main inbox",
+    "Schedule Friday 30-minute block for digest reading",
+    "Review newsletter value quarterly",
+    "Be more selective about new subscriptions"
+  ],
+  "nextAudit": "2026-01-22",
+  "metadata": {
+    "createdDate": "2025-10-22",
+    "version": "1.0"
+  }
+}

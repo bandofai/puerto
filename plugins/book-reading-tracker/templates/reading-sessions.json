@@ -1,0 +1,36 @@
+{
+  "sessions": [
+    {
+      "id": "session-001",
+      "bookId": "book-001",
+      "bookTitle": "The Pragmatic Programmer",
+      "sessionDate": "2025-01-20T20:00:00Z",
+      "startPage": 1,
+      "endPage": 45,
+      "pagesRead": 44,
+      "duration": 60,
+      "location": "Home",
+      "notes": "Great opening chapters, very engaging"
+    },
+    {
+      "id": "session-002",
+      "bookId": "book-001",
+      "bookTitle": "The Pragmatic Programmer",
+      "sessionDate": "2025-01-21T19:30:00Z",
+      "startPage": 45,
+      "endPage": 92,
+      "pagesRead": 47,
+      "duration": 65,
+      "location": "Coffee shop",
+      "notes": "Chapter on debugging was excellent"
+    }
+  ],
+  "statistics": {
+    "totalSessions": 2,
+    "totalPages": 91,
+    "totalMinutes": 125,
+    "avgPagesPerSession": 45.5,
+    "avgMinutesPerSession": 62.5,
+    "avgPagesPerMinute": 0.73
+  }
+}

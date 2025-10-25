@@ -1,0 +1,286 @@
+{
+  "registry_version": "1.0.0",
+  "last_updated": "2025-10-21T10:00:00Z",
+  "home_info": {
+    "name": "My Smart Home",
+    "location": "Home",
+    "timezone": "America/New_York"
+  },
+  "devices": [
+    {
+      "device_id": "living-room-lights",
+      "name": "Living Room Lights",
+      "type": "light",
+      "manufacturer": "Philips",
+      "model": "Hue White and Color A19",
+      "platform": "home-assistant",
+      "location": "living_room",
+      "room": "Living Room",
+      "zone": "downstairs",
+      "ip_address": "192.168.1.100",
+      "mac_address": "AA:BB:CC:DD:EE:01",
+      "port": 80,
+      "capabilities": [
+        "on_off",
+        "brightness",
+        "color_temp",
+        "rgb_color"
+      ],
+      "status": "online",
+      "last_seen": "2025-10-21T10:00:00Z",
+      "registered_at": "2025-01-15T10:00:00Z",
+      "metadata": {
+        "power_consumption_w": 9,
+        "energy_monitoring_enabled": true,
+        "favorite": true,
+        "tags": ["main-lighting", "smart-bulb"]
+      }
+    },
+    {
+      "device_id": "thermostat-main",
+      "name": "Main Thermostat",
+      "type": "thermostat",
+      "manufacturer": "Nest",
+      "model": "Learning Thermostat 3rd Gen",
+      "platform": "home-assistant",
+      "location": "hallway",
+      "room": "Hallway",
+      "zone": "downstairs",
+      "ip_address": "192.168.1.101",
+      "mac_address": "AA:BB:CC:DD:EE:02",
+      "capabilities": [
+        "temperature",
+        "humidity",
+        "mode",
+        "fan",
+        "preset"
+      ],
+      "status": "online",
+      "last_seen": "2025-10-21T10:00:00Z",
+      "registered_at": "2025-01-15T10:00:00Z",
+      "metadata": {
+        "power_consumption_w": 2000,
+        "energy_monitoring_enabled": true,
+        "hvac_type": "heat_cool",
+        "tags": ["climate", "hvac"]
+      }
+    },
+    {
+      "device_id": "front-door-lock",
+      "name": "Front Door Lock",
+      "type": "lock",
+      "manufacturer": "August",
+      "model": "Smart Lock Pro",
+      "platform": "home-assistant",
+      "location": "front_door",
+      "room": "Entrance",
+      "zone": "downstairs",
+      "ip_address": "192.168.1.102",
+      "mac_address": "AA:BB:CC:DD:EE:03",
+      "capabilities": [
+        "lock",
+        "unlock",
+        "battery_level"
+      ],
+      "status": "online",
+      "last_seen": "2025-10-21T10:00:00Z",
+      "registered_at": "2025-01-15T10:00:00Z",
+      "metadata": {
+        "power_consumption_w": 0,
+        "energy_monitoring_enabled": false,
+        "battery_powered": true,
+        "security_critical": true,
+        "tags": ["security", "access-control"]
+      }
+    },
+    {
+      "device_id": "kitchen-speaker",
+      "name": "Kitchen Speaker",
+      "type": "media_player",
+      "manufacturer": "Google",
+      "model": "Nest Audio",
+      "platform": "google-home",
+      "location": "kitchen",
+      "room": "Kitchen",
+      "zone": "downstairs",
+      "ip_address": "192.168.1.103",
+      "mac_address": "AA:BB:CC:DD:EE:04",
+      "capabilities": [
+        "play",
+        "pause",
+        "volume",
+        "next",
+        "previous"
+      ],
+      "status": "online",
+      "last_seen": "2025-10-21T10:00:00Z",
+      "registered_at": "2025-01-15T10:00:00Z",
+      "metadata": {
+        "power_consumption_w": 15,
+        "energy_monitoring_enabled": true,
+        "voice_assistant": "google_assistant",
+        "tags": ["media", "voice-control"]
+      }
+    },
+    {
+      "device_id": "garage-door",
+      "name": "Garage Door",
+      "type": "cover",
+      "manufacturer": "MyQ",
+      "model": "Smart Garage Hub",
+      "platform": "home-assistant",
+      "location": "garage",
+      "room": "Garage",
+      "zone": "outside",
+      "ip_address": "192.168.1.104",
+      "mac_address": "AA:BB:CC:DD:EE:05",
+      "capabilities": [
+        "open",
+        "close",
+        "position"
+      ],
+      "status": "online",
+      "last_seen": "2025-10-21T10:00:00Z",
+      "registered_at": "2025-01-15T10:00:00Z",
+      "metadata": {
+        "power_consumption_w": 120,
+        "energy_monitoring_enabled": true,
+        "security_critical": true,
+        "tags": ["access-control", "garage"]
+      }
+    },
+    {
+      "device_id": "bedroom-blinds",
+      "name": "Bedroom Blinds",
+      "type": "cover",
+      "manufacturer": "IKEA",
+      "model": "FYRTUR",
+      "platform": "home-assistant",
+      "location": "bedroom",
+      "room": "Master Bedroom",
+      "zone": "upstairs",
+      "ip_address": "192.168.1.105",
+      "mac_address": "AA:BB:CC:DD:EE:06",
+      "capabilities": [
+        "open",
+        "close",
+        "position"
+      ],
+      "status": "online",
+      "last_seen": "2025-10-21T10:00:00Z",
+      "registered_at": "2025-01-15T10:00:00Z",
+      "metadata": {
+        "power_consumption_w": 5,
+        "energy_monitoring_enabled": false,
+        "battery_powered": true,
+        "tags": ["window-treatment", "motorized"]
+      }
+    },
+    {
+      "device_id": "motion-sensor-hallway",
+      "name": "Hallway Motion Sensor",
+      "type": "binary_sensor",
+      "manufacturer": "Philips",
+      "model": "Hue Motion Sensor",
+      "platform": "home-assistant",
+      "location": "hallway",
+      "room": "Hallway",
+      "zone": "downstairs",
+      "ip_address": "192.168.1.106",
+      "mac_address": "AA:BB:CC:DD:EE:07",
+      "capabilities": [
+        "motion",
+        "temperature",
+        "light_level",
+        "battery_level"
+      ],
+      "status": "online",
+      "last_seen": "2025-10-21T10:00:00Z",
+      "registered_at": "2025-01-15T10:00:00Z",
+      "metadata": {
+        "power_consumption_w": 0,
+        "energy_monitoring_enabled": false,
+        "battery_powered": true,
+        "tags": ["sensor", "automation-trigger"]
+      }
+    },
+    {
+      "device_id": "outdoor-camera",
+      "name": "Outdoor Security Camera",
+      "type": "camera",
+      "manufacturer": "Arlo",
+      "model": "Pro 4",
+      "platform": "home-assistant",
+      "location": "front_yard",
+      "room": "Outdoor",
+      "zone": "outside",
+      "ip_address": "192.168.1.107",
+      "mac_address": "AA:BB:CC:DD:EE:08",
+      "capabilities": [
+        "stream",
+        "motion_detection",
+        "night_vision",
+        "two_way_audio"
+      ],
+      "status": "online",
+      "last_seen": "2025-10-21T10:00:00Z",
+      "registered_at": "2025-01-15T10:00:00Z",
+      "metadata": {
+        "power_consumption_w": 8,
+        "energy_monitoring_enabled": false,
+        "security_critical": true,
+        "resolution": "2K",
+        "tags": ["security", "surveillance"]
+      }
+    }
+  ],
+  "rooms": [
+    {
+      "room_id": "living_room",
+      "name": "Living Room",
+      "zone": "downstairs",
+      "devices": ["living-room-lights"]
+    },
+    {
+      "room_id": "kitchen",
+      "name": "Kitchen",
+      "zone": "downstairs",
+      "devices": ["kitchen-speaker"]
+    },
+    {
+      "room_id": "bedroom",
+      "name": "Master Bedroom",
+      "zone": "upstairs",
+      "devices": ["bedroom-blinds"]
+    },
+    {
+      "room_id": "hallway",
+      "name": "Hallway",
+      "zone": "downstairs",
+      "devices": ["thermostat-main", "motion-sensor-hallway"]
+    },
+    {
+      "room_id": "garage",
+      "name": "Garage",
+      "zone": "outside",
+      "devices": ["garage-door"]
+    }
+  ],
+  "zones": [
+    {
+      "zone_id": "downstairs",
+      "name": "Downstairs",
+      "rooms": ["living_room", "kitchen", "hallway"]
+    },
+    {
+      "zone_id": "upstairs",
+      "name": "Upstairs",
+      "rooms": ["bedroom"]
+    },
+    {
+      "zone_id": "outside",
+      "name": "Outside",
+      "rooms": ["garage", "front_yard"]
+    }
+  ]
+}

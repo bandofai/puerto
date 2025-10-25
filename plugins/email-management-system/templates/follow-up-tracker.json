@@ -1,0 +1,127 @@
+{
+  "followUps": [
+    {
+      "id": "fu-001",
+      "category": "sent-awaiting-response",
+      "originalEmail": {
+        "date": "2025-10-18",
+        "from": "me@company.com",
+        "to": "client@external.com",
+        "subject": "Proposal for Q4 project",
+        "summary": "Sent detailed proposal with pricing and timeline. Awaiting approval to proceed."
+      },
+      "urgency": "high",
+      "expectedResponseDate": "2025-10-22",
+      "followUpSchedule": [
+        {
+          "attempt": 1,
+          "date": "2025-10-23",
+          "sent": false,
+          "response": null,
+          "message": "Gentle reminder about proposal"
+        },
+        {
+          "attempt": 2,
+          "date": "2025-10-30",
+          "sent": false,
+          "response": null,
+          "message": "Second follow-up with deadline mention"
+        },
+        {
+          "attempt": 3,
+          "date": "2025-11-06",
+          "sent": false,
+          "response": null,
+          "message": "Final follow-up before escalation"
+        }
+      ],
+      "status": "pending",
+      "notes": "Important client, but notoriously slow to respond. Manager is CC'd for visibility.",
+      "escalationPath": "manager@company.com",
+      "alternativeAction": "Proceed with backup client if no response by Nov 15"
+    },
+    {
+      "id": "fu-002",
+      "category": "received-need-action",
+      "originalEmail": {
+        "date": "2025-10-20",
+        "from": "vendor@supplier.com",
+        "to": "me@company.com",
+        "subject": "Invoice approval needed",
+        "summary": "Vendor invoice for services rendered. Needs review and approval."
+      },
+      "urgency": "medium",
+      "expectedResponseDate": "2025-10-27",
+      "followUpSchedule": [
+        {
+          "attempt": 1,
+          "date": "2025-10-25",
+          "sent": false,
+          "response": null,
+          "message": "Review invoice and send to accounting"
+        }
+      ],
+      "status": "pending",
+      "notes": "Need to verify services with project team before approving",
+      "escalationPath": null,
+      "alternativeAction": "Request extension if verification takes longer"
+    },
+    {
+      "id": "fu-003",
+      "category": "scheduled-check-in",
+      "originalEmail": {
+        "date": "2025-10-15",
+        "from": "teammate@company.com",
+        "to": "me@company.com",
+        "subject": "Project collaboration",
+        "summary": "Discussed new feature development. Agreed to check in weekly on progress."
+      },
+      "urgency": "low",
+      "expectedResponseDate": "2025-10-29",
+      "followUpSchedule": [
+        {
+          "attempt": 1,
+          "date": "2025-10-29",
+          "sent": false,
+          "response": null,
+          "message": "Weekly check-in on feature progress"
+        }
+      ],
+      "status": "pending",
+      "notes": "Recurring weekly check-in. Create new follow-up after each.",
+      "escalationPath": null,
+      "alternativeAction": null
+    }
+  ],
+  "summary": {
+    "totalActive": 3,
+    "overdue": 0,
+    "dueToday": 0,
+    "dueThisWeek": 1,
+    "byCategory": {
+      "sent-awaiting-response": 1,
+      "received-need-action": 1,
+      "scheduled-check-in": 1
+    },
+    "byUrgency": {
+      "critical": 0,
+      "high": 1,
+      "medium": 1,
+      "low": 1
+    }
+  },
+  "settings": {
+    "defaultFollowUpDays": {
+      "critical": 1,
+      "high": 3,
+      "medium": 5,
+      "low": 7
+    },
+    "maxFollowUpAttempts": 3,
+    "escalateAfterAttempts": 3
+  },
+  "metadata": {
+    "lastUpdated": "2025-10-22",
+    "version": "1.0"
+  }
+}

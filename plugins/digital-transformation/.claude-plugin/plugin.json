@@ -1,0 +1,17 @@
+{
+  "name": "digital-transformation",
+  "version": "1.0.0",
+  "description": "Digital transformation planning specialist for maturity assessment, technology roadmaps, change management, ROI analysis, and implementation strategy",
+  "agents": [
+    "./agents/maturity-assessor.md",
+    "./agents/roadmap-architect.md",
+    "./agents/change-manager.md",
+    "./agents/roi-analyst.md"
+  ],
+  "skills": [
+    "./skills/digital-transformation.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

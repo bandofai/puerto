@@ -1,0 +1,27 @@
+{
+  "name": "customer-success",
+  "version": "1.0.0",
+  "description": "Customer relationship and retention specialist focused on onboarding, adoption tracking, health monitoring, and renewal strategy",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/onboarding-coordinator.md",
+    "./agents/health-monitor.md",
+    "./agents/renewal-strategist.md"
+  ],
+  "skills": [
+    "./skills/customer-success.md"
+  ],
+  "keywords": [
+    "customer-success",
+    "onboarding",
+    "retention",
+    "health-score",
+    "renewal",
+    "upsell",
+    "adoption",
+    "engagement",
+    "churn-prevention"
+  ]
+}

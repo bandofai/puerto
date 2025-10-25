@@ -1,0 +1,19 @@
+{
+  "name": "api-developer",
+  "version": "1.0.0",
+  "description": "API design and development specialist for REST/GraphQL APIs",
+  "agents": [
+    "./agents/endpoint-builder.md",
+    "./agents/openapi-generator.md",
+    "./agents/auth-implementer.md",
+    "./agents/api-tester.md"
+  ],
+  "skills": [
+    "./skills/api-implementation.md",
+    "./skills/openapi-generation.md",
+    "./skills/auth-patterns.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "home-maintenance-tracker",
+  "version": "1.0.0",
+  "description": "Comprehensive home maintenance scheduling, warranty tracking, and service history management system",
+  "author": {
+    "name": "Puerto"
+  },
+  "category": "home-management",
+  "capabilities": {
+    "agents": [
+      "maintenance-scheduler",
+      "warranty-monitor",
+      "service-logger"
+    ],
+    "skills": [
+      "home-maintenance"
+    ],
+    "templates": [
+      "maintenance-schedule.json",
+      "warranty-database.json",
+      "service-log-template.json"
+    ]
+  },
+  "requirements": {
+    "tools": [
+      "Read",
+      "Write"
+    ],
+    "optional_integrations": [
+      "Calendar",
+      "PDF"
+    ]
+  },
+  "use_cases": [
+    "Schedule and track home maintenance tasks",
+    "Monitor warranty expirations with alerts",
+    "Log service history and contractor information",
+    "Manage seasonal maintenance checklists",
+    "Archive appliance manuals and documentation",
+    "Track home improvement projects"
+  ]
+}

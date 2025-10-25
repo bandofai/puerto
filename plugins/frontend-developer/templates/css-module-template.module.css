@@ -1,0 +1,113 @@
+/* ComponentName.module.css */
+
+/* Mobile-first base styles */
+.container {
+  padding: 1rem;
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--bg-color, #ffffff);
+  border: 1px solid var(--border-color, #e5e5e5);
+  border-radius: 0.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  color: var(--text-primary, #1a1a1a);
+  font-weight: 600;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color, #0066cc);
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  min-height: 44px; /* Accessibility: minimum touch target */
+}
+
+.button:hover {
+  background-color: var(--primary-color-dark, #0052a3);
+  transform: translateY(-1px);
+}
+
+.button:focus {
+  outline: 2px solid var(--focus-color, #0066cc);
+  outline-offset: 2px;
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.optional {
+  padding: 0.75rem;
+  background-color: var(--bg-secondary, #f5f5f5);
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  .container {
+    padding: 2rem;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.125rem;
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 3rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: var(--bg-dark, #1a1a1a);
+    border-color: var(--border-dark, #333333);
+  }
+
+  .title {
+    color: var(--text-dark, #ffffff);
+  }
+
+  .optional {
+    background-color: var(--bg-secondary-dark, #2a2a2a);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+
+  .button:hover {
+    transform: none;
+  }
+
+  .button:active {
+    transform: none;
+  }
+}

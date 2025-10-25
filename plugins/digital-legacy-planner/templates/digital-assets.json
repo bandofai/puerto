@@ -1,0 +1,434 @@
+{
+  "last_updated": "2025-10-23",
+  "version": "1.0",
+  "owner": {
+    "name": "",
+    "email": "",
+    "phone": ""
+  },
+  "asset_categories": {
+    "photos_videos": {
+      "total_count_estimate": 0,
+      "locations": [
+        {
+          "name": "Google Photos",
+          "account": "",
+          "approx_items": 0,
+          "storage_used": "",
+          "access_method": "Via password manager",
+          "backup_status": "synced",
+          "importance": "critical"
+        },
+        {
+          "name": "iCloud Photos",
+          "account": "",
+          "approx_items": 0,
+          "storage_used": "",
+          "access_method": "Via password manager",
+          "backup_status": "synced",
+          "importance": "critical"
+        },
+        {
+          "name": "Phone Camera Roll",
+          "device": "",
+          "approx_items": 0,
+          "last_backed_up": "",
+          "importance": "high"
+        },
+        {
+          "name": "External Hard Drive",
+          "location": "",
+          "approx_items": 0,
+          "last_updated": "",
+          "importance": "high"
+        }
+      ],
+      "most_important_collections": [
+        {
+          "name": "Family Photos",
+          "location": "",
+          "time_period": "",
+          "disposition": "preserve and share with family"
+        },
+        {
+          "name": "Wedding Photos",
+          "location": "",
+          "date": "",
+          "disposition": "preserve and share with family"
+        }
+      ],
+      "preservation_plan": {
+        "primary_backup": "",
+        "secondary_backup": "",
+        "share_with": [],
+        "delete_categories": []
+      }
+    },
+    "documents": {
+      "personal": [
+        {
+          "category": "Birth Certificate",
+          "location": "",
+          "format": "PDF",
+          "backup_location": "",
+          "importance": "critical",
+          "disposition": "preserve permanently"
+        },
+        {
+          "category": "Passport",
+          "location": "",
+          "expiration": "",
+          "backup_location": "",
+          "importance": "critical",
+          "disposition": "preserve for records"
+        }
+      ],
+      "financial": [
+        {
+          "category": "Tax Returns",
+          "years": "Last 7 years",
+          "location": "",
+          "backup_location": "",
+          "importance": "critical",
+          "disposition": "preserve for 7 years"
+        },
+        {
+          "category": "Bank Statements",
+          "location": "",
+          "years_covered": "",
+          "importance": "high",
+          "disposition": "preserve for 7 years"
+        }
+      ],
+      "legal": [
+        {
+          "category": "Will",
+          "location": "",
+          "last_updated": "",
+          "attorney": "",
+          "importance": "critical",
+          "disposition": "preserve permanently"
+        },
+        {
+          "category": "Power of Attorney",
+          "location": "",
+          "type": "",
+          "agent": "",
+          "importance": "critical",
+          "disposition": "preserve permanently"
+        }
+      ],
+      "professional": [
+        {
+          "category": "Resume / CV",
+          "location": "",
+          "last_updated": "",
+          "importance": "medium",
+          "disposition": "archive"
+        },
+        {
+          "category": "Certifications",
+          "location": "",
+          "types": [],
+          "importance": "medium",
+          "disposition": "archive"
+        }
+      ]
+    },
+    "creative_work": {
+      "writing": [
+        {
+          "title": "",
+          "type": "blog / book / article / journal",
+          "location": "",
+          "status": "published / unpublished / in-progress",
+          "backup_location": "",
+          "disposition": "publish / archive / delete",
+          "importance": "varies",
+          "notes": ""
+        }
+      ],
+      "music": [
+        {
+          "title": "",
+          "type": "composition / recording",
+          "location": "",
+          "format": "",
+          "backup_location": "",
+          "disposition": "",
+          "importance": "varies"
+        }
+      ],
+      "art": [
+        {
+          "title": "",
+          "type": "digital art / photography / design",
+          "location": "",
+          "format": "",
+          "professional_or_personal": "",
+          "disposition": "",
+          "importance": "varies"
+        }
+      ],
+      "software": [
+        {
+          "project_name": "",
+          "type": "GitHub repo / personal project / tool",
+          "location": "",
+          "language": "",
+          "status": "active / archived / abandoned",
+          "disposition": "keep public / make private / delete",
+          "importance": "varies"
+        }
+      ]
+    },
+    "financial_assets": {
+      "cryptocurrency": [
+        {
+          "asset": "Bitcoin",
+          "type": "exchange / hardware wallet / software wallet",
+          "exchange_or_wallet": "",
+          "wallet_address": "",
+          "approximate_value": "$REDACTED",
+          "seed_phrase_location": "NEVER DIGITAL - Paper in safe deposit box",
+          "backup_location": "Second copy in [location]",
+          "access_method": "Via seed phrase ONLY",
+          "importance": "CRITICAL",
+          "notes": "Requires extreme care - can be lost permanently if mishandled"
+        }
+      ],
+      "nfts": [
+        {
+          "name": "",
+          "blockchain": "",
+          "wallet_address": "",
+          "marketplace": "",
+          "approximate_value": "",
+          "access_method": "",
+          "importance": "varies"
+        }
+      ],
+      "digital_payments": [
+        {
+          "service": "PayPal",
+          "account": "",
+          "approximate_balance": "",
+          "access_method": "Via password manager",
+          "disposition": "withdraw and close",
+          "importance": "medium"
+        }
+      ],
+      "loyalty_points": [
+        {
+          "program": "",
+          "account_number": "",
+          "approximate_value": "",
+          "transferable": true,
+          "transfer_to": "",
+          "importance": "low"
+        }
+      ]
+    },
+    "digital_property": {
+      "domains": [
+        {
+          "domain": "",
+          "registrar": "",
+          "registration_date": "",
+          "expiration_date": "",
+          "auto_renew": true,
+          "purpose": "",
+          "disposition": "renew and transfer / renew for X years then expire / let expire",
+          "transfer_to": "",
+          "importance": "varies"
+        }
+      ],
+      "websites": [
+        {
+          "url": "",
+          "hosting_provider": "",
+          "purpose": "",
+          "content_type": "",
+          "monetized": false,
+          "backup_location": "",
+          "disposition": "maintain / archive and take offline / delete",
+          "importance": "varies"
+        }
+      ],
+      "social_media_with_value": [
+        {
+          "platform": "",
+          "handle": "",
+          "follower_count": 0,
+          "monetization": "",
+          "revenue_per_month": "",
+          "partnership_agreements": [],
+          "disposition": "transfer / maintain / memorial",
+          "transfer_to": "",
+          "importance": "varies"
+        }
+      ],
+      "content_channels": [
+        {
+          "platform": "YouTube",
+          "channel_name": "",
+          "subscribers": 0,
+          "monetized": false,
+          "monthly_revenue": "",
+          "content_type": "",
+          "disposition": "transfer / maintain / memorial / delete",
+          "transfer_to": "",
+          "importance": "varies"
+        }
+      ]
+    },
+    "sentimental": {
+      "email_archives": [
+        {
+          "account": "",
+          "provider": "",
+          "years_covered": "",
+          "important_correspondence": [],
+          "size_estimate": "",
+          "disposition": "archive for family / archive for X years then delete / delete",
+          "importance": "varies"
+        }
+      ],
+      "messages": [
+        {
+          "platform": "iMessage / WhatsApp / Signal / etc.",
+          "important_conversations": [],
+          "backup_location": "",
+          "disposition": "preserve / delete",
+          "importance": "varies"
+        }
+      ],
+      "journals": [
+        {
+          "type": "digital journal / diary",
+          "location": "",
+          "years_covered": "",
+          "format": "",
+          "disposition": "share with family / keep private / specific instructions",
+          "importance": "high"
+        }
+      ],
+      "voice_recordings": [
+        {
+          "description": "",
+          "location": "",
+          "occasion": "",
+          "disposition": "preserve and share",
+          "importance": "high"
+        }
+      ]
+    }
+  },
+  "backup_plan": {
+    "strategy": "3-2-1 (3 copies, 2 media types, 1 offsite)",
+    "primary_backup": {
+      "type": "Cloud storage",
+      "service": "",
+      "account": "",
+      "storage_used": "",
+      "backup_frequency": "real-time sync",
+      "last_verified": ""
+    },
+    "secondary_backup": {
+      "type": "External hard drive",
+      "location": "",
+      "capacity": "",
+      "backup_frequency": "monthly",
+      "last_backup": ""
+    },
+    "offsite_backup": {
+      "type": "External hard drive at relative's house / Second cloud service",
+      "location": "",
+      "backup_frequency": "quarterly",
+      "last_backup": ""
+    },
+    "backup_verification": {
+      "last_tested": "",
+      "test_frequency": "semi-annually",
+      "next_test_due": ""
+    }
+  },
+  "preservation_priorities": {
+    "critical": {
+      "description": "Must be preserved - irreplaceable",
+      "items": [
+        "Family photos",
+        "Legal documents",
+        "Financial records (7 years)",
+        "Cryptocurrency access information"
+      ]
+    },
+    "high": {
+      "description": "Important - should be preserved",
+      "items": [
+        "Personal photos",
+        "Creative work (published)",
+        "Professional documents",
+        "Sentimental correspondence"
+      ]
+    },
+    "medium": {
+      "description": "Nice to have - preserve if space allows",
+      "items": [
+        "Social media content",
+        "Unfinished creative work",
+        "General email archives"
+      ]
+    },
+    "low": {
+      "description": "Can delete if needed",
+      "items": [
+        "Temporary files",
+        "Duplicate photos",
+        "Spam / Promotional emails",
+        "Outdated documents"
+      ]
+    }
+  },
+  "total_estimated_value": {
+    "financial": {
+      "cryptocurrency": "$REDACTED",
+      "digital_payments": "$REDACTED",
+      "loyalty_points": "$REDACTED",
+      "monetized_content": "$REDACTED per month",
+      "domain_names": "$REDACTED",
+      "total": "$REDACTED"
+    },
+    "sentimental": "Priceless",
+    "intellectual_property": "Varies - consult with attorney"
+  },
+  "special_instructions": {
+    "cryptocurrency_warning": "CRITICAL: Cryptocurrency requires extremely careful handling. Consider hiring a cryptocurrency estate specialist. Mistakes can result in permanent loss of funds. NEVER share seed phrases digitally or with anyone except trusted executor.",
+    "encryption_note": "Sensitive financial information has been redacted from this document. Full details in encrypted supplementary document.",
+    "executor_note": "For questions about any digital asset, contact estate attorney before taking action. Some assets have tax implications or legal complexities."
+  },
+  "action_items": {
+    "immediate": [
+      "Ensure cryptocurrency seed phrases are in fireproof safe or safe deposit box (paper only)",
+      "Verify all backup locations are accessible",
+      "Test backup restoration process",
+      "Update any missing information in this document"
+    ],
+    "regular": [
+      "Update this document annually",
+      "Verify backups quarterly",
+      "Test restoration semi-annually",
+      "Review and clean up duplicates annually",
+      "Update approximate values annually"
+    ]
+  },
+  "executor_instructions": {
+    "first_priority": "Secure cryptocurrency access (seed phrases, hardware wallets)",
+    "second_priority": "Backup all photos and videos before doing anything else",
+    "third_priority": "Archive email before accounts are closed",
+    "fourth_priority": "Download cloud storage contents",
+    "fifth_priority": "Preserve creative work per disposition instructions",
+    "timeline": "Most backups should be completed within first month",
+    "help_available": "For technical assistance, contact [IT friend / Professional service]"
+  }
+}

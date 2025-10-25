@@ -1,0 +1,20 @@
+{
+  "schedule": {
+    "daily": {
+      "vocabularyReview": {"time": "08:00", "duration": 20},
+      "grammarStudy": {"time": "12:00", "duration": 15},
+      "listeningPractice": {"time": "18:00", "duration": 30},
+      "speakingPractice": {"time": "19:00", "duration": 15}
+    },
+    "weekly": {
+      "monday": [{"type": "tutor", "time": "19:00", "duration": 60}],
+      "wednesday": [{"type": "language-exchange", "time": "20:00", "duration": 45}],
+      "friday": [{"type": "writing", "time": "10:00", "duration": 30}]
+    }
+  },
+  "goals": {
+    "dailyMinutes": 60,
+    "weeklyHours": 10,
+    "weeklyConversations": 3
+  }
+}

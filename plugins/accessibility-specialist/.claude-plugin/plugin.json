@@ -1,0 +1,17 @@
+{
+  "name": "accessibility-specialist",
+  "version": "1.0.0",
+  "description": "Digital accessibility specialist for WCAG compliance, accessibility audits, remediation recommendations, screen reader testing, and accessibility documentation",
+  "agents": [
+    "./agents/accessibility-auditor.md",
+    "./agents/wcag-checker.md",
+    "./agents/remediation-consultant.md",
+    "./agents/documentation-writer.md"
+  ],
+  "skills": [
+    "./skills/accessibility-standards.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "research-brief-generator",
+  "version": "1.0.0",
+  "description": "Professional research brief generation with multi-source data gathering, comparative analysis, and decision frameworks. Automates product/service comparison, pros/cons analysis, and recommendation reports with proper source citation.",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "research",
+    "analysis",
+    "comparison",
+    "decision-making",
+    "competitive-analysis",
+    "market-research",
+    "due-diligence",
+    "product-comparison",
+    "pros-cons",
+    "recommendations",
+    "reports",
+    "citations",
+    "web-research",
+    "data-gathering"
+  ],
+  "license": "MIT",
+  "capabilities": {
+    "web_research": true,
+    "comparative_analysis": true,
+    "decision_frameworks": true,
+    "source_citation": true,
+    "report_generation": true
+  },
+  "research_frameworks": [
+    "swot-analysis",
+    "decision-matrix",
+    "cost-benefit-analysis",
+    "feature-comparison",
+    "stakeholder-analysis",
+    "risk-assessment"
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "analysis_id": "ANALYSIS-20251023-001",
+  "analysis_date": "2025-10-23T00:00:00Z",
+  "analysis_type": "comprehensive",
+  "analyst": "coverage-analyzer",
+  "user_profile": {
+    "age": 35,
+    "marital_status": "married",
+    "dependents": 2,
+    "annual_income": 120000,
+    "spouse_income": 80000,
+    "household_income": 200000,
+    "home_status": "own",
+    "mortgage_balance": 300000,
+    "other_debt": 35000,
+    "emergency_fund_months": 6,
+    "occupation": "Software Engineer",
+    "spouse_occupation": "Teacher",
+    "high_risk_activities": [],
+    "health_status": "good",
+    "state": "CA"
+  },
+  "current_coverage": {
+    "health": {
+      "exists": true,
+      "policies": 2,
+      "total_coverage": "Family coverage for both incomes",
+      "adequacy": "adequate",
+      "notes": "Both spouses have employer coverage, covering family"
+    },
+    "auto": {
+      "exists": true,
+      "policies": 1,
+      "liability_limit": 100000,
+      "adequacy": "adequate",
+      "notes": "100/300/100 meets minimum recommended"
+    },
+    "home": {
+      "exists": true,
+      "policies": 1,
+      "dwelling_coverage": 500000,
+      "adequacy": "adequate",
+      "notes": "Replacement cost coverage in place"
+    },
+    "life": {
+      "exists": true,
+      "policies": 2,
+      "total_coverage": 750000,
+      "adequacy": "insufficient",
+      "gap": 1500000,
+      "notes": "Both spouses have coverage, but total is below recommended"
+    },
+    "disability": {
+      "exists": true,
+      "policies": 1,
+      "monthly_benefit": 5000,
+      "adequacy": "adequate",
+      "notes": "Primary earner has LTD through employer"
+    },
+    "umbrella": {
+      "exists": false,
+      "policies": 0,
+      "total_coverage": 0,
+      "adequacy": "gap_identified",
+      "notes": "Recommended for household income >$200k"
+    }
+  },
+  "recommended_coverage": {
+    "health": {
+      "recommendation": "maintain",
+      "details": "Continue current employer coverage for both spouses",
+      "action": "Review plans annually during open enrollment"
+    },
+    "auto": {
+      "recommendation": "increase",
+      "current": 100000,
+      "recommended": 250000,
+      "rationale": "Higher limits recommended with umbrella policy",
+      "action": "Increase to 250/500/100 when adding umbrella",
+      "priority": "medium"
+    },
+    "home": {
+      "recommendation": "maintain_and_supplement",
+      "details": "Base coverage adequate, consider flood evaluation",
+      "action": "Verify replacement cost estimate is current, evaluate flood risk",
+      "priority": "low"
+    },
+    "life": {
+      "recommendation": "increase_significantly",
+      "calculation_method": "DIME",
+      "breakdown": {
+        "debt": 35000,
+        "income_replacement": 1440000,
+        "mortgage": 300000,
+        "education": 300000,
+        "total_recommended": 2075000
+      },
+      "current": 750000,
+      "gap": 1325000,
+      "suggested_action": "Purchase additional $1M-$1.5M term life (20-30 year term)",
+      "estimated_cost": "$50-$75/month for 30-year-old",
+      "priority": "high",
+      "notes": "CRITICAL: Gap leaves family significantly underprotected"
+    },
+    "disability": {
+      "recommendation": "maintain_primary_supplement_spouse",
+      "primary_earner": "adequate",
+      "spouse": "gap_identified",
+      "spouse_recommended_benefit": 4000,
+      "action": "Evaluate disability coverage for spouse (teacher income)",
+      "priority": "medium"
+    },
+    "umbrella": {
+      "recommendation": "add",
+      "recommended_amount": 2000000,
+      "rationale": "Household income $200k, significant assets justify umbrella",
+      "prerequisites": [
+        "Increase auto to 250/500/100",
+        "Verify home liability at $500k"
+      ],
+      "estimated_cost": "$300-$450/year",
+      "priority": "medium-high",
+      "notes": "Excellent value for additional liability protection"
+    }
+  },
+  "gap_analysis": {
+    "critical_gaps": [
+      {
+        "category": "life",
+        "severity": "high",
+        "description": "Life insurance coverage 64% below recommended (DIME method)",
+        "risk": "Family financial hardship if primary earner dies",
+        "financial_impact": "$1.3M shortfall",
+        "action": "Purchase additional term life immediately",
+        "timeline": "Within 30 days"
+      }
+    ],
+    "important_gaps": [
+      {
+        "category": "umbrella",
+        "severity": "medium-high",
+        "description": "No umbrella liability coverage with high household income",
+        "risk": "Personal assets at risk in major lawsuit",
+        "financial_impact": "Unlimited exposure beyond primary policy limits",
+        "action": "Add $2M umbrella policy",
+        "timeline": "Within 90 days"
+      },
+      {
+        "category": "disability",
+        "severity": "medium",
+        "description": "Spouse (secondary earner) has no disability coverage",
+        "risk": "Loss of $80k annual income if unable to work",
+        "financial_impact": "Household income reduced 40%",
+        "action": "Evaluate individual or group disability for spouse",
+        "timeline": "Within 6 months"
+      }
+    ],
+    "minor_gaps": [
+      {
+        "category": "flood",
+        "severity": "low",
+        "description": "Flood insurance not evaluated",
+        "risk": "Potential gap if in flood-prone area",
+        "action": "Check FEMA flood maps, evaluate need",
+        "timeline": "Next renewal"
+      }
+    ],
+    "overlaps": []
+  },
+  "coverage_by_category": {
+    "health": {
+      "status": "adequate",
+      "score": 95,
+      "details": "Comprehensive employer coverage for entire family",
+      "recommendations": [
+        "Review plans during annual open enrollment",
+        "Consider HSA if HDHP available and suitable",
+        "Verify all dependents properly covered"
+      ]
+    },
+    "life": {
+      "status": "insufficient",
+      "score": 55,
+      "details": "Current coverage 36% of recommended amount using DIME method",
+      "recommendations": [
+        "PRIORITY: Add $1M-$1.5M term life on primary earner",
+        "Consider $500k-$750k term life on spouse",
+        "Review beneficiaries (must be current)",
+        "Term lengths: 20-30 years (until kids graduate college)"
+      ]
+    },
+    "disability": {
+      "status": "partial",
+      "score": 70,
+      "details": "Primary earner covered, spouse not covered",
+      "recommendations": [
+        "Add individual LTD for spouse ($4k/month benefit)",
+        "Verify primary earner's coverage: own occupation definition preferred",
+        "Consider COLA rider if not included"
+      ]
+    },
+    "property": {
+      "status": "adequate",
+      "score": 85,
+      "details": "Home and auto properly insured with reasonable coverage limits",
+      "recommendations": [
+        "Verify home replacement cost estimate annually",
+        "Consider higher auto liability limits (250/500/100)",
+        "Add uninsured motorist if not included",
+        "Create home inventory with photos"
+      ]
+    },
+    "liability": {
+      "status": "gap",
+      "score": 60,
+      "details": "Basic liability adequate but no umbrella for high-income household",
+      "recommendations": [
+        "Add $2M umbrella policy (critical for asset protection)",
+        "Increase underlying auto to 250/500/100 as prerequisite",
+        "Verify home liability at $500k",
+        "Very cost-effective: ~$350/year for $2M coverage"
+      ]
+    }
+  },
+  "financial_impact": {
+    "current_annual_premium": 8940,
+    "recommended_additions": {
+      "life_insurance": {
+        "coverage": 1500000,
+        "annual_cost": 900,
+        "monthly_cost": 75
+      },
+      "spouse_disability": {
+        "coverage": "4000/month benefit",
+        "annual_cost": 2400,
+        "monthly_cost": 200
+      },
+      "umbrella": {
+        "coverage": 2000000,
+        "annual_cost": 375,
+        "monthly_cost": 31
+      }
+    },
+    "total_additional_annual_cost": 3675,
+    "new_total_annual_premium": 12615,
+    "percentage_increase": 41,
+    "cost_as_percent_of_income": 6.3,
+    "industry_benchmark": "8-12% of income for comprehensive coverage",
+    "assessment": "Recommended coverage still below industry average spending"
+  },
+  "risk_assessment": {
+    "current_risk_score": 65,
+    "risk_level": "moderate",
+    "explanation": "Some critical gaps (life insurance) but basic coverage in place",
+    "top_risks": [
+      {
+        "risk": "Death of primary earner",
+        "severity": "high",
+        "mitigation": "insufficient",
+        "details": "$1.3M coverage gap leaves family vulnerable"
+      },
+      {
+        "risk": "Major lawsuit exceeding policy limits",
+        "severity": "medium-high",
+        "mitigation": "inadequate",
+        "details": "No umbrella coverage with high income and assets"
+      },
+      {
+        "risk": "Spouse disability",
+        "severity": "medium",
+        "mitigation": "none",
+        "details": "40% income loss if spouse unable to work"
+      }
+    ],
+    "post_implementation_risk_score": 88,
+    "risk_reduction": 35
+  },
+  "action_plan": {
+    "immediate": [
+      {
+        "action": "Get life insurance quotes for $1M-$1.5M term life",
+        "deadline": "Within 7 days",
+        "priority": "critical",
+        "estimated_time": "30 minutes",
+        "resources": ["Policy Genius", "SelectQuote", "Local agent"]
+      },
+      {
+        "action": "Review and update life insurance beneficiaries",
+        "deadline": "Within 7 days",
+        "priority": "critical",
+        "estimated_time": "15 minutes",
+        "resources": ["Current policy documents"]
+      }
+    ],
+    "short_term": [
+      {
+        "action": "Purchase additional term life insurance",
+        "deadline": "Within 30 days",
+        "priority": "high",
+        "estimated_time": "2-3 hours (application + exam)",
+        "estimated_cost": "$75/month"
+      },
+      {
+        "action": "Get umbrella insurance quotes",
+        "deadline": "Within 60 days",
+        "priority": "high",
+        "estimated_time": "30 minutes",
+        "estimated_cost": "$350/year"
+      },
+      {
+        "action": "Increase auto liability to 250/500/100",
+        "deadline": "Before umbrella purchase",
+        "priority": "high",
+        "estimated_time": "15 minutes call to agent",
+        "estimated_cost": "Marginal increase, often offset by umbrella bundling"
+      }
+    ],
+    "medium_term": [
+      {
+        "action": "Evaluate disability insurance for spouse",
+        "deadline": "Within 6 months",
+        "priority": "medium",
+        "estimated_time": "1-2 hours",
+        "estimated_cost": "$200/month"
+      },
+      {
+        "action": "Check flood risk and evaluate need",
+        "deadline": "Before home insurance renewal",
+        "priority": "low",
+        "estimated_time": "30 minutes",
+        "resources": ["FEMA flood maps", "FloodSmart.gov"]
+      },
+      {
+        "action": "Create home inventory with photos",
+        "deadline": "Within 6 months",
+        "priority": "medium",
+        "estimated_time": "2-3 hours",
+        "resources": ["Home inventory app", "Video every room"]
+      }
+    ],
+    "ongoing": [
+      {
+        "action": "Annual insurance review",
+        "frequency": "yearly",
+        "month": "January",
+        "checklist": [
+          "Review all policies for changes needed",
+          "Update beneficiaries",
+          "Shop for better rates",
+          "Assess coverage adequacy",
+          "Update home replacement cost estimate"
+        ]
+      },
+      {
+        "action": "Review after life events",
+        "triggers": [
+          "Marriage/divorce",
+          "Birth/adoption",
+          "Home purchase/sale",
+          "Job change",
+          "Income change >20%",
+          "Retirement"
+        ]
+      }
+    ]
+  },
+  "coverage_adequacy_score": 68,
+  "score_breakdown": {
+    "health": 95,
+    "life": 55,
+    "disability": 70,
+    "auto": 85,
+    "home": 85,
+    "umbrella": 0,
+    "overall": 68
+  },
+  "score_interpretation": {
+    "90_100": "Excellent - Comprehensive protection",
+    "75_89": "Good - Minor gaps to address",
+    "60_74": "Fair - Important gaps exist (YOUR SCORE)",
+    "50_59": "Poor - Critical gaps",
+    "below_50": "Inadequate - Immediate action required"
+  },
+  "next_review": {
+    "scheduled_date": "2026-10-23",
+    "reason": "Annual review",
+    "earlier_review_triggers": [
+      "After implementing recommended changes",
+      "Any major life event",
+      "Significant income change",
+      "Birth of child",
+      "Home purchase"
+    ]
+  },
+  "comparative_analysis": {
+    "vs_peers": {
+      "age_group": "30-40",
+      "income_bracket": "$150k-$250k",
+      "family_status": "married_with_children",
+      "your_coverage": "below_average",
+      "peer_average_life_coverage": "10x income",
+      "your_life_coverage": "3.75x income",
+      "peer_umbrella_adoption": "65%",
+      "your_umbrella": "none"
+    },
+    "industry_benchmarks": {
+      "life_insurance_recommendation": "10-15x income",
+      "your_ratio": "3.75x",
+      "disability_recommendation": "60-70% income replacement",
+      "your_coverage": "Primary earner only",
+      "umbrella_recommendation": ">$200k income should have $1M-$3M",
+      "your_coverage": "none"
+    }
+  },
+  "cost_benefit_analysis": {
+    "recommended_additions": [
+      {
+        "coverage": "Life Insurance ($1.5M)",
+        "annual_cost": 900,
+        "benefit": "Family protection: $1.5M payout",
+        "benefit_to_cost_ratio": 1667,
+        "priority": "HIGH",
+        "justification": "Critical protection for dependents at low cost"
+      },
+      {
+        "coverage": "Umbrella ($2M)",
+        "annual_cost": 375,
+        "benefit": "Asset protection: $2M additional liability",
+        "benefit_to_cost_ratio": 5333,
+        "priority": "HIGH",
+        "justification": "Exceptional value, protects entire net worth"
+      },
+      {
+        "coverage": "Spouse Disability ($4k/mo)",
+        "annual_cost": 2400,
+        "benefit": "Income protection: $48k annual potential benefit",
+        "benefit_to_cost_ratio": 20,
+        "priority": "MEDIUM",
+        "justification": "Protects against 40% household income loss"
+      }
+    ],
+    "total_benefit_potential": "Multi-million dollar protection",
+    "total_annual_cost": 3675,
+    "assessment": "High-value additions significantly improve financial security"
+  },
+  "notes": [
+    "Life insurance gap is most critical - address within 30 days",
+    "Umbrella insurance provides exceptional value for high-income households",
+    "Review beneficiaries immediately - outdated beneficiaries create legal issues",
+    "After major purchases, reassess with updated financial profile",
+    "Keep this analysis for reference when shopping for policies",
+    "Update analysis annually or after major life events"
+  ],
+  "generated_by": "Insurance Policy Manager Plugin - Coverage Analyzer",
+  "version": "1.0"
+}

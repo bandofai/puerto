@@ -1,0 +1,17 @@
+{
+  "name": "knowledge-base-manager",
+  "version": "1.0.0",
+  "description": "Knowledge base maintenance specialist",
+  "agents": [
+    "./agents/kb-article-writer.md",
+    "./agents/faq-compiler.md",
+    "./agents/content-organizer.md"
+  ],
+  "skills": [
+    "./skills/kb-writing.md",
+    "./skills/content-organization.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}
