@@ -1,0 +1,20 @@
+{
+  "name": "patent-analyst",
+  "version": "1.0.0",
+  "description": "Patent research and analysis specialist for patent searches, prior art identification, freedom to operate analysis, and infringement risk assessment",
+  "type": "plugin",
+  "agents": [
+    "./agents/patent-searcher.md",
+    "./agents/fto-analyzer.md",
+    "./agents/landscape-mapper.md",
+    "./agents/prior-art-finder.md"
+  ],
+  "skills": [
+    "./skills/patent-search.md",
+    "./skills/freedom-to-operate.md",
+    "./skills/patent-landscape.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

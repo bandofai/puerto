@@ -1,0 +1,17 @@
+{
+  "name": "medical-writer",
+  "version": "1.0.0",
+  "description": "Medical and scientific writing specialist for clinical trial protocols, medical manuscripts, patient information, regulatory submissions, and scientific abstracts",
+  "agents": [
+    "./agents/protocol-writer.md",
+    "./agents/manuscript-author.md",
+    "./agents/patient-educator.md",
+    "./agents/regulatory-writer.md"
+  ],
+  "skills": [
+    "./skills/medical-writing/SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

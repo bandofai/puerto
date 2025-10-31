@@ -1,0 +1,37 @@
+{
+  "name": "mortgage-specialist",
+  "version": "1.0.0",
+  "description": "Professional mortgage processing, credit analysis, and compliance validation for Claude Code",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "mortgage",
+    "lending",
+    "credit",
+    "compliance",
+    "loan-processing",
+    "underwriting",
+    "TRID",
+    "RESPA",
+    "TILA",
+    "DTI",
+    "LTV",
+    "closing"
+  ],
+  "license": "MIT",
+  "configuration": {
+    "data_directory": ".claude/mortgage-specialist",
+    "compliance_standards": {
+      "TRID": "enabled",
+      "RESPA": "enabled",
+      "TILA": "enabled",
+      "ECOA": "enabled"
+    },
+    "risk_thresholds": {
+      "DTI_max": 43,
+      "LTV_max": 97,
+      "credit_score_min": 620
+    }
+  }
+}

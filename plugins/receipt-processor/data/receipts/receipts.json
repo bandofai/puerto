@@ -1,0 +1,65 @@
+{
+  "receipts": [],
+  "categories": [
+    {
+      "name": "groceries",
+      "merchants": ["Whole Foods", "Safeway", "Trader Joe's", "Kroger", "Walmart", "Costco"],
+      "keywords": ["produce", "meat", "dairy", "bakery", "food"],
+      "taxDeductible": false
+    },
+    {
+      "name": "dining",
+      "merchants": ["Starbucks", "McDonald's", "Chipotle", "local restaurants"],
+      "keywords": ["food", "beverage", "tip", "dining", "restaurant"],
+      "taxDeductible": false
+    },
+    {
+      "name": "transportation",
+      "merchants": ["Shell", "Chevron", "Uber", "Lyft"],
+      "keywords": ["gas", "fuel", "ride", "parking", "toll"],
+      "taxDeductible": false
+    },
+    {
+      "name": "shopping",
+      "merchants": ["Amazon", "Target", "Best Buy"],
+      "keywords": ["clothing", "electronics", "household"],
+      "taxDeductible": false
+    },
+    {
+      "name": "healthcare",
+      "merchants": ["CVS", "Walgreens"],
+      "keywords": ["pharmacy", "prescription", "medical", "doctor"],
+      "taxDeductible": true,
+      "note": "Medical expenses >7.5% AGI"
+    },
+    {
+      "name": "utilities",
+      "merchants": ["PG&E", "Comcast", "AT&T"],
+      "keywords": ["electric", "gas", "water", "internet", "phone"],
+      "taxDeductible": false
+    },
+    {
+      "name": "entertainment",
+      "merchants": ["Netflix", "AMC Theaters", "Spotify"],
+      "keywords": ["streaming", "tickets", "movies", "music"],
+      "taxDeductible": false
+    },
+    {
+      "name": "business",
+      "merchants": ["Staples", "Adobe", "AWS", "Office Depot"],
+      "keywords": ["office supplies", "software", "equipment", "conference"],
+      "taxDeductible": true
+    },
+    {
+      "name": "travel",
+      "merchants": ["Marriott", "Delta", "Hertz"],
+      "keywords": ["hotel", "flight", "airfare", "lodging", "rental car"],
+      "taxDeductible": false
+    }
+  ],
+  "settings": {
+    "currency": "USD",
+    "taxDeductibleThreshold": 0,
+    "autoArchiveAfterMonths": 12
+  }
+}

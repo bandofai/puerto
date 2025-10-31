@@ -1,0 +1,18 @@
+{
+  "name": "digital-legacy-planner",
+  "version": "1.0.0",
+  "description": "Digital estate planning and access instruction specialist for managing digital accounts, assets, and executor access guides",
+  "author": {
+    "name": "Puerto"
+  },
+  "license": "MIT",
+  "agents": [
+    "./agents/account-inventory-builder.md",
+    "./agents/access-instruction-writer.md",
+    "./agents/digital-asset-cataloger.md"
+  ],
+  "skills": [
+    "./skills/digital-estate-planning/SKILL.md"
+  ],
+  "requirements": []
+}

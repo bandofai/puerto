@@ -1,0 +1,650 @@
+{
+  "version": "1.0",
+  "description": "Comprehensive address change and utility transfer checklist",
+  "created": "2025-10-23T00:00:00Z",
+  "last_updated": null,
+  "addresses": {
+    "current": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "move_out_date": null
+    },
+    "new": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "zip": "",
+      "move_in_date": null
+    }
+  },
+  "utilities": {
+    "electric": {
+      "id": "electric",
+      "name": "Electric Service",
+      "type": "electric",
+      "provider": "",
+      "account_number": "",
+      "priority": "critical",
+      "old_address": {
+        "status": "active",
+        "disconnect_scheduled": false,
+        "disconnect_date": null,
+        "disconnect_confirmed": false,
+        "final_reading": null,
+        "final_bill_received": false
+      },
+      "new_address": {
+        "status": "not_setup",
+        "connect_scheduled": false,
+        "connect_date": null,
+        "connect_confirmed": false,
+        "account_created": false,
+        "service_active": false
+      },
+      "contact": {
+        "phone": "",
+        "website": "",
+        "email": ""
+      },
+      "notes": "Schedule connection 1-2 days before move-in date"
+    },
+    "gas": {
+      "id": "gas",
+      "name": "Gas Service",
+      "type": "gas",
+      "provider": "",
+      "account_number": "",
+      "priority": "high",
+      "old_address": {
+        "status": "active",
+        "disconnect_scheduled": false,
+        "disconnect_date": null,
+        "disconnect_confirmed": false,
+        "final_reading": null,
+        "final_bill_received": false
+      },
+      "new_address": {
+        "status": "not_setup",
+        "connect_scheduled": false,
+        "connect_date": null,
+        "connect_confirmed": false,
+        "account_created": false,
+        "service_active": false
+      },
+      "contact": {
+        "phone": "",
+        "website": "",
+        "email": ""
+      },
+      "notes": "May require in-person visit to turn on"
+    },
+    "water": {
+      "id": "water",
+      "name": "Water/Sewer",
+      "type": "water",
+      "provider": "",
+      "account_number": "",
+      "priority": "critical",
+      "old_address": {
+        "status": "active",
+        "disconnect_scheduled": false,
+        "disconnect_date": null,
+        "disconnect_confirmed": false,
+        "final_reading": null,
+        "final_bill_received": false
+      },
+      "new_address": {
+        "status": "not_setup",
+        "connect_scheduled": false,
+        "connect_date": null,
+        "connect_confirmed": false,
+        "account_created": false,
+        "service_active": false
+      },
+      "contact": {
+        "phone": "",
+        "website": "",
+        "email": ""
+      },
+      "notes": "Often municipal service - check with city"
+    },
+    "internet": {
+      "id": "internet",
+      "name": "Internet/Cable",
+      "type": "internet",
+      "provider": "",
+      "account_number": "",
+      "priority": "high",
+      "old_address": {
+        "status": "active",
+        "disconnect_scheduled": false,
+        "disconnect_date": null,
+        "disconnect_confirmed": false,
+        "equipment_returned": false
+      },
+      "new_address": {
+        "status": "not_setup",
+        "connect_scheduled": false,
+        "connect_date": null,
+        "installation_appointment": null,
+        "connect_confirmed": false,
+        "service_active": false
+      },
+      "contact": {
+        "phone": "",
+        "website": "",
+        "email": ""
+      },
+      "notes": "May need installation appointment, check equipment return policy"
+    },
+    "trash": {
+      "id": "trash",
+      "name": "Trash/Recycling",
+      "type": "waste",
+      "provider": "",
+      "account_number": "",
+      "priority": "medium",
+      "old_address": {
+        "status": "active",
+        "disconnect_scheduled": false,
+        "disconnect_date": null
+      },
+      "new_address": {
+        "status": "not_setup",
+        "connect_scheduled": false,
+        "connect_date": null,
+        "service_active": false
+      },
+      "contact": {
+        "phone": "",
+        "website": "",
+        "email": ""
+      },
+      "notes": "Often included with rent or municipal service"
+    }
+  },
+  "government": {
+    "usps": {
+      "id": "usps",
+      "name": "USPS Mail Forwarding",
+      "category": "government",
+      "priority": "critical",
+      "deadline": "2 weeks before move",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "1-800-ASK-USPS",
+        "website": "https://moversguide.usps.com",
+        "address": null
+      },
+      "notes": "Costs $1.10 for identity verification, submit 2 weeks early"
+    },
+    "dmv_license": {
+      "id": "dmv_license",
+      "name": "DMV - Driver's License",
+      "category": "government",
+      "priority": "critical",
+      "deadline": "Check state requirements (often 30 days)",
+      "update_method": "in-person",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": ""
+      },
+      "notes": "May need proof of residence, check state-specific requirements"
+    },
+    "dmv_vehicle": {
+      "id": "dmv_vehicle",
+      "name": "DMV - Vehicle Registration",
+      "category": "government",
+      "priority": "critical",
+      "deadline": "Check state requirements (often 30 days)",
+      "update_method": "in-person",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": ""
+      },
+      "notes": "May need emissions test, updated insurance"
+    },
+    "voter_registration": {
+      "id": "voter_registration",
+      "name": "Voter Registration",
+      "category": "government",
+      "priority": "high",
+      "deadline": "Within state timeframe",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": ""
+      },
+      "notes": "Register at new address"
+    },
+    "irs": {
+      "id": "irs",
+      "name": "IRS",
+      "category": "government",
+      "priority": "high",
+      "deadline": "Before tax season",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "1-800-829-1040",
+        "website": "https://www.irs.gov",
+        "address": null
+      },
+      "notes": "Use Form 8822 or update online account"
+    }
+  },
+  "financial": {
+    "bank_checking": {
+      "id": "bank_checking",
+      "name": "Bank - Checking Account",
+      "category": "financial",
+      "priority": "critical",
+      "deadline": "Before move",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": null
+      },
+      "notes": "Update to avoid issues with checks, debit card delivery"
+    },
+    "bank_savings": {
+      "id": "bank_savings",
+      "name": "Bank - Savings Account",
+      "category": "financial",
+      "priority": "critical",
+      "deadline": "Before move",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": null
+      },
+      "notes": "Often same as checking account update"
+    },
+    "credit_card_primary": {
+      "id": "credit_card_primary",
+      "name": "Credit Card - Primary",
+      "category": "financial",
+      "priority": "critical",
+      "deadline": "Before move",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": null
+      },
+      "notes": "Update billing and mailing address"
+    },
+    "credit_card_secondary": {
+      "id": "credit_card_secondary",
+      "name": "Credit Card - Secondary",
+      "category": "financial",
+      "priority": "high",
+      "deadline": "Before move",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": null
+      },
+      "notes": "Update billing and mailing address"
+    },
+    "investment": {
+      "id": "investment",
+      "name": "Investment Accounts",
+      "category": "financial",
+      "priority": "high",
+      "deadline": "Within first week",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": null
+      },
+      "notes": "401k, IRA, brokerage accounts"
+    },
+    "insurance_auto": {
+      "id": "insurance_auto",
+      "name": "Auto Insurance",
+      "category": "financial",
+      "priority": "critical",
+      "deadline": "Before move",
+      "update_method": "phone",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": null
+      },
+      "notes": "May affect rates, especially if changing states"
+    },
+    "insurance_health": {
+      "id": "insurance_health",
+      "name": "Health Insurance",
+      "category": "financial",
+      "priority": "critical",
+      "deadline": "Before move",
+      "update_method": "phone",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": null
+      },
+      "notes": "Check if provider network changes in new area"
+    },
+    "insurance_home": {
+      "id": "insurance_home",
+      "name": "Homeowners/Renters Insurance",
+      "category": "financial",
+      "priority": "critical",
+      "deadline": "Before move",
+      "update_method": "phone",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": null
+      },
+      "notes": "Cancel old, purchase new policy for move-in date"
+    },
+    "insurance_life": {
+      "id": "insurance_life",
+      "name": "Life Insurance",
+      "category": "financial",
+      "priority": "high",
+      "deadline": "Within first month",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": null
+      },
+      "notes": "Update beneficiary mailing address"
+    }
+  },
+  "services": {
+    "employer": {
+      "id": "employer",
+      "name": "Employer - HR Department",
+      "category": "other",
+      "priority": "critical",
+      "deadline": "Immediately",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "email": ""
+      },
+      "notes": "Update for payroll, W-2 delivery, benefits"
+    },
+    "doctor": {
+      "id": "doctor",
+      "name": "Doctor - Primary Care",
+      "category": "other",
+      "priority": "high",
+      "deadline": "Within first week",
+      "update_method": "phone",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": ""
+      },
+      "notes": "Request medical records if changing providers"
+    },
+    "dentist": {
+      "id": "dentist",
+      "name": "Dentist",
+      "category": "other",
+      "priority": "medium",
+      "deadline": "Within first month",
+      "update_method": "phone",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": ""
+      },
+      "notes": "Request dental records if changing providers"
+    },
+    "pharmacy": {
+      "id": "pharmacy",
+      "name": "Pharmacy",
+      "category": "other",
+      "priority": "high",
+      "deadline": "Before move",
+      "update_method": "phone",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": ""
+      },
+      "notes": "Transfer prescriptions to new location"
+    },
+    "veterinarian": {
+      "id": "veterinarian",
+      "name": "Veterinarian",
+      "category": "other",
+      "priority": "medium",
+      "deadline": "Within first month",
+      "update_method": "phone",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": ""
+      },
+      "notes": "Request pet medical records if changing vets"
+    },
+    "school": {
+      "id": "school",
+      "name": "Schools",
+      "category": "other",
+      "priority": "critical",
+      "deadline": "As soon as possible",
+      "update_method": "in-person",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": ""
+      },
+      "notes": "Enrollment paperwork, records transfer, bus routes"
+    }
+  },
+  "subscriptions": {
+    "amazon": {
+      "id": "amazon",
+      "name": "Amazon",
+      "category": "subscription",
+      "priority": "medium",
+      "deadline": "Before move",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "1-888-280-4331",
+        "website": "https://www.amazon.com",
+        "email": null
+      },
+      "notes": "Update default shipping address, subscriptions"
+    },
+    "streaming": {
+      "id": "streaming",
+      "name": "Streaming Services",
+      "category": "subscription",
+      "priority": "low",
+      "deadline": "Within first month",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "email": null
+      },
+      "notes": "Netflix, Hulu, Disney+, etc. - update billing address"
+    },
+    "magazines": {
+      "id": "magazines",
+      "name": "Magazine Subscriptions",
+      "category": "subscription",
+      "priority": "low",
+      "deadline": "Within first month",
+      "update_method": "online",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "email": null
+      },
+      "notes": "Can take 6-8 weeks for address to update"
+    },
+    "gym": {
+      "id": "gym",
+      "name": "Gym Membership",
+      "category": "subscription",
+      "priority": "medium",
+      "deadline": "Before move",
+      "update_method": "phone",
+      "updated": false,
+      "update_date": null,
+      "confirmation_number": null,
+      "contact": {
+        "phone": "",
+        "website": "",
+        "address": ""
+      },
+      "notes": "May need to cancel and rejoin at new location"
+    }
+  },
+  "stats": {
+    "total_updates": 0,
+    "completed": 0,
+    "pending": 0,
+    "critical_pending": 0,
+    "utilities_active": 0,
+    "utilities_scheduled": 0
+  },
+  "priority_order": [
+    {
+      "week": 4,
+      "priority": "high",
+      "items": [
+        "Schedule utility connections at new address",
+        "Schedule utility disconnections at old address"
+      ]
+    },
+    {
+      "week": 5,
+      "priority": "critical",
+      "items": [
+        "Submit USPS mail forwarding",
+        "Update banks and credit cards",
+        "Update insurance (auto, health, home)",
+        "Notify employer"
+      ]
+    },
+    {
+      "week": 6,
+      "priority": "high",
+      "items": [
+        "Update DMV (license and registration)",
+        "Update voter registration",
+        "Update investment accounts",
+        "Transfer pharmacy prescriptions"
+      ]
+    },
+    {
+      "week": 7,
+      "priority": "medium",
+      "items": [
+        "Update subscriptions (Amazon, streaming)",
+        "Update medical providers",
+        "School enrollment paperwork"
+      ]
+    },
+    {
+      "week": 8,
+      "priority": "low",
+      "items": [
+        "Update magazine subscriptions",
+        "Update loyalty programs",
+        "Update non-critical services"
+      ]
+    }
+  ],
+  "notes": "This is a template. Add or remove services based on your specific situation.",
+  "usage_instructions": [
+    "Fill in current and new addresses with move dates",
+    "Add utility provider information as you research",
+    "Update contact information for each service",
+    "Use address-updater agent to track progress",
+    "Mark items as updated with confirmation numbers",
+    "Focus on critical items first (utilities, USPS, banks)",
+    "Add any additional services specific to your needs"
+  ]
+}

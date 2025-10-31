@@ -1,0 +1,79 @@
+{
+  "currentPeriod": {
+    "start": "2025-10-01",
+    "end": "2025-10-31",
+    "daysElapsed": 22,
+    "daysRemaining": 9,
+    "currentTotal": 924,
+    "currentCost": 116.50,
+    "projectedMonthTotal": 1270,
+    "projectedMonthCost": 160.02
+  },
+  "annualProjection": {
+    "baseScenario": {
+      "totalKWh": 15240,
+      "totalCost": 1920.48,
+      "method": "Current daily average × 365",
+      "assumptions": "No seasonal adjustment"
+    },
+    "seasonalAdjusted": {
+      "spring": {"kWh": 1140, "cost": 143.64, "months": "Mar-May"},
+      "summer": {"kWh": 1710, "cost": 215.46, "months": "Jun-Aug"},
+      "fall": {"kWh": 1270, "cost": 160.02, "months": "Sep-Nov"},
+      "winter": {"kWh": 1520, "cost": 191.52, "months": "Dec-Feb"},
+      "totalKWh": 16840,
+      "totalCost": 2122.48,
+      "notes": "Accounts for AC in summer, heating in winter"
+    }
+  },
+  "rateStructure": {
+    "type": "TOU",
+    "rates": {
+      "peak": {"hours": "2pm-8pm", "rate": 0.25, "percentOfUsage": 25},
+      "offPeak": {"hours": "9pm-8am", "rate": 0.10, "percentOfUsage": 40},
+      "midPeak": {"hours": "8am-2pm", "rate": 0.15, "percentOfUsage": 35}
+    },
+    "deliveryCharge": 0.03,
+    "taxes": 0.08
+  },
+  "scenarios": {
+    "conservative10percent": {
+      "reduction": "10%",
+      "annualKWh": 15156,
+      "annualCost": 1728.43,
+      "savings": 192.05,
+      "methods": ["Thermostat adjustment", "LED bulbs", "Phantom load reduction"]
+    },
+    "moderate20percent": {
+      "reduction": "20%",
+      "annualKWh": 13472,
+      "annualCost": 1536.38,
+      "savings": 384.10,
+      "methods": ["Above plus programmable thermostat", "Energy Star appliances"]
+    },
+    "aggressive30percent": {
+      "reduction": "30%",
+      "annualKWh": 11788,
+      "annualCost": 1344.34,
+      "savings": 576.14,
+      "methods": ["Above plus HVAC upgrade", "Insulation", "Behavioral changes"]
+    },
+    "withSolar": {
+      "reduction": "80%",
+      "annualKWh": 3368,
+      "annualCost": 384.50,
+      "savings": 1535.98,
+      "investment": 18000,
+      "payback": "11.7 years",
+      "methods": ["Solar panels (6kW system)"]
+    }
+  },
+  "nextMonthForecast": {
+    "november": {
+      "projectedKWh": 1350,
+      "projectedCost": 170.10,
+      "confidence": "medium",
+      "factors": ["Cooler weather", "Reduced AC", "Increased heating potential"]
+    }
+  }
+}

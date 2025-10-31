@@ -1,0 +1,99 @@
+{
+  "interactions": [
+    {
+      "id": "interaction-uuid-1",
+      "contactId": "contact-uuid",
+      "contactName": "Jane Doe",
+      "date": "2025-10-15",
+      "type": "meeting",
+      "duration": "2 hours",
+      "location": "Coffee shop downtown",
+      "initiatedBy": "me",
+      "notes": "Caught up over coffee. She shared exciting news about landing a new photography client - a local wedding venue. Talked about her new camera lens purchase. Her dog Max is doing well. She mentioned wanting to hike the Blue Ridge trail before winter.",
+      "topics": [
+        "photography business",
+        "new equipment",
+        "hiking plans",
+        "pets"
+      ],
+      "nextSteps": "Follow up in 2 weeks to see how first wedding shoot went. Suggest Blue Ridge hike date for early November.",
+      "sentiment": "positive",
+      "relationshipQuality": 9
+    },
+    {
+      "id": "interaction-uuid-2",
+      "contactId": "contact-uuid",
+      "contactName": "Jane Doe",
+      "date": "2025-09-20",
+      "type": "text",
+      "duration": "brief exchange",
+      "location": "phone",
+      "initiatedBy": "her",
+      "notes": "She texted photos from weekend hike at Mountain Peak trail. Beautiful fall colors. Quick chat about weather turning colder.",
+      "topics": [
+        "hiking",
+        "weather",
+        "fall foliage"
+      ],
+      "nextSteps": "Plan another hike together soon",
+      "sentiment": "positive",
+      "relationshipQuality": 9
+    },
+    {
+      "id": "interaction-uuid-3",
+      "contactId": "contact-uuid",
+      "contactName": "Jane Doe",
+      "date": "2025-09-01",
+      "type": "call",
+      "duration": "45 minutes",
+      "location": "phone",
+      "initiatedBy": "me",
+      "notes": "Long catch-up call. Discussed her photography business challenges - marketing and finding clients. Offered to share contacts. She's considering a new camera body but trying to save money. Mentioned her birthday coming up in March.",
+      "topics": [
+        "business challenges",
+        "equipment decisions",
+        "budget concerns",
+        "upcoming birthday"
+      ],
+      "nextSteps": "Send photography networking group info. Remember birthday planning for March.",
+      "sentiment": "neutral-positive",
+      "relationshipQuality": 8
+    }
+  ],
+  "summary": {
+    "contactId": "contact-uuid",
+    "contactName": "Jane Doe",
+    "relationship": "close friend",
+    "totalInteractions": 3,
+    "lastContact": "2025-10-15",
+    "averageFrequency": "every 2-3 weeks",
+    "preferredContactMethod": "in-person",
+    "relationshipTrend": "stable-positive",
+    "recentTopics": [
+      "photography business",
+      "hiking",
+      "equipment"
+    ],
+    "upcomingActions": [
+      {
+        "action": "Follow up on wedding photography shoot",
+        "deadline": "2025-10-30",
+        "priority": "medium"
+      },
+      {
+        "action": "Plan Blue Ridge trail hike together",
+        "deadline": "2025-11-10",
+        "priority": "medium"
+      },
+      {
+        "action": "Start birthday planning",
+        "deadline": "2026-02-15",
+        "priority": "high"
+      }
+    ]
+  },
+  "metadata": {
+    "lastUpdated": "2025-10-22",
+    "version": "1.0"
+  }
+}

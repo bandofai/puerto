@@ -1,0 +1,10 @@
+{
+  "name": "career-development-planner",
+  "version": "1.0.0",
+  "description": "Professional career development specialist providing skill gap analysis, networking management, job search organization, and career growth planning",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": ["career", "development", "skills", "networking", "job-search", "professional-growth", "promotion", "interview"],
+  "license": "MIT"
+}

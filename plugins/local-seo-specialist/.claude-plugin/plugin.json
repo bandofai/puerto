@@ -1,0 +1,15 @@
+{
+  "name": "local-seo-specialist",
+  "version": "1.0.0",
+  "description": "Local SEO optimization specialist for Google My Business, local listings, and review management.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/gmb-optimizer.md"
+  ],
+  "skills": [
+    "./skills/gmb-optimization/SKILL.md"
+  ],
+  "license": "MIT"
+}

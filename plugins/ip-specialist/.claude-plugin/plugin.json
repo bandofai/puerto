@@ -1,0 +1,35 @@
+{
+  "name": "ip-specialist",
+  "version": "1.0.0",
+  "description": "Intellectual property management specialist for patent tracking, prior art search, filing documentation, infringement monitoring, and licensing agreements",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/patent-searcher.md",
+    "./agents/ip-tracker.md",
+    "./agents/filing-assistant.md",
+    "./agents/infringement-monitor.md"
+  ],
+  "skills": [
+    "./skills/ip-management/SKILL.md",
+    "./skills/prior-art-research/SKILL.md",
+    "./skills/ip-documentation/SKILL.md"
+  ],
+  "keywords": [
+    "intellectual-property",
+    "patent",
+    "trademark",
+    "copyright",
+    "ip-portfolio",
+    "prior-art",
+    "uspto",
+    "epo",
+    "wipo",
+    "infringement",
+    "licensing",
+    "ipc",
+    "cpc",
+    "patent-search"
+  ]
+}

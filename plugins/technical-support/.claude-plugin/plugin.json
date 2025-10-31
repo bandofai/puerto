@@ -1,0 +1,18 @@
+{
+  "name": "technical-support",
+  "version": "1.0.0",
+  "description": "Technical troubleshooting specialist for diagnostics, log analysis, bug reproduction, and workarounds",
+  "category": "support",
+  "author": {
+    "name": "Puerto"
+  },
+  "agents": [
+    "./agents/log-analyzer.md",
+    "./agents/bug-reproducer.md",
+    "./agents/diagnostics-runner.md",
+    "./agents/workaround-finder.md"
+  ],
+  "skills": [
+    "./skills/troubleshooting/SKILL.md"
+  ]
+}

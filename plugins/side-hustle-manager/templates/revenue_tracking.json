@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "business_name": "My Side Hustle",
+    "start_date": "2025-01-01",
+    "currency": "USD",
+    "last_updated": "",
+    "notes": "Track all revenue by stream and client for accurate growth analysis"
+  },
+  "revenue_streams": [
+    "Consulting",
+    "Freelance Projects",
+    "Product Sales",
+    "Affiliate Income",
+    "Passive Income"
+  ],
+  "transactions": [
+    {
+      "id": "rev-0001",
+      "date": "2025-01-15",
+      "amount": 1500.00,
+      "stream": "Consulting",
+      "client": "Acme Corp",
+      "project": "Website Redesign Consultation",
+      "payment_method": "Bank Transfer",
+      "notes": "Initial consultation phase completed",
+      "recorded_at": "2025-01-15T14:30:00Z"
+    },
+    {
+      "id": "rev-0002",
+      "date": "2025-01-20",
+      "amount": 850.00,
+      "stream": "Freelance Projects",
+      "client": "TechStart Inc",
+      "project": "Logo Design",
+      "payment_method": "PayPal",
+      "notes": "Logo design delivered and approved",
+      "recorded_at": "2025-01-20T09:15:00Z"
+    }
+  ],
+  "time_tracking": [
+    {
+      "id": "time-0001",
+      "date": "2025-01-15",
+      "stream": "Consulting",
+      "client": "Acme Corp",
+      "project": "Website Redesign Consultation",
+      "hours": 8.5,
+      "description": "Discovery session and initial recommendations document",
+      "billable": true
+    },
+    {
+      "id": "time-0002",
+      "date": "2025-01-18",
+      "stream": "Freelance Projects",
+      "client": "TechStart Inc",
+      "project": "Logo Design",
+      "hours": 6.0,
+      "description": "Initial concepts and revisions",
+      "billable": true
+    }
+  ],
+  "usage_instructions": {
+    "recording_revenue": "Use @revenue-analyzer to add new transactions with: amount, stream, client, date, and notes",
+    "tracking_time": "Log hours worked on each project to calculate effective hourly rate",
+    "analyzing_growth": "Run monthly analysis to track growth trends and identify best-performing streams",
+    "calculating_rates": "Compare revenue to time invested to optimize pricing and focus",
+    "forecasting": "Use historical data to project future revenue and set realistic goals"
+  },
+  "best_practices": {
+    "frequency": "Record revenue immediately upon receipt - don't wait until month-end",
+    "categorization": "Be specific with stream names - 'Web Design' not 'Services'",
+    "client_tracking": "Use consistent client names for accurate relationship analysis",
+    "time_logging": "Track time in real-time or same-day for accuracy",
+    "notes": "Include project details for context when reviewing later",
+    "backup": "Keep this file backed up - it's your business intelligence!"
+  },
+  "kpi_targets": {
+    "monthly_revenue_goal": 5000,
+    "quarterly_revenue_goal": 15000,
+    "annual_revenue_goal": 60000,
+    "target_hourly_rate": 100,
+    "target_monthly_growth_rate": 10,
+    "target_client_count": 10,
+    "target_avg_transaction": 750
+  }
+}

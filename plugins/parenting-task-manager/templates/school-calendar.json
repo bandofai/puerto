@@ -1,0 +1,27 @@
+{
+  "schoolYear": "2024-2025",
+  "children": [
+    {
+      "id": "child-001",
+      "name": "Emma",
+      "grade": 3,
+      "teacher": "Mrs. Johnson",
+      "school": "Lincoln Elementary",
+      "schoolPhone": "555-1000",
+      "schoolEmail": "info@lincoln.edu"
+    }
+  ],
+  "events": [
+    {
+      "id": "event-001",
+      "type": "field-trip",
+      "title": "Science Museum",
+      "date": "2025-03-15",
+      "childId": "child-001",
+      "permissionSlipDue": "2025-03-10",
+      "cost": 15,
+      "requirements": ["Sack lunch"],
+      "status": "pending"
+    }
+  ]
+}

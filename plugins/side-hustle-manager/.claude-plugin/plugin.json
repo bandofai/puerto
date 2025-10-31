@@ -1,0 +1,10 @@
+{
+  "name": "side-hustle-manager",
+  "version": "1.0.0",
+  "description": "Side business income and growth tracking specialist with revenue analysis, expense tracking, and growth metrics",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": ["side-hustle", "business", "revenue", "expense", "growth-metrics", "financial-analytics", "tax-deductions", "time-tracking"],
+  "license": "MIT"
+}

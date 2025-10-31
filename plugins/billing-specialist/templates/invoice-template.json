@@ -1,0 +1,50 @@
+{
+  "invoice_metadata": {
+    "template_version": "1.0",
+    "invoice_number": "INV-{YYYY}-{NNNNN}",
+    "invoice_date": "{ISO_DATE}",
+    "due_date": "{ISO_DATE}",
+    "payment_terms": "Net 30"
+  },
+  "company_info": {
+    "legal_name": "Your Company LLC",
+    "address": {
+      "street": "123 Business St",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94102",
+      "country": "USA"
+    },
+    "tax_id": "12-3456789",
+    "contact": {
+      "phone": "(555) 123-4567",
+      "email": "billing@yourco.com"
+    }
+  },
+  "customer_info": {
+    "customer_id": "{CUSTOMER_ID}",
+    "name": "{CUSTOMER_NAME}",
+    "billing_address": {},
+    "payment_terms": "Net 30"
+  },
+  "line_items": [
+    {
+      "line_number": 1,
+      "description": "Professional Services",
+      "quantity": 40,
+      "unit_price": 150.00,
+      "extended_amount": 6000.00,
+      "taxable": true,
+      "tax_rate": 0.0875,
+      "revenue_recognition": {
+        "type": "over_time"
+      }
+    }
+  ],
+  "summary": {
+    "subtotal": 6000.00,
+    "tax_amount": 525.00,
+    "total_amount_due": 6525.00,
+    "currency": "USD"
+  }
+}

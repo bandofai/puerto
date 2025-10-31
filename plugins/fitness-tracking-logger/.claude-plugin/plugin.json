@@ -1,0 +1,22 @@
+{
+  "name": "fitness-tracking-logger",
+  "version": "1.0.0",
+  "description": "Comprehensive workout logging and fitness progress tracking system for Puerto.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/progress-analyzer.md",
+    "./agents/workout-logger.md",
+    "./agents/record-tracker.md",
+    "./agents/health-monitor.md",
+    "./agents/template-manager.md"
+  ],
+  "skills": [
+    "./skills/recovery-management/SKILL.md",
+    "./skills/progress-tracking/SKILL.md",
+    "./skills/workout-logging/SKILL.md",
+    "./skills/exercise-library/SKILL.md"
+  ],
+  "license": "MIT"
+}

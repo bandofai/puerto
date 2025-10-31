@@ -1,0 +1,21 @@
+{
+  "name": "book-reading-tracker",
+  "version": "1.0.0",
+  "description": "Reading progress and book note management specialist",
+  "agents": [
+    "./agents/reading-list-manager.md",
+    "./agents/progress-tracker.md",
+    "./agents/note-organizer.md",
+    "./agents/analytics-reporter.md",
+    "./agents/recommendation-engine.md"
+  ],
+  "skills": [
+    "./skills/reading-management.md",
+    "./skills/note-taking.md",
+    "./skills/book-analytics.md"
+  ],
+  "author": {
+    "name": "Puerto"
+  },
+  "license": "MIT"
+}

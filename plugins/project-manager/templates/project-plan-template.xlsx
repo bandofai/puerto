@@ -1,0 +1,112 @@
+# PROJECT PLAN TEMPLATE
+# This is a CSV-format template that can be imported into Excel
+# Save as .xlsx in Excel for full formatting
+
+## SHEET 1: Project Overview
+Project Name,
+Project Manager,
+Sponsor,
+Start Date,
+Target End Date,
+Budget,
+Status,
+
+## SHEET 2: WBS (Work Breakdown Structure)
+WBS ID,Task Name,Description,Duration (days),Start Date,End Date,Predecessor,Resource,Effort (hours),Cost,Status,% Complete,Notes
+1.0,Project Management,Overall project coordination and control,,,,,PM,,,Not Started,0%,
+1.1,Initiation,Project kickoff and charter creation,5,,,,"PM, Sponsor",40,$4800,Not Started,0%,
+1.1.1,Define scope and objectives,Create high-level scope statement,2,,,1.1,PM,16,$1920,Not Started,0%,
+1.1.2,Identify stakeholders,Create stakeholder register,1,,,1.1.1,PM,8,$960,Not Started,0%,
+1.1.3,Create project charter,Develop and approve charter,2,,,1.1.2,"PM, Sponsor",16,$1920,Not Started,0%,
+1.2,Planning,Detailed project planning activities,15,,,1.1,,,,Not Started,0%,
+1.2.1,Create WBS,Decompose deliverables into work packages,3,,,1.2,PM,24,$2880,Not Started,0%,
+1.2.2,Develop schedule,Create detailed schedule with dependencies,5,,,1.2.1,PM,40,$4800,Not Started,0%,
+1.2.3,Resource planning,Identify and allocate resources,3,,,1.2.2,PM,24,$2880,Not Started,0%,
+1.2.4,Budget estimation,Create detailed budget,2,,,1.2.3,PM,16,$1920,Not Started,0%,
+1.2.5,Risk planning,Identify and analyze risks,2,,,1.2.3,PM,16,$1920,Not Started,0%,
+2.0,Requirements & Design,Gather requirements and create designs,20,,,1.2,,,,Not Started,0%,
+2.1,Requirements gathering,Conduct stakeholder interviews and workshops,10,,,2.0,BA,80,$6400,Not Started,0%,
+2.2,Requirements analysis,Analyze and prioritize requirements,5,,,2.1,BA,40,$3200,Not Started,0%,
+2.3,Design documentation,Create detailed design specifications,5,,,2.2,"BA, Architect",40,$4000,Not Started,0%,
+3.0,Development/Implementation,Build the deliverables,60,,,2.0,,,,Not Started,0%,
+3.1,Component A development,Develop first major component,20,,,3.0,Dev Team,320,$32000,Not Started,0%,
+3.2,Component B development,Develop second major component,20,,,3.1,Dev Team,320,$32000,Not Started,0%,
+3.3,Integration,Integrate all components,20,,,3.2,Dev Team,160,$16000,Not Started,0%,
+4.0,Testing & Quality,Validate deliverables meet requirements,30,,,3.0,,,,Not Started,0%,
+4.1,Unit testing,Test individual components,10,,,4.0,Dev Team,160,$16000,Not Started,0%,
+4.2,Integration testing,Test integrated system,10,,,4.1,QA,80,$6400,Not Started,0%,
+4.3,User acceptance testing,End users validate system,10,,,4.2,"QA, Users",80,$6400,Not Started,0%,
+5.0,Deployment,Release to production,10,,,4.0,,,,Not Started,0%,
+5.1,Deployment planning,Create deployment plan and checklist,2,,,5.0,DevOps,16,$1600,Not Started,0%,
+5.2,Deployment execution,Execute deployment to production,3,,,5.1,DevOps,24,$2400,Not Started,0%,
+5.3,Post-deployment validation,Verify successful deployment,5,,,5.2,"QA, DevOps",40,$4000,Not Started,0%,
+6.0,Training & Documentation,Prepare users and documentation,15,,,3.0,,,,Not Started,0%,
+6.1,User documentation,Create user guides and help,5,,,6.0,"Tech Writer, SME",40,$3200,Not Started,0%,
+6.2,Training materials,Develop training content,5,,,6.1,Trainer,40,$3200,Not Started,0%,
+6.3,Training delivery,Conduct user training sessions,5,,,6.2,Trainer,40,$3200,Not Started,0%,
+M1,Requirements Complete,Milestone: All requirements approved,0,,,2.2,BA,0,$0,Milestone,0%,
+M2,Development Complete,Milestone: All development done,0,,,3.3,Dev Team,0,$0,Milestone,0%,
+M3,UAT Complete,Milestone: Testing finished,0,,,4.3,QA,0,$0,Milestone,0%,
+M4,Go-Live,Milestone: Production deployment,0,,,5.3,PM,0,$0,Milestone,0%,
+
+## SHEET 3: Resource Allocation
+Resource Name,Role,Rate ($/hr),Availability (%),Assigned Tasks,Total Hours,Total Cost,Notes
+Project Manager,PM,120,50%,"1.1, 1.2, M4",176,$21120,0.5 FTE allocation
+Business Analyst,BA,80,100%,"2.1, 2.2, 2.3, M1",160,$12800,Full-time
+Architect,Architect,100,25%,2.3,10,$1000,Part-time consultant
+Dev Team (3 people),Developer,100,100%,"3.1, 3.2, 3.3, 4.1, M2",960,$96000,3 FTE
+QA Engineer,QA,80,100%,"4.2, 4.3, 5.3, M3",200,$16000,Full-time
+DevOps Engineer,DevOps,100,50%,"5.1, 5.2, 5.3",80,$8000,0.5 FTE
+Tech Writer,Tech Writer,80,50%,6.1,40,$3200,Part-time
+Trainer,Trainer,80,50%,"6.2, 6.3",80,$6400,Part-time
+
+## SHEET 4: Budget Summary
+Category,Planned Cost,Actual Cost,Variance,% of Budget,Notes
+Labor - PM,$21120,,$0,12.8%,
+Labor - Business Analyst,$12800,,$0,7.8%,
+Labor - Architect,$1000,,$0,0.6%,
+Labor - Development,$96000,,$0,58.2%,
+Labor - QA,$16000,,$0,9.7%,
+Labor - DevOps,$8000,,$0,4.8%,
+Labor - Documentation,$3200,,$0,1.9%,
+Labor - Training,$6400,,$0,3.9%,
+Subtotal Labor,$164520,,$0,99.7%,
+Software/Tools,$2000,,$0,1.2%,Licenses and cloud services
+Equipment,$1000,,$0,0.6%,Development equipment
+Travel,$500,,$0,0.3%,If needed
+Miscellaneous,$980,,$0,0.6%,Contingency items
+Subtotal Other Costs,$4480,,$0,2.7%,
+Total Direct Costs,$169000,,$0,102.4%,
+Contingency Reserve (10%),$16900,,$0,10.2%,Known risks
+Management Reserve (5%),$8450,,$0,5.1%,Unknown unknowns
+Total Budget,$194350,,$0,117.8%,
+
+## SHEET 5: Milestones
+Milestone ID,Milestone Name,Planned Date,Forecast Date,Actual Date,Status,Dependencies,Deliverables,Notes
+M1,Requirements Complete,,,,"Not Started","2.2 complete",Requirements document approved,
+M2,Development Complete,,,,"Not Started","3.3 complete",All components integrated and code complete,
+M3,UAT Complete,,,,"Not Started","4.3 complete",User acceptance sign-off,
+M4,Go-Live,,,,"Not Started","5.3 complete",System in production,Project closure
+
+## SHEET 6: Assumptions & Constraints
+Type,Item,Impact if Invalid,Mitigation,Owner
+Assumption,All required resources will be available as planned,Schedule delay,Confirm resource allocation with resource managers before start,PM
+Assumption,Requirements will be stable after approval,Scope creep and rework,Implement change control process,PM
+Assumption,Third-party systems will be available for integration,Integration delays,Validate availability early; have backup plan,Tech Lead
+Assumption,Budget will be fully funded,Project cancellation,Secure sponsor commitment upfront,Sponsor
+Constraint,Fixed deadline of [DATE],Scope reduction may be needed,Prioritize features (MoSCoW); plan phased delivery,PM
+Constraint,Budget cap of $[AMOUNT],Resource limitations,Optimize resource allocation; consider contractors,PM
+Constraint,Must use existing infrastructure,Technical limitations,Validate compatibility early,Architect
+Constraint,Regulatory compliance required,Scope and timeline impact,Engage compliance team early,PM
+
+## INSTRUCTIONS FOR USE:
+# 1. Save this file as Excel (.xlsx) format
+# 2. Replace placeholders ([Project Name], [DATE], etc.) with actual values
+# 3. Adjust WBS to match your project scope
+# 4. Update resource rates and availability
+# 5. Fill in actual start dates and calculate end dates
+# 6. Add/remove tasks as needed for your project
+# 7. Use this as baseline for tracking progress
+# 8. Update % Complete regularly
+# 9. Track actual vs planned dates and costs
+# 10. Review and update weekly

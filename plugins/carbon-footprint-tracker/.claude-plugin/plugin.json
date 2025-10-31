@@ -1,0 +1,17 @@
+{
+  "name": "carbon-footprint-tracker",
+  "version": "1.0.0",
+  "description": "Personal emissions tracking and reduction specialist with carbon calculation, reduction recommendations, and progress tracking",
+  "author": {
+    "name": "Puerto"
+  },
+  "agents": [
+    "./agents/emissions-logger.md",
+    "./agents/footprint-analyzer.md",
+    "./agents/reduction-advisor.md",
+    "./agents/progress-reporter.md"
+  ],
+  "skills": [
+    "./skills/carbon-tracking/SKILL.md"
+  ]
+}

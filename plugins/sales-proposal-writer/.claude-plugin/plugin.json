@@ -1,0 +1,22 @@
+{
+  "name": "sales-proposal-writer",
+  "version": "1.0.0",
+  "description": "Sales proposal creation specialist - generates and customizes sales proposals and RFP responses",
+  "type": "work",
+  "agents": [
+    "./agents/proposal-generator.md",
+    "./agents/pricing-calculator.md",
+    "./agents/case-study-selector.md",
+    "./agents/rfp-responder.md",
+    "./agents/template-customizer.md"
+  ],
+  "skills": [
+    "./skills/proposal-generation/SKILL.md",
+    "./skills/proposal-writing/SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "repository": "https://github.com/bandofai/puerto",
+  "license": "MIT"
+}

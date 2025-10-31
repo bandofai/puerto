@@ -1,0 +1,15 @@
+{
+  "name": "video-producer",
+  "version": "1.0.0",
+  "description": "Video content planning and scripting specialist for multi-platform video production.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/script-writer.md"
+  ],
+  "skills": [
+    "./skills/video-scripting/SKILL.md"
+  ],
+  "license": "MIT"
+}

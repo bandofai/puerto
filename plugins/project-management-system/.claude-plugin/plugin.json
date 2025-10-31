@@ -1,0 +1,19 @@
+{
+  "name": "project-management-system",
+  "version": "1.0.0",
+  "description": "Professional project management capabilities including multi-project dashboards, task coordination, timeline visualization, and project archiving.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/project-archiver.md",
+    "./agents/timeline-visualizer.md",
+    "./agents/project-dashboard-manager.md",
+    "./agents/task-coordinator.md"
+  ],
+  "skills": [
+    "./skills/project-management/SKILL.md",
+    "./skills/gantt-visualization/SKILL.md"
+  ],
+  "license": "MIT"
+}

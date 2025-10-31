@@ -1,0 +1,16 @@
+{
+  "name": "technical-writer",
+  "version": "1.0.0",
+  "description": "Technical documentation specialist",
+  "agents": [
+    "./agents/api-documenter.md",
+    "./agents/user-guide-writer.md",
+    "./agents/release-notes-writer.md"
+  ],
+  "skills": [
+    "./skills/technical-writing.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "meal-planning-nutrition",
+  "version": "1.0.0",
+  "description": "Meal planning and nutrition analysis specialist - weekly meal planning, nutrition tracking, recipe organization, and grocery automation",
+  "type": "personal",
+  "agents": [
+    "./agents/meal-planner.md",
+    "./agents/nutrition-analyzer.md",
+    "./agents/recipe-organizer.md",
+    "./agents/shopping-list-generator.md",
+    "./agents/dietary-filter.md"
+  ],
+  "skills": [
+    "./skills/meal-planning.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "repository": "https://github.com/bandofai/puerto",
+  "license": "MIT"
+}

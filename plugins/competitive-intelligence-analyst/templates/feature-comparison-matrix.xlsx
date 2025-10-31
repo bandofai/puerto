@@ -1,0 +1,146 @@
+# Feature Comparison Matrix Template
+
+**Note**: This is a template guide for creating Excel feature comparison matrices. Create actual .xlsx file using Python openpyxl or similar following xlsx skill patterns.
+
+## Sheet 1: Feature Comparison
+
+### Column Structure
+
+| Column | Header | Purpose |
+|--------|--------|---------|
+| A | Feature Category | Group features (Core, Advanced, Integrations, etc.) |
+| B | Feature Name | Specific feature |
+| C | Our Product | ✅ / ❌ / ⚠️ / Rating 1-5 |
+| D | Competitor 1 | ✅ / ❌ / ⚠️ / Rating 1-5 |
+| E | Competitor 2 | ✅ / ❌ / ⚠️ / Rating 1-5 |
+| F | Competitor 3 | ✅ / ❌ / ⚠️ / Rating 1-5 |
+| G | Gap Analysis | We lead / Parity / We're behind / Missing |
+| H | Priority | P0 / P1 / P2 / P3 |
+| I | Notes | Additional context |
+
+### Feature Categories
+
+- Core Features
+- Advanced Features
+- Integrations
+- Security & Compliance
+- Performance & Scalability
+- Support & Services
+- Pricing Tiers
+- Platform & Infrastructure
+
+### Color Coding (Conditional Formatting)
+
+- **Green** (We lead): Our rating > all competitors
+- **Yellow** (Parity): Similar to competitors
+- **Red** (We're behind): Competitors ahead of us
+- **Gray** (N/A): Not applicable
+
+---
+
+## Sheet 2: Scoring Matrix
+
+### Scoring Methodology
+
+| Aspect | Weight | Us | Comp 1 | Comp 2 | Comp 3 |
+|--------|--------|----|----- ---|--------|--------|
+| Feature Coverage | 30% | [Score] | [Score] | [Score] | [Score] |
+| Implementation Quality | 25% | [Score] | [Score] | [Score] | [Score] |
+| User Satisfaction | 20% | [Score] | [Score] | [Score] | [Score] |
+| Performance | 15% | [Score] | [Score] | [Score] | [Score] |
+| Ease of Use | 10% | [Score] | [Score] | [Score] | [Score] |
+| **Total** | 100% | [Formula] | [Formula] | [Formula] | [Formula] |
+
+### Calculation Formulas
+
+```
+Total Score = Σ (Aspect Score × Weight)
+
+Feature Coverage = (Features Have / Total Features) × 100
+Implementation Quality = Average quality rating (1-5)
+User Satisfaction = Average from reviews (1-5)
+```
+
+---
+
+## Sheet 3: Gap Analysis
+
+### We're Missing (Competitive Gaps)
+
+| Feature | Competitors Have | Mentioned in Losses | Customer Requests | Priority | Estimated Effort |
+|---------|------------------|---------------------|-------------------|----------|------------------|
+| [Feature] | 3/3 | 40% | 25 times | P0 | [High/Med/Low] |
+| [Feature] | 2/3 | 15% | 10 times | P1 | [High/Med/Low] |
+
+### We're Ahead (Differentiators)
+
+| Feature | Competitors Have | Mentioned in Wins | Satisfaction | Emphasize in Marketing |
+|---------|------------------|-------------------|--------------|------------------------|
+| [Feature] | 0/3 | 60% | 4.8/5 | ✅ Yes |
+| [Feature] | 1/3 | 30% | 4.5/5 | ✅ Yes |
+
+### Quality Gaps (Have Feature, Poor Implementation)
+
+| Feature | Our Quality | Competitor Quality | Impact | Improvement Priority |
+|---------|-------------|-------------------|--------|----------------------|
+| [Feature] | 3/5 | 4.8/5 (Comp A) | Losing deals | P0 |
+| [Feature] | 3.5/5 | 4.2/5 (Comp B) | Minor | P2 |
+
+---
+
+## Sheet 4: Recommendations
+
+### Priority 0: Critical Gaps (Immediate Action)
+
+| Feature | Why Critical | Estimated Impact | Effort | Timeline | Owner |
+|---------|--------------|------------------|--------|----------|-------|
+| [Feature] | Losing 40% of enterprise deals | +$500k ARR | High | Q1 | PM |
+
+### Priority 1: High Priority
+
+| Feature | Why Important | Estimated Impact | Effort | Timeline | Owner |
+|---------|---------------|------------------|--------|----------|-------|
+| [Feature] | Competitive parity | +$200k ARR | Med | Q2 | PM |
+
+### Priority 2: Medium Priority
+
+| Feature | Why Valuable | Estimated Impact | Effort | Timeline | Owner |
+|---------|--------------|------------------|--------|----------|-------|
+| [Feature] | Customer requests | +$100k ARR | Low | Q3 | PM |
+
+---
+
+## Sheet 5: By Pricing Tier
+
+Compare feature availability across pricing tiers:
+
+| Feature | Free | Pro ($X) | Business ($Y) | Enterprise |
+|---------|------|----------|---------------|------------|
+| **Our Product** |
+| Feature 1 | ✅ | ✅ | ✅ | ✅ |
+| Feature 2 | ❌ | ✅ | ✅ | ✅ |
+| Feature 3 | ❌ | ❌ | ✅ | ✅ |
+| **Competitor A** |
+| Feature 1 | ✅ | ✅ | ✅ | ✅ |
+| Feature 2 | ❌ | ❌ | ✅ | ✅ |
+| Feature 3 | ❌ | ❌ | ❌ | ✅ |
+
+**Insight Row**: "We offer Feature 2 at lower tier than Comp A"
+
+---
+
+## Visualizations to Include
+
+1. **Radar/Spider Chart**: Overall category comparison
+2. **Bar Chart**: Total feature count by competitor
+3. **Heatmap**: Feature availability matrix
+4. **Gap Analysis Chart**: Critical vs. Nice-to-have gaps
+
+---
+
+## Update Frequency
+
+- **Feature availability**: Monthly
+- **Ratings**: Quarterly (based on reviews)
+- **Priorities**: Quarterly (based on win/loss)
+- **Full refresh**: Annually

@@ -1,0 +1,17 @@
+{
+  "name": "executive-report-writer",
+  "version": "1.0.0",
+  "description": "Executive reporting specialist for board reports, executive summaries, high-level metrics, strategic insights, and executive visualizations",
+  "agents": [
+    "./agents/executive-summarizer.md",
+    "./agents/board-report-writer.md",
+    "./agents/metrics-storyteller.md",
+    "./agents/presentation-designer.md"
+  ],
+  "skills": [
+    "./skills/executive-communication/SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "web-performance-auditor",
+  "version": "1.0.0",
+  "description": "Web performance auditing and optimization using Lighthouse with comprehensive analysis and actionable recommendations",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/lighthouse-auditor.md",
+    "./agents/performance-analyzer.md",
+    "./agents/optimization-recommender.md"
+  ],
+  "skills": [
+    "./skills/lighthouse-integration/SKILL.md",
+    "./skills/web-performance-optimization/SKILL.md"
+  ],
+  "keywords": [
+    "lighthouse",
+    "performance",
+    "web-vitals",
+    "seo",
+    "accessibility",
+    "best-practices",
+    "pwa",
+    "optimization",
+    "core-web-vitals",
+    "page-speed"
+  ],
+  "license": "MIT"
+}

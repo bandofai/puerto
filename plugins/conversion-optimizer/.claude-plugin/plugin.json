@@ -1,0 +1,17 @@
+{
+  "name": "conversion-optimizer",
+  "version": "1.0.0",
+  "description": "CRO (Conversion Rate Optimization) specialist for funnel analysis, A/B testing, user journey mapping, landing page optimization, and CTA optimization",
+  "agents": [
+    "./agents/funnel-analyzer.md",
+    "./agents/ab-test-designer.md",
+    "./agents/journey-mapper.md",
+    "./agents/landing-page-optimizer.md"
+  ],
+  "skills": [
+    "./skills/cro-strategy/SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

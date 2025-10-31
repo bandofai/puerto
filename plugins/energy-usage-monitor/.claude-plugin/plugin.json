@@ -1,0 +1,21 @@
+{
+  "name": "energy-usage-monitor",
+  "version": "1.0.0",
+  "description": "Smart energy usage analysis and monitoring with pattern detection, cost projections, efficiency recommendations, and appliance-specific insights.",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "energy",
+    "utility",
+    "monitoring",
+    "efficiency",
+    "cost-savings",
+    "smart-meter",
+    "analytics",
+    "sustainability",
+    "electricity",
+    "consumption"
+  ],
+  "license": "MIT"
+}

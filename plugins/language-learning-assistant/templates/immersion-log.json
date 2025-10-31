@@ -1,0 +1,27 @@
+{
+  "activities": [
+    {
+      "id": "activity-001",
+      "date": "2025-02-15T19:00:00Z",
+      "type": "movie",
+      "title": "Amores Perros",
+      "language": "Spanish",
+      "duration": 153,
+      "skill": "listening",
+      "difficulty": "intermediate",
+      "subtitles": "English",
+      "comprehension": 70,
+      "newVocabulary": 15,
+      "notes": "Challenging but engaging dialogue"
+    }
+  ],
+  "statistics": {
+    "thisWeek": {
+      "totalMinutes": 153,
+      "listening": 153,
+      "reading": 0,
+      "speaking": 0,
+      "writing": 0
+    }
+  }
+}

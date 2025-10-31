@@ -1,0 +1,259 @@
+{
+  "metrics": [
+    {
+      "post_id": "post-2025-01-15-001",
+      "title": "Async/Await Tutorial for JavaScript Beginners",
+      "published": "2025-01-15T09:00:00Z",
+      "tracked_since": "2025-01-15T09:00:00Z",
+      "tracking_period_days": 7,
+      "platforms": {
+        "blog": {
+          "url": "https://blog.example.com/async-await-tutorial",
+          "metrics": {
+            "views": 1250,
+            "unique_visitors": 890,
+            "avg_time_on_page": "4:32",
+            "avg_time_seconds": 272,
+            "bounce_rate": 0.35,
+            "pages_per_session": 1.8,
+            "shares": 45,
+            "comments": 12,
+            "likes": 67
+          },
+          "traffic_sources": {
+            "organic": 420,
+            "social": 380,
+            "direct": 290,
+            "referral": 160
+          },
+          "top_referrers": [
+            {"source": "twitter.com", "visits": 220},
+            {"source": "linkedin.com", "visits": 95},
+            {"source": "dev.to", "visits": 65}
+          ],
+          "top_countries": [
+            {"country": "United States", "visits": 485},
+            {"country": "United Kingdom", "visits": 178},
+            {"country": "India", "visits": 156}
+          ],
+          "device_breakdown": {
+            "desktop": 0.68,
+            "mobile": 0.25,
+            "tablet": 0.07
+          },
+          "last_updated": "2025-01-22T10:00:00Z"
+        },
+        "twitter": {
+          "url": "https://twitter.com/user/status/1234567890",
+          "metrics": {
+            "impressions": 15200,
+            "engagements": 980,
+            "engagement_rate": 0.064,
+            "likes": 420,
+            "retweets": 85,
+            "replies": 56,
+            "quote_tweets": 23,
+            "link_clicks": 280,
+            "profile_visits": 42,
+            "new_followers": 18
+          },
+          "hourly_breakdown": [
+            {"hour": 9, "impressions": 2100},
+            {"hour": 10, "impressions": 3400},
+            {"hour": 11, "impressions": 2800},
+            {"hour": 12, "impressions": 1900}
+          ],
+          "best_performing_tweet": {
+            "position": 1,
+            "text": "🧵 Thread: Understanding async/await in JavaScript...",
+            "impressions": 4200,
+            "engagement_rate": 0.082
+          },
+          "last_updated": "2025-01-22T10:00:00Z"
+        },
+        "linkedin": {
+          "url": "https://linkedin.com/posts/user-123456",
+          "metrics": {
+            "impressions": 8500,
+            "reactions": 145,
+            "comments": 28,
+            "shares": 31,
+            "clicks": 190,
+            "engagement_rate": 0.046,
+            "new_followers": 12
+          },
+          "reaction_breakdown": {
+            "like": 98,
+            "celebrate": 24,
+            "love": 15,
+            "insightful": 8
+          },
+          "audience_breakdown": {
+            "seniority": {
+              "entry": 0.32,
+              "mid": 0.45,
+              "senior": 0.18,
+              "executive": 0.05
+            },
+            "function": {
+              "engineering": 0.68,
+              "product": 0.15,
+              "other": 0.17
+            }
+          },
+          "last_updated": "2025-01-22T10:00:00Z"
+        }
+      },
+      "aggregate": {
+        "total_reach": 25950,
+        "total_engagement": 1897,
+        "overall_engagement_rate": 0.073,
+        "total_clicks": 515,
+        "total_shares": 161,
+        "total_comments": 96,
+        "new_followers": 30
+      },
+      "performance_score": 8.5,
+      "benchmarks": {
+        "vs_avg_views": 1.47,
+        "vs_avg_engagement": 1.82,
+        "vs_avg_shares": 2.05,
+        "vs_avg_time": 1.21
+      },
+      "tags": ["javascript", "tutorial", "async", "beginner"],
+      "category": "tutorial",
+      "content_metadata": {
+        "word_count": 2100,
+        "reading_time_minutes": 9,
+        "code_examples": 8,
+        "images": 4,
+        "difficulty": "beginner"
+      },
+      "insights": {
+        "strengths": [
+          "High engagement rate (1.82x average)",
+          "Above average time on page (4:32 vs 3:45 avg)",
+          "Strong social sharing (2.05x average)",
+          "Good Twitter thread performance (6.4% engagement)"
+        ],
+        "improvements": [
+          "Mobile bounce rate higher than desktop (optimize for mobile)",
+          "LinkedIn engagement below target (reframe for professional audience)",
+          "Could be republished on dev.to for additional reach"
+        ],
+        "repurposing_potential": "high",
+        "recommended_actions": [
+          "Create follow-up: 'Advanced async patterns'",
+          "Extract code examples into gists",
+          "Create YouTube video walkthrough",
+          "Update and republish in 6 months"
+        ]
+      }
+    }
+  ],
+  "benchmarks": {
+    "blog": {
+      "avg_views": 850,
+      "avg_unique_visitors": 620,
+      "avg_time": "3:45",
+      "avg_time_seconds": 225,
+      "avg_bounce": 0.42,
+      "avg_shares": 22,
+      "avg_comments": 8,
+      "calculated_from": 24,
+      "last_updated": "2025-01-22T10:00:00Z"
+    },
+    "twitter": {
+      "avg_impressions": 8500,
+      "avg_engagements": 420,
+      "avg_engagement_rate": 0.048,
+      "avg_clicks": 150,
+      "avg_new_followers": 8,
+      "calculated_from": 31,
+      "last_updated": "2025-01-22T10:00:00Z"
+    },
+    "linkedin": {
+      "avg_impressions": 5200,
+      "avg_reactions": 85,
+      "avg_comments": 15,
+      "avg_shares": 18,
+      "avg_engagement_rate": 0.038,
+      "avg_clicks": 120,
+      "calculated_from": 18,
+      "last_updated": "2025-01-22T10:00:00Z"
+    },
+    "newsletter": {
+      "avg_open_rate": 0.28,
+      "avg_click_rate": 0.042,
+      "avg_unsubscribe_rate": 0.003,
+      "avg_subscribers": 1240,
+      "calculated_from": 12,
+      "last_updated": "2025-01-22T10:00:00Z"
+    }
+  },
+  "top_performers": {
+    "all_time": [
+      {
+        "post_id": "post-2025-01-15-001",
+        "title": "Async/Await Tutorial for JavaScript Beginners",
+        "score": 8.5,
+        "reach": 25950,
+        "engagement_rate": 0.073
+      }
+    ],
+    "last_30_days": [
+      {
+        "post_id": "post-2025-01-15-001",
+        "title": "Async/Await Tutorial for JavaScript Beginners",
+        "score": 8.5,
+        "reach": 25950,
+        "engagement_rate": 0.073
+      }
+    ],
+    "by_category": {
+      "tutorial": {
+        "post_id": "post-2025-01-15-001",
+        "score": 8.5
+      }
+    }
+  },
+  "trends": {
+    "monthly_growth": {
+      "2025-01": {
+        "total_views": 15200,
+        "total_engagement": 3420,
+        "posts_published": 4,
+        "avg_score": 7.2,
+        "growth_vs_previous": 0.18
+      }
+    },
+    "best_posting_times": {
+      "blog": {
+        "day": "Tuesday",
+        "time": "09:00"
+      },
+      "twitter": {
+        "day": "Wednesday",
+        "time": "10:00"
+      },
+      "linkedin": {
+        "day": "Thursday",
+        "time": "11:00"
+      }
+    },
+    "top_tags": [
+      {"tag": "javascript", "avg_score": 7.8, "count": 12},
+      {"tag": "tutorial", "avg_score": 8.1, "count": 8},
+      {"tag": "career", "avg_score": 6.9, "count": 5}
+    ]
+  },
+  "metadata": {
+    "total_posts_tracked": 1,
+    "total_reach_all_time": 25950,
+    "total_engagement_all_time": 1897,
+    "tracking_start_date": "2025-01-01T00:00:00Z",
+    "last_benchmark_update": "2025-01-22T10:00:00Z",
+    "next_benchmark_update": "2025-02-22T10:00:00Z"
+  },
+  "last_updated": "2025-01-22T10:00:00Z"
+}

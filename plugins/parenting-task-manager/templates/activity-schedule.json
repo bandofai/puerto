@@ -1,0 +1,23 @@
+{
+  "activities": [
+    {
+      "id": "activity-001",
+      "childId": "child-001",
+      "type": "sports",
+      "name": "Soccer",
+      "season": "Fall 2025",
+      "schedule": {
+        "practice": [
+          {"day": "Tuesday", "time": "16:30", "duration": 60}
+        ]
+      },
+      "coach": {
+        "name": "Coach Smith",
+        "phone": "555-1234"
+      },
+      "costs": {
+        "registration": 150
+      }
+    }
+  ]
+}

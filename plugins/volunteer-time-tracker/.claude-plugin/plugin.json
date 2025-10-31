@@ -1,0 +1,20 @@
+{
+  "name": "volunteer-time-tracker",
+  "version": "1.0.0",
+  "description": "Comprehensive volunteer service logging and impact measurement system with hours tracking, organization management, tax documentation, and skills-based matching",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "volunteer",
+    "volunteering",
+    "service-hours",
+    "impact-measurement",
+    "tax-deduction",
+    "nonprofit",
+    "community-service",
+    "skills-matching",
+    "IRS-compliance"
+  ],
+  "license": "MIT"
+}

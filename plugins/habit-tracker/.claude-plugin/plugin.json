@@ -1,0 +1,18 @@
+{
+  "name": "habit-tracker",
+  "version": "1.0.0",
+  "description": "Version: 1.0.0",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/habit-checker.md",
+    "./agents/progress-reporter.md",
+    "./agents/streak-tracker.md",
+    "./agents/habit-coach.md"
+  ],
+  "skills": [
+    "./skills/habit-formation/SKILL.md"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,143 @@
+{
+  "name": "shopping-list-optimizer",
+  "version": "1.0.0",
+  "description": "Smart grocery list and pantry management specialist with intelligent shopping list generation, store route optimization, and price comparison",
+  "author": {
+    "name": "Puerto Plugin Team"
+  },
+  "type": "plugin",
+  "category": "lifestyle",
+  "agents": [
+    "./agents/list-builder.md",
+    "./agents/store-optimizer.md",
+    "./agents/price-comparator.md"
+  ],
+  "skills": [
+    "./skills/shopping-optimization/SKILL.md"
+  ],
+  "workflows": [
+    {
+      "name": "complete-shopping-optimization",
+      "description": "Full workflow from meal plan to optimized shopping route",
+      "steps": [
+        {
+          "step": 1,
+          "agent": "list-builder",
+          "action": "Generate shopping list from recipes and pantry inventory"
+        },
+        {
+          "step": 2,
+          "agent": "price-comparator",
+          "action": "Compare prices and identify best value stores (optional)"
+        },
+        {
+          "step": 3,
+          "agent": "store-optimizer",
+          "action": "Create optimized shopping route"
+        }
+      ]
+    },
+    {
+      "name": "quick-list",
+      "description": "Fast list generation without optimization",
+      "steps": [
+        {
+          "step": 1,
+          "agent": "list-builder",
+          "action": "Generate basic shopping list"
+        }
+      ]
+    },
+    {
+      "name": "price-optimization",
+      "description": "Focus on maximizing savings",
+      "steps": [
+        {
+          "step": 1,
+          "agent": "list-builder",
+          "action": "Generate shopping list"
+        },
+        {
+          "step": 2,
+          "agent": "price-comparator",
+          "action": "Find best prices and calculate savings"
+        }
+      ]
+    }
+  ],
+  "capabilities": [
+    "Recipe ingredient extraction",
+    "Pantry inventory tracking",
+    "Recurring items management",
+    "Shopping list organization by category",
+    "Store layout mapping",
+    "Efficient route planning",
+    "Multi-store comparison",
+    "Price tracking and comparison",
+    "Best value identification",
+    "Savings calculation",
+    "Meal planning integration",
+    "FIFO inventory management",
+    "Expiration tracking",
+    "Waste reduction"
+  ],
+  "requirements": {
+    "tools": [
+      "Read",
+      "Write",
+      "Glob"
+    ],
+    "optional_integrations": [
+      "Meal planning apps",
+      "Recipe databases",
+      "Store APIs for real-time pricing",
+      "Barcode scanners for inventory"
+    ]
+  },
+  "setup": {
+    "initial_config": [
+      "Create pantry inventory using pantry-inventory.json template",
+      "Set up store layouts for frequently visited stores",
+      "Define recurring items and purchase frequencies",
+      "Set dietary preferences and restrictions"
+    ],
+    "maintenance": [
+      "Update pantry inventory after each shopping trip",
+      "Review and adjust min_stock levels monthly",
+      "Update store layouts if stores reorganize",
+      "Refresh price data weekly for accuracy"
+    ]
+  },
+  "output_formats": {
+    "shopping_list": "JSON format organized by store category",
+    "optimized_route": "JSON with step-by-step navigation",
+    "price_comparison": "JSON with savings analysis and recommendations"
+  },
+  "best_practices": [
+    "Always read shopping-optimization skill before performing tasks",
+    "Update pantry inventory regularly for accurate deduplication",
+    "Customize store layouts for your local stores",
+    "Track price history for better deal recognition",
+    "Review recurring items quarterly for relevance",
+    "Use FIFO method when updating pantry (First In, First Out)"
+  ],
+  "examples": [
+    {
+      "use_case": "Weekly meal prep shopping",
+      "workflow": "complete-shopping-optimization",
+      "description": "Generate shopping list from meal plan, compare prices, optimize route"
+    },
+    {
+      "use_case": "Quick pantry restock",
+      "workflow": "quick-list",
+      "description": "Fast list generation for recurring items and low stock"
+    },
+    {
+      "use_case": "Budget-conscious shopping",
+      "workflow": "price-optimization",
+      "description": "Focus on finding best deals and maximizing savings"
+    }
+  ],
+  "license": "MIT",
+  "documentation": "README.md"
+}

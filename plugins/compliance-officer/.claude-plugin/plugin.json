@@ -1,0 +1,46 @@
+{
+  "name": "compliance-officer",
+  "version": "1.0.0",
+  "description": "Regulatory compliance monitoring specialist for GDPR, SOC2, HIPAA, audit preparation, and policy documentation",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/compliance-auditor.md",
+    "./agents/policy-documenter.md",
+    "./agents/training-creator.md"
+  ],
+  "skills": [
+    "./skills/compliance/SKILL.md"
+  ],
+  "checklists": [
+    {
+      "name": "gdpr-compliance-checklist",
+      "file": "checklists/gdpr-compliance.md",
+      "description": "GDPR compliance requirements checklist"
+    },
+    {
+      "name": "soc2-audit-checklist",
+      "file": "checklists/soc2-audit.md",
+      "description": "SOC 2 audit preparation checklist"
+    },
+    {
+      "name": "hipaa-security-checklist",
+      "file": "checklists/hipaa-security.md",
+      "description": "HIPAA security requirements checklist"
+    }
+  ],
+  "keywords": [
+    "compliance",
+    "regulatory",
+    "gdpr",
+    "soc2",
+    "hipaa",
+    "audit",
+    "policy",
+    "training",
+    "security",
+    "privacy",
+    "risk-assessment"
+  ]
+}

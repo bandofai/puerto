@@ -1,0 +1,364 @@
+{
+  "home_info": {
+    "address": "123 Main Street, Anytown, ST 12345",
+    "owner": "John and Jane Doe",
+    "purchase_date": "2020-06-15",
+    "last_updated": "2025-10-21"
+  },
+  "warranties": [
+    {
+      "warranty_id": "WRT-001",
+      "item_name": "Samsung Refrigerator Model RF28R7351SR",
+      "category": "appliance",
+      "location": "Kitchen",
+      "serial_number": "1234567890ABC",
+      "model_number": "RF28R7351SR",
+      "purchase_info": {
+        "purchase_date": "2024-03-15",
+        "retailer": "Home Depot",
+        "price_paid": 2299.00,
+        "receipt_location": "receipts/home-depot-2024-03-15.pdf"
+      },
+      "warranty_details": {
+        "warranty_start": "2024-03-15",
+        "standard_warranty_end": "2025-03-15",
+        "extended_warranty_end": null,
+        "parts_coverage": "1 year",
+        "labor_coverage": "1 year",
+        "major_components": {
+          "compressor": "5 years parts only",
+          "sealed_system": "5 years parts only"
+        }
+      },
+      "coverage": {
+        "parts": true,
+        "labor": true,
+        "in_home_service": true,
+        "exclusions": [
+          "cosmetic damage",
+          "water filter",
+          "light bulbs",
+          "normal wear and tear"
+        ]
+      },
+      "manufacturer": {
+        "name": "Samsung",
+        "support_phone": "1-800-SAMSUNG",
+        "support_email": "support@samsung.com",
+        "website": "www.samsung.com/us/support"
+      },
+      "registration": {
+        "registered": true,
+        "registration_date": "2024-03-20",
+        "confirmation_number": "SAM-2024-98765"
+      },
+      "documentation": {
+        "warranty_certificate": "warranties/samsung-fridge-warranty.pdf",
+        "user_manual": "manuals/samsung-rf28r7351sr-manual.pdf",
+        "receipt": "receipts/home-depot-2024-03-15.pdf"
+      },
+      "status": {
+        "active": true,
+        "days_until_expiration": 145,
+        "alert_level": "normal"
+      },
+      "service_history": [
+        {
+          "date": "2024-09-20",
+          "issue": "Ice maker not working",
+          "service_provider": "Samsung authorized service",
+          "warranty_claim": true,
+          "cost_covered": 285.00,
+          "service_log_id": "SVC-2024-042"
+        }
+      ],
+      "notes": "Extended warranty available for purchase until 2025-03-15. Consider if reliability issues arise."
+    },
+    {
+      "warranty_id": "WRT-002",
+      "item_name": "Lennox AC Unit Model XC25",
+      "category": "hvac",
+      "location": "Outdoor condenser + indoor air handler",
+      "serial_number": "5678AC90DEF",
+      "model_number": "XC25-060-230",
+      "purchase_info": {
+        "purchase_date": "2022-05-10",
+        "installation_date": "2022-05-15",
+        "installer": "ABC Heating & Cooling",
+        "price_paid": 8500.00,
+        "receipt_location": "receipts/abc-hvac-2022-05-15.pdf"
+      },
+      "warranty_details": {
+        "warranty_start": "2022-05-15",
+        "parts_warranty_end": "2032-05-15",
+        "labor_warranty_end": "2023-05-15",
+        "parts_coverage": "10 years",
+        "labor_coverage": "1 year (installer)",
+        "extended_labor": {
+          "available": true,
+          "cost": 450.00,
+          "coverage": "additional 4 years labor"
+        }
+      },
+      "coverage": {
+        "parts": true,
+        "labor": false,
+        "compressor": "10 years",
+        "heat_exchanger": "10 years",
+        "exclusions": [
+          "refrigerant",
+          "filters",
+          "normal maintenance",
+          "thermostat"
+        ]
+      },
+      "manufacturer": {
+        "name": "Lennox",
+        "support_phone": "1-800-9-LENNOX",
+        "support_email": "support@lennox.com",
+        "website": "www.lennox.com/support"
+      },
+      "registration": {
+        "registered": true,
+        "registration_date": "2022-05-20",
+        "confirmation_number": "LNOX-2022-54321",
+        "registration_note": "Must register within 60 days for 10-year warranty; otherwise 5 years"
+      },
+      "maintenance_requirements": {
+        "required_for_warranty": true,
+        "frequency": "annual professional service",
+        "documentation_required": true,
+        "notes": "Bi-annual professional maintenance recommended to maintain warranty"
+      },
+      "documentation": {
+        "warranty_certificate": "warranties/lennox-ac-warranty.pdf",
+        "installation_manual": "manuals/lennox-xc25-installation.pdf",
+        "user_manual": "manuals/lennox-xc25-user-manual.pdf",
+        "receipt": "receipts/abc-hvac-2022-05-15.pdf"
+      },
+      "status": {
+        "active": true,
+        "parts_days_until_expiration": 2403,
+        "labor_expired": true,
+        "alert_level": "normal"
+      },
+      "service_history": [
+        {
+          "date": "2023-04-12",
+          "service_type": "annual maintenance",
+          "service_provider": "ABC Heating & Cooling",
+          "warranty_claim": false,
+          "cost": 149.00,
+          "service_log_id": "SVC-2023-015"
+        },
+        {
+          "date": "2024-04-18",
+          "service_type": "annual maintenance",
+          "service_provider": "ABC Heating & Cooling",
+          "warranty_claim": false,
+          "cost": 149.00,
+          "service_log_id": "SVC-2024-020"
+        },
+        {
+          "date": "2025-04-15",
+          "service_type": "annual maintenance",
+          "service_provider": "ABC Heating & Cooling",
+          "warranty_claim": false,
+          "cost": 149.00,
+          "service_log_id": "SVC-2025-018"
+        }
+      ],
+      "notes": "Parts warranty good until 2032. Maintain annual service records to preserve warranty. Labor warranty expired 2023."
+    },
+    {
+      "warranty_id": "WRT-003",
+      "item_name": "Roof - Architectural Shingles",
+      "category": "roofing",
+      "location": "Entire house",
+      "product": "GAF Timberline HDZ Shingles",
+      "purchase_info": {
+        "installation_date": "2020-08-20",
+        "installer": "Premium Roofing Solutions",
+        "price_paid": 12500.00,
+        "receipt_location": "receipts/premium-roofing-2020-08-20.pdf"
+      },
+      "warranty_details": {
+        "warranty_start": "2020-08-20",
+        "material_warranty_end": "2050-08-20",
+        "workmanship_warranty_end": "2030-08-20",
+        "materials_coverage": "30 years (lifetime limited)",
+        "workmanship_coverage": "10 years"
+      },
+      "coverage": {
+        "material_defects": true,
+        "installation_defects": true,
+        "wind_damage": "up to 130 mph (with proper installation)",
+        "algae_resistance": "10 years StainGuard",
+        "proration": {
+          "starts_after": 10,
+          "full_coverage_years": 10,
+          "note": "Prorated coverage after year 10"
+        },
+        "exclusions": [
+          "normal weathering",
+          "damage from debris/hail",
+          "improper ventilation",
+          "lack of maintenance"
+        ]
+      },
+      "manufacturer": {
+        "name": "GAF",
+        "support_phone": "1-877-4-GAF-123",
+        "support_email": "support@gaf.com",
+        "website": "www.gaf.com/warranty"
+      },
+      "installer_warranty": {
+        "company": "Premium Roofing Solutions",
+        "phone": "(555) 234-5678",
+        "workmanship_coverage": "10 years",
+        "leak_guarantee": true
+      },
+      "registration": {
+        "registered": true,
+        "registration_date": "2020-08-25",
+        "confirmation_number": "GAF-2020-11223"
+      },
+      "maintenance_requirements": {
+        "required_for_warranty": true,
+        "frequency": "annual inspection recommended",
+        "documentation_required": false,
+        "notes": "Document any storm damage immediately. Clean gutters regularly."
+      },
+      "documentation": {
+        "warranty_certificate": "warranties/gaf-roof-warranty.pdf",
+        "installation_certificate": "warranties/premium-roofing-installation.pdf",
+        "contract": "contracts/premium-roofing-contract.pdf",
+        "receipt": "receipts/premium-roofing-2020-08-20.pdf"
+      },
+      "status": {
+        "active": true,
+        "material_days_until_expiration": 9113,
+        "workmanship_days_until_expiration": 1765,
+        "alert_level": "normal"
+      },
+      "inspection_history": [
+        {
+          "date": "2023-05-15",
+          "inspector": "Premium Roofing Solutions",
+          "findings": "No issues, all in good condition",
+          "service_log_id": "SVC-2023-028"
+        },
+        {
+          "date": "2025-03-10",
+          "inspector": "Premium Roofing Solutions",
+          "findings": "Minor debris cleared, excellent condition",
+          "service_log_id": "SVC-2025-012"
+        }
+      ],
+      "notes": "Workmanship warranty expires 2030. Material warranty good until 2050 but prorated after 2030."
+    },
+    {
+      "warranty_id": "WRT-004",
+      "item_name": "Rheem Water Heater Model XE50T10H45U0",
+      "category": "water_heater",
+      "location": "Garage",
+      "serial_number": "WH2024567890",
+      "model_number": "XE50T10H45U0",
+      "capacity": "50 gallons",
+      "fuel_type": "Gas",
+      "purchase_info": {
+        "purchase_date": "2023-11-10",
+        "installation_date": "2023-11-15",
+        "installer": "Quick Plumbing Services",
+        "price_paid": 1250.00,
+        "receipt_location": "receipts/quick-plumbing-2023-11-15.pdf"
+      },
+      "warranty_details": {
+        "warranty_start": "2023-11-15",
+        "tank_warranty_end": "2033-11-15",
+        "parts_warranty_end": "2029-11-15",
+        "labor_warranty_end": "2024-11-15",
+        "tank_coverage": "10 years",
+        "parts_coverage": "6 years",
+        "labor_coverage": "1 year (installer)"
+      },
+      "coverage": {
+        "tank_leaks": true,
+        "parts_defects": true,
+        "labor": false,
+        "exclusions": [
+          "sediment buildup",
+          "anode rod",
+          "thermocouple",
+          "lack of maintenance"
+        ]
+      },
+      "manufacturer": {
+        "name": "Rheem",
+        "support_phone": "1-800-432-8373",
+        "support_email": "support@rheem.com",
+        "website": "www.rheem.com/support"
+      },
+      "registration": {
+        "registered": true,
+        "registration_date": "2023-11-20",
+        "confirmation_number": "RHM-2023-78901"
+      },
+      "maintenance_requirements": {
+        "required_for_warranty": true,
+        "frequency": "annual flushing recommended",
+        "documentation_required": false,
+        "notes": "Annual flushing and anode rod inspection recommended to maintain warranty"
+      },
+      "documentation": {
+        "warranty_certificate": "warranties/rheem-water-heater-warranty.pdf",
+        "user_manual": "manuals/rheem-xe50t10-manual.pdf",
+        "installation_manual": "manuals/rheem-xe50t10-installation.pdf",
+        "receipt": "receipts/quick-plumbing-2023-11-15.pdf"
+      },
+      "status": {
+        "active": true,
+        "tank_days_until_expiration": 2947,
+        "parts_days_until_expiration": 1486,
+        "labor_expired": true,
+        "alert_level": "normal"
+      },
+      "service_history": [
+        {
+          "date": "2024-11-20",
+          "service_type": "annual flush",
+          "service_provider": "DIY",
+          "warranty_claim": false,
+          "cost": 0.00,
+          "service_log_id": "SVC-2024-078"
+        }
+      ],
+      "notes": "Tank warranty until 2033. Parts warranty until 2029. Perform annual flushing to prevent sediment buildup."
+    }
+  ],
+  "alert_settings": {
+    "enabled": true,
+    "alert_schedule": {
+      "90_day_warning": true,
+      "60_day_reminder": true,
+      "30_day_urgent": true,
+      "7_day_final": true
+    },
+    "notification_method": "email",
+    "email": "homeowner@example.com"
+  },
+  "summary": {
+    "total_warranties": 4,
+    "active_warranties": 4,
+    "expired_warranties": 0,
+    "expiring_within_90_days": 1,
+    "total_warranty_value": 24549.00,
+    "categories": {
+      "appliance": 1,
+      "hvac": 1,
+      "roofing": 1,
+      "water_heater": 1
+    }
+  },
+  "notes": "Maintain all documentation in digital format. Test all warranted items before expiration. Document any issues immediately and file claims promptly."
+}

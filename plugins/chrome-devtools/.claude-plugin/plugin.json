@@ -1,0 +1,10 @@
+{
+  "name": "chrome-devtools",
+  "version": "1.0.0",
+  "description": "Control and inspect Chrome browsers with full DevTools automation, debugging, and performance analysis",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": ["chrome", "devtools", "browser", "automation", "debugging", "performance"],
+  "license": "MIT"
+}

@@ -1,0 +1,114 @@
+# Cloudflare Pages Configuration
+# Documentation: https://developers.cloudflare.com/pages/
+
+# Project name (must match Cloudflare Pages project name)
+name = "my-pages-project"
+
+# Compatibility date - use latest for new features
+# Check: https://developers.cloudflare.com/workers/configuration/compatibility-dates/
+compatibility_date = "2025-01-15"
+
+# Build configuration
+[build]
+# Command to build your project
+command = "npm run build"
+
+# Working directory for build command
+cwd = "."
+
+# Directories to watch for changes (for wrangler pages dev)
+watch_dirs = ["src", "public"]
+
+# Upload configuration
+[[build.upload]]
+# Format of the uploaded content
+format = "directory"
+
+# Directory containing built assets
+dir = "dist"
+
+# Optional: files to exclude from upload
+# exclusions = ["*.map", "*.md", ".DS_Store"]
+
+# Production environment configuration
+[env.production]
+# Production-specific settings go here
+# Example: workers_dev = false
+
+# Preview/staging environment configuration
+[env.preview]
+# Preview-specific settings go here
+# Example: workers_dev = true
+
+# ==============================================================================
+# Common framework-specific configurations
+# ==============================================================================
+
+# For Next.js (static export):
+# [build]
+# command = "npm run build && npm run export"
+# [[build.upload]]
+# dir = "out"
+
+# For Create React App:
+# [build]
+# command = "npm run build"
+# [[build.upload]]
+# dir = "build"
+
+# For Vue.js:
+# [build]
+# command = "npm run build"
+# [[build.upload]]
+# dir = "dist"
+
+# For Svelte/SvelteKit (static adapter):
+# [build]
+# command = "npm run build"
+# [[build.upload]]
+# dir = "build"
+
+# For Astro:
+# [build]
+# command = "npm run build"
+# [[build.upload]]
+# dir = "dist"
+
+# For Hugo:
+# [build]
+# command = "hugo --minify"
+# [[build.upload]]
+# dir = "public"
+
+# ==============================================================================
+# Advanced configuration options
+# ==============================================================================
+
+# Environment variables for build process
+# [build.env_vars]
+# NODE_VERSION = "18"
+# NODE_ENV = "production"
+
+# Custom routes configuration (optional)
+# Useful for excluding API routes from static serving
+# [[routes]]
+# pattern = "/api/*"
+# custom_domain = false
+
+# ==============================================================================
+# Pages Functions configuration
+# ==============================================================================
+
+# If using Pages Functions, they should be in /functions directory
+# No additional configuration needed - automatically detected
+
+# ==============================================================================
+# Multiple projects in monorepo
+# ==============================================================================
+
+# For monorepo setup, adjust paths:
+# [build]
+# command = "cd packages/website && npm run build"
+# cwd = "../.."
+# [[build.upload]]
+# dir = "packages/website/dist"

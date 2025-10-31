@@ -1,0 +1,47 @@
+{
+  "name": "hr-policies-expert",
+  "version": "1.0.0",
+  "description": "Expert guidance on HR policies, employment law, benefits, and compliance",
+  "author": {
+    "name": "Puerto"
+  },
+  "license": "MIT",
+  "type": "work-agent",
+  "category": "human-resources",
+  "agents": [
+    "./agents/hr-policies-expert.md"
+  ],
+  "skills": [
+    "./skills/hr-policies/SKILL.md"
+  ],
+  "requirements": {
+    "claudeCode": ">=1.0.0"
+  },
+  "features": [
+    "Answer policy questions with citations",
+    "Review documents for compliance (policies, offers, job descriptions)",
+    "Provide benefits information and enrollment guidance",
+    "Leave management advice (PTO, FMLA, sick leave, parental leave)",
+    "Employment law guidance (FLSA, Title VII, ADA, ADEA, FMLA, etc.)",
+    "Policy documentation standards and templates",
+    "Compliance checklists for document review",
+    "Clear response framework with next steps"
+  ],
+  "keywords": [
+    "hr policies",
+    "employment law",
+    "compliance",
+    "benefits",
+    "leave management",
+    "FMLA",
+    "PTO",
+    "sick leave",
+    "parental leave",
+    "labor law",
+    "FLSA",
+    "ADA",
+    "Title VII",
+    "COBRA",
+    "policy review"
+  ]
+}

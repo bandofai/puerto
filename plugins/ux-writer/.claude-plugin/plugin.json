@@ -1,0 +1,17 @@
+{
+  "name": "ux-writer",
+  "version": "1.0.0",
+  "description": "UX/UI copy and microcopy specialist for interface text, error messages, onboarding flows, and accessibility",
+  "agents": [
+    "./agents/microcopy-writer.md",
+    "./agents/error-message-writer.md",
+    "./agents/onboarding-copywriter.md",
+    "./agents/accessibility-copywriter.md"
+  ],
+  "skills": [
+    "./skills/ux-writing/SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

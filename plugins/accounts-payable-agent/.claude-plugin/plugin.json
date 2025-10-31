@@ -1,0 +1,24 @@
+{
+  "name": "accounts-payable-agent",
+  "version": "1.0.0",
+  "description": "Professional accounts payable automation for invoice processing, approval routing, payment scheduling, vendor management, and reconciliation",
+  "author": {
+    "name": "Puerto Marketplace"
+  },
+  "license": "MIT",
+  "agents": [
+    "./agents/accounts-payable-agent.md"
+  ],
+  "skills": [
+    "./skills/accounts-payable/SKILL.md"
+  ],
+  "requires_tools": [
+    "Read",
+    "Write",
+    "Edit",
+    "Bash",
+    "Grep",
+    "Glob"
+  ],
+  "min_claude_version": "1.0.0"
+}

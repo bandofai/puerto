@@ -1,0 +1,20 @@
+{
+  "name": "emergency-response-coordinator",
+  "version": "1.0.0",
+  "description": "Emergency situation coordination specialist for crisis escalation, protocol activation, and stakeholder communication",
+  "type": "plugin",
+  "agents": [
+    "./agents/incident-assessor.md",
+    "./agents/protocol-activator.md",
+    "./agents/stakeholder-notifier.md",
+    "./agents/resource-coordinator.md"
+  ],
+  "skills": [
+    "./skills/emergency-protocols.md",
+    "./skills/stakeholder-communication.md",
+    "./skills/incident-management.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

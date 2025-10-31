@@ -1,0 +1,629 @@
+openapi: 3.0.0
+
+info:
+  title: My API
+  description: |
+    # API Overview
+    Brief description of what this API does and its main features.
+
+    ## Authentication
+    This API uses JWT Bearer token authentication.
+
+    To authenticate:
+    1. POST to `/auth/login` with your credentials
+    2. Receive JWT token in the response
+    3. Include token in Authorization header: `Bearer <token>`
+
+    Tokens expire after 15 minutes. Use the `/auth/refresh` endpoint
+    to obtain a new access token without re-authenticating.
+
+    ## Rate Limiting
+    API calls are rate-limited based on your authentication status:
+    - **Authenticated requests**: 1000 requests per hour
+    - **Unauthenticated requests**: 100 requests per hour
+
+    Rate limit information is included in response headers:
+    - `X-RateLimit-Limit`: Total request limit per window
+    - `X-RateLimit-Remaining`: Requests remaining in current window
+    - `X-RateLimit-Reset`: Unix timestamp when the limit resets
+
+    When you exceed the rate limit, you'll receive a `429 Too Many Requests`
+    response with a `Retry-After` header indicating when you can retry.
+
+    ## Pagination
+    All list endpoints support pagination using `page` and `limit` query parameters.
+    - Default page size: 20 items
+    - Maximum page size: 100 items
+
+    Responses include pagination metadata to help navigate through results.
+
+    ## Error Handling
+    All errors follow a consistent format with machine-readable error codes
+    and human-readable messages. See the Error schema for details.
+
+    ## Versioning
+    This API uses URL-based versioning. The current version is `v1`.
+    Breaking changes will result in a new major version (`v2`, `v3`, etc).
+
+  version: 1.0.0
+  termsOfService: https://example.com/terms
+  contact:
+    name: API Support Team
+    email: api-support@example.com
+    url: https://example.com/support
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: https://api.example.com/v1
+    description: Production server
+  - url: https://staging-api.example.com/v1
+    description: Staging server (for testing)
+  - url: http://localhost:8000/v1
+    description: Local development server
+
+security:
+  - bearerAuth: []
+
+tags:
+  - name: Authentication
+    description: User authentication and token management
+  - name: Users
+    description: User management operations
+  - name: Resources
+    description: Resource CRUD operations
+
+paths:
+  # ============================================================================
+  # Authentication Endpoints
+  # ============================================================================
+
+  /auth/login:
+    post:
+      summary: Login
+      description: Authenticate user and receive JWT tokens
+      operationId: login
+      tags:
+        - Authentication
+      security: []  # No auth required for login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - email
+                - password
+              properties:
+                email:
+                  type: string
+                  format: email
+                  example: "user@example.com"
+                password:
+                  type: string
+                  format: password
+                  example: "securepassword123"
+      responses:
+        '200':
+          description: Login successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  accessToken:
+                    type: string
+                    description: JWT access token (15 minute expiry)
+                  refreshToken:
+                    type: string
+                    description: Refresh token (7 day expiry)
+                  expiresIn:
+                    type: integer
+                    description: Access token expiry in seconds
+                    example: 900
+                  tokenType:
+                    type: string
+                    example: "Bearer"
+              example:
+                accessToken: "eyJhbGciOiJIUzI1NiIs..."
+                refreshToken: "def502003e..."
+                expiresIn: 900
+                tokenType: "Bearer"
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '422':
+          $ref: '#/components/responses/ValidationError'
+
+  /auth/refresh:
+    post:
+      summary: Refresh token
+      description: Exchange refresh token for new access token
+      operationId: refreshToken
+      tags:
+        - Authentication
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - refreshToken
+              properties:
+                refreshToken:
+                  type: string
+      responses:
+        '200':
+          description: Token refreshed successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  accessToken:
+                    type: string
+                  refreshToken:
+                    type: string
+                  expiresIn:
+                    type: integer
+                  tokenType:
+                    type: string
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  # ============================================================================
+  # User Endpoints
+  # ============================================================================
+
+  /users:
+    get:
+      summary: List users
+      description: Retrieve a paginated list of users with optional filtering
+      operationId: listUsers
+      tags:
+        - Users
+      parameters:
+        - $ref: '#/components/parameters/PageParam'
+        - $ref: '#/components/parameters/LimitParam'
+        - $ref: '#/components/parameters/SortParam'
+        - name: role
+          in: query
+          description: Filter by user role
+          schema:
+            type: string
+            enum: [admin, user, guest]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaginatedUsers'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '403':
+          $ref: '#/components/responses/ForbiddenError'
+
+    post:
+      summary: Create user
+      description: Create a new user account
+      operationId: createUser
+      tags:
+        - Users
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateUserRequest'
+      responses:
+        '201':
+          description: User created successfully
+          headers:
+            Location:
+              schema:
+                type: string
+              description: URL of the created user
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '409':
+          $ref: '#/components/responses/ConflictError'
+        '422':
+          $ref: '#/components/responses/ValidationError'
+
+  /users/{userId}:
+    get:
+      summary: Get user
+      description: Retrieve a specific user by ID
+      operationId: getUser
+      tags:
+        - Users
+      parameters:
+        - $ref: '#/components/parameters/UserIdParam'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+    patch:
+      summary: Update user
+      description: Partially update a user
+      operationId: updateUser
+      tags:
+        - Users
+      parameters:
+        - $ref: '#/components/parameters/UserIdParam'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateUserRequest'
+      responses:
+        '200':
+          description: User updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '422':
+          $ref: '#/components/responses/ValidationError'
+
+    delete:
+      summary: Delete user
+      description: Delete a user account
+      operationId: deleteUser
+      tags:
+        - Users
+      parameters:
+        - $ref: '#/components/parameters/UserIdParam'
+      responses:
+        '204':
+          description: User deleted successfully
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+components:
+  # ============================================================================
+  # Security Schemes
+  # ============================================================================
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: |
+        JWT bearer token authentication.
+
+        Include the token in the Authorization header:
+        ```
+        Authorization: Bearer <your-token>
+        ```
+
+  # ============================================================================
+  # Schemas
+  # ============================================================================
+
+  schemas:
+    User:
+      type: object
+      required:
+        - id
+        - email
+        - name
+        - role
+        - createdAt
+      properties:
+        id:
+          type: string
+          format: uuid
+          description: Unique user identifier
+          example: "123e4567-e89b-12d3-a456-426614174000"
+          readOnly: true
+        email:
+          type: string
+          format: email
+          description: User email address
+          example: "user@example.com"
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+          description: User full name
+          example: "John Doe"
+        role:
+          type: string
+          enum: [admin, user, guest]
+          default: user
+          description: User role
+          example: "user"
+        createdAt:
+          type: string
+          format: date-time
+          description: Account creation timestamp
+          example: "2025-01-20T10:00:00Z"
+          readOnly: true
+        updatedAt:
+          type: string
+          format: date-time
+          description: Last update timestamp
+          example: "2025-01-20T15:30:00Z"
+          readOnly: true
+
+    CreateUserRequest:
+      type: object
+      required:
+        - email
+        - name
+        - password
+      properties:
+        email:
+          type: string
+          format: email
+          example: "newuser@example.com"
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+          example: "Jane Smith"
+        password:
+          type: string
+          format: password
+          minLength: 8
+          description: Must be at least 8 characters
+          example: "securepassword123"
+        role:
+          type: string
+          enum: [admin, user, guest]
+          default: user
+          example: "user"
+
+    UpdateUserRequest:
+      type: object
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+          example: "Jane Doe"
+        role:
+          type: string
+          enum: [admin, user, guest]
+          example: "admin"
+
+    Pagination:
+      type: object
+      required:
+        - page
+        - limit
+        - total
+        - totalPages
+      properties:
+        page:
+          type: integer
+          minimum: 1
+          description: Current page number
+          example: 1
+        limit:
+          type: integer
+          minimum: 1
+          maximum: 100
+          description: Items per page
+          example: 20
+        total:
+          type: integer
+          minimum: 0
+          description: Total number of items
+          example: 150
+        totalPages:
+          type: integer
+          minimum: 0
+          description: Total number of pages
+          example: 8
+        hasNext:
+          type: boolean
+          description: Whether there is a next page
+          example: true
+        hasPrev:
+          type: boolean
+          description: Whether there is a previous page
+          example: false
+
+    PaginatedUsers:
+      type: object
+      required:
+        - data
+        - pagination
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/User'
+        pagination:
+          $ref: '#/components/schemas/Pagination'
+
+    Error:
+      type: object
+      required:
+        - error
+        - message
+      properties:
+        error:
+          type: string
+          description: Machine-readable error code
+          example: "validation_error"
+        message:
+          type: string
+          description: Human-readable error message
+          example: "Request validation failed"
+        requestId:
+          type: string
+          format: uuid
+          description: Unique request ID for tracing
+          example: "abc-123-def-456"
+        timestamp:
+          type: string
+          format: date-time
+          description: Error timestamp
+          example: "2025-01-20T10:00:00Z"
+        details:
+          type: array
+          description: Detailed error information
+          items:
+            type: object
+            properties:
+              field:
+                type: string
+                example: "email"
+              message:
+                type: string
+                example: "Invalid email format"
+              code:
+                type: string
+                example: "INVALID_FORMAT"
+
+  # ============================================================================
+  # Parameters
+  # ============================================================================
+
+  parameters:
+    PageParam:
+      name: page
+      in: query
+      description: Page number (1-indexed)
+      schema:
+        type: integer
+        minimum: 1
+        default: 1
+
+    LimitParam:
+      name: limit
+      in: query
+      description: Items per page (max 100)
+      schema:
+        type: integer
+        minimum: 1
+        maximum: 100
+        default: 20
+
+    SortParam:
+      name: sort
+      in: query
+      description: Sort order (prefix with - for descending)
+      schema:
+        type: string
+      example: "-createdAt"
+
+    UserIdParam:
+      name: userId
+      in: path
+      description: User ID
+      required: true
+      schema:
+        type: string
+        format: uuid
+
+  # ============================================================================
+  # Responses
+  # ============================================================================
+
+  responses:
+    BadRequestError:
+      description: Bad request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error: "bad_request"
+            message: "Invalid request parameters"
+
+    UnauthorizedError:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error: "unauthorized"
+            message: "Authentication required"
+
+    ForbiddenError:
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error: "forbidden"
+            message: "Insufficient permissions"
+
+    NotFoundError:
+      description: Not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error: "not_found"
+            message: "Resource not found"
+
+    ConflictError:
+      description: Conflict
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error: "conflict"
+            message: "Resource already exists"
+
+    ValidationError:
+      description: Validation error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error: "validation_error"
+            message: "Request validation failed"
+            details:
+              - field: "email"
+                message: "Invalid email format"
+                code: "INVALID_FORMAT"
+
+    RateLimitError:
+      description: Rate limit exceeded
+      headers:
+        X-RateLimit-Limit:
+          schema:
+            type: integer
+        X-RateLimit-Remaining:
+          schema:
+            type: integer
+        X-RateLimit-Reset:
+          schema:
+            type: integer
+        Retry-After:
+          schema:
+            type: integer
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          example:
+            error: "rate_limit_exceeded"
+            message: "Too many requests"

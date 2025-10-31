@@ -1,0 +1,17 @@
+{
+  "name": "qa-manager",
+  "version": "1.0.0",
+  "description": "Quality management system specialist for QA process design, quality standards, audits, corrective action tracking, and continuous improvement",
+  "agents": [
+    "./agents/process-designer.md",
+    "./agents/standards-auditor.md",
+    "./agents/corrective-action-tracker.md",
+    "./agents/improvement-facilitator.md"
+  ],
+  "skills": [
+    "./skills/quality-management.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

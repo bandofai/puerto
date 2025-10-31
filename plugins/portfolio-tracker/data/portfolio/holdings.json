@@ -1,0 +1,32 @@
+{
+  "holdings": [],
+  "targetAllocation": {
+    "stock": 60,
+    "bond": 20,
+    "crypto": 10,
+    "cash": 5,
+    "real-estate": 5
+  },
+  "assetTypes": [
+    "stock",
+    "bond",
+    "crypto",
+    "real-estate",
+    "cash",
+    "commodity"
+  ],
+  "settings": {
+    "currency": "USD",
+    "rebalanceThreshold": 5,
+    "priceUpdateFrequency": "daily",
+    "taxLossHarvestingEnabled": true,
+    "washSalePeriod": 30
+  },
+  "accounts": [
+    "Vanguard Brokerage",
+    "Fidelity 401k",
+    "Coinbase",
+    "Personal",
+    "Roth IRA"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "medical-appointment-tracker",
+  "version": "1.0.0",
+  "description": "Medical appointment and prescription management specialist - secure health record organization, appointment scheduling, and medication tracking",
+  "type": "personal",
+  "agents": [
+    "./agents/appointment-scheduler.md",
+    "./agents/prescription-manager.md",
+    "./agents/health-record-organizer.md",
+    "./agents/provider-directory.md",
+    "./agents/medical-data-exporter.md",
+    "./agents/health-assistant-coordinator.md"
+  ],
+  "skills": [
+    "./skills/medical-tracking.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "repository": "https://github.com/bandofai/puerto",
+  "license": "MIT"
+}

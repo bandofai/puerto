@@ -1,0 +1,165 @@
+{
+  "last_updated": "2025-10-23",
+  "version": "1.0",
+  "owner": {
+    "name": "",
+    "email": "",
+    "phone": ""
+  },
+  "categories": {
+    "social": [
+      {
+        "platform": "Facebook",
+        "username": "",
+        "email": "",
+        "url": "https://facebook.com/",
+        "2fa_method": "",
+        "recovery_email": "",
+        "importance": "high",
+        "memorial_preference": "memorialize",
+        "notes": ""
+      }
+    ],
+    "financial": [
+      {
+        "institution": "",
+        "account_type": "",
+        "account_number_last4": "",
+        "url": "",
+        "email": "",
+        "2fa_method": "",
+        "beneficiary_designated": false,
+        "importance": "critical",
+        "notes": ""
+      }
+    ],
+    "cloud_storage": [
+      {
+        "service": "Google Drive",
+        "email": "",
+        "storage_used": "",
+        "important_contents": [],
+        "2fa_method": "",
+        "importance": "high",
+        "notes": ""
+      }
+    ],
+    "email": [
+      {
+        "email_address": "",
+        "provider": "",
+        "primary_use": "personal",
+        "2fa_method": "",
+        "recovery_email": "",
+        "important_folders": [],
+        "importance": "critical",
+        "notes": ""
+      }
+    ],
+    "utilities": [
+      {
+        "service": "",
+        "account_number": "",
+        "url": "",
+        "auto_pay": false,
+        "importance": "medium",
+        "action": "cancel",
+        "notes": ""
+      }
+    ],
+    "subscriptions": [
+      {
+        "service": "",
+        "subscription_tier": "",
+        "cost": "",
+        "renewal_date": "",
+        "payment_method": "",
+        "shared_with": [],
+        "importance": "low",
+        "action": "cancel",
+        "notes": ""
+      }
+    ],
+    "professional": [
+      {
+        "service": "",
+        "purpose": "",
+        "url": "",
+        "email": "",
+        "active_projects": [],
+        "importance": "medium",
+        "handoff_required": false,
+        "notes": ""
+      }
+    ]
+  },
+  "password_manager": {
+    "service": "",
+    "master_password_location": "Sealed envelope in safe deposit box",
+    "emergency_access_contact": "",
+    "backup_codes_location": "",
+    "notes": ""
+  },
+  "two_factor_authentication": {
+    "backup_codes_location": "",
+    "authenticator_app": "",
+    "hardware_keys_location": "",
+    "recovery_phone": "",
+    "notes": ""
+  },
+  "executor_information": {
+    "primary_executor": {
+      "name": "",
+      "relationship": "",
+      "phone": "",
+      "email": "",
+      "address": ""
+    },
+    "backup_executor": {
+      "name": "",
+      "relationship": "",
+      "phone": "",
+      "email": "",
+      "address": ""
+    }
+  },
+  "important_contacts": {
+    "estate_attorney": {
+      "name": "",
+      "phone": "",
+      "email": "",
+      "firm": ""
+    },
+    "financial_advisor": {
+      "name": "",
+      "phone": "",
+      "email": "",
+      "firm": ""
+    },
+    "accountant": {
+      "name": "",
+      "phone": "",
+      "email": "",
+      "firm": ""
+    }
+  },
+  "document_storage": {
+    "will_location": "",
+    "power_of_attorney_location": "",
+    "living_trust_location": "",
+    "advance_directives_location": "",
+    "safe_deposit_box": {
+      "bank": "",
+      "box_number": "",
+      "key_location": "",
+      "authorized_users": []
+    }
+  },
+  "statistics": {
+    "total_accounts": 0,
+    "critical_accounts": 0,
+    "accounts_with_2fa": 0,
+    "accounts_needing_attention": []
+  },
+  "notes": "This document should be encrypted and stored securely. Update annually or after major life changes."
+}

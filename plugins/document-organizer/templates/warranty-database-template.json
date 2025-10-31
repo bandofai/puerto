@@ -1,0 +1,230 @@
+{
+  "warranties": [
+    {
+      "warranty_id": "war_20250105_001",
+      "product_name": "Samsung 65\" 4K Smart TV",
+      "product_category": "Electronics/TV",
+      "manufacturer": "Samsung",
+      "model_number": "UN65TU8000",
+      "serial_number": "ABC123XYZ789",
+      "purchase_date": "2025-01-05",
+      "purchase_price": "$899.99",
+      "vendor": "Best Buy",
+      "warranty_type": "manufacturer",
+      "warranty_duration": "3_years",
+      "warranty_start": "2025-01-05",
+      "warranty_end": "2028-01-05",
+      "coverage_details": "Parts and labor for defects in materials and workmanship. Covers panel defects, power supply issues, and component failures. Does not cover accidental damage, cosmetic damage, or normal wear.",
+      "exclusions": "Accidental damage, cosmetic damage, physical damage, customer-caused issues",
+      "registration_required": true,
+      "registration_completed": true,
+      "registration_date": "2025-01-06",
+      "registration_url": "https://samsung.com/register",
+      "claim_process": "Call 1-800-SAMSUNG (1-800-726-7864) or file claim online at samsung.com/support. Have model and serial number ready.",
+      "claim_contact": "1-800-726-7864",
+      "document_path": "/Documents/Warranties/Electronics/20250105_warranty_samsung_tv_3year.pdf",
+      "receipt_path": "/Documents/Active/Financial/Receipts/Electronics/20250105_receipt_bestbuy_tv_899.pdf",
+      "manual_path": "/Documents/Reference/Manuals/samsung_un65tu8000_manual.pdf",
+      "status": "active",
+      "alerts": [
+        {
+          "alert_id": "alert_war_20250105_001_30d",
+          "alert_date": "2027-12-06",
+          "alert_type": "30_day_warning",
+          "priority": "MEDIUM",
+          "message": "TV warranty expires in 30 days. Inspect for any issues.",
+          "sent": false
+        },
+        {
+          "alert_id": "alert_war_20250105_001_7d",
+          "alert_date": "2027-12-29",
+          "alert_type": "7_day_warning",
+          "priority": "HIGH",
+          "message": "TV warranty expires in 7 days. File any claims immediately.",
+          "sent": false
+        },
+        {
+          "alert_id": "alert_war_20250105_001_1d",
+          "alert_date": "2028-01-04",
+          "alert_type": "final_warning",
+          "priority": "CRITICAL",
+          "message": "TV warranty expires tomorrow. Last chance to file claims.",
+          "sent": false
+        }
+      ],
+      "claims": [],
+      "notes": "Extended warranty offered but declined. TV working perfectly. Registered product online for warranty activation.",
+      "last_updated": "2025-01-06T10:30:00Z"
+    },
+    {
+      "warranty_id": "war_20240620_001",
+      "product_name": "Dell XPS 15 Laptop",
+      "product_category": "Electronics/Computer",
+      "manufacturer": "Dell",
+      "model_number": "XPS 9530",
+      "serial_number": "DEL123ABC456",
+      "purchase_date": "2024-06-20",
+      "purchase_price": "$1,499.00",
+      "vendor": "Amazon",
+      "warranty_type": "extended",
+      "warranty_duration": "3_years",
+      "warranty_start": "2024-06-20",
+      "warranty_end": "2027-06-20",
+      "coverage_details": "Dell Premium Support Plus with accidental damage coverage. Includes hardware repairs, parts replacement, next-business-day onsite service, and accidental damage protection (drops, spills, surges).",
+      "exclusions": "Loss, theft, intentional damage, cosmetic damage not affecting function",
+      "registration_required": true,
+      "registration_completed": true,
+      "registration_date": "2024-06-21",
+      "registration_url": "https://dell.com/warranty",
+      "claim_process": "Call 1-800-DELL-HELP or visit dell.com/support. Service tag required: DEL123ABC456. Online chat available 24/7.",
+      "claim_contact": "1-800-335-5435",
+      "document_path": "/Documents/Warranties/Electronics/20240620_warranty_dell_laptop_3year.pdf",
+      "receipt_path": "/Documents/Archive/2024/Financial/Receipts/Electronics/20240620_receipt_amazon_laptop_1499.pdf",
+      "manual_path": "/Documents/Reference/Manuals/dell_xps_15_user_guide.pdf",
+      "status": "active",
+      "alerts": [
+        {
+          "alert_id": "alert_war_20240620_001_30d",
+          "alert_date": "2027-05-21",
+          "alert_type": "30_day_warning",
+          "priority": "MEDIUM",
+          "message": "Laptop warranty expires in 30 days. Test all hardware.",
+          "sent": false
+        },
+        {
+          "alert_id": "alert_war_20240620_001_7d",
+          "alert_date": "2027-06-13",
+          "alert_type": "7_day_warning",
+          "priority": "HIGH",
+          "message": "Laptop warranty expires in 7 days. File any claims now.",
+          "sent": false
+        }
+      ],
+      "claims": [
+        {
+          "claim_id": "claim_001",
+          "claim_date": "2024-11-15",
+          "issue_description": "Trackpad intermittently unresponsive, clicking issues",
+          "claim_method": "Online chat support",
+          "claim_number": "SRV-987654321",
+          "technician": "Dell Support - Tech ID: T12345",
+          "status": "resolved",
+          "resolution_date": "2024-11-18",
+          "resolution": "Trackpad replaced under warranty. Technician dispatched next business day. Part replaced successfully, issue resolved.",
+          "service_date": "2024-11-17",
+          "parts_replaced": ["Trackpad assembly"],
+          "cost_covered": "$0 (warranty)",
+          "notes": "Quick service, professional technician. Trackpad working perfectly after repair."
+        }
+      ],
+      "notes": "Upgraded to Premium Support Plus for accidental damage protection. Had one claim for trackpad - resolved quickly. Excellent support experience.",
+      "last_updated": "2024-11-18T15:45:00Z"
+    },
+    {
+      "warranty_id": "war_20230310_001",
+      "product_name": "Bosch 800 Series Dishwasher",
+      "product_category": "Appliances/Kitchen",
+      "manufacturer": "Bosch",
+      "model_number": "SHPM88Z75N",
+      "serial_number": "FD9876543210",
+      "purchase_date": "2023-03-10",
+      "purchase_price": "$1,299.00",
+      "vendor": "Home Depot",
+      "warranty_type": "manufacturer",
+      "warranty_duration": "2_years",
+      "warranty_start": "2023-03-10",
+      "warranty_end": "2025-03-10",
+      "coverage_details": "2-year full warranty covering parts and labor. Includes all mechanical and electrical components. Service calls covered during warranty period.",
+      "exclusions": "Normal wear, customer misuse, improper installation, water damage not caused by appliance defect",
+      "registration_required": true,
+      "registration_completed": true,
+      "registration_date": "2023-03-15",
+      "registration_url": "https://bosch-home.com/warranty",
+      "claim_process": "Call 1-800-944-2904 for service. Technician will diagnose and repair on-site. Keep model/serial number accessible.",
+      "claim_contact": "1-800-944-2904",
+      "document_path": "/Documents/Warranties/Appliances/20230310_warranty_bosch_dishwasher.pdf",
+      "receipt_path": "/Documents/Archive/2023/Financial/Receipts/Appliances/20230310_receipt_homedepot_dishwasher_1299.pdf",
+      "manual_path": "/Documents/Reference/Manuals/bosch_shpm88z75n_manual.pdf",
+      "status": "expiring_soon",
+      "alerts": [
+        {
+          "alert_id": "alert_war_20230310_001_30d",
+          "alert_date": "2025-02-08",
+          "alert_type": "30_day_warning",
+          "priority": "MEDIUM",
+          "message": "Dishwasher warranty expires in 30 days. Test all cycles and features.",
+          "sent": true,
+          "sent_date": "2025-02-08T08:00:00Z"
+        },
+        {
+          "alert_id": "alert_war_20230310_001_7d",
+          "alert_date": "2025-03-03",
+          "alert_type": "7_day_warning",
+          "priority": "HIGH",
+          "message": "Dishwasher warranty expires in 7 days. Report any issues immediately.",
+          "sent": false
+        }
+      ],
+      "claims": [],
+      "notes": "No issues to date. Runs quietly and efficiently. Should test all cycles before warranty expires.",
+      "last_updated": "2025-02-08T08:00:00Z"
+    },
+    {
+      "warranty_id": "war_20220815_001",
+      "product_name": "KitchenAid Stand Mixer",
+      "product_category": "Appliances/Kitchen",
+      "manufacturer": "KitchenAid",
+      "model_number": "KSM150PS",
+      "serial_number": "KA876543",
+      "purchase_date": "2022-08-15",
+      "purchase_price": "$379.99",
+      "vendor": "Williams Sonoma",
+      "warranty_type": "manufacturer",
+      "warranty_duration": "1_year",
+      "warranty_start": "2022-08-15",
+      "warranty_end": "2023-08-15",
+      "coverage_details": "1-year hassle-free replacement warranty. Covers defects in materials and workmanship.",
+      "exclusions": "Damage caused by accident, misuse, or normal wear",
+      "registration_required": false,
+      "registration_completed": false,
+      "registration_date": null,
+      "registration_url": "https://kitchenaid.com/warranty",
+      "claim_process": "Call 1-800-541-6390 or visit service center. Proof of purchase required.",
+      "claim_contact": "1-800-541-6390",
+      "document_path": "/Documents/Warranties/Appliances/20220815_warranty_kitchenaid_mixer.pdf",
+      "receipt_path": "/Documents/Archive/2022/Financial/Receipts/Appliances/20220815_receipt_williams_sonoma_mixer_379.pdf",
+      "manual_path": "/Documents/Reference/Manuals/kitchenaid_ksm150ps_manual.pdf",
+      "status": "expired",
+      "alerts": [],
+      "claims": [],
+      "notes": "Warranty expired. Mixer still working perfectly. Can be removed from active warranty database.",
+      "last_updated": "2023-09-01T10:00:00Z"
+    }
+  ],
+  "database_metadata": {
+    "database_version": "1.0",
+    "created_date": "2025-01-15T10:00:00Z",
+    "last_updated": "2025-02-08T08:00:00Z",
+    "total_warranties": 4,
+    "active_warranties": 3,
+    "expired_warranties": 1,
+    "expiring_soon": 1,
+    "claims_filed": 1,
+    "claims_resolved": 1
+  },
+  "warranty_categories": {
+    "Electronics": {
+      "TV": 1,
+      "Computer": 1
+    },
+    "Appliances": {
+      "Kitchen": 2
+    }
+  },
+  "alert_settings": {
+    "30_day_alert": true,
+    "7_day_alert": true,
+    "1_day_alert": true,
+    "alert_method": "system_notification"
+  }
+}

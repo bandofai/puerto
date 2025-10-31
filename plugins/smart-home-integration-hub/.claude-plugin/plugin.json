@@ -1,0 +1,19 @@
+{
+  "name": "smart-home-integration-hub",
+  "version": "1.0.0",
+  "description": "Comprehensive smart home device coordination, automation, energy monitoring, and multi-platform integration",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/automation-builder.md",
+    "./agents/device-coordinator.md",
+    "./agents/energy-monitor.md",
+    "./agents/integration-helper.md"
+  ],
+  "skills": [
+    "./skills/energy-management/SKILL.md",
+    "./skills/smart-home-automation/SKILL.md"
+  ],
+  "license": "MIT"
+}

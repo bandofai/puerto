@@ -1,0 +1,477 @@
+{
+  "version": "1.0",
+  "description": "8-week moving timeline template with milestone tracking",
+  "created": "2025-10-23T00:00:00Z",
+  "moving_date": null,
+  "current_address": {
+    "street": "",
+    "city": "",
+    "state": "",
+    "zip": "",
+    "move_out_date": null
+  },
+  "new_address": {
+    "street": "",
+    "city": "",
+    "state": "",
+    "zip": "",
+    "move_in_date": null
+  },
+  "weeks": {
+    "week_1": {
+      "week_number": 1,
+      "start_date": null,
+      "end_date": null,
+      "phase": "Planning & Research",
+      "tasks": [
+        {
+          "id": "budget",
+          "task": "Create moving budget",
+          "priority": "high",
+          "completed": false,
+          "notes": "Include moving company, supplies, deposits, travel costs"
+        },
+        {
+          "id": "inventory",
+          "task": "Create preliminary inventory of belongings",
+          "priority": "high",
+          "completed": false,
+          "notes": "Walk through each room and estimate item counts"
+        },
+        {
+          "id": "research_movers",
+          "task": "Research and compare moving companies",
+          "priority": "high",
+          "completed": false,
+          "notes": "Get at least 3 quotes, check licenses and insurance"
+        },
+        {
+          "id": "dates",
+          "task": "Confirm moving date and lease/closing dates",
+          "priority": "critical",
+          "completed": false,
+          "notes": "Verify all dates with landlord/realtor/mortgage company"
+        },
+        {
+          "id": "school",
+          "task": "Research schools/daycares in new area",
+          "priority": "medium",
+          "completed": false,
+          "notes": "If applicable - contact schools for enrollment requirements"
+        }
+      ],
+      "completed_tasks": 0,
+      "total_tasks": 5
+    },
+    "week_2": {
+      "week_number": 2,
+      "start_date": null,
+      "end_date": null,
+      "phase": "Planning & Research",
+      "tasks": [
+        {
+          "id": "hire_movers",
+          "task": "Book moving company or reserve truck",
+          "priority": "critical",
+          "completed": false,
+          "notes": "Get written contract, confirm insurance coverage"
+        },
+        {
+          "id": "supplies",
+          "task": "Order packing supplies (boxes, tape, bubble wrap)",
+          "priority": "high",
+          "completed": false,
+          "notes": "Estimate 1-2 boxes per room per person, extra tape"
+        },
+        {
+          "id": "floor_plan",
+          "task": "Measure rooms and plan furniture placement",
+          "priority": "medium",
+          "completed": false,
+          "notes": "Ensure furniture will fit, plan layout before moving day"
+        },
+        {
+          "id": "insurance",
+          "task": "Review moving insurance options",
+          "priority": "medium",
+          "completed": false,
+          "notes": "Consider additional coverage for valuables"
+        },
+        {
+          "id": "donate",
+          "task": "Identify items to donate or sell",
+          "priority": "medium",
+          "completed": false,
+          "notes": "Less to pack means lower moving costs"
+        }
+      ],
+      "completed_tasks": 0,
+      "total_tasks": 5
+    },
+    "week_3": {
+      "week_number": 3,
+      "start_date": null,
+      "end_date": null,
+      "phase": "Preparation & Organization",
+      "tasks": [
+        {
+          "id": "declutter",
+          "task": "Begin decluttering and sorting belongings",
+          "priority": "high",
+          "completed": false,
+          "notes": "Sort into keep, donate, sell, discard piles"
+        },
+        {
+          "id": "utilities_research",
+          "task": "Research utility providers at new location",
+          "priority": "high",
+          "completed": false,
+          "notes": "Electric, gas, water, internet, trash service"
+        },
+        {
+          "id": "medical",
+          "task": "Request medical/dental records transfer",
+          "priority": "medium",
+          "completed": false,
+          "notes": "Get copies of prescriptions, find new providers"
+        },
+        {
+          "id": "pack_storage",
+          "task": "Pack items going into storage",
+          "priority": "medium",
+          "completed": false,
+          "notes": "Off-season items, rarely used belongings"
+        },
+        {
+          "id": "change_forms",
+          "task": "Collect address change forms",
+          "priority": "low",
+          "completed": false,
+          "notes": "From USPS, DMV, insurance, banks"
+        }
+      ],
+      "completed_tasks": 0,
+      "total_tasks": 5
+    },
+    "week_4": {
+      "week_number": 4,
+      "start_date": null,
+      "end_date": null,
+      "phase": "Early Packing",
+      "tasks": [
+        {
+          "id": "pack_nonessential",
+          "task": "Pack non-essential items (decorations, books, off-season)",
+          "priority": "high",
+          "completed": false,
+          "notes": "Start with items you won't need in next 4 weeks"
+        },
+        {
+          "id": "label_system",
+          "task": "Establish box labeling and numbering system",
+          "priority": "high",
+          "completed": false,
+          "notes": "Label on top and sides, include destination room and contents"
+        },
+        {
+          "id": "utilities_schedule",
+          "task": "Schedule utility disconnection at old address",
+          "priority": "high",
+          "completed": false,
+          "notes": "Schedule for day AFTER move-out"
+        },
+        {
+          "id": "utilities_connect",
+          "task": "Schedule utility connection at new address",
+          "priority": "high",
+          "completed": false,
+          "notes": "Schedule for day BEFORE or day OF move-in"
+        },
+        {
+          "id": "kids_pets",
+          "task": "Arrange childcare/pet care for moving day",
+          "priority": "medium",
+          "completed": false,
+          "notes": "Reduce stress on moving day"
+        }
+      ],
+      "completed_tasks": 0,
+      "total_tasks": 5
+    },
+    "week_5": {
+      "week_number": 5,
+      "start_date": null,
+      "end_date": null,
+      "phase": "Active Packing",
+      "tasks": [
+        {
+          "id": "address_notify",
+          "task": "Submit USPS address change",
+          "priority": "critical",
+          "completed": false,
+          "notes": "Do this 2 weeks before move, costs $1.10 for verification"
+        },
+        {
+          "id": "banks",
+          "task": "Update address with banks and financial institutions",
+          "priority": "high",
+          "completed": false,
+          "notes": "All banks, credit cards, investment accounts, loan servicers"
+        },
+        {
+          "id": "subscriptions",
+          "task": "Update or cancel subscriptions and services",
+          "priority": "medium",
+          "completed": false,
+          "notes": "Amazon, streaming, magazines, meal kits, etc."
+        },
+        {
+          "id": "pack_rooms",
+          "task": "Pack remaining rooms (keep essentials accessible)",
+          "priority": "high",
+          "completed": false,
+          "notes": "Living room, bedrooms, dining room - leave daily essentials"
+        },
+        {
+          "id": "clean_plan",
+          "task": "Plan cleaning schedule for old residence",
+          "priority": "medium",
+          "completed": false,
+          "notes": "Consider hiring cleaners, schedule for after move-out"
+        }
+      ],
+      "completed_tasks": 0,
+      "total_tasks": 5
+    },
+    "week_6": {
+      "week_number": 6,
+      "start_date": null,
+      "end_date": null,
+      "phase": "Final Packing",
+      "tasks": [
+        {
+          "id": "pack_kitchen",
+          "task": "Pack kitchen (leave essentials for final week)",
+          "priority": "high",
+          "completed": false,
+          "notes": "Keep one set of dishes, utensils, basic cookware"
+        },
+        {
+          "id": "pack_bathroom",
+          "task": "Pack bathrooms (leave toiletries for final days)",
+          "priority": "high",
+          "completed": false,
+          "notes": "Keep daily toiletries, medications, first aid kit"
+        },
+        {
+          "id": "electronics",
+          "task": "Pack and label all electronics with cables",
+          "priority": "high",
+          "completed": false,
+          "notes": "Take photos of cable connections, use original boxes if available"
+        },
+        {
+          "id": "documents",
+          "task": "Prepare folder of important documents to carry",
+          "priority": "critical",
+          "completed": false,
+          "notes": "IDs, passports, birth certificates, insurance, lease/deed"
+        },
+        {
+          "id": "confirm_movers",
+          "task": "Confirm moving company details and timing",
+          "priority": "critical",
+          "completed": false,
+          "notes": "Call to confirm date, time, crew size, payment method"
+        }
+      ],
+      "completed_tasks": 0,
+      "total_tasks": 5
+    },
+    "week_7": {
+      "week_number": 7,
+      "start_date": null,
+      "end_date": null,
+      "phase": "Pre-Move Preparation",
+      "tasks": [
+        {
+          "id": "essentials_box",
+          "task": "Pack first-day essentials box",
+          "priority": "critical",
+          "completed": false,
+          "notes": "Toiletries, change of clothes, phone chargers, snacks, toilet paper"
+        },
+        {
+          "id": "final_pack",
+          "task": "Pack final remaining items",
+          "priority": "high",
+          "completed": false,
+          "notes": "Everything except absolute essentials for last 24 hours"
+        },
+        {
+          "id": "appliances",
+          "task": "Clean and prepare appliances for moving",
+          "priority": "medium",
+          "completed": false,
+          "notes": "Oven, refrigerator, washer, dryer - follow manufacturer instructions"
+        },
+        {
+          "id": "defrost",
+          "task": "Defrost freezer and refrigerator",
+          "priority": "high",
+          "completed": false,
+          "notes": "Do 24 hours before move, towels underneath, doors propped open"
+        },
+        {
+          "id": "inventory_final",
+          "task": "Complete final inventory checklist",
+          "priority": "high",
+          "completed": false,
+          "notes": "Box count, high-value items, special handling requirements"
+        },
+        {
+          "id": "parking",
+          "task": "Reserve parking for moving truck",
+          "priority": "medium",
+          "completed": false,
+          "notes": "Check city requirements, get permit if needed"
+        }
+      ],
+      "completed_tasks": 0,
+      "total_tasks": 6
+    },
+    "week_8": {
+      "week_number": 8,
+      "start_date": null,
+      "end_date": null,
+      "phase": "Moving Day & Settling",
+      "tasks": [
+        {
+          "id": "walkthrough_old",
+          "task": "Final walkthrough of old residence",
+          "priority": "critical",
+          "completed": false,
+          "notes": "Check every room, closet, cabinet, garage, shed"
+        },
+        {
+          "id": "keys",
+          "task": "Return keys and garage openers",
+          "priority": "critical",
+          "completed": false,
+          "notes": "Get receipt for returned keys, final meter readings"
+        },
+        {
+          "id": "direct_movers",
+          "task": "Supervise movers and check inventory",
+          "priority": "critical",
+          "completed": false,
+          "notes": "Check items as loaded, note any pre-existing damage"
+        },
+        {
+          "id": "walkthrough_new",
+          "task": "Inspect new residence before unloading",
+          "priority": "critical",
+          "completed": false,
+          "notes": "Document any existing damage, test utilities"
+        },
+        {
+          "id": "unpack_essentials",
+          "task": "Unpack essentials and make beds",
+          "priority": "high",
+          "completed": false,
+          "notes": "Beds, toiletries, kitchen basics - make livable for first night"
+        },
+        {
+          "id": "utilities_verify",
+          "task": "Verify all utilities are functioning",
+          "priority": "high",
+          "completed": false,
+          "notes": "Electricity, water, gas, internet - report issues immediately"
+        }
+      ],
+      "completed_tasks": 0,
+      "total_tasks": 6
+    }
+  },
+  "milestones": [
+    {
+      "id": "planning_complete",
+      "name": "Planning & Research Complete",
+      "week": 2,
+      "completed": false,
+      "completed_date": null,
+      "description": "Mover selected, budget finalized, major decisions made",
+      "criteria": [
+        "Moving company booked",
+        "Budget created and approved",
+        "Timeline confirmed",
+        "Preliminary inventory completed"
+      ]
+    },
+    {
+      "id": "packing_started",
+      "name": "Packing Commenced",
+      "week": 4,
+      "completed": false,
+      "completed_date": null,
+      "description": "Non-essentials packed, supplies acquired",
+      "criteria": [
+        "Packing supplies acquired",
+        "Labeling system established",
+        "First boxes packed",
+        "Decluttering in progress"
+      ]
+    },
+    {
+      "id": "utilities_scheduled",
+      "name": "Utilities Scheduled",
+      "week": 5,
+      "completed": false,
+      "completed_date": null,
+      "description": "All utility transfers and installations scheduled",
+      "criteria": [
+        "Disconnect dates confirmed",
+        "Connection dates confirmed",
+        "All critical utilities scheduled",
+        "USPS forwarding submitted"
+      ]
+    },
+    {
+      "id": "packing_complete",
+      "name": "Packing Complete",
+      "week": 7,
+      "completed": false,
+      "completed_date": null,
+      "description": "All boxes packed and labeled, ready for movers",
+      "criteria": [
+        "All rooms packed",
+        "All boxes labeled and numbered",
+        "Essentials box prepared",
+        "Final inventory completed"
+      ]
+    },
+    {
+      "id": "move_complete",
+      "name": "Move Complete",
+      "week": 8,
+      "completed": false,
+      "completed_date": null,
+      "description": "All items moved to new location",
+      "criteria": [
+        "Old residence vacated",
+        "All items delivered",
+        "New residence made livable",
+        "Utilities functioning"
+      ]
+    }
+  ],
+  "notes": "This is a template. Customize tasks and dates based on your specific moving situation.",
+  "usage_instructions": [
+    "Set your moving date using the moving-timeline-coordinator agent",
+    "The agent will automatically calculate week start/end dates",
+    "Mark tasks as completed as you progress",
+    "Add custom tasks specific to your move",
+    "Adjust priorities based on your circumstances",
+    "Track milestone completion for motivation"
+  ]
+}

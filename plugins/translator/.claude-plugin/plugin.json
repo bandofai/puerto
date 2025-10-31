@@ -1,0 +1,18 @@
+{
+  "name": "translator",
+  "version": "1.0.0",
+  "description": "Multi-language translation specialist for content translation, localization adaptation, cultural sensitivity, and terminology consistency.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/content-translator.md",
+    "./agents/cultural-adapter.md",
+    "./agents/quality-reviewer.md",
+    "./agents/terminology-manager.md"
+  ],
+  "skills": [
+    "./skills/translation-practices/SKILL.md"
+  ],
+  "license": "MIT"
+}

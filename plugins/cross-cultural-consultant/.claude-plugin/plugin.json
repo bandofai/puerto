@@ -1,0 +1,20 @@
+{
+  "name": "cross-cultural-consultant",
+  "version": "1.0.0",
+  "description": "Cross-cultural communication specialist for cultural assessment, communication guidelines, and team collaboration",
+  "type": "plugin",
+  "agents": [
+    "./agents/cultural-assessor.md",
+    "./agents/communication-advisor.md",
+    "./agents/training-developer.md",
+    "./agents/conflict-mediator.md"
+  ],
+  "skills": [
+    "./skills/cultural-assessment.md",
+    "./skills/communication-strategies.md",
+    "./skills/conflict-resolution.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "version": "1.0",
+  "created": "2025-10-23T10:00:00Z",
+  "last_updated": "2025-10-23T10:00:00Z",
+  "upcoming_renewals": [
+    {
+      "type": "renewal",
+      "subscription_id": "example-uuid-5",
+      "subscription_name": "Unused Fitness App",
+      "date": "2025-11-01",
+      "days_until": 9,
+      "cost": 9.99,
+      "billing_cycle": "monthly",
+      "auto_renew": true,
+      "category": "fitness",
+      "notes": "Consider canceling - not used in 250 days"
+    },
+    {
+      "type": "renewal",
+      "subscription_id": "example-uuid-4",
+      "subscription_name": "The New York Times Digital",
+      "date": "2025-11-10",
+      "days_until": 18,
+      "cost": 17.00,
+      "billing_cycle": "monthly",
+      "auto_renew": true,
+      "category": "news-media",
+      "notes": "Weekly usage - good value"
+    },
+    {
+      "type": "renewal",
+      "subscription_id": "example-uuid-2",
+      "subscription_name": "Spotify Premium",
+      "date": "2025-11-15",
+      "days_until": 23,
+      "cost": 10.99,
+      "billing_cycle": "monthly",
+      "auto_renew": true,
+      "category": "streaming-music",
+      "notes": "Daily usage - excellent value"
+    },
+    {
+      "type": "renewal",
+      "subscription_id": "example-uuid-1",
+      "subscription_name": "Netflix Premium",
+      "date": "2025-11-23",
+      "days_until": 31,
+      "cost": 15.99,
+      "billing_cycle": "monthly",
+      "auto_renew": true,
+      "category": "streaming-video",
+      "notes": "Daily usage - family plan"
+    }
+  ],
+  "trial_endings": [
+    {
+      "type": "trial_end",
+      "subscription_id": "example-uuid-3",
+      "subscription_name": "Adobe Creative Cloud",
+      "date": "2025-11-05",
+      "days_until": 13,
+      "cost": 54.99,
+      "billing_cycle": "monthly",
+      "category": "software-saas",
+      "action_required": "Cancel or accept charge",
+      "warning": "Will charge $54.99/month starting 2025-11-05",
+      "cancellation_url": "https://adobe.com",
+      "alternatives": [
+        "Affinity Suite - $169.99 one-time",
+        "Canva Pro - $12.99/month"
+      ],
+      "notes": "7-day trial, weekly usage so far"
+    }
+  ],
+  "cancellation_deadlines": [
+    {
+      "type": "cancellation_deadline",
+      "subscription_id": "example-uuid-3",
+      "subscription_name": "Adobe Creative Cloud",
+      "date": "2025-11-04",
+      "days_until": 12,
+      "action_required": "Last day to cancel trial without charge",
+      "warning": "Cancel by 2025-11-04 to avoid $54.99/month charge",
+      "cancellation_url": "https://adobe.com",
+      "notes": "Must cancel 24 hours before trial ends"
+    },
+    {
+      "type": "cancellation_deadline",
+      "subscription_id": "example-uuid-5",
+      "subscription_name": "Unused Fitness App",
+      "date": "2025-10-31",
+      "days_until": 8,
+      "action_required": "Last day to cancel before next billing",
+      "warning": "Cancel by 2025-10-31 to avoid $9.99 charge on 2025-11-01",
+      "cancellation_url": "https://fitnessapp.com",
+      "notes": "Not used in 250 days - strong cancel candidate"
+    }
+  ],
+  "price_changes": [
+    {
+      "type": "price_increase",
+      "subscription_id": "example-uuid-1",
+      "subscription_name": "Netflix Premium",
+      "old_price": 13.99,
+      "new_price": 15.99,
+      "increase_amount": 2.00,
+      "increase_percentage": 14.3,
+      "effective_date": "2025-01-01",
+      "annual_impact": 24.00,
+      "status": "already_applied",
+      "notes": "Price increased from $13.99 to $15.99 in January 2025"
+    }
+  ],
+  "calendar_view": {
+    "this_week": [
+      {
+        "date": "2025-10-31",
+        "events": [
+          {
+            "type": "cancellation_deadline",
+            "subscription": "Unused Fitness App",
+            "action": "Last day to cancel before next billing"
+          }
+        ]
+      }
+    ],
+    "next_week": [
+      {
+        "date": "2025-11-01",
+        "events": [
+          {
+            "type": "renewal",
+            "subscription": "Unused Fitness App",
+            "cost": 9.99,
+            "auto_renew": true
+          }
+        ]
+      },
+      {
+        "date": "2025-11-04",
+        "events": [
+          {
+            "type": "cancellation_deadline",
+            "subscription": "Adobe Creative Cloud",
+            "action": "Last day to cancel trial"
+          }
+        ]
+      },
+      {
+        "date": "2025-11-05",
+        "events": [
+          {
+            "type": "trial_end",
+            "subscription": "Adobe Creative Cloud",
+            "cost": 54.99,
+            "warning": "Will charge if not cancelled"
+          }
+        ]
+      }
+    ],
+    "this_month": [
+      {
+        "date": "2025-11-10",
+        "events": [
+          {
+            "type": "renewal",
+            "subscription": "The New York Times Digital",
+            "cost": 17.00
+          }
+        ]
+      },
+      {
+        "date": "2025-11-15",
+        "events": [
+          {
+            "type": "renewal",
+            "subscription": "Spotify Premium",
+            "cost": 10.99
+          }
+        ]
+      },
+      {
+        "date": "2025-11-23",
+        "events": [
+          {
+            "type": "renewal",
+            "subscription": "Netflix Premium",
+            "cost": 15.99
+          }
+        ]
+      }
+    ]
+  },
+  "summary": {
+    "total_upcoming_renewals": 4,
+    "total_renewal_cost_monthly": 53.97,
+    "total_trial_endings": 1,
+    "urgent_actions": 2,
+    "cancellation_deadlines_this_week": 1,
+    "renewals_this_week": 1,
+    "renewals_this_month": 4,
+    "estimated_monthly_spend_after_trials": 108.96
+  },
+  "urgent_alerts": [
+    {
+      "priority": "CRITICAL",
+      "subscription": "Unused Fitness App",
+      "message": "Cancellation deadline in 8 days (2025-10-31)",
+      "action": "Cancel to avoid $9.99 charge",
+      "days_until": 8
+    },
+    {
+      "priority": "HIGH",
+      "subscription": "Adobe Creative Cloud",
+      "message": "Trial ends in 13 days (2025-11-05)",
+      "action": "Decide to keep or cancel by 2025-11-04",
+      "days_until": 13,
+      "cost_if_kept": 54.99
+    }
+  ]
+}

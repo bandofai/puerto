@@ -1,0 +1,21 @@
+{
+  "name": "bill-optimization-analyzer",
+  "version": "1.0.0",
+  "description": "Utility and service bill optimization with plan analysis, provider comparison, savings calculation, and negotiation assistance for reducing recurring costs.",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "bills",
+    "optimization",
+    "savings",
+    "utilities",
+    "internet",
+    "phone",
+    "insurance",
+    "subscription",
+    "negotiation",
+    "cost-reduction"
+  ],
+  "license": "MIT"
+}

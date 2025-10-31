@@ -1,0 +1,371 @@
+{
+  "contacts": {
+    "example_contact_1": {
+      "id": "example_contact_1",
+      "name": "Jane Smith",
+      "company": "Tech Corp",
+      "title": "Senior Engineering Manager",
+      "industry": "Technology",
+      "location": "San Francisco, CA",
+
+      "contact_information": {
+        "email": "jane.smith@techcorp.com",
+        "linkedin": "https://linkedin.com/in/janesmith",
+        "phone": "+1-555-0123",
+        "twitter": "@janesmith"
+      },
+
+      "relationship": {
+        "strength": "moderate",
+        "met_through": "Tech Conference 2024",
+        "context": "Hiring manager for my target role at Tech Corp. Strong background in Python and team leadership.",
+        "tags": ["hiring_manager", "potential_mentor", "tech_lead"]
+      },
+
+      "interactions": [
+        {
+          "date": "2024-10-15T14:00:00",
+          "type": "met",
+          "medium": "in-person",
+          "summary": "Met at TechConf booth. Discussed their team's Python migration project and my ML background.",
+          "duration": "15min",
+          "action_items": ["Send resume", "Connect on LinkedIn"],
+          "followup_needed": true
+        },
+        {
+          "date": "2024-10-17T10:00:00",
+          "type": "linkedin",
+          "medium": "linkedin",
+          "summary": "Connected on LinkedIn with personalized note referencing our conference conversation.",
+          "duration": "",
+          "action_items": [],
+          "followup_needed": false
+        },
+        {
+          "date": "2024-11-01T15:00:00",
+          "type": "coffee",
+          "medium": "video",
+          "summary": "30-min coffee chat. She's impressed with my portfolio. Mentioned open Senior role on her team.",
+          "duration": "30min",
+          "action_items": ["Apply to Senior Engineer role", "Send thank you note", "Follow up in 2 weeks"],
+          "followup_needed": true
+        }
+      ],
+
+      "timeline": {
+        "first_contact": "2024-10-15T14:00:00",
+        "last_interaction": "2024-11-01T15:00:00",
+        "next_followup": "2024-11-15"
+      },
+
+      "career_relevance": {
+        "can_help_with": [
+          "job_opportunities",
+          "career_advice",
+          "technical_mentorship",
+          "company_culture_insights",
+          "interview_preparation"
+        ],
+        "i_can_help_with": [
+          "python_expertise",
+          "machine_learning",
+          "open_source_contributions"
+        ]
+      },
+
+      "notes": {
+        "general": "Very approachable and genuinely interested in helping people grow. Values clean code and team collaboration.",
+        "conversation_topics": [
+          "Python best practices",
+          "Team leadership challenges",
+          "Work-life balance in tech"
+        ],
+        "personal_details": {
+          "hobbies": ["hiking", "photography"],
+          "family": "Two kids, enjoys talking about parenting in tech",
+          "background": "Transitioned from IC to management 3 years ago"
+        }
+      }
+    },
+
+    "example_contact_2": {
+      "id": "example_contact_2",
+      "name": "Bob Johnson",
+      "company": "Startup Inc",
+      "title": "CTO",
+      "industry": "FinTech",
+      "location": "New York, NY",
+
+      "contact_information": {
+        "email": "bob@startupinc.com",
+        "linkedin": "https://linkedin.com/in/bobjohnson",
+        "phone": "",
+        "twitter": "@bob_codes"
+      },
+
+      "relationship": {
+        "strength": "weak",
+        "met_through": "LinkedIn connection request",
+        "context": "CTO at fast-growing fintech startup. Potential mentor for startup career path.",
+        "tags": ["mentor", "startup", "cto"]
+      },
+
+      "interactions": [
+        {
+          "date": "2024-10-20T09:00:00",
+          "type": "linkedin",
+          "medium": "linkedin",
+          "summary": "Connection accepted. Sent intro message about shared interest in fintech.",
+          "duration": "",
+          "action_items": ["Request informational interview in 2-3 weeks"],
+          "followup_needed": true
+        }
+      ],
+
+      "timeline": {
+        "first_contact": "2024-10-20T09:00:00",
+        "last_interaction": "2024-10-20T09:00:00",
+        "next_followup": "2024-11-10"
+      },
+
+      "career_relevance": {
+        "can_help_with": [
+          "startup_insights",
+          "technical_leadership",
+          "scaling_challenges",
+          "equity_negotiation"
+        ],
+        "i_can_help_with": [
+          "backend_engineering",
+          "system_architecture"
+        ]
+      },
+
+      "notes": {
+        "general": "Active on Twitter sharing startup lessons. Posts about engineering culture and scaling teams.",
+        "conversation_topics": [
+          "Startup vs big tech trade-offs",
+          "Building engineering teams",
+          "FinTech regulatory challenges"
+        ],
+        "personal_details": {
+          "hobbies": ["marathon running"],
+          "family": "",
+          "background": "Former Facebook engineer, founded two startups"
+        }
+      }
+    }
+  },
+
+  "metadata": {
+    "created": "2025-01-22T10:00:00",
+    "last_updated": "2025-01-22T10:00:00",
+    "version": "1.0",
+    "total_contacts": 2
+  },
+
+  "statistics": {
+    "by_relationship_strength": {
+      "new": 0,
+      "weak": 1,
+      "moderate": 1,
+      "strong": 0,
+      "champion": 0
+    },
+    "by_industry": {
+      "Technology": 1,
+      "FinTech": 1
+    },
+    "by_tag": {
+      "hiring_manager": 1,
+      "mentor": 2,
+      "startup": 1,
+      "tech_lead": 1,
+      "cto": 1
+    }
+  },
+
+  "templates": {
+    "contact_template": {
+      "id": "unique_id",
+      "name": "Full Name",
+      "company": "Company Name",
+      "title": "Job Title",
+      "industry": "Industry",
+      "location": "City, State/Country",
+
+      "contact_information": {
+        "email": "email@example.com",
+        "linkedin": "https://linkedin.com/in/username",
+        "phone": "+1-555-0000",
+        "twitter": "@username"
+      },
+
+      "relationship": {
+        "strength": "new|weak|moderate|strong|champion",
+        "met_through": "How you met (conference, LinkedIn, referral, etc.)",
+        "context": "Why this person matters to your career",
+        "tags": ["tag1", "tag2", "tag3"]
+      },
+
+      "interactions": [],
+
+      "timeline": {
+        "first_contact": "ISO timestamp",
+        "last_interaction": "ISO timestamp",
+        "next_followup": "YYYY-MM-DD"
+      },
+
+      "career_relevance": {
+        "can_help_with": [
+          "List of ways they can help you"
+        ],
+        "i_can_help_with": [
+          "List of value you can provide them"
+        ]
+      },
+
+      "notes": {
+        "general": "General notes about the person",
+        "conversation_topics": [
+          "Topics that resonate with them"
+        ],
+        "personal_details": {
+          "hobbies": [],
+          "family": "",
+          "background": ""
+        }
+      }
+    },
+
+    "interaction_template": {
+      "date": "ISO timestamp",
+      "type": "met|call|email|linkedin|coffee|lunch|event",
+      "medium": "in-person|video|phone|email|linkedin|twitter",
+      "summary": "What was discussed, key points",
+      "duration": "15min|30min|1hr|etc.",
+      "action_items": [
+        "List of follow-up actions needed"
+      ],
+      "followup_needed": true
+    }
+  },
+
+  "tags_reference": {
+    "career_stage": [
+      "peer",
+      "mentor",
+      "mentee",
+      "hiring_manager",
+      "recruiter",
+      "executive"
+    ],
+    "value_type": [
+      "job_opportunities",
+      "career_advice",
+      "technical_expertise",
+      "industry_insights",
+      "referrals",
+      "collaboration"
+    ],
+    "company_type": [
+      "faang",
+      "startup",
+      "enterprise",
+      "agency",
+      "nonprofit"
+    ],
+    "relationship_goal": [
+      "job_search",
+      "learning",
+      "collaboration",
+      "friendship",
+      "business"
+    ]
+  },
+
+  "relationship_strength_guide": {
+    "new": {
+      "description": "Just met, 0-1 interactions",
+      "followup_interval_days": 3,
+      "recommended_actions": [
+        "Send thank you or connection message within 24 hours",
+        "Find common ground or shared interests",
+        "Provide value (share relevant article, resource)",
+        "Request informational interview if appropriate"
+      ]
+    },
+    "weak": {
+      "description": "1-3 interactions, getting to know each other",
+      "followup_interval_days": 30,
+      "recommended_actions": [
+        "Share relevant content periodically",
+        "Comment on their LinkedIn posts",
+        "Schedule coffee chat or call",
+        "Make a helpful introduction if possible"
+      ]
+    },
+    "moderate": {
+      "description": "3-6 interactions, established relationship",
+      "followup_interval_days": 60,
+      "recommended_actions": [
+        "Regular check-ins on career progress",
+        "Seek specific advice or feedback",
+        "Offer help with their projects or goals",
+        "Attend events or meetups together"
+      ]
+    },
+    "strong": {
+      "description": "6-10 interactions, trusted relationship",
+      "followup_interval_days": 90,
+      "recommended_actions": [
+        "Quarterly catch-up calls or meetings",
+        "Share significant career updates",
+        "Collaborate on projects or content",
+        "Make valuable introductions for them"
+      ]
+    },
+    "champion": {
+      "description": "10+ interactions, advocates for you",
+      "followup_interval_days": 30,
+      "recommended_actions": [
+        "Monthly touchpoints (very important relationships)",
+        "Seek advice on major career decisions",
+        "Keep them updated on wins and progress",
+        "Find ways to support their success",
+        "Express gratitude regularly"
+      ]
+    }
+  },
+
+  "usage_guide": {
+    "adding_contacts": "Use the contact_template structure to add new people to your network. Assign unique IDs.",
+    "logging_interactions": "Add interaction objects to the interactions array. Use ISO timestamps for dates.",
+    "relationship_progression": "Update relationship strength as interaction count grows. System will auto-suggest based on count.",
+    "followup_tracking": "System calculates next_followup based on relationship strength. Override manually if needed.",
+    "tags": "Use consistent tags for easy filtering. Reference tags_reference for standard options.",
+    "searching": "Filter by company, industry, tags, relationship strength, or can_help_with fields.",
+    "exporting": "This JSON can be exported to CSV or imported into CRM tools."
+  },
+
+  "networking_goals": {
+    "weekly": {
+      "new_connections": 2,
+      "followups_completed": 5,
+      "value_provided": 3,
+      "events_attended": 1
+    },
+    "monthly": {
+      "new_connections": 10,
+      "informational_interviews": 2,
+      "relationship_progressions": 2,
+      "speaking_or_content": 1
+    },
+    "quarterly": {
+      "network_growth": 30,
+      "strong_relationships": 2,
+      "champions_identified": 1,
+      "value_exchanges": 20
+    }
+  }
+}

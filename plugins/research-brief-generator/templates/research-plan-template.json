@@ -1,0 +1,329 @@
+{
+  "research_plan_id": "research-YYYYMMDD-HHMMSS",
+  "created_date": "ISO-8601 timestamp",
+  "research_type": "product-comparison|market-research|technology-evaluation|vendor-selection|strategic-analysis|due-diligence|feasibility-study",
+
+  "objective": {
+    "primary_goal": "Clear statement of what decision needs to be made",
+    "key_questions": [
+      "What are the viable alternatives?",
+      "What criteria distinguish these alternatives?",
+      "Which alternative best meets our needs?"
+    ],
+    "decision_maker": "Individual or group who will use this research",
+    "decision_context": "Why this decision is being made now",
+    "timeline": "When decision is needed by"
+  },
+
+  "scope": {
+    "alternatives": [
+      {
+        "id": "alt1",
+        "name": "Alternative 1 name",
+        "category": "Product/service category",
+        "initial_notes": "Why this is being considered",
+        "must_have_requirements": [
+          "Requirement 1 that this must meet",
+          "Requirement 2"
+        ]
+      },
+      {
+        "id": "alt2",
+        "name": "Alternative 2 name",
+        "category": "Product/service category",
+        "initial_notes": "Why this is being considered",
+        "must_have_requirements": []
+      }
+    ],
+    "in_scope": [
+      "What will be researched and evaluated",
+      "Boundaries of the research"
+    ],
+    "out_of_scope": [
+      "What is explicitly excluded from research",
+      "Topics that won't be covered"
+    ],
+    "constraints": [
+      "Budget limit: $X",
+      "Timeline: Must decide by date",
+      "Other limitations"
+    ]
+  },
+
+  "methodology": {
+    "primary_framework": "weighted-scoring|elimination|swot|pestle|porters-five-forces|cost-benefit",
+    "framework_rationale": "Why this framework was chosen",
+    "complementary_frameworks": [
+      "SWOT analysis for strategic view",
+      "Cost-benefit analysis for financial assessment"
+    ],
+    "analysis_methods": [
+      "Feature comparison matrix",
+      "Pros/cons analysis",
+      "Weighted scoring",
+      "User review sentiment analysis"
+    ]
+  },
+
+  "sources": {
+    "strategy": "Multi-source triangulation using official, expert, and user perspectives",
+    "by_alternative": {
+      "alt1": {
+        "official_sources": [
+          "https://example.com - Official website",
+          "https://docs.example.com - Documentation",
+          "https://example.com/pricing - Pricing page"
+        ],
+        "review_sources": [
+          "https://g2.com/products/example - User reviews",
+          "https://techcrunch.com/... - Expert review"
+        ],
+        "technical_sources": [
+          "https://docs.example.com/api - API documentation",
+          "https://example.com/security - Security whitepapers"
+        ],
+        "pricing_sources": [
+          "https://example.com/pricing - Official pricing"
+        ]
+      },
+      "alt2": {
+        "official_sources": [],
+        "review_sources": [],
+        "technical_sources": [],
+        "pricing_sources": []
+      }
+    },
+    "general_sources": {
+      "industry_reports": [
+        "Gartner Magic Quadrant URL",
+        "Forrester Wave URL"
+      ],
+      "expert_analyses": [
+        "Industry expert blog posts",
+        "Technical review sites"
+      ],
+      "comparison_sites": [
+        "Comparison aggregator URLs"
+      ]
+    },
+    "source_quality_requirements": {
+      "minimum_credibility": "Tier 2 or higher (see research methodology skill)",
+      "currency": "Published within last 2 years for technology, 1 year preferred",
+      "diversity": "Multiple source types for each alternative"
+    }
+  },
+
+  "evaluation_criteria": [
+    {
+      "category": "Functionality & Features",
+      "weight": 0.30,
+      "criteria": [
+        {
+          "name": "Core feature set",
+          "weight": 0.15,
+          "weight_numeric": 0.15,
+          "description": "Essential features needed for primary use case",
+          "scale": "1-5 (1=Missing critical features, 5=Exceeds all needs)",
+          "type": "important",
+          "evaluation_method": "Feature comparison against requirements list"
+        },
+        {
+          "name": "Advanced capabilities",
+          "weight": 0.10,
+          "weight_numeric": 0.10,
+          "description": "Nice-to-have features for future use",
+          "scale": "1-5",
+          "type": "nice-to-have",
+          "evaluation_method": "Feature matrix comparison"
+        },
+        {
+          "name": "Integration capabilities",
+          "weight": 0.05,
+          "weight_numeric": 0.05,
+          "description": "Ability to integrate with existing systems",
+          "scale": "1-5",
+          "type": "important",
+          "evaluation_method": "API documentation review + user feedback"
+        }
+      ]
+    },
+    {
+      "category": "Usability & User Experience",
+      "weight": 0.20,
+      "criteria": [
+        {
+          "name": "Ease of use",
+          "weight": 0.12,
+          "weight_numeric": 0.12,
+          "description": "How easy it is for users to learn and use",
+          "scale": "1-5 (1=Very difficult, 5=Intuitive)",
+          "type": "important",
+          "evaluation_method": "User reviews analysis + expert reviews"
+        },
+        {
+          "name": "User interface quality",
+          "weight": 0.08,
+          "weight_numeric": 0.08,
+          "description": "UI design, aesthetics, modern vs dated",
+          "scale": "1-5",
+          "type": "nice-to-have",
+          "evaluation_method": "Demo/screenshots review + user feedback"
+        }
+      ]
+    },
+    {
+      "category": "Performance & Reliability",
+      "weight": 0.15,
+      "criteria": [
+        {
+          "name": "Performance",
+          "weight": 0.08,
+          "weight_numeric": 0.08,
+          "description": "Speed, response time, efficiency",
+          "scale": "1-5",
+          "type": "important",
+          "evaluation_method": "Technical specs + user reviews on performance"
+        },
+        {
+          "name": "Reliability & uptime",
+          "weight": 0.07,
+          "weight_numeric": 0.07,
+          "description": "System availability, SLA",
+          "scale": "1-5",
+          "type": "important",
+          "evaluation_method": "Official SLA + uptime statistics + user reports"
+        }
+      ]
+    },
+    {
+      "category": "Cost & Value",
+      "weight": 0.20,
+      "criteria": [
+        {
+          "name": "Total cost of ownership",
+          "weight": 0.15,
+          "weight_numeric": 0.15,
+          "description": "All costs: license, implementation, ongoing, hidden",
+          "scale": "1-5 (1=Very expensive for value, 5=Excellent value)",
+          "type": "critical",
+          "evaluation_method": "TCO calculation from pricing data"
+        },
+        {
+          "name": "Pricing transparency",
+          "weight": 0.05,
+          "weight_numeric": 0.05,
+          "description": "Clear pricing vs hidden fees",
+          "scale": "1-5",
+          "type": "nice-to-have",
+          "evaluation_method": "Pricing page review + user feedback on costs"
+        }
+      ]
+    },
+    {
+      "category": "Support & Documentation",
+      "weight": 0.10,
+      "criteria": [
+        {
+          "name": "Documentation quality",
+          "weight": 0.05,
+          "weight_numeric": 0.05,
+          "description": "Completeness, clarity, currency of docs",
+          "scale": "1-5",
+          "type": "important",
+          "evaluation_method": "Documentation review + user feedback"
+        },
+        {
+          "name": "Customer support",
+          "weight": 0.05,
+          "weight_numeric": 0.05,
+          "description": "Availability, responsiveness, quality of support",
+          "scale": "1-5",
+          "type": "important",
+          "evaluation_method": "Support offerings + user reviews on support"
+        }
+      ]
+    },
+    {
+      "category": "Security & Compliance",
+      "weight": 0.05,
+      "criteria": [
+        {
+          "name": "Security features",
+          "weight": 0.03,
+          "weight_numeric": 0.03,
+          "description": "Encryption, authentication, access controls",
+          "scale": "1-5",
+          "type": "must-have",
+          "evaluation_method": "Security documentation + certifications"
+        },
+        {
+          "name": "Compliance certifications",
+          "weight": 0.02,
+          "weight_numeric": 0.02,
+          "description": "SOC2, GDPR, HIPAA, etc as needed",
+          "scale": "1-5",
+          "type": "must-have",
+          "evaluation_method": "Official compliance page + certifications"
+        }
+      ]
+    }
+  ],
+
+  "decision_framework": {
+    "method": "weighted-scoring",
+    "description": "Weighted decision matrix with must-have elimination followed by scoring",
+    "steps": [
+      "1. Eliminate alternatives that fail must-have requirements",
+      "2. Score remaining alternatives on all criteria (1-5 scale)",
+      "3. Calculate weighted scores (score × criterion weight)",
+      "4. Sum weighted scores for total score per alternative",
+      "5. Rank alternatives by total score",
+      "6. Perform sensitivity analysis on weights",
+      "7. Generate recommendation with rationale"
+    ],
+    "passing_threshold": "Minimum weighted score of 3.0/5.0 to be considered viable",
+    "tiebreakers": [
+      "If scores within 0.2 points: prefer lower TCO",
+      "If still tied: prefer better user reviews",
+      "If still tied: prefer established vendor"
+    ],
+    "sensitivity_analysis": "Test recommendation robustness by varying weights ±10%",
+    "final_output": "Ranked list with recommendation and detailed justification"
+  },
+
+  "deliverables": {
+    "comparison_matrix": true,
+    "pros_cons_analysis": true,
+    "swot_analysis": true,
+    "weighted_scoring": true,
+    "decision_matrix": true,
+    "cost_benefit_analysis": true,
+    "executive_summary": true,
+    "detailed_report": true,
+    "recommendation_with_rationale": true,
+    "implementation_roadmap": true,
+    "source_bibliography": true
+  },
+
+  "timeline": {
+    "research_start": "YYYY-MM-DD",
+    "data_collection_complete": "YYYY-MM-DD (target)",
+    "analysis_complete": "YYYY-MM-DD (target)",
+    "brief_delivery": "YYYY-MM-DD (target)",
+    "decision_deadline": "YYYY-MM-DD"
+  },
+
+  "success_criteria": [
+    "All alternatives evaluated against all criteria",
+    "Minimum 3 credible sources per alternative",
+    "Clear recommendation with data-driven rationale",
+    "Decision-maker has confidence to proceed",
+    "Research completed within timeline"
+  ],
+
+  "notes": [
+    "Additional context about the research",
+    "Special considerations",
+    "Stakeholder preferences to consider"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "moving-coordinator",
+  "version": "1.0.0",
+  "description": "Moving logistics and timeline coordination specialist for stress-free relocations",
+  "author": {
+    "name": "Puerto"
+  },
+  "type": "agent-collection",
+  "agents": [
+    "./agents/moving-timeline-coordinator.md",
+    "./agents/inventory-tracker.md",
+    "./agents/address-updater.md"
+  ],
+  "skills": [
+    "./skills/moving-coordination/SKILL.md"
+  ],
+  "requirements": {
+    "claude_version": ">=1.0.0",
+    "tools": [
+      "Read",
+      "Write"
+    ]
+  },
+  "categories": [
+    "productivity",
+    "life-organization",
+    "logistics"
+  ],
+  "keywords": [
+    "moving",
+    "relocation",
+    "packing",
+    "utilities",
+    "address-change",
+    "timeline",
+    "checklist"
+  ],
+  "license": "MIT"
+}

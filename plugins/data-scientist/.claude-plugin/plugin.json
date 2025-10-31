@@ -1,0 +1,20 @@
+{
+  "name": "data-scientist",
+  "version": "1.0.0",
+  "description": "Advanced analytics and statistical modeling specialist for rigorous data science workflows",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/experiment-designer.md",
+    "./agents/predictor.md",
+    "./agents/research-analyst.md",
+    "./agents/statistical-modeler.md"
+  ],
+  "skills": [
+    "./skills/experimentation/SKILL.md",
+    "./skills/predictive-analytics/SKILL.md",
+    "./skills/statistical-modeling/SKILL.md"
+  ],
+  "license": "MIT"
+}

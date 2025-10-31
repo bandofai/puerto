@@ -1,0 +1,116 @@
+{
+  "trip_name": "Paris Adventure",
+  "dates": {
+    "start": "2024-06-15",
+    "end": "2024-06-22",
+    "duration_days": 7
+  },
+  "travelers": 2,
+  "destination": {
+    "city": "Paris",
+    "country": "France",
+    "timezone": "Europe/Paris"
+  },
+  "daily_itinerary": [
+    {
+      "day": 1,
+      "date": "2024-06-15",
+      "title": "Arrival & Eiffel Tower",
+      "activities": [
+        {
+          "time": "09:00",
+          "duration": "2 hours",
+          "activity": "Arrival & Hotel Check-in",
+          "location": "Hotel de Ville, 5 Rue de Lobau, 75004 Paris",
+          "cost_estimate": "$0",
+          "notes": "Check-in usually available from 15:00, store bags if early",
+          "booking_required": false,
+          "transport": "Airport shuttle pre-booked"
+        },
+        {
+          "time": "11:00",
+          "duration": "1.5 hours",
+          "activity": "Lunch at Local Bistro",
+          "location": "Le Marais district",
+          "cost_estimate": "$25",
+          "notes": "Try traditional French onion soup",
+          "booking_required": false,
+          "transport": "walk"
+        },
+        {
+          "time": "15:00",
+          "duration": "3 hours",
+          "activity": "Eiffel Tower Visit",
+          "location": "Champ de Mars, 5 Avenue Anatole France, 75007 Paris",
+          "cost_estimate": "$35",
+          "notes": "Pre-booked tickets for 15:30, sunset at 21:30",
+          "booking_required": true,
+          "transport": "Metro Line 6 to Bir-Hakeim"
+        },
+        {
+          "time": "19:00",
+          "duration": "2 hours",
+          "activity": "Dinner with Eiffel Tower View",
+          "location": "Café de l'Homme, 17 Place du Trocadéro",
+          "cost_estimate": "$60",
+          "notes": "Reservation confirmed for 19:30",
+          "booking_required": true,
+          "transport": "walk from Eiffel Tower"
+        }
+      ],
+      "meals": {
+        "breakfast": "Hotel breakfast included",
+        "lunch": "Le Marais bistro",
+        "dinner": "Café de l'Homme (reservation 19:30)"
+      },
+      "accommodation": {
+        "name": "Hotel de Ville",
+        "address": "5 Rue de Lobau, 75004 Paris",
+        "check_in": "15:00",
+        "check_out": "11:00"
+      },
+      "notes": "Easy first day to recover from flight. Eiffel Tower tickets pre-purchased."
+    }
+  ],
+  "general_tips": [
+    "Metro pass purchased for week (Navigo Découverte)",
+    "Many museums closed on Tuesdays - plan accordingly",
+    "Dinner reservations essential for popular restaurants",
+    "Carry small bills for cafés and tips",
+    "Learn basic French phrases - locals appreciate effort"
+  ],
+  "transportation": {
+    "airport_transfer": "Shuttle booked - 45 mins to hotel",
+    "local_transport": "Metro pass (Navigo Découverte) - unlimited travel",
+    "notes": "Metro runs 5:30am-1:00am (2:00am weekends)"
+  },
+  "emergency_contacts": {
+    "local_emergency": "112 (EU standard)",
+    "police": "17",
+    "medical": "15",
+    "us_embassy": "+33 1 43 12 22 22",
+    "hotel": "+33 1 42 72 60 32",
+    "travel_insurance": "1-800-555-0123"
+  },
+  "weather_forecast": {
+    "average_temp": "20°C (68°F)",
+    "conditions": "Partly cloudy with occasional rain",
+    "recommendations": "Light jacket, umbrella, comfortable walking shoes"
+  },
+  "pre_booked_items": [
+    {
+      "item": "Eiffel Tower tickets",
+      "date": "2024-06-15",
+      "time": "15:30",
+      "confirmation": "ET-12345678",
+      "cost": "$70"
+    },
+    {
+      "item": "Louvre Museum",
+      "date": "2024-06-16",
+      "time": "09:00",
+      "confirmation": "LV-87654321",
+      "cost": "$50"
+    }
+  ]
+}

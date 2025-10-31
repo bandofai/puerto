@@ -1,0 +1,171 @@
+{
+  "service_log": {
+    "service_id": "SVC-2025-XXX",
+    "date": "YYYY-MM-DD",
+    "system": "[HVAC | Plumbing | Electrical | Roofing | Appliances | Lawn | Structural | Other]",
+    "service_type": "[preventive_maintenance | repair | emergency_repair | installation | upgrade | inspection]",
+    "provider_type": "[professional | diy | warranty_service]",
+    "description": "Brief description of the work performed",
+    "provider": {
+      "name": "Company or service provider name",
+      "contact_id": "CONT-XXX",
+      "technician": "Technician name (if applicable)",
+      "phone": "(XXX) XXX-XXXX",
+      "email": "contact@example.com"
+    },
+    "work_performed": [
+      "Detailed item 1 of work completed",
+      "Detailed item 2 of work completed",
+      "Detailed item 3 of work completed"
+    ],
+    "parts_used": [
+      {
+        "item": "Part description",
+        "part_number": "Part number if applicable",
+        "quantity": 1,
+        "unit_cost": 0.00,
+        "total_cost": 0.00,
+        "supplier": "Where purchased"
+      }
+    ],
+    "cost": {
+      "parts": 0.00,
+      "labor": 0.00,
+      "tax": 0.00,
+      "total": 0.00,
+      "payment_method": "[cash | check | credit_card | debit_card]",
+      "payment_date": "YYYY-MM-DD"
+    },
+    "warranty": {
+      "parts_warranty": "XX days/months/years or N/A",
+      "labor_warranty": "XX days/months/years or N/A",
+      "warranty_provider": "Company providing warranty",
+      "warranty_notes": "Any specific warranty terms or exclusions"
+    },
+    "related_warranty_id": "WRT-XXX (if this service relates to an existing warranty)",
+    "next_service": {
+      "recommended_date": "YYYY-MM-DD",
+      "recommended_action": "Description of next recommended service",
+      "priority": "[high | medium | low]"
+    },
+    "documentation": {
+      "invoice": "path/to/invoice.pdf",
+      "receipt": "path/to/receipt.pdf",
+      "photos_before": [
+        "path/to/before-photo-1.jpg",
+        "path/to/before-photo-2.jpg"
+      ],
+      "photos_after": [
+        "path/to/after-photo-1.jpg",
+        "path/to/after-photo-2.jpg"
+      ],
+      "other_documents": [
+        "path/to/other-document.pdf"
+      ]
+    },
+    "inspection_findings": {
+      "issues_found": [
+        "Issue 1 description",
+        "Issue 2 description"
+      ],
+      "recommendations": [
+        "Recommendation 1",
+        "Recommendation 2"
+      ],
+      "condition_rating": "[excellent | good | fair | poor]"
+    },
+    "emergency": {
+      "was_emergency": false,
+      "response_time": "XX minutes/hours (if emergency)",
+      "severity": "[critical | high | medium | low]"
+    },
+    "maintenance_scheduled": {
+      "was_scheduled": true,
+      "original_due_date": "YYYY-MM-DD (if scheduled)",
+      "completed_on_time": true
+    },
+    "notes": "Additional notes, observations, or special circumstances",
+    "tags": ["tag1", "tag2", "tag3"],
+    "created_by": "Name of person logging the service",
+    "created_date": "YYYY-MM-DD",
+    "last_updated": "YYYY-MM-DD"
+  },
+  "contractor_record": {
+    "contact_id": "CONT-XXX",
+    "business_name": "Business Name",
+    "contact_type": "[company | individual]",
+    "primary_contact": "Contact person name",
+    "contact_info": {
+      "phone_primary": "(XXX) XXX-XXXX",
+      "phone_alternate": "(XXX) XXX-XXXX",
+      "email": "contact@example.com",
+      "website": "www.example.com",
+      "address": "123 Main St, City, ST 12345"
+    },
+    "specialties": [
+      "Primary specialty",
+      "Secondary specialty",
+      "Additional services"
+    ],
+    "credentials": {
+      "licensed": true,
+      "license_number": "LICENSE-XXXX",
+      "license_state": "ST",
+      "license_expiration": "YYYY-MM-DD",
+      "insured": true,
+      "insurance_company": "Insurance provider",
+      "insurance_policy": "Policy number",
+      "bonded": true,
+      "certifications": [
+        "Certification 1",
+        "Certification 2"
+      ]
+    },
+    "business_details": {
+      "years_in_business": 0,
+      "employee_count": 0,
+      "service_area": "Geographic area served",
+      "emergency_available": true,
+      "typical_response_time": "XX hours",
+      "operating_hours": "Mon-Fri 8am-5pm"
+    },
+    "performance": {
+      "overall_rating": 0.0,
+      "services_performed": 0,
+      "total_spent": 0.00,
+      "first_service_date": "YYYY-MM-DD",
+      "last_service_date": "YYYY-MM-DD",
+      "ratings": {
+        "quality": 0.0,
+        "timeliness": 0.0,
+        "communication": 0.0,
+        "pricing": 0.0,
+        "professionalism": 0.0
+      }
+    },
+    "service_history_ids": [
+      "SVC-XXXX-XXX",
+      "SVC-XXXX-XXX"
+    ],
+    "notes": "General notes about contractor, performance, reliability, etc.",
+    "referral_source": "How you found this contractor",
+    "would_recommend": true,
+    "would_rehire": true,
+    "tags": ["reliable", "affordable", "responsive"],
+    "added_date": "YYYY-MM-DD",
+    "last_updated": "YYYY-MM-DD"
+  },
+  "usage_instructions": {
+    "service_log": "Use this template for each service event. Fill in all applicable fields. Use N/A for non-applicable fields.",
+    "contractor_record": "Create one record per contractor. Update performance metrics after each service. Link service logs via contact_id.",
+    "file_naming": "Use format: YYYY-MM-DD_System_ServiceType.json (e.g., 2025-10-21_HVAC_Maintenance.json)",
+    "organization": "Store service logs by year. Maintain separate contractor database. Link records via IDs.",
+    "documentation": "Always include photos for repairs and major work. Scan and save all invoices and receipts.",
+    "cost_tracking": "Break down costs into parts, labor, and tax for accurate budget tracking and tax purposes.",
+    "maintenance_planning": "Use next_service recommendations to update maintenance schedules.",
+    "contractor_evaluation": "Update ratings after each service to maintain accurate contractor database."
+  },
+  "examples": {
+    "note": "See the plugin's README.md for complete filled-out examples of service logs and contractor records"
+  }
+}

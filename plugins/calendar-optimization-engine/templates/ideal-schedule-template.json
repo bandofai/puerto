@@ -1,0 +1,508 @@
+{
+  "schedule_metadata": {
+    "template_version": "1.0",
+    "created_at": "2025-01-21T00:00:00Z",
+    "description": "Ideal weekly schedule template for calendar optimization",
+    "optimization_goals": [
+      "Maximize focus time (15-20 hours/week)",
+      "Batch meetings into windows",
+      "Align tasks with energy levels",
+      "Minimize context switching",
+      "Protect morning deep work time"
+    ]
+  },
+  "weekly_structure": {
+    "monday": {
+      "theme": "Planning & Strategy",
+      "focus_hours_target": 4,
+      "meeting_hours_target": 2,
+      "blocks": [
+        {
+          "time": "08:00-10:00",
+          "type": "deep_work",
+          "title": "Deep Work Block 1",
+          "priority": "protected",
+          "no_meetings": true,
+          "no_interruptions": true,
+          "activities": [
+            "Strategic planning",
+            "Complex analysis",
+            "Creative problem solving"
+          ],
+          "notes": "Most productive time - protect ruthlessly"
+        },
+        {
+          "time": "10:00-10:15",
+          "type": "buffer",
+          "title": "Break/Transition",
+          "activities": ["Stretch", "Coffee", "Mental reset"]
+        },
+        {
+          "time": "10:15-12:00",
+          "type": "deep_work",
+          "title": "Deep Work Block 2",
+          "priority": "high",
+          "activities": [
+            "Continue strategic work",
+            "Implementation planning",
+            "Priority setting"
+          ]
+        },
+        {
+          "time": "12:00-13:00",
+          "type": "lunch",
+          "title": "Lunch Break",
+          "priority": "protected",
+          "no_meetings": true,
+          "notes": "Sacred lunch time - no working lunches"
+        },
+        {
+          "time": "13:00-15:00",
+          "type": "meeting_window",
+          "title": "Meeting Window",
+          "max_meetings": 3,
+          "buffer_between_meetings": 15,
+          "preferred_types": ["planning", "strategy", "1:1s"],
+          "notes": "Schedule essential meetings here"
+        },
+        {
+          "time": "15:00-15:15",
+          "type": "buffer",
+          "title": "Break/Transition",
+          "activities": ["Stretch", "Walk", "Hydrate"]
+        },
+        {
+          "time": "15:15-17:00",
+          "type": "admin",
+          "title": "Admin & Planning",
+          "activities": [
+            "Email processing",
+            "Calendar management",
+            "Week planning",
+            "Task organization"
+          ],
+          "notes": "Lower energy time - administrative tasks"
+        }
+      ],
+      "summary": {
+        "deep_work_hours": 3.75,
+        "meeting_hours": 2,
+        "admin_hours": 1.75,
+        "break_hours": 1.5
+      }
+    },
+    "tuesday": {
+      "theme": "Execution & Collaboration",
+      "focus_hours_target": 3,
+      "meeting_hours_target": 3,
+      "blocks": [
+        {
+          "time": "08:00-10:00",
+          "type": "deep_work",
+          "title": "Deep Work Block 1",
+          "priority": "protected",
+          "no_meetings": true,
+          "activities": [
+            "Implementation work",
+            "Coding/writing",
+            "Complex tasks"
+          ]
+        },
+        {
+          "time": "10:00-10:15",
+          "type": "buffer",
+          "title": "Break"
+        },
+        {
+          "time": "10:15-12:00",
+          "type": "meeting_window",
+          "title": "Morning Meeting Window",
+          "max_meetings": 3,
+          "preferred_types": ["1:1s", "team syncs"],
+          "notes": "Good time for collaborative discussions"
+        },
+        {
+          "time": "12:00-13:00",
+          "type": "lunch",
+          "title": "Lunch Break",
+          "priority": "protected",
+          "no_meetings": true
+        },
+        {
+          "time": "13:00-15:00",
+          "type": "meeting_window",
+          "title": "Afternoon Meeting Window",
+          "max_meetings": 3,
+          "preferred_types": ["team collaboration", "client calls"]
+        },
+        {
+          "time": "15:00-15:15",
+          "type": "buffer",
+          "title": "Break"
+        },
+        {
+          "time": "15:15-17:00",
+          "type": "admin",
+          "title": "Email & Communication",
+          "activities": [
+            "Email processing",
+            "Slack responses",
+            "Follow-up actions",
+            "Meeting prep for tomorrow"
+          ]
+        }
+      ],
+      "summary": {
+        "deep_work_hours": 2,
+        "meeting_hours": 3.5,
+        "admin_hours": 1.75,
+        "break_hours": 1.75
+      }
+    },
+    "wednesday": {
+      "theme": "Deep Work Day",
+      "focus_hours_target": 6,
+      "meeting_hours_target": 1,
+      "blocks": [
+        {
+          "time": "08:00-12:00",
+          "type": "deep_work",
+          "title": "Extended Deep Work Session",
+          "priority": "protected",
+          "no_meetings": true,
+          "no_interruptions": true,
+          "activities": [
+            "Complex problem solving",
+            "Creative work",
+            "Strategic projects",
+            "Learning new skills"
+          ],
+          "notes": "Longest continuous focus block - protect at all costs",
+          "suggested_structure": [
+            "08:00-09:30: Deep work session 1",
+            "09:30-09:40: 10-min break",
+            "09:40-11:10: Deep work session 2",
+            "11:10-11:20: 10-min break",
+            "11:20-12:00: Deep work session 3"
+          ]
+        },
+        {
+          "time": "12:00-13:00",
+          "type": "lunch",
+          "title": "Lunch Break",
+          "priority": "protected",
+          "no_meetings": true
+        },
+        {
+          "time": "13:00-14:00",
+          "type": "meeting_window",
+          "title": "Essential Meetings Only",
+          "max_meetings": 1,
+          "preferred_types": ["critical only"],
+          "notes": "Only absolutely essential meetings on deep work day"
+        },
+        {
+          "time": "14:00-14:15",
+          "type": "buffer",
+          "title": "Break"
+        },
+        {
+          "time": "14:15-16:00",
+          "type": "deep_work",
+          "title": "Afternoon Focus Block",
+          "priority": "high",
+          "activities": [
+            "Continue morning work",
+            "Finish complex tasks",
+            "Documentation"
+          ]
+        },
+        {
+          "time": "16:00-17:00",
+          "type": "admin",
+          "title": "Admin & Wrap-up",
+          "activities": [
+            "Email",
+            "Planning",
+            "Week progress check"
+          ]
+        }
+      ],
+      "summary": {
+        "deep_work_hours": 5.75,
+        "meeting_hours": 1,
+        "admin_hours": 1,
+        "break_hours": 1.25
+      }
+    },
+    "thursday": {
+      "theme": "Communication & External",
+      "focus_hours_target": 2,
+      "meeting_hours_target": 4,
+      "blocks": [
+        {
+          "time": "08:00-10:00",
+          "type": "deep_work",
+          "title": "Deep Work Block",
+          "priority": "protected",
+          "no_meetings": true,
+          "activities": [
+            "Pre-meeting preparation",
+            "Important tasks",
+            "Meeting prep"
+          ]
+        },
+        {
+          "time": "10:00-10:15",
+          "type": "buffer",
+          "title": "Break"
+        },
+        {
+          "time": "10:15-12:00",
+          "type": "meeting_window",
+          "title": "Morning Meetings",
+          "max_meetings": 3,
+          "preferred_types": ["cross-team", "stakeholders", "client calls"]
+        },
+        {
+          "time": "12:00-13:00",
+          "type": "lunch",
+          "title": "Lunch Break",
+          "priority": "protected",
+          "no_meetings": true
+        },
+        {
+          "time": "13:00-15:00",
+          "type": "meeting_window",
+          "title": "Afternoon Meetings",
+          "max_meetings": 3,
+          "preferred_types": ["external calls", "demos", "reviews"]
+        },
+        {
+          "time": "15:00-15:15",
+          "type": "buffer",
+          "title": "Break"
+        },
+        {
+          "time": "15:15-17:00",
+          "type": "admin",
+          "title": "Follow-up & Actions",
+          "activities": [
+            "Meeting follow-ups",
+            "Action item processing",
+            "Email responses",
+            "Tomorrow's prep"
+          ]
+        }
+      ],
+      "summary": {
+        "deep_work_hours": 2,
+        "meeting_hours": 3.5,
+        "admin_hours": 1.75,
+        "break_hours": 1.75
+      }
+    },
+    "friday": {
+      "theme": "Wrap-up & Learning",
+      "focus_hours_target": 3,
+      "meeting_hours_target": 1,
+      "blocks": [
+        {
+          "time": "08:00-10:00",
+          "type": "deep_work",
+          "title": "Deep Work Block",
+          "priority": "protected",
+          "no_meetings": true,
+          "activities": [
+            "Finish week's priorities",
+            "Wrap up loose ends",
+            "Complete critical tasks"
+          ]
+        },
+        {
+          "time": "10:00-10:15",
+          "type": "buffer",
+          "title": "Break"
+        },
+        {
+          "time": "10:15-11:30",
+          "type": "meeting_window",
+          "title": "Light Meeting Window",
+          "max_meetings": 2,
+          "preferred_types": ["optional", "casual", "retrospectives"],
+          "notes": "Keep Friday meetings light"
+        },
+        {
+          "time": "11:30-13:00",
+          "type": "lunch",
+          "title": "Extended Lunch",
+          "priority": "protected",
+          "no_meetings": true,
+          "notes": "Take longer lunch on Friday"
+        },
+        {
+          "time": "13:00-15:00",
+          "type": "learning",
+          "title": "Learning & Development",
+          "activities": [
+            "Professional development",
+            "Read articles/books",
+            "Online courses",
+            "Skill development",
+            "Industry research"
+          ],
+          "notes": "Invest in learning when energy is good"
+        },
+        {
+          "time": "15:00-15:15",
+          "type": "buffer",
+          "title": "Break"
+        },
+        {
+          "time": "15:15-16:00",
+          "type": "admin",
+          "title": "Week Review",
+          "activities": [
+            "Review week accomplishments",
+            "Update task status",
+            "Celebrate wins",
+            "Identify improvements"
+          ]
+        },
+        {
+          "time": "16:00-17:00",
+          "type": "admin",
+          "title": "Next Week Planning",
+          "activities": [
+            "Review next week's calendar",
+            "Set priorities",
+            "Plan focus blocks",
+            "Prepare for Monday"
+          ]
+        }
+      ],
+      "summary": {
+        "deep_work_hours": 2,
+        "meeting_hours": 1.25,
+        "learning_hours": 2,
+        "admin_hours": 2,
+        "break_hours": 1.75
+      }
+    }
+  },
+  "weekly_summary": {
+    "total_work_hours": 40,
+    "deep_work_hours": 15.5,
+    "deep_work_percentage": 39,
+    "meeting_hours": 11.25,
+    "meeting_percentage": 28,
+    "admin_hours": 8.25,
+    "admin_percentage": 21,
+    "learning_hours": 2,
+    "learning_percentage": 5,
+    "break_hours": 8,
+    "break_percentage": 20
+  },
+  "rules_and_guidelines": {
+    "protected_blocks": [
+      {
+        "time": "08:00-10:00",
+        "days": ["monday", "tuesday", "wednesday", "thursday", "friday"],
+        "type": "deep_work",
+        "enforcement": "strict",
+        "notes": "Never schedule meetings during this time"
+      },
+      {
+        "time": "12:00-13:00",
+        "days": ["monday", "tuesday", "wednesday", "thursday"],
+        "type": "lunch",
+        "enforcement": "strict",
+        "notes": "No working lunches"
+      },
+      {
+        "time": "08:00-12:00",
+        "days": ["wednesday"],
+        "type": "deep_work",
+        "enforcement": "strict",
+        "notes": "Wednesday is deep work day - absolute minimum meetings"
+      }
+    ],
+    "meeting_windows": [
+      {
+        "days": ["monday"],
+        "windows": ["13:00-15:00"]
+      },
+      {
+        "days": ["tuesday", "thursday"],
+        "windows": ["10:15-12:00", "13:00-15:00"]
+      },
+      {
+        "days": ["wednesday"],
+        "windows": ["13:00-14:00"]
+      },
+      {
+        "days": ["friday"],
+        "windows": ["10:15-11:30"]
+      }
+    ],
+    "buffer_rules": {
+      "minimum_buffer": 15,
+      "between_meetings": 15,
+      "before_important_meetings": 30,
+      "after_long_meetings": 15
+    },
+    "meeting_acceptance_criteria": [
+      "Has clear agenda",
+      "Falls within designated meeting window",
+      "Required attendee (not optional)",
+      "Cannot be handled async",
+      "Minimum 15-minute buffer before/after"
+    ]
+  },
+  "implementation_phases": {
+    "phase_1_week_1": {
+      "title": "Foundation",
+      "actions": [
+        "Block 8-10am daily for deep work",
+        "Mark blocks as 'Busy' on calendar",
+        "Set Slack status during focus time",
+        "Communicate new schedule to team",
+        "Decline new meetings during protected blocks"
+      ],
+      "expected_results": "10 hours protected focus time/week"
+    },
+    "phase_2_week_2": {
+      "title": "Meeting Optimization",
+      "actions": [
+        "Reschedule existing meetings to designated windows",
+        "Add 15-minute buffers between all meetings",
+        "Apply 25/50-minute rule to all meetings",
+        "Make non-essential attendees optional",
+        "Decline meetings without clear agenda"
+      ],
+      "expected_results": "Batched meetings, reduced fragmentation"
+    },
+    "phase_3_week_3": {
+      "title": "Theme Days",
+      "actions": [
+        "Implement Wednesday as deep work day",
+        "Theme other days appropriately",
+        "Batch similar work together",
+        "Minimize context switching",
+        "Review and adjust"
+      ],
+      "expected_results": "Reduced context switching, better flow"
+    },
+    "phase_4_week_4": {
+      "title": "Refinement",
+      "actions": [
+        "Measure calendar metrics",
+        "Compare to targets",
+        "Adjust based on results",
+        "Fine-tune meeting windows",
+        "Make permanent"
+      ],
+      "expected_results": "Optimized schedule, sustainable habits"
+    }
+  }
+}

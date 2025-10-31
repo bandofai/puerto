@@ -1,0 +1,33 @@
+{
+  "name": "social-media-manager",
+  "version": "1.0.0",
+  "description": "Social media strategy and execution specialist with content calendar planning, multi-platform post creation, hashtag strategy, and analytics tracking",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/content-calendar.md",
+    "./agents/post-creator.md",
+    "./agents/hashtag-strategist.md",
+    "./agents/analytics-tracker.md"
+  ],
+  "skills": [
+    "./skills/social-media-strategy/SKILL.md",
+    "./skills/content-creation/SKILL.md",
+    "./skills/analytics/SKILL.md"
+  ],
+  "keywords": [
+    "social-media",
+    "content-calendar",
+    "twitter",
+    "linkedin",
+    "instagram",
+    "facebook",
+    "tiktok",
+    "hashtags",
+    "analytics",
+    "engagement",
+    "marketing",
+    "scheduling"
+  ]
+}

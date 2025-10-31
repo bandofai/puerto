@@ -1,0 +1,33 @@
+{
+  "name": "frontend-developer",
+  "version": "1.0.0",
+  "description": "Frontend development specialist with React/Vue/Svelte component creation, responsive styling, accessibility validation, and state management",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/component-builder.md",
+    "./agents/style-implementer.md",
+    "./agents/accessibility-validator.md",
+    "./agents/state-architect.md"
+  ],
+  "skills": [
+    "./skills/component-development/SKILL.md",
+    "./skills/responsive-design/SKILL.md",
+    "./skills/state-management/SKILL.md"
+  ],
+  "keywords": [
+    "frontend",
+    "react",
+    "vue",
+    "svelte",
+    "typescript",
+    "css",
+    "responsive",
+    "accessibility",
+    "state-management",
+    "zustand",
+    "redux",
+    "wcag"
+  ]
+}

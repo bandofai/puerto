@@ -1,0 +1,332 @@
+{
+  "trip": "Paris Adventure",
+  "traveler": {
+    "citizenship": "United States",
+    "passport_number": "STORE-SECURELY-IF-NEEDED",
+    "passport_expiry": "2028-03-15"
+  },
+  "travel_dates": {
+    "departure": "2024-06-15",
+    "return": "2024-06-22",
+    "duration_days": 7
+  },
+  "destination": {
+    "country": "France",
+    "cities": ["Paris"],
+    "region": "Schengen Area"
+  },
+  "documents": {
+    "passport": {
+      "required": true,
+      "status": "verified",
+      "expiry_date": "2028-03-15",
+      "valid_until_return_plus_6mo": true,
+      "notes": "Must be valid until December 2024 (6 months after return)",
+      "checklist": [
+        {
+          "item": "Passport valid >6 months beyond return",
+          "completed": true,
+          "date_checked": "2024-03-01"
+        },
+        {
+          "item": "At least 2 blank pages",
+          "completed": true
+        },
+        {
+          "item": "Not damaged or altered",
+          "completed": true
+        },
+        {
+          "item": "Photo copy made (kept separate)",
+          "completed": false
+        },
+        {
+          "item": "Digital scan saved in email",
+          "completed": false
+        }
+      ]
+    },
+    "visa": {
+      "required": false,
+      "type": "visa-free",
+      "status": "not_required",
+      "allowed_stay": "90 days within 180 days (Schengen)",
+      "notes": "US citizens can stay up to 90 days for tourism without visa",
+      "etias_required": false,
+      "etias_notes": "ETIAS (European Travel Information Authorization System) coming in 2024 - check status before travel",
+      "checklist": []
+    },
+    "health": {
+      "vaccinations": [
+        {
+          "vaccine": "Routine vaccines (MMR, etc.)",
+          "required": false,
+          "recommended": true,
+          "status": "up_to_date",
+          "notes": "Standard immunizations recommended"
+        },
+        {
+          "vaccine": "COVID-19",
+          "required": false,
+          "recommended": true,
+          "status": "up_to_date",
+          "notes": "Check current requirements before travel"
+        },
+        {
+          "vaccine": "Yellow Fever",
+          "required": false,
+          "recommended": false,
+          "status": "not_needed"
+        }
+      ],
+      "medications": {
+        "prescription_required": true,
+        "checklist": [
+          {
+            "item": "Medications in original packaging",
+            "completed": false
+          },
+          {
+            "item": "Prescription copies for all medications",
+            "completed": false
+          },
+          {
+            "item": "Doctor's letter for controlled substances",
+            "completed": false,
+            "notes": "Not applicable unless taking controlled meds"
+          }
+        ]
+      },
+      "health_insurance": {
+        "required": false,
+        "recommended": true,
+        "coverage_minimum": "€30,000 (Schengen recommendation)",
+        "status": "pending",
+        "notes": "While not mandatory for US citizens, highly recommended",
+        "checklist": [
+          {
+            "item": "Travel health insurance purchased",
+            "completed": false
+          },
+          {
+            "item": "Coverage confirmation document",
+            "completed": false
+          },
+          {
+            "item": "Emergency contact number saved",
+            "completed": false
+          }
+        ]
+      }
+    },
+    "travel_insurance": {
+      "recommended": true,
+      "status": "purchased",
+      "provider": "World Nomads",
+      "policy_number": "WN-123456789",
+      "coverage": [
+        "Medical expenses up to $100,000",
+        "Trip cancellation up to $5,000",
+        "Lost/stolen baggage up to $3,000",
+        "Emergency evacuation"
+      ],
+      "emergency_contact": "1-800-555-0123",
+      "policy_document": "saved in confirmations folder",
+      "checklist": [
+        {
+          "item": "Policy purchased",
+          "completed": true,
+          "date": "2024-03-15"
+        },
+        {
+          "item": "Policy document saved/printed",
+          "completed": true
+        },
+        {
+          "item": "Emergency number in phone",
+          "completed": false
+        },
+        {
+          "item": "Coverage reviewed and understood",
+          "completed": true
+        }
+      ]
+    },
+    "flight_hotel": {
+      "checklist": [
+        {
+          "item": "Flight confirmations printed",
+          "completed": false,
+          "confirmation_number": "AB123XYZ"
+        },
+        {
+          "item": "Flight confirmations saved digitally",
+          "completed": true
+        },
+        {
+          "item": "Hotel reservations printed",
+          "completed": false,
+          "confirmation_number": "HTL-987654"
+        },
+        {
+          "item": "Hotel reservations saved digitally",
+          "completed": true
+        },
+        {
+          "item": "Return ticket confirmed",
+          "completed": true,
+          "notes": "Return flight June 22, 2024"
+        },
+        {
+          "item": "Check-in online (24h before)",
+          "completed": false,
+          "due_date": "2024-06-14"
+        }
+      ]
+    },
+    "financial": {
+      "checklist": [
+        {
+          "item": "Bank notified of travel dates",
+          "completed": false,
+          "bank": "Chase Bank",
+          "travel_dates": "June 15-22, 2024"
+        },
+        {
+          "item": "Credit card company notified",
+          "completed": false,
+          "cards": ["Visa, Mastercard"]
+        },
+        {
+          "item": "At least 2 credit cards packed",
+          "completed": false,
+          "notes": "Keep in separate locations"
+        },
+        {
+          "item": "Small amount of euros obtained",
+          "completed": false,
+          "amount": "€100-200 for immediate needs"
+        },
+        {
+          "item": "Emergency cash (USD)",
+          "completed": false,
+          "amount": "$100-200 backup"
+        },
+        {
+          "item": "Credit card numbers recorded separately",
+          "completed": false,
+          "notes": "In case of loss/theft"
+        }
+      ]
+    },
+    "driving": {
+      "required": false,
+      "international_permit": false,
+      "notes": "Not planning to rent car - using public transport",
+      "checklist": []
+    },
+    "other": {
+      "checklist": [
+        {
+          "item": "Emergency contacts list created",
+          "completed": false,
+          "contacts": ["Family", "US Embassy", "Travel insurance"]
+        },
+        {
+          "item": "US Embassy Paris contact saved",
+          "completed": false,
+          "phone": "+33 1 43 12 22 22",
+          "address": "2 Avenue Gabriel, 75008 Paris"
+        },
+        {
+          "item": "Travel itinerary shared with family",
+          "completed": false,
+          "shared_with": "Parents"
+        },
+        {
+          "item": "Important documents scanned to email",
+          "completed": false,
+          "documents": ["Passport", "Insurance", "Flight confirmations"]
+        },
+        {
+          "item": "Home preparation arranged",
+          "completed": false,
+          "tasks": ["Mail hold", "Plant watering", "Neighbor notified"]
+        }
+      ]
+    }
+  },
+  "important_deadlines": [
+    {
+      "task": "Notify bank and credit cards",
+      "deadline": "2024-06-10",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "task": "Get euros from bank",
+      "deadline": "2024-06-12",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "task": "Online check-in for flight",
+      "deadline": "2024-06-14",
+      "status": "pending",
+      "priority": "high"
+    },
+    {
+      "task": "Print all confirmations",
+      "deadline": "2024-06-14",
+      "status": "pending",
+      "priority": "medium"
+    },
+    {
+      "task": "Pack passport and documents",
+      "deadline": "2024-06-14",
+      "status": "pending",
+      "priority": "critical"
+    }
+  ],
+  "emergency_contacts": {
+    "us_embassy_paris": {
+      "phone": "+33 1 43 12 22 22",
+      "address": "2 Avenue Gabriel, 75008 Paris",
+      "emergency_hours": "24/7 for US citizens"
+    },
+    "local_emergency": {
+      "emergency": "112 (EU standard)",
+      "police": "17",
+      "medical": "15",
+      "fire": "18"
+    },
+    "travel_insurance": {
+      "provider": "World Nomads",
+      "phone": "1-800-555-0123",
+      "policy": "WN-123456789"
+    },
+    "hotel": {
+      "name": "Hotel de Ville",
+      "phone": "+33 1 42 72 60 32",
+      "address": "5 Rue de Lobau, 75004 Paris"
+    },
+    "emergency_contact_home": {
+      "name": "John Smith",
+      "relationship": "Father",
+      "phone": "+1 555 123 4567"
+    }
+  },
+  "resources": {
+    "us_state_dept": "https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/France.html",
+    "france_tourism": "https://www.france.fr/en",
+    "us_embassy": "https://fr.usembassy.gov/",
+    "schengen_info": "https://www.schengenvisainfo.com/"
+  },
+  "completion_status": {
+    "total_items": 45,
+    "completed": 8,
+    "pending": 37,
+    "percentage_complete": 18
+  },
+  "last_updated": "2024-03-15"
+}

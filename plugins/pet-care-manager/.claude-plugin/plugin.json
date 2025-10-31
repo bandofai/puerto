@@ -1,0 +1,20 @@
+{
+  "name": "pet-care-manager",
+  "version": "1.0.0",
+  "description": "Pet health and care routine management specialist",
+  "agents": [
+    "./agents/vet-appointment-scheduler.md",
+    "./agents/medication-reminder.md",
+    "./agents/health-record-keeper.md",
+    "./agents/care-routine-tracker.md"
+  ],
+  "skills": [
+    "./skills/veterinary-care.md",
+    "./skills/pet-health.md",
+    "./skills/daily-care.md"
+  ],
+  "author": {
+    "name": "Puerto"
+  },
+  "license": "MIT"
+}

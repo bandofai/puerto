@@ -1,0 +1,17 @@
+{
+  "name": "localization-specialist",
+  "version": "1.0.0",
+  "description": "Localization strategy and implementation specialist for market-specific content adaptation, cultural guidelines, and compliance.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/market-adapter.md",
+    "./agents/strategy-planner.md",
+    "./agents/compliance-checker.md"
+  ],
+  "skills": [
+    "./skills/localization-strategy/SKILL.md"
+  ],
+  "license": "MIT"
+}

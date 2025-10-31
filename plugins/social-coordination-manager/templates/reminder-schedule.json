@@ -1,0 +1,177 @@
+{
+  "reminders": [
+    {
+      "id": "reminder-uuid-1",
+      "type": "birthday",
+      "contactId": "contact-uuid",
+      "contactName": "Jane Doe",
+      "eventDate": "2026-03-15",
+      "schedule": [
+        {
+          "reminderDate": "2026-01-15",
+          "daysBeforeEvent": 60,
+          "action": "Initial planning alert - start thinking about gift ideas and party planning",
+          "priority": "medium",
+          "completed": false
+        },
+        {
+          "reminderDate": "2026-02-15",
+          "daysBeforeEvent": 30,
+          "action": "Gift shopping reminder - purchase or order gift",
+          "priority": "high",
+          "completed": false
+        },
+        {
+          "reminderDate": "2026-03-01",
+          "daysBeforeEvent": 14,
+          "action": "Card sending deadline - mail birthday card",
+          "priority": "high",
+          "completed": false
+        },
+        {
+          "reminderDate": "2026-03-08",
+          "daysBeforeEvent": 7,
+          "action": "Final preparation check - confirm plans, wrap gift",
+          "priority": "high",
+          "completed": false
+        },
+        {
+          "reminderDate": "2026-03-12",
+          "daysBeforeEvent": 3,
+          "action": "Last-minute reminder - ensure everything ready",
+          "priority": "high",
+          "completed": false
+        },
+        {
+          "reminderDate": "2026-03-15",
+          "daysBeforeEvent": 0,
+          "action": "Send birthday greeting - call or message",
+          "priority": "critical",
+          "completed": false
+        }
+      ],
+      "giftBudget": 75,
+      "planningNotes": "Close friend - consider planning small gathering or hiking day trip",
+      "giftIdeasLink": "data/gift-ideas-jane-2026.json"
+    },
+    {
+      "id": "reminder-uuid-2",
+      "type": "anniversary",
+      "contactId": "contact-couple-uuid",
+      "contactName": "John and Sarah Smith",
+      "eventDate": "2026-06-20",
+      "schedule": [
+        {
+          "reminderDate": "2026-05-20",
+          "daysBeforeEvent": 30,
+          "action": "Anniversary gift reminder",
+          "priority": "medium",
+          "completed": false
+        },
+        {
+          "reminderDate": "2026-06-06",
+          "daysBeforeEvent": 14,
+          "action": "Send card or arrange gift delivery",
+          "priority": "high",
+          "completed": false
+        },
+        {
+          "reminderDate": "2026-06-20",
+          "daysBeforeEvent": 0,
+          "action": "Send anniversary wishes",
+          "priority": "high",
+          "completed": false
+        }
+      ],
+      "giftBudget": 50,
+      "planningNotes": "Married friends - consider dinner gift card for nice restaurant",
+      "giftIdeasLink": ""
+    },
+    {
+      "id": "reminder-uuid-3",
+      "type": "relationship-maintenance",
+      "contactId": "contact-uuid-2",
+      "contactName": "Mike Johnson",
+      "eventDate": "recurring-monthly",
+      "frequency": "monthly",
+      "schedule": [
+        {
+          "reminderDate": "2025-11-15",
+          "action": "Monthly check-in with Mike - text or call",
+          "priority": "medium",
+          "completed": false,
+          "recurring": true,
+          "recurringPattern": "15th of each month"
+        }
+      ],
+      "relationshipTier": "regular friend",
+      "contactMethod": "text or phone call",
+      "lastContact": "2025-10-12",
+      "planningNotes": "Regular friend - maintain monthly contact, suggest quarterly coffee meetup"
+    },
+    {
+      "id": "reminder-uuid-4",
+      "type": "event",
+      "eventName": "Annual Friendsgiving",
+      "eventDate": "2025-11-23",
+      "schedule": [
+        {
+          "reminderDate": "2025-10-01",
+          "daysBeforeEvent": 53,
+          "action": "Start planning Friendsgiving - set date, create guest list",
+          "priority": "medium",
+          "completed": false
+        },
+        {
+          "reminderDate": "2025-10-15",
+          "daysBeforeEvent": 39,
+          "action": "Send invitations and start menu planning",
+          "priority": "high",
+          "completed": false
+        },
+        {
+          "reminderDate": "2025-11-01",
+          "daysBeforeEvent": 22,
+          "action": "Finalize RSVPs and create shopping list",
+          "priority": "high",
+          "completed": false
+        },
+        {
+          "reminderDate": "2025-11-15",
+          "daysBeforeEvent": 8,
+          "action": "Major shopping and prep work",
+          "priority": "high",
+          "completed": false
+        },
+        {
+          "reminderDate": "2025-11-22",
+          "daysBeforeEvent": 1,
+          "action": "Final prep and cooking",
+          "priority": "critical",
+          "completed": false
+        }
+      ],
+      "eventBudget": 300,
+      "expectedGuests": 12,
+      "planningNotes": "Annual tradition - potluck style, assign dishes to guests",
+      "eventPlanLink": "data/events/friendsgiving-2025.md"
+    }
+  ],
+  "settings": {
+    "defaultBirthdayReminderDays": [60, 30, 14, 7, 3, 0],
+    "defaultAnniversaryReminderDays": [30, 14, 0],
+    "relationshipMaintenanceFrequencies": {
+      "close": "weekly",
+      "regular": "monthly",
+      "occasional": "quarterly"
+    },
+    "notificationMethods": ["email", "calendar", "app-notification"],
+    "preferredReminderTime": "09:00"
+  },
+  "metadata": {
+    "lastUpdated": "2025-10-22",
+    "totalActiveReminders": 4,
+    "upcomingReminderCount": 15,
+    "version": "1.0"
+  }
+}

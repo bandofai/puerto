@@ -1,0 +1,33 @@
+{
+  "name": "data-engineer",
+  "version": "1.0.0",
+  "description": "Data pipeline and ETL specialist with data warehouse design capabilities",
+  "author": {
+    "name": "Puerto"
+  },
+  "capabilities": [
+    "ETL pipeline development",
+    "Data modeling and warehouse design",
+    "Data quality validation and profiling",
+    "Pipeline orchestration (Airflow/Prefect)",
+    "Dimensional modeling (star/snowflake schemas)",
+    "Data quality checks and anomaly detection"
+  ],
+  "agents": [
+    "./agents/etl-builder.md",
+    "./agents/data-quality-checker.md",
+    "./agents/pipeline-orchestrator.md",
+    "./agents/warehouse-architect.md"
+  ],
+  "skills": [
+    "./skills/etl-patterns/SKILL.md",
+    "./skills/data-quality/SKILL.md",
+    "./skills/orchestration/SKILL.md",
+    "./skills/warehouse-design/SKILL.md"
+  ],
+  "tools": [
+    "python",
+    "sql",
+    "file-operations"
+  ]
+}

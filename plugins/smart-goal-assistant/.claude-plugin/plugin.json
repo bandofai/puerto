@@ -1,0 +1,22 @@
+{
+  "name": "smart-goal-assistant",
+  "version": "1.0.0",
+  "description": "A comprehensive goal-setting and tracking system that helps individuals and teams set, plan, track, and achieve SMART goals through structured validation, milestone planning, progress tracking, regular reviews, and strategic pivoting.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/progress-tracker.md",
+    "./agents/pivot-advisor.md",
+    "./agents/goal-validator.md",
+    "./agents/review-facilitator.md",
+    "./agents/milestone-planner.md"
+  ],
+  "skills": [
+    "./skills/review-facilitation/SKILL.md",
+    "./skills/progress-tracking/SKILL.md",
+    "./skills/milestone-decomposition/SKILL.md",
+    "./skills/smart-validation/SKILL.md"
+  ],
+  "license": "MIT"
+}

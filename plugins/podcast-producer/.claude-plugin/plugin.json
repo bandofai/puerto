@@ -1,0 +1,15 @@
+{
+  "name": "podcast-producer",
+  "version": "1.0.0",
+  "description": "Podcast production coordination specialist for episode planning, show notes, and distribution.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/episode-planner.md"
+  ],
+  "skills": [
+    "./skills/episode-planning/SKILL.md"
+  ],
+  "license": "MIT"
+}

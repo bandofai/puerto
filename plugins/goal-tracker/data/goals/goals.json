@@ -1,0 +1,28 @@
+{
+  "goals": [],
+  "goalTypes": [
+    "emergency",
+    "debt",
+    "retirement",
+    "house",
+    "education",
+    "vacation",
+    "investment",
+    "other"
+  ],
+  "priorities": [
+    "high",
+    "medium",
+    "low"
+  ],
+  "debtStrategies": [
+    "snowball",
+    "avalanche",
+    "custom"
+  ],
+  "settings": {
+    "currency": "USD",
+    "celebrateMilestones": true,
+    "defaultEmergencyFundMonths": 6
+  }
+}

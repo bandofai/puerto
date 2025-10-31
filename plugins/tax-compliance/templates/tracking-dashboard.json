@@ -1,0 +1,64 @@
+{
+  "dashboard_name": "Tax Obligation Dashboard",
+  "entity": "{entity_name}",
+  "generated_date": "{YYYY-MM-DD}",
+  "status_summary": {
+    "total_obligations": 0,
+    "completed": 0,
+    "in_progress": 0,
+    "pending": 0,
+    "delinquent": 0,
+    "completion_percentage": 0
+  },
+  "critical_alerts": {
+    "description": "Obligations due within 7 days",
+    "count": 0,
+    "obligations": []
+  },
+  "upcoming_alerts": {
+    "description": "Obligations due within 30 days",
+    "count": 0,
+    "obligations": []
+  },
+  "monitoring": {
+    "description": "Obligations due 31+ days",
+    "count": 0,
+    "obligations": []
+  },
+  "recently_completed": {
+    "description": "Completed in last 30 days",
+    "count": 0,
+    "obligations": []
+  },
+  "obligation_template": {
+    "obligation_id": "{jurisdiction}-{form}-{entity}-{period}",
+    "entity": "{entity_name}",
+    "jurisdiction": "federal | state | local",
+    "form_type": "{form_number}",
+    "form_name": "{descriptive_name}",
+    "tax_period": "{YYYY | YYYY-QX | YYYY-MM}",
+    "due_date": "{YYYY-MM-DD}",
+    "extended_due_date": "{YYYY-MM-DD | null}",
+    "status": "pending | documentation_gathering | in_preparation | ready_for_review | under_review | revision_required | approved | filed | completed | extended | delinquent",
+    "assigned_to": "{preparer_name}",
+    "alert_schedule": {
+      "30_day": "{YYYY-MM-DD}",
+      "14_day": "{YYYY-MM-DD}",
+      "7_day": "{YYYY-MM-DD}",
+      "1_day": "{YYYY-MM-DD}"
+    },
+    "priority": "critical | high | medium | low",
+    "estimated_completion_time": "{hours}",
+    "progress_percentage": 0,
+    "dependencies": [],
+    "notes": "",
+    "filing_confirmation": "",
+    "last_updated": "{YYYY-MM-DD HH:MM:SS}"
+  },
+  "statistics": {
+    "on_time_filing_rate": 0,
+    "average_completion_time": 0,
+    "obligations_this_quarter": 0,
+    "obligations_this_year": 0
+  }
+}

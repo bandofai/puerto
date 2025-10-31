@@ -1,0 +1,137 @@
+{
+  "documents": [
+    {
+      "document_id": "doc_20250115_001",
+      "filename": "20250115_receipt_bestbuy_laptop_1299.pdf",
+      "original_filename": "receipt_scan_001.pdf",
+      "category": "Financial/Receipts/Electronics",
+      "subcategory": "Electronics",
+      "document_type": "receipt",
+      "date_created": "2025-01-15",
+      "date_processed": "2025-01-15T14:30:00Z",
+      "ocr_text": "Best Buy Receipt #12345678\nDate: January 15, 2025\n\nMacBook Pro 14\" M3 Chip - Space Gray\nModel: MTMR3LL/A\nPrice: $1,199.00\n\nUSB-C to Lightning Cable\nPrice: $19.00\n\nSubtotal: $1,218.00\nTax (8%): $97.44\nTotal: $1,315.44\n\nPayment: Visa ending in 4321\nAuthorization: APPROVED\n\nThank you for shopping at Best Buy!\n3-Year warranty available - ask associate",
+      "metadata": {
+        "dates": ["2025-01-15"],
+        "amounts": ["$1,199.00", "$19.00", "$1,218.00", "$97.44", "$1,315.44"],
+        "vendor": "Best Buy",
+        "items": ["MacBook Pro 14\" M3 Chip", "USB-C to Lightning Cable"],
+        "payment_method": "Visa ending 4321",
+        "receipt_number": "12345678",
+        "tax_amount": "$97.44"
+      },
+      "keywords": ["laptop", "computer", "electronics", "macbook", "apple", "bestbuy", "usb", "cable"],
+      "importance": "MEDIUM",
+      "file_path": "/Documents/Active/Financial/Receipts/Electronics/20250115_receipt_bestbuy_laptop_1299.pdf",
+      "backed_up": true,
+      "retention_period": "7_years",
+      "expiration_date": null,
+      "tags": ["tax_deductible", "work_equipment", "warranty_eligible"]
+    },
+    {
+      "document_id": "doc_20250110_001",
+      "filename": "20250110_contract_employment_acme_corp.pdf",
+      "original_filename": "employment_agreement.pdf",
+      "category": "Legal/Contracts/Employment",
+      "subcategory": "Employment",
+      "document_type": "contract",
+      "date_created": "2025-01-10",
+      "date_processed": "2025-01-10T09:15:00Z",
+      "ocr_text": "EMPLOYMENT AGREEMENT\n\nThis Employment Agreement (\"Agreement\") is entered into as of January 10, 2025, by and between Acme Corporation (\"Employer\") and John Smith (\"Employee\").\n\nPosition: Senior Software Engineer\nStart Date: February 1, 2025\nSalary: $120,000 per year\nBenefits: Health, dental, 401(k) matching\n\nThe parties hereby agree to the following terms and conditions...",
+      "metadata": {
+        "dates": ["2025-01-10", "2025-02-01"],
+        "amounts": ["$120,000"],
+        "vendor": "Acme Corporation",
+        "parties": ["Acme Corporation", "John Smith"],
+        "position": "Senior Software Engineer",
+        "start_date": "2025-02-01"
+      },
+      "keywords": ["employment", "contract", "agreement", "acme", "job", "salary", "software", "engineer"],
+      "importance": "HIGH",
+      "file_path": "/Documents/Active/Legal/Contracts/Employment/20250110_contract_employment_acme_corp.pdf",
+      "backed_up": true,
+      "retention_period": "permanent",
+      "expiration_date": null,
+      "tags": ["active_contract", "employment", "important"]
+    },
+    {
+      "document_id": "doc_20250105_001",
+      "filename": "20250105_warranty_samsung_tv_3year.pdf",
+      "original_filename": "tv_warranty.pdf",
+      "category": "Warranties/Electronics",
+      "subcategory": "Electronics",
+      "document_type": "warranty",
+      "date_created": "2025-01-05",
+      "date_processed": "2025-01-05T16:45:00Z",
+      "ocr_text": "SAMSUNG LIMITED WARRANTY\n\nProduct: 65\" 4K Smart TV\nModel: UN65TU8000\nSerial: ABC123XYZ789\nPurchase Date: January 5, 2025\n\nWarranty Coverage: 3 Years\nExpiration Date: January 5, 2028\n\nCoverage includes parts and labor for defects in materials and workmanship. Does not cover accidental damage.\n\nTo file a claim: 1-800-SAMSUNG or samsung.com/support\nRegistration recommended within 30 days.",
+      "metadata": {
+        "dates": ["2025-01-05", "2028-01-05"],
+        "amounts": [],
+        "vendor": "Samsung",
+        "product": "65\" 4K Smart TV",
+        "model": "UN65TU8000",
+        "serial_number": "ABC123XYZ789",
+        "warranty_duration": "3_years",
+        "expiration_date": "2028-01-05"
+      },
+      "keywords": ["warranty", "samsung", "tv", "television", "electronics", "coverage"],
+      "importance": "MEDIUM",
+      "file_path": "/Documents/Warranties/Electronics/20250105_warranty_samsung_tv_3year.pdf",
+      "backed_up": true,
+      "retention_period": "until_expiration",
+      "expiration_date": "2028-01-05",
+      "tags": ["active_warranty", "electronics", "registration_required"]
+    },
+    {
+      "document_id": "doc_20241215_001",
+      "filename": "20241215_insurance_auto_policy_renewal.pdf",
+      "original_filename": "auto_insurance_renewal.pdf",
+      "category": "Insurance/Auto",
+      "subcategory": "Auto",
+      "document_type": "insurance",
+      "date_created": "2024-12-15",
+      "date_processed": "2024-12-15T11:20:00Z",
+      "ocr_text": "PROGRESSIVE AUTO INSURANCE\nPolicy Renewal Notice\n\nPolicy Number: POL-987654321\nInsured: John Smith\nVehicle: 2020 Honda Accord\nVIN: 1HGCV1F3XLA123456\n\nPolicy Period: January 1, 2025 - January 1, 2026\nPremium: $1,200.00 (annual)\nCoverage: Full coverage with $500 deductible\n\nLiability: $100,000/$300,000\nCollision: Actual Cash Value\nComprehensive: Actual Cash Value",
+      "metadata": {
+        "dates": ["2024-12-15", "2025-01-01", "2026-01-01"],
+        "amounts": ["$1,200.00", "$500", "$100,000", "$300,000"],
+        "vendor": "Progressive",
+        "policy_number": "POL-987654321",
+        "insured": "John Smith",
+        "vehicle": "2020 Honda Accord",
+        "coverage_start": "2025-01-01",
+        "coverage_end": "2026-01-01"
+      },
+      "keywords": ["insurance", "auto", "car", "progressive", "policy", "coverage", "renewal"],
+      "importance": "HIGH",
+      "file_path": "/Documents/Active/Insurance/Auto/20241215_insurance_auto_policy_renewal.pdf",
+      "backed_up": true,
+      "retention_period": "until_replaced",
+      "expiration_date": "2026-01-01",
+      "tags": ["active_policy", "auto_insurance", "renewal_required"]
+    }
+  ],
+  "index_metadata": {
+    "index_version": "1.0",
+    "created_date": "2025-01-15T10:00:00Z",
+    "last_updated": "2025-01-15T16:45:00Z",
+    "total_documents": 4,
+    "categories": {
+      "Financial": 1,
+      "Legal": 1,
+      "Warranties": 1,
+      "Insurance": 1
+    },
+    "document_types": {
+      "receipt": 1,
+      "contract": 1,
+      "warranty": 1,
+      "insurance": 1
+    }
+  },
+  "search_config": {
+    "ocr_searchable": true,
+    "full_text_index": true,
+    "metadata_indexed": true,
+    "keyword_extraction": true
+  }
+}

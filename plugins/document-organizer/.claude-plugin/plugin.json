@@ -1,0 +1,17 @@
+{
+  "name": "document-organizer",
+  "version": "1.0.0",
+  "description": "Document archiving and organization specialist with auto-categorization, OCR, warranty tracking, and intelligent search",
+  "author": {
+    "name": "Puerto"
+  },
+  "agents": [
+    "./agents/document-classifier.md",
+    "./agents/warranty-tracker.md",
+    "./agents/document-searcher.md",
+    "./agents/review-scheduler.md"
+  ],
+  "skills": [
+    "./skills/document-management/SKILL.md"
+  ]
+}

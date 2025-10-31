@@ -1,0 +1,17 @@
+{
+  "name": "crisis-communications",
+  "version": "1.0.0",
+  "description": "Crisis communication management specialist for crisis response planning, press releases, stakeholder messaging, social media monitoring, and response coordination",
+  "agents": [
+    "./agents/crisis-planner.md",
+    "./agents/press-release-writer.md",
+    "./agents/stakeholder-messenger.md",
+    "./agents/social-monitor.md"
+  ],
+  "skills": [
+    "./skills/crisis-communication.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "release-manager",
+  "version": "1.0.0",
+  "description": "Release coordination and deployment specialist for release planning, deployment coordination, rollback procedures, release notes, and stakeholder communication",
+  "agents": [
+    "./agents/release-planner.md",
+    "./agents/deployment-coordinator.md",
+    "./agents/release-notes-writer.md",
+    "./agents/rollback-specialist.md"
+  ],
+  "skills": [
+    "./SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

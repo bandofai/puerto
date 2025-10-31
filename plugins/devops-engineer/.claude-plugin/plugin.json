@@ -1,0 +1,20 @@
+{
+  "name": "devops-engineer",
+  "version": "1.0.0",
+  "description": "DevOps and infrastructure automation specialist with CI/CD, IaC, deployment, and monitoring capabilities",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/cicd-builder.md",
+    "./agents/infrastructure-manager.md",
+    "./agents/deployment-orchestrator.md",
+    "./agents/monitoring-setup.md"
+  ],
+  "skills": [
+    "./skills/cicd-patterns/SKILL.md",
+    "./skills/iac-design/SKILL.md",
+    "./skills/deployment-strategies/SKILL.md",
+    "./skills/observability/SKILL.md"
+  ]
+}

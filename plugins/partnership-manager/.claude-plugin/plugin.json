@@ -1,0 +1,17 @@
+{
+  "name": "partnership-manager",
+  "version": "1.0.0",
+  "description": "Strategic partnership specialist for partner identification, partnership proposals, deal structuring, contract negotiation, and relationship management",
+  "agents": [
+    "./agents/partner-identifier.md",
+    "./agents/proposal-writer.md",
+    "./agents/deal-structurer.md",
+    "./agents/relationship-manager.md"
+  ],
+  "skills": [
+    "./skills/partnership-strategy/SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

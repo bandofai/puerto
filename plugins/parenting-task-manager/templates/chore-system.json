@@ -1,0 +1,30 @@
+{
+  "children": [
+    {
+      "id": "child-001",
+      "name": "Emma",
+      "age": 8,
+      "allowanceAmount": 5,
+      "allowanceFrequency": "weekly"
+    }
+  ],
+  "chores": [
+    {
+      "id": "chore-001",
+      "childId": "child-001",
+      "name": "Make bed",
+      "frequency": "daily",
+      "value": 0,
+      "required": true
+    },
+    {
+      "id": "chore-002",
+      "childId": "child-001",
+      "name": "Take out trash",
+      "frequency": "weekly",
+      "value": 2,
+      "required": false
+    }
+  ],
+  "completions": []
+}

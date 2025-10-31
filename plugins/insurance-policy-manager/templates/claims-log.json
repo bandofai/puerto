@@ -1,0 +1,458 @@
+{
+  "last_updated": "2025-10-23T00:00:00Z",
+  "version": "1.0",
+  "owner": {
+    "name": "",
+    "email": "",
+    "phone": ""
+  },
+  "claims": [
+    {
+      "claim_id": "CLAIM-20251020-a7b3",
+      "claim_type": "auto",
+      "status": "settled",
+      "incident_date": "2025-10-20",
+      "filed_date": "2025-10-20T14:30:00Z",
+      "closed_date": "2025-11-15T10:00:00Z",
+      "incident_location": "Main St & 5th Ave, San Francisco, CA",
+      "description": "Rear-end collision at traffic light. Other driver failed to stop in time.",
+      "estimated_amount": 3500.00,
+      "final_amount": 3200.00,
+      "policy_id": "EXAMPLE-AUTO-001",
+      "insurance_company": "State Farm",
+      "policy_number": "SF-AUTO-123456",
+      "claim_number": "SF-CLAIM-2025-9876543",
+      "fault_determination": "not_at_fault",
+      "police_report": {
+        "filed": true,
+        "report_number": "SFPD-2025-12345",
+        "responding_officer": "Officer Smith",
+        "department": "San Francisco Police Department"
+      },
+      "other_parties": [
+        {
+          "name": "John Doe",
+          "insurance_company": "Progressive",
+          "policy_number": "PROG-654321",
+          "contact_phone": "555-123-4567",
+          "at_fault": true
+        }
+      ],
+      "vehicles_involved": [
+        {
+          "owner": "self",
+          "make": "Toyota",
+          "model": "Camry",
+          "year": 2022,
+          "damage": "Rear bumper, trunk lid, rear lights",
+          "drivable": true
+        },
+        {
+          "owner": "other_party",
+          "make": "Honda",
+          "model": "Civic",
+          "year": 2021,
+          "damage": "Front bumper, hood"
+        }
+      ],
+      "adjuster": {
+        "name": "Jane Williams",
+        "company": "State Farm Claims",
+        "phone": "555-987-6543",
+        "email": "jane.williams@statefarm.com",
+        "assigned_date": "2025-10-21T09:00:00Z"
+      },
+      "timeline": [
+        {
+          "date": "2025-10-20T14:30:00Z",
+          "event": "Accident occurred",
+          "notes": "Rear-end collision at Main & 5th"
+        },
+        {
+          "date": "2025-10-20T14:45:00Z",
+          "event": "Police called",
+          "notes": "SFPD responded, filed report #12345"
+        },
+        {
+          "date": "2025-10-20T16:00:00Z",
+          "event": "Claim filed",
+          "notes": "Called State Farm claims line, initial report"
+        },
+        {
+          "date": "2025-10-21T09:00:00Z",
+          "event": "Claim number assigned",
+          "notes": "SF-CLAIM-2025-9876543"
+        },
+        {
+          "date": "2025-10-21T10:30:00Z",
+          "event": "Adjuster assigned",
+          "notes": "Jane Williams assigned to case"
+        },
+        {
+          "date": "2025-10-22T14:00:00Z",
+          "event": "Vehicle inspection scheduled",
+          "notes": "Appointment at approved body shop"
+        },
+        {
+          "date": "2025-10-23T10:00:00Z",
+          "event": "Vehicle inspected",
+          "notes": "Adjuster approved $3,200 repair estimate"
+        },
+        {
+          "date": "2025-10-24T08:00:00Z",
+          "event": "Repairs authorized",
+          "notes": "Body shop began work, 5-7 day estimate"
+        },
+        {
+          "date": "2025-10-30T15:00:00Z",
+          "event": "Repairs completed",
+          "notes": "Vehicle ready for pickup"
+        },
+        {
+          "date": "2025-11-02T10:00:00Z",
+          "event": "Settlement processed",
+          "notes": "Paid body shop directly, no out-of-pocket"
+        },
+        {
+          "date": "2025-11-15T10:00:00Z",
+          "event": "Claim closed",
+          "notes": "All work completed, claim finalized"
+        }
+      ],
+      "documents": [
+        {
+          "type": "police_report",
+          "filename": "police-report-12345.pdf",
+          "path": "~/.insurance-policies/claims-documents/closed/CLAIM-20251020-a7b3/police-report-12345.pdf",
+          "added_date": "2025-10-20T20:00:00Z"
+        },
+        {
+          "type": "photos",
+          "filename": "damage-photos.zip",
+          "path": "~/.insurance-policies/claims-documents/closed/CLAIM-20251020-a7b3/damage-photos.zip",
+          "added_date": "2025-10-20T18:00:00Z",
+          "notes": "10 photos from multiple angles"
+        },
+        {
+          "type": "estimate",
+          "filename": "body-shop-estimate.pdf",
+          "path": "~/.insurance-policies/claims-documents/closed/CLAIM-20251020-a7b3/body-shop-estimate.pdf",
+          "added_date": "2025-10-22T16:00:00Z"
+        },
+        {
+          "type": "settlement",
+          "filename": "settlement-statement.pdf",
+          "path": "~/.insurance-policies/claims-documents/closed/CLAIM-20251020-a7b3/settlement-statement.pdf",
+          "added_date": "2025-11-02T12:00:00Z"
+        }
+      ],
+      "communications": [
+        {
+          "date": "2025-10-20T16:00:00Z",
+          "type": "phone",
+          "with": "State Farm Claims",
+          "summary": "Initial claim filing, provided accident details",
+          "notes": "Got claim reference, told adjuster will call within 24 hours"
+        },
+        {
+          "date": "2025-10-21T10:30:00Z",
+          "type": "phone",
+          "with": "Jane Williams (Adjuster)",
+          "summary": "Adjuster introduction, scheduled inspection",
+          "notes": "Very professional, set up appointment for next day"
+        },
+        {
+          "date": "2025-10-23T11:00:00Z",
+          "type": "phone",
+          "with": "Jane Williams",
+          "summary": "Inspection complete, estimate approved",
+          "notes": "Approved $3,200 for repairs, authorized body shop to proceed"
+        },
+        {
+          "date": "2025-10-30T16:00:00Z",
+          "type": "email",
+          "with": "Body Shop",
+          "summary": "Repairs complete, ready for pickup",
+          "notes": "Invited to inspect work before accepting vehicle"
+        }
+      ],
+      "settlement": {
+        "settlement_date": "2025-11-02T00:00:00Z",
+        "settlement_amount": 3200.00,
+        "deductible_paid": 0.00,
+        "out_of_pocket": 0.00,
+        "payment_method": "direct_to_shop",
+        "paid_to": "ABC Body Shop",
+        "rental_car_coverage": {
+          "provided": true,
+          "days": 7,
+          "total_cost": 350.00,
+          "covered_by_insurance": true
+        },
+        "notes": "Not at fault, other party's insurance also processed claim. No deductible or out-of-pocket costs."
+      },
+      "lessons_learned": [
+        "Always take extensive photos immediately after accident",
+        "Police report essential for not-at-fault determination",
+        "State Farm claims process very smooth",
+        "Rental car coverage valuable - used for 7 days"
+      ],
+      "impact_on_premium": {
+        "expected_increase": 0,
+        "notes": "Not at fault, should not impact premium. Confirmed with agent."
+      },
+      "satisfaction_rating": 5,
+      "notes": "Excellent claims experience. Adjuster responsive, process straightforward, completed in ~3 weeks."
+    },
+    {
+      "claim_id": "CLAIM-20250615-x3y2",
+      "claim_type": "home",
+      "status": "closed",
+      "incident_date": "2025-06-15",
+      "filed_date": "2025-06-15T08:00:00Z",
+      "closed_date": "2025-07-20T00:00:00Z",
+      "incident_location": "Home Address - Kitchen",
+      "description": "Water leak from dishwasher caused damage to kitchen floor and lower cabinets",
+      "estimated_amount": 4500.00,
+      "final_amount": 4200.00,
+      "policy_id": "EXAMPLE-HOME-001",
+      "insurance_company": "Allstate",
+      "policy_number": "ALLST-HOME-78910",
+      "claim_number": "ALL-HO-2025-445566",
+      "fault_determination": "covered_peril",
+      "police_report": {
+        "filed": false,
+        "report_number": null,
+        "notes": "Not required for property damage"
+      },
+      "adjuster": {
+        "name": "Michael Chen",
+        "company": "Allstate Claims",
+        "phone": "555-222-3333",
+        "email": "michael.chen@allstate.com",
+        "assigned_date": "2025-06-16T10:00:00Z"
+      },
+      "timeline": [
+        {
+          "date": "2025-06-15T07:00:00Z",
+          "event": "Water leak discovered",
+          "notes": "Woke up to water all over kitchen floor"
+        },
+        {
+          "date": "2025-06-15T07:30:00Z",
+          "event": "Emergency mitigation",
+          "notes": "Shut off water, began mopping, called plumber"
+        },
+        {
+          "date": "2025-06-15T08:00:00Z",
+          "event": "Claim filed",
+          "notes": "Called Allstate claims line"
+        },
+        {
+          "date": "2025-06-15T10:00:00Z",
+          "event": "Plumber assessment",
+          "notes": "Dishwasher supply line failed, needs replacement"
+        },
+        {
+          "date": "2025-06-16T10:00:00Z",
+          "event": "Adjuster assigned",
+          "notes": "Michael Chen assigned"
+        },
+        {
+          "date": "2025-06-17T14:00:00Z",
+          "event": "Home inspection",
+          "notes": "Adjuster inspected damage, took photos"
+        },
+        {
+          "date": "2025-06-18T11:00:00Z",
+          "event": "Claim approved",
+          "notes": "Approved for floor and cabinet repair/replacement"
+        },
+        {
+          "date": "2025-06-20T00:00:00Z",
+          "event": "Repairs scheduled",
+          "notes": "Contractor scheduled for floor and cabinet work"
+        },
+        {
+          "date": "2025-07-10T00:00:00Z",
+          "event": "Repairs completed",
+          "notes": "New flooring and cabinets installed"
+        },
+        {
+          "date": "2025-07-15T00:00:00Z",
+          "event": "Final inspection",
+          "notes": "Adjuster approved completed work"
+        },
+        {
+          "date": "2025-07-20T00:00:00Z",
+          "event": "Claim closed",
+          "notes": "Payment issued, claim finalized"
+        }
+      ],
+      "documents": [
+        {
+          "type": "photos",
+          "filename": "water-damage-photos.zip",
+          "path": "~/.insurance-policies/claims-documents/closed/CLAIM-20250615-x3y2/water-damage-photos.zip",
+          "added_date": "2025-06-15T12:00:00Z"
+        },
+        {
+          "type": "receipt",
+          "filename": "plumber-invoice.pdf",
+          "path": "~/.insurance-policies/claims-documents/closed/CLAIM-20250615-x3y2/plumber-invoice.pdf",
+          "added_date": "2025-06-15T15:00:00Z"
+        },
+        {
+          "type": "estimate",
+          "filename": "contractor-estimate.pdf",
+          "path": "~/.insurance-policies/claims-documents/closed/CLAIM-20250615-x3y2/contractor-estimate.pdf",
+          "added_date": "2025-06-18T14:00:00Z"
+        },
+        {
+          "type": "settlement",
+          "filename": "settlement-check.pdf",
+          "path": "~/.insurance-policies/claims-documents/closed/CLAIM-20250615-x3y2/settlement-check.pdf",
+          "added_date": "2025-07-20T10:00:00Z"
+        }
+      ],
+      "communications": [
+        {
+          "date": "2025-06-15T08:00:00Z",
+          "type": "phone",
+          "with": "Allstate Claims",
+          "summary": "Filed claim, described water damage",
+          "notes": "Advised to document damage and begin mitigation"
+        },
+        {
+          "date": "2025-06-16T11:00:00Z",
+          "type": "phone",
+          "with": "Michael Chen",
+          "summary": "Adjuster introduction and inspection scheduling",
+          "notes": "Scheduled home visit for next day"
+        },
+        {
+          "date": "2025-06-17T15:00:00Z",
+          "type": "phone",
+          "with": "Michael Chen",
+          "summary": "Post-inspection discussion",
+          "notes": "Explained coverage, deductible, next steps"
+        },
+        {
+          "date": "2025-06-18T12:00:00Z",
+          "type": "email",
+          "with": "Michael Chen",
+          "summary": "Claim approval notification",
+          "notes": "Approved $4,200 for repairs minus $2,500 deductible"
+        }
+      ],
+      "settlement": {
+        "settlement_date": "2025-07-20T00:00:00Z",
+        "settlement_amount": 4200.00,
+        "deductible_paid": 2500.00,
+        "out_of_pocket": 2500.00,
+        "payment_method": "check_to_insured",
+        "paid_to": "Homeowner (to pay contractor)",
+        "additional_expenses": {
+          "emergency_plumber": 350.00,
+          "covered": true,
+          "notes": "Emergency repairs reimbursed"
+        },
+        "notes": "Total payout: $4,200. Paid deductible of $2,500. Net received: $1,700 + $350 emergency = $2,050"
+      },
+      "lessons_learned": [
+        "Good to have caught leak early - damage could have been much worse",
+        "Emergency mitigation important (mopping, shutting off water)",
+        "Photos and documentation essential",
+        "Deductible is significant - consider if worth claiming for smaller amounts"
+      ],
+      "impact_on_premium": {
+        "expected_increase": "5-10%",
+        "notes": "Single claim shouldn't drastically increase rates. Monitor at renewal."
+      },
+      "satisfaction_rating": 4,
+      "notes": "Good experience overall. Adjuster helpful, process took a bit long but acceptable."
+    }
+  ],
+  "statistics": {
+    "total_claims": 2,
+    "open_claims": 0,
+    "closed_claims": 2,
+    "denied_claims": 0,
+    "total_claimed_amount": 7700.00,
+    "total_settled_amount": 7400.00,
+    "total_out_of_pocket": 2500.00,
+    "claims_by_type": {
+      "auto": 1,
+      "home": 1,
+      "health": 0,
+      "life": 0,
+      "disability": 0
+    },
+    "claims_by_year": {
+      "2025": 2
+    },
+    "average_settlement_time_days": 23,
+    "average_satisfaction_rating": 4.5
+  },
+  "claims_history_impact": {
+    "at_fault_auto_claims_5_years": 0,
+    "not_at_fault_auto_claims_5_years": 1,
+    "home_claims_5_years": 1,
+    "total_claims_5_years": 2,
+    "impact_on_insurability": "low",
+    "notes": "Limited claims history, both resolved favorably. Should not significantly impact future premiums or insurability."
+  },
+  "best_practices": [
+    "Always document damage immediately with photos/videos",
+    "File claims promptly (within 24-48 hours)",
+    "Keep all receipts for emergency repairs",
+    "Communicate regularly with adjuster",
+    "Get multiple estimates when possible",
+    "Review settlement carefully before accepting",
+    "Consider deductible vs claim amount (self-insure small claims)"
+  ],
+  "claims_tips": {
+    "when_to_file": "File for damages exceeding 2x your deductible to justify potential premium increases",
+    "documentation": "Photos, receipts, police reports (if applicable), witness statements",
+    "communication": "Keep log of all calls, emails, and conversations",
+    "timeline": "Follow up weekly if no updates from adjuster",
+    "disputes": "Request supervisor review if disagreement on settlement"
+  },
+  "important_contacts": {
+    "auto_insurance_claims": {
+      "company": "State Farm",
+      "phone": "1-800-STATE-FARM",
+      "website": "www.statefarm.com/claims",
+      "hours": "24/7"
+    },
+    "home_insurance_claims": {
+      "company": "Allstate",
+      "phone": "1-800-ALLSTATE",
+      "website": "www.allstate.com/claims",
+      "hours": "24/7"
+    },
+    "health_insurance_claims": {
+      "company": "Blue Cross Blue Shield",
+      "phone": "1-800-BCBS-HELP",
+      "website": "www.bcbs.com/claims",
+      "hours": "8am-8pm Mon-Fri"
+    }
+  },
+  "document_storage": {
+    "active_claims": "~/.insurance-policies/claims-documents/active/",
+    "closed_claims": "~/.insurance-policies/claims-documents/closed/",
+    "denied_claims": "~/.insurance-policies/claims-documents/denied/",
+    "backup_location": "Encrypted cloud storage",
+    "retention_policy": "Keep closed claim docs for 7 years minimum"
+  },
+  "notes": [
+    "Update this log promptly after filing or updating claims",
+    "Keep all claim documentation organized by claim ID",
+    "Take extensive photos/videos at time of incident",
+    "Never admit fault before speaking with insurance",
+    "Get everything in writing (emails, letters)",
+    "Review settlement offers carefully - you can negotiate",
+    "Consider impact on premiums before filing small claims",
+    "Know your deductibles and coverage limits"
+  ]
+}

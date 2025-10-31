@@ -1,0 +1,17 @@
+{
+  "name": "app-store-optimizer",
+  "version": "1.0.0",
+  "description": "ASO (App Store Optimization) specialist for keyword research, app title/description optimization, screenshot and preview optimization, review management, and competitor analysis",
+  "agents": [
+    "./agents/keyword-researcher.md",
+    "./agents/listing-optimizer.md",
+    "./agents/creative-optimizer.md",
+    "./agents/review-manager.md"
+  ],
+  "skills": [
+    "./skills/aso-strategy/SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

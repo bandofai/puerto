@@ -1,0 +1,95 @@
+{
+  "workflow_id": "WF-EXP-YYYY-NNN",
+  "report_id": "EXP-YYYY-NNN",
+  "version": "1.0",
+  "created_at": "",
+  "updated_at": "",
+  "employee": {
+    "name": "",
+    "id": "",
+    "email": "",
+    "department": "",
+    "manager": ""
+  },
+  "expense_summary": {
+    "total_amount": 0.00,
+    "currency": "USD",
+    "expense_count": 0,
+    "period": ""
+  },
+  "compliance": {
+    "status": "pending_validation",
+    "score": null,
+    "violations": []
+  },
+  "approval_chain": [
+    {
+      "order": 10,
+      "role": "Manager",
+      "name": "",
+      "email": "",
+      "status": "pending",
+      "required": true,
+      "sla_hours": 48,
+      "sla_deadline": null,
+      "notified_at": null,
+      "approved_at": null,
+      "decision": null,
+      "comments": null
+    },
+    {
+      "order": 90,
+      "role": "Finance",
+      "name": "Finance Team",
+      "email": "finance@company.com",
+      "status": "waiting",
+      "required": true,
+      "sla_hours": 48,
+      "sla_deadline": null,
+      "notified_at": null,
+      "approved_at": null,
+      "decision": null,
+      "comments": null,
+      "final_reviewer": true
+    }
+  ],
+  "current_step": {
+    "order": 10,
+    "role": "Manager",
+    "status": "pending_manager"
+  },
+  "overall_status": "pending_manager",
+  "progress_percentage": 0,
+  "status_history": [
+    {
+      "timestamp": "",
+      "status": "submitted",
+      "actor": "",
+      "actor_role": "Employee",
+      "action": "submit",
+      "notes": "Expense report submitted for approval"
+    }
+  ],
+  "notifications": {
+    "employee_updates": true,
+    "approver_reminders": true,
+    "escalation_alerts": true,
+    "last_notification_sent": null,
+    "reminder_schedule": []
+  },
+  "escalation": {
+    "enabled": true,
+    "policy": "auto_escalate_after_sla",
+    "escalate_to_role": "Director",
+    "escalate_after_hours": 72,
+    "escalated": false,
+    "escalation_history": []
+  },
+  "metrics": {
+    "total_duration_hours": null,
+    "average_approval_time_hours": null,
+    "sla_compliance_rate": null,
+    "approvals_within_sla": 0,
+    "approvals_overdue": 0
+  }
+}

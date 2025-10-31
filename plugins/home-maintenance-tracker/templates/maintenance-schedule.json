@@ -1,0 +1,417 @@
+{
+  "home_info": {
+    "address": "123 Main Street, Anytown, ST 12345",
+    "square_footage": 2400,
+    "year_built": 2010,
+    "climate_zone": "temperate",
+    "last_updated": "2025-10-21"
+  },
+  "systems": {
+    "hvac": {
+      "type": "Central AC + Gas Furnace",
+      "age": 8,
+      "filter_size": "16x25x1",
+      "last_service": "2025-04-15"
+    },
+    "water_heater": {
+      "type": "Gas tank",
+      "capacity": "50 gallons",
+      "age": 6,
+      "last_service": "2024-11-20"
+    },
+    "roof": {
+      "type": "Asphalt shingle",
+      "age": 15,
+      "last_inspection": "2025-03-10"
+    }
+  },
+  "maintenance_schedule": {
+    "monthly": [
+      {
+        "task_id": "MTH-001",
+        "task": "Replace HVAC air filters",
+        "system": "HVAC",
+        "estimated_time": "15 minutes",
+        "difficulty": "easy",
+        "supplies": ["16x25x1 air filters (2)"],
+        "instructions": "Turn off HVAC, locate filters in air handler, replace both filters",
+        "due_day": 1,
+        "reminder_days_before": 3
+      },
+      {
+        "task_id": "MTH-002",
+        "task": "Test smoke and CO detectors",
+        "system": "Safety",
+        "estimated_time": "10 minutes",
+        "difficulty": "easy",
+        "supplies": ["None"],
+        "instructions": "Press test button on each detector, replace batteries if chirping",
+        "due_day": 1,
+        "reminder_days_before": 3
+      },
+      {
+        "task_id": "MTH-003",
+        "task": "Check for plumbing leaks",
+        "system": "Plumbing",
+        "estimated_time": "20 minutes",
+        "difficulty": "easy",
+        "supplies": ["Flashlight"],
+        "instructions": "Inspect under sinks, around toilets, water heater, and exposed pipes",
+        "due_day": 15,
+        "reminder_days_before": 3
+      }
+    ],
+    "quarterly": [
+      {
+        "task_id": "QTR-001",
+        "task": "Clean refrigerator coils",
+        "system": "Appliances",
+        "estimated_time": "30 minutes",
+        "difficulty": "easy",
+        "supplies": ["Vacuum with brush attachment", "Coil brush"],
+        "instructions": "Unplug fridge, pull out from wall, vacuum coils on back/bottom",
+        "due_months": [1, 4, 7, 10],
+        "reminder_days_before": 7
+      },
+      {
+        "task_id": "QTR-002",
+        "task": "Clean dryer vent duct",
+        "system": "Appliances",
+        "estimated_time": "45 minutes",
+        "difficulty": "medium",
+        "supplies": ["Dryer vent brush", "Vacuum"],
+        "instructions": "Disconnect dryer, clean interior vent, clean exterior vent, vacuum lint",
+        "due_months": [2, 5, 8, 11],
+        "reminder_days_before": 7
+      },
+      {
+        "task_id": "QTR-003",
+        "task": "Test GFCI outlets",
+        "system": "Electrical",
+        "estimated_time": "15 minutes",
+        "difficulty": "easy",
+        "supplies": ["None"],
+        "instructions": "Press test button on each GFCI outlet, verify it trips, reset",
+        "due_months": [3, 6, 9, 12],
+        "reminder_days_before": 7
+      }
+    ],
+    "bi_annual": [
+      {
+        "task_id": "BIA-001",
+        "task": "Professional HVAC service",
+        "system": "HVAC",
+        "estimated_time": "1-2 hours",
+        "difficulty": "professional",
+        "contractor_type": "HVAC technician",
+        "instructions": "Schedule AC service in spring, furnace service in fall",
+        "due_months": [4, 10],
+        "reminder_days_before": 30,
+        "estimated_cost": 150
+      },
+      {
+        "task_id": "BIA-002",
+        "task": "Clean gutters and downspouts",
+        "system": "Exterior",
+        "estimated_time": "2-3 hours",
+        "difficulty": "medium",
+        "supplies": ["Ladder", "Gloves", "Bucket", "Hose"],
+        "instructions": "Remove debris from gutters, flush with hose, check downspout flow",
+        "due_months": [4, 10],
+        "reminder_days_before": 14,
+        "safety_notes": "Use ladder safely, consider professional if roof is steep"
+      },
+      {
+        "task_id": "BIA-003",
+        "task": "Inspect roof",
+        "system": "Roofing",
+        "estimated_time": "1 hour",
+        "difficulty": "medium",
+        "supplies": ["Binoculars or ladder"],
+        "instructions": "Check for damaged/missing shingles, inspect flashing, look for moss/algae",
+        "due_months": [5, 10],
+        "reminder_days_before": 14,
+        "safety_notes": "Inspect from ground with binoculars if not comfortable on roof"
+      }
+    ],
+    "annual": [
+      {
+        "task_id": "ANN-001",
+        "task": "Flush water heater",
+        "system": "Plumbing",
+        "estimated_time": "1 hour",
+        "difficulty": "medium",
+        "supplies": ["Garden hose", "Bucket"],
+        "instructions": "Turn off power/gas, connect hose to drain valve, drain 2-3 gallons to remove sediment",
+        "due_month": 11,
+        "reminder_days_before": 30
+      },
+      {
+        "task_id": "ANN-002",
+        "task": "Service garage door opener",
+        "system": "Garage",
+        "estimated_time": "30 minutes",
+        "difficulty": "easy",
+        "supplies": ["Lithium grease", "Wrench"],
+        "instructions": "Lubricate hinges and rollers, tighten hardware, test safety reverse",
+        "due_month": 3,
+        "reminder_days_before": 14
+      },
+      {
+        "task_id": "ANN-003",
+        "task": "Test sump pump",
+        "system": "Plumbing",
+        "estimated_time": "15 minutes",
+        "difficulty": "easy",
+        "supplies": ["Bucket of water"],
+        "instructions": "Pour water in sump pit, verify pump activates and drains water",
+        "due_month": 3,
+        "reminder_days_before": 14,
+        "seasonal_note": "Test before spring rains"
+      },
+      {
+        "task_id": "ANN-004",
+        "task": "Inspect and seal driveway",
+        "system": "Exterior",
+        "estimated_time": "4-6 hours",
+        "difficulty": "medium",
+        "supplies": ["Driveway sealer", "Squeegee/brush", "Crack filler"],
+        "instructions": "Clean driveway, fill cracks, apply sealer on dry day",
+        "due_month": 8,
+        "reminder_days_before": 30,
+        "estimated_cost": 100
+      }
+    ]
+  },
+  "seasonal_checklists": {
+    "spring": {
+      "months": [3, 4, 5],
+      "tasks": [
+        {
+          "task": "Clean gutters and downspouts",
+          "priority": "high",
+          "estimated_time": "2-3 hours"
+        },
+        {
+          "task": "Inspect roof for winter damage",
+          "priority": "high",
+          "estimated_time": "1 hour"
+        },
+        {
+          "task": "Schedule HVAC cooling system service",
+          "priority": "high",
+          "estimated_time": "1-2 hours (professional)"
+        },
+        {
+          "task": "Test and repair sprinkler system",
+          "priority": "medium",
+          "estimated_time": "1-2 hours"
+        },
+        {
+          "task": "Power wash deck, patio, and siding",
+          "priority": "medium",
+          "estimated_time": "3-4 hours"
+        },
+        {
+          "task": "Service lawn mower and equipment",
+          "priority": "medium",
+          "estimated_time": "1 hour"
+        },
+        {
+          "task": "Check foundation for cracks",
+          "priority": "medium",
+          "estimated_time": "30 minutes"
+        },
+        {
+          "task": "Clean windows inside and out",
+          "priority": "low",
+          "estimated_time": "2-3 hours"
+        },
+        {
+          "task": "Aerate and overseed lawn",
+          "priority": "medium",
+          "estimated_time": "2-4 hours"
+        },
+        {
+          "task": "Mulch garden beds",
+          "priority": "medium",
+          "estimated_time": "2-3 hours"
+        }
+      ]
+    },
+    "summer": {
+      "months": [6, 7, 8],
+      "tasks": [
+        {
+          "task": "Replace HVAC filters monthly",
+          "priority": "high",
+          "estimated_time": "15 minutes"
+        },
+        {
+          "task": "Monitor and adjust lawn irrigation",
+          "priority": "high",
+          "estimated_time": "30 minutes"
+        },
+        {
+          "task": "Check deck/patio for needed repairs",
+          "priority": "medium",
+          "estimated_time": "1 hour"
+        },
+        {
+          "task": "Clean outdoor furniture",
+          "priority": "low",
+          "estimated_time": "1-2 hours"
+        },
+        {
+          "task": "Inspect and clean dehumidifier",
+          "priority": "medium",
+          "estimated_time": "30 minutes"
+        },
+        {
+          "task": "Deep clean refrigerator coils",
+          "priority": "medium",
+          "estimated_time": "30 minutes"
+        },
+        {
+          "task": "Check and reseal windows/doors",
+          "priority": "medium",
+          "estimated_time": "2-3 hours"
+        },
+        {
+          "task": "Maintain lawn weekly (mow, edge, water)",
+          "priority": "high",
+          "estimated_time": "1-2 hours weekly"
+        }
+      ]
+    },
+    "fall": {
+      "months": [9, 10, 11],
+      "tasks": [
+        {
+          "task": "Clean gutters after leaves fall",
+          "priority": "high",
+          "estimated_time": "2-3 hours"
+        },
+        {
+          "task": "Schedule HVAC heating system service",
+          "priority": "high",
+          "estimated_time": "1-2 hours (professional)"
+        },
+        {
+          "task": "Inspect and repair roof before winter",
+          "priority": "high",
+          "estimated_time": "1-2 hours"
+        },
+        {
+          "task": "Winterize sprinkler system",
+          "priority": "high",
+          "estimated_time": "1 hour"
+        },
+        {
+          "task": "Store or cover outdoor furniture",
+          "priority": "medium",
+          "estimated_time": "1-2 hours"
+        },
+        {
+          "task": "Seal cracks in driveway and walkways",
+          "priority": "medium",
+          "estimated_time": "2-3 hours"
+        },
+        {
+          "task": "Check and service fireplace/chimney",
+          "priority": "high",
+          "estimated_time": "2-3 hours (professional)"
+        },
+        {
+          "task": "Test and replace smoke/CO detector batteries",
+          "priority": "high",
+          "estimated_time": "30 minutes"
+        },
+        {
+          "task": "Flush water heater",
+          "priority": "medium",
+          "estimated_time": "1 hour"
+        },
+        {
+          "task": "Trim tree branches away from house",
+          "priority": "medium",
+          "estimated_time": "2-4 hours"
+        },
+        {
+          "task": "Aerate and overseed lawn",
+          "priority": "medium",
+          "estimated_time": "2-4 hours"
+        },
+        {
+          "task": "Apply fall fertilizer",
+          "priority": "medium",
+          "estimated_time": "1-2 hours"
+        },
+        {
+          "task": "Rake and remove leaves",
+          "priority": "medium",
+          "estimated_time": "2-4 hours weekly"
+        }
+      ]
+    },
+    "winter": {
+      "months": [12, 1, 2],
+      "tasks": [
+        {
+          "task": "Replace HVAC filters monthly",
+          "priority": "high",
+          "estimated_time": "15 minutes"
+        },
+        {
+          "task": "Monitor for ice dams on roof",
+          "priority": "high",
+          "estimated_time": "15 minutes"
+        },
+        {
+          "task": "Prevent frozen pipes (insulate, maintain heat)",
+          "priority": "high",
+          "estimated_time": "Ongoing"
+        },
+        {
+          "task": "Clear ice and snow from walkways",
+          "priority": "high",
+          "estimated_time": "As needed"
+        },
+        {
+          "task": "Check weatherstripping on doors/windows",
+          "priority": "medium",
+          "estimated_time": "1 hour"
+        },
+        {
+          "task": "Service and clean humidifier",
+          "priority": "medium",
+          "estimated_time": "30 minutes"
+        },
+        {
+          "task": "Deep clean carpets and upholstery",
+          "priority": "low",
+          "estimated_time": "4-6 hours"
+        },
+        {
+          "task": "Ensure proper attic ventilation",
+          "priority": "medium",
+          "estimated_time": "1 hour"
+        },
+        {
+          "task": "Review and plan spring projects",
+          "priority": "low",
+          "estimated_time": "1-2 hours"
+        }
+      ]
+    }
+  },
+  "reminders": {
+    "enabled": true,
+    "notification_preferences": {
+      "advance_notice_days": [30, 7, 3, 1],
+      "method": "email",
+      "time_of_day": "09:00"
+    }
+  },
+  "notes": "This is a comprehensive annual maintenance schedule. Adjust tasks based on your specific home systems, climate, and manufacturer recommendations. Some tasks may be DIY while others require professional service."
+}

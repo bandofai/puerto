@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-tracker",
+  "version": "1.0.0",
+  "description": "Investment portfolio monitoring and analysis specialist with real-time pricing",
+  "agents": [
+    "./agents/agents/portfolio-analyzer.md.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

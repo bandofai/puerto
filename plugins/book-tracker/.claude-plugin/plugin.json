@@ -1,0 +1,20 @@
+{
+  "name": "book-tracker",
+  "version": "1.0.0",
+  "description": "A comprehensive reading management system for Claude Code that helps you track books, monitor progress, capture insights, and analyze your reading habits.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/notes-organizer.md",
+    "./agents/progress-tracker.md",
+    "./agents/goal-tracker.md",
+    "./agents/reading-analyst.md",
+    "./agents/recommendation-engine.md",
+    "./agents/reading-list-manager.md"
+  ],
+  "skills": [
+    "./skills/reading-management/SKILL.md"
+  ],
+  "license": "MIT"
+}

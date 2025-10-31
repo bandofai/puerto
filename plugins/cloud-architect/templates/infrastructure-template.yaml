@@ -1,0 +1,75 @@
+# Infrastructure as Code Template (Terraform)
+# Cloud: {{cloud_provider}}
+# Environment: {{environment}}
+
+terraform {
+  required_version = ">= 1.0"
+  backend "s3" {
+    bucket = "{{state_bucket}}"
+    key    = "{{state_key}}"
+    region = "{{region}}"
+  }
+}
+
+provider "{{cloud_provider}}" {
+  region = "{{region}}"
+}
+
+# VPC and Networking
+resource "aws_vpc" "main" {
+  cidr_block           = "{{vpc_cidr}}"
+  enable_dns_hostnames = true
+  enable_dns_support   = true
+  
+  tags = {
+    Name        = "{{app_name}}-vpc"
+    Environment = "{{environment}}"
+  }
+}
+
+# Subnets
+resource "aws_subnet" "public" {
+  count                   = {{az_count}}
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = "{{public_subnet_cidr[count.index]}}"
+  availability_zone       = data.aws_availability_zones.available.names[count.index]
+  map_public_ip_on_launch = true
+  
+  tags = {
+    Name = "{{app_name}}-public-${count.index + 1}"
+  }
+}
+
+# Application Load Balancer
+resource "aws_lb" "app" {
+  name               = "{{app_name}}-alb"
+  internal           = false
+  load_balancer_type = "application"
+  security_groups    = [aws_security_group.alb.id]
+  subnets            = aws_subnet.public[*].id
+}
+
+# Auto Scaling Group
+resource "aws_autoscaling_group" "app" {
+  name                = "{{app_name}}-asg"
+  vpc_zone_identifier = aws_subnet.private[*].id
+  target_group_arns   = [aws_lb_target_group.app.arn]
+  health_check_type   = "ELB"
+  min_size            = {{min_size}}
+  max_size            = {{max_size}}
+  desired_capacity    = {{desired_capacity}}
+}
+
+# RDS Database
+resource "aws_db_instance" "main" {
+  identifier             = "{{app_name}}-db"
+  engine                 = "{{db_engine}}"
+  engine_version         = "{{db_version}}"
+  instance_class         = "{{db_instance_class}}"
+  allocated_storage      = {{db_storage_gb}}
+  storage_encrypted      = true
+  multi_az               = {{multi_az}}
+  backup_retention_period = {{backup_retention_days}}
+  skip_final_snapshot    = false
+  final_snapshot_identifier = "{{app_name}}-final-snapshot"
+}

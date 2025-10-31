@@ -1,0 +1,28 @@
+{
+  "name": "legal-reviewer",
+  "version": "1.0.0",
+  "description": "Contract review and analysis specialist for risk identification, clause analysis, and amendment suggestions",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/contract-analyzer.md",
+    "./agents/risk-identifier.md",
+    "./agents/amendment-suggester.md"
+  ],
+  "skills": [
+    "./skills/legal-review/SKILL.md"
+  ],
+  "keywords": [
+    "legal",
+    "contract",
+    "review",
+    "risk",
+    "compliance",
+    "clause-analysis",
+    "amendments",
+    "liability",
+    "terms",
+    "obligations"
+  ]
+}

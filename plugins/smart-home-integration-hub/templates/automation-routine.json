@@ -1,0 +1,240 @@
+{
+  "routine_id": "example-routine",
+  "name": "Example Automation Routine",
+  "description": "Template for creating smart home automation routines",
+  "enabled": true,
+  "created_at": "2025-10-21T10:00:00Z",
+  "last_modified": "2025-10-21T10:00:00Z",
+  "triggers": [
+    {
+      "type": "time",
+      "time": "07:00",
+      "days": ["mon", "tue", "wed", "thu", "fri"],
+      "description": "Weekday mornings at 7 AM"
+    },
+    {
+      "type": "sun",
+      "event": "sunset",
+      "offset": 1800,
+      "description": "30 minutes after sunset"
+    },
+    {
+      "type": "state",
+      "entity": "binary_sensor.motion_hallway",
+      "to": "on",
+      "description": "Motion detected in hallway"
+    },
+    {
+      "type": "zone",
+      "zone": "home",
+      "event": "enter",
+      "entity": "person.user",
+      "description": "User arrives home"
+    },
+    {
+      "type": "numeric_state",
+      "entity": "sensor.temperature",
+      "above": 75,
+      "description": "Temperature exceeds 75°F"
+    },
+    {
+      "type": "time_pattern",
+      "minutes": "/15",
+      "description": "Every 15 minutes"
+    }
+  ],
+  "trigger_mode": "any",
+  "conditions": [
+    {
+      "type": "state",
+      "entity": "binary_sensor.anyone_home",
+      "state": "on",
+      "description": "Someone is home"
+    },
+    {
+      "type": "time",
+      "after": "06:00",
+      "before": "22:00",
+      "description": "Between 6 AM and 10 PM"
+    },
+    {
+      "condition": "or",
+      "conditions": [
+        {
+          "type": "sun",
+          "after": "sunset"
+        },
+        {
+          "type": "numeric_state",
+          "entity": "sensor.brightness",
+          "below": 50
+        }
+      ],
+      "description": "It's dark (after sunset OR low brightness)"
+    },
+    {
+      "condition": "and",
+      "conditions": [
+        {
+          "type": "state",
+          "entity": "input_boolean.guest_mode",
+          "state": "off"
+        },
+        {
+          "type": "state",
+          "entity": "alarm_control_panel.security",
+          "state": "disarmed"
+        }
+      ],
+      "description": "Not in guest mode AND security disarmed"
+    }
+  ],
+  "actions": [
+    {
+      "type": "scene",
+      "scene": "scene.morning_lights",
+      "delay": 0,
+      "description": "Activate morning lighting scene",
+      "optional": false
+    },
+    {
+      "type": "device",
+      "device_id": "living-room-lights",
+      "action": "turn_on",
+      "params": {
+        "brightness": 80,
+        "color_temp": 4000
+      },
+      "delay": 0,
+      "fallback": {
+        "action": "notify",
+        "message": "Living room lights unavailable"
+      },
+      "description": "Turn on living room lights",
+      "optional": false
+    },
+    {
+      "type": "device",
+      "device_id": "thermostat-main",
+      "action": "set_temperature",
+      "params": {
+        "temperature": 72,
+        "mode": "heat"
+      },
+      "delay": 0,
+      "fallback": {
+        "action": "log",
+        "message": "Thermostat control failed"
+      },
+      "description": "Set thermostat to 72°F",
+      "optional": false
+    },
+    {
+      "type": "media",
+      "device_id": "kitchen-speaker",
+      "action": "play",
+      "params": {
+        "source": "news_briefing",
+        "volume": 30
+      },
+      "delay": 300,
+      "description": "Play news after 5 minutes",
+      "optional": true
+    },
+    {
+      "type": "wait_for_trigger",
+      "trigger": {
+        "type": "state",
+        "entity": "binary_sensor.motion_hallway",
+        "to": "off",
+        "for": 300
+      },
+      "timeout": 3600,
+      "description": "Wait for motion to clear (max 1 hour)"
+    },
+    {
+      "type": "choose",
+      "choose": [
+        {
+          "conditions": [
+            {
+              "type": "time",
+              "after": "22:00",
+              "before": "06:00"
+            }
+          ],
+          "sequence": [
+            {
+              "type": "device",
+              "device_id": "living-room-lights",
+              "action": "turn_on",
+              "params": {
+                "brightness": 20,
+                "color_temp": 2700
+              },
+              "description": "Night mode: dim warm lights"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "state",
+              "entity": "input_select.home_mode",
+              "state": "movie"
+            }
+          ],
+          "sequence": [
+            {
+              "type": "scene",
+              "scene": "scene.movie_time",
+              "description": "Movie mode: activate scene"
+            }
+          ]
+        }
+      ],
+      "default": [
+        {
+          "type": "device",
+          "device_id": "living-room-lights",
+          "action": "turn_on",
+          "params": {
+            "brightness": 100,
+            "color_temp": 4000
+          },
+          "description": "Default: full brightness"
+        }
+      ],
+      "description": "Conditional lighting based on time and mode"
+    },
+    {
+      "type": "automation",
+      "automation_id": "another-routine",
+      "action": "trigger",
+      "description": "Trigger another automation"
+    },
+    {
+      "type": "notify",
+      "message": "Automation completed successfully",
+      "title": "Smart Home",
+      "priority": "normal",
+      "description": "Send completion notification"
+    }
+  ],
+  "mode": "single",
+  "max_parallel": 1,
+  "notifications": {
+    "on_start": false,
+    "on_complete": false,
+    "on_failure": true,
+    "failure_message": "Automation failed: {{error}}"
+  },
+  "metadata": {
+    "created_by": "automation-builder",
+    "version": "1.0.0",
+    "tags": ["example", "template"],
+    "category": "general",
+    "priority": "normal"
+  },
+  "notes": "This is a comprehensive template showing all available trigger types, conditions, and actions. Copy and customize for your specific automation needs."
+}

@@ -1,0 +1,62 @@
+{
+  "ticket_id": "INC-2025-XXXXX",
+  "type": "Incident",
+  "created_at": "2025-10-20T14:30:00Z",
+  "updated_at": "2025-10-20T14:30:00Z",
+  "status": "new",
+  "priority": "P3",
+  "category": "software",
+  "subcategory": "application_error",
+  "reported_by": {
+    "name": "John Doe",
+    "email": "john.doe@company.com",
+    "department": "Engineering",
+    "location": "Building A, Floor 3",
+    "phone": "+1-555-0100"
+  },
+  "assigned_to": "Unassigned",
+  "assigned_team": "Tier 1 Support",
+  "subject": "Brief description of the issue",
+  "description": "Detailed description of the problem including:\n- What happened\n- When it started\n- Steps to reproduce\n- Error messages\n- Impact on work",
+  "affected_systems": [
+    "WIN-PC-042",
+    "Application Server"
+  ],
+  "error_messages": [
+    "Application failed to initialize",
+    "Error code: 0x80070005"
+  ],
+  "steps_to_reproduce": "1. Open application\n2. Click File > New\n3. Error appears",
+  "business_impact": "Cannot complete daily reports, blocks 2 hours of work",
+  "sla_deadline": "2025-10-21T14:30:00Z",
+  "resolution": "To be filled when resolved",
+  "resolution_time_minutes": 0,
+  "workaround": "Temporary fix if applicable",
+  "root_cause": "To be determined during investigation",
+  "actions_taken": [
+    "Initial triage completed",
+    "Assigned to support team"
+  ],
+  "related_tickets": [],
+  "kb_articles": [],
+  "attachments": [
+    "screenshot_error.png",
+    "system_logs.txt"
+  ],
+  "time_spent_minutes": 0,
+  "tags": [
+    "application",
+    "windows",
+    "access_denied"
+  ],
+  "escalated": false,
+  "escalation_reason": null,
+  "user_satisfaction": null,
+  "notes": [
+    {
+      "timestamp": "2025-10-20T14:30:00Z",
+      "author": "System",
+      "note": "Ticket created from user email"
+    }
+  ]
+}

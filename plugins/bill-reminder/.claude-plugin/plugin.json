@@ -1,0 +1,11 @@
+{
+  "name": "bill-reminder",
+  "version": "1.0.0",
+  "description": "Bill management assistant with proactive payment reminders",
+  "agents": [
+    "./agents/agents/bill-tracker.md.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

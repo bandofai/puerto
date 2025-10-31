@@ -1,0 +1,18 @@
+{
+  "name": "cost-optimizer",
+  "version": "1.0.0",
+  "description": "Version: 1.0.0",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/optimization-finder.md",
+    "./agents/spend-analyzer.md",
+    "./agents/savings-tracker.md",
+    "./agents/vendor-negotiator.md"
+  ],
+  "skills": [
+    "./skills/cost-analysis/SKILL.md"
+  ],
+  "license": "MIT"
+}

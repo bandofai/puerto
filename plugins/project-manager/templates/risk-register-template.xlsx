@@ -1,0 +1,104 @@
+# RISK REGISTER TEMPLATE
+# This is a CSV-format template that can be imported into Excel
+# Save as .xlsx in Excel for full formatting and formulas
+
+## SHEET 1: Risk Register
+Risk ID,Risk Description,Category,Date Identified,Identified By,Probability (1-5),Impact (1-5),Risk Score,Priority,Triggers/Warning Signs,Response Strategy,Mitigation Actions,Contingency Plan,Risk Owner,Status,Review Date,Notes
+R-001,Key team member may leave project mid-development,Resource,2025-01-15,PM,3,4,12,High,"Developer dissatisfaction, LinkedIn activity, reduced engagement",Mitigate,"1) Cross-train backup developer (2 weeks). 2) Document critical knowledge. 3) Retention bonus discussion. 4) Identify backup contractor.","Activate contractor within 24 hours, reassign work to backup, extend timeline 2 weeks",Engineering Manager,Active,2025-02-01,Monitor weekly 1-on-1s for satisfaction
+R-002,Third-party API may be unreliable causing outages,Technical,2025-01-15,Tech Lead,4,3,12,High,"API response time >2sec, vendor status page issues, error rate >1%",Mitigate,"1) Implement circuit breaker pattern. 2) Add health monitoring. 3) Queue payment processing for retry. 4) Load test API early.","Automatic failover to backup processor, customer notifications, retry queued requests",Tech Lead,Active,2025-01-25,Vendor has history of 3 outages in 6 months
+R-003,Scope creep from stakeholders adding features,Scope,2025-01-18,PM,4,4,16,Critical,"Informal feature requests, scope questions in meetings, pressure to add 'just one more thing'",Mitigate,"1) Implement formal change request process. 2) Impact analysis required for all changes. 3) Change control board approval. 4) Document out-of-scope items clearly.","Negotiate timeline extension or defer to Phase 2, escalate to sponsor for prioritization",PM,Active,2025-01-27,Already received 2 informal requests
+R-004,Budget cuts mid-project due to company financial pressures,Cost,2025-01-20,Sponsor,2,5,10,Medium,"Company layoffs, hiring freeze, budget review meetings, Q4 earnings concerns",Accept (Active),"1) Identify minimum viable scope. 2) Prioritize features (MoSCoW). 3) Create phased delivery plan. 4) Monitor company financial news.","Reduce scope to MVP, extend timeline with reduced team, freeze project if necessary",Sponsor,Monitor,2025-02-15,Keep reserve options ready
+R-005,Regulatory changes impact requirements,External,2025-01-20,Legal,2,3,6,Low,"Proposed legislation, industry news, compliance alerts",Monitor,"1) Monitor regulatory news. 2) Engage legal team quarterly. 3) Design for flexibility.","Assess impact, update requirements, adjust timeline and budget accordingly",Legal,Watch,2025-03-01,No active proposals currently
+R-006,Integration with legacy system more complex than anticipated,Technical,2025-01-22,Architect,3,4,12,High,"PoC reveals issues, API documentation incomplete, legacy team unavailable",Mitigate,"1) Conduct integration PoC by Week 4. 2) Allocate dedicated integration engineer. 3) Weekly sync with legacy team. 4) Budget +20% time for integration.","Add integration specialist contractor, simplify integration (reduce features), add adapter layer",Tech Lead,Active,2025-02-05,Schedule PoC for Week 4
+R-007,Performance requirements not met under load,Technical,2025-01-22,Tech Lead,3,3,9,Medium,"Load tests show <target performance, response time >3sec, timeout errors",Mitigate,"1) Performance testing in Sprint 3. 2) Code profiling and optimization. 3) Caching strategy. 4) Database query optimization.","Scale infrastructure (vertical/horizontal), implement CDN, defer non-critical features",Tech Lead,Active,2025-02-10,Define performance SLAs upfront
+R-008,Required skills gap in team (React Native for mobile),Resource,2025-01-25,Engineering Mgr,3,3,9,Medium,"Team unfamiliar with technology, slow progress, many questions, quality issues",Mitigate,"1) Training course (1 week before mobile work). 2) Hire contractor with expertise. 3) Pair programming. 4) Code reviews by expert.","Hire full-time expert, extend mobile timeline, outsource mobile to specialist firm",Engineering Mgr,Active,2025-02-20,Mobile work starts Sprint 6
+R-009,Testing phase insufficient due to time pressure,Quality,2025-01-25,QA Lead,4,4,16,Critical,"Development delays eating into test time, pressure to skip regression testing, 'we'll test in production' comments",Mitigate,"1) Protect test schedule buffer. 2) Automate regression tests early. 3) Continuous testing during dev. 4) Define non-negotiable test exit criteria.","Accept higher defect rate in first release, plan fast patch releases, extended UAT",QA Lead,Active,2025-02-01,Test automation starting Week 3
+R-010,Vendor may not deliver on time (payment gateway integration),External,2025-01-28,Tech Lead,2,4,8,Medium,"Vendor missed previous milestones, slow response to support tickets, no test environment yet",Mitigate + Transfer,"1) Weekly checkpoint calls with vendor. 2) Contract penalties for delays. 3) Identify backup vendor. 4) Build integration abstraction layer.","Switch to backup vendor, delay payment features, build interim workaround",Tech Lead,Active,2025-02-05,Contract has penalty clauses
+,,,,,,,,,,,,,,,Add more risks as identified
+
+## SHEET 2: Risk Matrix (Probability x Impact)
+,Impact→,1 (Very Low),2 (Low),3 (Medium),4 (High),5 (Critical)
+Probability ↓,,,,,,
+5 (Very High),,"5 (Low)","10 (Medium)","15 (High)","20 (Critical)","25 (Critical)"
+4 (High),,"4 (Low)","8 (Medium)","12 (High)","16 (Critical)","20 (Critical)"
+3 (Medium),,"3 (Low)","6 (Medium)","9 (Medium)","12 (High)","15 (High)"
+2 (Low),,"2 (Low)","4 (Low)","6 (Medium)","8 (Medium)","10 (Medium)"
+1 (Very Low),,"1 (Low)","2 (Low)","3 (Low)","4 (Low)","5 (Low)"
+
+Risk Score Legend:
+1-4: LOW (Green) - Accept and monitor
+5-9: MEDIUM (Yellow) - Mitigation planned
+10-16: HIGH (Orange) - Mitigation required
+17-25: CRITICAL (Red) - Immediate action
+
+## SHEET 3: Risk Categories & Definitions
+Category,Description,Examples
+Technical,"Technology, architecture, performance, integration risks","New technology, performance issues, integration complexity, technical debt"
+Schedule,"Timeline, estimation, dependency risks","Optimistic estimates, delays, resource unavailability, dependency issues"
+Cost,"Budget, funding, rate risks","Budget overruns, scope changes, rate increases, unforeseen costs"
+Resource,"People, skills, availability risks","Skill gaps, turnover, competing priorities, low productivity"
+External,"Vendor, market, regulatory, environmental risks","Vendor delays, market changes, regulatory changes, natural disasters"
+Organizational,"Stakeholder, communication, political risks","Stakeholder conflict, poor communication, changing priorities, resistance"
+Scope,"Requirements, scope changes","Unclear requirements, scope creep, gold-plating"
+Quality,"Defects, testing, standards","Quality issues, insufficient testing, standards not met"
+
+## SHEET 4: Probability Scale
+Level,Probability Range,Description,Use When
+5 - Very High,>70%,"Almost certain to occur, expect it to happen","Historical data shows >70% occurrence, multiple indicators present"
+4 - High,50-70%,"Likely to occur, more probable than not","Strong indicators, happened in similar projects"
+3 - Medium,30-50%,"May or may not occur, moderate chance","Some indicators, possible but not certain"
+2 - Low,10-30%,"Unlikely but possible","Few indicators, rare in similar projects"
+1 - Very Low,<10%,"Rare, highly unlikely","No strong indicators, hasn't happened in experience"
+
+## SHEET 5: Impact Scale
+Impact Level,Schedule,Cost,Quality,Scope,Description
+5 - Critical,>1 month delay,>20% budget increase,Unusable deliverable,Major scope cuts required,Catastrophic impact; may cause project failure
+4 - High,2-4 weeks delay,10-20% budget increase,Major functionality broken,Significant features cut,Severe impact; requires executive action
+3 - Medium,1-2 weeks delay,5-10% budget increase,Noticeable quality issues,Some features affected,Moderate impact; requires management attention
+2 - Low,3-5 days delay,2-5% budget increase,Minor quality issues,Minor scope adjustment,Minor impact; can be handled by team
+1 - Very Low,<3 days delay,<2% budget increase,Negligible quality impact,No scope impact,Negligible impact; business as usual
+
+## SHEET 6: Response Strategies
+Strategy,Definition,When to Use,Example
+Avoid,Eliminate the risk by changing the project plan,High probability AND high impact risks that can be eliminated,Use proven technology instead of experimental framework
+Mitigate,Reduce probability or impact of the risk,Most risks; applicable when elimination not possible,"Cross-train team, add testing, implement monitoring"
+Transfer,Shift impact to third party,"Risks others better equipped to handle, insurable risks","Cloud hosting (hardware risk), insurance, fixed-price contracts"
+Accept (Active),Acknowledge risk and create contingency plan,Low risks that aren't cost-effective to mitigate,Budget 40 hours for minor bug fixes post-release
+Accept (Passive),Acknowledge risk with no action plan,Very low probability and low impact risks,Exchange rate fluctuation on small international purchase
+Exploit,Ensure positive risk (opportunity) occurs,Opportunities you want to capture,Add resources to definitely finish early and capture market
+Enhance,Increase probability/impact of opportunity,Opportunities worth investing in,Dedicate resources to award submission and PR
+Share,Partner to realize opportunity,Opportunities requiring collaboration,Joint venture for large contract
+
+## SHEET 7: Risk Status Definitions
+Status,Description,Actions Required
+Identified,Risk recognized but not yet analyzed,Perform probability/impact analysis
+Analyzed,Probability and impact assessed,Develop response strategy
+Response Planned,Mitigation strategy defined,Begin executing mitigation actions
+Mitigating,Actively implementing mitigation,Monitor progress and triggers
+Monitoring,Watching for triggers (passive),Check triggers regularly
+Closed,Risk no longer relevant or successfully mitigated,Archive with lessons learned
+Realized,Risk has occurred,Execute contingency plan; document lessons
+
+## SHEET 8: Risk Metrics & Tracking
+Metric,Formula,Target,Current,Notes
+Total Risks Identified,Count of all risks,,,"Higher number is good (better identification, not more risk)"
+Risk Exposure,Sum of all (Probability × Impact),,,"Track trend: decreasing = effective mitigation"
+High/Critical Risks,Count of risks with score ≥10,,,"Should decrease over project lifecycle"
+Open vs Closed Risks,Open / Total × 100%,,,"Should decrease as risks mitigated or avoided"
+Risk Velocity,Avg days from identification to response plan,<7 days,,"Faster is better"
+Realized Risks,Count of risks that occurred,,,"Document for lessons learned"
+Mitigation Effectiveness,"(Initial Score - Residual Score) / Initial Score × 100%",>50%,,"Higher is better"
+
+## INSTRUCTIONS FOR USE:
+# 1. Save this file as Excel (.xlsx) format
+# 2. Create one row per risk in the Risk Register sheet
+# 3. Assign unique Risk IDs (R-001, R-002, etc.)
+# 4. Fill in all columns for each risk
+# 5. Calculate Risk Score = Probability × Impact (or use Excel formula)
+# 6. Use color coding: Red (17-25), Orange (10-16), Yellow (5-9), Green (1-4)
+# 7. Assign each risk to an owner (specific person, not role)
+# 8. Review risks weekly for high-priority, bi-weekly for all
+# 9. Update status as risks progress through lifecycle
+# 10. Archive closed risks but keep for lessons learned
+# 11. Add new risks as identified throughout project
+# 12. Track metrics on Sheet 8 monthly

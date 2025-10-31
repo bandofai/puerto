@@ -1,0 +1,202 @@
+{
+  "report_date": "2025-02-22",
+  "tracking_since": "2025-01-22",
+  "months_tracked": 1,
+  "current_period": {
+    "start_date": "2025-01-23",
+    "end_date": "2025-02-22",
+    "days": 30,
+    "total_kg": 340,
+    "daily_average": 11.3,
+    "annual_pace": 4125
+  },
+  "previous_period": {
+    "start_date": "2024-12-23",
+    "end_date": "2025-01-22",
+    "days": 30,
+    "total_kg": 450,
+    "daily_average": 15.0,
+    "annual_pace": 5475
+  },
+  "baseline": {
+    "date": "2025-01-22",
+    "annual_kg": 12000,
+    "daily_average": 32.9
+  },
+  "comparison": {
+    "vs_previous_kg": -110,
+    "vs_previous_percent": -24.4,
+    "vs_baseline_kg": -7875,
+    "vs_baseline_percent": -65.6,
+    "trend": "strong_improvement",
+    "status_emoji": "📉"
+  },
+  "goal": {
+    "target_annual_kg": 6000,
+    "target_date": "2026-01-22",
+    "progress_percent": 61.5,
+    "on_track": true,
+    "projected_completion": "2025-11-15"
+  },
+  "categories": {
+    "transport": {
+      "current_kg": 140,
+      "previous_kg": 180,
+      "change_kg": -40,
+      "change_percent": -22.2,
+      "status": "improved",
+      "notes": "Remote work 2x/week implemented successfully"
+    },
+    "energy": {
+      "current_kg": 90,
+      "previous_kg": 150,
+      "change_kg": -60,
+      "change_percent": -40.0,
+      "status": "improved",
+      "notes": "Switched to renewable energy plan - major win!"
+    },
+    "food": {
+      "current_kg": 80,
+      "previous_kg": 90,
+      "change_kg": -10,
+      "change_percent": -11.1,
+      "status": "improved",
+      "notes": "Meatless Mondays & Wednesdays going well"
+    },
+    "goods": {
+      "current_kg": 30,
+      "previous_kg": 30,
+      "change_kg": 0,
+      "change_percent": 0,
+      "status": "stable",
+      "notes": "Maintained low consumption"
+    }
+  },
+  "achievements": [
+    {
+      "name": "Renewable Energy Champion",
+      "description": "Switched to 100% renewable electricity",
+      "impact_kg": 60,
+      "equivalent": "Planted 3 trees worth of carbon savings"
+    },
+    {
+      "name": "Hybrid Work Hero",
+      "description": "Successfully negotiated remote work 2x/week",
+      "impact_kg": 40,
+      "equivalent": "Avoided driving 190 miles"
+    },
+    {
+      "name": "Plant-Based Pioneer",
+      "description": "Meatless meals 2-3x/week",
+      "impact_kg": 10,
+      "equivalent": "Skipped 2 beef burgers this period"
+    }
+  },
+  "implemented_strategies": [
+    {
+      "strategy": "Switch to renewable energy plan",
+      "status": "completed",
+      "result": "Successfully switched, seeing -60 kg/month reduction",
+      "impact_kg": 60
+    },
+    {
+      "strategy": "Remote work 2 days per week",
+      "status": "completed",
+      "result": "Manager approved, working Mon/Fri from home",
+      "impact_kg": 40
+    },
+    {
+      "strategy": "Meatless 3 days per week",
+      "status": "in_progress",
+      "result": "Currently doing 2 days consistently, working up to 3",
+      "impact_kg": 10
+    },
+    {
+      "strategy": "Electric vehicle",
+      "status": "not_started",
+      "result": "Researching models, current car still reliable",
+      "impact_kg": 0
+    }
+  ],
+  "challenges": [
+    {
+      "category": "food",
+      "description": "Social eating situations make vegetarian challenging",
+      "recommendation": "Focus on plant-based at home, be flexible when dining out"
+    }
+  ],
+  "opportunities": [
+    {
+      "category": "transport",
+      "description": "Several short trips could be biked instead",
+      "potential_impact_kg": 50,
+      "action": "Try biking for trips under 3 miles"
+    }
+  ],
+  "milestones": {
+    "this_month": {
+      "target_daily_kg": 10.5,
+      "focus_area": "food",
+      "specific_action": "Achieve meatless 3 days/week consistently"
+    },
+    "next_quarter": [
+      {
+        "month": 1,
+        "target_kg": 10.5,
+        "action": "Meatless 3x/week mastered"
+      },
+      {
+        "month": 2,
+        "target_kg": 10.0,
+        "action": "Start biking for short trips"
+      },
+      {
+        "month": 3,
+        "target_kg": 9.5,
+        "action": "Reduce online shopping 50%"
+      }
+    ]
+  },
+  "benchmarks": {
+    "us_average": {
+      "kg_per_day": 44,
+      "user_percent": 25.7,
+      "status": "Well below US average!"
+    },
+    "global_average": {
+      "kg_per_day": 13,
+      "user_percent": 86.9,
+      "status": "Approaching global average"
+    },
+    "paris_target": {
+      "kg_per_day": 6.3,
+      "user_percent": 179.4,
+      "status": "Making progress toward Paris target"
+    }
+  },
+  "impact_visualization": {
+    "savings_this_period_kg": 110,
+    "equivalents": {
+      "trees_planted": 5,
+      "miles_not_driven": 524,
+      "days_of_electricity": 3.7,
+      "smartphone_charges": 275
+    },
+    "cumulative_savings": {
+      "total_kg": 7875,
+      "money_saved_usd": 450,
+      "since_date": "2025-01-22"
+    }
+  },
+  "momentum": {
+    "velocity": "strong",
+    "weekly_averages": [12.5, 11.8, 11.2, 10.6],
+    "trend_direction": "accelerating"
+  },
+  "next_actions": [
+    "Continue remote work routine - it's working!",
+    "Add one more meatless day (aim for Mon/Wed/Fri)",
+    "Research bike routes for common short trips",
+    "Schedule next check-in for 2025-03-22"
+  ]
+}

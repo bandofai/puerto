@@ -1,0 +1,20 @@
+{
+  "name": "content-writer",
+  "version": "1.0.0",
+  "description": "Professional content creation for blogs, SEO, marketing copy, and email campaigns",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/blog-writer.md",
+    "./agents/copywriter.md",
+    "./agents/email-campaigner.md",
+    "./agents/seo-optimizer.md"
+  ],
+  "skills": [
+    "./skills/content-writing/SKILL.md",
+    "./skills/copywriting/SKILL.md",
+    "./skills/seo-optimization/SKILL.md"
+  ],
+  "license": "MIT"
+}

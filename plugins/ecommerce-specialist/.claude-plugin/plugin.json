@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce-specialist",
+  "version": "1.0.0",
+  "description": "E-commerce operations specialist for online store management",
+  "author": {
+    "name": "Puerto"
+  },
+  "agents": [
+    "./agents/product-manager.md",
+    "./agents/inventory-tracker.md",
+    "./agents/order-processor.md",
+    "./agents/fulfillment-coordinator.md"
+  ],
+  "skills": [
+    "./skills/ecommerce-operations/SKILL.md",
+    "./skills/inventory-management/SKILL.md",
+    "./skills/order-fulfillment/SKILL.md"
+  ]
+}

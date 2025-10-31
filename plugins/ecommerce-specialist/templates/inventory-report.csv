@@ -1,0 +1,11 @@
+SKU,Product Name,Category,On Hand,Reserved,Available,Reorder Point,Status,Last Sale Date,Velocity,Days Supply,Action Required
+PROD-001,Wireless Headphones,Electronics,150,20,130,45,OK,2025-01-19,High,26,None
+PROD-002,USB Cable,Accessories,25,5,20,50,LOW STOCK,2025-01-18,High,8,Reorder Now
+PROD-003,Laptop Stand,Office,8,3,5,20,CRITICAL,2025-01-17,Medium,5,Urgent Reorder
+PROD-004,Phone Case,Accessories,0,0,0,30,OUT OF STOCK,2025-01-10,High,0,Expedite Order
+PROD-005,Desk Lamp,Home,200,10,190,40,OVERSTOCK,2024-10-15,Low,380,Consider Discount
+PROD-006,Mouse Pad,Accessories,75,8,67,25,OK,2025-01-19,Medium,45,None
+PROD-007,Webcam,Electronics,45,12,33,35,OK,2025-01-18,High,22,Monitor
+PROD-008,Monitor Arm,Office,15,2,13,25,LOW STOCK,2025-01-16,Medium,26,Reorder Soon
+PROD-009,Keyboard,Electronics,90,15,75,40,OK,2025-01-19,High,30,None
+PROD-010,Desk Organizer,Office,120,5,115,20,OK,2025-01-15,Low,230,None

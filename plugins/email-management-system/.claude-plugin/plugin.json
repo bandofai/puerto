@@ -1,0 +1,22 @@
+{
+  "name": "email-management-system",
+  "version": "1.0.0",
+  "description": "Intelligent email triage, categorization, and management system with auto-categorization, response templates, follow-up reminders, and newsletter management.",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": [
+    "email",
+    "triage",
+    "categorization",
+    "inbox-zero",
+    "automation",
+    "templates",
+    "productivity",
+    "gmail",
+    "outlook",
+    "newsletter",
+    "follow-up"
+  ],
+  "license": "MIT"
+}

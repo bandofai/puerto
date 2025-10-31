@@ -1,0 +1,149 @@
+{
+  "inventory_id": "HOME-INV-001",
+  "version": "1.0",
+  "created_date": "2025-01-15",
+  "last_updated": "2025-01-15",
+  "property_information": {
+    "address": "123 Main Street",
+    "city": "Anytown",
+    "state": "CA",
+    "zip": "12345",
+    "property_type": "single_family",
+    "owner_name": "John Smith",
+    "insurance_company": "Insurance Co.",
+    "policy_number": "POL-123456"
+  },
+  "summary": {
+    "total_items": 0,
+    "total_purchase_value": 0,
+    "total_current_value": 0,
+    "total_replacement_cost": 0,
+    "last_valuation_date": "2025-01-15",
+    "items_by_category": {
+      "electronics": 0,
+      "appliances": 0,
+      "furniture": 0,
+      "jewelry": 0,
+      "art": 0,
+      "tools": 0,
+      "sports": 0,
+      "other": 0
+    },
+    "items_by_room": {
+      "living-room": 0,
+      "kitchen": 0,
+      "master-bedroom": 0,
+      "bedroom-2": 0,
+      "office": 0,
+      "garage": 0,
+      "basement": 0,
+      "other": 0
+    },
+    "high_value_items_count": 0,
+    "items_requiring_appraisal": []
+  },
+  "items": [
+    {
+      "item_id": "ITEM-001",
+      "name": "Samsung 65\" 4K Smart TV",
+      "description": "65-inch 4K UHD Smart TV with HDR10+ and voice control",
+      "category": "electronics",
+      "subcategory": "television",
+      "room": "living-room",
+      "acquisition": {
+        "type": "purchase",
+        "date": "2023-06-15",
+        "purchase_price": 1299.99,
+        "purchase_location": "Best Buy",
+        "receipt_location": "receipts/2023/bestbuy-tv-receipt.pdf",
+        "payment_method": "credit_card"
+      },
+      "identification": {
+        "manufacturer": "Samsung",
+        "brand": "Samsung",
+        "model_number": "UN65AU8000FXZA",
+        "serial_number": "SN123456789ABC",
+        "upc_code": "887276439846",
+        "color": "Black",
+        "size_dimensions": "57.1 x 32.7 x 2.4 inches",
+        "weight": "48.5 lbs"
+      },
+      "valuation": {
+        "purchase_price": 1299.99,
+        "current_value": 800.00,
+        "replacement_cost": 1499.99,
+        "last_valuation_date": "2025-01-15",
+        "depreciation_method": "declining-balance",
+        "depreciation_rate": 0.30,
+        "salvage_value": 100.00,
+        "market_research": {
+          "sources": [
+            {
+              "source": "eBay sold listings",
+              "url": "https://ebay.com/...",
+              "price": 825.00,
+              "date": "2025-01-10",
+              "condition": "used-excellent"
+            },
+            {
+              "source": "Craigslist",
+              "price": 775.00,
+              "date": "2025-01-12",
+              "condition": "used-good"
+            }
+          ],
+          "median_value": 800.00,
+          "notes": "Active secondary market, consistent pricing"
+        }
+      },
+      "condition": {
+        "grade": "excellent",
+        "description": "Like new, no visible wear",
+        "functional_status": "fully_functional",
+        "damage": [],
+        "maintenance_history": [],
+        "last_inspection_date": "2025-01-15"
+      },
+      "documentation": {
+        "photos": [
+          "photos/item-001-1-overall.jpg",
+          "photos/item-001-2-serial-number.jpg",
+          "photos/item-001-3-in-context.jpg"
+        ],
+        "manuals": ["manuals/samsung-un65au8000-manual.pdf"],
+        "warranty": {
+          "has_warranty": true,
+          "warranty_type": "manufacturer",
+          "warranty_expiration": "2026-06-15",
+          "warranty_document": "warranties/samsung-tv-warranty.pdf",
+          "transferable": false
+        },
+        "appraisal": null
+      },
+      "insurance": {
+        "requires_rider": false,
+        "coverage_type": "replacement_cost",
+        "deductible_applicable": true,
+        "special_limits": null,
+        "notes": "Covered under standard homeowners policy"
+      },
+      "location": {
+        "room": "living-room",
+        "specific_location": "Wall mounted above fireplace",
+        "floor": "1st floor",
+        "storage_type": "in_use"
+      },
+      "notes": "Purchased during Memorial Day sale. Wall mount included. Connected to soundbar (see ITEM-002)",
+      "tags": ["electronics", "living-room", "high-value"],
+      "created_date": "2025-01-15",
+      "last_modified": "2025-01-15"
+    }
+  ],
+  "metadata": {
+    "catalog_version": "1.0",
+    "last_backup": "2025-01-15",
+    "backup_location": "Dropbox/Home-Inventory-Backup/",
+    "next_review_date": "2026-01-15",
+    "notes": "Annual review scheduled for January each year"
+  }
+}

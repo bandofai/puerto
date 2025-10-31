@@ -1,0 +1,19 @@
+{
+  "name": "backend-architect",
+  "version": "1.0.0",
+  "description": "Comprehensive backend architecture design with ADRs, API specifications, and database schemas",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/system-architect.md",
+    "./agents/api-designer.md",
+    "./agents/database-architect.md"
+  ],
+  "skills": [
+    "./skills/architecture-design/SKILL.md",
+    "./skills/api-design/SKILL.md",
+    "./skills/database-design/SKILL.md"
+  ],
+  "license": "MIT"
+}

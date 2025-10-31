@@ -1,0 +1,89 @@
+{
+  "request_id": "ACCESS-2025-XXXXX",
+  "request_type": "new_user",
+  "requested_at": "2025-10-20T09:00:00Z",
+  "status": "pending",
+  "requested_by": {
+    "name": "Jane Smith",
+    "email": "jane.smith@company.com",
+    "department": "Human Resources",
+    "role": "HR Manager"
+  },
+  "target_user": {
+    "name": "John Doe",
+    "email": "john.doe@company.com",
+    "employee_id": "EMP-12345",
+    "department": "Engineering",
+    "job_title": "Software Engineer",
+    "manager": "Alice Johnson",
+    "start_date": "2025-11-01",
+    "end_date": null,
+    "location": "Building A",
+    "phone": "+1-555-0100"
+  },
+  "access_details": {
+    "systems": [
+      "Active Directory",
+      "Email (Office 365)",
+      "GitHub",
+      "Jira",
+      "Slack",
+      "VPN",
+      "Dev Servers"
+    ],
+    "groups": [
+      "All-Employees",
+      "Engineering",
+      "Dev-Team-Alpha"
+    ],
+    "roles": [
+      "Standard User",
+      "Developer"
+    ],
+    "permissions": [
+      "Code repository read/write",
+      "Dev environment access",
+      "Test database read"
+    ],
+    "access_level": "write",
+    "expiration_date": null,
+    "temporary": false
+  },
+  "justification": "New employee onboarding - Software Engineer role requires access to development tools and environments",
+  "approval_required": true,
+  "approvals": [
+    {
+      "approver": "Alice Johnson",
+      "role": "manager",
+      "status": "approved",
+      "timestamp": "2025-10-20T10:00:00Z",
+      "comments": "Approved for new team member"
+    },
+    {
+      "approver": "IT Manager",
+      "role": "it_manager",
+      "status": "pending",
+      "timestamp": null,
+      "comments": null
+    }
+  ],
+  "provisioning_status": "pending",
+  "provisioned_by": null,
+  "provisioned_at": null,
+  "accounts_created": [],
+  "audit_notes": "Access request submitted by HR for new employee onboarding",
+  "compliance_flags": {
+    "sox_relevant": false,
+    "hipaa_relevant": false,
+    "pci_relevant": false,
+    "requires_mfa": true,
+    "background_check_required": true,
+    "background_check_completed": false
+  },
+  "timeline": {
+    "requested": "2025-10-20T09:00:00Z",
+    "approved": null,
+    "provisioned": null,
+    "completed": null
+  }
+}

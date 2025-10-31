@@ -1,0 +1,110 @@
+{
+  "rotation_id": "rotation-monthly-2025-01",
+  "type": "monthly",
+  "start_date": "2025-01-01",
+  "members": [
+    "Alice",
+    "Bob",
+    "Charlie"
+  ],
+  "chores": [
+    {
+      "id": "deep-clean-kitchen",
+      "name": "Deep Clean Kitchen",
+      "description": "Clean oven, fridge, cabinets, organize pantry",
+      "frequency": "monthly",
+      "estimated_minutes": 90,
+      "difficulty": 4,
+      "category": "kitchen",
+      "target_date": "first Saturday"
+    },
+    {
+      "id": "window-washing",
+      "name": "Wash Windows",
+      "description": "Clean all interior and exterior windows",
+      "frequency": "monthly",
+      "estimated_minutes": 60,
+      "difficulty": 3,
+      "category": "cleaning",
+      "target_date": "second Saturday"
+    },
+    {
+      "id": "garage-organization",
+      "name": "Organize Garage",
+      "description": "Declutter, sweep, organize tools and storage",
+      "frequency": "monthly",
+      "estimated_minutes": 120,
+      "difficulty": 4,
+      "category": "organization",
+      "target_date": "third Saturday"
+    },
+    {
+      "id": "hvac-filter-change",
+      "name": "Change HVAC Filters",
+      "description": "Replace air filters in all units",
+      "frequency": "monthly",
+      "estimated_minutes": 15,
+      "difficulty": 1,
+      "category": "maintenance",
+      "target_date": "first day of month"
+    },
+    {
+      "id": "yard-maintenance",
+      "name": "Yard Maintenance",
+      "description": "Mow, edge, trim bushes, weed garden beds",
+      "frequency": "monthly",
+      "estimated_minutes": 120,
+      "difficulty": 4,
+      "category": "outdoor",
+      "target_date": "second weekend"
+    }
+  ],
+  "rotation_pattern": [
+    {
+      "month": "January",
+      "assignments": {
+        "Alice": ["deep-clean-kitchen"],
+        "Bob": ["window-washing", "hvac-filter-change"],
+        "Charlie": ["garage-organization"]
+      }
+    },
+    {
+      "month": "February",
+      "assignments": {
+        "Alice": ["window-washing", "hvac-filter-change"],
+        "Bob": ["garage-organization"],
+        "Charlie": ["deep-clean-kitchen"]
+      }
+    },
+    {
+      "month": "March",
+      "assignments": {
+        "Alice": ["garage-organization"],
+        "Bob": ["deep-clean-kitchen"],
+        "Charlie": ["window-washing", "hvac-filter-change", "yard-maintenance"]
+      }
+    }
+  ],
+  "workload_balance": {
+    "Alice": {
+      "tasks_per_month": 1.67,
+      "minutes_per_month": 116,
+      "difficulty_avg": 3.7,
+      "categories": ["kitchen", "cleaning", "organization"]
+    },
+    "Bob": {
+      "tasks_per_month": 1.67,
+      "minutes_per_month": 95,
+      "difficulty_avg": 2.7,
+      "categories": ["cleaning", "organization", "kitchen", "maintenance"]
+    },
+    "Charlie": {
+      "tasks_per_month": 1.67,
+      "minutes_per_month": 154,
+      "difficulty_avg": 3.0,
+      "categories": ["organization", "kitchen", "cleaning", "maintenance", "outdoor"]
+    }
+  },
+  "notes": "Seasonal tasks (yard maintenance) added in March. Rotation continues in 3-month cycles.",
+  "next_review_date": "2025-04-01"
+}

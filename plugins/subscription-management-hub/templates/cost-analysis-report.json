@@ -1,0 +1,231 @@
+{
+  "version": "1.0",
+  "created": "2025-10-23T10:00:00Z",
+  "report_date": "2025-10-23T10:00:00Z",
+  "summary": {
+    "total_monthly": 108.96,
+    "total_annual": 1307.52,
+    "average_per_subscription": 21.79,
+    "active_subscriptions": 4,
+    "trial_subscriptions": 1,
+    "most_expensive": {
+      "name": "Adobe Creative Cloud",
+      "monthly_cost": 54.99,
+      "annual_cost": 659.88,
+      "category": "software-saas",
+      "percentage_of_total": 50.5
+    },
+    "least_used": [
+      {
+        "name": "Unused Fitness App",
+        "monthly_cost": 9.99,
+        "annual_cost": 119.88,
+        "last_used": "2025-02-15",
+        "days_unused": 250,
+        "usage_frequency": "never"
+      }
+    ]
+  },
+  "by_category": {
+    "software-saas": {
+      "count": 1,
+      "monthly_cost": 54.99,
+      "annual_cost": 659.88,
+      "percentage_of_total": 50.5,
+      "subscriptions": [
+        {
+          "name": "Adobe Creative Cloud",
+          "monthly_cost": 54.99,
+          "status": "trial"
+        }
+      ]
+    },
+    "news-media": {
+      "count": 1,
+      "monthly_cost": 17.00,
+      "annual_cost": 204.00,
+      "percentage_of_total": 15.6,
+      "subscriptions": [
+        {
+          "name": "The New York Times Digital",
+          "monthly_cost": 17.00,
+          "status": "active"
+        }
+      ]
+    },
+    "streaming-video": {
+      "count": 1,
+      "monthly_cost": 15.99,
+      "annual_cost": 191.88,
+      "percentage_of_total": 14.7,
+      "subscriptions": [
+        {
+          "name": "Netflix Premium",
+          "monthly_cost": 15.99,
+          "status": "active"
+        }
+      ]
+    },
+    "streaming-music": {
+      "count": 1,
+      "monthly_cost": 10.99,
+      "annual_cost": 131.88,
+      "percentage_of_total": 10.1,
+      "subscriptions": [
+        {
+          "name": "Spotify Premium",
+          "monthly_cost": 10.99,
+          "status": "active"
+        }
+      ]
+    },
+    "fitness": {
+      "count": 1,
+      "monthly_cost": 9.99,
+      "annual_cost": 119.88,
+      "percentage_of_total": 9.2,
+      "subscriptions": [
+        {
+          "name": "Unused Fitness App",
+          "monthly_cost": 9.99,
+          "status": "active"
+        }
+      ]
+    }
+  },
+  "by_billing_cycle": {
+    "monthly": {
+      "count": 5,
+      "total_cost": 108.96,
+      "subscriptions": [
+        "Netflix Premium",
+        "Spotify Premium",
+        "Adobe Creative Cloud",
+        "The New York Times Digital",
+        "Unused Fitness App"
+      ]
+    },
+    "annual": {
+      "count": 0,
+      "total_cost": 0,
+      "subscriptions": []
+    }
+  },
+  "usage_analysis": {
+    "excellent_value": [
+      {
+        "name": "Netflix Premium",
+        "monthly_cost": 15.99,
+        "usage_frequency": "daily",
+        "value_score": 6.25,
+        "reasoning": "High usage frequency justifies cost"
+      },
+      {
+        "name": "Spotify Premium",
+        "monthly_cost": 10.99,
+        "usage_frequency": "daily",
+        "value_score": 9.1,
+        "reasoning": "Excellent value - daily use at reasonable cost"
+      }
+    ],
+    "good_value": [
+      {
+        "name": "The New York Times Digital",
+        "monthly_cost": 17.00,
+        "usage_frequency": "weekly",
+        "value_score": 4.12,
+        "reasoning": "Regular use justifies premium news subscription"
+      }
+    ],
+    "needs_review": [
+      {
+        "name": "Adobe Creative Cloud",
+        "monthly_cost": 54.99,
+        "usage_frequency": "weekly",
+        "status": "trial",
+        "value_score": 1.27,
+        "reasoning": "Expensive - evaluate if features justify cost after trial"
+      }
+    ],
+    "underutilized": [
+      {
+        "name": "Unused Fitness App",
+        "monthly_cost": 9.99,
+        "usage_frequency": "never",
+        "last_used": "2025-02-15",
+        "days_unused": 250,
+        "value_score": 0,
+        "reasoning": "Not used in 8+ months - strong cancel candidate",
+        "potential_annual_savings": 119.88
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "priority": "HIGH",
+      "type": "cancel_unused",
+      "action": "Cancel underutilized subscriptions",
+      "subscriptions": ["Unused Fitness App"],
+      "reasoning": "Not used in 8+ months",
+      "potential_savings_monthly": 9.99,
+      "potential_savings_annual": 119.88,
+      "implementation": "Cancel before next renewal on 2025-11-01"
+    },
+    {
+      "priority": "MEDIUM",
+      "type": "trial_decision",
+      "action": "Decide on Adobe Creative Cloud trial",
+      "subscriptions": ["Adobe Creative Cloud"],
+      "reasoning": "Trial ends 2025-11-05, will charge $54.99/month",
+      "potential_savings_annual": 659.88,
+      "implementation": "Evaluate usage and decide by 2025-11-04",
+      "alternatives": ["Affinity Suite (one-time $169.99)", "Canva Pro ($12.99/month)"]
+    },
+    {
+      "priority": "MEDIUM",
+      "type": "annual_billing",
+      "action": "Consider annual billing for regularly used services",
+      "subscriptions": ["Netflix Premium", "Spotify Premium", "The New York Times Digital"],
+      "reasoning": "Long-term commitment, typical 15-20% annual discount",
+      "estimated_savings_annual": 88.00,
+      "implementation": "Switch to annual billing at next renewal"
+    },
+    {
+      "priority": "LOW",
+      "type": "bundle_opportunity",
+      "action": "Evaluate bundle opportunities",
+      "reasoning": "No obvious bundles detected with current subscriptions",
+      "implementation": "Monitor for future bundle options"
+    }
+  ],
+  "potential_total_savings": {
+    "immediate": 119.88,
+    "trial_decision": 659.88,
+    "annual_billing": 88.00,
+    "total_maximum": 867.76,
+    "notes": "Maximum savings assumes canceling unused subscription, not converting trial to paid, and switching to annual billing"
+  },
+  "alerts": [
+    {
+      "type": "trial_ending",
+      "urgency": "high",
+      "subscription": "Adobe Creative Cloud",
+      "message": "Trial ends in 13 days (2025-11-05)",
+      "action_required": "Decide to cancel or accept $54.99/month charge"
+    },
+    {
+      "type": "unused_subscription",
+      "urgency": "medium",
+      "subscription": "Unused Fitness App",
+      "message": "Not used in 250 days",
+      "action_required": "Consider canceling to save $119.88/year"
+    },
+    {
+      "type": "upcoming_renewal",
+      "urgency": "low",
+      "subscription": "Unused Fitness App",
+      "message": "Renews in 9 days (2025-11-01)",
+      "action_required": "Cancel before renewal if not planning to use"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "pets": [
+    {
+      "id": "pet-001",
+      "name": "Max",
+      "species": "dog",
+      "breed": "Golden Retriever",
+      "birthdate": "2020-05-15",
+      "gender": "male",
+      "weight": 70,
+      "microchipId": "123456789012345",
+      "spayedNeutered": true,
+      "allergies": ["chicken"],
+      "chronicConditions": [],
+      "emergencyContact": {
+        "vet": "Happy Paws Veterinary",
+        "phone": "555-VET-CARE",
+        "address": "123 Main St"
+      }
+    }
+  ]
+}

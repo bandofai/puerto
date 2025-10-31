@@ -1,0 +1,329 @@
+# Market Analysis Template (Excel Format)
+
+**Purpose**: Structured spreadsheet for TAM/SAM/SOM calculations and market sizing analysis
+
+## Sheet Structure
+
+### Sheet 1: Executive Summary
+- Market Name
+- TAM (Total Addressable Market)
+- SAM (Serviceable Addressable Market)
+- SOM (Serviceable Obtainable Market)
+- CAGR (Compound Annual Growth Rate)
+- Forecast Period
+- Confidence Level
+- Key Assumptions (top 5)
+- Data Sources (top 5)
+
+### Sheet 2: TAM Calculation
+**Top-Down Approach**:
+- Industry/Market Definition
+- Total Market Size (Source)
+- Geographic Scope
+- Time Period
+- Data Source
+- Confidence Level
+
+**Bottom-Up Approach**:
+- Total Potential Customers (#)
+- Average Revenue Per User ($)
+- Purchase Frequency (per year)
+- TAM = Customers × ARPU × Frequency
+- Data Sources
+- Assumptions
+
+**Value Theory Approach**:
+- # of Potential Customers
+- Average Value Created per Customer ($)
+- % of Value Captured (typical 10-20%)
+- TAM = Customers × Value Created × % Captured
+- Data Sources
+- Assumptions
+
+**Triangulation**:
+- Top-Down TAM: $[Amount]
+- Bottom-Up TAM: $[Amount]
+- Value Theory TAM: $[Amount]
+- Weighted Average: $[Amount]
+- Variance: [%]
+- Final TAM Estimate: $[Amount]
+
+### Sheet 3: SAM Calculation
+**Filters Applied to TAM**:
+
+| Filter | % of TAM | Rationale | Source |
+|--------|---------|-----------|--------|
+| Geographic Reach | [%] | [Markets we serve] | [Source] |
+| Target Segment | [%] | [Customer types we serve] | [Source] |
+| Channel Access | [%] | [Customers we can reach] | [Source] |
+| Regulatory/Legal | [%] | [Markets we're approved for] | [Source] |
+| Technology Readiness | [%] | [Customers ready to adopt] | [Source] |
+| **Combined SAM** | **[%]** | **[Cumulative effect]** | - |
+
+**SAM Calculation**:
+- TAM: $[Amount]
+- × Geographic Reach %: $[Amount]
+- × Target Segment %: $[Amount]
+- × Channel Access %: $[Amount]
+- × Other Filters %: $[Amount]
+- **= SAM: $[Amount]**
+
+**SAM Validation**:
+- Bottom-up customer count: [#]
+- × Average deal size: $[Amount]
+- = Validation SAM: $[Amount]
+- Variance from primary: [%]
+
+### Sheet 4: SOM Calculation
+**Market Share Assumptions**:
+
+| Year | Market Share % | SAM ($) | SOM ($) | Rationale |
+|------|---------------|---------|---------|-----------|
+| Year 1 | [0.5-2%] | $[Amount] | $[Amount] | [New entrant, early adopters] |
+| Year 2 | [1-4%] | $[Amount] | $[Amount] | [Growing presence, references] |
+| Year 3 | [2-8%] | $[Amount] | $[Amount] | [Established player, scale] |
+| Year 4 | [3-12%] | $[Amount] | $[Amount] | [Market leader in niche] |
+| Year 5 | [5-15%] | $[Amount] | $[Amount] | [Dominant position] |
+
+**Competitive Considerations**:
+- # of Major Competitors: [#]
+- Market Leader Share: [%]
+- Top 3 Combined Share: [%]
+- Market Structure: [Fragmented/Consolidated]
+- New Entrant Typical Share: [% in Year 3]
+- Our Differentiation: [Key advantages]
+
+**Resource Constraints**:
+- Sales Team Size: [# people]
+- Deals per Rep per Year: [#]
+- Max Deals Year 1: [#]
+- Average Deal Size: $[Amount]
+- Revenue Capacity: $[Amount]
+
+**SOM Reality Check**:
+- Bottoms-up SOM (deals × ACV): $[Amount]
+- Market share SOM (SAM × %): $[Amount]
+- Resource-constrained SOM: $[Amount]
+- **Conservative SOM Estimate**: $[Lowest]
+
+### Sheet 5: Growth Forecast
+**Historical Growth** (if market exists):
+
+| Year | Market Size ($) | YoY Growth (%) |
+|------|----------------|----------------|
+| [2020] | $[Amount] | - |
+| [2021] | $[Amount] | [%] |
+| [2022] | $[Amount] | [%] |
+| [2023] | $[Amount] | [%] |
+| [2024] | $[Amount] | [%] |
+| **CAGR** | - | **[%]** |
+
+**Future Forecast** (3-5 years):
+
+| Year | TAM ($) | SAM ($) | SOM ($) | Growth Rate (%) |
+|------|---------|---------|---------|----------------|
+| [2025] | $[Amount] | $[Amount] | $[Amount] | [%] |
+| [2026] | $[Amount] | $[Amount] | $[Amount] | [%] |
+| [2027] | $[Amount] | $[Amount] | $[Amount] | [%] |
+| [2028] | $[Amount] | $[Amount] | $[Amount] | [%] |
+| [2029] | $[Amount] | $[Amount] | $[Amount] | [%] |
+
+**Growth Drivers**:
+1. [Driver]: [Impact %] - [Explanation]
+2. [Driver]: [Impact %] - [Explanation]
+3. [Driver]: [Impact %] - [Explanation]
+
+**Growth Assumptions**:
+- Base growth rate: [%] (market baseline)
+- Technology adoption: +[%] (acceleration factor)
+- Competitive dynamics: -[%] (friction factor)
+- Economic factors: +/-[%] (macro environment)
+- **Net CAGR**: [%]
+
+### Sheet 6: Sensitivity Analysis
+**Best Case Scenario** (Optimistic but Plausible):
+
+| Assumption | Base Case | Best Case | Impact |
+|-----------|-----------|-----------|--------|
+| Market Growth | [%] | [+X%] | $[Amount] |
+| Market Share | [%] | [+X%] | $[Amount] |
+| ARPU | $[Amount] | $[+X] | $[Amount] |
+| Adoption Rate | [%] | [+X%] | $[Amount] |
+| **Total SOM** | **$[Amount]** | **$[Amount]** | **+[%]** |
+
+**Worst Case Scenario** (Pessimistic but Possible):
+
+| Assumption | Base Case | Worst Case | Impact |
+|-----------|-----------|------------|--------|
+| Market Growth | [%] | [-X%] | $[Amount] |
+| Market Share | [%] | [-X%] | $[Amount] |
+| ARPU | $[Amount] | $[-X] | $[Amount] |
+| Adoption Rate | [%] | [-X%] | $[Amount] |
+| **Total SOM** | **$[Amount]** | **$[Amount]** | **-[%]** |
+
+**Key Risk Factors**:
+1. [Risk]: [Probability], [Impact]
+2. [Risk]: [Probability], [Impact]
+3. [Risk]: [Probability], [Impact]
+
+**Probability-Weighted Expected Value**:
+- Best Case (20% probability): $[Amount] × 0.20 = $[Amount]
+- Base Case (60% probability): $[Amount] × 0.60 = $[Amount]
+- Worst Case (20% probability): $[Amount] × 0.20 = $[Amount]
+- **Expected SOM**: $[Sum]
+
+### Sheet 7: Assumptions Log
+**All Key Assumptions** (transparent documentation):
+
+| # | Category | Assumption | Value | Rationale | Source | Confidence | Impact |
+|---|----------|-----------|-------|-----------|--------|-----------|---------|
+| 1 | Geographic | [Assumption] | [Value] | [Why reasonable] | [Source] | [H/M/L] | [H/M/L] |
+| 2 | Segment | [Assumption] | [Value] | [Why reasonable] | [Source] | [H/M/L] | [H/M/L] |
+| 3 | Pricing | [Assumption] | [Value] | [Why reasonable] | [Source] | [H/M/L] | [H/M/L] |
+| 4 | Adoption | [Assumption] | [Value] | [Why reasonable] | [Source] | [H/M/L] | [H/M/L] |
+| 5 | Competition | [Assumption] | [Value] | [Why reasonable] | [Source] | [H/M/L] | [H/M/L] |
+
+**Assumption Categories**:
+- Market Definition
+- Geographic Scope
+- Target Segment
+- Pricing/Monetization
+- Adoption Rate
+- Competition/Market Share
+- Growth Rate
+- Customer Behavior
+
+**Confidence Levels**:
+- High: Multiple sources, validated data, low variance
+- Medium: Some sources, reasonable inference, medium variance
+- Low: Limited data, significant assumptions, high variance
+
+### Sheet 8: Data Sources
+**Complete Source Documentation**:
+
+| # | Source Name | Type | URL | Date Accessed | Key Data | Quality |
+|---|------------|------|-----|---------------|----------|---------|
+| 1 | [Name] | [Report/Gov/Academic] | [URL] | [Date] | [What data] | [Tier 1/2/3] |
+| 2 | [Name] | [Report/Gov/Academic] | [URL] | [Date] | [What data] | [Tier 1/2/3] |
+| 3 | [Name] | [Report/Gov/Academic] | [URL] | [Date] | [What data] | [Tier 1/2/3] |
+
+**Source Quality Tiers**:
+- Tier 1 (3x weight): Government stats, public filings, academic research
+- Tier 2 (2x weight): Analyst reports, trade associations, market research firms
+- Tier 3 (1x weight): Company press releases, blogs, articles
+
+**Source Validation**:
+- Total sources: [#]
+- Tier 1 sources: [#]
+- Tier 2 sources: [#]
+- Tier 3 sources: [#]
+- Average age: [Months]
+- Sources per key number: [#]
+
+### Sheet 9: Calculations Reference
+**Formula Documentation** (for transparency):
+
+**CAGR**:
+```
+= (Ending Value / Beginning Value)^(1 / # Years) - 1
+```
+
+**Weighted Average**:
+```
+= SUMPRODUCT(Values, Weights) / SUM(Weights)
+```
+
+**Market Share Trajectory**:
+```
+Year N Share = Previous Share × (1 + Growth Rate)
+Constrained by: Resource capacity, competitive dynamics
+```
+
+**Customer Count Validation**:
+```
+TAM Customers = TAM Revenue / ARPU
+SAM Customers = TAM Customers × Filter %
+SOM Customers = SAM Customers × Market Share %
+```
+
+**Expected Value**:
+```
+= (Best Case × P_best) + (Base × P_base) + (Worst × P_worst)
+```
+
+### Sheet 10: Presentation Summary
+**One-Page Executive Summary** (for slides/reports):
+
+**Market Opportunity**:
+- TAM: $[Amount]B ([Year])
+- SAM: $[Amount]M ([Year])
+- SOM: $[Amount]M (Year 3)
+- CAGR: [%] ([Period])
+
+**Key Insights**:
+1. [Insight 1]
+2. [Insight 2]
+3. [Insight 3]
+
+**Growth Drivers**:
+1. [Driver 1]
+2. [Driver 2]
+3. [Driver 3]
+
+**Competitive Context**:
+- Market structure: [Fragmented/Consolidated]
+- # Competitors: [#]
+- Differentiation: [Key advantage]
+
+**Confidence Level**: [High/Medium/Low]
+**Methodology**: [Top-down + Bottom-up triangulated]
+**Sources**: [#] sources ([Tier 1], [Tier 2], [Tier 3])
+
+**Recommendations**:
+1. [Recommendation 1]
+2. [Recommendation 2]
+3. [Recommendation 3]
+
+---
+
+## How to Use This Template
+
+1. **Start with Executive Summary sheet** - Define market clearly
+2. **Calculate TAM** (Sheet 2) - Use 2-3 methods, triangulate
+3. **Filter to SAM** (Sheet 3) - Apply realistic constraints
+4. **Estimate SOM** (Sheet 4) - Conservative market share assumptions
+5. **Forecast growth** (Sheet 5) - Historical + future projections
+6. **Test sensitivity** (Sheet 6) - Best/base/worst scenarios
+7. **Document assumptions** (Sheet 7) - Complete transparency
+8. **List all sources** (Sheet 8) - URLs and dates
+9. **Check calculations** (Sheet 9) - Formula reference
+10. **Create summary** (Sheet 10) - Executive presentation
+
+**Best Practices**:
+- Always triangulate (multiple methods)
+- Document every assumption
+- Be conservative (better to under-promise)
+- Update quarterly (markets change)
+- Validate with customers and sales team
+
+**Quality Checks**:
+- ✅ Used 3+ sources per key number
+- ✅ TAM > SAM > SOM (strictly)
+- ✅ Bottom-up validates top-down (within 50%)
+- ✅ Market share is realistic (<10% Year 3 for new entrant)
+- ✅ All assumptions documented
+- ✅ All sources cited with URLs
+- ✅ Sensitivity analysis included
+- ✅ Confidence levels stated
+
+---
+
+**Note**: This is a text representation of the Excel template structure.
+To create the actual Excel file:
+1. Create new Excel workbook
+2. Create 10 sheets as outlined above
+3. Add formulas for calculations
+4. Add data validation for dropdowns
+5. Format with colors and headers
+6. Add conditional formatting for confidence levels
+7. Create charts (TAM/SAM/SOM funnel, growth forecast line, sensitivity tornado)

@@ -1,0 +1,17 @@
+{
+  "name": "healthcare-compliance",
+  "version": "1.0.0",
+  "description": "Healthcare regulatory compliance specialist ensuring HIPAA, FDA, and clinical trial regulations compliance.",
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "agents": [
+    "./agents/device-compliance.md",
+    "./agents/hipaa-monitor.md",
+    "./agents/clinical-documenter.md"
+  ],
+  "skills": [
+    "./skills/healthcare-regulations/SKILL.md"
+  ],
+  "license": "MIT"
+}

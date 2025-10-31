@@ -1,0 +1,16 @@
+{
+  "name": "training-developer",
+  "version": "1.0.0",
+  "description": "Training content creation specialist",
+  "agents": [
+    "./agents/curriculum-designer.md",
+    "./agents/course-creator.md",
+    "./agents/assessment-builder.md"
+  ],
+  "skills": [
+    "./skills/training-development.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

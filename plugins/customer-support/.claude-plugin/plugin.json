@@ -1,0 +1,21 @@
+{
+  "name": "customer-support",
+  "version": "1.0.0",
+  "description": "First-line customer support with query classification, issue resolution, and escalation management",
+  "category": "support",
+  "author": {
+    "name": "Puerto"
+  },
+  "agents": [
+    "./agents/query-classifier.md",
+    "./agents/issue-resolver.md",
+    "./agents/kb-searcher.md",
+    "./agents/ticket-documenter.md",
+    "./agents/escalation-manager.md"
+  ],
+  "skills": [
+    "./skills/query-classification/SKILL.md",
+    "./skills/ticket-management/SKILL.md",
+    "./skills/customer-communication/SKILL.md"
+  ]
+}

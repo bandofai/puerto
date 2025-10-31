@@ -1,0 +1,21 @@
+{
+  "name": "it-support-specialist",
+  "version": "1.0.0",
+  "description": "Internal IT support specialist for troubleshooting, access management, and system diagnostics",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/ticket-triager.md",
+    "./agents/system-diagnostician.md",
+    "./agents/access-manager.md",
+    "./agents/knowledge-base-builder.md",
+    "./agents/incident-coordinator.md"
+  ],
+  "skills": [
+    "./skills/troubleshooting-procedures/SKILL.md",
+    "./skills/access-management/SKILL.md",
+    "./skills/system-diagnostics/SKILL.md",
+    "./skills/ticket-resolution/SKILL.md"
+  ]
+}

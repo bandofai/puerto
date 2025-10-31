@@ -1,0 +1,539 @@
+# Competitive Analysis Template (PowerPoint Format)
+
+**Purpose**: Executive presentation deck for competitive landscape analysis
+
+## Slide Structure (20-25 slides)
+
+### Slide 1: Title Slide
+**Title**: Competitive Analysis: [Market/Company Name]
+**Subtitle**: [Date]
+**Prepared by**: [Team/Person]
+**Confidential/Internal Use Only**
+
+---
+
+### Slide 2: Executive Summary
+**One-page overview of key findings**
+
+**Competitive Landscape**:
+- # of competitors analyzed: [#]
+- Market structure: [Fragmented/Consolidated]
+- Competitive intensity: [Low/Medium/High]
+
+**Key Findings**:
+1. [Finding 1]
+2. [Finding 2]
+3. [Finding 3]
+
+**Primary Threats**: [Competitor A, Competitor B]
+**Key Opportunities**: [Opportunity 1, Opportunity 2]
+**Recommended Actions**: [Action 1, Action 2]
+
+---
+
+### Slide 3: Agenda
+1. Competitive Landscape Overview
+2. Porter's 5 Forces Analysis
+3. Competitor Deep Dives (Top 5)
+4. Competitive Positioning
+5. SWOT Analysis
+6. Strategic Recommendations
+7. Monitoring Plan
+
+---
+
+### Section 1: Competitive Landscape Overview
+
+### Slide 4: Market Overview
+**Market Context**:
+- Total Market Size: $[Amount]
+- Market Growth: [%] CAGR
+- Market Maturity: [Emerging/Growth/Mature/Declining]
+- Geographic Scope: [Regions covered]
+
+**Timeline**: [Period analyzed]
+**Sources**: [# sources, key sources]
+
+---
+
+### Slide 5: Competitive Landscape Map
+**Visual**: Positioning map showing all competitors
+
+```
+     High Quality/Features
+          |
+          |  [Comp C]
+          |
+       [Us]     [Comp A]
+          |
+          |  [Comp B]  [Comp D]
+          |
+     Low  |________________________
+        Low         Price         High
+```
+
+**Market Structure**:
+- Total competitors: [#]
+- Direct competitors: [#]
+- Indirect competitors: [#]
+- Potential entrants: [#]
+
+---
+
+### Slide 6: Competitor Categorization
+**Direct Competitors** (Same market, same approach):
+- [Competitor 1]: [Brief description]
+- [Competitor 2]: [Brief description]
+- [Competitor 3]: [Brief description]
+
+**Indirect Competitors** (Same market, different approach):
+- [Competitor 4]: [Brief description]
+- [Competitor 5]: [Brief description]
+
+**Potential Entrants** (Could enter market):
+- [Company 1]: [Why they might enter]
+- [Company 2]: [Why they might enter]
+
+**Substitutes** (Different but competitive):
+- [Substitute 1]: [Why it's competitive]
+- [Substitute 2]: [Why it's competitive]
+
+---
+
+### Section 2: Porter's 5 Forces Analysis
+
+### Slide 7: Porter's 5 Forces Overview
+**Visual**: Pentagon diagram with 5 forces
+
+**Overall Industry Attractiveness**: [High/Medium/Low]
+
+| Force | Assessment | Score (1-5) |
+|-------|-----------|------------|
+| Threat of New Entrants | [Low/Med/High] | [X] |
+| Supplier Power | [Low/Med/High] | [X] |
+| Buyer Power | [Low/Med/High] | [X] |
+| Threat of Substitutes | [Low/Med/High] | [X] |
+| Competitive Rivalry | [Low/Med/High] | [X] |
+| **Average** | - | **[X.X]** |
+
+**Interpretation**: [What this means for profitability]
+
+---
+
+### Slide 8: Threat of New Entrants
+**Assessment**: [Low/Medium/High Threat]
+
+**Barriers to Entry**:
+- ✅ HIGH: [Which barriers are strong]
+- ⚠️ MEDIUM: [Which barriers are moderate]
+- ❌ LOW: [Which barriers are weak]
+
+**Key Factors**:
+- Capital requirements: [High/Med/Low] → [Impact]
+- Brand loyalty: [High/Med/Low] → [Impact]
+- Regulatory barriers: [High/Med/Low] → [Impact]
+
+**Recent New Entrants** (Last 2 years):
+- [Company 1]: [Traction achieved]
+- [Company 2]: [Traction achieved]
+
+**Strategic Implication**: [What this means for us]
+
+---
+
+### Slide 9: Supplier Power
+**Assessment**: [Low/Medium/High Power]
+
+**Key Supplier Categories**:
+
+| Supplier Type | Power Level | Rationale |
+|--------------|------------|-----------|
+| [Type 1] | [High/Med/Low] | [Why] |
+| [Type 2] | [High/Med/Low] | [Why] |
+
+**Key Factors**:
+- Supplier concentration: [High/Med/Low]
+- Switching costs: [High/Med/Low]
+- Forward integration threat: [High/Med/Low]
+
+**Strategic Implication**: [Impact on margins and strategy]
+
+---
+
+### Slide 10: Buyer Power
+**Assessment**: [Low/Medium/High Power]
+
+**Customer Segment Analysis**:
+
+| Segment | % Revenue | Power Level | Why |
+|---------|----------|------------|-----|
+| [Enterprise] | [X%] | [High/Med/Low] | [Reason] |
+| [Mid-Market] | [X%] | [High/Med/Low] | [Reason] |
+| [SMB] | [X%] | [High/Med/Low] | [Reason] |
+
+**Key Factors**:
+- Buyer concentration: [High/Med/Low]
+- Switching costs: [High/Med/Low]
+- Price sensitivity: [High/Med/Low]
+
+**Strategic Implication**: [Impact on pricing and positioning]
+
+---
+
+### Slide 11: Threat of Substitutes
+**Assessment**: [Low/Medium/High Threat]
+
+**Key Substitutes**:
+
+| Substitute | Price vs Us | Performance | Threat Level | Trend |
+|-----------|------------|-------------|-------------|-------|
+| [Sub 1] | [Higher/Lower] | [Better/Worse] | [High/Med/Low] | [↑↓→] |
+| [Sub 2] | [Higher/Lower] | [Better/Worse] | [High/Med/Low] | [↑↓→] |
+
+**Key Factors**:
+- Relative price-performance: [Assessment]
+- Switching costs: [High/Med/Low]
+- Customer propensity: [High/Med/Low]
+
+**Strategic Implication**: [How to differentiate vs substitutes]
+
+---
+
+### Slide 12: Competitive Rivalry
+**Assessment**: [Low/Medium/High Intensity]
+
+**Market Structure**:
+- # of major competitors: [#]
+- Market concentration: [Fragmented/Consolidated]
+- Top 3 market share: [%]
+
+**Rivalry Drivers**:
+- Industry growth: [%] CAGR → [Impact on rivalry]
+- Product differentiation: [High/Low] → [Impact]
+- Switching costs: [High/Low] → [Impact]
+
+**Competitive Dimensions**:
+- Price: [High/Med/Low intensity]
+- Features: [High/Med/Low intensity]
+- Service: [High/Med/Low intensity]
+
+**Strategic Implication**: [How to reduce rivalry]
+
+---
+
+### Section 3: Competitor Deep Dives
+
+### Slide 13-17: Top 5 Competitor Profiles
+**One slide per competitor** (repeat for top 5):
+
+**[Competitor Name]**
+
+**Overview**:
+- Founded: [Year]
+- HQ: [Location]
+- Employees: [#]
+- Funding: $[Amount]
+- Revenue: $[Amount] (est)
+- Customers: [#]
+
+**Market Position**:
+- Market Share: [%]
+- Position: [Leader/Challenger/Niche/Follower]
+- Target: [Customer segment]
+
+**Strengths**:
+- [Strength 1]
+- [Strength 2]
+- [Strength 3]
+
+**Weaknesses**:
+- [Weakness 1]
+- [Weakness 2]
+- [Weakness 3]
+
+**Recent Moves** (Last 12 months):
+- [Move 1]: [Significance]
+- [Move 2]: [Significance]
+
+**Threat Level**: [High/Medium/Low]
+**How to Compete**: [Strategy]
+
+---
+
+### Section 4: Competitive Positioning
+
+### Slide 18: Feature Comparison Matrix
+**Visual**: Comparison table
+
+| Feature/Capability | Us | Comp A | Comp B | Comp C | Comp D |
+|-------------------|-----|--------|--------|--------|--------|
+| **[Category 1]** | | | | | |
+| - Feature 1 | ✅ ✨ | ✅ | ❌ | ⚠️ | ✅ |
+| - Feature 2 | ✅ | ✅ | ✅ | ✅ | ❌ |
+| - Feature 3 | ⚠️ | ✅ ✨ | ❌ | ✅ | ⚠️ |
+| **[Category 2]** | | | | | |
+| - Feature 4 | ✅ | ❌ | ✅ | ⚠️ | ✅ |
+| **Pricing** | | | | | |
+| - Entry Tier | $X | $Y | $Z | $W | $V |
+| - Enterprise | $XX | $YY | $ZZ | $WW | $VV |
+
+Legend: ✅ Has feature | ❌ Missing | ⚠️ Limited | ✨ Best in class
+
+---
+
+### Slide 19: Positioning Map (Price vs Quality)
+**Visual**: 2D positioning map
+
+```
+High Quality/Features
+     |
+  5  |     [Comp C]
+     |
+  4  |  [Us]        [Comp A]
+     |
+  3  |     [Comp D]
+     |
+  2  |  [Comp E]    [Comp B]
+     |
+  1  |
+     |_________________________
+    $    $$   $$$  $$$$  $$$$$
+          Price (Low → High)
+```
+
+**Quadrant Analysis**:
+- **Premium** (High quality, High price): [Competitors]
+- **Value Leader** (High quality, Low price): [Competitors]
+- **Budget** (Low quality, Low price): [Competitors]
+- **Overpriced** (Low quality, High price): [Competitors]
+
+**Our Position**: [Description and strategic fit]
+
+---
+
+### Slide 20: Positioning Map (Enterprise vs SMB)
+**Visual**: Alternative positioning map
+
+**White Space Opportunities**:
+- [Position]: [Why underserved]
+- [Position]: [Why underserved]
+
+---
+
+### Section 5: SWOT Analysis
+
+### Slide 21: Our SWOT Analysis
+**Visual**: 2×2 matrix
+
+**STRENGTHS** (Internal, Positive):
+1. [Strength 1]
+2. [Strength 2]
+3. [Strength 3]
+
+**WEAKNESSES** (Internal, Negative):
+1. [Weakness 1]
+2. [Weakness 2]
+3. [Weakness 3]
+
+**OPPORTUNITIES** (External, Positive):
+1. [Opportunity 1]
+2. [Opportunity 2]
+3. [Opportunity 3]
+
+**THREATS** (External, Negative):
+1. [Threat 1]
+2. [Threat 2]
+3. [Threat 3]
+
+---
+
+### Slide 22: Competitive SWOT Summary
+**Aggregate view of competitive landscape**
+
+**Collective Strengths** (What competitors are good at):
+- [Strength 1]: [Who has this]
+- [Strength 2]: [Who has this]
+
+**Collective Weaknesses** (Where competitors fall short):
+- [Weakness 1]: [Opportunity for us]
+- [Weakness 2]: [Opportunity for us]
+
+**Market Opportunities** (External trends):
+- [Opportunity 1]: [Who's best positioned]
+- [Opportunity 2]: [Who's best positioned]
+
+**Market Threats** (External challenges):
+- [Threat 1]: [Who's most vulnerable]
+- [Threat 2]: [Who's most vulnerable]
+
+---
+
+### Section 6: Strategic Recommendations
+
+### Slide 23: Competitive Threats & Opportunities
+**Immediate Threats** (0-6 months):
+1. **[Threat]**
+   - Competitor: [Who]
+   - Likelihood: [High/Med/Low]
+   - Impact: [High/Med/Low]
+   - Response: [What to do]
+
+**Medium-term Threats** (6-18 months):
+2. **[Threat]**
+   [Same format]
+
+**Opportunities to Exploit**:
+1. **[Opportunity]**
+   - Competitor weakness: [What]
+   - Our advantage: [How we win]
+   - Expected impact: [Revenue/share]
+   - Timeline: [When]
+
+---
+
+### Slide 24: Strategic Recommendations
+**Priority Actions**:
+
+**1. [Recommendation 1]**
+- **Rationale**: [Why this is important]
+- **Approach**: [How to execute]
+- **Expected Impact**: [Outcome]
+- **Timeline**: [When]
+- **Owner**: [Who]
+- **Resources**: [What's needed]
+
+**2. [Recommendation 2]**
+[Same format]
+
+**3. [Recommendation 3]**
+[Same format]
+
+---
+
+### Slide 25: Competitive Monitoring Plan
+**Ongoing Tracking**:
+
+**Competitors to Watch Closely**:
+- [Competitor 1]: [Why, what to monitor]
+- [Competitor 2]: [Why, what to monitor]
+
+**Metrics to Track**:
+- Market share (quarterly)
+- Product launches (ongoing)
+- Pricing changes (ongoing)
+- Funding rounds (ongoing)
+- Executive changes (ongoing)
+- Customer wins/losses (ongoing)
+
+**Information Sources**:
+- [Source 1]: [Frequency]
+- [Source 2]: [Frequency]
+- [Source 3]: [Frequency]
+
+**Update Frequency**: [Quarterly competitive briefing]
+
+---
+
+### Appendix Slides (Optional)
+
+### Appendix A: Detailed Competitor Profiles
+**Extended profiles for all competitors analyzed**
+[Full company details, product info, financials, etc.]
+
+### Appendix B: Methodology
+**Research Approach**:
+- Sources consulted: [#]
+- Source types: [Public info, analyst reports, customer interviews]
+- Analysis period: [Dates]
+- Frameworks applied: [Porter's 5 Forces, SWOT, etc.]
+- Validation: [How findings were validated]
+
+**Source Quality**:
+- Tier 1 sources: [#]
+- Tier 2 sources: [#]
+- Tier 3 sources: [#]
+
+**Limitations**:
+- [Limitation 1]
+- [Limitation 2]
+
+### Appendix C: Data Sources
+**Complete list of sources with URLs**
+[Detailed bibliography]
+
+---
+
+## Slide Design Guidelines
+
+**Visual Consistency**:
+- Use company brand colors
+- Consistent fonts (title, body, captions)
+- Consistent icon style
+- Professional stock photos or custom graphics
+
+**Layout Best Practices**:
+- Title on every slide
+- One main point per slide
+- Use visuals (charts, diagrams, icons)
+- Minimal text (bullet points, not paragraphs)
+- White space is good
+
+**Chart/Graph Types**:
+- Positioning maps: 2D scatter plots
+- Market share: Pie charts or bar charts
+- Trends: Line charts
+- Comparisons: Side-by-side bar charts
+- Feature matrix: Table with color coding
+- SWOT: 2×2 matrix
+- Porter's 5 Forces: Pentagon diagram
+
+**Color Coding**:
+- Green: Positive/Strength/Opportunity
+- Red: Negative/Weakness/Threat
+- Yellow: Caution/Medium priority
+- Blue: Neutral/Information
+- Gray: Low priority/Background
+
+---
+
+## How to Use This Template
+
+1. **Start with research** - Gather competitive intelligence
+2. **Populate competitor profiles** - One per major competitor
+3. **Apply frameworks** - Porter's 5 Forces, SWOT
+4. **Create visuals** - Positioning maps, feature matrices
+5. **Synthesize insights** - What does it all mean?
+6. **Develop recommendations** - Actionable next steps
+7. **Review with stakeholders** - Validate findings
+8. **Present to leadership** - Focus on insights, not just data
+9. **Update quarterly** - Competitive landscape changes
+
+**Presentation Tips**:
+- Start with executive summary (tell them what you'll tell them)
+- Focus on insights, not just data
+- Use visuals to tell the story
+- Be ready for questions (appendix has details)
+- End with clear recommendations
+- Propose monitoring plan
+
+**Quality Checks**:
+- ✅ All major competitors covered
+- ✅ Multiple frameworks applied
+- ✅ Evidence-backed claims
+- ✅ Sources cited
+- ✅ Actionable recommendations
+- ✅ Visuals are clear and professional
+- ✅ Story flows logically
+
+---
+
+**Note**: This is a text representation of the PowerPoint template structure.
+To create the actual PowerPoint file:
+1. Create new PowerPoint presentation
+2. Set up master slides with company branding
+3. Create 25 slides as outlined above
+4. Add professional visuals (charts, diagrams, icons)
+5. Use consistent color coding
+6. Add animations (subtle, professional)
+7. Include appendix slides
+8. Export as PDF for sharing

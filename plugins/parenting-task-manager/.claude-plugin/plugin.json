@@ -1,0 +1,20 @@
+{
+  "name": "parenting-task-manager",
+  "version": "1.0.0",
+  "description": "Child activity and developmental milestone tracking specialist",
+  "agents": [
+    "./agents/school-calendar-manager.md",
+    "./agents/activity-scheduler.md",
+    "./agents/milestone-tracker.md",
+    "./agents/chore-manager.md"
+  ],
+  "skills": [
+    "./skills/school-management.md",
+    "./skills/child-activities.md",
+    "./skills/developmental-tracking.md"
+  ],
+  "author": {
+    "name": "Puerto"
+  },
+  "license": "MIT"
+}

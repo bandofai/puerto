@@ -1,0 +1,17 @@
+{
+  "name": "payment-integration-specialist",
+  "version": "1.0.0",
+  "description": "Payment integration specialist for payment gateway integration, PCI compliance, fraud prevention, recurring billing, and payment reconciliation",
+  "agents": [
+    "./agents/gateway-integrator.md",
+    "./agents/compliance-specialist.md",
+    "./agents/fraud-preventer.md",
+    "./agents/reconciliation-manager.md"
+  ],
+  "skills": [
+    "./SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

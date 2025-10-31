@@ -1,0 +1,77 @@
+{
+  "sku": "PROD-001",
+  "name": "Product Name - Key Feature - Size/Color",
+  "type": "simple",
+  "status": "active",
+  "description": {
+    "long": "<p><strong>Transform your experience with Product Name.</strong></p>\n\n<p>Our premium product delivers exceptional results with innovative features designed for your needs.</p>\n\n<h3>Key Features:</h3>\n<ul>\n  <li><strong>Feature 1:</strong> Benefit description</li>\n  <li><strong>Feature 2:</strong> Benefit description</li>\n  <li><strong>Feature 3:</strong> Benefit description</li>\n  <li><strong>Feature 4:</strong> Benefit description</li>\n  <li><strong>Feature 5:</strong> Benefit description</li>\n</ul>\n\n<h3>Specifications:</h3>\n<ul>\n  <li>Dimensions: 10 x 8 x 3 inches</li>\n  <li>Weight: 1.5 lbs</li>\n  <li>Material: Premium materials</li>\n  <li>Color: Black/White/Gray</li>\n</ul>\n\n<h3>What's Included:</h3>\n<ul>\n  <li>1x Product Name</li>\n  <li>1x User Manual</li>\n  <li>1x Accessories</li>\n</ul>\n\n<p><strong>30-Day Money-Back Guarantee</strong> - If you're not completely satisfied, return it for a full refund.</p>",
+    "short": "Brief description highlighting the main benefit. Perfect for [use case]."
+  },
+  "pricing": {
+    "regular_price": 29.99,
+    "compare_at_price": 39.99,
+    "cost": 15.00,
+    "margin_percent": 50.0,
+    "currency": "USD"
+  },
+  "inventory": {
+    "quantity": 100,
+    "track_inventory": true,
+    "allow_backorder": false,
+    "low_stock_threshold": 10,
+    "reorder_point": 20,
+    "reorder_quantity": 50
+  },
+  "shipping": {
+    "weight": 1.5,
+    "weight_unit": "lb",
+    "dimensions": {
+      "length": 10,
+      "width": 8,
+      "height": 3,
+      "unit": "in"
+    },
+    "requires_shipping": true
+  },
+  "categories": [
+    "Electronics",
+    "Audio",
+    "Headphones"
+  ],
+  "tags": [
+    "wireless",
+    "bluetooth",
+    "bestseller"
+  ],
+  "images": [
+    {
+      "src": "https://cdn.example.com/products/prod-001-main.jpg",
+      "position": 1,
+      "alt": "Product Name main view"
+    },
+    {
+      "src": "https://cdn.example.com/products/prod-001-side.jpg",
+      "position": 2,
+      "alt": "Product Name side view"
+    }
+  ],
+  "variants": [
+    {
+      "sku": "PROD-001-BLK",
+      "name": "Black",
+      "price": 29.99,
+      "inventory_quantity": 50
+    },
+    {
+      "sku": "PROD-001-WHT",
+      "name": "White",
+      "price": 29.99,
+      "inventory_quantity": 50
+    }
+  ],
+  "seo": {
+    "title": "Product Name - Brand | Store Name",
+    "meta_description": "Buy Product Name with free shipping. Premium quality at the best price.",
+    "url_handle": "product-name"
+  }
+}

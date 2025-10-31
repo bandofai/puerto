@@ -1,0 +1,590 @@
+{
+  "applications": {
+    "app_1_example": {
+      "id": "app_1_example",
+      "company": "Tech Corp",
+      "position": "Senior Software Engineer",
+      "job_url": "https://techcorp.com/careers/senior-swe",
+      "location": "San Francisco, CA",
+      "work_mode": "hybrid",
+
+      "application_details": {
+        "applied_date": "2025-01-15T10:00:00",
+        "application_method": "referral",
+        "referral_contact": "Jane Smith (see networking database)",
+        "recruiter_name": "Sarah Williams",
+        "recruiter_email": "sarah.williams@techcorp.com"
+      },
+
+      "status": {
+        "current": "phone_screen",
+        "history": [
+          {
+            "status": "applied",
+            "date": "2025-01-15T10:00:00",
+            "notes": "Applied through employee referral from Jane Smith"
+          },
+          {
+            "status": "phone_screen",
+            "date": "2025-01-18T09:00:00",
+            "notes": "Recruiter screen scheduled for Jan 22"
+          }
+        ]
+      },
+
+      "interviews": [
+        {
+          "round": "phone_screen",
+          "date": "2025-01-22",
+          "time": "10:00 AM PST",
+          "duration": "30min",
+          "format": "phone",
+          "interviewers": ["Sarah Williams - Recruiter"],
+          "focus_areas": ["background_review", "role_fit", "salary_expectations"],
+          "preparation_notes": "Review resume, prepare 2-min pitch, research company recent news",
+          "outcome": "",
+          "feedback_received": "",
+          "my_notes": ""
+        }
+      ],
+
+      "compensation": {
+        "posted_range": {
+          "min": 150000,
+          "max": 180000,
+          "currency": "USD"
+        },
+        "my_target": {
+          "min": 170000,
+          "ask": 185000,
+          "walk_away": 165000
+        },
+        "offer_details": {
+          "base_salary": 0,
+          "signing_bonus": 0,
+          "annual_bonus": 0,
+          "bonus_percentage": 0,
+          "equity": {
+            "type": "",
+            "amount": "",
+            "vesting_schedule": "",
+            "strike_price": 0
+          },
+          "total_comp_year1": 0,
+          "benefits": [],
+          "pto_days": 0,
+          "start_date": "",
+          "offer_deadline": ""
+        }
+      },
+
+      "job_details": {
+        "requirements": [
+          "5+ years Python experience",
+          "System design expertise",
+          "Team leadership",
+          "Microservices architecture"
+        ],
+        "tech_stack": ["Python", "FastAPI", "PostgreSQL", "AWS", "Docker", "Kubernetes"],
+        "team_size": "8 engineers",
+        "reports_to": "Engineering Manager",
+        "team_structure": "Full-stack product team"
+      },
+
+      "tracking": {
+        "next_action": "prepare_for_phone_screen",
+        "next_action_date": "2025-01-22",
+        "action_items": [
+          "Research Tech Corp recent product launches",
+          "Prepare STAR stories for background questions",
+          "Review job description thoroughly",
+          "Prepare 5 questions to ask recruiter"
+        ]
+      },
+
+      "materials_submitted": {
+        "resume_version": "resume_v3_techcorp.pdf",
+        "cover_letter": "cover_letter_techcorp.pdf",
+        "portfolio_links": [
+          "https://github.com/myusername/portfolio-project",
+          "https://myblog.com/system-design-article"
+        ],
+        "other_materials": []
+      },
+
+      "evaluation": {
+        "priority": "high",
+        "interest_level": 8,
+        "culture_fit": 7,
+        "pros": [
+          "Modern tech stack I'm experienced in",
+          "Hybrid work model",
+          "Strong engineering culture",
+          "Employee referral gives me inside track",
+          "Competitive compensation"
+        ],
+        "cons": [
+          "SF cost of living",
+          "Competitive interview process",
+          "Team size smaller than preferred",
+          "3 days/week in office requirement"
+        ]
+      },
+
+      "notes": "Jane (referral) says team is highly collaborative and values clean code. Manager is very supportive of professional development. Company growing 50% YoY."
+    },
+
+    "app_2_example": {
+      "id": "app_2_example",
+      "company": "Startup Inc",
+      "position": "Lead Backend Engineer",
+      "job_url": "https://startupinc.com/jobs/lead-backend",
+      "location": "Remote (US)",
+      "work_mode": "remote",
+
+      "application_details": {
+        "applied_date": "2025-01-20T14:00:00",
+        "application_method": "online",
+        "referral_contact": "",
+        "recruiter_name": "",
+        "recruiter_email": ""
+      },
+
+      "status": {
+        "current": "applied",
+        "history": [
+          {
+            "status": "applied",
+            "date": "2025-01-20T14:00:00",
+            "notes": "Applied directly through company website"
+          }
+        ]
+      },
+
+      "interviews": [],
+
+      "compensation": {
+        "posted_range": {
+          "min": 140000,
+          "max": 170000,
+          "currency": "USD"
+        },
+        "my_target": {
+          "min": 160000,
+          "ask": 175000,
+          "walk_away": 155000
+        },
+        "offer_details": {
+          "base_salary": 0,
+          "signing_bonus": 0,
+          "annual_bonus": 0,
+          "bonus_percentage": 0,
+          "equity": {
+            "type": "",
+            "amount": "",
+            "vesting_schedule": "",
+            "strike_price": 0
+          },
+          "total_comp_year1": 0,
+          "benefits": [],
+          "pto_days": 0,
+          "start_date": "",
+          "offer_deadline": ""
+        }
+      },
+
+      "job_details": {
+        "requirements": [
+          "7+ years backend experience",
+          "Go or Python",
+          "Distributed systems",
+          "Team leadership experience"
+        ],
+        "tech_stack": ["Go", "PostgreSQL", "Redis", "AWS", "Terraform"],
+        "team_size": "4 engineers (growing to 8)",
+        "reports_to": "VP Engineering",
+        "team_structure": "Platform team building core infrastructure"
+      },
+
+      "tracking": {
+        "next_action": "wait_for_response",
+        "next_action_date": "2025-01-27",
+        "action_items": [
+          "Follow up if no response by Jan 27",
+          "Continue researching company in meantime"
+        ]
+      },
+
+      "materials_submitted": {
+        "resume_version": "resume_v2_startups.pdf",
+        "cover_letter": "cover_letter_startupinc.pdf",
+        "portfolio_links": [
+          "https://github.com/myusername/distributed-system-project"
+        ],
+        "other_materials": []
+      },
+
+      "evaluation": {
+        "priority": "medium",
+        "interest_level": 7,
+        "culture_fit": 8,
+        "pros": [
+          "Fully remote",
+          "Lead/senior role with growth to manager",
+          "Opportunity to build team",
+          "Equity upside potential",
+          "Modern tech stack"
+        ],
+        "cons": [
+          "Startup risk/stability",
+          "Lower base comp than big tech",
+          "Need to learn Go (currently Python focused)",
+          "Smaller company (less resources)"
+        ]
+      },
+
+      "notes": "Series B startup, well-funded. Building developer tools platform. Strong growth trajectory but startup risk to consider."
+    }
+  },
+
+  "job_search_metadata": {
+    "search_start_date": "2025-01-10T00:00:00",
+    "target_role": "Senior Software Engineer or Lead Engineer",
+    "target_companies": [
+      "FAANG companies",
+      "Well-funded startups (Series B+)",
+      "Tech companies with strong engineering culture"
+    ],
+    "salary_range": {
+      "min": 160000,
+      "target": 185000,
+      "max": 220000,
+      "currency": "USD"
+    },
+    "application_goals": {
+      "per_week": 5,
+      "total_target": 30
+    },
+    "location_preferences": [
+      "Remote (preferred)",
+      "San Francisco Bay Area",
+      "New York City",
+      "Open to relocation for right opportunity"
+    ],
+    "work_mode_preferences": [
+      "Remote (strongly preferred)",
+      "Hybrid (2 days/week max in office)",
+      "Will not consider: Full-time in-office"
+    ],
+    "timeline": {
+      "target_offer_date": "2025-03-15",
+      "desired_start_date": "2025-04-01",
+      "notice_period_current_job": "2 weeks"
+    }
+  },
+
+  "statistics": {
+    "total_applications": 2,
+    "applications_this_week": 2,
+    "applications_this_month": 2,
+    "by_status": {
+      "applied": 1,
+      "phone_screen": 1,
+      "technical": 0,
+      "onsite": 0,
+      "final_round": 0,
+      "offer_received": 0,
+      "rejected": 0,
+      "withdrawn": 0
+    },
+    "conversion_rates": {
+      "response_rate": 50.0,
+      "phone_to_technical": 0.0,
+      "technical_to_onsite": 0.0,
+      "onsite_to_offer": 0.0,
+      "overall_to_offer": 0.0
+    },
+    "by_application_method": {
+      "online": 1,
+      "referral": 1,
+      "recruiter": 0
+    },
+    "by_work_mode": {
+      "remote": 1,
+      "hybrid": 1,
+      "onsite": 0
+    }
+  },
+
+  "templates": {
+    "application_template": {
+      "id": "unique_app_id",
+      "company": "Company Name",
+      "position": "Job Title",
+      "job_url": "URL to job posting",
+      "location": "City, State/Country",
+      "work_mode": "remote|hybrid|onsite",
+
+      "application_details": {
+        "applied_date": "ISO timestamp",
+        "application_method": "online|referral|recruiter",
+        "referral_contact": "Name of referrer",
+        "recruiter_name": "Recruiter name",
+        "recruiter_email": "recruiter@company.com"
+      },
+
+      "status": {
+        "current": "applied|phone_screen|technical|onsite|final_round|offer_received|rejected|withdrawn",
+        "history": []
+      },
+
+      "interviews": [],
+
+      "compensation": {
+        "posted_range": {
+          "min": 0,
+          "max": 0,
+          "currency": "USD"
+        },
+        "my_target": {
+          "min": 0,
+          "ask": 0,
+          "walk_away": 0
+        },
+        "offer_details": {
+          "base_salary": 0,
+          "signing_bonus": 0,
+          "annual_bonus": 0,
+          "bonus_percentage": 0,
+          "equity": {
+            "type": "RSU|options|none",
+            "amount": "",
+            "vesting_schedule": "4 years, 1 year cliff",
+            "strike_price": 0
+          },
+          "total_comp_year1": 0,
+          "benefits": [],
+          "pto_days": 0,
+          "start_date": "",
+          "offer_deadline": ""
+        }
+      },
+
+      "job_details": {
+        "requirements": [],
+        "tech_stack": [],
+        "team_size": "",
+        "reports_to": "",
+        "team_structure": ""
+      },
+
+      "tracking": {
+        "next_action": "wait_for_response|prepare_phone_screen|prepare_technical|etc.",
+        "next_action_date": "YYYY-MM-DD",
+        "action_items": []
+      },
+
+      "materials_submitted": {
+        "resume_version": "",
+        "cover_letter": "",
+        "portfolio_links": [],
+        "other_materials": []
+      },
+
+      "evaluation": {
+        "priority": "low|medium|high",
+        "interest_level": 5,
+        "culture_fit": 5,
+        "pros": [],
+        "cons": []
+      },
+
+      "notes": ""
+    },
+
+    "interview_template": {
+      "round": "phone_screen|technical|onsite|final_round",
+      "date": "YYYY-MM-DD",
+      "time": "HH:MM AM/PM TIMEZONE",
+      "duration": "30min|1hr|etc.",
+      "format": "phone|video|in-person",
+      "interviewers": [],
+      "focus_areas": [],
+      "preparation_notes": "",
+      "outcome": "pending|passed|failed",
+      "feedback_received": "",
+      "my_notes": ""
+    },
+
+    "status_update_template": {
+      "status": "new_status",
+      "date": "ISO timestamp",
+      "notes": "Details about status change"
+    }
+  },
+
+  "status_definitions": {
+    "applied": {
+      "description": "Application submitted, waiting for response",
+      "typical_duration_days": 7,
+      "next_steps": ["Wait for recruiter response", "Follow up if no response after 1 week"],
+      "followup_interval_days": 7
+    },
+    "phone_screen": {
+      "description": "Initial recruiter or hiring manager call scheduled/completed",
+      "typical_duration_days": 3,
+      "next_steps": ["Prepare for call", "Follow up after call", "Wait for technical interview"],
+      "followup_interval_days": 2
+    },
+    "technical": {
+      "description": "Technical interview(s) in progress",
+      "typical_duration_days": 7,
+      "next_steps": ["Prepare coding/system design", "Complete take-home if assigned", "Follow up after interview"],
+      "followup_interval_days": 3
+    },
+    "onsite": {
+      "description": "Onsite or virtual onsite interview scheduled/completed",
+      "typical_duration_days": 5,
+      "next_steps": ["Research interviewers", "Prepare for full day", "Send thank you notes", "Follow up"],
+      "followup_interval_days": 3
+    },
+    "final_round": {
+      "description": "Final interview round (often with exec team)",
+      "typical_duration_days": 3,
+      "next_steps": ["Prepare executive-level questions", "Research company strategy", "Follow up"],
+      "followup_interval_days": 2
+    },
+    "offer_received": {
+      "description": "Job offer extended",
+      "typical_duration_days": 7,
+      "next_steps": ["Review offer carefully", "Negotiate if appropriate", "Make decision by deadline"],
+      "followup_interval_days": 0
+    },
+    "rejected": {
+      "description": "Application/interview rejected",
+      "typical_duration_days": 0,
+      "next_steps": ["Request feedback", "Learn from experience", "Continue job search"],
+      "followup_interval_days": 0
+    },
+    "withdrawn": {
+      "description": "You withdrew application",
+      "typical_duration_days": 0,
+      "next_steps": ["Document reason for future reference"],
+      "followup_interval_days": 0
+    }
+  },
+
+  "interview_prep_resources": {
+    "coding_interviews": [
+      "LeetCode (top 75 questions)",
+      "HackerRank",
+      "AlgoExpert",
+      "Pramp (mock interviews)",
+      "Cracking the Coding Interview (book)"
+    ],
+    "system_design": [
+      "Grokking the System Design Interview",
+      "Designing Data-Intensive Applications (book)",
+      "System Design Primer (GitHub)",
+      "ByteByteGo (YouTube)",
+      "Educative.io System Design courses"
+    ],
+    "behavioral": [
+      "Prepare 8-10 STAR stories",
+      "Research company culture and values",
+      "Practice 2-minute pitch",
+      "Prepare questions for interviewers"
+    ],
+    "company_research": [
+      "Company website and blog",
+      "Recent news and press releases",
+      "Glassdoor reviews",
+      "LinkedIn company page",
+      "Engineering blog or tech talks",
+      "Product demos or trial accounts"
+    ]
+  },
+
+  "salary_negotiation_guide": {
+    "research_sources": [
+      "levels.fyi",
+      "Glassdoor",
+      "Payscale",
+      "LinkedIn Salary",
+      "H1B Salary Database",
+      "Blind (anonymous forum)"
+    ],
+    "negotiation_strategy": {
+      "timing": "Always negotiate after receiving written offer, never before",
+      "approach": "Express enthusiasm first, then discuss compensation",
+      "anchor_high": "Ask for 10-15% above your target to leave negotiation room",
+      "leverage_alternatives": "Having multiple offers significantly increases negotiating power",
+      "focus_areas": [
+        "Base salary (most important, compounds over career)",
+        "Equity (significant for startups/growth companies)",
+        "Signing bonus (one-time but can bridge gap)",
+        "Annual bonus (percentage of base)",
+        "Benefits (PTO, remote work, learning budget)"
+      ]
+    },
+    "script_templates": {
+      "initial_response": "Thank you for the offer! I'm excited about the opportunity. I'd like to take a day to review the details and discuss with my family. Can I get back to you by [date]?",
+      "counter_offer": "I'm very excited about joining [Company]. After reviewing the offer and considering market rates, I was hoping we could discuss the compensation. Based on my [experience/skills], I was targeting [amount]. Is there flexibility to adjust to [ask amount]?",
+      "handling_pushback": "I understand. Would it be possible to revisit compensation at the 6-month review? And in the meantime, could we adjust [equity/PTO/other] to bridge the gap?"
+    }
+  },
+
+  "application_tracking_tips": {
+    "weekly_goals": "Submit 5 quality applications per week",
+    "daily_habits": [
+      "Check job boards (LinkedIn, company sites)",
+      "Respond to recruiter messages within 24 hours",
+      "Follow up on pending applications",
+      "Practice interview questions (30 min)",
+      "Network with 2-3 people"
+    ],
+    "organization": [
+      "Track all applications in this system",
+      "Save job descriptions (they get removed)",
+      "Version control resume/cover letter by company",
+      "Set calendar reminders for follow-ups",
+      "Document all interview feedback"
+    ],
+    "follow_up_timing": {
+      "after_application": "1 week if no response",
+      "after_phone_screen": "Next day (thank you), then 2-3 days if no update",
+      "after_technical": "Same day (thank you), then 3 days if no update",
+      "after_onsite": "Same day (thank you to all), then 3-5 days if no update"
+    }
+  },
+
+  "job_search_health_metrics": {
+    "response_rate": {
+      "poor": "< 10%",
+      "average": "10-20%",
+      "good": "20-30%",
+      "excellent": "> 30%",
+      "action_if_poor": "Review resume and targeting. Increase application quality over quantity."
+    },
+    "interview_conversion": {
+      "phone_to_technical": "Target: 50-60%",
+      "technical_to_onsite": "Target: 40-60%",
+      "onsite_to_offer": "Target: 30-50%"
+    },
+    "application_velocity": {
+      "recommended": "5-10 quality applications per week",
+      "minimum": "3 applications per week to maintain momentum",
+      "maximum": "15 applications per week (quality > quantity)"
+    }
+  },
+
+  "usage_guide": {
+    "adding_applications": "Use application_template. Generate unique IDs (app_N_YYYYMMDD).",
+    "updating_status": "Add to status.history array and update status.current.",
+    "scheduling_interviews": "Add to interviews array using interview_template.",
+    "recording_offers": "Fill out compensation.offer_details completely.",
+    "tracking_actions": "Update tracking.next_action and tracking.action_items regularly.",
+    "following_up": "Use status_definitions for recommended followup intervals.",
+    "comparing_offers": "Look at total_comp_year1 plus non-monetary factors (culture_fit, interest_level)."
+  }
+}

@@ -1,0 +1,161 @@
+# Complete Plugin List
+
+Alphabetical index of every plugin published in Puerto. Use this list to spot specialists, then dive deeper into [Plugins by Category](by-category.md) or [Plugins by Feature](by-feature.md) for curated recommendations.
+
+Tip: press `Cmd/Ctrl + F` to search for keywords (e.g., “finance”, “design”, “compliance”).
+
+---
+
+- **academic-researcher** — Academic research support specialist for literature review, methodology design, and citation management
+- **accessibility-specialist** — Digital accessibility specialist for WCAG compliance, accessibility audits, remediation recommendations, screen reader testing, and accessibility documentation
+- **accounts-payable-agent** — Professional accounts payable automation for invoice processing, approval routing, payment scheduling, vendor management, and reconciliation
+- **accounts-receivable-agent** — Professional accounts receivable management with invoice generation, payment tracking, collections, and aging analysis
+- **affiliate-manager** — Affiliate program specialist for program design, affiliate recruitment, commission management, performance tracking, and fraud detection
+- **api-developer** — API design and development specialist for REST/GraphQL APIs
+- **app-store-optimizer** — ASO (App Store Optimization) specialist for keyword research, app title/description optimization, screenshot and preview optimization, review management, and competitor analysis
+- **backend-architect** — Comprehensive backend architecture design with ADRs, API specifications, and database schemas
+- **backup-automation-manager** — Automated backup scheduling, verification, storage monitoring, and disaster recovery planning with multi-cloud support
+- **bill-optimization-analyzer** — Utility and service bill optimization with plan analysis, provider comparison, savings calculation, and negotiation assistance for reducing recurring costs.
+- **bill-reminder** — Bill management assistant with proactive payment reminders
+- **billing-specialist** — Comprehensive billing and invoicing automation with SOX compliance, ASC 606 revenue recognition, and accounts receivable management.
+- **book-reading-tracker** — Reading progress and book note management specialist
+- **book-tracker** — A comprehensive reading management system for Claude Code that helps you track books, monitor progress, capture insights, and analyze your reading habits.
+- **brand-strategist** — Brand strategy and positioning specialist
+- **budget-analyst** — Budget monitoring and planning specialist for variance analysis, spend tracking, forecasting, and optimization
+- **budget-tracker** — Personal financial assistant for automatic expense tracking, budget monitoring, and spending insights with AI-powered transaction categorization.
+- **business-analyst** — Business process and requirements analysis specialist
+- **business-strategist** — Corporate strategy development specialist for strategic planning, growth strategies, market entry analysis, M&A assessment, and business model innovation
+- **calendar-optimization-engine** — Intelligent calendar management with conflict detection, meeting efficiency analysis, and time-blocking optimization
+- **carbon-footprint-tracker** — Personal emissions tracking and reduction specialist with carbon calculation, reduction recommendations, and progress tracking
+- **career-development-planner** — Professional career development specialist providing skill gap analysis, networking management, job search organization, and career growth planning
+- **chore-scheduler** — Household chore coordination and task distribution manager with fair rotation, completion tracking, and accountability
+- **chrome-devtools** — Control and inspect Chrome browsers with full DevTools automation, debugging, and performance analysis
+- **clinical-research-coordinator** — Clinical trial coordination specialist for study design, patient recruitment, and regulatory compliance
+- **cloud-architect** — Cloud infrastructure design specialist for AWS/Azure/GCP with cost optimization and migration planning
+- **competitive-intelligence-analyst** — Competitor monitoring and analysis specialist for tracking market intelligence, feature comparisons, pricing analysis, and competitive positioning
+- **complaint-warranty-manager** — Customer service interaction and warranty claim tracking specialist for managing complaints, escalations, and warranty claims
+- **compliance-officer** — Regulatory compliance monitoring specialist for GDPR, SOC2, HIPAA, audit preparation, and policy documentation
+- **content-creation-pipeline** — Complete content planning and publishing workflow specialist with idea capture, calendar planning, draft tracking, multi-platform posting, and performance analytics
+- **content-writer** — Professional content creation for blogs, SEO, marketing copy, and email campaigns
+- **conversion-optimizer** — CRO (Conversion Rate Optimization) specialist for funnel analysis, A/B testing, user journey mapping, landing page optimization, and CTA optimization
+- **copywriter** — Advertising and marketing copy specialist
+- **cost-optimizer** — Comprehensive cost optimization specialist for analyzing spend, identifying savings opportunities, supporting vendor negotiations, and tracking cost reduction initiatives.
+- **crisis-communications** — Crisis communication management specialist for crisis response planning, press releases, stakeholder messaging, social media monitoring, and response coordination
+- **cross-cultural-consultant** — Cross-cultural communication specialist for cultural assessment, communication guidelines, and team collaboration
+- **curriculum-developer** — Professional curriculum development specialist for course blueprints, assessment design, and learning outcomes alignment
+- **customer-success** — Customer success playbook specialist for onboarding, health scoring, QBRs, and renewal management
+- **customer-support** — Omni-channel support specialist for ticket triage, knowledge base upkeep, and experience improvement
+- **dashboard-designer** — Business intelligence dashboard strategist for visual storytelling, stakeholder alignment, and adoption planning
+- **data-analyst** — Modern analytics specialist for data exploration, dashboard creation, and stakeholder reporting
+- **data-engineer** — Data pipeline architect for ETL orchestration, data quality automation, and warehouse modelling
+- **data-scientist** — Data science experimentation specialist for statistical analysis, model evaluation, and insight communication
+- **database-architect** — Database design specialist for schema modelling, migration planning, and performance optimisation
+- **devops-engineer** — DevOps automation specialist for CI/CD pipelines, infrastructure as code, and observability workflows
+- **digital-legacy-planner** — Digital estate planning specialist for asset inventories, access management, and transition playbooks
+- **digital-transformation** — Digital transformation strategist for capability assessments, roadmap creation, and change management
+- **document-organizer** — Document management specialist for taxonomy design, lifecycle governance, and compliance tracking
+- **ecommerce-specialist** — E-commerce growth specialist for merchandising, conversion optimisation, and omnichannel operations
+- **email-management-system** — Email workflow automation specialist for triage, prioritisation, and response templates
+- **email-marketer** — Email marketing strategist for lifecycle campaigns, deliverability optimisation, and segmentation
+- **emergency-response-coordinator** — Emergency response planning specialist for incident coordination, communication trees, and recovery plans
+- **energy-usage-monitor** — Home energy tracking specialist for usage analysis, efficiency recommendations, and sustainability planning
+- **essentials** — Essential MCP servers (Serena, Context7, Sequential Thinking, Playwright) and requirement management commands for structured development workflows
+- **event-planning-orchestrator** — Event planning specialist for run of show, vendor coordination, and contingency planning
+- **executive-report-writer** — Executive communication specialist for status updates, KPI narratives, and strategic storytelling
+- **expense-manager** — Expense management specialist for policy enforcement, reimbursement workflows, and analytics
+- **figma** — Figma MCP integration for design-to-code handoff and component analytics
+- **financial-analyst** — Financial analysis specialist for ratio analysis, variance reporting, and executive summaries
+- **financial-compliance** — Financial compliance specialist for SOX controls, audit readiness, and regulatory monitoring
+- **fitness-tracking-logger** — Fitness tracking specialist for workout logging, progress analytics, and training adjustments
+- **fraud-analyst** — Fraud detection specialist for anomaly detection, investigation playbooks, and reporting
+- **frontend-developer** — Frontend engineering specialist for component creation, accessibility validation, responsive styling, and state management
+- **goal-tracker** — Goal management specialist for SMART planning, progress tracking, and accountability rituals
+- **growth-hacker** — Growth experimentation specialist for acquisition channels, activation funnels, and retention loops
+- **habit-formation-coach** — Habit formation specialist for behavioural design, cue-routine-reward loops, and accountability systems
+- **habit-tracker** — Habit tracking specialist for routines, streak analysis, and reinforcement strategies
+- **healthcare-compliance** — Healthcare compliance specialist for HIPAA/GxP monitoring, policy updates, and audit preparation
+- **home-inventory-system** — Home inventory specialist for asset cataloguing, valuation, and insurance documentation
+- **home-maintenance-tracker** — Home maintenance specialist for seasonal checklists, vendor coordination, and upkeep history
+- **hotfix-developer** — Hotfix specialist for rapid incident mitigation, post-mortem documentation, and rollback planning
+- **hr-onboarder** — HR onboarding specialist for new hire journeys, documentation packs, and stakeholder coordination
+- **hr-performance-manager** — Performance management specialist for review cycles, calibration, and growth plans
+- **hr-policies-expert** — HR policy specialist for handbook creation, compliance updates, and communication plans
+- **hr-recruiter** — Recruiting specialist for job briefs, interview scripts, scorecards, and candidate communication
+- **incident-response** — Incident response strategist for detection, triage, communication, and retrospectives
+- **innovation-consultant** — Innovation consultant for opportunity assessment, prioritisation frameworks, and pilot planning
+- **insurance-policy-manager** — Insurance policy specialist for coverage analysis, renewal tracking, and claims coordination
+- **insurance-underwriter** — Insurance underwriting specialist for risk assessment, pricing models, and compliance documentation
+- **international-expansion-specialist** — International expansion specialist for market entry analysis, localisation plans, and risk mitigation
+- **ip-specialist** — Intellectual property specialist for portfolio audits, filing strategy, and infringement monitoring
+- **it-support-specialist** — IT support specialist for ticket triage, troubleshooting scripts, and knowledge base updates
+- **knowledge-base-manager** — Knowledge base management specialist for taxonomy governance, article lifecycle, and feedback loops
+- **language-learning** — Language learning specialist for study plans, practice sessions, and progress tracking
+- **language-learning-assistant** — Language learning assistant for personalised lesson sequences and cultural context
+- **learning-plan-generator** — Learning plan generator for skill development roadmaps, prerequisites, and milestone tracking
+- **legal-document-tracker** — Legal document management specialist for contract tracking, obligations, and renewal alerts
+- **legal-reviewer** — Legal review specialist for clause analysis, risk flagging, and redline recommendations
+- **local-seo-specialist** — Local SEO specialist for GMB optimisation, citation management, and local content strategy
+- **localization-specialist** — Localization specialist for translation workflows, style guides, and quality assurance
+- **market-researcher** — Market research specialist for survey design, competitive analysis, and insight synthesis
+- **meal-planning-nutrition** — Meal planning specialist for nutrition tracking, meal prep, and grocery optimisation
+- **medical-appointment-tracker** — Medical appointment tracking specialist for scheduling, prep checklists, and care coordination
+- **medical-writer** — Medical writing specialist for regulatory submissions, clinical documentation, and plain-language summaries
+- **mental-health-journal** — Mental health journaling specialist for guided reflection, mood tracking, and coping strategies
+- **ml-engineer** — Machine learning engineering specialist for pipeline automation, deployment, and monitoring
+- **mobile-developer** — Mobile development strategist for app architecture, release planning, and platform requirements
+- **mortgage-specialist** — Mortgage specialist for loan comparisons, application checklists, and amortisation analysis
+- **moving-coordinator** — Moving coordination specialist for planning, logistics, and post-move checklists
+- **network-administrator** — Network administration specialist for topology mapping, monitoring, and incident response
+- **office-administrator** — Office administration specialist for facilities coordination, vendor management, and policy tracking
+- **orchestrator** — Cross-functional orchestration specialist for multi-team initiatives, dependencies, and alignment
+- **parenting-task-manager** — Family management specialist for routines, chore assignment, and developmental milestones
+- **partnership-manager** — Partnership management specialist for deal pipelines, co-marketing plans, and performance reviews
+- **password-security-auditor** — Password security specialist for credential audits, policy enforcement, and remediation
+- **patent-analyst** — Patent analysis specialist for prior art searches, patentability assessments, and portfolio strategy
+- **payment-integration-specialist** — Payment integration specialist for gateway selection, checkout optimisation, and compliance
+- **pet-care-manager** — Pet care management specialist for vet schedules, nutrition, and supply tracking
+- **podcast-producer** — Podcast production specialist for episode planning, guest workflows, and publication checklists
+- **portfolio-tracker** — Investment portfolio specialist for allocation analysis, risk tracking, and performance reporting
+- **process-optimizer** — Process optimisation specialist for workflow mapping, KPI tracking, and continuous improvement
+- **procurement-specialist** — Procurement specialist for sourcing, vendor evaluation, negotiation strategy, and contract management
+- **product-analyst** — Product analytics specialist for instrumentation, dashboards, and experimentation
+- **product-manager** — Product management specialist for discovery, roadmap planning, and stakeholder alignment
+- **project-management-system** — Project management system specialist for work breakdown, dependency mapping, and reporting
+- **project-manager** — Project manager specialist for charters, status reporting, and delivery control
+- **qa-automation** — QA automation specialist for test suite design, coverage analysis, and CI integration
+- **qa-manager** — Quality assurance management strategist for program governance, audits, and continuous improvement
+- **quant-analyst** — Quantitative analysis specialist for financial modelling, risk assessment, and trading strategy support
+- **real-estate-analyst** — Real estate analytics specialist for market comps, property valuation, and investment memos
+- **receipt-processor** — Receipt processing specialist for OCR extraction, categorisation, and reimbursement workflows
+- **release-manager** — Release management specialist for launch planning, deployment coordination, and rollback readiness
+- **research-brief-generator** — Research briefing specialist for insight synthesis, executive updates, and presentation prep
+- **risk-analyst** — Risk analysis specialist for risk registers, mitigation plans, and scenario planning
+- **sales-engineer** — Sales engineering specialist for discovery, demos, technical validation, and proposal support
+- **sales-lead-qualifier** — Sales lead qualification specialist for scoring, outreach sequencing, and conversion tracking
+- **sales-pipeline-analyst** — Sales pipeline analytics specialist for funnel diagnostics, forecasting, and cadence optimisation
+- **sales-proposal-writer** — Sales proposal writing specialist for RFP responses, proposal automation, and competitive positioning
+- **sem-specialist** — Search engine marketing (PPC) specialist for Google Ads and paid search campaign management.
+- **seo-specialist** — SEO optimization expert for keyword research, technical SEO, and content optimization
+- **shopping-list-optimizer** — Smart grocery list and pantry management specialist with intelligent shopping list generation, store route optimization, and price comparison
+- **side-hustle-manager** — Side business management specialist for idea vetting, revenue tracking, and growth experiments
+- **site-reliability-engineer** — Site reliability engineering specialist for monitoring setup, incident response, and performance tuning
+- **sleep-pattern-analyzer** — Sleep quality analysis specialist for pattern recognition, quality insights, and optimisation recommendations
+- **smart-goal-assistant** — Goal-setting and achievement specialist for SMART planning, milestone tracking, and review cadence
+- **smart-home-integration-hub** — Smart home automation specialist for device coordination, routines, and energy monitoring
+- **social-coordination-manager** — Social coordination specialist for relationship management, gift planning, and event reminders
+- **social-media-manager** — Social media management specialist for content calendars, engagement strategies, and analytics
+- **subagent-creator** — Subagent architecture specialist with templates, skills, and validation flows for building reliable agents
+- **subscription-management-hub** — Subscription management specialist for renewal alerts, usage analysis, and cost optimisation
+- **supply-chain-analyst** — Supply chain analysis specialist for demand planning, logistics coordination, and supplier performance
+- **tax-assistant** — Tax preparation specialist for document organisation, filing readiness, and deduction tracking
+- **tax-compliance** — Tax compliance specialist for obligation tracking, filing schedules, and regulation updates
+- **tax-compliance-specialist** — Tax compliance support specialist for obligations tracking, filing preparation, and regulation updates
+- **technical-support** — Technical support specialist for diagnostics, log analysis, and issue escalation
+- **technical-writer** — Technical writing specialist for documentation planning, drafting, and review workflows
+- **training-developer** — Training development specialist for curriculum planning, assessment design, and learner engagement
+- **translator** — Translation specialist for localisation planning, terminology management, and cultural adaptation
+- **travel-planning-assistant** — Travel planning specialist for itinerary design, packing lists, and budget tracking
+- **ux-researcher** — UX research specialist for study planning, synthesis, and insight communication
+- **ux-writer** — UX writing specialist for interface copy, voice guidelines, and accessibility language
+- **video-producer** — Video production specialist for scripting, shot lists, and distribution plans
+- **volunteer-time-tracker** — Volunteer management specialist for hours logging, program impact, and reporting

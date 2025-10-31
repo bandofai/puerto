@@ -1,0 +1,11 @@
+{
+  "name": "receipt-processor",
+  "version": "1.0.0",
+  "description": "Receipt processing and expense categorization specialist with OCR",
+  "agents": [
+    "./agents/agents/receipt-analyzer.md.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

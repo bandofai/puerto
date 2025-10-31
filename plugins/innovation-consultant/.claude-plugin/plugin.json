@@ -1,0 +1,17 @@
+{
+  "name": "innovation-consultant",
+  "version": "1.0.0",
+  "description": "Innovation strategy and ideation specialist for generating ideas, analyzing trends, validating concepts, and designing pilot programs",
+  "agents": [
+    "./agents/idea-generator.md",
+    "./agents/trend-analyzer.md",
+    "./agents/concept-validator.md",
+    "./agents/pilot-designer.md"
+  ],
+  "skills": [
+    "./skills/innovation-strategy/SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "metadata": {
+    "business_name": "My Side Hustle",
+    "fiscal_year": 2025,
+    "tax_entity": "Sole Proprietorship",
+    "last_updated": "",
+    "notes": "Track all business expenses using IRS Schedule C categories for tax optimization"
+  },
+  "tax_categories": [
+    {
+      "name": "Advertising & Marketing",
+      "irs_schedule_c_line": "8",
+      "deductible_percentage": 100,
+      "examples": [
+        "Google Ads",
+        "Facebook/Instagram advertising",
+        "Business cards and brochures",
+        "Website hosting and domain",
+        "SEO services",
+        "Promotional materials"
+      ],
+      "monthly_budget": 200,
+      "annual_budget": 2400
+    },
+    {
+      "name": "Office Supplies",
+      "irs_schedule_c_line": "18",
+      "deductible_percentage": 100,
+      "examples": [
+        "Pens, paper, notebooks",
+        "Printer ink and toner",
+        "Office furniture",
+        "Computer accessories",
+        "Shipping supplies"
+      ],
+      "monthly_budget": 50,
+      "annual_budget": 600
+    },
+    {
+      "name": "Software & Subscriptions",
+      "irs_schedule_c_line": "27a",
+      "deductible_percentage": 100,
+      "examples": [
+        "Adobe Creative Cloud",
+        "Microsoft 365",
+        "Project management tools",
+        "Accounting software",
+        "Cloud storage",
+        "Email marketing platforms"
+      ],
+      "monthly_budget": 150,
+      "annual_budget": 1800
+    },
+    {
+      "name": "Professional Services",
+      "irs_schedule_c_line": "17",
+      "deductible_percentage": 100,
+      "examples": [
+        "Accountant fees",
+        "Legal fees",
+        "Bookkeeping services",
+        "Business consultant",
+        "Contractor payments"
+      ],
+      "monthly_budget": 200,
+      "annual_budget": 2400
+    },
+    {
+      "name": "Equipment & Tools",
+      "irs_schedule_c_line": "13",
+      "deductible_percentage": 100,
+      "examples": [
+        "Laptop/computer",
+        "Monitor and peripherals",
+        "Camera and video equipment",
+        "Specialized tools",
+        "Software licenses (perpetual)"
+      ],
+      "monthly_budget": 100,
+      "annual_budget": 1200,
+      "notes": "Items >$2,500 may need Section 179 or depreciation"
+    },
+    {
+      "name": "Education & Training",
+      "irs_schedule_c_line": "27a",
+      "deductible_percentage": 100,
+      "examples": [
+        "Online courses (Udemy, Coursera)",
+        "Professional certifications",
+        "Industry conferences",
+        "Business books",
+        "Skill development workshops"
+      ],
+      "monthly_budget": 100,
+      "annual_budget": 1200
+    },
+    {
+      "name": "Travel & Transportation",
+      "irs_schedule_c_line": "24a",
+      "deductible_percentage": 100,
+      "examples": [
+        "Mileage (business miles × $0.655)",
+        "Flights for business travel",
+        "Hotels for business trips",
+        "Rental cars",
+        "Parking and tolls",
+        "Uber/Lyft to meetings"
+      ],
+      "monthly_budget": 150,
+      "annual_budget": 1800,
+      "notes": "Keep detailed mileage log with dates, destinations, business purpose"
+    },
+    {
+      "name": "Meals & Entertainment",
+      "irs_schedule_c_line": "24b",
+      "deductible_percentage": 50,
+      "examples": [
+        "Client meals",
+        "Business lunches",
+        "Networking event meals"
+      ],
+      "monthly_budget": 100,
+      "annual_budget": 1200,
+      "notes": "Only 50% deductible - must be business-related, document attendees and purpose"
+    },
+    {
+      "name": "Home Office",
+      "irs_schedule_c_line": "30",
+      "deductible_percentage": 100,
+      "examples": [
+        "Portion of rent/mortgage",
+        "Portion of utilities",
+        "Portion of internet",
+        "Home repairs (office percentage)",
+        "Renter's/homeowner's insurance (office %)"
+      ],
+      "calculation_method": "simplified",
+      "office_square_feet": 120,
+      "monthly_budget": 300,
+      "annual_budget": 3600,
+      "notes": "Simplified method: $5/sq ft up to 300 sq ft. Regular method: percentage of home expenses"
+    },
+    {
+      "name": "Internet & Phone",
+      "irs_schedule_c_line": "25",
+      "deductible_percentage": 80,
+      "examples": [
+        "Internet service",
+        "Business phone line",
+        "Cell phone (business %)"
+      ],
+      "monthly_budget": 100,
+      "annual_budget": 1200,
+      "notes": "Deduct only business use percentage - estimate conservatively"
+    },
+    {
+      "name": "Insurance",
+      "irs_schedule_c_line": "15",
+      "deductible_percentage": 100,
+      "examples": [
+        "Business liability insurance",
+        "Professional liability (E&O)",
+        "Equipment insurance",
+        "Business property insurance"
+      ],
+      "monthly_budget": 75,
+      "annual_budget": 900,
+      "notes": "Health insurance may be deductible on Form 1040, not Schedule C"
+    },
+    {
+      "name": "Licenses & Permits",
+      "irs_schedule_c_line": "23",
+      "deductible_percentage": 100,
+      "examples": [
+        "Business license",
+        "Professional licenses",
+        "Industry certifications",
+        "Trade association dues"
+      ],
+      "monthly_budget": 25,
+      "annual_budget": 300
+    },
+    {
+      "name": "Bank Fees & Merchant Services",
+      "irs_schedule_c_line": "27a",
+      "deductible_percentage": 100,
+      "examples": [
+        "Business checking account fees",
+        "PayPal/Stripe processing fees",
+        "Wire transfer fees",
+        "Credit card processing fees",
+        "ATM fees (business withdrawals)"
+      ],
+      "monthly_budget": 50,
+      "annual_budget": 600
+    },
+    {
+      "name": "Miscellaneous",
+      "irs_schedule_c_line": "27a",
+      "deductible_percentage": 100,
+      "examples": [
+        "Business gifts (<$25/person/year)",
+        "Postage and shipping",
+        "Bank service charges",
+        "Credit card annual fees (business card)"
+      ],
+      "monthly_budget": 50,
+      "annual_budget": 600
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp-0001",
+      "date": "2025-01-10",
+      "amount": 49.99,
+      "category": "Software & Subscriptions",
+      "vendor": "Adobe",
+      "description": "Creative Cloud subscription - monthly",
+      "payment_method": "Business Credit Card",
+      "receipt": "adobe_invoice_jan2025.pdf",
+      "deductible_percentage": 100,
+      "deductible_amount": 49.99,
+      "recorded_at": "2025-01-10T08:30:00Z"
+    },
+    {
+      "id": "exp-0002",
+      "date": "2025-01-12",
+      "amount": 125.00,
+      "category": "Advertising & Marketing",
+      "vendor": "Google Ads",
+      "description": "January Google Ads campaign",
+      "payment_method": "Business Credit Card",
+      "receipt": "google_ads_jan2025.pdf",
+      "deductible_percentage": 100,
+      "deductible_amount": 125.00,
+      "recorded_at": "2025-01-12T14:20:00Z"
+    },
+    {
+      "id": "exp-0003",
+      "date": "2025-01-15",
+      "amount": 85.50,
+      "category": "Meals & Entertainment",
+      "vendor": "The Steakhouse",
+      "description": "Lunch meeting with potential client - John Smith from TechCorp",
+      "payment_method": "Business Credit Card",
+      "receipt": "steakhouse_receipt_jan15.jpg",
+      "deductible_percentage": 50,
+      "deductible_amount": 42.75,
+      "recorded_at": "2025-01-15T15:45:00Z",
+      "notes": "Discussed Q1 consulting project scope and pricing"
+    }
+  ],
+  "usage_instructions": {
+    "recording_expenses": "Use @expense-tracker to log expenses immediately - don't wait!",
+    "categorization": "Use exact category names from tax_categories list",
+    "receipts": "Keep digital copies (photos OK) of all receipts >$75",
+    "mixed_use_items": "Calculate business use % honestly (phone, internet, vehicle)",
+    "quarterly_review": "Review expenses quarterly to catch errors and optimize spending",
+    "tax_prep": "Export quarterly summaries for accountant or tax software"
+  },
+  "best_practices": {
+    "separation": "Use separate business credit card/bank account - never mix personal and business",
+    "timing": "Log expenses same day or weekly - not at tax time!",
+    "documentation": "For meals: Record business purpose and attendees",
+    "home_office": "Measure office space accurately, use exclusively for business",
+    "vehicle": "Keep detailed mileage log: date, destination, purpose, miles",
+    "receipts": "Take phone photos immediately, organize monthly",
+    "conservative": "When in doubt, estimate percentages conservatively for audit protection"
+  },
+  "tax_deduction_limits": {
+    "business_gifts": {
+      "limit": 25,
+      "per": "recipient per year",
+      "notes": "Gifts to clients, referral partners, etc."
+    },
+    "meals_entertainment": {
+      "limit": 50,
+      "per": "percentage deductible",
+      "notes": "Must be directly business-related"
+    },
+    "home_office_simplified": {
+      "limit": 300,
+      "per": "square feet",
+      "rate": 5,
+      "notes": "$5 per square foot, max $1,500 deduction"
+    },
+    "vehicle_mileage_rate": {
+      "rate": 0.655,
+      "per": "business mile",
+      "year": 2023,
+      "notes": "Rate changes annually, check IRS updates"
+    },
+    "section_179": {
+      "limit": 1160000,
+      "year": 2023,
+      "notes": "Immediate expensing of equipment purchases"
+    }
+  },
+  "audit_protection": {
+    "critical": [
+      "Keep receipts for ALL expenses over $75",
+      "Separate business and personal completely",
+      "Document business purpose for all expenses",
+      "Keep records for 7 years",
+      "Use actual figures, not estimates"
+    ],
+    "home_office_requirements": [
+      "Exclusive use of space for business",
+      "Regular use (not occasional)",
+      "Principal place of business OR regular client meeting place",
+      "Calculate square footage accurately",
+      "Keep photos of home office setup"
+    ],
+    "vehicle_requirements": [
+      "Contemporaneous mileage log (not reconstructed)",
+      "Date, destination, business purpose, miles for each trip",
+      "Total annual mileage (business + personal)",
+      "Calculate business use percentage",
+      "Keep for entire ownership period"
+    ]
+  },
+  "monthly_budget_summary": {
+    "total_monthly_budget": 1650,
+    "total_annual_budget": 19800,
+    "target_expense_ratio": 33,
+    "notes": "Based on $5,000/month revenue target = 33% expense ratio (healthy range)"
+  }
+}

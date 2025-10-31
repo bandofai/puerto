@@ -1,0 +1,31 @@
+{
+  "name": "market-researcher",
+  "version": "1.0.0",
+  "description": "Market research and competitive analysis specialist with market sizing, competitive intelligence, industry trends, and customer segmentation",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/market-analyzer.md",
+    "./agents/competitor-analyst.md",
+    "./agents/trend-researcher.md",
+    "./agents/segment-profiler.md"
+  ],
+  "skills": [
+    "./skills/market-research/SKILL.md",
+    "./skills/competitive-analysis/SKILL.md",
+    "./skills/customer-segmentation/SKILL.md"
+  ],
+  "keywords": [
+    "market-research",
+    "competitive-analysis",
+    "market-sizing",
+    "tam-sam-som",
+    "porter-five-forces",
+    "swot-analysis",
+    "customer-segmentation",
+    "industry-trends",
+    "competitive-intelligence",
+    "market-intelligence"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "quant-analyst",
+  "version": "1.0.0",
+  "description": "Quantitative analysis and trading specialist",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/strategy-developer.md",
+    "./agents/backtester.md",
+    "./agents/portfolio-optimizer.md"
+  ],
+  "skills": [
+    "./skills/trading-strategies/SKILL.md",
+    "./skills/portfolio-optimization/SKILL.md"
+  ]
+}

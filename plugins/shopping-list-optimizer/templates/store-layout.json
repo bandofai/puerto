@@ -1,0 +1,474 @@
+{
+  "store_id": "whole-foods-downtown",
+  "store_name": "Whole Foods Market - Downtown",
+  "layout_type": "linear",
+  "address": "123 Main Street, Downtown",
+  "phone": "(555) 123-4567",
+  "hours": "8:00 AM - 10:00 PM",
+  "entrance": "front-center",
+  "checkout": "front",
+  "sections": [
+    {
+      "section_id": "produce",
+      "name": "Produce",
+      "location": "entrance-right",
+      "aisle": null,
+      "position": 1,
+      "subsections": [
+        "fruits",
+        "vegetables",
+        "herbs",
+        "salad-bar",
+        "pre-cut-produce"
+      ],
+      "notes": "Organic produce is on the right wall, conventional on left",
+      "temperature": "cool",
+      "typical_items": [
+        "apples",
+        "bananas",
+        "spinach",
+        "tomatoes",
+        "onions",
+        "lettuce",
+        "berries",
+        "carrots",
+        "peppers"
+      ]
+    },
+    {
+      "section_id": "bakery",
+      "name": "Bakery",
+      "location": "front-left",
+      "aisle": null,
+      "position": 2,
+      "subsections": [
+        "fresh-bread",
+        "bagels",
+        "pastries",
+        "cakes",
+        "cookies"
+      ],
+      "notes": "Fresh bread baked daily, arrive before 10 AM for best selection",
+      "temperature": "ambient",
+      "typical_items": [
+        "whole wheat bread",
+        "sourdough",
+        "bagels",
+        "croissants",
+        "muffins"
+      ]
+    },
+    {
+      "section_id": "deli",
+      "name": "Deli & Prepared Foods",
+      "location": "left-wall",
+      "aisle": null,
+      "position": 3,
+      "subsections": [
+        "deli-counter",
+        "hot-bar",
+        "salad-bar",
+        "sandwiches",
+        "rotisserie-chicken"
+      ],
+      "notes": "Take a number at deli counter, hot bar refilled at 11 AM and 5 PM",
+      "temperature": "varies",
+      "typical_items": [
+        "turkey slices",
+        "ham",
+        "cheese slices",
+        "prepared meals",
+        "sandwiches"
+      ]
+    },
+    {
+      "section_id": "meat",
+      "name": "Meat & Seafood",
+      "location": "back-wall-left",
+      "aisle": null,
+      "position": 4,
+      "subsections": [
+        "beef",
+        "chicken",
+        "pork",
+        "seafood-counter",
+        "frozen-seafood"
+      ],
+      "notes": "Butcher available for custom cuts, seafood delivered daily",
+      "temperature": "refrigerated",
+      "typical_items": [
+        "chicken breast",
+        "ground beef",
+        "salmon",
+        "pork chops",
+        "shrimp"
+      ]
+    },
+    {
+      "section_id": "dairy",
+      "name": "Dairy",
+      "location": "back-wall-right",
+      "aisle": null,
+      "position": 5,
+      "subsections": [
+        "milk",
+        "cheese",
+        "yogurt",
+        "butter",
+        "eggs",
+        "plant-based-alternatives"
+      ],
+      "notes": "Plant-based milk alternatives on end cap, eggs in refrigerated case",
+      "temperature": "refrigerated",
+      "typical_items": [
+        "milk",
+        "yogurt",
+        "cheese",
+        "butter",
+        "eggs",
+        "cream cheese"
+      ]
+    },
+    {
+      "section_id": "frozen",
+      "name": "Frozen Foods",
+      "location": "back-center",
+      "aisle": null,
+      "position": 6,
+      "subsections": [
+        "frozen-vegetables",
+        "frozen-fruit",
+        "ice-cream",
+        "frozen-meals",
+        "frozen-pizza"
+      ],
+      "notes": "Collect frozen items LAST to prevent thawing",
+      "temperature": "frozen",
+      "typical_items": [
+        "frozen vegetables",
+        "ice cream",
+        "frozen pizza",
+        "frozen fruit",
+        "frozen meals"
+      ]
+    },
+    {
+      "section_id": "pantry-aisle-1",
+      "name": "Pantry - Aisle 1",
+      "location": "center-aisles",
+      "aisle": 1,
+      "position": 7,
+      "subsections": [
+        "pasta",
+        "rice",
+        "grains",
+        "beans"
+      ],
+      "notes": "Organic pasta on top shelf, conventional on bottom",
+      "temperature": "ambient",
+      "typical_items": [
+        "pasta",
+        "rice",
+        "quinoa",
+        "dried beans",
+        "couscous"
+      ]
+    },
+    {
+      "section_id": "pantry-aisle-2",
+      "name": "Pantry - Aisle 2",
+      "location": "center-aisles",
+      "aisle": 2,
+      "position": 8,
+      "subsections": [
+        "sauces",
+        "condiments",
+        "oils",
+        "vinegars"
+      ],
+      "notes": "International sauces on left side, Italian on right",
+      "temperature": "ambient",
+      "typical_items": [
+        "marinara sauce",
+        "olive oil",
+        "soy sauce",
+        "vinegar",
+        "hot sauce"
+      ]
+    },
+    {
+      "section_id": "pantry-aisle-3",
+      "name": "Pantry - Aisle 3",
+      "location": "center-aisles",
+      "aisle": 3,
+      "position": 9,
+      "subsections": [
+        "canned-goods",
+        "soups",
+        "broth"
+      ],
+      "notes": "Low-sodium options on eye level",
+      "temperature": "ambient",
+      "typical_items": [
+        "canned tomatoes",
+        "canned beans",
+        "soup",
+        "chicken broth",
+        "tuna"
+      ]
+    },
+    {
+      "section_id": "pantry-aisle-4",
+      "name": "Pantry - Aisle 4",
+      "location": "center-aisles",
+      "aisle": 4,
+      "position": 10,
+      "subsections": [
+        "baking-supplies",
+        "flour",
+        "sugar",
+        "spices"
+      ],
+      "notes": "Spices alphabetically organized",
+      "temperature": "ambient",
+      "typical_items": [
+        "flour",
+        "sugar",
+        "baking powder",
+        "vanilla extract",
+        "spices"
+      ]
+    },
+    {
+      "section_id": "pantry-aisle-5",
+      "name": "Pantry - Aisle 5",
+      "location": "center-aisles",
+      "aisle": 5,
+      "position": 11,
+      "subsections": [
+        "cereal",
+        "breakfast",
+        "oatmeal",
+        "granola"
+      ],
+      "notes": "Gluten-free options marked with blue labels",
+      "temperature": "ambient",
+      "typical_items": [
+        "cereal",
+        "oatmeal",
+        "granola",
+        "pancake mix",
+        "syrup"
+      ]
+    },
+    {
+      "section_id": "snacks-aisle-6",
+      "name": "Snacks - Aisle 6",
+      "location": "center-aisles",
+      "aisle": 6,
+      "position": 12,
+      "subsections": [
+        "chips",
+        "crackers",
+        "cookies",
+        "nuts"
+      ],
+      "notes": "Organic snacks on top shelf, value packs on bottom",
+      "temperature": "ambient",
+      "typical_items": [
+        "tortilla chips",
+        "crackers",
+        "cookies",
+        "popcorn",
+        "pretzels"
+      ]
+    },
+    {
+      "section_id": "snacks-aisle-7",
+      "name": "Snacks - Aisle 7",
+      "location": "center-aisles",
+      "aisle": 7,
+      "position": 13,
+      "subsections": [
+        "candy",
+        "chocolate",
+        "dried-fruit",
+        "energy-bars"
+      ],
+      "notes": "Dark chocolate selection on left, milk chocolate on right",
+      "temperature": "ambient",
+      "typical_items": [
+        "chocolate",
+        "candy",
+        "granola bars",
+        "dried fruit",
+        "trail mix"
+      ]
+    },
+    {
+      "section_id": "beverages-aisle-8",
+      "name": "Beverages - Aisle 8",
+      "location": "center-aisles",
+      "aisle": 8,
+      "position": 14,
+      "subsections": [
+        "juice",
+        "soda",
+        "sparkling-water",
+        "sports-drinks"
+      ],
+      "notes": "Refrigerated juices in cooler at end of aisle",
+      "temperature": "ambient",
+      "typical_items": [
+        "orange juice",
+        "apple juice",
+        "soda",
+        "sparkling water",
+        "sports drinks"
+      ]
+    },
+    {
+      "section_id": "beverages-aisle-9",
+      "name": "Beverages - Aisle 9",
+      "location": "center-aisles",
+      "aisle": 9,
+      "position": 15,
+      "subsections": [
+        "coffee",
+        "tea",
+        "bottled-water"
+      ],
+      "notes": "Fresh coffee beans in grinder station at end of aisle",
+      "temperature": "ambient",
+      "typical_items": [
+        "coffee",
+        "tea",
+        "bottled water",
+        "kombucha",
+        "energy drinks"
+      ]
+    },
+    {
+      "section_id": "household-aisle-10",
+      "name": "Household - Aisle 10",
+      "location": "center-aisles",
+      "aisle": 10,
+      "position": 16,
+      "subsections": [
+        "cleaning-supplies",
+        "laundry",
+        "dishwashing"
+      ],
+      "notes": "Eco-friendly products marked with green labels",
+      "temperature": "ambient",
+      "typical_items": [
+        "dish soap",
+        "laundry detergent",
+        "all-purpose cleaner",
+        "sponges",
+        "trash bags"
+      ]
+    },
+    {
+      "section_id": "household-aisle-11",
+      "name": "Household - Aisle 11",
+      "location": "center-aisles",
+      "aisle": 11,
+      "position": 17,
+      "subsections": [
+        "paper-products",
+        "disposables",
+        "storage"
+      ],
+      "notes": "Bulk paper products at end cap",
+      "temperature": "ambient",
+      "typical_items": [
+        "paper towels",
+        "toilet paper",
+        "napkins",
+        "aluminum foil",
+        "plastic wrap"
+      ]
+    },
+    {
+      "section_id": "personal-care-aisle-12",
+      "name": "Personal Care - Aisle 12",
+      "location": "center-aisles",
+      "aisle": 12,
+      "position": 18,
+      "subsections": [
+        "toiletries",
+        "oral-care",
+        "hair-care",
+        "skin-care"
+      ],
+      "notes": "Natural/organic personal care on left, conventional on right",
+      "temperature": "ambient",
+      "typical_items": [
+        "toothpaste",
+        "shampoo",
+        "soap",
+        "deodorant",
+        "lotion"
+      ]
+    }
+  ],
+  "special_features": [
+    {
+      "feature": "customer-service",
+      "location": "front-right",
+      "hours": "8:00 AM - 9:00 PM"
+    },
+    {
+      "feature": "pharmacy",
+      "location": "back-right-corner",
+      "hours": "9:00 AM - 8:00 PM"
+    },
+    {
+      "feature": "coffee-bar",
+      "location": "front-left",
+      "hours": "7:00 AM - 7:00 PM"
+    },
+    {
+      "feature": "restrooms",
+      "location": "back-left-corner",
+      "hours": "store hours"
+    }
+  ],
+  "shopping_tips": [
+    "Shop early morning (8-9 AM) for best produce selection and fewer crowds",
+    "Wednesday mornings: new sales start, best time for deals",
+    "Avoid weekends 11 AM - 3 PM (peak hours)",
+    "Self-checkout available for small baskets (<15 items)",
+    "Reusable bags earn $0.10 discount per bag",
+    "Free samples available at deli and bakery",
+    "Download store app for digital coupons"
+  ],
+  "optimal_route_notes": {
+    "start": "Enter at front-center, go right to produce",
+    "perimeter_order": [
+      "produce",
+      "bakery",
+      "deli",
+      "meat",
+      "dairy"
+    ],
+    "aisle_order": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "frozen_last": "Collect frozen items LAST before checkout",
+    "checkout": "Exit through front checkout lanes",
+    "estimated_full_shop_time": "45-60 minutes"
+  }
+}

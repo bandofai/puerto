@@ -1,0 +1,35 @@
+{
+  "name": "project-manager",
+  "version": "1.0.0",
+  "description": "Project coordination and tracking specialist with comprehensive planning, timeline management, risk tracking, and status reporting capabilities",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/project-planner.md",
+    "./agents/timeline-manager.md",
+    "./agents/risk-tracker.md",
+    "./agents/status-reporter.md"
+  ],
+  "skills": [
+    "./skills/project-planning/SKILL.md",
+    "./skills/risk-management/SKILL.md",
+    "./skills/project-reporting/SKILL.md"
+  ],
+  "keywords": [
+    "project-management",
+    "planning",
+    "scheduling",
+    "gantt",
+    "wbs",
+    "risk-management",
+    "timeline",
+    "status-reporting",
+    "kpi",
+    "pmbok",
+    "agile",
+    "waterfall",
+    "resource-allocation",
+    "milestone-tracking"
+  ]
+}

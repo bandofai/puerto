@@ -1,0 +1,265 @@
+{
+  "trip": {
+    "destination": "Paris, France",
+    "dates": {
+      "start": "2024-06-15",
+      "end": "2024-06-22",
+      "duration_days": 7
+    },
+    "travelers": 2,
+    "currency": "USD",
+    "exchange_rate": 1.08,
+    "local_currency": "EUR",
+    "budget_style": "mid-range"
+  },
+  "budget": {
+    "fixed_costs": {
+      "flights": {
+        "budgeted": 1600.00,
+        "actual": 1545.00,
+        "status": "booked",
+        "notes": "Round-trip per person, $772.50 each",
+        "booking_reference": "AB123XYZ",
+        "payment_method": "credit_card"
+      },
+      "accommodation": {
+        "budgeted": 840.00,
+        "actual": 875.00,
+        "status": "booked",
+        "notes": "$125/night × 7 nights",
+        "booking_reference": "HTL-987654",
+        "payment_method": "credit_card"
+      },
+      "travel_insurance": {
+        "budgeted": 100.00,
+        "actual": 95.00,
+        "status": "purchased",
+        "notes": "Comprehensive coverage for 2 travelers",
+        "policy_number": "WN-123456789",
+        "payment_method": "credit_card"
+      },
+      "visa_fees": {
+        "budgeted": 0.00,
+        "actual": 0.00,
+        "status": "not_required",
+        "notes": "No visa required for US citizens (90 day visa-free)"
+      },
+      "airport_transfer": {
+        "budgeted": 100.00,
+        "actual": 0.00,
+        "status": "planned",
+        "notes": "Shuttle to/from hotel"
+      },
+      "metro_pass": {
+        "budgeted": 50.00,
+        "actual": 0.00,
+        "status": "planned",
+        "notes": "7-day Navigo Découverte pass for 2"
+      },
+      "pre_booked_tours": {
+        "budgeted": 300.00,
+        "actual": 285.00,
+        "status": "partially_booked",
+        "notes": "Eiffel Tower, Louvre, Versailles day trip",
+        "items": [
+          {
+            "tour": "Eiffel Tower tickets",
+            "cost": 70.00,
+            "booked": true
+          },
+          {
+            "tour": "Louvre tickets",
+            "cost": 50.00,
+            "booked": true
+          },
+          {
+            "tour": "Versailles tour",
+            "cost": 165.00,
+            "booked": true
+          }
+        ]
+      }
+    },
+    "daily_expenses": {
+      "food_per_day": {
+        "breakfast": 12.00,
+        "lunch": 20.00,
+        "dinner": 35.00,
+        "snacks_drinks": 8.00,
+        "total_per_day": 75.00,
+        "notes": "Mix of café breakfasts, bistro lunches, nice dinners"
+      },
+      "transportation_per_day": 5.00,
+      "attractions_per_day": 15.00,
+      "miscellaneous_per_day": 10.00,
+      "total_per_day_variable": 105.00,
+      "total_for_trip": 735.00,
+      "notes": "Daily variable expenses for 7 days"
+    },
+    "one_time_expenses": {
+      "shopping": {
+        "budgeted": 200.00,
+        "notes": "Clothing, small items"
+      },
+      "souvenirs": {
+        "budgeted": 150.00,
+        "notes": "Gifts for family and friends"
+      },
+      "special_meals": {
+        "budgeted": 150.00,
+        "notes": "One fancy dinner, special experiences"
+      },
+      "total": 500.00
+    },
+    "emergency_buffer": {
+      "budgeted": 400.00,
+      "actual": 0.00,
+      "notes": "~10% of total budget for unexpected costs",
+      "status": "reserved"
+    }
+  },
+  "summary": {
+    "total_fixed": 2990.00,
+    "total_daily_variable": 735.00,
+    "total_one_time": 500.00,
+    "emergency_buffer": 400.00,
+    "total_budget": 4625.00,
+    "per_person": 2312.50,
+    "budget_allocated": 4225.00,
+    "budget_spent": 2800.00,
+    "budget_remaining": 1825.00
+  },
+  "expenses": [
+    {
+      "id": "exp-001",
+      "date": "2024-03-15",
+      "category": "fixed",
+      "subcategory": "flights",
+      "amount": 1545.00,
+      "currency": "USD",
+      "description": "Round-trip flights to Paris (2 tickets)",
+      "payment_method": "credit_card",
+      "confirmation": "AB123XYZ",
+      "receipt": true,
+      "notes": "Booked 3 months in advance for better price"
+    },
+    {
+      "id": "exp-002",
+      "date": "2024-03-20",
+      "category": "fixed",
+      "subcategory": "accommodation",
+      "amount": 875.00,
+      "currency": "USD",
+      "description": "Hotel de Ville - 7 nights",
+      "payment_method": "credit_card",
+      "confirmation": "HTL-987654",
+      "receipt": true,
+      "notes": "4-star hotel in Le Marais district"
+    },
+    {
+      "id": "exp-003",
+      "date": "2024-03-25",
+      "category": "fixed",
+      "subcategory": "travel_insurance",
+      "amount": 95.00,
+      "currency": "USD",
+      "description": "Travel insurance - 2 travelers",
+      "payment_method": "credit_card",
+      "confirmation": "WN-123456789",
+      "receipt": true,
+      "notes": "Comprehensive coverage including medical"
+    },
+    {
+      "id": "exp-004",
+      "date": "2024-04-10",
+      "category": "fixed",
+      "subcategory": "pre_booked_tours",
+      "amount": 70.00,
+      "currency": "USD",
+      "description": "Eiffel Tower tickets (2 adults)",
+      "payment_method": "credit_card",
+      "confirmation": "ET-12345678",
+      "receipt": true,
+      "notes": "15:30 time slot, June 15"
+    },
+    {
+      "id": "exp-005",
+      "date": "2024-04-10",
+      "category": "fixed",
+      "subcategory": "pre_booked_tours",
+      "amount": 50.00,
+      "currency": "USD",
+      "description": "Louvre Museum tickets (2 adults)",
+      "payment_method": "credit_card",
+      "confirmation": "LV-87654321",
+      "receipt": true,
+      "notes": "9:00 AM entry, June 16"
+    },
+    {
+      "id": "exp-006",
+      "date": "2024-04-15",
+      "category": "fixed",
+      "subcategory": "pre_booked_tours",
+      "amount": 165.00,
+      "currency": "USD",
+      "description": "Versailles full-day tour (2 people)",
+      "payment_method": "credit_card",
+      "confirmation": "VER-445566",
+      "receipt": true,
+      "notes": "Includes transportation and skip-the-line access"
+    }
+  ],
+  "confirmation_emails": {
+    "saved_location": "~/.claude/travel/trips/paris-2024-06-15/confirmations/",
+    "files": [
+      "flight-confirmation-AB123XYZ.pdf",
+      "hotel-booking-HTL987654.pdf",
+      "travel-insurance-WN123456789.pdf",
+      "eiffel-tower-tickets.pdf",
+      "louvre-tickets.pdf",
+      "versailles-tour.pdf"
+    ]
+  },
+  "payment_tracking": {
+    "by_method": {
+      "credit_card": 2800.00,
+      "cash": 0.00,
+      "debit_card": 0.00
+    },
+    "by_category": {
+      "accommodation": 875.00,
+      "flights": 1545.00,
+      "food": 0.00,
+      "transportation": 0.00,
+      "attractions": 285.00,
+      "insurance": 95.00,
+      "shopping": 0.00,
+      "other": 0.00
+    }
+  },
+  "reconciliation": {
+    "completed": false,
+    "date_completed": null,
+    "total_spent": 2800.00,
+    "total_budgeted": 4625.00,
+    "variance": 1825.00,
+    "variance_percentage": 39,
+    "under_over_budget": "under",
+    "notes": "Pre-trip: All fixed costs booked. Trip expenses will be added during travel.",
+    "insights": []
+  },
+  "daily_tracking": {
+    "enabled": true,
+    "target_per_day": 105.00,
+    "days": []
+  },
+  "notes": [
+    "Budget created March 2024 for June trip",
+    "Fixed costs booked in advance for better rates",
+    "Emergency buffer set aside (do not touch unless necessary)",
+    "Daily expense tracking will begin on June 15",
+    "Budget is per couple (2 travelers)"
+  ],
+  "currency_conversion_note": "Exchange rate: 1 USD = 0.93 EUR (as of March 2024). Actual rates may vary during trip.",
+  "last_updated": "2024-04-15"
+}

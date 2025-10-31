@@ -1,0 +1,32 @@
+{
+  "name": "office-administrator",
+  "version": "1.0.0",
+  "description": "General administrative support specialist for meeting scheduling, travel arrangements, expense processing, document organization, and calendar management",
+  "author": {
+    "name": "Puerto Plugin System"
+  },
+  "agents": [
+    "./agents/meeting-scheduler.md",
+    "./agents/travel-planner.md",
+    "./agents/expense-processor.md",
+    "./agents/document-organizer.md"
+  ],
+  "skills": [
+    "./skills/scheduling/SKILL.md",
+    "./skills/travel-planning/SKILL.md",
+    "./skills/office-administration/SKILL.md"
+  ],
+  "keywords": [
+    "office",
+    "administration",
+    "scheduling",
+    "meetings",
+    "calendar",
+    "travel",
+    "expenses",
+    "documents",
+    "organization",
+    "time-zones",
+    "itinerary"
+  ]
+}

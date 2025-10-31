@@ -1,0 +1,21 @@
+{
+  "name": "tax-compliance-specialist",
+  "version": "1.0.0",
+  "description": "Tax compliance support specialist - tracks tax obligations, filing preparation, and regulation updates",
+  "type": "work",
+  "agents": [
+    "./agents/regulation-tracker.md",
+    "./agents/filing-preparer.md",
+    "./agents/deadline-monitor.md",
+    "./agents/compliance-checker.md",
+    "./agents/audit-trail-manager.md"
+  ],
+  "skills": [
+    "./skills/tax-compliance.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "repository": "https://github.com/bandofai/puerto",
+  "license": "MIT"
+}

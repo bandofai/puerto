@@ -1,0 +1,41 @@
+{
+  "name": "sales-lead-qualifier",
+  "version": "1.0.0",
+  "description": "Professional sales lead qualification system with BANT/MEDDIC frameworks, data enrichment, scoring, prioritization, and automated routing",
+  "author": {
+    "name": "Puerto Marketplace"
+  },
+  "license": "MIT",
+  "type": "work-agent",
+  "category": "sales",
+  "agents": [
+    "./agents/sales-lead-qualifier.md"
+  ],
+  "skills": [
+    "./skills/lead-qualification/SKILL.md"
+  ],
+  "requirements": {
+    "claude_code_version": ">=1.0.0",
+    "tools": [
+      "WebSearch"
+    ]
+  },
+  "installation": {
+    "user_level": "~/.claude/plugins/sales-lead-qualifier/",
+    "project_level": ".claude/plugins/sales-lead-qualifier/"
+  },
+  "documentation": "README.md",
+  "repository": "https://github.com/bandofai/puerto",
+  "keywords": [
+    "sales lead qualification",
+    "BANT framework",
+    "MEDDIC framework",
+    "lead scoring",
+    "lead enrichment",
+    "sales operations",
+    "CRM automation",
+    "lead routing",
+    "pipeline management",
+    "sales productivity"
+  ]
+}

@@ -1,0 +1,89 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build application
+        run: npm run build
+
+      - name: Run Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v10
+        with:
+          urls: |
+            https://example.com
+            https://example.com/about
+            https://example.com/products
+          budgetPath: ./lighthouse-budget.json
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+
+      - name: Check performance scores
+        run: |
+          SCORE=$(cat .lighthouseci/lhr-*.json | jq -r '.categories.performance.score * 100' | head -1)
+          echo "Performance Score: $SCORE"
+
+          if (( $(echo "$SCORE < 90" | bc -l) )); then
+            echo "❌ Performance score $SCORE is below threshold of 90"
+            exit 1
+          else
+            echo "✅ Performance score $SCORE meets threshold"
+          fi
+
+      - name: Upload Lighthouse reports
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: lighthouse-reports
+          path: .lighthouseci/
+          retention-days: 30
+
+      - name: Comment PR with results
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const report = JSON.parse(fs.readFileSync('.lighthouseci/lhr-0.json', 'utf8'));
+
+            const performanceScore = (report.categories.performance.score * 100).toFixed(0);
+            const accessibilityScore = (report.categories.accessibility.score * 100).toFixed(0);
+            const seoScore = (report.categories.seo.score * 100).toFixed(0);
+
+            const comment = `## 🔍 Lighthouse Performance Report
+
+            | Category | Score |
+            |----------|-------|
+            | Performance | ${performanceScore}/100 |
+            | Accessibility | ${accessibilityScore}/100 |
+            | SEO | ${seoScore}/100 |
+
+            [View full report](https://googlechrome.github.io/lighthouse/viewer/?gist=...)
+            `;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });

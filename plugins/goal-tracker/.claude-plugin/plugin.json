@@ -1,0 +1,11 @@
+{
+  "name": "goal-tracker",
+  "version": "1.0.0",
+  "description": "Financial goal setting and progress tracking specialist with SMART framework",
+  "agents": [
+    "./agents/agents/goal-manager.md.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

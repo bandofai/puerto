@@ -1,0 +1,472 @@
+{
+  "pantry_id": "home-kitchen",
+  "last_updated": "YYYY-MM-DD",
+  "location": "Main Kitchen Pantry",
+  "categories": [
+    {
+      "category": "Grains & Pasta",
+      "items": [
+        {
+          "item": "white rice",
+          "quantity": 3,
+          "unit": "lbs",
+          "location": "shelf-2",
+          "expiration": "2026-08-15",
+          "min_stock": 2,
+          "status": "adequate",
+          "last_purchased": "2025-09-15",
+          "brand": "Lundberg"
+        },
+        {
+          "item": "brown rice",
+          "quantity": 2,
+          "unit": "lbs",
+          "location": "shelf-2",
+          "expiration": "2026-06-30",
+          "min_stock": 1,
+          "status": "well-stocked",
+          "last_purchased": "2025-08-20",
+          "brand": "Lundberg"
+        },
+        {
+          "item": "pasta - penne",
+          "quantity": 4,
+          "unit": "boxes",
+          "location": "shelf-2",
+          "expiration": "2026-12-31",
+          "min_stock": 2,
+          "status": "well-stocked",
+          "last_purchased": "2025-10-01",
+          "brand": "Barilla"
+        },
+        {
+          "item": "pasta - spaghetti",
+          "quantity": 2,
+          "unit": "boxes",
+          "location": "shelf-2",
+          "expiration": "2026-11-30",
+          "min_stock": 2,
+          "status": "adequate",
+          "last_purchased": "2025-09-10",
+          "brand": "Barilla"
+        },
+        {
+          "item": "quinoa",
+          "quantity": 1.5,
+          "unit": "lbs",
+          "location": "shelf-2",
+          "expiration": "2026-04-15",
+          "min_stock": 1,
+          "status": "adequate",
+          "last_purchased": "2025-07-20",
+          "brand": "Bob's Red Mill"
+        }
+      ]
+    },
+    {
+      "category": "Canned Goods",
+      "items": [
+        {
+          "item": "diced tomatoes",
+          "quantity": 1,
+          "unit": "cans",
+          "location": "shelf-3",
+          "expiration": "2026-03-15",
+          "min_stock": 3,
+          "status": "low",
+          "last_purchased": "2025-08-01",
+          "brand": "Muir Glen",
+          "size": "14.5 oz"
+        },
+        {
+          "item": "black beans",
+          "quantity": 4,
+          "unit": "cans",
+          "location": "shelf-3",
+          "expiration": "2026-09-20",
+          "min_stock": 2,
+          "status": "well-stocked",
+          "last_purchased": "2025-09-15",
+          "brand": "Goya",
+          "size": "15 oz"
+        },
+        {
+          "item": "chickpeas",
+          "quantity": 3,
+          "unit": "cans",
+          "location": "shelf-3",
+          "expiration": "2026-07-10",
+          "min_stock": 2,
+          "status": "adequate",
+          "last_purchased": "2025-08-25",
+          "brand": "Goya",
+          "size": "15 oz"
+        },
+        {
+          "item": "chicken broth",
+          "quantity": 2,
+          "unit": "cans",
+          "location": "shelf-3",
+          "expiration": "2026-05-15",
+          "min_stock": 2,
+          "status": "adequate",
+          "last_purchased": "2025-09-01",
+          "brand": "Pacific Foods",
+          "size": "32 oz"
+        },
+        {
+          "item": "tuna",
+          "quantity": 5,
+          "unit": "cans",
+          "location": "shelf-3",
+          "expiration": "2026-08-30",
+          "min_stock": 3,
+          "status": "adequate",
+          "last_purchased": "2025-08-15",
+          "brand": "Wild Planet",
+          "size": "5 oz"
+        }
+      ]
+    },
+    {
+      "category": "Baking Supplies",
+      "items": [
+        {
+          "item": "all-purpose flour",
+          "quantity": 2,
+          "unit": "lbs",
+          "location": "shelf-1",
+          "expiration": "2026-02-28",
+          "min_stock": 2,
+          "status": "adequate",
+          "last_purchased": "2025-09-05",
+          "brand": "King Arthur"
+        },
+        {
+          "item": "whole wheat flour",
+          "quantity": 1,
+          "unit": "lbs",
+          "location": "shelf-1",
+          "expiration": "2025-12-31",
+          "min_stock": 1,
+          "status": "adequate",
+          "last_purchased": "2025-07-10",
+          "brand": "Bob's Red Mill"
+        },
+        {
+          "item": "granulated sugar",
+          "quantity": 3,
+          "unit": "lbs",
+          "location": "shelf-1",
+          "expiration": "2027-01-01",
+          "min_stock": 2,
+          "status": "adequate",
+          "last_purchased": "2025-06-20",
+          "brand": "Domino"
+        },
+        {
+          "item": "brown sugar",
+          "quantity": 1.5,
+          "unit": "lbs",
+          "location": "shelf-1",
+          "expiration": "2026-06-30",
+          "min_stock": 1,
+          "status": "adequate",
+          "last_purchased": "2025-08-01",
+          "brand": "Domino"
+        },
+        {
+          "item": "baking powder",
+          "quantity": 1,
+          "unit": "container",
+          "location": "shelf-1",
+          "expiration": "2026-03-15",
+          "min_stock": 1,
+          "status": "adequate",
+          "last_purchased": "2025-05-10",
+          "brand": "Rumford",
+          "size": "8.1 oz"
+        },
+        {
+          "item": "baking soda",
+          "quantity": 1,
+          "unit": "box",
+          "location": "shelf-1",
+          "expiration": "2026-08-20",
+          "min_stock": 1,
+          "status": "adequate",
+          "last_purchased": "2025-04-15",
+          "brand": "Arm & Hammer",
+          "size": "16 oz"
+        }
+      ]
+    },
+    {
+      "category": "Oils & Condiments",
+      "items": [
+        {
+          "item": "olive oil",
+          "quantity": 0.5,
+          "unit": "bottles",
+          "location": "shelf-4",
+          "expiration": "2026-01-30",
+          "min_stock": 1,
+          "status": "low",
+          "last_purchased": "2025-06-15",
+          "brand": "Bertolli",
+          "size": "17 oz"
+        },
+        {
+          "item": "vegetable oil",
+          "quantity": 1,
+          "unit": "bottles",
+          "location": "shelf-4",
+          "expiration": "2026-07-15",
+          "min_stock": 1,
+          "status": "adequate",
+          "last_purchased": "2025-08-05",
+          "brand": "Wesson",
+          "size": "48 oz"
+        },
+        {
+          "item": "soy sauce",
+          "quantity": 1,
+          "unit": "bottle",
+          "location": "shelf-4",
+          "expiration": "2026-12-31",
+          "min_stock": 1,
+          "status": "adequate",
+          "last_purchased": "2025-07-20",
+          "brand": "Kikkoman",
+          "size": "15 oz"
+        },
+        {
+          "item": "hot sauce",
+          "quantity": 2,
+          "unit": "bottles",
+          "location": "shelf-4",
+          "expiration": "2027-03-15",
+          "min_stock": 1,
+          "status": "well-stocked",
+          "last_purchased": "2025-09-10",
+          "brand": "Tabasco",
+          "size": "5 oz"
+        }
+      ]
+    },
+    {
+      "category": "Spices & Seasonings",
+      "items": [
+        {
+          "item": "salt",
+          "quantity": 2,
+          "unit": "containers",
+          "location": "spice-rack",
+          "expiration": null,
+          "min_stock": 1,
+          "status": "well-stocked",
+          "last_purchased": "2025-05-01",
+          "brand": "Morton",
+          "size": "26 oz"
+        },
+        {
+          "item": "black pepper",
+          "quantity": 1,
+          "unit": "grinder",
+          "location": "spice-rack",
+          "expiration": "2026-09-30",
+          "min_stock": 1,
+          "status": "adequate",
+          "last_purchased": "2025-06-15",
+          "brand": "McCormick",
+          "size": "2.5 oz"
+        },
+        {
+          "item": "garlic powder",
+          "quantity": 1,
+          "unit": "jar",
+          "location": "spice-rack",
+          "expiration": "2026-04-30",
+          "min_stock": 1,
+          "status": "adequate",
+          "last_purchased": "2025-05-20",
+          "brand": "McCormick",
+          "size": "3.12 oz"
+        },
+        {
+          "item": "cumin",
+          "quantity": 1,
+          "unit": "jar",
+          "location": "spice-rack",
+          "expiration": "2026-06-15",
+          "min_stock": 1,
+          "status": "adequate",
+          "last_purchased": "2025-04-10",
+          "brand": "Simply Organic",
+          "size": "2.31 oz"
+        },
+        {
+          "item": "paprika",
+          "quantity": 0.5,
+          "unit": "jar",
+          "location": "spice-rack",
+          "expiration": "2025-12-31",
+          "min_stock": 1,
+          "status": "low",
+          "last_purchased": "2024-12-15",
+          "brand": "McCormick",
+          "size": "2.12 oz"
+        }
+      ]
+    },
+    {
+      "category": "Snacks",
+      "items": [
+        {
+          "item": "crackers",
+          "quantity": 2,
+          "unit": "boxes",
+          "location": "shelf-5",
+          "expiration": "2026-01-15",
+          "min_stock": 1,
+          "status": "adequate",
+          "last_purchased": "2025-10-01",
+          "brand": "Triscuit"
+        },
+        {
+          "item": "granola bars",
+          "quantity": 1,
+          "unit": "box",
+          "location": "shelf-5",
+          "expiration": "2026-02-28",
+          "min_stock": 1,
+          "status": "adequate",
+          "last_purchased": "2025-09-20",
+          "brand": "Nature Valley",
+          "size": "12-pack"
+        }
+      ]
+    }
+  ],
+  "refrigerated_items": [
+    {
+      "item": "milk",
+      "quantity": 0.5,
+      "unit": "gallon",
+      "location": "fridge-shelf-1",
+      "expiration": "2025-10-29",
+      "min_stock": 1,
+      "status": "low",
+      "last_purchased": "2025-10-15",
+      "opened": true,
+      "brand": "Organic Valley"
+    },
+    {
+      "item": "eggs",
+      "quantity": 6,
+      "unit": "count",
+      "location": "fridge-door",
+      "expiration": "2025-11-10",
+      "min_stock": 12,
+      "status": "low",
+      "last_purchased": "2025-10-05",
+      "brand": "Vital Farms"
+    },
+    {
+      "item": "butter",
+      "quantity": 0.5,
+      "unit": "lbs",
+      "location": "fridge-shelf-2",
+      "expiration": "2025-12-15",
+      "min_stock": 1,
+      "status": "low",
+      "last_purchased": "2025-09-20",
+      "brand": "Kerrygold"
+    },
+    {
+      "item": "yogurt",
+      "quantity": 2,
+      "unit": "containers",
+      "location": "fridge-shelf-1",
+      "expiration": "2025-10-28",
+      "min_stock": 4,
+      "status": "low",
+      "last_purchased": "2025-10-10",
+      "brand": "Fage",
+      "size": "17.6 oz"
+    }
+  ],
+  "frozen_items": [
+    {
+      "item": "frozen vegetables - mixed",
+      "quantity": 3,
+      "unit": "bags",
+      "location": "freezer-drawer-1",
+      "expiration": "2026-06-30",
+      "min_stock": 2,
+      "status": "adequate",
+      "last_purchased": "2025-09-15",
+      "brand": "Birds Eye",
+      "size": "16 oz"
+    },
+    {
+      "item": "frozen chicken breast",
+      "quantity": 2,
+      "unit": "lbs",
+      "location": "freezer-drawer-2",
+      "expiration": "2026-03-15",
+      "min_stock": 1,
+      "status": "adequate",
+      "last_purchased": "2025-10-01",
+      "brand": "Perdue"
+    },
+    {
+      "item": "ice cream",
+      "quantity": 0.5,
+      "unit": "pints",
+      "location": "freezer-shelf-1",
+      "expiration": "2026-08-30",
+      "min_stock": 2,
+      "status": "low",
+      "last_purchased": "2025-09-01",
+      "brand": "Ben & Jerry's"
+    }
+  ],
+  "recurring_items": [
+    {
+      "item": "milk",
+      "frequency": "weekly",
+      "auto_add": true,
+      "typical_quantity": "1 gallon"
+    },
+    {
+      "item": "eggs",
+      "frequency": "biweekly",
+      "auto_add": true,
+      "typical_quantity": "1 dozen"
+    },
+    {
+      "item": "bread",
+      "frequency": "weekly",
+      "auto_add": true,
+      "typical_quantity": "1 loaf"
+    },
+    {
+      "item": "coffee",
+      "frequency": "monthly",
+      "auto_add": true,
+      "typical_quantity": "1 lb"
+    }
+  ],
+  "shopping_list_threshold": {
+    "low_stock_trigger": true,
+    "expiring_soon_days": 7,
+    "auto_generate_list": false
+  },
+  "notes": [
+    "Check expiration dates monthly",
+    "Rotate stock when adding new items (FIFO)",
+    "Update inventory after each shopping trip",
+    "Review min_stock levels quarterly"
+  ]
+}

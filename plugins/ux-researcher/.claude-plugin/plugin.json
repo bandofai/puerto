@@ -1,0 +1,17 @@
+{
+  "name": "ux-researcher",
+  "version": "1.0.0",
+  "description": "User research specialist",
+  "agents": [
+    "./agents/research-planner.md",
+    "./agents/interview-guide-creator.md",
+    "./agents/insight-synthesizer.md"
+  ],
+  "skills": [
+    "./skills/research-methods/SKILL.md",
+    "./skills/synthesis/SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}

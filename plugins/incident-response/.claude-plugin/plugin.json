@@ -1,0 +1,17 @@
+{
+  "name": "incident-response",
+  "version": "1.0.0",
+  "description": "Security incident response specialist for breach detection, response coordination, forensic analysis, recovery planning, and post-mortem documentation",
+  "agents": [
+    "./agents/incident-detector.md",
+    "./agents/response-coordinator.md",
+    "./agents/forensic-analyzer.md",
+    "./agents/recovery-planner.md"
+  ],
+  "skills": [
+    "./SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  }
+}
