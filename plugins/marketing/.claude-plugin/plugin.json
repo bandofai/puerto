@@ -1,0 +1,22 @@
+{
+  "name": "marketing",
+  "description": "Full-service marketing team with 5 specialized roles covering SEO, content, social media, and growth",
+  "version": "1.0.0",
+  "author": {
+    "name": "Puerto"
+  },
+  "agents": [
+    "./agents/marketing-director.md",
+    "./agents/content-strategist.md",
+    "./agents/seo-specialist.md",
+    "./agents/social-media-manager.md",
+    "./agents/growth-marketer.md"
+  ],
+  "skills": [
+    "./skills/seo-optimization",
+    "./skills/content-strategy",
+    "./skills/social-media",
+    "./skills/growth-hacking",
+    "./skills/marketing-analytics"
+  ]
+}

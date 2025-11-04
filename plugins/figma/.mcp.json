@@ -1,0 +1,7 @@
+{
+  "figma": {
+    "transport": "http",
+    "url": "https://mcp.figma.com/mcp",
+    "description": "Generate code from Figma designs and extract component data"
+  }
+}

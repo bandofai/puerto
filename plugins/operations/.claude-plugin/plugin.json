@@ -1,0 +1,18 @@
+{
+  "name": "operations",
+  "description": "Operations and administration team with 3 specialized roles covering operations, HR, and office management",
+  "version": "1.0.0",
+  "author": {
+    "name": "Puerto"
+  },
+  "agents": [
+    "./agents/operations-lead.md",
+    "./agents/hr-manager.md",
+    "./agents/office-manager.md"
+  ],
+  "skills": [
+    "./skills/operations-management",
+    "./skills/human-resources",
+    "./skills/office-administration"
+  ]
+}

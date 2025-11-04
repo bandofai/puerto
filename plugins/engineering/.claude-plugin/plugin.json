@@ -1,0 +1,25 @@
+{
+  "name": "engineering",
+  "description": "Full-stack engineering team with 7 specialized roles covering frontend, backend, mobile, data, DevOps, and QA",
+  "version": "1.0.0",
+  "author": {
+    "name": "Puerto"
+  },
+  "agents": [
+    "./agents/engineering-lead.md",
+    "./agents/frontend-engineer.md",
+    "./agents/backend-engineer.md",
+    "./agents/devops-engineer.md",
+    "./agents/mobile-engineer.md",
+    "./agents/data-engineer.md",
+    "./agents/qa-engineer.md"
+  ],
+  "skills": [
+    "./skills/frontend-development",
+    "./skills/backend-architecture",
+    "./skills/mobile-development",
+    "./skills/devops-practices",
+    "./skills/data-engineering",
+    "./skills/testing-practices"
+  ]
+}

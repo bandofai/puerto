@@ -1,0 +1,760 @@
+# Task Routing Patterns for CLAUDE.md
+
+**Version**: 1.0.0
+**Last Updated**: 2025-11-01
+**Purpose**: Comprehensive WHEN/AUTOMATICALLY routing patterns for Puerto marketplace plugins
+
+---
+
+## Purpose of This Skill
+
+This skill provides battle-tested routing patterns for the most common Puerto plugins and task types. Use these patterns when generating or validating CLAUDE.md routing rules.
+
+**Key Learning Objectives**:
+- Master the WHEN/AUTOMATICALLY syntax
+- Learn trigger phrases by plugin category
+- Understand pattern templates for different task types
+- Apply routing rules that maximize automatic agent invocation
+
+---
+
+## The WHEN/AUTOMATICALLY Pattern
+
+### Core Syntax
+
+```markdown
+WHEN [trigger condition]
+→ AUTOMATICALLY invoke: plugin-name:agent-name
+```
+
+### Key Elements
+
+1. **WHEN**: Keyword that signals a trigger condition
+2. **Trigger condition**: Specific phrase or pattern the user might say
+3. **→**: Visual separator (arrow)
+4. **AUTOMATICALLY invoke**: Explicit instruction to use agent without asking
+5. **plugin-name:agent-name**: Full agent identifier
+
+### Pattern Variations
+
+**Single trigger**:
+```markdown
+WHEN user says "create component"
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+```
+
+**Multiple triggers with OR**:
+```markdown
+WHEN user says "create component" OR "add component" OR "build component"
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+```
+
+**Trigger with variable placeholders**:
+```markdown
+WHEN user says "create [component name] component"
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+```
+
+**Combined placeholders and alternatives**:
+```markdown
+WHEN user says "create [endpoint name] endpoint" OR "add API route for [resource]"
+→ AUTOMATICALLY invoke: api-developer:endpoint-builder
+```
+
+---
+
+## Frontend Development Patterns
+
+### Frontend-Developer Plugin
+
+#### Component Builder Agent
+
+```markdown
+### Component Tasks
+
+WHEN user says "create [component name] component"
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+
+WHEN user says "add [component name] component"
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+
+WHEN user says "build [component name] component"
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+
+WHEN user says "implement [component name]" AND context is React/Vue/Svelte
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+```
+
+#### State Architect Agent
+
+```markdown
+### State Management Tasks
+
+WHEN user says "add state management"
+→ AUTOMATICALLY invoke: frontend-developer:state-architect
+
+WHEN user says "implement [Redux/Zustand/Context/Recoil]"
+→ AUTOMATICALLY invoke: frontend-developer:state-architect
+
+WHEN user says "set up global state"
+→ AUTOMATICALLY invoke: frontend-developer:state-architect
+
+WHEN user says "manage state for [feature]"
+→ AUTOMATICALLY invoke: frontend-developer:state-architect
+```
+
+#### Style Implementer Agent
+
+```markdown
+### Styling Tasks
+
+WHEN user says "style [component]"
+→ AUTOMATICALLY invoke: frontend-developer:style-implementer
+
+WHEN user says "make [component] responsive"
+→ AUTOMATICALLY invoke: frontend-developer:style-implementer
+
+WHEN user says "add CSS for [component]"
+→ AUTOMATICALLY invoke: frontend-developer:style-implementer
+
+WHEN user says "implement design for [component]"
+→ AUTOMATICALLY invoke: frontend-developer:style-implementer
+```
+
+---
+
+## Backend Development Patterns
+
+### API-Developer Plugin
+
+#### Endpoint Builder Agent
+
+```markdown
+### API Endpoint Tasks
+
+WHEN user says "create [endpoint name] endpoint"
+→ AUTOMATICALLY invoke: api-developer:endpoint-builder
+
+WHEN user says "add API route for [resource]"
+→ AUTOMATICALLY invoke: api-developer:endpoint-builder
+
+WHEN user says "implement [REST/GraphQL] endpoint"
+→ AUTOMATICALLY invoke: api-developer:endpoint-builder
+
+WHEN user says "build API for [feature]"
+→ AUTOMATICALLY invoke: api-developer:endpoint-builder
+```
+
+#### Auth Implementer Agent
+
+```markdown
+### Authentication Tasks
+
+WHEN user says "add authentication"
+→ AUTOMATICALLY invoke: api-developer:auth-implementer
+
+WHEN user says "implement login/signup"
+→ AUTOMATICALLY invoke: api-developer:auth-implementer
+
+WHEN user says "set up [JWT/OAuth/API key] auth"
+→ AUTOMATICALLY invoke: api-developer:auth-implementer
+
+WHEN user says "add authorization middleware"
+→ AUTOMATICALLY invoke: api-developer:auth-implementer
+```
+
+#### API Tester Agent
+
+```markdown
+### API Testing Tasks
+
+WHEN user says "write tests for [API]"
+→ AUTOMATICALLY invoke: api-developer:api-tester
+
+WHEN user says "add API tests"
+→ AUTOMATICALLY invoke: api-developer:api-tester
+
+WHEN user says "test [endpoint] endpoint"
+→ AUTOMATICALLY invoke: api-developer:api-tester
+
+WHEN user says "create integration tests"
+→ AUTOMATICALLY invoke: api-developer:api-tester
+```
+
+---
+
+## Database Patterns
+
+### Backend-Architect Plugin (Database Tasks)
+
+#### Database Architect Agent
+
+```markdown
+### Database Design Tasks
+
+WHEN user says "design database schema"
+→ AUTOMATICALLY invoke: backend-architect:database-architect
+
+WHEN user says "create data model"
+→ AUTOMATICALLY invoke: backend-architect:database-architect
+
+WHEN user says "design ER diagram"
+→ AUTOMATICALLY invoke: backend-architect:database-architect
+
+WHEN user says "model database for [feature]"
+→ AUTOMATICALLY invoke: backend-architect:database-architect
+```
+
+### Database-Architect Plugin
+
+#### Migration Manager Agent
+
+```markdown
+### Migration Tasks
+
+WHEN user says "add migration for [change]"
+→ AUTOMATICALLY invoke: database-architect:migration-manager
+
+WHEN user says "modify database schema"
+→ AUTOMATICALLY invoke: database-architect:migration-manager
+
+WHEN user says "create migration"
+→ AUTOMATICALLY invoke: database-architect:migration-manager
+
+WHEN user says "alter table [table name]"
+→ AUTOMATICALLY invoke: database-architect:migration-manager
+```
+
+#### Query Optimizer Agent
+
+```markdown
+### Query Optimization Tasks
+
+WHEN user says "optimize query" OR "slow query in [file]"
+→ AUTOMATICALLY invoke: database-architect:query-optimizer
+
+WHEN user says "improve database performance"
+→ AUTOMATICALLY invoke: database-architect:query-optimizer
+
+WHEN user says "add index for [column/table]"
+→ AUTOMATICALLY invoke: database-architect:query-optimizer
+
+WHEN user says "fix N+1 queries in [file]"
+→ AUTOMATICALLY invoke: database-architect:query-optimizer
+```
+
+---
+
+## DevOps Patterns
+
+### DevOps-Engineer Plugin
+
+#### CI/CD Builder Agent
+
+```markdown
+### CI/CD Tasks
+
+WHEN user says "set up CI/CD"
+→ AUTOMATICALLY invoke: devops-engineer:cicd-builder
+
+WHEN user says "create [GitHub Actions/GitLab CI/Jenkins] pipeline"
+→ AUTOMATICALLY invoke: devops-engineer:cicd-builder
+
+WHEN user says "add automated testing to pipeline"
+→ AUTOMATICALLY invoke: devops-engineer:cicd-builder
+
+WHEN user says "configure deployment pipeline"
+→ AUTOMATICALLY invoke: devops-engineer:cicd-builder
+```
+
+#### Deployment Orchestrator Agent
+
+```markdown
+### Deployment Tasks
+
+WHEN user says "deploy to [environment]"
+→ AUTOMATICALLY invoke: devops-engineer:deployment-orchestrator
+
+WHEN user says "set up [blue-green/canary] deployment"
+→ AUTOMATICALLY invoke: devops-engineer:deployment-orchestrator
+
+WHEN user says "configure Kubernetes deployment"
+→ AUTOMATICALLY invoke: devops-engineer:deployment-orchestrator
+
+WHEN user says "implement rolling update"
+→ AUTOMATICALLY invoke: devops-engineer:deployment-orchestrator
+```
+
+#### Infrastructure Manager Agent
+
+```markdown
+### Infrastructure Tasks
+
+WHEN user says "create infrastructure"
+→ AUTOMATICALLY invoke: devops-engineer:infrastructure-manager
+
+WHEN user says "write [Terraform/CloudFormation] config"
+→ AUTOMATICALLY invoke: devops-engineer:infrastructure-manager
+
+WHEN user says "set up [AWS/GCP/Azure] resources"
+→ AUTOMATICALLY invoke: devops-engineer:infrastructure-manager
+
+WHEN user says "provision infrastructure for [service]"
+→ AUTOMATICALLY invoke: devops-engineer:infrastructure-manager
+```
+
+---
+
+## Accessibility Patterns
+
+### Accessibility-Specialist Plugin
+
+#### Accessibility Auditor Agent
+
+```markdown
+### Accessibility Audit Tasks
+
+WHEN user says "audit accessibility"
+→ AUTOMATICALLY invoke: accessibility-specialist:accessibility-auditor
+
+WHEN user says "check WCAG compliance"
+→ AUTOMATICALLY invoke: accessibility-specialist:accessibility-auditor
+
+WHEN user says "test for accessibility issues"
+→ AUTOMATICALLY invoke: accessibility-specialist:accessibility-auditor
+
+WHEN user says "run accessibility scan"
+→ AUTOMATICALLY invoke: accessibility-specialist:accessibility-auditor
+```
+
+#### Remediation Consultant Agent
+
+```markdown
+### Accessibility Fix Tasks
+
+WHEN user says "fix accessibility issues in [component]"
+→ AUTOMATICALLY invoke: accessibility-specialist:remediation-consultant
+
+WHEN user says "make [component] accessible"
+→ AUTOMATICALLY invoke: accessibility-specialist:remediation-consultant
+
+WHEN user says "add ARIA labels to [component]"
+→ AUTOMATICALLY invoke: accessibility-specialist:remediation-consultant
+```
+
+---
+
+## Testing Patterns
+
+### Code-Reviewer Plugin
+
+```markdown
+### Code Review Tasks
+
+WHEN user says "review this code"
+→ AUTOMATICALLY invoke: code-reviewer:code-reviewer
+
+WHEN user says "check code quality"
+→ AUTOMATICALLY invoke: code-reviewer:code-reviewer
+
+WHEN user says "review [file] for issues"
+→ AUTOMATICALLY invoke: code-reviewer:code-reviewer
+```
+
+### Test-Runner Plugin
+
+```markdown
+### Testing Tasks
+
+WHEN user says "run tests"
+→ AUTOMATICALLY invoke: test-runner:test-runner
+
+WHEN user says "execute test suite"
+→ AUTOMATICALLY invoke: test-runner:test-runner
+
+WHEN user says "test [feature/file]"
+→ AUTOMATICALLY invoke: test-runner:test-runner
+```
+
+---
+
+## Documentation Patterns
+
+### Technical-Writer Plugin
+
+```markdown
+### Documentation Tasks
+
+WHEN user says "write documentation for [feature]"
+→ AUTOMATICALLY invoke: technical-writer:documentation-generator
+
+WHEN user says "create API docs"
+→ AUTOMATICALLY invoke: technical-writer:api-documenter
+
+WHEN user says "document [component/function/API]"
+→ AUTOMATICALLY invoke: technical-writer:documentation-generator
+
+WHEN user says "update README"
+→ AUTOMATICALLY invoke: technical-writer:documentation-generator
+```
+
+---
+
+## Security Patterns
+
+### Security-Auditor Plugin
+
+```markdown
+### Security Tasks
+
+WHEN user says "audit security"
+→ AUTOMATICALLY invoke: security-auditor:security-scanner
+
+WHEN user says "check for vulnerabilities"
+→ AUTOMATICALLY invoke: security-auditor:security-scanner
+
+WHEN user says "scan for security issues"
+→ AUTOMATICALLY invoke: security-auditor:security-scanner
+
+WHEN user says "review security in [file]"
+→ AUTOMATICALLY invoke: security-auditor:code-reviewer
+```
+
+---
+
+## Performance Patterns
+
+### Web-Performance-Auditor Plugin
+
+```markdown
+### Performance Tasks
+
+WHEN user says "audit performance"
+→ AUTOMATICALLY invoke: web-performance-auditor:performance-analyzer
+
+WHEN user says "run Lighthouse audit"
+→ AUTOMATICALLY invoke: web-performance-auditor:lighthouse-auditor
+
+WHEN user says "optimize [page/component] performance"
+→ AUTOMATICALLY invoke: web-performance-auditor:optimization-recommender
+
+WHEN user says "analyze load time"
+→ AUTOMATICALLY invoke: web-performance-auditor:performance-analyzer
+```
+
+---
+
+## Multi-Agent Task Patterns
+
+### Complex Task Sequences
+
+For tasks requiring multiple agents in sequence:
+
+```markdown
+### Full-Feature Implementation
+
+WHEN user says "create new feature with [frontend + backend]"
+→ First invoke: backend-architect:system-architect (design architecture)
+→ Then invoke: backend-architect:database-architect (design schema)
+→ Then invoke: api-developer:endpoint-builder (build API)
+→ Then invoke: frontend-developer:component-builder (build UI)
+→ Then invoke: api-developer:api-tester (test integration)
+
+This ensures proper architecture design before implementation.
+```
+
+### Conditional Routing
+
+For tasks with specific requirements:
+
+```markdown
+### Payment Feature Implementation
+
+WHEN implementing payment features
+→ MUST invoke: api-developer:auth-implementer (for PCI compliance)
+→ MUST invoke: security-auditor:security-scanner (security audit)
+→ MUST add: Comprehensive audit logging
+→ MUST follow: PCI DSS compliance guidelines
+```
+
+---
+
+## Pattern Templates by Project Type
+
+### React SPA Project
+
+```markdown
+## Automatic Task Routing
+
+### Frontend Tasks
+WHEN creating components → AUTOMATICALLY invoke frontend-developer:component-builder
+WHEN implementing state → AUTOMATICALLY invoke frontend-developer:state-architect
+WHEN styling components → AUTOMATICALLY invoke frontend-developer:style-implementer
+WHEN testing components → AUTOMATICALLY invoke frontend-developer:component-tester
+
+### API Integration
+WHEN calling APIs → AUTOMATICALLY invoke api-developer:endpoint-builder
+WHEN handling auth → AUTOMATICALLY invoke api-developer:auth-implementer
+
+### Performance
+WHEN optimizing performance → AUTOMATICALLY invoke web-performance-auditor:optimization-recommender
+```
+
+### Node.js Backend Project
+
+```markdown
+## Automatic Task Routing
+
+### API Development
+WHEN creating endpoints → AUTOMATICALLY invoke api-developer:endpoint-builder
+WHEN implementing auth → AUTOMATICALLY invoke api-developer:auth-implementer
+WHEN writing API tests → AUTOMATICALLY invoke api-developer:api-tester
+
+### Database
+WHEN designing schemas → AUTOMATICALLY invoke backend-architect:database-architect
+WHEN creating migrations → AUTOMATICALLY invoke database-architect:migration-manager
+WHEN optimizing queries → AUTOMATICALLY invoke database-architect:query-optimizer
+
+### DevOps
+WHEN setting up CI/CD → AUTOMATICALLY invoke devops-engineer:cicd-builder
+WHEN deploying → AUTOMATICALLY invoke devops-engineer:deployment-orchestrator
+```
+
+### Full-Stack Next.js Project
+
+```markdown
+## Automatic Task Routing
+
+### Frontend (Client Components)
+WHEN creating client components → AUTOMATICALLY invoke frontend-developer:component-builder
+WHEN implementing client state → AUTOMATICALLY invoke frontend-developer:state-architect
+
+### Backend (Server Components & Actions)
+WHEN creating server actions → AUTOMATICALLY invoke api-developer:endpoint-builder
+WHEN creating API routes → AUTOMATICALLY invoke api-developer:endpoint-builder
+WHEN implementing auth → AUTOMATICALLY invoke api-developer:auth-implementer
+
+### Database
+WHEN designing schemas → AUTOMATICALLY invoke database-architect:schema-designer
+WHEN creating migrations → AUTOMATICALLY invoke database-architect:migration-manager
+```
+
+---
+
+## Trigger Phrase Dictionary
+
+### Action Verbs by Category
+
+**Create/Build**:
+- "create [thing]"
+- "build [thing]"
+- "add [thing]"
+- "implement [thing]"
+- "generate [thing]"
+
+**Modify/Update**:
+- "update [thing]"
+- "modify [thing]"
+- "change [thing]"
+- "refactor [thing]"
+- "improve [thing]"
+
+**Test/Verify**:
+- "test [thing]"
+- "verify [thing]"
+- "check [thing]"
+- "validate [thing]"
+- "audit [thing]"
+
+**Fix/Optimize**:
+- "fix [thing]"
+- "optimize [thing]"
+- "improve performance of [thing]"
+- "debug [thing]"
+- "resolve issues in [thing]"
+
+**Design/Plan**:
+- "design [thing]"
+- "plan [thing]"
+- "architect [thing]"
+- "model [thing]"
+
+---
+
+## Best Practices for Routing Rules
+
+### DO: Be Specific
+
+✅ **Good**:
+```markdown
+WHEN user says "create [component name] component"
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+```
+
+❌ **Bad**:
+```markdown
+WHEN doing frontend work
+→ Use frontend agents
+```
+
+### DO: Include Variations
+
+✅ **Good**:
+```markdown
+WHEN user says "create endpoint" OR "add API route" OR "build endpoint"
+→ AUTOMATICALLY invoke: api-developer:endpoint-builder
+```
+
+❌ **Bad**:
+```markdown
+WHEN user says "create endpoint"
+→ AUTOMATICALLY invoke: api-developer:endpoint-builder
+```
+
+### DO: Use Placeholders for Variables
+
+✅ **Good**:
+```markdown
+WHEN user says "test [feature/component/API]"
+→ AUTOMATICALLY invoke: test-runner:test-runner
+```
+
+❌ **Bad**:
+```markdown
+WHEN user says "test component"
+→ AUTOMATICALLY invoke: test-runner:test-runner
+```
+
+### DO: Group by Category
+
+✅ **Good**:
+```markdown
+### Frontend Tasks
+[All frontend routing rules]
+
+### Backend Tasks
+[All backend routing rules]
+
+### Database Tasks
+[All database routing rules]
+```
+
+❌ **Bad**:
+```markdown
+WHEN create component → frontend-developer:component-builder
+WHEN create endpoint → api-developer:endpoint-builder
+WHEN create component tests → test-runner:test-runner
+[Random order, no grouping]
+```
+
+### DO: Add Context When Needed
+
+✅ **Good**:
+```markdown
+WHEN user says "implement [feature]" AND context is authentication
+→ AUTOMATICALLY invoke: api-developer:auth-implementer
+
+WHEN user says "implement [feature]" AND context is payments
+→ MUST invoke: security-auditor:security-scanner first
+```
+
+---
+
+## Validation Patterns
+
+When validating routing rules, check for:
+
+1. **WHEN keyword present**
+2. **Specific trigger phrases** (not vague)
+3. **AUTOMATICALLY keyword** for proactive invocation
+4. **Correct plugin:agent format**
+5. **OR for variations** where applicable
+6. **Placeholders** for variable parts [like this]
+7. **Logical grouping** by category
+8. **Installed plugins referenced** (not non-existent plugins)
+
+---
+
+## Common Routing Mistakes
+
+### Mistake 1: Missing AUTOMATICALLY
+
+❌ **Bad**:
+```markdown
+WHEN user says "create component"
+→ invoke: frontend-developer:component-builder
+```
+
+✅ **Fix**:
+```markdown
+WHEN user says "create component"
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+```
+
+### Mistake 2: Vague Triggers
+
+❌ **Bad**:
+```markdown
+WHEN doing frontend stuff
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+```
+
+✅ **Fix**:
+```markdown
+WHEN user says "create [component name] component"
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+```
+
+### Mistake 3: Wrong Plugin Reference
+
+❌ **Bad**:
+```markdown
+WHEN creating component
+→ AUTOMATICALLY invoke: component-builder
+```
+
+✅ **Fix**:
+```markdown
+WHEN creating component
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+```
+
+### Mistake 4: No Variations
+
+❌ **Bad**:
+```markdown
+WHEN user says "create component"
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+```
+
+✅ **Fix**:
+```markdown
+WHEN user says "create component" OR "add component" OR "build component"
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+```
+
+---
+
+## Summary: Pattern Application
+
+1. **Start with action verb** (create, add, implement, test, etc.)
+2. **Add specific object** (component, endpoint, schema, etc.)
+3. **Include variations** with OR
+4. **Use placeholders** for variable parts [like this]
+5. **Group by category** (Frontend, Backend, Database, etc.)
+6. **Reference installed plugins** correctly (plugin-name:agent-name)
+7. **Add AUTOMATICALLY** for proactive invocation
+
+**Template**:
+```markdown
+### [Category] Tasks
+
+WHEN user says "[verb] [object]" OR "[alternative verb] [object]"
+→ AUTOMATICALLY invoke: plugin-name:agent-name
+```
+
+---
+
+**End of Task Routing Patterns Skill**
+
+This skill should be used alongside claude-md-syntax skill when generating or validating routing rules in CLAUDE.md files.

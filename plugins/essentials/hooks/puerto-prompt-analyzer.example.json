@@ -1,0 +1,37 @@
+{
+  "$schema": "Configuration for Puerto Prompt Analyzer Hook v2.0",
+  "minScore": 8,
+  "maxRecommendations": 3,
+  "cacheMinutes": 1,
+  "blacklist": [],
+  "favoriteCategories": [],
+  "showScores": false,
+
+  "_comments": {
+    "minScore": "Minimum score threshold (0-100). Higher = more selective. Default: 8",
+    "maxRecommendations": "Maximum number of plugin recommendations to show. Default: 3",
+    "cacheMinutes": "How long to cache marketplace data in minutes. Default: 1",
+    "blacklist": "Array of plugin names to never recommend. Example: ['plugin-name']",
+    "favoriteCategories": "Array of categories to boost in recommendations. Example: ['frontend', 'backend']",
+    "showScores": "Show relevance scores in output for debugging. Default: false"
+  },
+
+  "_examples": {
+    "conservative": {
+      "minScore": 12,
+      "maxRecommendations": 2,
+      "showScores": false
+    },
+    "exploratory": {
+      "minScore": 5,
+      "maxRecommendations": 5,
+      "showScores": true
+    },
+    "frontend_focused": {
+      "minScore": 8,
+      "maxRecommendations": 3,
+      "favoriteCategories": ["frontend", "ui", "design"],
+      "blacklist": ["backend-specific-plugin"]
+    }
+  }
+}

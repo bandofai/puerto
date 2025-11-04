@@ -1,0 +1,92 @@
+{
+  "name": "puerto",
+  "owner": {
+    "name": "Band of AI"
+  },
+  "plugins": [
+    {
+      "name": "essentials",
+      "source": "./plugins/essentials",
+      "description": "Essential MCP servers and requirements management commands for enhanced Claude Code development workflow",
+      "version": "1.0.0"
+    },
+    {
+      "name": "chrome-devtools",
+      "source": "./plugins/chrome-devtools",
+      "description": "Control and inspect Chrome browsers with full DevTools automation, debugging, and performance analysis",
+      "version": "1.0.0"
+    },
+    {
+      "name": "figma",
+      "source": "./plugins/figma",
+      "description": "Generate code from Figma designs, extract components, and maintain design-code consistency",
+      "version": "1.0.0"
+    },
+    {
+      "name": "subagent-creator",
+      "source": "./plugins/subagent-creator",
+      "description": "Expert subagent architect with comprehensive skill library for creating production-ready, skill-aware Claude Code subagents",
+      "version": "1.0.0"
+    },
+    {
+      "name": "claude-md-master",
+      "source": "./plugins/claude-md-master",
+      "description": "Master CLAUDE.md configuration specialist. Creates, validates, and optimizes CLAUDE.md files with Puerto marketplace integration. Helps plugin developers generate production-ready CLAUDE.md with automatic task routing rules.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "cloudflare",
+      "source": "./plugins/cloudflare",
+      "description": "Cloudflare Pages deployment and log monitoring using Wrangler CLI",
+      "version": "1.0.0"
+    },
+    {
+      "name": "orchestrator",
+      "source": "./plugins/orchestrator",
+      "description": "Master coordinator for complex multi-agent workflows. Intelligently decomposes tasks, creates execution plans, and coordinates subagents for optimal parallel execution.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "design",
+      "source": "./plugins/design",
+      "description": "User-centered design team with 4 specialized roles covering UX research, writing, accessibility, and creative direction",
+      "version": "1.0.0"
+    },
+    {
+      "name": "sales",
+      "source": "./plugins/sales",
+      "description": "Sales and customer success team with 3 specialized roles covering sales, customer success, and partnerships",
+      "version": "1.0.0"
+    },
+    {
+      "name": "product",
+      "source": "./plugins/product",
+      "description": "Product management and strategy team with 4 specialized roles covering product management, project management, business analysis, and data analytics",
+      "version": "1.0.0"
+    },
+    {
+      "name": "operations",
+      "source": "./plugins/operations",
+      "description": "Operations and administration team with 3 specialized roles covering operations, HR, and office management",
+      "version": "1.0.0"
+    },
+    {
+      "name": "marketing",
+      "source": "./plugins/marketing",
+      "description": "Full-service marketing team with 5 specialized roles covering SEO, content, social media, and growth",
+      "version": "1.0.0"
+    },
+    {
+      "name": "leadership",
+      "source": "./plugins/leadership",
+      "description": "Strategic leadership providing vision, positioning, and executive guidance",
+      "version": "1.0.0"
+    },
+    {
+      "name": "engineering",
+      "source": "./plugins/engineering",
+      "description": "Full-stack engineering team with 7 specialized roles covering frontend, backend, mobile, data, DevOps, and QA",
+      "version": "1.0.0"
+    }
+  ]
+}

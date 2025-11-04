@@ -1,0 +1,985 @@
+# Configuring CLAUDE.md for Your Project
+
+A comprehensive guide for users who install Puerto plugins to optimize Claude Code for their projects.
+
+## Why CLAUDE.md Matters
+
+When you install Puerto department plugins (like engineering, design, or marketing), Claude Code gains access to specialized agents. However, **Claude won't automatically know WHEN to use these agents unless you guide it**.
+
+`CLAUDE.md` in your project root acts as an instruction manual that:
+- Tells Claude which plugins you've installed
+- Routes specific tasks to appropriate agents automatically
+- Provides project-specific context and patterns
+- Ensures consistent code quality
+
+**The Result**: Claude proactively uses the right expert agents without you having to manually specify them every time.
+
+---
+
+## Need Help Creating CLAUDE.md?
+
+**NEW**: The **claude-md-master** plugin can help you create, validate, and optimize CLAUDE.md files automatically!
+
+```bash
+# Install the plugin
+/plugin install claude-md-master
+
+# Then ask Claude to help
+"Create a CLAUDE.md for my project"  # Interactive generation
+"Validate my CLAUDE.md"              # Check best practices
+"Update CLAUDE.md with my installed plugins"  # Auto-integrate plugins
+```
+
+**What it does**:
+- 🤖 **Interactive Generation**: Q&A approach to create complete CLAUDE.md from scratch
+- ✅ **Validation**: Check best practices and get specific fixes
+- 🔌 **Plugin Discovery**: Automatically scan and integrate installed Puerto plugins
+- 📝 **Smart Routing**: Generate WHEN/AUTOMATICALLY rules for all your plugins
+
+See [claude-md-master plugin README](../plugins/claude-md-master/README.md) for details.
+
+---
+
+## Quick Start Template
+
+Create `CLAUDE.md` in your project root:
+
+```markdown
+# Project Name
+
+## Project Type
+[Brief description: e.g., "React e-commerce SPA with Node.js API"]
+
+## Tech Stack
+- Frontend: [React 18, Tailwind CSS, React Router]
+- Backend: [Node.js, Express, PostgreSQL]
+- [Other key technologies]
+
+## Installed Puerto Plugins
+- engineering (agents: frontend-engineer, backend-engineer, data-engineer, devops-engineer, qa-engineer, mobile-engineer, security-engineer)
+- design (agents: ux-researcher, ux-writer, accessibility-specialist, visual-designer)
+- [List other installed plugins]
+
+## Automatic Task Routing
+
+### Frontend Tasks
+WHEN creating React components → AUTOMATICALLY invoke engineering/frontend-engineer
+WHEN implementing state management → AUTOMATICALLY invoke engineering/frontend-engineer
+WHEN styling components → AUTOMATICALLY invoke engineering/frontend-engineer
+
+### Backend Tasks
+WHEN creating API endpoints → AUTOMATICALLY invoke engineering/backend-engineer
+WHEN implementing authentication → AUTOMATICALLY invoke engineering/backend-engineer
+
+### [Add sections for other plugins you've installed]
+
+## Project Patterns
+
+### Component Structure
+- Components live in: `src/components/`
+- Use Tailwind for styling (no CSS modules)
+- Follow existing pattern in `src/components/ProductCard.tsx`
+
+### API Conventions
+- REST endpoints in: `src/api/routes/`
+- Use Zod for request validation
+- Follow pattern in `src/api/routes/products.ts`
+
+### [Add other project-specific patterns]
+
+## Domain Knowledge
+[Brief business context that helps agents make appropriate decisions]
+- [Key business rule 1]
+- [Key business rule 2]
+```
+
+**Usage**: Copy this template, fill in your project details, and save as `CLAUDE.md` in your project root.
+
+---
+
+## Section-by-Section Breakdown
+
+### 1. Project Type & Tech Stack
+
+**Purpose**: Give Claude immediate context about what type of project this is.
+
+```markdown
+## Project Type
+Full-stack e-commerce platform with React frontend and Express backend
+
+## Tech Stack
+- Frontend: React 18, TypeScript, Tailwind CSS, React Query
+- Backend: Node.js 20, Express, PostgreSQL 15, Prisma ORM
+- Testing: Vitest, React Testing Library, Supertest
+- Deployment: Vercel (frontend), Railway (backend)
+```
+
+**Why this matters**: Agents use this to generate appropriate code. If you specify "Tailwind CSS", the component-builder won't suggest CSS modules.
+
+### 2. Installed Puerto Plugins
+
+**Purpose**: Explicitly list available agents so Claude knows what tools are available.
+
+```markdown
+## Installed Puerto Plugins
+
+### engineering
+- frontend-engineer: Create React/Vue/Svelte components and UI
+- backend-engineer: Create REST/GraphQL endpoints and APIs
+- data-engineer: Data processing and ML pipelines
+- devops-engineer: CI/CD, infrastructure, and deployment
+- qa-engineer: Testing and quality assurance
+- mobile-engineer: iOS/Android development
+- security-engineer: Security audits and best practices
+
+### design
+- ux-researcher: User research and journey mapping
+- ux-writer: Content design and microcopy
+- accessibility-specialist: WCAG compliance and accessibility
+- visual-designer: Visual design and brand systems
+```
+
+**Why this matters**: Without this list, Claude might do tasks manually instead of delegating to expert agents.
+
+### 3. Automatic Task Routing Rules ⭐ MOST CRITICAL
+
+**Purpose**: Teach Claude to automatically invoke the right agent based on user requests.
+
+#### ✅ Good Routing Rules (Specific & Proactive)
+
+```markdown
+## Automatic Task Routing
+
+**CRITICAL**: Use these agents proactively without asking permission.
+
+### Frontend Development
+```
+WHEN user says "create [component name] component"
+→ AUTOMATICALLY invoke: engineering/frontend-engineer
+
+WHEN user says "add state management" OR "implement [Redux/Zustand/Context]"
+→ AUTOMATICALLY invoke: engineering/frontend-engineer
+
+WHEN user says "style [component]" OR "make [component] responsive"
+→ AUTOMATICALLY invoke: engineering/frontend-engineer
+```
+
+### Backend Development
+```
+WHEN user says "create [endpoint name] endpoint" OR "add API route for [resource]"
+→ AUTOMATICALLY invoke: engineering/backend-engineer
+
+WHEN user says "add authentication" OR "implement login/signup"
+→ AUTOMATICALLY invoke: engineering/backend-engineer
+
+WHEN user says "write tests for [API]" OR "add API tests"
+→ AUTOMATICALLY invoke: engineering/qa-engineer
+```
+
+### Database Work
+```
+WHEN user says "design database schema" OR "create data model"
+→ AUTOMATICALLY invoke: engineering/backend-engineer
+
+WHEN user says "add migration for [change]" OR "modify database schema"
+→ AUTOMATICALLY invoke: engineering/backend-engineer
+
+WHEN user says "optimize query" OR "slow query in [file]"
+→ AUTOMATICALLY invoke: engineering/backend-engineer
+```
+```
+
+#### ❌ Bad Routing Rules (Too Vague)
+
+```markdown
+## Task Routing
+- Use frontend agents for frontend work
+- Use backend agents for backend work
+```
+
+**Problem**: Not specific enough. Claude won't know WHEN to use which agent.
+
+### 4. Project Patterns
+
+**Purpose**: Ensure agents generate code that matches your existing conventions.
+
+```markdown
+## Project Patterns
+
+### File Organization
+```
+src/
+├── components/          # React components (one per file)
+│   ├── ProductCard.tsx  # Example: follow this structure
+│   └── [ComponentName].tsx
+├── hooks/              # Custom React hooks
+├── api/
+│   ├── routes/         # Express route handlers
+│   └── middleware/     # Express middleware
+├── services/           # Business logic
+└── utils/             # Helper functions
+```
+
+### Component Patterns
+```typescript
+// ✅ Follow this pattern (from ProductCard.tsx)
+import React from 'react';
+
+interface ProductCardProps {
+  // Props with JSDoc comments
+}
+
+export function ProductCard({ ...props }: ProductCardProps) {
+  // Component logic
+  return (
+    <div className="...">  {/* Tailwind classes */}
+      {/* Component JSX */}
+    </div>
+  );
+}
+```
+
+**When creating new components**:
+- Use named exports (not default)
+- TypeScript interfaces for props
+- Tailwind for styling
+- Follow existing component structure
+
+### API Patterns
+```typescript
+// ✅ Follow this pattern (from src/api/routes/products.ts)
+import { Router } from 'express';
+import { z } from 'zod';
+import { validateRequest } from '../middleware/validation';
+
+const router = Router();
+
+// Zod schema for validation
+const createProductSchema = z.object({
+  name: z.string(),
+  price: z.number(),
+});
+
+// Route handler with validation
+router.post('/products', validateRequest(createProductSchema), async (req, res) => {
+  // Handler logic
+});
+
+export default router;
+```
+
+**When creating new endpoints**:
+- Use Zod for request validation
+- Async/await for handlers
+- Consistent error handling middleware
+- Follow REST conventions
+
+### Testing Patterns
+```typescript
+// ✅ Component tests use React Testing Library
+import { render, screen } from '@testing-library/react';
+import { ProductCard } from './ProductCard';
+
+describe('ProductCard', () => {
+  it('renders product information', () => {
+    // Test implementation
+  });
+});
+
+// ✅ API tests use Supertest
+import request from 'supertest';
+import app from '../app';
+
+describe('POST /products', () => {
+  it('creates a new product', async () => {
+    // Test implementation
+  });
+});
+```
+
+### Database Patterns
+- Use Prisma ORM for all database access
+- Migrations live in: `prisma/migrations/`
+- Follow naming convention: `YYYYMMDD_description`
+- Always include rollback logic in migrations
+```
+
+**Why this matters**: Agents read these patterns and generate code that looks like it was written by your team.
+
+### 5. Domain Knowledge
+
+**Purpose**: Business context that helps agents make domain-appropriate decisions.
+
+```markdown
+## Domain Knowledge
+
+### E-commerce Business Rules
+- **Products have variants**: Size, color, material (stored as separate SKUs)
+- **Pricing calculation**: Base price + variant price + tax (by region)
+- **Inventory**: Tracked per variant, not per product
+- **Cart lifetime**: 24 hours for guest users, 30 days for authenticated
+- **Payment processing**: Stripe for cards, PayPal for alternative payment
+
+### Critical Constraints
+- All prices stored in cents (integer) to avoid floating-point errors
+- Product images must be optimized (<200KB) before storage
+- PII (personally identifiable information) must not be logged
+- GDPR compliance required: data deletion within 30 days of request
+
+### Integration Points
+- Stripe webhooks handle payment confirmations (see `src/webhooks/stripe.ts`)
+- SendGrid for transactional emails (see `src/services/email.ts`)
+- Cloudinary for image storage and transformation
+```
+
+**Why this matters**: Without this context, an agent might create a pricing system that uses floats (causing rounding errors) or log user emails (violating privacy).
+
+---
+
+## Complete Examples by Project Type
+
+### Example 1: React SPA with REST API
+
+**Scenario**: E-commerce frontend in React, backend in Node.js/Express.
+
+**Plugins Installed**: `engineering`, `design`
+
+<details>
+<summary>Click to see complete CLAUDE.md</summary>
+
+```markdown
+# ShopHub - E-commerce Platform
+
+## Project Type
+React single-page application (SPA) with Node.js REST API backend
+
+## Tech Stack
+- Frontend: React 18, TypeScript, Tailwind CSS, React Query, React Router
+- Backend: Node.js 20, Express, PostgreSQL 15, Prisma ORM
+- Testing: Vitest, React Testing Library, Supertest
+- Deployment: Vercel (frontend), Railway (backend)
+
+## Installed Puerto Plugins
+- engineering (frontend-engineer, backend-engineer, qa-engineer)
+- design (ux-researcher, accessibility-specialist)
+
+## Automatic Task Routing
+
+### Frontend Tasks
+WHEN creating components → AUTOMATICALLY invoke engineering/frontend-engineer
+WHEN implementing state → AUTOMATICALLY invoke engineering/frontend-engineer
+WHEN styling → AUTOMATICALLY invoke engineering/frontend-engineer
+
+### Backend Tasks
+WHEN creating endpoints → AUTOMATICALLY invoke engineering/backend-engineer
+WHEN adding authentication → AUTOMATICALLY invoke engineering/backend-engineer
+
+### Database Tasks
+WHEN designing schemas → AUTOMATICALLY invoke engineering/backend-engineer
+
+## Project Patterns
+
+### Component Structure
+- Location: `src/components/[ComponentName].tsx`
+- Styling: Tailwind classes only (no CSS modules)
+- Props: TypeScript interfaces with JSDoc
+- Exports: Named exports (not default)
+- Example: See `src/components/ProductCard.tsx`
+
+### API Structure
+- Routes: `src/api/routes/[resource].ts`
+- Validation: Zod schemas
+- Auth: JWT middleware in `src/api/middleware/auth.ts`
+- Example: See `src/api/routes/products.ts`
+
+### State Management
+- Global state: React Query for server state
+- Local state: useState/useReducer
+- Auth state: Custom useAuth hook
+- No Redux (explicitly avoided)
+
+## Domain Knowledge
+- Products have variants (size, color) as separate SKUs
+- Prices in cents (integer) to avoid floating-point errors
+- Cart expires after 24 hours (guest) or 30 days (authenticated)
+- Payment via Stripe webhooks
+- GDPR compliance: no PII in logs
+```
+
+</details>
+
+### Example 2: Node.js Microservices
+
+**Scenario**: Backend-only microservices architecture.
+
+**Plugins Installed**: `engineering`, `operations`
+
+<details>
+<summary>Click to see complete CLAUDE.md</summary>
+
+```markdown
+# PaymentProcessor - Microservices Platform
+
+## Project Type
+Node.js microservices architecture with event-driven communication
+
+## Tech Stack
+- Runtime: Node.js 20, TypeScript
+- Framework: Express, NestJS (auth service)
+- Message Queue: RabbitMQ
+- Databases: PostgreSQL (transactions), Redis (cache), MongoDB (logs)
+- Testing: Jest, Supertest
+- Deployment: Kubernetes (AWS EKS)
+
+## Installed Puerto Plugins
+- engineering (backend-engineer, devops-engineer, qa-engineer, security-engineer)
+- operations (project-manager, process-optimizer)
+
+## Automatic Task Routing
+
+### API Development
+WHEN creating endpoints → AUTOMATICALLY invoke engineering/backend-engineer
+WHEN implementing auth → AUTOMATICALLY invoke engineering/backend-engineer
+WHEN writing API tests → AUTOMATICALLY invoke engineering/qa-engineer
+
+### Architecture
+WHEN designing APIs → AUTOMATICALLY invoke engineering/backend-engineer
+WHEN designing schemas → AUTOMATICALLY invoke engineering/backend-engineer
+WHEN designing system architecture → AUTOMATICALLY invoke engineering/backend-engineer
+
+### Database
+WHEN creating migrations → AUTOMATICALLY invoke engineering/backend-engineer
+WHEN optimizing queries → AUTOMATICALLY invoke engineering/backend-engineer
+
+### DevOps
+WHEN setting up CI/CD → AUTOMATICALLY invoke engineering/devops-engineer
+WHEN deploying → AUTOMATICALLY invoke engineering/devops-engineer
+WHEN creating infrastructure → AUTOMATICALLY invoke engineering/devops-engineer
+
+## Project Patterns
+
+### Service Structure
+```
+services/
+├── auth-service/          # NestJS service
+├── payment-service/       # Express service
+├── notification-service/  # Express service
+└── shared/               # Shared libraries
+```
+
+### API Conventions
+- All services expose: `/health`, `/metrics`, `/ready`
+- OpenAPI spec required for all services
+- REST for sync, RabbitMQ for async
+- Correlation IDs for request tracing
+
+### Event Patterns
+```typescript
+// Publisher pattern
+await messageQueue.publish('payment.processed', {
+  correlationId: req.id,
+  payload: { orderId, amount, status }
+});
+
+// Consumer pattern
+messageQueue.subscribe('payment.processed', async (message) => {
+  // Handle event
+});
+```
+
+### Database Patterns
+- PostgreSQL for transactional data (ACID required)
+- MongoDB for append-only logs
+- Redis for caching and session storage
+- Migrations: Knex.js for PostgreSQL
+- Connection pooling: 20 max connections per service
+
+## Domain Knowledge
+- Payment processing: PCI DSS compliance required
+- Idempotency: All payment endpoints must be idempotent (use idempotency keys)
+- Event ordering: Use RabbitMQ with consistent hash exchange
+- Retry logic: Exponential backoff with max 3 retries
+- Circuit breaker: Fail fast after 5 consecutive errors
+```
+
+</details>
+
+### Example 3: Full-Stack Next.js App
+
+**Scenario**: Next.js with API routes and PostgreSQL.
+
+**Plugins Installed**: `frontend-developer`, `api-developer`, `database-architect`
+
+<details>
+<summary>Click to see complete CLAUDE.md</summary>
+
+```markdown
+# TaskMaster - Project Management SaaS
+
+## Project Type
+Full-stack Next.js 14 application with App Router and server actions
+
+## Tech Stack
+- Framework: Next.js 14 (App Router), TypeScript, React 18
+- Styling: Tailwind CSS, Shadcn UI components
+- Database: PostgreSQL 15 with Drizzle ORM
+- Auth: NextAuth.js v5
+- Deployment: Vercel
+
+## Installed Puerto Plugins
+- frontend-developer (component-builder, state-architect, style-implementer)
+- api-developer (endpoint-builder, auth-implementer)
+- database-architect (schema-designer, migration-manager, query-optimizer)
+
+## Automatic Task Routing
+
+### Frontend
+WHEN creating components → AUTOMATICALLY invoke frontend-developer:component-builder
+WHEN implementing client state → AUTOMATICALLY invoke frontend-developer:state-architect
+
+### Backend
+WHEN creating API routes → AUTOMATICALLY invoke api-developer:endpoint-builder
+WHEN creating server actions → AUTOMATICALLY invoke api-developer:endpoint-builder
+WHEN implementing auth → AUTOMATICALLY invoke api-developer:auth-implementer
+
+### Database
+WHEN designing schemas → AUTOMATICALLY invoke database-architect:schema-designer
+WHEN creating migrations → AUTOMATICALLY invoke database-architect:migration-manager
+WHEN optimizing queries → AUTOMATICALLY invoke database-architect:query-optimizer
+
+## Project Patterns
+
+### File Structure (App Router)
+```
+app/
+├── (auth)/            # Auth group
+│   ├── login/
+│   └── signup/
+├── (dashboard)/       # Protected group
+│   ├── projects/
+│   └── tasks/
+├── api/              # API routes
+└── actions/          # Server actions
+components/
+├── ui/               # Shadcn components
+└── [feature]/        # Feature components
+```
+
+### Component Patterns
+- Use Shadcn UI components as base
+- Server Components by default
+- Client Components only when needed (mark with 'use client')
+- Co-locate components with routes when route-specific
+
+### Server Actions Pattern
+```typescript
+// app/actions/tasks.ts
+'use server';
+
+import { revalidatePath } from 'next/cache';
+import { auth } from '@/lib/auth';
+
+export async function createTask(formData: FormData) {
+  const session = await auth();
+  if (!session) throw new Error('Unauthorized');
+
+  // Business logic
+
+  revalidatePath('/dashboard/tasks');
+}
+```
+
+### Database Patterns
+- Drizzle ORM for type-safe queries
+- Schemas in: `db/schema.ts`
+- Migrations in: `db/migrations/`
+- Use transactions for multi-table operations
+- Index frequently queried columns
+
+## Domain Knowledge
+- Multi-tenancy: All data scoped to workspaceId
+- Permissions: Role-based (owner, admin, member)
+- Real-time: Use Supabase Realtime for live updates
+- Webhooks: Stripe for billing, Slack for notifications
+- Data retention: Soft delete with 30-day retention before hard delete
+```
+
+</details>
+
+---
+
+## Understanding the Cascade Effect
+
+**Important**: `CLAUDE.md` is read at multiple levels, creating consistency throughout the development process.
+
+### How It Works
+
+```
+User Request
+    ↓
+1. Claude reads CLAUDE.md
+    - Identifies project type
+    - Checks routing rules
+    - Selects appropriate agent
+    ↓
+2. Claude invokes agent (e.g., frontend-developer:component-builder)
+    ↓
+3. Agent reads CLAUDE.md
+    - Learns project patterns
+    - Understands domain context
+    - Follows conventions
+    ↓
+4. Agent generates code matching project patterns
+```
+
+### Example Flow
+
+**User says**: "Create a product filter component"
+
+**Step 1**: Claude reads your CLAUDE.md:
+- Project type: React e-commerce SPA
+- Routing rule: "create component" → frontend-developer:component-builder
+- Decision: Invoke the component-builder agent
+
+**Step 2**: Agent is invoked and reads CLAUDE.md:
+- Components go in: `src/components/`
+- Use: Tailwind for styling
+- Follow pattern in: `ProductCard.tsx`
+- Business rule: Products have variants
+
+**Step 3**: Agent generates:
+```typescript
+// src/components/ProductFilter.tsx
+import React from 'react';
+
+interface ProductFilterProps {
+  onFilterChange: (filters: FilterState) => void;
+  variants: string[];  // Agent knows about variants from domain knowledge
+}
+
+export function ProductFilter({ onFilterChange, variants }: ProductFilterProps) {
+  // Implementation with Tailwind classes
+  return <div className="...">...</div>;
+}
+```
+
+**Result**: Code that perfectly matches your project conventions without manual intervention.
+
+---
+
+## Common Mistakes & How to Fix Them
+
+### ❌ Mistake 1: Vague Routing Rules
+
+```markdown
+## Task Routing
+Use frontend agents for frontend work
+```
+
+**Problem**: Not specific enough. Claude won't know when to invoke agents.
+
+**✅ Fix**: Be explicit and specific
+
+```markdown
+## Automatic Task Routing
+
+WHEN user says "create [component name] component" OR "add [component name]"
+→ AUTOMATICALLY invoke: frontend-developer:component-builder
+
+WHEN user says "style [component]" OR "make responsive"
+→ AUTOMATICALLY invoke: frontend-developer:style-implementer
+```
+
+### ❌ Mistake 2: Not Listing Installed Plugins
+
+```markdown
+# My Project
+
+[Goes straight to patterns without listing plugins]
+```
+
+**Problem**: Claude doesn't know which agents are available.
+
+**✅ Fix**: Always list installed plugins
+
+```markdown
+## Installed Puerto Plugins
+- frontend-developer
+- api-developer
+- database-architect
+
+[Then routing rules that reference these plugins]
+```
+
+### ❌ Mistake 3: Missing Project Patterns
+
+```markdown
+## Project Patterns
+We use React and Tailwind
+```
+
+**Problem**: Too vague. Agents don't know file structure, naming conventions, etc.
+
+**✅ Fix**: Provide concrete examples
+
+```markdown
+## Project Patterns
+
+### Component Structure
+- Location: `src/components/[Name].tsx`
+- Styling: Tailwind classes (see ProductCard.tsx for example)
+- Props: TypeScript interfaces
+- Example:
+```typescript
+// Follow this pattern from ProductCard.tsx
+export function ProductCard({ title, price }: Props) {
+  return <div className="rounded-lg shadow-md">...</div>;
+}
+```
+```
+
+### ❌ Mistake 4: Information Overload
+
+```markdown
+[50 pages of detailed documentation about every aspect of the project]
+```
+
+**Problem**: Too much information. Claude gets overwhelmed and misses key points.
+
+**✅ Fix**: Be concise and focus on essentials
+
+```markdown
+## Key Points
+- Component location: `src/components/`
+- Styling: Tailwind only
+- API routes: `src/api/routes/`
+- Example component: See ProductCard.tsx
+- Example API: See src/api/routes/products.ts
+
+[Focus on most important patterns, reference files for details]
+```
+
+### ❌ Mistake 5: Outdated Information
+
+```markdown
+## Tech Stack
+- React 16
+- Redux for state
+
+[Project has since upgraded to React 18 and removed Redux]
+```
+
+**Problem**: Agents generate code for the wrong stack.
+
+**✅ Fix**: Keep CLAUDE.md maintained
+
+- Update when upgrading libraries
+- Update when adding/removing plugins
+- Update when changing patterns
+- Review quarterly for accuracy
+
+---
+
+## Testing Your CLAUDE.md
+
+### Verification Checklist
+
+After creating your CLAUDE.md, test it:
+
+1. **Test Routing**: Ask Claude to perform tasks and verify it invokes the right agents
+   ```
+   You: "Create a UserProfile component"
+   Expected: Claude automatically invokes frontend-developer:component-builder
+   ```
+
+2. **Test Patterns**: Check that generated code follows your conventions
+   ```
+   - Is the file in the right location?
+   - Does it use your styling approach?
+   - Does it follow your naming conventions?
+   ```
+
+3. **Test Domain Knowledge**: Verify agents understand business rules
+   ```
+   You: "Create a pricing calculator"
+   Expected: Agent uses cents (integer) if your CLAUDE.md specified this
+   ```
+
+### Red Flags
+
+If you see these, your CLAUDE.md needs improvement:
+
+- ❌ Claude asks "Should I use the X agent?" (routing rules not clear)
+- ❌ Generated code uses wrong styling approach (patterns not specific)
+- ❌ Files created in wrong locations (file structure not documented)
+- ❌ Code violates business rules (domain knowledge missing)
+
+---
+
+## Maintenance & Best Practices
+
+### Keep It Updated
+
+```markdown
+## Change Log
+- 2025-11-01: Added frontend-developer plugin
+- 2025-10-15: Migrated from Redux to React Query
+- 2025-09-20: Upgraded to React 18
+```
+
+Track changes so you know what's current.
+
+### Version Control
+
+Commit CLAUDE.md to your repository:
+```bash
+git add CLAUDE.md
+git commit -m "docs: add CLAUDE.md with routing rules for Puerto plugins"
+```
+
+### Team Alignment
+
+- Share CLAUDE.md in team onboarding
+- Review in code reviews
+- Update during architecture decisions
+- Discuss in sprint planning
+
+### Iterative Improvement
+
+1. **Start simple**: Basic routing rules and patterns
+2. **Observe**: See how Claude uses it
+3. **Refine**: Add specificity where Claude gets confused
+4. **Expand**: Add domain knowledge as needed
+
+---
+
+## Advanced Tips
+
+### Tip 1: Context-Specific Routing
+
+Route differently based on file location:
+
+```markdown
+## Context-Specific Routing
+
+WHEN working in `src/admin/` directory
+→ Use admin-specific patterns (verbose logging, strict validation)
+
+WHEN working in `src/public-api/` directory
+→ Use public API patterns (rate limiting, thorough docs)
+```
+
+### Tip 2: Conditional Plugin Usage
+
+```markdown
+## Conditional Agent Usage
+
+WHEN implementing payment features
+→ MUST invoke: api-developer:auth-implementer (for PCI compliance)
+→ MUST add: Audit logging
+
+WHEN implementing user data features
+→ MUST consider: GDPR compliance (no PII in logs)
+```
+
+### Tip 3: Reference External Docs
+
+```markdown
+## Reference Documentation
+
+For API design patterns: See `docs/api-guidelines.md`
+For component library: See Storybook at `http://localhost:6006`
+For database schema: See ER diagram at `docs/schema.png`
+```
+
+Agents can read these files for deeper context.
+
+### Tip 4: Plugin Combinations
+
+```markdown
+## Complex Task Routing
+
+WHEN user says "create new feature with [frontend + backend]"
+→ First invoke: backend-architect:system-architect (design architecture)
+→ Then invoke: frontend-developer:component-builder (build UI)
+→ Then invoke: api-developer:endpoint-builder (build API)
+→ Then invoke: database-architect:schema-designer (design schema)
+
+This ensures proper architecture before implementation.
+```
+
+---
+
+## Troubleshooting
+
+### Problem: Claude doesn't invoke agents automatically
+
+**Diagnosis**: Routing rules are too vague or missing
+
+**Solution**: Make rules more explicit with WHEN/AUTOMATICALLY keywords
+
+### Problem: Generated code doesn't match project style
+
+**Diagnosis**: Project patterns not documented or not specific enough
+
+**Solution**: Add concrete examples with code snippets
+
+### Problem: Agents make inappropriate decisions
+
+**Diagnosis**: Missing domain knowledge
+
+**Solution**: Add business context section explaining constraints
+
+### Problem: Claude asks too many clarifying questions
+
+**Diagnosis**: CLAUDE.md has ambiguity
+
+**Solution**: Review and clarify patterns, add examples
+
+---
+
+## Getting Help
+
+### Within Your Project
+1. Review existing code for patterns
+2. Check if CLAUDE.md reflects actual practices
+3. Test routing with simple tasks first
+
+### Puerto Documentation
+- Plugin documentation: See each plugin's README
+- Agent descriptions: Check `.claude-plugin/plugin.json`
+- Examples: Review other users' public CLAUDE.md files
+
+### Community
+- GitHub Issues: Report problems or ask questions
+- Discussions: Share your CLAUDE.md configurations
+- Examples Repository: See real-world CLAUDE.md files
+
+---
+
+## Summary
+
+### Key Takeaways
+
+1. **CLAUDE.md guides agent selection** - Without it, Claude won't automatically use your installed plugins
+
+2. **Be specific in routing rules** - Use WHEN/AUTOMATICALLY format with concrete task descriptions
+
+3. **Document patterns with examples** - Show actual code from your project that agents should follow
+
+4. **Include domain knowledge** - Business context helps agents make appropriate decisions
+
+5. **Keep it maintained** - Update when you change tech stack or patterns
+
+6. **Test and iterate** - Start simple, observe behavior, refine based on results
+
+### Next Steps
+
+1. Create `CLAUDE.md` in your project root
+2. Copy the Quick Start Template
+3. Fill in your project specifics
+4. Test with a simple task
+5. Refine based on results
+6. Share with your team
+
+With a well-configured `CLAUDE.md`, Claude Code will feel like a team member who knows your project inside and out, automatically using the right expert agents for every task!

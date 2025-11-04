@@ -1,0 +1,27 @@
+{
+  "name": "claude-md-master",
+  "version": "1.0.0",
+  "description": "Master CLAUDE.md configuration specialist. Creates, validates, and optimizes CLAUDE.md files with Puerto marketplace integration. Helps plugin developers generate production-ready CLAUDE.md with automatic task routing rules.",
+  "agents": [
+    "./agents/claude-md-generator.md",
+    "./agents/claude-md-validator.md",
+    "./agents/marketplace-integrator.md"
+  ],
+  "skills": [
+    "./skills/claude-md-syntax/SKILL.md",
+    "./skills/task-routing-patterns/SKILL.md",
+    "./skills/marketplace-discovery/SKILL.md"
+  ],
+  "author": {
+    "name": "Puerto Plugin Collection"
+  },
+  "keywords": [
+    "claude-md",
+    "configuration",
+    "task-routing",
+    "marketplace",
+    "plugin-development",
+    "automation",
+    "documentation"
+  ]
+}

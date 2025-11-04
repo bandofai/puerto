@@ -1,0 +1,28 @@
+{
+  "name": "puerto",
+  "version": "1.0.0",
+  "description": "A curated marketplace of Claude Code plugins",
+  "main": "scripts/generate-catalog.js",
+  "scripts": {
+    "validate": "node scripts/validate-plugin.js",
+    "generate-catalog": "node scripts/generate-catalog.js",
+    "validate-all": "for dir in plugins/*/; do echo \"Validating $dir...\"; node scripts/validate-plugin.js \"$dir\" || exit 1; done; echo 'All plugins validated successfully!'",
+    "test": "npm run validate-all && npm run generate-catalog"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bandofai/puerto.git"
+  },
+  "keywords": [
+    "claude-code",
+    "plugins",
+    "marketplace",
+    "claude",
+    "extensions"
+  ],
+  "author": "Tomas Kavka <iam@tomaskavka.cz>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

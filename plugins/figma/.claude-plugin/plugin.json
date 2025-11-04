@@ -1,0 +1,10 @@
+{
+  "name": "figma",
+  "version": "1.0.0",
+  "description": "Generate code from Figma designs, extract components, and maintain design-code consistency",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": ["figma", "design", "code-generation", "ui", "components"],
+  "license": "MIT"
+}

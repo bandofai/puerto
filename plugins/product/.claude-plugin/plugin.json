@@ -1,0 +1,20 @@
+{
+  "name": "product",
+  "description": "Product management and strategy team with 4 specialized roles covering product management, project management, business analysis, and data analytics",
+  "version": "1.0.0",
+  "author": {
+    "name": "Puerto"
+  },
+  "agents": [
+    "./agents/chief-product-officer.md",
+    "./agents/project-manager.md",
+    "./agents/business-analyst.md",
+    "./agents/data-analyst.md"
+  ],
+  "skills": [
+    "./skills/product-management",
+    "./skills/project-management",
+    "./skills/business-analysis",
+    "./skills/data-analytics"
+  ]
+}
