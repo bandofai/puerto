@@ -214,6 +214,50 @@ CLAUDE.md improves through use:
 3. **Add sparingly:** Only document repeated friction points
 4. **Prune regularly:** Remove outdated or unused content
 
+## Post-Task Maintenance
+
+**After completing significant tasks, update CLAUDE.md:**
+
+### What to Add
+
+| Trigger | Add to CLAUDE.md |
+|---------|------------------|
+| Claude used wrong command | Correct command in Quick Start |
+| Claude broke a pattern | Pattern in Code Standards |
+| Claude missed a gotcha | Gotcha in Critical Rules |
+| New workflow established | Steps in Common Commands |
+| Documentation outdated | Updated paths/commands |
+
+### What to Update
+
+- **New dependencies** - Add install commands
+- **New scripts** - Document in commands table
+- **Architecture changes** - Update directory descriptions
+- **Deprecated patterns** - Remove or mark as legacy
+
+### Maintenance Checklist
+
+After each significant task:
+
+- [ ] Did Claude struggle with anything? → Document it
+- [ ] Did I discover a new pattern? → Add to Code Standards
+- [ ] Did commands change? → Update Quick Start
+- [ ] Is anything now outdated? → Remove it
+
+### Learn from Mistakes
+
+When Claude makes errors:
+
+```markdown
+## Critical Rules
+
+**MUST NOT:**
+- Use `npm install` (breaks pnpm lockfile)  ← Added after Claude broke deps
+- Import from `@/old-path` (migrated to `@/new-path`)  ← Added after refactor
+```
+
+**Golden Rule:** If you corrected Claude, future Claude should know too.
+
 ## Advanced Patterns
 
 ### Machine-Readable State
