@@ -1,0 +1,34 @@
+{
+  "serena": {
+    "command": "uvx",
+    "args": [
+      "--from",
+      "git+https://github.com/oraios/serena",
+      "serena",
+      "start-mcp-server",
+      "--context",
+      "ide-assistant",
+      "--enable-web-dashboard",
+      "False",
+      "--project",
+      "{{CWD}}"
+    ],
+    "description": "Semantic code retrieval and editing with LSP-powered symbol navigation"
+  },
+  "context7": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "@upstash/context7-mcp"
+    ],
+    "description": "Up-to-date code documentation and examples from current sources"
+  },
+  "mcp-sequentialthinking-tools": {
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-sequentialthinking-tools"
+    ],
+    "description": "Structured, step-by-step problem-solving and reasoning"
+  }
+}

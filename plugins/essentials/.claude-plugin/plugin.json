@@ -1,0 +1,10 @@
+{
+  "name": "essentials",
+  "version": "1.1.0",
+  "description": "Essential MCP servers, requirements management, and intelligent instruction analysis for enhanced Claude Code development workflow",
+  "author": {
+    "name": "bandofai"
+  },
+  "keywords": ["mcp", "serena", "context7", "mcp-sequentialthinking-tools", "requirements", "brainstorming", "implementation", "code-navigation", "documentation", "reasoning", "browser-automation", "hooks", "instruction-analysis", "plugin-recommendations"],
+  "license": "MIT"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "puerto",
+  "owner": {
+    "name": "Band of AI"
+  },
+  "plugins": [
+    {
+      "name": "essentials",
+      "source": "./plugins/essentials",
+      "description": "Essential MCP servers and requirements management commands for enhanced Claude Code development workflow",
+      "version": "1.0.0"
+    }
+  ]
+}
