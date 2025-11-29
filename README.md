@@ -6,6 +6,10 @@
   Plugin marketplace for Claude Code
 </p>
 
+<p align="center">
+  <a href="https://bandofai.com/projects/puerto/">Project Page</a>
+</p>
+
 ---
 
 ## Install
