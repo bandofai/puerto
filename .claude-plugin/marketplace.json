@@ -5,10 +5,16 @@
   },
   "plugins": [
     {
+      "name": "claude-md",
+      "source": "./plugins/claude-md",
+      "description": "Skill for writing effective CLAUDE.md project instruction files",
+      "version": "1.0.0"
+    },
+    {
       "name": "essentials",
       "source": "./plugins/essentials",
-      "description": "Essential MCP servers and requirements management commands for enhanced Claude Code development workflow",
-      "version": "1.0.0"
+      "description": "Essential MCP servers, requirements management, and intelligent instruction analysis for enhanced Claude Code development workflow",
+      "version": "1.0.0" 
     }
   ]
 }

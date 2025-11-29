@@ -42,6 +42,20 @@ MCP servers + requirements workflow for Claude Code.
 | `/implement <name>` | Build from requirements |
 | `/continue` | Resume interrupted work |
 
+### Claude.md
+
+Create effective CLAUDE.md files for Claude Code projects.
+
+```bash
+/plugin install claude-md@puerto
+```
+
+| Feature | Description |
+|---------|-------------|
+| **Creation** | Analyze codebases, generate optimized instructions |
+| **Auditing** | Fix anti-patterns and token waste |
+| **Monorepo** | Hierarchical CLAUDE.md strategy |
+
 ## Create Your Own Plugin
 
 See [.claude/skills/plugin-management/SKILL.md](.claude/skills/plugin-management/SKILL.md)
