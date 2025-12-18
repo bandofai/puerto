@@ -1,0 +1,10 @@
+{
+  "name": "geepers",
+  "version": "1.0.0",
+  "description": "63 specialized agents for Claude Code infrastructure, deployment, development, and quality assurance",
+  "author": {
+    "name": "lukeslp"
+  },
+  "keywords": ["agents", "orchestration", "infrastructure", "deployment", "frontend", "fullstack", "quality", "testing", "security", "caddy", "services", "git", "documentation"],
+  "license": "MIT"
+}

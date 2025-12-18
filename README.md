@@ -56,6 +56,28 @@ Create effective CLAUDE.md files for Claude Code projects.
 | **Auditing** | Fix anti-patterns and token waste |
 | **Monorepo** | Hierarchical CLAUDE.md strategy |
 
+### Geepers
+
+63 specialized agents for infrastructure, deployment, and quality assurance.
+
+```bash
+/plugin install geepers@puerto
+```
+
+**Agent Categories:**
+| Category | Focus |
+|----------|-------|
+| **Frontend** | CSS, React, design systems, motion, performance |
+| **Fullstack** | Backend-to-frontend coordination |
+| **Quality** | Testing, security, accessibility, API auditing |
+| **Deploy** | Caddy config, service management, validation |
+| **Infrastructure** | Git, docs, system maintenance |
+
+**Master Conductor:**
+- Intelligent routing to appropriate agents
+- Multi-agent workflow coordination
+- Related: [MCP-Dreamwalker](https://github.com/lukeslp/mcp-dreamwalker) orchestration
+
 ## Create Your Own Plugin
 
 See [.claude/skills/plugin-management/SKILL.md](.claude/skills/plugin-management/SKILL.md)
